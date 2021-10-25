@@ -1,3 +1,5 @@
+const { join } = require("path");
+
 const ContentSecurityPolicy = `
   default-src 'self' data:;
   script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.jsdelivr.net d.la1-c1cs-ukb.salesforceliveagent.com www.googletagmanager.com www.recaptcha.net static.cloudflareinsights.com apis.google.com www.gstatic.com www.google.com *.googleapis.com *.youtube.com *.twitter.com;
