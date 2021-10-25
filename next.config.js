@@ -1,3 +1,17 @@
+const ContentSecurityPolicy = `
+  default-src 'self' data:;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.jsdelivr.net d.la1-c1cs-ukb.salesforceliveagent.com www.googletagmanager.com www.recaptcha.net static.cloudflareinsights.com apis.google.com www.gstatic.com www.google.com *.googleapis.com *.youtube.com *.twitter.com;
+  child-src *.youtube.com *.google.com *.twitter.com;
+  style-src 'self' 'unsafe-inline' *.googleapis.com *.gstatic.com;
+  img-src * blob: data:;
+  object-src 'self';
+  media-src 'self';
+  frame-src 'self' https://www.youtube.com/ https://www.youtube-nocookie.com/ https://www.google.com/ https://www.recaptcha.net/ https://nongcalcal-cf9db.firebaseapp.com/;
+  connect-src *;
+  font-src 'self' fonts.googleapis.com;
+  report-uri https://o963227.ingest.sentry.io/api/5911441/security/?sentry_key=28d226f03a2f48459831f61bb927a2c9
+`;
+
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,

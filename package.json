@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ./**/*.{ts,tsx}",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
     "next": "11.1.2",
