@@ -18,11 +18,7 @@ const ContentSecurityPolicy = `
 module.exports = {
   reactStrictMode: true,
   poweredByHeader: false,
-  experimental: {
-    esmExternals: true,
-    // swcMinify: true,
-    // swcLoader: true,
-  },
+  swcMinify: true,
   pageExtensions: ["ts", "tsx", "mdx"],
   images: {
     loader: "default",
@@ -42,12 +38,6 @@ module.exports = {
     ],
   },
   webpack: (config, { webpack }) => {
-    config.plugins.push(
-      new webpack.ProvidePlugin({
-        React: "react",
-      })
-    );
-
     config.resolve.alias = {
       ...config.resolve.alias,
       "@/components": join(__dirname, "components"),

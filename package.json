@@ -1,6 +1,6 @@
 {
   "name": "policy-dialogue",
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.2.0-rc.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,7 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
-    "next": "11.1.2",
+    "next": "12.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
@@ -20,10 +20,10 @@
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/line-clamp": "^0.2.2",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/react": "17.0.32",
+    "@types/react": "17.0.33",
     "autoprefixer": "latest",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
+    "eslint-config-next": "12.0.1",
     "postcss": "latest",
     "tailwindcss": "latest",
     "tailwindcss-debug-screens": "^2.2.0",
