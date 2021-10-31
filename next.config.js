@@ -21,9 +21,10 @@ module.exports = {
   swcMinify: true,
   pageExtensions: ["ts", "tsx", "mdx"],
   images: {
+    formats: ["image/avif", "image/webp"],
     loader: "default",
     path: "/_next/image",
-    minimumCacheTTL: 86_400,
+    minimumCacheTTL: 86400,
     domains: [
       "storage.googleapis.com",
       "firebasestorage.googleapis.com",
