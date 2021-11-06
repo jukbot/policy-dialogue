@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="99.355" viewBox="0 0 124 99.355">
+    <defs>
+        <clipPath id="clip-path">
+            <circle id="Ellipse_243" data-name="Ellipse 243" class="cls-1" cx="30" cy="30" r="30" transform="translate(391.645 2427.645)"/>
+        </clipPath>
+        <style>
+            .cls-1,.cls-2{fill:none;stroke:#de5a3d;stroke-width:3px}.cls-2{stroke:#daa13d}.cls-3{fill:#daa13d}.cls-7,.cls-8{stroke:none}.cls-8{fill:#daa13d}
+        </style>
+    </defs>
+    <g id="Group_242" data-name="Group 242" transform="translate(-262 -2283.5)">
+        <path id="Line_37" data-name="Line 37" class="cls-2" transform="translate(262 2381.355)" d="M0 0h124"/>
+        <path id="Line_38" data-name="Line 38" class="cls-2" transform="translate(288.5 2332.855)" d="M0 50V0"/>
+        <path id="Line_39" data-name="Line 39" class="cls-2" transform="translate(325.5 2332.855)" d="M0 50V0"/>
+        <g id="Polygon_16" data-name="Polygon 16" class="cls-3">
+            <path class="cls-7" d="M31.158 68.5H3.842a1.49 1.49 0 0 1-1.182-.577 1.49 1.49 0 0 1-.273-1.287l13.658-54.63c.263-1.055 1.18-1.137 1.455-1.137.275 0 1.192.082 1.455 1.137l13.658 54.63c.113.451.013.92-.273 1.287a1.49 1.49 0 0 1-1.182.577z" transform="translate(271 2288.355)"/>
+            <path class="cls-8" d="M17.5 12.37 3.842 67h27.316L17.5 12.37m0-3c1.266 0 2.532.757 2.91 2.272l13.658 54.63A3 3 0 0 1 31.158 70H3.842a3 3 0 0 1-2.91-3.728l13.658-54.63c.378-1.515 1.644-2.273 2.91-2.273z" transform="translate(271 2288.355)"/>
+        </g>
+        <g id="Polygon_17" data-name="Polygon 17" class="cls-3">
+            <path class="cls-7" d="M30.772 48.5H4.228c-.492 0-.938-.23-1.223-.632a1.483 1.483 0 0 1-.192-1.364L16.084 8.586C16.41 7.654 17.25 7.58 17.5 7.58s1.09.073 1.416 1.005l13.271 37.918c.163.465.093.962-.192 1.364-.285.402-.731.632-1.223.632z" transform="translate(308 2308.355)"/>
+            <path class="cls-8" d="M17.5 9.081 4.228 47h26.544L17.5 9.081m0-3c1.181 0 2.363.67 2.832 2.01l13.271 37.918A3 3 0 0 1 30.772 50H4.228a3 3 0 0 1-2.831-3.991L14.668 8.09c.47-1.34 1.65-2.009 2.832-2.009z" transform="translate(308 2308.355)"/>
+        </g>
+        <g id="Mask_Group_35" data-name="Mask Group 35" transform="translate(-87 -144.145)" style="clip-path:url(#clip-path)">
+            <g id="Polygon_18" data-name="Polygon 18" style="fill:#242054">
+                <path class="cls-7" d="M48.777 74.5H4.223c-.492 0-.938-.23-1.223-.631a1.483 1.483 0 0 1-.193-1.363L25.084 8.618c.325-.934 1.166-1.006 1.416-1.006s1.09.072 1.416 1.006l22.277 63.888c.162.465.092.961-.193 1.363-.285.4-.731.631-1.223.631z" transform="translate(386 2446)"/>
+                <path d="M26.5 9.112 4.223 73h44.554L26.5 9.112m0-3c1.182 0 2.365.67 2.833 2.012L51.61 72.012A3 3 0 0 1 48.777 76H4.223a3 3 0 0 1-2.833-3.988L23.667 8.124c.468-1.341 1.65-2.012 2.833-2.012z" style="fill:#242055;stroke:none" transform="translate(386 2446)"/>
+            </g>
+        </g>
+        <path id="Line_40" data-name="Line 40" transform="translate(354.645 2334.5)" style="stroke-linecap:round;stroke-width:3px;stroke:#de5a3d;fill:none" d="M23.855 23.855 0 0"/>
+        <g id="Ellipse_242" data-name="Ellipse 242" class="cls-1" transform="translate(304.645 2283.5)">
+            <circle class="cls-7" cx="30" cy="30" r="30"/>
+            <circle cx="30" cy="30" r="28.5" style="fill:none"/>
+        </g>
+    </g>
+</svg>

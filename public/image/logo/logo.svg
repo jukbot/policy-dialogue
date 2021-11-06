@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="59.979" viewBox="0 0 180 59.979">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_563" data-name="Group 563" transform="translate(-122 -46.605)">
+        <text id="Policy_Dialogue" data-name="Policy Dialogue" transform="translate(204 68)" style="font-size:23px;font-family:Helvetica-Bold,Helvetica;font-weight:700;fill:#fff"><tspan x="0" y="0">Policy</tspan><tspan x="0" y="27">Dialogue</tspan></text>
+        <g id="Group_533" data-name="Group 533" transform="translate(122 46.605)">
+            <path id="Path_50" data-name="Path 50" class="cls-2" d="M580.261-524.584a18.758 18.758 0 0 0-13.3-5.511h-9.408a18.758 18.758 0 0 0-13.3 5.511 18.781 18.781 0 0 0-5.073 9.255l-4.388 18.574-4.542 19.229a.742.742 0 0 0 .43.87.742.742 0 0 0 .935-.259l8.713-12.478 2.144-3.07h24.494a18.758 18.758 0 0 0 13.3-5.511 18.758 18.758 0 0 0 5.511-13.305 18.758 18.758 0 0 0-5.516-13.305z" transform="translate(-530.217 536.564)"/>
+            <path id="Path_51" data-name="Path 51" class="cls-2" d="M687.952-567.071a.742.742 0 0 0-.935.259l-8.717 12.478-2.144 3.07h-24.49a18.757 18.757 0 0 0-13.3 5.511 18.757 18.757 0 0 0-5.511 13.305 18.757 18.757 0 0 0 5.511 13.3 18.756 18.756 0 0 0 13.3 5.511h9.408a18.757 18.757 0 0 0 13.3-5.511 18.78 18.78 0 0 0 5.073-9.255l4.388-18.574 4.542-19.229a.742.742 0 0 0-.425-.865z" transform="translate(-614.927 567.141)"/>
+            <path id="Path_52" data-name="Path 52" d="M632.849-457.4a18.782 18.782 0 0 0 .661 4.952 18.767 18.767 0 0 0 1.862 4.448h16.293a18.758 18.758 0 0 0 13.3-5.511 18.757 18.757 0 0 0 5.511-13.305 18.781 18.781 0 0 0-.661-4.952 18.755 18.755 0 0 0-1.862-4.456h-16.288a18.756 18.756 0 0 0-13.3 5.511 18.757 18.757 0 0 0-5.516 13.313z" transform="translate(-614.927 492.097)" style="fill:#2b2b2b"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="109" viewBox="0 0 106 109">
+    <defs>
+        <style>
+            .cls-6{fill:none}.cls-3{stroke-width:3px;stroke:#cc79a6;fill:#cc79a6}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_149" data-name="Group 149" transform="translate(-465 -1970)">
+        <g id="Ellipse_232" data-name="Ellipse 232" transform="translate(498 2004)" style="stroke-width:3px;stroke:#de5a3d;fill:none">
+            <circle class="cls-5" cx="20" cy="20" r="20"/>
+            <circle class="cls-6" cx="20" cy="20" r="18.5"/>
+        </g>
+        <g id="Ellipse_234" data-name="Ellipse 234" transform="translate(473 1979)" style="stroke:#cc79a6;stroke-width:3px;fill:none">
+            <circle class="cls-5" cx="45" cy="45" r="45"/>
+            <circle class="cls-6" cx="45" cy="45" r="43.5"/>
+        </g>
+        <g id="Ellipse_233" data-name="Ellipse 233" class="cls-3" transform="translate(465 2014)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_240" data-name="Ellipse 240" class="cls-3" transform="rotate(45 -2145.31 1579.539)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_235" data-name="Ellipse 235" class="cls-3" transform="translate(551 2014)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_239" data-name="Ellipse 239" class="cls-3" transform="rotate(45 -2188.31 1683.35)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_236" data-name="Ellipse 236" class="cls-3" transform="translate(508 2059)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_241" data-name="Ellipse 241" class="cls-3" transform="rotate(45 -2221.129 1608.944)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_237" data-name="Ellipse 237" class="cls-3" transform="translate(508 1970)">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+        <g id="Ellipse_238" data-name="Ellipse 238" transform="rotate(45 -2113.697 1653.444)" style="fill:#242054;stroke:#242055;stroke-width:3px">
+            <circle class="cls-5" cx="10" cy="10" r="10"/>
+            <circle class="cls-6" cx="10" cy="10" r="8.5"/>
+        </g>
+    </g>
+</svg>

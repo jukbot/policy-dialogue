@@ -2,21 +2,147 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-}
+@layer base {
+  :root {
+    --color-primary: #f04e30;
+    --color-secondary: #2b2b2b;
+    --color-body-text: #191919;
+  }
 
-html,
-body {
-  scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
+  html,
+  body {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: pan-y;
+    font-family: 'IBMPlexSansThai', sans-serif;
+  }
+
+  /* Hided eye on MS edge chromium */
+  input[type='password']::-ms-reveal {
+    display: none;
+  }
+
+  /* https://cssreference.io/property/font-weight/ */
+  @font-face {
+    font-family: 'IBMPlexSansThai';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/IBMPlexSansThai-SemiBold.ttf) format('ttf');
+  }
+
+  @font-face {
+    font-family: 'IBMPlexSansThaiLooped';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/IBMPlexSansThaiLooped-Regular.ttf) format('ttf');
+  }
+
+  @font-face {
+    font-family: 'IBMPlexSansThaiLooped';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/IBMPlexSansThaiLooped-SemiBold.ttf) format('ttf');
+  }
+
+  @font-face {
+    font-family: 'IBMPlexSansThaiLooped';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/IBMPlexSansThaiLooped-Bold.ttf) format('ttf');
+  }
+
+  /* https://www.stefanjudis.com/today-i-learned/the-ex-unit-in-css/ */
+  [id] {
+    scroll-margin-top: 0ex;
+  }
+
+  /* https://web.dev/content-visibility/ */
+  .content-visibility {
+    content-visibility: auto;
+  }
+
+  p::selection,
+  a::selection,
+  label::selection,
+  button::selection,
+  span::selection,
+  svg::selection,
+  ul::selection,
+  li::selection,
+  h1::selection,
+  h2::selection,
+  h3::selection,
+  h4::selection,
+  h5::selection,
+  strong::selection,
+  legend::selection,
+  select::selection,
+  option::selection,
+  br::selection,
+  img::selection,
+  input::selection {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  /* 
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="search"],
+  input[type="password"],
+  input[type="number"],
+  input[type="url"],
+  input[type="date"],
+  textarea,
+  select {
+    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 bg-white border border-gray-300 appearance-none focus:outline-none focus:ring-primary focus:border-primary focus:ring-1;
+  }
+
+  input[type="text"]:disabled,
+  input[type="text"]:read-only,
+  input[type="tel"]:disabled,
+  input[type="email"]:disabled,
+  input[type="search"]:disabled,
+  input[type="password"]:disabled,
+  input[type="number"]:disabled,
+  input[type="url"]:disabled,
+  input[type="date"]:disabled,
+  select:disabled,
+  textarea:disabled {
+    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 border border-gray-300 appearance-none select-none bg-gray-50 focus:outline-none focus:ring-primary focus:border-primary focus:ring-1;
+  }
+
+  input[role="error"] {
+    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 bg-white border border-red-500 appearance-none focus:outline-none focus:ring-red-500 focus:border-red-500 focus:ring-1;
+  }
+
+  .input-disabled {
+    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 border border-gray-300 appearance-none select-none bg-gray-50 focus:outline-none focus:ring-primary focus:border-primary focus:ring-1;
+  }
+
+  .required {
+    @apply inline-block text-sm align-top;
+  }
+
+  input[type="radio"] {
+    @apply w-6 h-6 border-gray-300 text-primary focus:ring-primary hover:ring-1 hover:ring-primary active:ring-primary active:border-primary;
+  }
+
+  input[type="checkbox"] {
+    @apply w-6 h-6 border-gray-300 text-primary focus:ring-primary hover:border-primary active:ring-primary active:border-primary;
+  } */
+
+  a {
+    @apply cursor-pointer;
+  }
 }
