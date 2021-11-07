@@ -14,7 +14,9 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
-      '150%': '150% 100%',
+      landing: '120% 100%',
+      survey: '100% 100%',
+      step: '90% 100%',
     },
     extend: {
       colors: {
@@ -24,16 +26,26 @@ module.exports = {
         danger: 'var(--color-danger)',
         disabled: 'var(--color-disabled)',
       },
-      spacing: {
-        120: '120%',
-      },
       backgroundImage: {
         'hero-pattern': "url('/image/background/landing-hero.svg')",
+        'step-blur-pattern': "url('/image/background/landing-blur-shape.svg')",
+        'step-pattern': "url('/image/background/landing-shape.svg')",
+        'process-step': "url('/image/background/survey-steps.svg')",
+      },
+      backgroundPosition: {
+        'top-24': 'center top 12rem',
+        'top-48': 'center top 24rem',
+      },
+      borderRadius: {
+        xl: '1rem',
+        50: '50%',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backdropBrightness: ['hover', 'focus', 'group-hover'],
+    },
   },
   plugins: [
     // require('@tailwindcss/aspect-ratio'),

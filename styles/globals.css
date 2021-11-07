@@ -146,3 +146,15 @@
     @apply cursor-pointer;
   }
 }
+
+@layer components {
+  .btn {
+    @apply px-8 py-3 text-white rounded-full bg-primary hover:bg-[#3f36b7];
+  }
+}
+
+@layer utilities {
+  .landing-bg-size {
+    background-size: 160% 120%;
+  }
+}

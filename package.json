@@ -16,8 +16,10 @@
     "@heroicons/react": "^1.0.5",
     "next": "12.0.3",
     "react": "17.0.2",
+    "react-countup": "^6.0.0",
     "react-dom": "17.0.2",
     "react-use": "^17.3.1",
+    "react-visibility-sensor": "^5.1.1",
     "twind": "^0.16.16"
   },
   "devDependencies": {
@@ -27,6 +29,7 @@
     "@tailwindcss/typography": "^0.4.1",
     "@types/prettier": "^2",
     "@types/react": "17.0.34",
+    "@types/react-visibility-sensor": "^5",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
     "autoprefixer": "latest",

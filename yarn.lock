@@ -490,7 +490,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.34":
+"@types/react-visibility-sensor@npm:^5":
+  version: 5.0.1
+  resolution: "@types/react-visibility-sensor@npm:5.0.1"
+  dependencies:
+    "@types/react": "*"
+  checksum: 039a9716a081ba438fb694773704096013fdcc0eb9662e12e3bf7363b1559b3fb4ecb337adb59ccca7223e042b6de193b10002af5c9ed4866955ac2ccff07244
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*, @types/react@npm:17.0.34":
   version: 17.0.34
   resolution: "@types/react@npm:17.0.34"
   dependencies:
@@ -1555,6 +1564,13 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.10.0
   checksum: 4be63e7117955fd88333d7460e4c466a90f556df6ef34efd59034d2463484e339666c41f02b523d574a797ec61f4a91918c5b89a316db2ea2f834e0d2d09465b
+  languageName: node
+  linkType: hard
+
+"countup.js@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "countup.js@npm:2.0.8"
+  checksum: 90edbb4f62c09d25bb464ce78d96044d8c7850187029ca6cd0ff06fb21d965dd61f48745630b659f50b9892ac237e48d0677822b4c0bdea917a3af998fddb13e
   languageName: node
   linkType: hard
 
@@ -4587,6 +4603,7 @@ __metadata:
     "@tailwindcss/typography": ^0.4.1
     "@types/prettier": ^2
     "@types/react": 17.0.34
+    "@types/react-visibility-sensor": ^5
     "@typescript-eslint/eslint-plugin": ^5.3.0
     "@typescript-eslint/parser": ^5.3.0
     autoprefixer: latest
@@ -4599,8 +4616,10 @@ __metadata:
     prettier: ^2.4.1
     pretty-quick: ^3.1.1
     react: 17.0.2
+    react-countup: ^6.0.0
     react-dom: 17.0.2
     react-use: ^17.3.1
+    react-visibility-sensor: ^5.1.1
     tailwindcss: latest
     tailwindcss-debug-screens: ^2.2.0
     twind: ^0.16.16
@@ -4888,6 +4907,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-countup@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "react-countup@npm:6.0.0"
+  dependencies:
+    countup.js: ^2.0.8
+  peerDependencies:
+    react: ">= 16.3.0"
+  checksum: 45a2f4af5e95d12395580cebf363103179e88828e38b6ff74de2d8377dbd0a232498873b8abce17871ef048c56760a98b7544656f5f9ce04097ded3602608a07
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
@@ -4954,6 +4984,18 @@ __metadata:
     react: ^16.8.0  || ^17.0.0
     react-dom: ^16.8.0  || ^17.0.0
   checksum: 0489a2603dc1a5e2666ae7643b42ec82d747a70476087b0965ee67048940a8dee912cd982d568ff97af703365914c8d8208216301b8489082be61d86561fb858
+  languageName: node
+  linkType: hard
+
+"react-visibility-sensor@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "react-visibility-sensor@npm:5.1.1"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: ebce7bc743071930a2dd333a041c4a99aac24d5059c47a52eff25a8d81ab9307fadc87b8a6655ebb3154f5c1ceafcc309ae04ee07a7d5fad2949a6903d15acd5
   languageName: node
   linkType: hard
 
