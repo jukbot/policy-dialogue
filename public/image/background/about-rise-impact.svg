@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="983" height="501" viewBox="0 0 983 501">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_38" data-name="Rectangle 38" transform="translate(0 6569)" style="fill:#fff;stroke:#707070" d="M0 0h489v250H0z"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#242054}.cls-4,.cls-6{fill:none}.cls-4{stroke:#232151;stroke-width:3px}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_627" data-name="Group 627" transform="translate(-663 -8599)">
+        <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(1157 2030)" style="clip-path:url(#clip-path)">
+            <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-3" cx="244.5" cy="244.5" r="244.5" transform="translate(0 6321)"/>
+        </g>
+        <path id="Path_370" data-name="Path 370" class="cls-3" d="M141.5 0A141.5 141.5 0 1 1 0 141.5 141.5 141.5 0 0 1 141.5 0z" transform="translate(663 8784)"/>
+        <g id="Group_121" data-name="Group 121" transform="translate(832 -237)">
+            <g id="Ellipse_39" data-name="Ellipse 39" class="cls-4" transform="translate(224 8935)">
+                <circle class="cls-5" cx="201" cy="201" r="201"/>
+                <circle class="cls-6" cx="201" cy="201" r="199.5"/>
+            </g>
+            <g id="Ellipse_40" data-name="Ellipse 40" class="cls-4" transform="translate(224 8986)">
+                <circle class="cls-5" cx="150" cy="150" r="150"/>
+                <circle class="cls-6" cx="150" cy="150" r="148.5"/>
+            </g>
+            <g id="Ellipse_41" data-name="Ellipse 41" class="cls-4" transform="translate(224 9036)">
+                <circle class="cls-5" cx="100" cy="100" r="100"/>
+                <circle class="cls-6" cx="100" cy="100" r="98.5"/>
+            </g>
+        </g>
+    </g>
+</svg>

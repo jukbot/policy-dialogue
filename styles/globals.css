@@ -149,7 +149,7 @@
 
 @layer components {
   .btn {
-    @apply px-8 py-3 text-white rounded-full bg-primary hover:bg-[#3f36b7];
+    @apply px-8 py-3 text-white text-center rounded-full bg-primary hover:bg-[#3f36b7];
   }
 }
 

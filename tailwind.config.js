@@ -28,9 +28,11 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/image/background/landing-hero.svg')",
+        'hero-pattern-mobile': "url('/image/background/landing-hero-mobile.svg')",
         'step-blur-pattern': "url('/image/background/landing-blur-shape.svg')",
         'step-pattern': "url('/image/background/landing-shape.svg')",
         'process-step': "url('/image/background/survey-steps.svg')",
+        'landing-footer': "url('/image/background/landing-footer.svg')",
       },
       backgroundPosition: {
         'top-24': 'center top 12rem',
