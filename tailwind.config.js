@@ -16,6 +16,7 @@ module.exports = {
       landing: '120% 100%',
       survey: '100% 100%',
       step: '90% 100%',
+      footer: '80% 180%',
     },
     extend: {
       colors: {
@@ -30,14 +31,14 @@ module.exports = {
         'hero-pattern-mobile': "url('/image/background/landing-hero-mobile.svg')",
         'step-blur-pattern': "url('/image/background/landing-blur-shape.svg')",
         'step-pattern': "url('/image/background/landing-shape.svg')",
-        'process-step': "url('/image/background/survey-steps.svg')",
+        'process-step': "url('/image/background/landing-survey-step.svg')",
         'landing-footer': "url('/image/background/landing-footer.svg')",
         'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
       },
       backgroundPosition: {
         '-top-6': 'center top -6rem',
         'top-16': 'center top 16rem',
-        'top-48': 'center top 24rem',
+        'top-right': 'top right 1rem',
       },
       borderRadius: {
         xl: '1rem',

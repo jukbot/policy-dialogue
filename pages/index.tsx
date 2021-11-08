@@ -162,7 +162,7 @@ const Home: NextPage = () => {
             {({ isVisible }) => (
               <div className="grid grid-cols-1 gap-6 px-6 sm:px-24 sm:max-w-3/4 sm:grid-cols-2">
                 <div className="flex flex-col col-span-1 space-y-8 text-body">
-                  <h2 className="text-4xl font-semibold leading-snug sm:text-5xl ">
+                  <h2 className="text-4xl font-semibold leading-relaxed">
                     สร้างการมีส่วนร่วม
                     <br /> เพื่อออกแบบนโยบาย
                     <br /> ในระยะเวลา 1 ปี
@@ -228,7 +228,7 @@ const Home: NextPage = () => {
               </Link>
             </div>
             <div className="flex justify-center w-3/4 pt-6">
-              <div className="flex items-center justify-between w-full px-24 py-6 bg-white bg-top bg-no-repeat bg-contain rounded-lg bg-rise-impact-footer">
+              <div className="flex items-center justify-between w-full px-24 py-6 bg-local bg-white bg-no-repeat rounded-lg bg-footer bg-top-right bg-rise-impact-footer">
                 <div>
                   <Image src={RiseImpactLogo} alt="rise-impact-logo" className="w-full h-full" width="240" height="120" />
                 </div>
