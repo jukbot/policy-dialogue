@@ -1,7 +1,6 @@
 module.exports = {
   mode: 'jit',
   purge: {
-    enabled: process.env.NODE_ENV === 'production',
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   },
   darkMode: false,
@@ -33,9 +32,11 @@ module.exports = {
         'step-pattern': "url('/image/background/landing-shape.svg')",
         'process-step': "url('/image/background/survey-steps.svg')",
         'landing-footer': "url('/image/background/landing-footer.svg')",
+        'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
       },
       backgroundPosition: {
-        'top-24': 'center top 12rem',
+        '-top-6': 'center top -6rem',
+        'top-16': 'center top 16rem',
         'top-48': 'center top 24rem',
       },
       borderRadius: {

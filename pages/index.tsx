@@ -9,6 +9,7 @@ import QuestionMark from '../components/Icon/QuestionMark'
 import VisibilitySensor from 'react-visibility-sensor'
 import PolicyWheel from '../components/Landing/PolicyWheel'
 import CountUp from 'react-countup'
+import RiseImpactLogo from '/public/image/logo/rise-impact.svg'
 
 const intersectopnOptions = {
   root: null,
@@ -106,21 +107,22 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#242054]">
-          <div className="flex flex-col items-center justify-center px-12 py-20 text-white">
+          <div className="flex flex-col items-center justify-center px-6 py-20 text-white">
             <QuestionMark className="w-48 h-48" />
             <p className="text-lg text-center max-w-prose ">
               คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย
               แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
             </p>
           </div>
+          <div className="absolute bottom-0 -ml-4 triangle-up left-1/2"></div>
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
           <div className="absolute top-0 right-0 translate-y-[50%] w-[344px] h-1/2 bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
           <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-step bg-step-blur-pattern"></div>
-          <div className="absolute top-0 w-full h-full bg-fixed bg-no-repeat bg-top-24 bg-step-pattern bg-step"></div>
-          <div className="absolute w-full p-20 bg-top bg-no-repeat -top-28 bg-survey bg-process-step">
+          <div className="absolute top-0 w-full h-full bg-fixed bg-no-repeat bg-top-16 bg-step-pattern bg-step"></div>
+          <div className="absolute w-full bg-no-repeat h-[40rem] -top-16 -bg-top-6 bg-contain bg-process-step">
             <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center pt-8 space-y-4 font-bold text-center bg-white rounded-full w-72 h-72 text-body">
+              <div className="flex flex-col items-center justify-center pt-10 space-y-6 font-bold text-center bg-white rounded-full w-80 h-80 text-body">
                 <h3 className="text-2xl">
                   ตอบคำถามดังกล่าว
                   <br /> ผ่านกรอบการทำงาน
@@ -131,7 +133,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="relative flex justify-center mt-96">
+          <div className="relative w-full flex justify-center mt-[32rem]">
             <Link href="/process">
               <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
             </Link>
@@ -146,11 +148,11 @@ const Home: NextPage = () => {
             </div>
 
             <div className="relative">
-              <div className="absolute mx-auto mt-56 -ml-28 inset-x-1/2 ">
+              {/* <div className="absolute mx-auto mt-56 -ml-28 inset-x-1/2 ">
                 <div className="flex items-center justify-center w-56 h-56 p-6 rounded-full bg-[#FEEDEA]">
                   <h3 className="text-2xl text-center text-body">นโยบายเพื่อสังคมสูงวัย</h3>
                 </div>
-              </div>
+              </div> */}
               <PolicyWheel className="fill-current text-primary" />
             </div>
           </div>
@@ -173,14 +175,14 @@ const Home: NextPage = () => {
                 </div>
                 <div className="grid grid-cols-1 col-span-1 gap-8 sm:grid-cols-2">
                   <div className="flex flex-col col-span-1 space-y-4 text-body">
-                    <p className="text-base">จัดวงหารือแบบออฟ ไลน์และออนไลน์</p>
+                    <p className="text-base">จัดวงหารือแบบออฟไลน์และออนไลน์</p>
                     <p className="text-6xl">
                       {isVisible ? <CountUp end={30} duration={2} /> : '0'}
                       <span className="text-base"> ครั้ง</span>
                     </p>
                   </div>
                   <div className="flex flex-col col-span-1 space-y-4 text-body">
-                    <p className="text-base">มีผู้เข้าร่วมที่ หลากหลายมากกว่า</p>
+                    <p className="text-base">มีผู้เข้าร่วมที่หลากหลายมากกว่า</p>
                     <p className="text-6xl">
                       {isVisible ? <CountUp end={400} duration={2.5} /> : '0'}
                       <span className="text-base"> ครั้ง</span>
@@ -194,7 +196,7 @@ const Home: NextPage = () => {
                     </p>
                   </div>
                   <div className="flex flex-col col-span-1 space-y-4 text-body">
-                    <p className="text-base">มีผู้เข้าร่วมที่ หลากหลายมากกว่า</p>
+                    <p className="text-base">มีผู้เข้าร่วมที่หลากหลายมากกว่า</p>
                     <p className="text-6xl">
                       {isVisible ? <CountUp end={1000} duration={2.75} separator="," /> : '0'}
                       <span className="text-base"> ครั้ง</span>
@@ -224,6 +226,18 @@ const Home: NextPage = () => {
               <Link href="/">
                 <a className="w-3/4 btn sm:w-max">ดาวน์โหลดคู่มือฉบับเต็ม</a>
               </Link>
+            </div>
+            <div className="flex justify-center w-3/4 pt-6">
+              <div className="flex items-center justify-between w-full px-24 py-6 bg-white bg-top bg-no-repeat bg-contain rounded-lg bg-rise-impact-footer">
+                <div>
+                  <Image src={RiseImpactLogo} alt="rise-impact-logo" className="w-full h-full" width="240" height="120" />
+                </div>
+                <div>
+                  <Link href="/about">
+                    <a className="w-3/4 btn sm:w-max">เกี่ยวกับเรา</a>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>

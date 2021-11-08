@@ -157,4 +157,11 @@
   .landing-bg-size {
     background-size: 160% 120%;
   }
+  .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 2rem solid white;
+  }
 }

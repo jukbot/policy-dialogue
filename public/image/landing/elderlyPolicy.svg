@@ -1,64 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="724" height="717" viewBox="0 0 724 717">
+<svg xmlns="http://www.w3.org/2000/svg" width="1410" height="867" viewBox="0 0 1410 867">
     <defs>
         <style>
-            .cls-1,.cls-10,.cls-3{fill:none}.cls-1,.cls-3,.cls-4{stroke:#de5a3d}.cls-1{stroke-width:2px;stroke-dasharray:5 5}.cls-2{fill:#de5a3d}.cls-3,.cls-4{stroke-width:3px}.cls-4{fill:#fff}.cls-6{fill:#a8a8a8}.cls-9{stroke:none}
+            .cls-1,.cls-10{fill:#a8a8a8}.cls-1,.cls-8{font-size:25px;font-family:IBMPlexSansThaiLooped,IBM Plex Sans Thai Looped}.cls-5{fill:#f04e30}.cls-8{fill:#191919}.cls-14,.cls-4,.cls-6{fill:none}.cls-4,.cls-6,.cls-7{stroke:#f04e30}.cls-4{stroke-width:2px;stroke-dasharray:5 5}.cls-6,.cls-7{stroke-width:3px}.cls-7{fill:#fff}.cls-13{stroke:none}
         </style>
     </defs>
-    <g id="Group_626" data-name="Group 626" transform="translate(-590 -6194)">
-        <g id="Group_621" data-name="Group 621">
-            <g id="Ellipse_53" data-name="Ellipse 53" class="cls-1" transform="translate(764.463 6381.462)">
-                <circle class="cls-9" cx="187.538" cy="187.538" r="187.538"/>
-                <circle class="cls-10" cx="187.538" cy="187.538" r="186.538"/>
-            </g>
-            <circle id="Ellipse_54" data-name="Ellipse 54" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(944.788 6374.538)"/>
-            <circle id="Ellipse_55" data-name="Ellipse 55" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(1096.169 6451.284)"/>
-            <circle id="Ellipse_143" data-name="Ellipse 143" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(793.405 6451.284)"/>
-            <circle id="Ellipse_60" data-name="Ellipse 60" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(1125.021 6612.278)"/>
-            <circle id="Ellipse_57" data-name="Ellipse 57" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(764.554 6612.278)"/>
-            <circle id="Ellipse_58" data-name="Ellipse 58" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(1025.193 6730.571)"/>
-            <circle id="Ellipse_144" data-name="Ellipse 144" class="cls-2" cx="7.213" cy="7.213" r="7.213" transform="translate(866.508 6730.571)"/>
-            <g id="Ellipse_142" data-name="Ellipse 142" class="cls-3" transform="translate(763 6811)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <g id="Ellipse_149" data-name="Ellipse 149" class="cls-3" transform="translate(1041 6811)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <g id="Ellipse_138" data-name="Ellipse 138" class="cls-4" transform="translate(590 6606)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <g id="Ellipse_147" data-name="Ellipse 147" class="cls-4" transform="translate(1214 6606)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <g id="Ellipse_145" data-name="Ellipse 145" class="cls-4" transform="translate(639 6328)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <g id="Ellipse_148" data-name="Ellipse 148" class="cls-4" transform="translate(1165 6328)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <g id="Ellipse_146" data-name="Ellipse 146" class="cls-4" transform="translate(902 6194)">
-                <circle class="cls-9" cx="50" cy="50" r="50"/>
-                <circle class="cls-10" cx="50" cy="50" r="48.5"/>
-            </g>
-            <path id="Line_17" data-name="Line 17" class="cls-1" transform="translate(952.5 6294.5)" d="M0 87V0"/>
-            <path id="Line_19" data-name="Line 19" class="cls-1" transform="translate(1103.5 6407.5)" d="M0 51 71 0"/>
-            <path id="Line_22" data-name="Line 22" class="cls-1" transform="translate(731.627 6407.5)" d="M71 51 0 0"/>
-            <path id="Line_20" data-name="Line 20" class="cls-1" transform="translate(1132.353 6619.487)" d="m0 0 83.147 24.013"/>
-            <path id="Line_23" data-name="Line 23" class="cls-1" transform="translate(690.627 6619.487)" d="M83.147 0 0 24.013"/>
-            <path id="Line_21" data-name="Line 21" class="cls-1" transform="translate(1032.5 6737.5)" d="m0 0 38 77"/>
-            <path id="Line_24" data-name="Line 24" class="cls-1" transform="translate(835.627 6737.5)" d="M38 0 0 77"/>
+    <g id="Group_1026" data-name="Group 1026" transform="translate(-251 -6056)">
+        <text id="ระบบการดูแลผู้ป่วยระยะกลาง_สำหรับผู้สูงอายุที่อยู่ในช่วง_6_เดือนทองหลังพ้นภาวะวิกฤต_Intermediate_Care_" data-name="ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทองหลังพ้นภาวะวิกฤต (Intermediate Care)" class="cls-1" transform="translate(1290 6325)"><tspan x="0" y="0">ระบบการดูแลผู้ป่วยระยะกลาง </tspan><tspan x="0" y="41">สำหรับผู้สูงอายุที่อยู่ในช่วง </tspan><tspan x="0" y="82">6 เดือนทองหลังพ้นภาวะวิกฤต</tspan><tspan x="0" y="123">(</tspan><tspan y="123">Intermediate Care)</tspan></text>
+        <text id="ระบบการดูแลระยะยาว_สำหรับผู้สูงอายุที่มีภาวะพึ่งพิง_Long-Term_Care_" data-name="ระบบการดูแลระยะยาว สำหรับผู้สูงอายุที่มีภาวะพึ่งพิง (Long-Term Care)" class="cls-1" transform="translate(1338 6623)"><tspan x="0" y="0">ระบบการดูแลระยะยาว</tspan><tspan x="0" y="41">สำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</tspan><tspan x="0" y="82">(</tspan><tspan y="82">Long-Term Care)</tspan></text>
+        <text id="กลไกการติดตามขับเคลื่อน_นโยบายเรื่องผู้สูงอายุ_Governing_Mechanism_" data-name="กลไกการติดตามขับเคลื่อน นโยบายเรื่องผู้สูงอายุ (Governing Mechanism)" class="cls-1" transform="translate(565 6623)"><tspan x="-291.05" y="0">กลไกการติดตามขับเคลื่อน</tspan><tspan x="-228.4" y="41">นโยบายเรื่องผู้สูงอายุ</tspan><tspan x="-265.275" y="82">(</tspan><tspan y="82">Governing Mechanism)</tspan></text>
+        <text id="ระบบบริการและการดูแล_ผู้มีภาวะสมองเสื่อม_Dementia_" data-name="ระบบบริการและการดูแล ผู้มีภาวะสมองเสื่อม (Dementia)" class="cls-1" transform="translate(739 6828)"><tspan x="-271.225" y="0">ระบบบริการและการดูแล</tspan><tspan x="-213.575" y="41">ผู้มีภาวะสมองเสื่อม </tspan><tspan x="-125.375" y="82">(</tspan><tspan y="82">Dementia)</tspan></text>
+        <circle id="Ellipse_52" data-name="Ellipse 52" cx="150" cy="150" r="150" transform="translate(804 6419)" style="opacity:.1;fill:#f04e30"/>
+        <text id="นโยบายเพื่อ_สังคมสูงวัย" data-name="นโยบายเพื่อ สังคมสูงวัย" transform="translate(960 6550)" style="font-size:35px;font-family:IBMPlexSansThaiLooped-SemiBold,IBM Plex Sans Thai Looped;font-weight:600;fill:#191919"><tspan x="-93.765" y="0">นโยบายเพื่อ</tspan><tspan x="-87.167" y="58">สังคมสูงวัย</tspan></text>
+        <g id="Ellipse_53" data-name="Ellipse 53" class="cls-4" transform="translate(764.463 6381.462)">
+            <circle class="cls-13" cx="187.538" cy="187.538" r="187.538"/>
+            <circle class="cls-14" cx="187.538" cy="187.538" r="186.538"/>
         </g>
-        <path id="Path_53" data-name="Path 53" d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z" transform="translate(669.654 6209.428)" style="fill:#c7642a"/>
-        <path id="Path_130" data-name="Path 130" class="cls-6" d="M545.354 25.807c0-2.974-3.219-5.645-8.333-7.483 3.624-1.059 5.833-2.466 5.833-4.009 0-2.269-4.773-4.241-11.8-5.251 1.183-.572 1.867-1.245 1.867-1.967 0-2.071-5.627-3.75-12.568-3.75S507.786 5.026 507.786 7.1c0 .722.684 1.4 1.867 1.967-7.027 1.01-11.8 2.982-11.8 5.251 0 1.543 2.209 2.95 5.833 4.009-5.114 1.839-8.333 4.509-8.333 7.483 0 3 3.272 5.688 8.459 7.528-3.7 1.063-5.959 2.484-5.959 4.045 0 2.269 4.773 4.241 11.8 5.251-1.183.572-1.867 1.245-1.867 1.967 0 2.071 5.627 3.75 12.568 3.75s12.568-1.679 12.568-3.75c0-.722-.684-1.4-1.867-1.967 7.027-1.01 11.8-2.982 11.8-5.251 0-1.561-2.26-2.982-5.959-4.045 5.186-1.843 8.458-4.538 8.458-7.531z" transform="translate(694.646 6352.653)"/>
-        <path id="Path_59" data-name="Path 59" class="cls-6" d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z" transform="translate(-101.303 6592.367)"/>
-        <path id="Path_129" data-name="Path 129" d="M1634.417 1192.3c-4.912-4.366-12.785-5.081-20.791-2.6-8.006-2.48-15.878-1.766-20.791 2.6s-5.716 11.364-2.926 18.481c-2.791 7.116-1.986 14.114 2.926 18.481s12.785 5.081 20.791 2.6c8.006 2.481 15.878 1.766 20.791-2.6s5.716-11.364 2.926-18.481c2.79-7.116 1.986-14.114-2.926-18.481z" transform="translate(-522.313 5650.719)" style="fill:#3f36b7"/>
-        <path id="Path_56" data-name="Path 56" class="cls-6" d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.594 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.594 7.919 7.919 0 0 0 6.045 14.593 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.593z" transform="translate(79.223 5747.493)"/>
-        <path id="Path_54" data-name="Path 54" class="cls-6" d="M896.255 58.626H848.1a6.448 6.448 0 0 1-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 0 1-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 1 1 0-12.9h48.155a6.448 6.448 0 0 1 2.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 0 1 2.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 1 1 0 12.9z" transform="translate(-232.65 6620.374)"/>
-        <path id="Path_55" data-name="Path 55" d="M203.467 616.979h-7.377a.827.827 0 0 1-.716-1.241l3.688-6.388a6.948 6.948 0 0 0-2.543-9.491 6.948 6.948 0 0 0-9.491 2.543l-3.688 6.388a.827.827 0 0 1-1.433 0l-3.689-6.388a6.948 6.948 0 0 0-9.491-2.543 6.948 6.948 0 0 0-2.543 9.491l3.689 6.388a.827.827 0 0 1-.716 1.241h-7.377a6.948 6.948 0 0 0-6.948 6.948 6.948 6.948 0 0 0 6.948 6.948h7.377a.827.827 0 0 1 .716 1.241l-3.689 6.389a6.948 6.948 0 0 0 2.543 9.491 6.948 6.948 0 0 0 9.491-2.543l3.689-6.389a.827.827 0 0 1 1.433 0l3.688 6.389a6.948 6.948 0 0 0 9.491 2.543 6.948 6.948 0 0 0 2.543-9.491l-3.688-6.389a.827.827 0 0 1 .716-1.241h7.377a6.948 6.948 0 0 0 6.948-6.948 6.948 6.948 0 0 0-6.948-6.948z" transform="translate(506.168 5754.073)" style="fill:#daa13d"/>
+        <circle id="Ellipse_54" data-name="Ellipse 54" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(944.789 6374.538)"/>
+        <circle id="Ellipse_55" data-name="Ellipse 55" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(1096.168 6451.284)"/>
+        <circle id="Ellipse_143" data-name="Ellipse 143" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(793.404 6451.284)"/>
+        <circle id="Ellipse_60" data-name="Ellipse 60" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(1125.021 6612.278)"/>
+        <circle id="Ellipse_57" data-name="Ellipse 57" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(764.555 6612.278)"/>
+        <circle id="Ellipse_58" data-name="Ellipse 58" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(1025.193 6730.571)"/>
+        <circle id="Ellipse_144" data-name="Ellipse 144" class="cls-5" cx="7.213" cy="7.213" r="7.213" transform="translate(866.508 6730.571)"/>
+        <g id="Ellipse_142" data-name="Ellipse 142" class="cls-6" transform="translate(763 6811)">
+            <circle class="cls-13" cx="50" cy="50" r="50"/>
+            <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+        </g>
+        <g id="Ellipse_138" data-name="Ellipse 138" class="cls-7" transform="translate(590 6606)">
+            <circle class="cls-13" cx="50" cy="50" r="50"/>
+            <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+        </g>
+        <g id="Ellipse_147" data-name="Ellipse 147" class="cls-7" transform="translate(1214 6606)">
+            <circle class="cls-13" cx="50" cy="50" r="50"/>
+            <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+        </g>
+        <g id="Ellipse_148" data-name="Ellipse 148" class="cls-7" transform="translate(1165 6328)">
+            <circle class="cls-13" cx="50" cy="50" r="50"/>
+            <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+        </g>
+        <text id="การสูงวัยในถิ่นที่อยู่อาศัยเดิม_อย่างมีสุขภาวะ_Aging_in_Place_" data-name="การสูงวัยในถิ่นที่อยู่อาศัยเดิม อย่างมีสุขภาวะ (Aging in Place)" class="cls-8" transform="translate(953 6084)"><tspan x="-156.337" y="0">การสูงวัยในถิ่นที่อยู่อาศัยเดิม</tspan><tspan x="-80.338" y="41">อย่างมีสุขภาวะ</tspan><tspan x="-86.662" y="82">(</tspan><tspan y="82">Aging in Place)</tspan></text>
+        <g id="Component_23_1" data-name="Component 23 – 1" transform="translate(902 6194)">
+            <g id="Ellipse_146" data-name="Ellipse 146" class="cls-7">
+                <circle class="cls-13" cx="50" cy="50" r="50"/>
+                <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+            </g>
+            <path id="Path_369" data-name="Path 369" d="m289.248 20.228 3.235-10.085a.821.821 0 0 1 1.6.254l-.04 10.591a.821.821 0 0 0 1.487.483l6.193-8.591a.821.821 0 0 1 1.446.737l-3.311 10.06a.821.821 0 0 0 1.265.919l8.544-6.257a.821.821 0 0 1 1.148 1.148l-6.258 8.545a.821.821 0 0 0 .919 1.265l10.06-3.311a.821.821 0 0 1 .737 1.446l-8.592 6.193a.821.821 0 0 0 .483 1.487l10.591-.04a.821.821 0 0 1 .254 1.6L308.93 39.91a.821.821 0 0 0 0 1.564l10.085 3.235a.821.821 0 0 1-.254 1.6l-10.591-.04a.821.821 0 0 0-.483 1.487l8.592 6.193a.821.821 0 0 1-.737 1.446l-10.06-3.311a.821.821 0 0 0-.919 1.265l6.258 8.544a.821.821 0 0 1-1.148 1.148l-8.544-6.257a.821.821 0 0 0-1.265.919l3.311 10.06a.821.821 0 0 1-1.446.737l-6.193-8.591a.821.821 0 0 0-1.487.483l.04 10.591a.821.821 0 0 1-1.6.254l-3.235-10.085a.821.821 0 0 0-1.564 0l-3.241 10.088a.821.821 0 0 1-1.6-.254l.04-10.591a.821.821 0 0 0-1.487-.483l-6.196 8.588a.821.821 0 0 1-1.446-.737l3.311-10.06a.821.821 0 0 0-1.265-.919l-8.544 6.257a.821.821 0 0 1-1.148-1.148l6.257-8.544a.821.821 0 0 0-.919-1.265L261.391 55.4a.821.821 0 0 1-.737-1.446l8.592-6.193a.821.821 0 0 0-.483-1.487l-10.591.04a.821.821 0 0 1-.254-1.6L268 41.473a.821.821 0 0 0 0-1.564l-10.085-3.235a.821.821 0 0 1 .254-1.6l10.591.04a.821.821 0 0 0 .483-1.487l-8.592-6.193a.821.821 0 0 1 .737-1.446l10.06 3.311a.821.821 0 0 0 .919-1.265l-6.257-8.545a.821.821 0 0 1 1.148-1.148L275.8 24.6a.821.821 0 0 0 1.265-.919l-3.311-10.06a.821.821 0 0 1 1.446-.737l6.193 8.591a.821.821 0 0 0 1.487-.483l-.04-10.591a.821.821 0 0 1 1.6-.254l3.235 10.085a.821.821 0 0 0 1.573-.004z" transform="translate(-238.465 9.308)" style="fill:#c7642a"/>
+        </g>
+        <path id="Line_17" data-name="Line 17" class="cls-4" transform="translate(952.5 6294.5)" d="M0 87V0"/>
+        <path id="Line_19" data-name="Line 19" class="cls-4" transform="translate(1103.5 6407.5)" d="M0 51 71 0"/>
+        <path id="Line_22" data-name="Line 22" class="cls-4" transform="translate(731.627 6407.5)" d="M71 51 0 0"/>
+        <path id="Line_20" data-name="Line 20" class="cls-4" transform="translate(1132.352 6619.487)" d="m0 0 83.147 24.013"/>
+        <path id="Line_23" data-name="Line 23" class="cls-4" transform="translate(690.627 6619.487)" d="M83.147 0 0 24.013"/>
+        <path id="Path_370" data-name="Path 370" class="cls-4" d="m0 0 36.589 74.756" transform="translate(1032.5 6737.5)"/>
+        <path id="Line_24" data-name="Line 24" class="cls-4" transform="translate(835.627 6737.5)" d="M38 0 0 77"/>
+        <path id="Path_130" data-name="Path 130" class="cls-10" d="M545.354 25.807c0-2.974-3.219-5.645-8.333-7.483 3.624-1.059 5.833-2.466 5.833-4.009 0-2.269-4.773-4.241-11.8-5.251 1.183-.572 1.867-1.245 1.867-1.967 0-2.071-5.627-3.75-12.568-3.75S507.786 5.026 507.786 7.1c0 .722.684 1.4 1.867 1.967-7.027 1.01-11.8 2.982-11.8 5.251 0 1.543 2.209 2.95 5.833 4.009-5.114 1.839-8.333 4.509-8.333 7.483 0 3 3.272 5.688 8.459 7.528-3.7 1.063-5.959 2.484-5.959 4.045 0 2.269 4.773 4.241 11.8 5.251-1.183.572-1.867 1.245-1.867 1.967 0 2.071 5.627 3.75 12.568 3.75s12.568-1.679 12.568-3.75c0-.722-.684-1.4-1.867-1.967 7.027-1.01 11.8-2.982 11.8-5.251 0-1.561-2.26-2.982-5.959-4.045 5.186-1.843 8.458-4.538 8.458-7.531z" transform="translate(694.645 6352.653)"/>
+        <path id="Path_59" data-name="Path 59" class="cls-10" d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z" transform="translate(-101.303 6592.367)"/>
+        <text id="ระบบการดูแลแบบประคับประคอง_ในช่วงท้ายของชีวิต_Palliative_Care_" data-name="ระบบการดูแลแบบประคับประคอง ในช่วงท้ายของชีวิต (Palliative Care)" class="cls-8" transform="translate(1166 6828)"><tspan x="0" y="0">ระบบการดูแลแบบประคับประคอง</tspan><tspan x="0" y="41">ในช่วงท้ายของชีวิต</tspan><tspan x="0" y="82">(</tspan><tspan y="82">Palliative Care)</tspan></text>
+        <g id="Component_25_1" data-name="Component 25 – 1" transform="translate(1041 6811)">
+            <g id="Ellipse_149" data-name="Ellipse 149" class="cls-6">
+                <circle class="cls-13" cx="50" cy="50" r="50"/>
+                <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+            </g>
+            <path id="Path_129" data-name="Path 129" d="M1634.417 1192.3c-4.912-4.366-12.785-5.081-20.791-2.6-8.006-2.48-15.878-1.766-20.791 2.6s-5.716 11.364-2.926 18.481c-2.791 7.116-1.986 14.114 2.926 18.481s12.785 5.081 20.791 2.6c8.006 2.481 15.878 1.766 20.791-2.6s5.716-11.364 2.926-18.481c2.79-7.116 1.986-14.114-2.926-18.481z" transform="translate(-1563.313 -1160.281)" style="fill:#3f36b7"/>
+        </g>
+        <path id="Path_56" data-name="Path 56" class="cls-10" d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.594 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.594 7.919 7.919 0 0 0 6.045 14.593 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.593z" transform="translate(79.223 5747.493)"/>
+        <path id="Path_54" data-name="Path 54" class="cls-10" d="M896.255 58.626H848.1a6.448 6.448 0 0 1-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 0 1-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 1 1 0-12.9h48.155a6.448 6.448 0 0 1 2.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 0 1 2.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 1 1 0 12.9z" transform="translate(-232.65 6620.374)"/>
+        <text id="การจัดการโครงสร้างเครือข่าย_ระบบบริการสุขภาพระดับจังหวัด_Local_Service_Delivery_Network_" data-name="การจัดการโครงสร้างเครือข่าย ระบบบริการสุขภาพระดับจังหวัด (Local Service Delivery Network)" class="cls-8" transform="translate(614 6344.5)"><tspan x="-329.275" y="0">การจัดการโครงสร้างเครือข่าย</tspan><tspan x="-353.625" y="41">ระบบบริการสุขภาพระดับจังหวัด</tspan><tspan x="-362.7" y="82">(</tspan><tspan y="82">Local Service Delivery Network)</tspan></text>
+        <g id="Component_24_1" data-name="Component 24 – 1" transform="translate(639 6328)">
+            <g id="Ellipse_145" data-name="Ellipse 145" class="cls-7">
+                <circle class="cls-13" cx="50" cy="50" r="50"/>
+                <circle class="cls-14" cx="50" cy="50" r="48.5"/>
+            </g>
+            <path id="Path_55" data-name="Path 55" d="M203.467 616.979h-7.377a.827.827 0 0 1-.716-1.241l3.688-6.388a6.948 6.948 0 0 0-2.543-9.491 6.948 6.948 0 0 0-9.491 2.543l-3.688 6.388a.827.827 0 0 1-1.433 0l-3.689-6.388a6.948 6.948 0 0 0-9.491-2.543 6.948 6.948 0 0 0-2.543 9.491l3.689 6.388a.827.827 0 0 1-.716 1.241h-7.377a6.948 6.948 0 0 0-6.948 6.948 6.948 6.948 0 0 0 6.948 6.948h7.377a.827.827 0 0 1 .716 1.241l-3.689 6.389a6.948 6.948 0 0 0 2.543 9.491 6.948 6.948 0 0 0 9.491-2.543l3.689-6.389a.827.827 0 0 1 1.433 0l3.688 6.389a6.948 6.948 0 0 0 9.491 2.543 6.948 6.948 0 0 0 2.543-9.491l-3.688-6.389a.827.827 0 0 1 .716-1.241h7.377a6.948 6.948 0 0 0 6.948-6.948 6.948 6.948 0 0 0-6.948-6.948z" transform="translate(-132.832 -573.927)" style="fill:#daa13d"/>
+        </g>
     </g>
 </svg>
