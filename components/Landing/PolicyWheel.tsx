@@ -15,7 +15,7 @@ function PolicyWheel(props: Props): JSX.Element {
         </style>
       </defs>
       <g id="Group_626" data-name="Group 626" transform="translate(-590 -6194)">
-        <g id="Group_621" data-name="Group 621">
+        <g id="Group_621" data-name="Group 621" className="animate-pulse">
           <g id="Ellipse_53" data-name="Ellipse 53" className="cls-1" transform="translate(764.463 6381.462)">
             <circle className="cls-9" cx={187.538} cy={187.538} r={187.538} />
             <circle className="cls-10" cx={187.538} cy={187.538} r={186.538} />

@@ -15,6 +15,10 @@ class MyDocument extends Document {
           <link rel="alternate icon" type="image/png" href="/image/favicon/favicon.png" />
           <link rel="mask-icon" href="/image/favicon/favicon.svg" />
           <link rel="apple-touch-icon" href="/image/favicon/favicon.png" />
+          <link rel="preload" href="/fonts/IBMPlexSansThai-SemiBold.ttf" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/IBMPlexSansThaiLooped-Bold.ttf" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/IBMPlexSansThaiLooped-SemiBold.ttf" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/IBMPlexSansThaiLooped-Regular.ttf" as="font" crossOrigin="" />
           {/* Preload api */}
           <link rel="preload" href="https://www.google.com/recaptcha/api.js" as="script" />
         </Head>

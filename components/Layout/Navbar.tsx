@@ -41,7 +41,7 @@ const Navbar = (): JSX.Element => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(item.current ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm sm:text-base')}
+                        className={classNames(item.current ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm')}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}

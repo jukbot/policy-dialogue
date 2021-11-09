@@ -13,10 +13,9 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
-      landing: '120% 100%',
-      survey: '100% 100%',
-      step: '90% 100%',
-      footer: '80% 180%',
+      'landing-size': '160% 120%',
+      'width-90': '90% 100%',
+      'footer-size': '80% 180%',
     },
     extend: {
       colors: {
