@@ -168,7 +168,7 @@ const Home: NextPage = () => {
           <div className="absolute bottom-0 -ml-4 triangle-up left-1/2"></div>
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
-          <div className="absolute top-0 right-0 translate-y-[50%] w-[344px] h-screen bg-[#232151] bg-opacity-75 mix-blend-screen from-[#191919] to-[#232151] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
+          <div className="absolute top-0 right-0 translate-y-[50%] w-[344px] h-screen mix-blend-screen from-[#242054] to-[#191919] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
           <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern"></div>
           <div className="absolute top-0 w-full h-full bg-no-repeat -bg-top-16 bg-step-pattern bg-width-90"></div>
           <div className="absolute w-full bg-no-repeat h-[40rem] -top-16 -bg-top-6 bg-contain bg-process-step">
