@@ -33,6 +33,13 @@ module.exports = {
         'process-step': "url('/image/background/landing-survey-step.svg')",
         'landing-footer': "url('/image/background/landing-footer.svg')",
         'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
+        'clean-water': "url('/image/policy/clean-water.jpg')",
+        education: "url('/image/policy/education.jpg')",
+        environment: "url('/image/policy/environment.jpg')",
+        healthcare: "url('/image/policy/healthcare.jpg')",
+        'public-park': "url('/image/policy/public-park.jpg')",
+        'public-transport': "url('/image/policy/public-transport.jpg')",
+        welfare: "url('/image/policy/welfare.jpg')",
       },
       backgroundPosition: {
         '-top-6': 'center top -6rem',
@@ -48,13 +55,15 @@ module.exports = {
   variants: {
     extend: {
       backdropBrightness: ['hover', 'focus', 'group-hover'],
+      translate: ['hover', 'focus', 'group-hover'],
+      backgroundImage: ['hover', 'focus', 'group-hover'],
     },
   },
   plugins: [
-    // require('@tailwindcss/aspect-ratio'),
-    // require('@tailwindcss/forms'),
-    // require('@tailwindcss/typography'),
-    // require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
     require('tailwindcss-debug-screens'),
   ],
 }

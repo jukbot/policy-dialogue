@@ -161,6 +161,7 @@
     border-right: 1rem solid transparent;
     border-bottom: 2rem solid white;
   }
+
   .bubble-lt:after {
     content: '';
     position: absolute;
