@@ -69,16 +69,16 @@ const Home: NextPage = () => {
               <Image src={DesignPolicy} priority height="640" width="1024" className="w-full" alt="about-policy-dialogue" />
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 py-12 sm:grid-cols-2">
             <div className="grid grid-cols-2 col-span-1 gap-12 mx-auto">
-              <PolicyCircle text="น้ำประปาดื่มได้" bgColor="bg-[#6badcb]" borderColor="border-[#6badcb]" />
-              <PolicyCircle text="การศึกษาขั้นพื้นฐาน" bgColor="bg-[#cc79a7]" borderColor="border-[#cc79a7]" />
-              <PolicyCircle text="รัฐสวัสดิการถ้วนหน้า" bgColor="bg-[#daa13d]" borderColor="border-[#daa13d]" />
-              <PolicyCircle text="อากาศบริสุทธิ์ปลอดฝุ่นควัน" bgColor="bg-[#6badcb]" borderColor="border-[#6badcb]" />
-              <PolicyCircle text="สวัสดิการค่ารักษาพยาบาล" bgColor="bg-[#cc79a7]" borderColor="border-[#cc79a7]" />
-              <PolicyCircle text="" bgColor="bg-black" borderColor="border-transparent" />
+              <PolicyCircle text="น้ำประปาดื่มได้" position="-translate-x-6 -translate-y-6" bgColor="bg-[#6badcb]" borderColor="border-[#6badcb]" />
+              <PolicyCircle text="การศึกษาขั้นพื้นฐาน" position="-translate-x-6 translate-y-6" bgColor="bg-[#cc79a7]" borderColor="border-[#cc79a7]" />
+              <PolicyCircle text="รัฐสวัสดิการถ้วนหน้า" position="-translate-x-6 translate-y-6" bgColor="bg-[#daa13d]" borderColor="border-[#daa13d]" />
+              <PolicyCircle text="อากาศบริสุทธิ์ปลอดฝุ่นควัน" position="translate-x-6 translate-y-6" bgColor="bg-[#6badcb]" borderColor="border-[#6badcb]" />
+              <PolicyCircle text="สวัสดิการค่ารักษาพยาบาล" position="translate-x-6 translate-y-6" bgColor="bg-[#cc79a7]" borderColor="border-[#cc79a7]" />
+              <PolicyCircle text="" position="" bgColor="bg-black" borderColor="border-transparent" />
             </div>
-            <div className="flex flex-col col-span-1 px-6 py-16 space-y-4 sm:px-24 text-body">
+            <div className="flex flex-col col-span-1 px-6 py-16 space-y-4 sm:px-12 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">เพราะนโยบาย</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">เกี่ยวข้องกับทุกมิติใน</h2>
@@ -87,10 +87,16 @@ const Home: NextPage = () => {
               <p className="sm:text-lg font-body">
                 เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
               </p>
+              <div className="bottom-0 hidden grid-cols-2 gap-12 col-span-full sm:grid">
+                <PolicyCircle text="รัฐสวัสดิการถ้วนหน้า" position="-translate-x-6 translate-y-6" bgColor="bg-[#daa13d]" borderColor="border-[#daa13d]" />
+                <PolicyCircle
+                  text="สวนสาธารณะพื้นที่ออกกำลังกาย"
+                  position="translate-x-6 -translate-y-6"
+                  bgColor="bg-[#36723b]"
+                  borderColor="border-[#36723b]"
+                />
+              </div>
             </div>
-          </div>
-          <div className="hidden grid-cols-4 gap-6 mt-6 sm:grid bg-purple-50">
-            <div className="w-full h-64 text-center">footer circle element</div>
           </div>
         </section>
 
@@ -128,8 +134,8 @@ const Home: NextPage = () => {
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
           <div className="absolute top-0 right-0 translate-y-[50%] w-[344px] h-1/2 bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
-          <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-width-90-blur-pattern"></div>
-          <div className="absolute top-0 w-full h-full bg-fixed bg-no-repeat bg-top-16 bg-width-90-pattern bg-width-90"></div>
+          <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern"></div>
+          <div className="absolute top-0 w-full h-full bg-fixed bg-no-repeat bg-top-16 bg-step-pattern bg-width-90"></div>
           <div className="absolute w-full bg-no-repeat h-[40rem] -top-16 -bg-top-6 bg-contain bg-process-step">
             <div className="flex justify-center">
               <div className="flex flex-col items-center justify-center pt-10 space-y-6 font-bold text-center bg-white rounded-full w-80 h-80 text-body">
