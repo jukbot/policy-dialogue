@@ -6,6 +6,7 @@ interface Props {
   bgHover?: string
   text: string
 }
+
 const PolicyCircle = ({ className, position, bgColor, bgHover, borderColor, text }: Props): JSX.Element => {
   return (
     <div className="relative group">

@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         <section
           className={`${
             intersection && intersection.intersectionRatio < 1 ? '' : 'blur-md backdrop-blur-md saturate-50 backdrop-saturate-50'
-          } grid h-[90vh] overflow-hidden bg-fixed bg-center bg-landing-size filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
+          } z-10 grid h-[90vh] overflow-hidden bg-fixed bg-center bg-landing-size filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
         >
           <div className="pt-24 space-y-8 text-center text-white">
             <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="relative h-full bg-white">
+        <section className="relative z-10 h-full bg-white">
           <ScrollToContent />
           <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 sm:grid-cols-2" id="learnmore">
             <div className="flex flex-col col-span-1 px-6 pt-16 space-y-4 sm:px-24 text-body">
@@ -135,8 +135,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="relative h-full bg-secondary">
+        <section className="relative z-10 h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
             <h2 className="text-4xl text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
             <div className="grid grid-cols-1 text-center gap-y-4 md:gap-x-8 md:grid-cols-5 font-body">
@@ -158,7 +157,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#242054]">
+        <section className="z-10 relative h-full bg-[#242054]">
           <div className="flex flex-col items-center justify-center px-6 py-20 text-white">
             <QuestionMark className="w-48 h-48" />
             <p className="text-lg text-center max-w-prose font-body">
@@ -169,7 +168,10 @@ const Home: NextPage = () => {
           <div className="absolute bottom-0 -ml-4 triangle-up left-1/2"></div>
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
-          <div className="absolute z-10 w-full bg-no-repeat h-[40rem] -top-16 -bg-top-6 bg-contain bg-process-step">
+          <div className="absolute top-0 right-0 translate-y-[50%] w-[344px] h-screen bg-[#232151] bg-opacity-75 mix-blend-screen from-[#191919] to-[#232151] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
+          <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern"></div>
+          <div className="absolute top-0 w-full h-full bg-no-repeat -bg-top-16 bg-step-pattern bg-width-90"></div>
+          <div className="absolute w-full bg-no-repeat h-[40rem] -top-16 -bg-top-6 bg-contain bg-process-step">
             <div className="flex justify-center">
               <div className="flex flex-col items-center justify-center pt-10 space-y-6 font-bold text-center bg-white rounded-full w-80 h-80 text-body">
                 <h3 className="text-2xl">
@@ -177,12 +179,12 @@ const Home: NextPage = () => {
                   <br /> ผ่านกรอบการทำงาน
                   <br />
                 </h3>
-
                 <span className="text-4xl">5 ขั้น</span>
               </div>
             </div>
           </div>
-          <div className="relative w-full flex justify-center mt-[32rem]">
+
+          <div className="relative flex justify-center mt-[32rem]">
             <Link href="/process">
               <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
             </Link>

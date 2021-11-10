@@ -43,7 +43,7 @@ module.exports = {
       },
       backgroundPosition: {
         '-top-6': 'center top -6rem',
-        'top-16': 'center top 16rem',
+        '-top-16': 'center top -16rem',
         'top-right': 'top right 1rem',
       },
       borderRadius: {
