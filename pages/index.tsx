@@ -11,6 +11,7 @@ import CountUp from 'react-countup'
 import RiseImpactLogo from '/public/image/logo/rise-impact.svg'
 import DesignPolicy from '/public/image/landing/designPolicy.webp'
 import { useInView } from 'react-intersection-observer'
+import PolicyCircle from '../components/Landing/PolicyCircle'
 
 const intersectopnOptions = {
   root: null,
@@ -69,7 +70,14 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="col-span-1 bg-pink-50">circle element</div>
+            <div className="grid grid-cols-2 col-span-1 gap-12 mx-auto">
+              <PolicyCircle text="น้ำประปาดื่มได้" bgColor="bg-[#6badcb]" borderColor="border-[#6badcb]" />
+              <PolicyCircle text="การศึกษาขั้นพื้นฐาน" bgColor="bg-[#cc79a7]" borderColor="border-[#cc79a7]" />
+              <PolicyCircle text="รัฐสวัสดิการถ้วนหน้า" bgColor="bg-[#daa13d]" borderColor="border-[#daa13d]" />
+              <PolicyCircle text="อากาศบริสุทธิ์ปลอดฝุ่นควัน" bgColor="bg-[#6badcb]" borderColor="border-[#6badcb]" />
+              <PolicyCircle text="สวัสดิการค่ารักษาพยาบาล" bgColor="bg-[#cc79a7]" borderColor="border-[#cc79a7]" />
+              <PolicyCircle text="" bgColor="bg-black" borderColor="border-transparent" />
+            </div>
             <div className="flex flex-col col-span-1 px-6 py-16 space-y-4 sm:px-24 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">เพราะนโยบาย</h2>
@@ -89,20 +97,20 @@ const Home: NextPage = () => {
         <section className="relative h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
             <h2 className="text-4xl text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
-            <div className="grid grid-cols-1 text-center gap-x-8 md:grid-cols-5 font-body">
-              <blockquote className="relative bg-[#36723b] p-6 w-full h-64 flex items-center justify-center bubble-lt">
+            <div className="grid grid-cols-1 text-center gap-y-4 md:gap-x-8 md:grid-cols-5 font-body">
+              <blockquote className="relative bg-[#36723b] p-6 w-full h-32 md:h-64 flex items-center justify-center bubble-lt">
                 <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
               </blockquote>
-              <blockquote className="relative bg-[#cc79a7] p-6 w-full h-64 flex items-center justify-center top-12 bubble-rt">
+              <blockquote className="relative bg-[#cc79a7] p-6 w-full h-32 md:h-64 flex items-center justify-center top-12 bubble-rt">
                 <p className="text-xl">ถ้าทำงานไม่ไหว จะมีกินมีใช้ หรือเปล่า?</p>
               </blockquote>
-              <blockquote className="relative bg-[#36723b] p-6 w-full h-64 flex items-center justify-center bubble-lt">
+              <blockquote className="relative bg-[#36723b] p-6 w-full h-32 md:h-64 flex items-center justify-center bubble-lt">
                 <p className="text-xl">รัฐจะดูแลเราอย่างไร ตอนเราอายุ 70 ปี?</p>
               </blockquote>
-              <blockquote className="relative bg-[#6badcb] p-6 w-full h-64 flex items-center top-8 justify-center bubble-rb border-t-blue">
+              <blockquote className="relative bg-[#6badcb] p-6 w-full h-32 md:h-64 flex items-center top-8 justify-center bubble-rb border-t-blue">
                 <p className="text-xl">ถ้าต้องอยู่ บ้านพักคนชรา จะจ่ายไหวไหม?</p>
               </blockquote>
-              <blockquote className="relative bg-[#daa13d] p-6 w-full h-64 flex items-center justify-center bubble-rb border-t-yellow">
+              <blockquote className="relative bg-[#daa13d] p-6 w-full h-32 md:h-64 flex items-center justify-center bubble-rb border-t-yellow">
                 <p className="text-xl">หากเจ็บป่วยขึ้นมาใครจะพา ไปส่ง โรงพยาบาล?</p>
               </blockquote>
             </div>
@@ -255,8 +263,6 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-
-      <footer>Footer here</footer>
     </div>
   )
 }
