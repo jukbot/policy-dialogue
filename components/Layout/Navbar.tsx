@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '/public/image/logo/logo.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'นโยบายเพื่อสังคมสูงวัย', href: '/', current: true },
@@ -33,7 +34,11 @@ const Navbar = (): JSX.Element => {
               </div>
               <div className="flex items-center justify-between flex-1 w-full justify-items-stretch">
                 <div className="flex items-center flex-shrink-0">
-                  <Image className="hidden w-auto h-full lg:block" width="120" height="60" src={Logo} alt="logo" />
+                  <Link href="/">
+                    <a>
+                      <Image className="hidden w-auto h-full lg:block" width="120" height="60" src={Logo} alt="logo" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="hidden w-full sm:block">
                   <div className="flex justify-center space-x-6">
