@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="relative">
-      <div className="bg-fixed fixed w-1/2 h-auto overflow-hidden sm:w-[52%] sm:h-[120%] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[50%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
+      <div className="bg-fixed fixed w-1/2 h-screen overflow-hidden sm:w-[52%] sm:h-[120%] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[100%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
       <main className="relative">
         <section
           className={`${
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 
         <section className="relative z-10 h-full bg-white">
           <ScrollToContent />
-          <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 sm:grid-cols-2" id="learnmore">
+          <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 md:grid-cols-2" id="learnmore">
             <div className="flex flex-col col-span-1 px-6 pt-16 space-y-4 sm:px-24 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">นโยบายที่ดี สังคมต้อง</h2>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
               <Image src={DesignPolicy} priority height="640" width="1024" className="w-full" alt="about-policy-dialogue" />
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-12 pt-12 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 pt-12 md:grid-cols-2">
             <div className="grid grid-cols-2 col-span-1 px-6 mx-auto sm:px-12 gap-y-12 gap-x-16">
               <PolicyCircle
                 text="น้ำประปาดื่มได้"
@@ -160,31 +160,40 @@ const Home: NextPage = () => {
               แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
             </p>
           </div>
-          <div className="absolute bottom-0 -ml-4 triangle-up left-1/2"></div>
+          <div className="absolute bottom-0 hidden -ml-4 lg:block triangle-up left-1/2"></div>
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
-          <div className="absolute top-0 right-0 translate-y-[50%] w-[344px] h-screen mix-blend-screen from-[#242054] to-[#191919] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
-          <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern"></div>
-          <div className="absolute top-0 w-full h-full bg-no-repeat -bg-top-16 bg-step-pattern bg-width-90"></div>
-          <div className="absolute w-full bg-no-repeat h-[40rem] -top-16 -bg-top-6 bg-contain bg-process-step">
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center pt-10 space-y-6 font-bold text-center bg-white rounded-full w-80 h-80 text-body">
-                <h3 className="text-2xl">
+          <div className="absolute top-0 right-0 translate-y-[50%] w-2/3 lg:w-[344px] h-screen mix-blend-screen from-[#242054] to-[#191919] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
+          <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern-mobile lg:bg-step-blur-pattern"></div>
+          <div className="absolute top-0 w-full h-full bg-bottom bg-no-repeat lg:-bg-top-16 bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
+          <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-16 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% lg:bg-contain bg-process-step-mobile lg:bg-process-step">
+            <div className="justify-start hidden lg:justify-center lg:flex">
+              <div className="flex flex-col items-start justify-center pl-20 mt-48 space-y-6 font-bold bg-white rounded-full lg:mt-0 lg:text-center lg:pt-10 w-60 h-60 lg:pl-0 lg:items-center lg:w-80 lg:h-80 text-body">
+                <h3 className="hidden text-2xl lg:block">
                   ตอบคำถามดังกล่าว
                   <br /> ผ่านกรอบการทำงาน
                   <br />
                 </h3>
-                <span className="text-4xl">5 ขั้น</span>
+                <h3 className="block text-2xl lg:hidden">
+                  หาคำตอบ
+                  <br /> ผ่านกรอบ
+                  <br />
+                  การทำงาน*
+                </h3>
+                <span className="text-3xl lg:text-4xl">5 ขั้น</span>
               </div>
             </div>
           </div>
 
-          <div className="relative flex justify-center mt-[32rem]">
+          <div className="relative hidden lg:flex justify-center lg:mt-[32rem]">
             <Link href="/process">
               <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
             </Link>
           </div>
-          <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-12 bg-white sm:p-12 sm:mx-24 rounded-xl">
+          <div className="relative flex lg:hidden justify-center mt-[50rem] sm:mt-[60rem]">
+            <p className="text-sm text-white font-body">*Adapted from Systemicdesigntoolkit.org</p>
+          </div>
+          <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-12 bg-white sm:p-12 lg:mx-24 rounded-xl">
             <div className="flex flex-col py-8 space-y-4 jutify-center">
               <h2 className="text-4xl text-center uppercase text-body">TGRI X RISE IMPACT</h2>
               <p className="text-center sm:text-lg text-body font-body max-w-prose">
@@ -201,11 +210,15 @@ const Home: NextPage = () => {
               </div>
               <PolicyWheel className="hidden w-full h-full fill-current text-primary lg:block" />
               <PolicyWheelMobile className="block w-full h-full fill-current text-primary lg:hidden" />
+              <div className="flex flex-col justify-between block w-full h-64 p-6 mt-8 space-y-4 rounded-lg lg:hidden bg-[#FFECEA]">
+                <p className="text-sm text-center sm:text-lg font-body text-body">การสูงวันในถื่นที่อยู่อาศัยเดิมอย่างมีสุขภาวะ (Aging in Place)</p>
+                <button className="w-full btn">อ่านต่อ</button>
+              </div>
             </div>
           </div>
         </section>
         <section className="relative h-full py-24 bg-white" ref={ref}>
-          <div className="grid grid-cols-1 gap-6 px-6 sm:px-24 sm:max-w-3/4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 px-6 sm:px-24 sm:max-w-3/4 md:grid-cols-2">
             <div className="flex flex-col col-span-1 space-y-8 text-body">
               <div className="space-y-4">
                 <h2 className="text-4xl font-semibold sm:text-5xl">สร้างการมีส่วนร่วม</h2>
@@ -218,7 +231,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-1 col-span-1 gap-8 sm:grid-cols-2">
+            <div className="grid grid-cols-1 col-span-1 gap-8 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-4 text-body">
                 <p className="font-body">
                   จัดวงหารือแบบออฟไลน์

@@ -25,9 +25,9 @@ const Navbar = (): JSX.Element => {
         <>
           <div className="absolute z-10 w-full p-6 mx-auto lg:px-24">
             <div className="relative flex items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-4 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-4 text-white rounded-md hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? <XIcon className="block w-6 h-6" aria-hidden="true" /> : <MenuIcon className="block w-6 h-6" aria-hidden="true" />}
                 </Disclosure.Button>
@@ -40,7 +40,7 @@ const Navbar = (): JSX.Element => {
                     </a>
                   </Link>
                 </div>
-                <div className="hidden w-full sm:block">
+                <div className="hidden w-full md:block">
                   <div className="flex justify-center space-x-6">
                     {navigation.map((item) => (
                       <a
@@ -58,7 +58,7 @@ const Navbar = (): JSX.Element => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
