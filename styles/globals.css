@@ -7,6 +7,7 @@
     --color-primary: #f04e30;
     --color-secondary: #2b2b2b;
     --color-body-text: #191919;
+    --color-accent: #3f36b7;
   }
 
   * {
@@ -90,9 +91,12 @@
   option::selection,
   br::selection,
   img::selection,
+  text::selection,
+  tspan::selection,
   input::selection {
     background-color: var(--color-primary);
     color: #fff;
+    fill: #fff;
   }
   /* 
   input[type="text"],
@@ -149,7 +153,13 @@
 
 @layer components {
   .btn {
-    @apply px-8 py-2 text-white text-center rounded-full bg-primary hover:bg-[#3f36b7] font-body;
+    @apply px-8 py-3 text-sm text-center text-white rounded-full sm:text-base bg-primary hover:bg-accent font-body;
+  }
+  .speech-dialog {
+    @apply relative p-6 w-full h-32 max-w-[250px] md:h-64 flex items-center justify-center;
+  }
+  .project-icon {
+    @apply w-8 h-8 transition-all ease-in transform transform-box group-hover:scale-110 group-hover:rotate-90;
   }
 }
 
@@ -170,7 +180,6 @@
     width: 0;
     height: 0;
     border: 1.5rem solid transparent;
-    border-top-color: #36723b;
     border-bottom: 0;
     border-left: 0;
     margin-left: -0.75rem;
@@ -185,7 +194,6 @@
     width: 0;
     height: 0;
     border: 1.5em solid transparent;
-    border-bottom-color: #cc79a7;
     border-top: 0;
     border-right: 0;
     margin-left: -0.75em;
@@ -200,17 +208,26 @@
     width: 0;
     height: 0;
     border: 1.5em solid transparent;
-    border-top-color: #6badcb;
     border-bottom: 0;
     border-right: 0;
     margin-left: -0.75em;
     margin-bottom: -1.5em;
     transform: skewX(15deg);
   }
+  .boder-b-pink:after {
+    border-bottom-color: #cc79a7;
+  }
+  .border-t-green:after {
+    border-top-color: #36723b;
+  }
   .border-t-blue:after {
     border-top-color: #6badcb;
   }
   .border-t-yellow:after {
     border-top-color: #daa13d;
+  }
+  .prefix__cls-3:hover {
+    fill: var(--color-accent);
+    transition: all 0.2s ease-in;
   }
 }

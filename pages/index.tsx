@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useIntersection } from 'react-use'
@@ -8,10 +7,11 @@ import ScrollToContent from '../components/Landing/ScrollToContent'
 import QuestionMark from '../components/Icon/QuestionMark'
 import PolicyWheel from '../components/Landing/PolicyWheel'
 import CountUp from 'react-countup'
-import RiseImpactLogo from '/public/image/logo/rise-impact.svg'
 import DesignPolicy from '/public/image/landing/designPolicy.webp'
 import { useInView } from 'react-intersection-observer'
 import PolicyCircle from '../components/Landing/PolicyCircle'
+import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import PolicyWheelMobile from '@/components/Landing/PolicyWheelMobile'
 
 const intersectopnOptions = {
   root: null,
@@ -29,12 +29,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="relative">
-      <Head>
-        <title>Policy Dialogue | กระบวนการหารือเชิงนโยบาย</title>
-        <meta name="description" content="นโยบายที่ดี สังคมต้องร่วมกันออกแบบ" />
-      </Head>
       <div className="bg-fixed fixed w-1/2 h-auto overflow-hidden sm:w-[52%] sm:h-[120%] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[50%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
-
       <main className="relative">
         <section
           className={`${
@@ -69,7 +64,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-12 pt-12 sm:grid-cols-2">
-            <div className="grid grid-cols-2 col-span-1 gap-12 mx-auto">
+            <div className="grid grid-cols-2 col-span-1 px-6 mx-auto sm:px-12 gap-y-12 gap-x-16">
               <PolicyCircle
                 text="น้ำประปาดื่มได้"
                 position="-translate-x-6 -translate-y-6"
@@ -105,18 +100,18 @@ const Home: NextPage = () => {
                 bgColor="bg-[#cc79a7]"
                 borderColor="border-[#cc79a7]"
               />
-              <PolicyCircle text="" position="" className="bottom-4" bgColor="bg-secondary" borderColor="border-transparent" />
+              <PolicyCircle text="" position="hidden" bgColor="bg-secondary" borderColor="border-transparent" className="absolute -bottom-8" />
             </div>
             <div className="flex flex-col justify-between col-span-1 px-6 py-16 space-y-4 sm:px-12 text-body">
-              <div className="space-y-2">
+              <div className="space-y-4">
                 <h2 className="text-4xl font-semibold sm:text-5xl">เพราะนโยบาย</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">เกี่ยวข้องกับทุกมิติใน</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">ชีวิตของผู้คน</h2>
+                <p className="pt-4 sm:text-lg font-body">
+                  เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
+                </p>
               </div>
-              <p className="sm:text-lg font-body">
-                เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
-              </p>
-              <div className="bottom-0 hidden grid-cols-2 gap-12 mx-auto col-span-full sm:grid">
+              <div className="bottom-0 hidden grid-cols-2 mx-auto gap-y-12 gap-x-16 col-span-full sm:grid">
                 <PolicyCircle
                   text="ขนส่งมวลชนเชื่อมต่อ"
                   position="-translate-x-6 translate-y-6"
@@ -138,20 +133,20 @@ const Home: NextPage = () => {
         <section className="relative z-10 h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
             <h2 className="text-4xl text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
-            <div className="grid grid-cols-1 text-center gap-y-4 md:gap-x-8 md:grid-cols-5 font-body">
-              <blockquote className="relative bg-[#36723b] p-6 w-full h-32 md:h-64 flex items-center justify-center bubble-lt">
+            <div className="flex flex-col justify-center space-y-8 text-center md:space-x-8 md:flex-row font-body">
+              <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                 <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
               </blockquote>
-              <blockquote className="relative bg-[#cc79a7] p-6 w-full h-32 md:h-64 flex items-center justify-center top-12 bubble-rt">
+              <blockquote className="bg-[#cc79a7] speech-dialog bubble-rt boder-b-pink md:top-12 justify-end flex ml-auto">
                 <p className="text-xl">ถ้าทำงานไม่ไหว จะมีกินมีใช้ หรือเปล่า?</p>
               </blockquote>
-              <blockquote className="relative bg-[#36723b] p-6 w-full h-32 md:h-64 flex items-center justify-center bubble-lt">
+              <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                 <p className="text-xl">รัฐจะดูแลเราอย่างไร ตอนเราอายุ 70 ปี?</p>
               </blockquote>
-              <blockquote className="relative bg-[#6badcb] p-6 w-full h-32 md:h-64 flex items-center top-8 justify-center bubble-rb border-t-blue">
+              <blockquote className="bg-[#6badcb] speech-dialog bubble-rb border-t-blue md:top-8 justify-end flex ml-auto">
                 <p className="text-xl">ถ้าต้องอยู่ บ้านพักคนชรา จะจ่ายไหวไหม?</p>
               </blockquote>
-              <blockquote className="relative bg-[#daa13d] p-6 w-full h-32 md:h-64 flex items-center justify-center bubble-rb border-t-yellow">
+              <blockquote className="bg-[#daa13d] speech-dialog bubble-rb border-t-yellow">
                 <p className="text-xl">หากเจ็บป่วยขึ้นมาใครจะพา ไปส่ง โรงพยาบาล?</p>
               </blockquote>
             </div>
@@ -190,8 +185,8 @@ const Home: NextPage = () => {
             </Link>
           </div>
           <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-12 bg-white sm:p-12 sm:mx-24 rounded-xl">
-            <div className="flex flex-col py-12 space-y-4 jutify-center">
-              <h2 className="text-4xl text-center text-body">TGRI x RISE IMPACT</h2>
+            <div className="flex flex-col py-8 space-y-4 jutify-center">
+              <h2 className="text-4xl text-center uppercase text-body">TGRI X RISE IMPACT</h2>
               <p className="text-center sm:text-lg text-body font-body max-w-prose">
                 มูลนิธิสถาบันวิจัยและพัฒนาผู้สูงอายุไทย (มส.ผส.) และ ไรซ์ อิมแพค ได้ร่วมกันออกแบบกระบวนการ พัฒนานโยบายเพื่อรองรับสังคมผู้สูงวัย โดยครอบคลุม 7
                 ประเด็นหลัก
@@ -199,12 +194,13 @@ const Home: NextPage = () => {
             </div>
 
             <div className="relative">
-              <div className="absolute mx-auto mt-56 -ml-28 inset-x-1/2 ">
-                <div className="flex items-center justify-center w-56 h-56 p-6 rounded-full bg-[#FEEDEA]">
+              <div className="absolute mx-auto mt-60 lg:mt-72 -ml-28 inset-x-1/2 ">
+                <div className="items-center justify-center hidden lg:flex w-56 h-56 p-6 rounded-full bg-[#FEEDEA]">
                   <h3 className="text-2xl text-center text-body">นโยบายเพื่อสังคมสูงวัย</h3>
                 </div>
               </div>
-              <PolicyWheel className="fill-current text-primary" />
+              <PolicyWheel className="hidden w-full h-full fill-current text-primary lg:block" />
+              <PolicyWheelMobile className="block w-full h-full fill-current text-primary lg:hidden" />
             </div>
           </div>
         </section>
@@ -269,13 +265,13 @@ const Home: NextPage = () => {
             </div>
             <div className="flex justify-center mt-12 sm:hidden">
               <Link href="/value">
-                <a className="w-3/4 btn">คุณค่ากระบวนการ</a>
+                <a className="w-full lg:w-3/4 btn">คุณค่ากระบวนการ</a>
               </Link>
             </div>
           </div>
         </section>
-        <section className="relative h-full py-24 bg-top bg-no-repeat bg-cover bg-secondary bg-landing-footer">
-          <div className="flex flex-col items-center justify-center space-y-6">
+        <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
+          <div className="flex flex-col items-center justify-center space-y-8">
             <h3 className="text-4xl leading-snug text-center text-white sm:text-5xl">
               โพลิซี ไดอะล็อก
               <br /> ทำงานอย่างไร ?
@@ -284,23 +280,12 @@ const Home: NextPage = () => {
               เราได้จัดทำคู่มือการจัดกระบวนการจากประสบการณ์ของทีมงาน ผู้ที่สนใจสามารถนำไปปรับใช้สำหรับออกแบบและพัฒนานโยบาย ทุกระดับ ทุกประเด็นในสังคม
               เพื่อร่วมกันสร้างการเปลี่ยนแปลงเชิงระบบ
             </p>
-            <div className="flex justify-center pt-6">
-              <Link href="/">
-                <a className="w-3/4 btn sm:w-max">คู่มือการจัดกระบวนการ</a>
+            <div className="flex justify-center pt-8 pb-12">
+              <Link href="/guideline">
+                <a className="w-full btn">คู่มือการจัดกระบวนการ</a>
               </Link>
             </div>
-            <div className="flex justify-center w-3/4 pt-6">
-              <div className="flex items-center justify-between w-full px-24 py-6 bg-local bg-white bg-no-repeat rounded-xl bg-footer-size bg-top-right bg-rise-impact-footer">
-                <div>
-                  <Image src={RiseImpactLogo} alt="rise-impact-logo" className="w-full h-full" width="240" height="120" />
-                </div>
-                <div>
-                  <Link href="/about">
-                    <a className="w-3/4 btn sm:w-max">เกี่ยวกับเรา</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <AboutRiseImpact />
           </div>
         </section>
       </main>

@@ -1,7 +1,11 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   mode: 'jit',
   purge: {
-    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    enabled: process.env.NODE_ENV === 'production',
+    preserveHtmlElements: false,
+    content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   },
   darkMode: false,
   theme: {
@@ -22,8 +26,12 @@ module.exports = {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         body: 'var(--color-body-text)',
+        accent: 'var(--color-accent)',
         danger: 'var(--color-danger)',
         disabled: 'var(--color-disabled)',
+      },
+      transformOrigin: {
+        middle: '50% 50%',
       },
       backgroundImage: {
         'hero-pattern': "url('/image/background/landing-hero.svg')",
@@ -56,7 +64,9 @@ module.exports = {
     extend: {
       backdropBrightness: ['hover', 'focus', 'group-hover'],
       translate: ['hover', 'focus', 'group-hover'],
+      transform: ['hover', 'focus', 'group-hover'],
       backgroundImage: ['hover', 'focus', 'group-hover'],
+      rotate: ['active', 'hover', 'group-hover'],
     },
   },
   plugins: [
@@ -65,5 +75,14 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
     require('tailwindcss-debug-screens'),
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        '.transform-box': {
+          transformBox: 'fill-box',
+          transformOrigin: '50% 50%',
+        },
+      }
+      addUtilities(newUtilities)
+    }),
   ],
 }

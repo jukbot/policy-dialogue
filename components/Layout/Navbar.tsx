@@ -23,7 +23,7 @@ const Navbar = (): JSX.Element => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="absolute z-10 w-full px-6 py-6 mx-auto lg:px-24">
+          <div className="absolute z-10 w-full p-6 mx-auto lg:px-24">
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}

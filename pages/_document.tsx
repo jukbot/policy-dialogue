@@ -11,6 +11,8 @@ class MyDocument extends Document {
       <Html className="notranslate">
         <Head>
           <meta charSet="utf8" />
+          <title>Policy Dialogue | กระบวนการหารือเชิงนโยบาย</title>
+          <meta name="description" content="นโยบายที่ดี สังคมต้องร่วมกันออกแบบ" />
           <link rel="icon" type="image/svg+xml" href="/image/favicon/favicon.svg" />
           <link rel="alternate icon" type="image/png" href="/image/favicon/favicon.png" />
           <link rel="mask-icon" href="/image/favicon/favicon.svg" />
