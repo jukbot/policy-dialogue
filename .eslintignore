@@ -1,0 +1,13 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+next.config.js
+postcss.config.js
+test/*
+generated/*
+cypress/*
+public/*
+.eslintrc.js
+tailwind.config.js
+next-sitemap.js
+graphql.config.js
