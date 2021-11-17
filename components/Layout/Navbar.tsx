@@ -3,14 +3,15 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '/public/image/logo/logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const navigation = [
-  { name: 'นโยบายเพื่อสังคมสูงวัย', href: '/', current: true },
-  { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process', current: false },
-  { name: 'คู่มือการจัดกระบวนการ', href: '/guideline', current: false },
-  { name: 'คุณค่ากระบวนการ', href: '/value', current: false },
-  { name: 'คลังข้อมูล', href: '/archive', current: false },
-  { name: 'เกี่ยวกับเรา', href: '/about', current: false },
+  { name: 'นโยบายเพื่อสังคมสูงวัย', href: '/' },
+  { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
+  { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
+  { name: 'คุณค่ากระบวนการ', href: '/value' },
+  { name: 'คลังข้อมูล', href: '/archive' },
+  { name: 'เกี่ยวกับเรา', href: '/about' },
 ]
 
 function classNames(...classes: string[]) {
@@ -18,6 +19,8 @@ function classNames(...classes: string[]) {
 }
 
 const Navbar = (): JSX.Element => {
+  const { pathname } = useRouter()
+
   return (
     <Disclosure as="nav">
       {({ open }) => (
@@ -45,8 +48,8 @@ const Navbar = (): JSX.Element => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(item.current ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm')}
-                        aria-current={item.current ? 'page' : undefined}
+                        className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm')}
+                        aria-current={pathname === item.href ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -64,8 +67,11 @@ const Navbar = (): JSX.Element => {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={classNames(item.current ? ' text-white' : 'text-gray-300 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium')}
-                  aria-current={item.current ? 'page' : undefined}
+                  className={classNames(
+                    pathname === item.href ? ' text-white' : 'text-gray-300 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium'
+                  )}
+                  aria-current={pathname === item.href ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
