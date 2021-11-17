@@ -29,7 +29,19 @@
     display: none;
   }
 
+  textarea {
+    resize: none;
+  }
+
   /* https://cssreference.io/property/font-weight/ */
+  @font-face {
+    font-family: 'IBMPlexSansThai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/IBMPlexSansThai-Regular.ttf') format('truetype');
+  }
+
   @font-face {
     font-family: 'IBMPlexSansThai';
     font-style: normal;
@@ -98,53 +110,6 @@
     color: #fff;
     fill: #fff;
   }
-  /* 
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  input[type="search"],
-  input[type="password"],
-  input[type="number"],
-  input[type="url"],
-  input[type="date"],
-  textarea,
-  select {
-    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 bg-white border border-gray-300 appearance-none focus:outline-none focus:ring-primary focus:border-primary focus:ring-1;
-  }
-
-  input[type="text"]:disabled,
-  input[type="text"]:read-only,
-  input[type="tel"]:disabled,
-  input[type="email"]:disabled,
-  input[type="search"]:disabled,
-  input[type="password"]:disabled,
-  input[type="number"]:disabled,
-  input[type="url"]:disabled,
-  input[type="date"]:disabled,
-  select:disabled,
-  textarea:disabled {
-    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 border border-gray-300 appearance-none select-none bg-gray-50 focus:outline-none focus:ring-primary focus:border-primary focus:ring-1;
-  }
-
-  input[role="error"] {
-    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 bg-white border border-red-500 appearance-none focus:outline-none focus:ring-red-500 focus:border-red-500 focus:ring-1;
-  }
-
-  .input-disabled {
-    @apply block w-full px-3 py-3 text-gray-700 placeholder-gray-300 border border-gray-300 appearance-none select-none bg-gray-50 focus:outline-none focus:ring-primary focus:border-primary focus:ring-1;
-  }
-
-  .required {
-    @apply inline-block text-sm align-top;
-  }
-
-  input[type="radio"] {
-    @apply w-6 h-6 border-gray-300 text-primary focus:ring-primary hover:ring-1 hover:ring-primary active:ring-primary active:border-primary;
-  }
-
-  input[type="checkbox"] {
-    @apply w-6 h-6 border-gray-300 text-primary focus:ring-primary hover:border-primary active:ring-primary active:border-primary;
-  } */
 
   a {
     @apply cursor-pointer;
@@ -161,6 +126,12 @@
   .project-icon {
     @apply w-8 h-8 transition-all ease-in transform transform-box group-hover:scale-110 group-hover:rotate-90;
   }
+  .text-input {
+    @apply p-4 block w-full max-w-lg font-body placeholder-[#707070] bg-[#a8a8a8] focus:outline-none focus:ring-primary focus:border-primary;
+  }
+  .label-input {
+    @apply block pt-2 mt-px text-xl text-white;
+  }
 }
 
 @layer utilities {
@@ -170,6 +141,10 @@
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
     border-bottom: 2rem solid white;
+  }
+
+  .triangle-bottom-right {
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
   }
 
   .bubble-lt:after {
@@ -186,6 +161,7 @@
     margin-bottom: -1.5rem;
     transform: skewX(-15deg);
   }
+
   .bubble-rt:after {
     content: '';
     position: absolute;
@@ -200,6 +176,7 @@
     margin-top: -1.5em;
     transform: skewX(-15deg);
   }
+
   .bubble-rb:after {
     content: '';
     position: absolute;
@@ -214,18 +191,23 @@
     margin-bottom: -1.5em;
     transform: skewX(15deg);
   }
+
   .boder-b-pink:after {
     border-bottom-color: #cc79a7;
   }
+
   .border-t-green:after {
     border-top-color: #36723b;
   }
+
   .border-t-blue:after {
     border-top-color: #6badcb;
   }
+
   .border-t-yellow:after {
     border-top-color: #daa13d;
   }
+
   .prefix__cls-3:hover {
     fill: var(--color-accent);
     transition: all 0.2s ease-in;

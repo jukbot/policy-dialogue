@@ -44,6 +44,8 @@ module.exports = {
         'step-pattern-mobile': "url('/image/background/landing-shape-mobile.svg')",
         'process-step-mobile': "url('/image/background/landing-survey-step-mobile.svg')",
         'landing-footer': "url('/image/background/landing-footer.svg')",
+        'about-pattern': "url('/image/background/about-hero-pattern.svg')",
+        'about-pattern-mobile': "url('/image/background/about-hero-pattern-mobile.svg')",
         'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
         'clean-water': "url('/image/policy/clean-water.jpg')",
         education: "url('/image/policy/education.jpg')",

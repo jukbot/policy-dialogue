@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Nantanat Arunothayanan", "role": "Project manager", "imageUrl": "/image/team/nantanat.webp" },
+  { "id": 2, "name": "Chulee Wangsirilert", "role": "Project assistant", "imageUrl": "/image/team/chulee.webp" },
+  { "id": 3, "name": "Narantiya Sapprasert", "role": "Project coordinator & researcher", "imageUrl": "/image/team/narantiya.webp" },
+  { "id": 4, "name": "Monteera Yodwanlop", "role": "Project coordinator", "imageUrl": "/image/team/monteera.webp" },
+  { "id": 5, "name": "Papon Sirimai", "role": "Lead designer", "imageUrl": "/image/team/papon.webp" },
+  { "id": 6, "name": "Tanot Chindanonda", "role": "Researcher & Editor", "imageUrl": "/image/team/tanot.webp" },
+  { "id": 7, "name": "Napat Phumsiri", "role": "Researcher", "imageUrl": "/image/team/napat.webp" },
+  { "id": 8, "name": "Montra Vesarach", "role": "Process Designer", "imageUrl": "/image/team/montra.webp" },
+  { "id": 9, "name": "Visanu Kultavewut", "role": "Snorlax", "imageUrl": "/image/team/visanu.webp" }
+]
