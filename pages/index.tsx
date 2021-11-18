@@ -31,7 +31,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <div className="bg-fixed fixed w-1/2 h-screen sm:w-[52%] sm:h-[120%] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[100%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
-      <main className="relative">
+      <main className="relative overflow-hidden">
         <section
           className={`${
             intersection && intersection.intersectionRatio < 1 ? '' : 'blur-md backdrop-blur-md saturate-50 backdrop-saturate-50'
@@ -65,13 +65,14 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-12 pt-12 md:grid-cols-2">
-            <div className="grid grid-cols-2 col-span-1 px-6 mx-auto sm:px-12 gap-y-12 gap-x-16">
+            <div className="grid grid-cols-1 col-span-1 px-6 mx-auto md:grid-cols-2 sm:px-12 gap-y-12 gap-x-16">
               <PolicyCircle
                 text="น้ำประปาดื่มได้"
                 position="-translate-x-6 -translate-y-6"
                 bgHover="group-hover:bg-clean-water"
                 bgColor="bg-[#6badcb]"
                 borderColor="border-[#6badcb]"
+                className="hidden md:block"
               />
               <PolicyCircle
                 text="การศึกษาขั้นพื้นฐาน"
@@ -101,7 +102,7 @@ const Home: NextPage = () => {
                 bgColor="bg-[#cc79a7]"
                 borderColor="border-[#cc79a7]"
               />
-              <PolicyCircle text="" position="hidden" bgColor="bg-secondary" borderColor="border-transparent" className="absolute -bottom-8" />
+              <PolicyCircle text="" position="hidden" bgColor="bg-secondary" borderColor="border-transparent" className="absolute hidden -bottom-8 md:block" />
             </div>
             <div className="flex flex-col justify-between col-span-1 px-6 py-16 space-y-4 sm:px-12 text-body">
               <div className="space-y-4">
@@ -164,7 +165,7 @@ const Home: NextPage = () => {
           <div className="absolute bottom-0 hidden -ml-4 lg:block triangle-up left-1/2"></div>
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
-          <div className="absolute top-0 right-0 translate-y-[50%] w-2/3 lg:w-[344px] h-screen mix-blend-screen from-[#242054] to-[#191919] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
+          <div className="absolute top-0 right-0 translate-y-[50%] w-2/3 lg:w-[344px] h-[500px] lg:h-screen mix-blend-screen from-[#242054] to-[#191919] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
           <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern-mobile lg:bg-step-blur-pattern"></div>
           <div className="absolute top-0 w-full h-full bg-bottom bg-no-repeat lg:-bg-top-16 bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
           <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-16 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% lg:bg-contain bg-process-step-mobile lg:bg-process-step">
@@ -191,7 +192,7 @@ const Home: NextPage = () => {
               <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
             </Link>
           </div>
-          <div className="relative flex lg:hidden justify-center mt-[50rem] sm:mt-[60rem]">
+          <div className="relative flex lg:hidden justify-center mt-[40rem] sm:mt-[60rem]">
             <p className="text-sm text-white font-body">*Adapted from Systemicdesigntoolkit.org</p>
           </div>
           <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-12 bg-white sm:p-12 lg:mx-24 rounded-xl">
