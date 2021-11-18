@@ -65,7 +65,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-12 pt-12 md:grid-cols-2">
-            <div className="grid grid-cols-1 col-span-1 px-6 mx-auto md:grid-cols-2 sm:px-12 gap-y-12 gap-x-16">
+            <div className="grid grid-cols-1 col-span-1 px-6 mx-auto md:grid-cols-2 sm:px-12 gap-y-12 gap-x-16 ">
               <PolicyCircle
                 text="น้ำประปาดื่มได้"
                 position="-translate-x-6 -translate-y-6"
