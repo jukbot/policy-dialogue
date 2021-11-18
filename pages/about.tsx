@@ -77,7 +77,7 @@ const AboutPage = () => {
               <p className="text-4xl font-body">Get in touch!</p>
             </div>
             <form>
-              <div className="grid grid-cols-1 gap-y-6 gap-x-24 lg:grid-cols-2">
+              <div className="grid grid-cols-1 gap-y-6 gap-x-12 lg:grid-cols-2">
                 <div className="col-span-1 space-y-6">
                   <div className="grid items-start grid-cols-3 gap-4">
                     <label htmlFor="fullname" className="label-input">

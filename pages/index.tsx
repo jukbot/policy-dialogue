@@ -133,7 +133,7 @@ const Home: NextPage = () => {
         </section>
         <section className="relative z-10 h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
-            <h2 className="text-4xl text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
+            <h2 className="text-4xl font-bold text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
             <div className="flex flex-col justify-center space-y-8 text-center md:space-x-8 md:flex-row font-body">
               <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                 <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
           </div>
           <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-12 bg-white sm:p-12 lg:mx-24 rounded-xl">
             <div className="flex flex-col py-8 space-y-4 jutify-center">
-              <h2 className="text-4xl text-center uppercase text-body">TGRI X RISE IMPACT</h2>
+              <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
               <p className="text-center sm:text-lg text-body font-body max-w-prose">
                 มูลนิธิสถาบันวิจัยและพัฒนาผู้สูงอายุไทย (มส.ผส.) และ ไรซ์ อิมแพค ได้ร่วมกันออกแบบกระบวนการ พัฒนานโยบายเพื่อรองรับสังคมผู้สูงวัย โดยครอบคลุม 7
                 ประเด็นหลัก
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
         </section>
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center space-y-8">
-            <h3 className="text-4xl leading-snug text-center text-white sm:text-5xl">
+            <h3 className="text-4xl font-bold leading-snug text-center text-white sm:text-5xl">
               โพลิซี ไดอะล็อก
               <br /> ทำงานอย่างไร ?
             </h3>
