@@ -8,7 +8,7 @@ import SocialMedia from '../Footer/SocialMedia'
 const Footer = (): JSX.Element => {
   return (
     <footer className="relative flex flex-col w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
-      <ul className="grid w-full gap-4 text-white lg:grid-cols-4 font-body">
+      <ul className="grid gap-4 text-white max-w-7xl lg:grid-cols-4 font-body">
         <li className="col-span-1 text-center">
           <Link href="/">
             <a>
@@ -53,7 +53,7 @@ const Footer = (): JSX.Element => {
         <li className="flex flex-col col-span-1 space-y-8">
           <div className="flex flex-col space-y-4">
             <h4 className="font-bold">ต้องการรับข่าวสารเกี่ยวกับ Policy Dialogue</h4>
-            <div className="relative mt-1 sm:max-w-[300px]">
+            <div className="relative mt-1 sm:max-w-[270px]">
               <form>
                 <input
                   type="email"

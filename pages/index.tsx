@@ -287,10 +287,10 @@ const Home: NextPage = () => {
         </section>
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center space-y-8">
-            <h3 className="text-4xl font-bold leading-snug text-center text-white sm:text-5xl">
-              โพลิซี ไดอะล็อก
-              <br /> ทำงานอย่างไร ?
-            </h3>
+            <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
+              <h3>โพลิซี ไดอะลอค</h3>
+              <h3>ทำงานอย่างไร ?</h3>
+            </div>
             <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
               เราได้จัดทำคู่มือการจัดกระบวนการจากประสบการณ์ของทีมงาน ผู้ที่สนใจสามารถนำไปปรับใช้สำหรับออกแบบและพัฒนานโยบาย ทุกระดับ ทุกประเด็นในสังคม
               เพื่อร่วมกันสร้างการเปลี่ยนแปลงเชิงระบบ
