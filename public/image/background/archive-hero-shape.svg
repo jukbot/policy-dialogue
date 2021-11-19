@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="748" viewBox="0 0 1920 748">
+    <defs>
+        <linearGradient id="a" x1=".5" y1="1" x2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#191919"/>
+            <stop offset="1" stop-color="#242054"/>
+        </linearGradient>
+        <linearGradient id="c" y1="0" y2="1" xlink:href="#a"/>
+        <linearGradient id="d" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#191919"/>
+            <stop offset="1" stop-color="#36723b" stop-opacity=".051"/>
+        </linearGradient>
+        <clipPath id="b">
+            <path data-name="Rectangle 947" style="fill:#fff;stroke:#707070" d="M0 0h1920v748H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Mask Group 95" style="clip-path:url(#b)">
+        <g data-name="Group 1362" transform="translate(-63 54)">
+            <path data-name="Rectangle 461" transform="translate(986 134)" style="fill:url(#a);mix-blend-mode:screen;isolation:isolate" d="M0 0h800v800H0z"/>
+            <path data-name="Rectangle 460" transform="translate(1242 -150)" style="fill:url(#c);mix-blend-mode:screen;isolation:isolate" d="M0 0h800v800H0z"/>
+            <circle data-name="Ellipse 503" cx="264.5" cy="264.5" r="264.5" transform="translate(-143 -169)" style="fill:url(#d)"/>
+        </g>
+    </g>
+</svg>

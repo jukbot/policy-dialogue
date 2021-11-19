@@ -6,7 +6,8 @@ const ArchivePage = () => {
   return (
     <div className="relative">
       <main className="relative">
-        <section className="relative grid h-[50vh] lg:h-[75vh] bg-bottom bg-cover sm:bg-contain bg-no-repeat transition flex items-center bg-archive-pattern-mobile sm:bg-archive-pattern">
+        <div className="fixed absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain mix-blend-screen bg-archive-hero-shape" />
+        <section className="relative grid h-[50vh] lg:h-[75vh] bg-bottom bg-cover bg-no-repeat flex items-center bg-archive-pattern-mobile sm:bg-archive-pattern">
           <div className="flex flex-col items-center justify-center pt-24 space-y-1 text-white lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-6xl">Archive</h1>
             <h2 className="text-xl lg:text-2xl font-body">คลังข้อมูลและเอกสารดาวน์โหลด</h2>

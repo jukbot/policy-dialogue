@@ -6,11 +6,12 @@ const AboutPage = () => {
   return (
     <div className="relative">
       <main className="relative">
+        <div className="fixed absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
         <section className="relative grid h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat transition flex items-center bg-about-pattern-mobile sm:bg-about-pattern">
           <div className="flex justify-center pt-24 text-white lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-6xl">เกี่ยวกับเรา</h1>
           </div>
-          <div className="fixed w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-75 from-[#191919] to-[#242054] bg-gradient-to-b bottom-0" />
+          <div className="fixed w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-50 from-[#191919] to-[#242054] bg-gradient-to-b" />
         </section>
 
         <section className="relative h-full space-y-12 bg-white">
