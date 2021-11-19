@@ -104,9 +104,15 @@ const AboutPage = () => {
                         <option selected disabled className="text-[#707070]">
                           เลือกประเภทองค์กร
                         </option>
-                        <option value="public">ไม่รู้</option>
-                        <option value="private">ไม่ทราบ</option>
-                        <option value="government">ไม่บอก</option>
+                        <option value="central-government">หน่วยงานราชการ (ส่วนกลางและภูมิภาค)</option>
+                        <option value="local-government">องค์กรปกครองส่วนท้องถิ่น</option>
+                        <option value="independent-org">องค์กรอิสระ (รวมถึงภายใต้กำกับของรัฐ)</option>
+                        <option value="public-company">บริษัทเอกชน ภาคธุรกิจ</option>
+                        <option value="educational-institution">สถาบันการศึกษา/วิจัย</option>
+                        <option value="student">นักเรียน นักศึกษา</option>
+                        <option value="international-org">องค์กรระหว่างประเทศ</option>
+                        <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
+                        <option value="other">อื่นๆ (โปรดระบุ)</option>
                       </select>
                     </div>
                   </div>
