@@ -3,8 +3,12 @@ import DialogueLoop from '@/components/Guideline/DialogueLoop'
 import DialogueLoopMobile from '@/components/Guideline/DialogueLoopMobile'
 import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
-import { Content, Goals, Participant, Process, Resources, Teamwork } from '@/components/Icon'
+import { Goals, Process, Teamwork } from '@/components/Icon'
+import Image from 'next/image'
 import Link from 'next/link'
+import Content from '/public/image/guideline/content.svg'
+import Participants from '/public/image/guideline/participants.svg'
+import Resources from '/public/image/guideline/resources.svg'
 
 const GuidelinePage = () => {
   return (
@@ -33,10 +37,8 @@ const GuidelinePage = () => {
             <div className="space-y-12 sm:space-y-16">
               <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
                 <div className="flow-root">
-                  <div className="space-y-4">
-                    <div className="flex-shrink-0">
-                      <Participant className="w-12 h-12" aria-hidden="true" />
-                    </div>
+                  <div className="space-y-3">
+                    <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Participants} alt="participants" />
                     <h3 className="text-xl font-bold">Participants</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
                       เฟ้นหาผู้มีส่วนร่วมในแต่ละประเด็นอย่างเหมาะสม อาจมาจากหลายภาคส่วน กระจายพื้นที่ เข้าถึงผู้คนให้มากที่สุด
@@ -45,9 +47,7 @@ const GuidelinePage = () => {
                 </div>
                 <div className="flow-root">
                   <div className="space-y-4">
-                    <div className="flex-shrink-0">
-                      <Content className="w-12 h-12" aria-hidden="true" />
-                    </div>
+                    <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Content} alt="content" />
                     <h3 className="text-xl font-bold">Content</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
                       มีข้อมูลที่หลากหลาย น่าเชื่อถือ และตรงประเด็น อาจเป็นข่าวสาร บทความวิชาการ งานวิจัยที่เกี่ยวข้อง ฯลฯ เพื่อนำมาวิเคราะห์ ตั้งเป้าหมาย
@@ -57,9 +57,7 @@ const GuidelinePage = () => {
                 </div>
                 <div className="flow-root">
                   <div className="space-y-4">
-                    <div className="flex-shrink-0">
-                      <Resources className="w-12 h-12" aria-hidden="true" />
-                    </div>
+                    <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Resources} alt="resources" />
                     <h3 className="text-xl font-bold">Resources</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
                       มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่าง ๆ
