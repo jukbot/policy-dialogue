@@ -4,12 +4,12 @@ interface Props {
   className?: string
 }
 
-const Participants = (props: Props) => {
+const Participant = (props: Props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={96} height={84} viewBox="0 0 96 84" {...props}>
       <defs>
         <style>
-          {'.cls-1,.cls-3,.cls-5{fill:none}.cls-1{stroke:#f04e30}.cls-1,.cls-3{stroke-width:3px}.cls-2{fill:#242054}.cls-3{stroke:#daa13d}.cls-4{stroke:none}'}
+          {'.cls-1,.cls-3,.cls-5{fill:none}.cls-1{stroke:#f04e30}.cls-1,.cls-3{stroke-width:3px}.cls-2{fill:#ff0000}.cls-3{stroke:#daa13d}.cls-4{stroke:none}'}
         </style>
       </defs>
       <g id="Group_1069" data-name="Group 1069" transform="translate(-302 -1239)">
@@ -29,11 +29,12 @@ const Participants = (props: Props) => {
             transform="translate(334 1269)"
           />
         </g>
-        <circle id="Ellipse_328" data-name="Ellipse 328" className="cls-2" cx={14} cy={14} r={14} transform="translate(313 1248)" />
+        <circle id="Ellipse_328" data-name="Ellipse 328" className="cls-2" fill="#ff0000" cx={14} cy={14} r={14} transform="translate(313 1248)" />
         <path
           id="Rectangle_357"
           data-name="Rectangle 357"
           className="cls-2"
+          fill="#ff0000"
           d="M25 0a25 25 0 0125 25v15.833A4.167 4.167 0 0145.833 45H4.167A4.167 4.167 0 010 40.833V25A25 25 0 0125 0z"
           transform="translate(302 1278)"
         />
@@ -44,4 +45,4 @@ const Participants = (props: Props) => {
   )
 }
 
-export default Participants
+export default Participant

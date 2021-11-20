@@ -19,15 +19,7 @@ module.exports = {
   poweredByHeader: false,
   swcMinify: true,
   pageExtensions: ['ts', 'tsx', 'mdx'],
-  // experimental: {
-  // reactRoot: true,
-  // concurrentFeatures: true,
-  // serverComponents: true,
-  // },
   images: {
-    formats: ['image/avif', 'image/webp'],
-    loader: 'default',
-    path: '/_next/image',
     minimumCacheTTL: 86400,
     domains: [
       'images.unsplash.com',
@@ -40,7 +32,7 @@ module.exports = {
       '',
     ],
   },
-  webpack: (config, { webpack }) => {
+  webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@/components': join(__dirname, 'components'),

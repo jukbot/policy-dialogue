@@ -3,7 +3,7 @@ import DialogueLoop from '@/components/Guideline/DialogueLoop'
 import DialogueLoopMobile from '@/components/Guideline/DialogueLoopMobile'
 import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
-import { Content, Goals, Participants, Process, Resources, Teamwork } from '@/components/Icon'
+import { Content, Goals, Participant, Process, Resources, Teamwork } from '@/components/Icon'
 import Link from 'next/link'
 
 const GuidelinePage = () => {
@@ -21,7 +21,7 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full space-y-12 bg-white">
-          <div className="max-w-6xl px-6 py-16 mx-auto space-y-12 sm:px-12 text-body">
+          <div className="max-w-6xl px-6 py-16 mx-auto space-y-12 sm:px-12">
             <div className="flex items-center justify-center space-x-6">
               <h2 className="font-bold text-9xl text-primary">6</h2>
               <div className="space-y-1 text-3xl font-bold sm:text-4xl">
@@ -35,7 +35,7 @@ const GuidelinePage = () => {
                 <div className="flow-root">
                   <div className="space-y-4">
                     <div className="flex-shrink-0">
-                      <Participants className="w-12 h-12" aria-hidden="true" />
+                      <Participant className="w-12 h-12" aria-hidden="true" />
                     </div>
                     <h3 className="text-xl font-bold">Participants</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
@@ -255,7 +255,7 @@ const GuidelinePage = () => {
 
         <section className="relative h-full py-12 bg-white sm:py-24">
           <div className="max-w-6xl px-6 mx-auto text-body">
-            <h2 className="text-3xl font-bold text-center">ผลลัพธ์ที่คาดหวังได้</h2>
+            <h2 className="text-5xl font-bold text-center">ผลลัพธ์ที่คาดหวังได้</h2>
           </div>
         </section>
 

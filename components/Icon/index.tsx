@@ -1,6 +1,6 @@
 export { default as Content } from './Content'
 export { default as Goals } from './Goals'
-export { default as Participants } from './Participants'
+export { default as Participant } from './Participant'
 export { default as Process } from './Process'
 export { default as QuestionMark } from './QuestionMark'
 export { default as Resources } from './Resources'
