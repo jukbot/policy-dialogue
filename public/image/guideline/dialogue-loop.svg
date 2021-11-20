@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1411.001" height="494.5" viewBox="0 0 1411.001 494.5">
+    <defs>
+        <style>
+            .cls-11,.cls-2,.cls-7,.cls-9{fill:none}.cls-9{stroke:#f04e30}.cls-2,.cls-7{stroke:#fff}.cls-2,.cls-7,.cls-9{stroke-width:3px}.cls-2{stroke-dasharray:8 8}.cls-3{fill:#daa13d}.cls-6{fill:#fff;font-size:25px;font-family:IBMPlexSansThai,IBM Plex Sans Thai;letter-spacing:.05em}.cls-7,.cls-9{stroke-linecap:round;stroke-linejoin:round}.cls-8{fill:#6badcb}.cls-10{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_236" data-name="Group 236" transform="rotate(-90 -1457.5 2263.5)">
+        <path id="Line_82" data-name="Line 82" transform="translate(559 3895.501)" style="stroke-width:5px;stroke-dasharray:5 15;stroke:#f04e30;fill:none" d="M0 0v1012"/>
+        <g id="Ellipse_422" data-name="Ellipse 422" class="cls-2" transform="rotate(90 -1729.25 2490.75)">
+            <circle class="cls-10" cx="200" cy="200" r="200"/>
+            <circle class="cls-11" cx="200" cy="200" r="198.5"/>
+        </g>
+        <g id="Ellipse_480" data-name="Ellipse 480" class="cls-2" transform="rotate(90 -1529.339 2290.839)">
+            <circle class="cls-10" cx="200" cy="200" r="200"/>
+            <circle class="cls-11" cx="200" cy="200" r="198.5"/>
+        </g>
+        <g id="Ellipse_451" data-name="Ellipse 451" class="cls-2" transform="rotate(90 -1929.25 2690.75)">
+            <circle class="cls-10" cx="200" cy="200" r="200"/>
+            <circle class="cls-11" cx="200" cy="200" r="198.5"/>
+        </g>
+        <circle id="Ellipse_423" data-name="Ellipse 423" class="cls-3" cx="50" cy="50" r="50" transform="rotate(90 -1782 2588)"/>
+        <circle id="Ellipse_481" data-name="Ellipse 481" class="cls-3" cx="50" cy="50" r="50" transform="rotate(90 -1582.089 2388.089)"/>
+        <circle id="Ellipse_447" data-name="Ellipse 447" class="cls-3" cx="50" cy="50" r="50" transform="rotate(90 -1981.751 2787.751)"/>
+        <circle id="Ellipse_425" data-name="Ellipse 425" class="cls-3" cx="50" cy="50" r="50" transform="rotate(90 -1979.25 2390.75)"/>
+        <circle id="Ellipse_483" data-name="Ellipse 483" class="cls-3" cx="50" cy="50" r="50" transform="rotate(90 -1779.339 2190.839)"/>
+        <circle id="Ellipse_449" data-name="Ellipse 449" class="cls-3" cx="50" cy="50" r="50" transform="rotate(90 -2179.001 2590.501)"/>
+        <circle id="Ellipse_450" data-name="Ellipse 450" cx="112.5" cy="112.5" r="112.5" transform="rotate(90 -2117.251 2789.751)" style="fill:#36723b"/>
+        <text id="เป้าหมาย" transform="rotate(90 -2235.002 2785.001)" style="font-size:35px;font-family:IBMPlexSansThaiLooped-SemiBold,IBM Plex Sans Thai Looped;font-weight:600;fill:#fff"><tspan x="-72.765" y="0">เป้าหมาย</tspan></text>
+        <text id="ผลลัพธ์" class="cls-6" transform="rotate(90 -1796.75 2573.25)"><tspan x="-40.537" y="28">ผลลัพธ์</tspan></text>
+        <text id="ผลลัพธ์-2" data-name="ผลลัพธ์" class="cls-6" transform="rotate(90 -1596.839 2373.339)"><tspan x="-40.537" y="28">ผลลัพธ์</tspan></text>
+        <text id="ผลลัพธ์-3" data-name="ผลลัพธ์" class="cls-6" transform="rotate(90 -1996.501 2773.001)"><tspan x="-40.537" y="28">ผลลัพธ์</tspan></text>
+        <text id="ผลลัพธ์-4" data-name="ผลลัพธ์" class="cls-6" transform="rotate(90 -1994 2376)"><tspan x="-40.537" y="28">ผลลัพธ์</tspan></text>
+        <text id="ผลลัพธ์-5" data-name="ผลลัพธ์" class="cls-6" transform="rotate(90 -1794.089 2176.089)"><tspan x="-40.537" y="28">ผลลัพธ์</tspan></text>
+        <text id="ผลลัพธ์-6" data-name="ผลลัพธ์" class="cls-6" transform="rotate(90 -2193.751 2575.751)"><tspan x="-40.537" y="28">ผลลัพธ์</tspan></text>
+        <g id="Icon_feather-arrow-up" data-name="Icon feather-arrow-up" transform="rotate(-160 576.854 2148.59)">
+            <path id="Path_41" data-name="Path 41" class="cls-7" d="M0 12.5 12.5 0 25 12.5"/>
+        </g>
+        <g id="Icon_feather-arrow-up-2" data-name="Icon feather-arrow-up" transform="rotate(-160 541.604 1948.678)">
+            <path id="Path_41-2" data-name="Path 41" class="cls-7" d="M0 12.5 12.5 0 25 12.5"/>
+        </g>
+        <g id="Icon_feather-arrow-up-3" data-name="Icon feather-arrow-up" transform="rotate(-160 612.12 2348.59)">
+            <path id="Path_41-3" data-name="Path 41" class="cls-7" d="M0 12.5 12.5 0 25 12.5"/>
+        </g>
+        <g id="Icon_feather-arrow-up-4" data-name="Icon feather-arrow-up" transform="rotate(-20 12711.312 93.328)">
+            <path id="Path_41-4" data-name="Path 41" class="cls-7" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-5" data-name="Icon feather-arrow-up" transform="rotate(-20 11577.557 -106.584)">
+            <path id="Path_41-5" data-name="Path 41" class="cls-7" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-6" data-name="Icon feather-arrow-up" transform="rotate(54.97 -4050.995 2932.305)">
+            <path id="Path_41-6" data-name="Path 41" class="cls-7" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-7" data-name="Icon feather-arrow-up" transform="rotate(54.97 -3666.764 2732.449)">
+            <path id="Path_41-7" data-name="Path 41" class="cls-7" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-8" data-name="Icon feather-arrow-up" transform="rotate(54.97 -4435.395 3132.25)">
+            <path id="Path_41-8" data-name="Path 41" class="cls-7" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-9" data-name="Icon feather-arrow-up" transform="rotate(125.03 -961.746 2405.608)">
+            <path id="Path_41-9" data-name="Path 41" class="cls-7" d="M0 12.5 12.5 0 25 12.5"/>
+        </g>
+        <g id="Icon_feather-arrow-up-10" data-name="Icon feather-arrow-up" transform="rotate(125.03 -857.733 2205.711)">
+            <path id="Path_41-10" data-name="Path 41" class="cls-7" d="M0 12.5 12.5 0 25 12.5"/>
+        </g>
+        <g id="Icon_feather-arrow-up-11" data-name="Icon feather-arrow-up" transform="rotate(125.03 -1065.804 2605.593)">
+            <path id="Path_41-11" data-name="Path 41" class="cls-7" d="M0 12.5 12.5 0 25 12.5"/>
+        </g>
+        <g id="Icon_feather-arrow-up-12" data-name="Icon feather-arrow-up" transform="rotate(-20 13845.57 293.328)">
+            <path id="Path_41-12" data-name="Path 41" class="cls-7" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <circle id="Ellipse_479" data-name="Ellipse 479" class="cls-8" cx="75" cy="75" r="75" transform="rotate(90 -1955 2590)"/>
+        <circle id="Ellipse_482" data-name="Ellipse 482" class="cls-8" cx="75" cy="75" r="75" transform="rotate(90 -1755.089 2390.088)"/>
+        <circle id="Ellipse_484" data-name="Ellipse 484" class="cls-8" cx="75" cy="75" r="75" transform="rotate(90 -1555 2190)"/>
+        <text id="จุดประสงค์" class="cls-6" transform="rotate(90 -1970.5 2550.5)"><tspan x="-60.412" y="28">จุดประสงค์</tspan></text>
+        <text id="จุดประสงค์-2" data-name="จุดประสงค์" class="cls-6" transform="rotate(90 -1770.589 2350.588)"><tspan x="-60.412" y="28">จุดประสงค์</tspan></text>
+        <text id="จุดประสงค์-3" data-name="จุดประสงค์" class="cls-6" transform="rotate(90 -1570.5 2150.5)"><tspan x="-60.412" y="28">จุดประสงค์</tspan></text>
+        <g id="Icon_feather-arrow-up-13" data-name="Icon feather-arrow-up" transform="translate(546.5 4132.678)">
+            <path id="Path_41-13" data-name="Path 41" class="cls-9" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-14" data-name="Icon feather-arrow-up" transform="translate(546.5 4532.501)">
+            <path id="Path_41-14" data-name="Path 41" class="cls-9" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+        <g id="Icon_feather-arrow-up-15" data-name="Icon feather-arrow-up" transform="translate(546.5 4894.502)">
+            <path id="Path_41-15" data-name="Path 41" class="cls-9" d="m0 0 12.5 12.5L25 0"/>
+        </g>
+    </g>
+</svg>

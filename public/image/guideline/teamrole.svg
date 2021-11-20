@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="686" viewBox="0 0 680 686">
+    <defs>
+        <style>
+            .cls-6{fill:#fff;letter-spacing:.05em;font-size:25px;font-family:IBMPlexSansThai,IBM Plex Sans Thai}
+        </style>
+    </defs>
+    <g id="Group_1398" data-name="Group 1398" transform="translate(-1013 -406)">
+        <g id="Ellipse_404" data-name="Ellipse 404" transform="translate(1046 406)" style="stroke:#fff;stroke-width:3px;stroke-dasharray:8 8;fill:none">
+            <circle cx="300" cy="300" r="300" style="stroke:none"/>
+            <circle cx="300" cy="300" r="298.5" style="fill:none"/>
+        </g>
+        <circle id="Ellipse_406" data-name="Ellipse 406" cx="150" cy="150" r="150" transform="translate(1196 556)" style="fill:#36723b"/>
+        <g id="Group_228" data-name="Group 228" transform="translate(1248.748 654.917)">
+            <text id="RISE" transform="translate(.252 44.083)" style="font-size:41px;font-family:OpenSans-ExtraBold,Open Sans;font-weight:800;fill:#fff;letter-spacing:.05em"><tspan x="0" y="0">RISE</tspan></text>
+            <text id="IMPACT" transform="translate(32.252 88.083)" style="font-size:40px;font-family:OpenSans-Medium,Open Sans;font-weight:500;fill:#fff;letter-spacing:.05em"><tspan x="0" y="0">IMPACT</tspan></text>
+        </g>
+        <g id="Group_613" data-name="Group 613">
+            <circle id="Ellipse_408" data-name="Ellipse 408" cx="87.5" cy="87.5" r="87.5" transform="translate(1259 917)" style="fill:#cc79a7"/>
+            <text id="ทีม_ประสานงาน" data-name="ทีม ประสานงาน" class="cls-6" transform="translate(1247 964)"><tspan x="-15.525" y="28">ทีม</tspan><tspan x="-66" y="69">ประสานงาน</tspan></text>
+        </g>
+        <g id="Group_612" data-name="Group 612">
+            <circle id="Ellipse_409" data-name="Ellipse 409" cx="87.5" cy="87.5" r="87.5" transform="translate(1507 451)" style="fill:#6badcb"/>
+            <text id="ทีมจัด_กระบวนการ" data-name="ทีมจัด กระบวนการ" class="cls-6" transform="translate(1495 499)"><tspan x="-31.938" y="28">ทีมจัด</tspan><tspan x="-66.675" y="69">กระบวนการ</tspan></text>
+        </g>
+        <g id="Group_611" data-name="Group 611" transform="translate(.001 -2700)">
+            <circle id="Ellipse_400" data-name="Ellipse 400" cx="87.5" cy="87.5" r="87.5" transform="translate(1012.999 3149)" style="fill:#daa13d"/>
+            <text id="ทีมเนื้อหา" class="cls-6" transform="translate(1012.999 3216)"><tspan x="-51.137" y="28">ทีมเนื้อหา</tspan></text>
+        </g>
+    </g>
+</svg>

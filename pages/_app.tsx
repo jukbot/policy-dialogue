@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
-import type { AppProps } from 'next/app'
-import Navbar from '@/components/Layout/Navbar'
 import Footer from '@/components/Layout/Footer'
 import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import { useEffect } from 'react'
+
+const Navbar = dynamic(() => import('@/components/Layout/Navbar'), { ssr: false })
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {

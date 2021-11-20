@@ -1,14 +1,14 @@
+import { ArrowSmRightIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import SocialMedia from '../Footer/SocialMedia'
 import Logo from '/public/image/logo/logo.svg'
 import RiseImpactLogo from '/public/image/logo/rise-impact-white.svg'
-import { ArrowSmRightIcon } from '@heroicons/react/outline'
-import SocialMedia from '../Footer/SocialMedia'
 
 const Footer = (): JSX.Element => {
   return (
     <footer className="relative flex flex-col w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
-      <ul className="grid gap-4 text-white max-w-7xl lg:grid-cols-4 font-body">
+      <ul className="grid w-full gap-4 text-white lg:grid-cols-4 font-body">
         <li className="col-span-1 text-center">
           <Link href="/">
             <a>

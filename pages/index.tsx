@@ -1,17 +1,17 @@
+import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import PolicyWheelMobile from '@/components/Landing/PolicyWheelMobile'
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useIntersection } from 'react-use'
 import { useRef } from 'react'
-import ScrollToContent from '../components/Landing/ScrollToContent'
-import QuestionMark from '../components/Icon/QuestionMark'
-import PolicyWheel from '../components/Landing/PolicyWheel'
 import CountUp from 'react-countup'
-import DesignPolicy from '/public/image/landing/designPolicy.webp'
 import { useInView } from 'react-intersection-observer'
+import { useIntersection } from 'react-use'
+import QuestionMark from '../components/Icon/QuestionMark'
 import PolicyCircle from '../components/Landing/PolicyCircle'
-import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
-import PolicyWheelMobile from '@/components/Landing/PolicyWheelMobile'
+import PolicyWheel from '../components/Landing/PolicyWheel'
+import ScrollToContent from '../components/Landing/ScrollToContent'
+import DesignPolicy from '/public/image/landing/designPolicy.webp'
 
 const intersectopnOptions = {
   root: null,
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="relative z-10 h-full bg-white">
+        <section className="relative h-full bg-white">
           <ScrollToContent />
           <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 md:grid-cols-2" id="learnmore">
             <div className="flex flex-col col-span-1 px-6 pt-16 space-y-4 sm:px-24 text-body">
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative z-10 h-full bg-secondary">
+        <section className="relative h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
             <h2 className="text-4xl font-bold text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
             <div className="flex flex-col justify-center space-y-8 text-center md:space-x-8 md:flex-row font-body">
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="z-10 relative h-full bg-[#242054]">
+        <section className="relative h-full bg-[#242054]">
           <div className="flex flex-col items-center justify-center px-6 py-20 text-white">
             <QuestionMark className="w-48 h-48" />
             <p className="text-lg text-center max-w-prose font-body">
@@ -212,7 +212,7 @@ const Home: NextPage = () => {
               </div>
               <PolicyWheel className="hidden w-full h-full fill-current text-primary lg:block" />
               <PolicyWheelMobile className="block w-full h-full fill-current text-primary lg:hidden" />
-              <div className="flex flex-col justify-between block w-full h-64 p-6 mt-8 space-y-4 rounded-lg lg:hidden bg-[#FFECEA]">
+              <div className="flex flex-col justify-between w-full h-64 p-6 mt-8 space-y-4 rounded-lg lg:hidden bg-[#FFECEA]">
                 <p className="text-sm text-center sm:text-lg font-body text-body">การสูงวันในถื่นที่อยู่อาศัยเดิมอย่างมีสุขภาวะ (Aging in Place)</p>
                 <button className="w-full btn">อ่านต่อ</button>
               </div>

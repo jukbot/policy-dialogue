@@ -1,21 +1,21 @@
-import Team from '@/data/team.json'
 import Contributor from '@/data/contributors.json'
+import Team from '@/data/team.json'
 import Image from 'next/image'
 
 const AboutPage = () => {
   return (
     <div className="relative">
       <main className="relative">
-        <div className="fixed absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
-        <section className="relative grid h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat transition flex items-center bg-about-pattern-mobile sm:bg-about-pattern">
+        <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
+        <section className="relative h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat transition flex items-center bg-about-pattern-mobile sm:bg-about-pattern">
           <div className="flex justify-center pt-24 text-white lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-6xl">เกี่ยวกับเรา</h1>
           </div>
-          <div className="fixed w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-50 from-[#191919] to-[#242054] bg-gradient-to-b" />
+          <div className="w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-50 from-[#191919] to-[#242054] bg-gradient-to-b" />
         </section>
 
         <section className="relative h-full space-y-12 bg-white">
-          <div className="grid grid-cols-1 gap-16 py-16 mx-auto lg:py-32 md:grid-cols-2 max-w-7xl">
+          <div className="grid max-w-6xl grid-cols-1 gap-16 py-16 mx-auto lg:py-32 md:grid-cols-2">
             <div className="flex flex-col col-span-1 px-6 sm:px-12 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">HELLO!</h2>
@@ -32,7 +32,7 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <div className="px-6 py-12 mx-auto text-center max-w-7xl lg:px-12">
+          <div className="max-w-6xl px-6 py-12 mx-auto text-center lg:px-12">
             <div className="space-y-12">
               <div className="mx-auto sm:max-w-xl lg:max-w-5xl">
                 <h2 className="text-4xl font-bold lg:text-6xl">RISE IMPACT Team</h2>
@@ -54,7 +54,7 @@ const AboutPage = () => {
               </ul>
             </div>
           </div>
-          <div className="px-6 pt-12 mx-auto text-center pb-36 max-w-7xl lg:px-12">
+          <div className="max-w-6xl px-6 pt-12 mx-auto text-center pb-36 lg:px-12">
             <div className="space-y-12 lg:space-y-24">
               <div className="mx-auto sm:max-w-xl lg:max-w-5xl">
                 <h2 className="text-4xl font-bold lg:text-6xl">Contributors</h2>
@@ -72,7 +72,7 @@ const AboutPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-secondary">
-          <div className="px-6 py-24 mx-auto space-y-12 lg:px-12 max-w-7xl">
+          <div className="max-w-6xl px-6 py-24 mx-auto space-y-12 lg:px-12">
             <div className="space-y-2 text-white">
               <h2 className="text-4xl font-bold lg:text-6xl">ติดต่อเรา</h2>
               <p className="text-4xl font-body">Get in touch!</p>

@@ -1,13 +1,13 @@
-import { ArrowCircleDownIcon } from '@heroicons/react/solid'
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import { ArrowCircleDownIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 
 const ArchivePage = () => {
   return (
     <div className="relative">
       <main className="relative">
-        <div className="fixed absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain mix-blend-screen bg-archive-hero-shape" />
-        <section className="relative grid h-[50vh] lg:h-[75vh] bg-bottom bg-cover bg-no-repeat flex items-center bg-archive-pattern-mobile sm:bg-archive-pattern">
+        <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain mix-blend-screen bg-archive-hero-shape" />
+        <section className="relative grid h-[50vh] lg:h-[75vh] bg-bottom bg-cover bg-no-repeat items-center bg-archive-pattern-mobile sm:bg-archive-pattern">
           <div className="flex flex-col items-center justify-center pt-24 space-y-1 text-white lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-6xl">Archive</h1>
             <h2 className="text-xl lg:text-2xl font-body">คลังข้อมูลและเอกสารดาวน์โหลด</h2>
@@ -15,10 +15,10 @@ const ArchivePage = () => {
         </section>
 
         <section className="relative h-full space-y-12 bg-white">
-          <div className="max-w-5xl px-6 py-16 mx-auto space-y-12 sm:px-12 text-body">
+          <div className="max-w-6xl px-6 py-16 mx-auto space-y-12 sm:px-12 text-body">
             <div className="flex flex-col space-y-2">
               <h2 className="text-3xl font-bold">ข้อสรุปจากกระบวนการ</h2>
-              <h3 className="text-xl font-body">Thematic briefs</h3>
+              <h3 className="text-xl font-body">thematic briefs</h3>
             </div>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -38,14 +38,14 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <div className="flex items-center space-x-1">
-                    <ArrowCircleDownIcon className="w-8 h-8" />
-                    <p>ชุดบริการ</p>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <ArrowCircleDownIcon className="w-8 h-8" />
-                    <p>บทบาท อปท.</p>
-                  </div>
+                  <button className="btn-white">
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ชุดบริการ</span>
+                  </button>
+                  <button className="btn-white">
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>บทบาท อปท.</span>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -64,8 +64,8 @@ const ArchivePage = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center mt-auto text-sm font-body">
-                  <p>Coming soon!</p>
+                <div className="flex items-center justify-center mt-auto text-sm font-body">
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -84,8 +84,8 @@ const ArchivePage = () => {
                     <p className="font-body">ระบบบริการสำหรับผู้ป่วยโรคสมองเสื่อม</p>
                   </div>
                 </div>
-                <div className="flex items-center mt-auto text-sm font-body">
-                  <p>Coming soon!</p>
+                <div className="flex items-center justify-center mt-auto text-sm font-body">
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -103,8 +103,8 @@ const ArchivePage = () => {
                     <p className="font-body">ระบบการดูแลระยะยาวสำหรับผู้สูงอายุ ที่มีภาวะพึ่งพิง</p>
                   </div>
                 </div>
-                <div className="flex items-center mt-auto text-sm font-body">
-                  <p>Coming soon!</p>
+                <div className="flex items-center justify-center mt-auto text-sm font-body">
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#3f36b7] h-48 text-white">
@@ -122,10 +122,10 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <div className="flex items-center space-x-1">
-                    <ArrowCircleDownIcon className="w-8 h-8" />
-                    <p>ชุดบริการ</p>
-                  </div>
+                  <button className="btn-white">
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ชุดบริการ</span>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#daa13d] h-48 text-white">
@@ -143,10 +143,10 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <div className="flex items-center space-x-1">
-                    <ArrowCircleDownIcon className="w-8 h-8" />
-                    <p>ชุดบริการ</p>
-                  </div>
+                  <button className="btn-white">
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ชุดบริการ</span>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -163,8 +163,8 @@ const ArchivePage = () => {
                     <p className="font-body">กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ</p>
                   </div>
                 </div>
-                <div className="flex items-center mt-auto text-sm font-body">
-                  <p>Coming soon!</p>
+                <div className="flex items-center justify-center mt-auto text-sm font-body">
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
             </div>
@@ -314,64 +314,66 @@ const ArchivePage = () => {
               <h3 className="text-xl font-body">practical guidelines</h3>
             </div>
 
-            <ul className="flex w-full space-x-6 overflow-x-auto flex-nowrap">
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white whitespace-nowrap bg-[#6badcb]">
+            <ul className="flex w-full space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#6badcb]">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">
                     คู่มือการจัดกระบวนการ
                     <br /> ฉบับเต็ม
                   </p>
-                  <p className="text-sm font-body">จากประสบการณ์ของ RISE Impact</p>
+                  <p className="text-sm font-body">
+                    จากประสบการณ์ของ
+                    <br /> RISE Impact
+                  </p>
                 </div>
-                <button className="flex items-center mt-auto space-x-1 text-sm hover:text-accent font-body">
+                <button className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
               </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white whitespace-nowrap bg-[#36723b]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#36723b]">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">กระบวนการ</p>
-                  <p className="text-sm font-body">Policy Dialogue ใช้วิธีการอะไรบ้างเพื่อหาคำตอบ</p>
+                  <p className="text-sm font-body">
+                    Policy Dialogue ใช้วิธีการอะไร
+                    <br />
+                    บ้าง เพื่อหาคำตอบ
+                  </p>
                 </div>
-                <button className="flex items-center mt-auto space-x-1 text-sm hover:text-accent font-body">
+                <button className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
               </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white whitespace-nowrap bg-[#daa13d]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#daa13d]">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">คุณค่าของกระบวนการ</p>
-                  <p className="text-sm font-body">สิ่งที่เราเชื่อและประโยชน์ของ ‘policy dialogue’</p>
+                  <p className="text-sm font-body">
+                    สิ่งที่เราเชื่อและประโยชน์ของ
+                    <br /> ‘policy dialogue’
+                  </p>
                 </div>
-                <button className="flex items-center mt-auto space-x-1 text-sm hover:text-accent font-body">
+                <button className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
               </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white whitespace-nowrap bg-[#cc79a7]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#cc79a7]">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">จัดการอย่างไรให้สำเร็จ</p>
-                  <p className="text-sm font-body">รวบรวมปัญหาที่พบ และข้อควรคำนึงเพื่อให้กระบวนการราบรื่น</p>
+                  <p className="text-sm font-body">
+                    รวบรวมปัญหาที่พบ
+                    <br /> และข้อควรคำนึง
+                    <br />
+                    เพื่อให้กระบวนการราบรื่น
+                  </p>
                 </div>
-                <button className="flex items-center mt-auto space-x-1 text-sm hover:text-accent font-body">
-                  <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                  <span>ดาวน์โหลดเอกสาร</span>
-                </button>
-              </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white whitespace-nowrap bg-[#6badcb]">
-                <div className="space-y-1">
-                  <p className="text-lg font-bold">จัดการอย่างไรให้สำเร็จ</p>
-                  <p className="text-sm font-body">รวบรวมปัญหาที่พบ และข้อควรคำนึงเพื่อให้กระบวนการราบรื่น</p>
-                </div>
-                <button className="flex items-center mt-auto space-x-1 text-sm hover:text-accent font-body">
+                <button className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
               </li>
             </ul>
-            <div className="flex">
-              <span className="text-primary">1/5</span>
-            </div>
           </div>
         </section>
 

@@ -1,9 +1,10 @@
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import Logo from '/public/image/logo/logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useWindowScroll } from 'react-use'
+import Logo from '/public/image/logo/logo.svg'
 
 const navigation = [
   { name: 'นโยบายเพื่อสังคมสูงวัย', href: '/' },
@@ -20,12 +21,13 @@ function classNames(...classes: string[]) {
 
 const Navbar = (): JSX.Element => {
   const { pathname } = useRouter()
+  const { y } = useWindowScroll()
 
   return (
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="absolute z-10 w-full p-6 mx-auto lg:px-24">
+          <div className={`fixed z-10 w-full px-6 sm:py-4 mx-auto lg:px-24 bg-black transition ${y < 30 ? 'sm:bg-opacity-0' : 'sm:bg-opacity-100'}`}>
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
@@ -48,7 +50,7 @@ const Navbar = (): JSX.Element => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm')}
+                        className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm font-body')}
                         aria-current={pathname === item.href ? 'page' : undefined}
                       >
                         {item.name}

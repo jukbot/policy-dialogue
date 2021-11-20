@@ -3535,6 +3535,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jotai@npm:^1.4.4":
+  version: 1.4.4
+  resolution: "jotai@npm:1.4.4"
+  peerDependencies:
+    "@babel/core": "*"
+    "@babel/template": "*"
+    "@urql/core": "*"
+    immer: "*"
+    optics-ts: "*"
+    react: ">=16.8"
+    react-query: "*"
+    valtio: "*"
+    wonka: "*"
+    xstate: "*"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@babel/template":
+      optional: true
+    "@urql/core":
+      optional: true
+    immer:
+      optional: true
+    optics-ts:
+      optional: true
+    react-query:
+      optional: true
+    valtio:
+      optional: true
+    wonka:
+      optional: true
+    xstate:
+      optional: true
+  checksum: a914a56bac099f83c6c9d49af7c445886e9535b69f40d2dd13fd49843be64bf76529ec23ae5edef885e235b0fee51b8bcb5f1764444bd1c3dc70d2d5b9779816
+  languageName: node
+  linkType: hard
+
 "js-cookie@npm:^2.2.1":
   version: 2.2.1
   resolution: "js-cookie@npm:2.2.1"
@@ -4123,7 +4160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:12.0.4":
+"next@npm:latest":
   version: 12.0.4
   resolution: "next@npm:12.0.4"
   dependencies:
@@ -4704,14 +4741,15 @@ __metadata:
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
     husky: ^7.0.4
+    jotai: ^1.4.4
     lint-staged: ^12.0.2
-    next: 12.0.4
+    next: latest
     postcss: 8.3.11
     prettier: ^2.4.1
     pretty-quick: ^3.1.2
-    react: 17.0.2
+    react: beta
     react-countup: ^6.1.0
-    react-dom: 17.0.2
+    react-dom: beta
     react-intersection-observer: ^8.32.2
     react-use: ^17.3.1
     react-visibility-sensor: ^5.1.1
@@ -5022,16 +5060,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:17.0.2":
-  version: 17.0.2
-  resolution: "react-dom@npm:17.0.2"
+"react-dom@npm:beta":
+  version: 18.0.0-beta-149b420f6-20211119
+  resolution: "react-dom@npm:18.0.0-beta-149b420f6-20211119"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-    scheduler: ^0.20.2
+    scheduler: 0.21.0-beta-149b420f6-20211119
   peerDependencies:
-    react: 17.0.2
-  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+    react: 18.0.0-beta-149b420f6-20211119
+  checksum: 2e759713f23e74ebbeb6a58704571cf36011c2ade1d7da1dc3625aa0f0e572cbca3ff97cedb03ea45bba3a122ca64703aecb51ee86bbde863f6693a7dd18105e
   languageName: node
   linkType: hard
 
@@ -5112,13 +5150,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:17.0.2":
-  version: 17.0.2
-  resolution: "react@npm:17.0.2"
+"react@npm:beta":
+  version: 18.0.0-beta-149b420f6-20211119
+  resolution: "react@npm:18.0.0-beta-149b420f6-20211119"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
+  checksum: ba2312c93588e3b49d531e85847dbcabff7d048fa83a8511608293fa7e4c46392ad39c23b27866ab9cbdfddfc8ba78f90cf4aeb84c987ca46757d5d860bf8817
   languageName: node
   linkType: hard
 
@@ -5382,13 +5420,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.20.2":
-  version: 0.20.2
-  resolution: "scheduler@npm:0.20.2"
+"scheduler@npm:0.21.0-beta-149b420f6-20211119":
+  version: 0.21.0-beta-149b420f6-20211119
+  resolution: "scheduler@npm:0.21.0-beta-149b420f6-20211119"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-  checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
+  checksum: 775bb53053014dba779838ca16120bfe56a32968141bda3c026fc3e50d45a07b646dedd2c51907a6391d1b6dc12df8e026b9128fe70dbad24c12d54ee2ffd2b0
   languageName: node
   linkType: hard
 

@@ -120,11 +120,17 @@
   .btn {
     @apply px-8 py-3 text-sm text-center text-white rounded-full sm:text-base bg-primary hover:bg-accent font-body;
   }
+  .btn-white {
+    @apply flex items-center space-x-1 text-sm text-white hover:text-black font-body;
+  }
   .speech-dialog {
     @apply relative p-6 w-full h-32 max-w-[250px] md:h-64 flex items-center justify-center;
   }
   .project-icon {
     @apply w-8 h-8 transition-all ease-in transform transform-box group-hover:scale-110 group-hover:rotate-90;
+  }
+  .role-icon {
+    @apply cursor-pointer transform-box;
   }
   .text-input {
     @apply p-4 block w-full max-w-lg font-body placeholder-[#707070] bg-[#a8a8a8] focus:outline-none focus:ring-primary focus:border-primary;
@@ -206,10 +212,5 @@
 
   .border-t-yellow:after {
     border-top-color: #daa13d;
-  }
-
-  .prefix__cls-3:hover {
-    fill: var(--color-accent);
-    transition: all 0.2s ease-in;
   }
 }

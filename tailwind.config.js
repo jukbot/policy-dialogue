@@ -18,8 +18,8 @@ module.exports = {
       cover: 'cover',
       contain: 'contain',
       '75%': '75%',
-      'landing-size': '160% 120%',
       'width-90': '90% 100%',
+      'landing-size': '160% 120%',
       'footer-size': '80% 180%',
     },
     extend: {
@@ -31,8 +31,11 @@ module.exports = {
         danger: 'var(--color-danger)',
         disabled: 'var(--color-disabled)',
       },
-      transformOrigin: {
-        middle: '50% 50%',
+      strokeWidth: {
+        3: '3',
+        4: '4',
+        6: '5',
+        5: '6',
       },
       backgroundImage: {
         'hero-pattern': "url('/image/background/landing-hero.svg')",
@@ -50,6 +53,8 @@ module.exports = {
         'archive-hero-shape': "url('/image/background/archive-hero-shape.svg')",
         'archive-pattern': "url('/image/background/archive-hero-pattern.svg')",
         'archive-pattern-mobile': "url('/image/background/archive-hero-pattern-mobile.svg')",
+        'guideline-hero-pattern': "url('/image/background/guideline-hero-pattern.svg')",
+        'guideline-hero-pattern-mobile': "url('/image/background/guideline-hero-pattern-mobile.svg')",
         'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
         'clean-water': "url('/image/policy/clean-water.jpg')",
         education: "url('/image/policy/education.jpg')",
