@@ -258,7 +258,7 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
-          <div className="flex flex-col items-center justify-center space-y-8">
+          <div className="flex flex-col items-center justify-center sm:space-y-8">
             <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
               <h3>เข้าถึงคลังข้อมูลของ</h3>
               <h3>Policy Dialogue</h3>
