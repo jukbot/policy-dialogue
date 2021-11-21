@@ -14,7 +14,7 @@ const GuidelinePage = () => {
   return (
     <div className="relative">
       <main className="relative">
-        <section className="relative grid h-[50vh] lg:h-[75vh] bg-left-bottom bg-contain bg-no-repeat mix-blend-screen filter saturate-150 items-center bg-guideline-hero-pattern-mobile sm:bg-guideline-hero-pattern">
+        <section className="relative grid h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover bg-no-repeat mix-blend-screen filter saturate-150 items-center bg-guideline-hero-pattern-mobile sm:bg-guideline-hero-pattern">
           <div className="flex flex-col items-center justify-center pt-24 space-y-3 text-white lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-5xl">คู่มือการจัดกระบวนการ</h1>
             <div className="space-y-1">
