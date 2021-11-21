@@ -1,5 +1,5 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
-import PolicyWheelMobile from '@/components/Landing/PolicyWheelMobile'
+import PolicyContent from '@/components/Landing/PolicyContent'
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,7 +9,6 @@ import { useInView } from 'react-intersection-observer'
 import { useIntersection } from 'react-use'
 import QuestionMark from '../components/Icon/QuestionMark'
 import PolicyCircle from '../components/Landing/PolicyCircle'
-import PolicyWheel from '../components/Landing/PolicyWheel'
 import ScrollToContent from '../components/Landing/ScrollToContent'
 import DesignPolicy from '/public/image/landing/designPolicy.webp'
 
@@ -187,15 +186,13 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="relative hidden lg:flex justify-center lg:mt-[32rem]">
+          <div className="relative space-y-8 flex flex-col items-center justify-between mt-[46rem] lg:mt-[32rem]">
             <Link href="/process">
               <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
             </Link>
-          </div>
-          <div className="relative flex lg:hidden justify-center mt-[40rem] sm:mt-[60rem]">
             <p className="text-sm text-white font-body">*Adapted from Systemicdesigntoolkit.org</p>
           </div>
-          <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-12 bg-white sm:p-12 lg:mx-24 rounded-xl">
+          <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-8 bg-white sm:p-12 lg:mx-24 rounded-xl">
             <div className="flex flex-col py-8 space-y-4 jutify-center">
               <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
               <p className="text-center sm:text-lg text-body font-body max-w-prose">
@@ -203,20 +200,7 @@ const Home: NextPage = () => {
                 ประเด็นหลัก
               </p>
             </div>
-
-            <div className="relative">
-              <div className="absolute mx-auto mt-60 lg:mt-72 -ml-28 inset-x-1/2 ">
-                <div className="items-center justify-center hidden lg:flex w-56 h-56 p-6 rounded-full bg-[#FEEDEA]">
-                  <h3 className="text-2xl text-center text-body">นโยบายเพื่อสังคมสูงวัย</h3>
-                </div>
-              </div>
-              <PolicyWheel className="hidden w-full h-full fill-current text-primary lg:block" />
-              <PolicyWheelMobile className="block w-full h-full fill-current text-primary lg:hidden" />
-              <div className="flex flex-col justify-between w-full h-64 p-6 mt-8 space-y-4 rounded-lg lg:hidden bg-[#FFECEA]">
-                <p className="text-sm text-center sm:text-lg font-body text-body">การสูงวันในถื่นที่อยู่อาศัยเดิมอย่างมีสุขภาวะ (Aging in Place)</p>
-                <button className="w-full btn">อ่านต่อ</button>
-              </div>
-            </div>
+            <PolicyContent />
           </div>
         </section>
         <section className="relative h-full py-24 bg-white" ref={ref}>

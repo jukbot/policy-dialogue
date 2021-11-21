@@ -31,7 +31,6 @@ const ArchivePage = () => {
                       transform="translate(-257.346 -9.572)"
                     />
                   </svg>
-
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Aging in place</p>
                     <p className="font-body">การสูงวัยในถิ่นที่อยู่อาศัยเดิมอย่างมีสุขภาวะ</p>
@@ -63,7 +62,6 @@ const ArchivePage = () => {
                     <p className="font-body">ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุ ที่อยู่ในช่วง 6 เดือนทองหลังพ้นภาวะวิกฤต</p>
                   </div>
                 </div>
-
                 <div className="flex items-center justify-center mt-auto text-sm font-body">
                   <p>เร็วๆ นี้</p>
                 </div>
@@ -78,7 +76,6 @@ const ArchivePage = () => {
                       transform="translate(-708.777 -1088.507)"
                     />
                   </svg>
-
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Dementia</p>
                     <p className="font-body">ระบบบริการสำหรับผู้ป่วยโรคสมองเสื่อม</p>
@@ -97,7 +94,6 @@ const ArchivePage = () => {
                       transform="translate(-1341.303 -41.633)"
                     />
                   </svg>
-
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Long-Term Care</p>
                     <p className="font-body">ระบบการดูแลระยะยาวสำหรับผู้สูงอายุ ที่มีภาวะพึ่งพิง</p>

@@ -120,6 +120,9 @@
   .btn {
     @apply px-8 py-3 text-sm text-center text-white rounded-full sm:text-base bg-primary hover:bg-accent font-body;
   }
+  .btn-disabled {
+    @apply px-8 py-3 text-sm text-center text-white rounded-full sm:text-base bg-[#CFCFCF] font-body cursor-not-allowed;
+  }
   .btn-white {
     @apply flex items-center space-x-1 text-sm text-white hover:text-black font-body;
   }
