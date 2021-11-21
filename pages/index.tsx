@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="relative">
-      <div className="bg-fixed fixed w-1/2 h-[100vh] sm:w-[52%] sm:h-[100vh] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[100%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
+      <div className="bg-fixed fixed w-1/2 h-screen sm:w-[52%] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[100%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
       <main className="relative overflow-hidden">
         <section
           className={`${
@@ -288,7 +288,7 @@ const Home: NextPage = () => {
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center sm:space-y-8">
             <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
-              <h3>โพลิซี ไดอะลอค</h3>
+              <h3>โพลิซี ไดอะล็อก</h3>
               <h3>ทำงานอย่างไร ?</h3>
             </div>
             <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
