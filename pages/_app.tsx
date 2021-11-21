@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Policy Dialogue | กระบวนการหารือเชิงนโยบาย</title>
       </Head>
-      <main className="relative w-full h-full bg-secondary">
+      <main className={`relative w-full h-full bg-secondary ${process.env.NODE_ENV === 'development' ? 'debug-screens' : ''}`}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />

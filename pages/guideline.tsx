@@ -3,12 +3,17 @@ import DialogueLoop from '@/components/Guideline/DialogueLoop'
 import DialogueLoopMobile from '@/components/Guideline/DialogueLoopMobile'
 import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
-import { Goals, Process, Teamwork } from '@/components/Icon'
 import Image from 'next/image'
 import Link from 'next/link'
 import Content from '/public/image/guideline/content.svg'
+import Result1 from '/public/image/guideline/expect-result-1.webp'
+import Result2 from '/public/image/guideline/expect-result-2.webp'
+import Result3 from '/public/image/guideline/expect-result-3.webp'
+import Goals from '/public/image/guideline/goals.svg'
 import Participants from '/public/image/guideline/participants.svg'
+import Process from '/public/image/guideline/process.svg'
 import Resources from '/public/image/guideline/resources.svg'
+import Teamwork from '/public/image/guideline/teamwork.svg'
 
 const GuidelinePage = () => {
   return (
@@ -70,30 +75,28 @@ const GuidelinePage = () => {
               <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
                 <div className="flow-root">
                   <div className="space-y-4">
-                    <div className="flex-shrink-0">
-                      <Process className="w-12 h-12" aria-hidden="true" />
-                    </div>
+                    <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Process} alt="process" />
                     <h3 className="text-xl font-bold">Process</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
                       มีบรรยากาศการแลกเปลี่ยนที่ปลอดภัยและบรรลุเป้าหมายที่ตั้งไว้ กระบวนการควรประกอบด้วย
                     </p>
                     <ul className="space-y-2 text-sm leading-relaxed list-inside sm:text-base">
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Document</p>
                           <p className="font-body">เอกสารที่อธิบายรายละเอียดวงหารือ</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Materials</p>
                           <p className="font-body">สื่อนำเสนอที่ชัดเจน ดึงดูด ตรงประเด็น และน่าสนใจ </p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Facilitation Skills</p>
                           <p className="font-body">นำกระบวนการ ด้วยทักษะการตั้งคำถาม เพื่อให้ได้ปลายทางที่ตรงประเด็น</p>
@@ -104,23 +107,21 @@ const GuidelinePage = () => {
                 </div>
                 <div className="flow-root">
                   <div className="space-y-4">
-                    <div className="flex-shrink-0">
-                      <Teamwork className="w-12 h-12" aria-hidden="true" />
-                    </div>
+                    <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Teamwork} alt="teamwork" />
                     <h3 className="text-xl font-bold">Team Work</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
                       การทำงานเป็นทีมที่สอดประสานกัน เพื่อรองรับ ‘ความยืดหยุ่น’ ของเนื้อหาและกระบวนการ
                     </p>
                     <ul className="space-y-2 text-sm leading-relaxed list-inside sm:text-base">
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Communication skills</p>
                           <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่าง ๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Problem-Solving Skills</p>
                           <p className="font-body">เข้าใจปัญหาอย่างลึกซึ้งและเห็นอกเห็นใจ และสามารถตัดสินใจเร็วพอ เพื่อแก้ปัญหาอย่างมีประสิทธิภาพ</p>
@@ -131,28 +132,26 @@ const GuidelinePage = () => {
                 </div>
                 <div className="flow-root">
                   <div className="space-y-4">
-                    <div className="flex-shrink-0">
-                      <Goals className="w-12 h-12" aria-hidden="true" />
-                    </div>
+                    <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Goals} alt="goals" />
                     <h3 className="text-xl font-bold">Goals</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">เป้าหมายที่ชัดเจน แต่ยืดหยุ่น</p>
                     <ul className="space-y-2 text-sm leading-relaxed list-inside sm:text-base">
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Goals</p>
                           <p className="font-body">เป้าหมายของการจัดกระบวนการทั้งหมด</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Objectives</p>
                           <p className="font-body">จุดประสงค์ของการจัดกระบวนในแต่ละครั้ง</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
-                        <span className="text-xl font-bold leading-none align-top">•</span>
+                        <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Expected</p>
                           <p className="font-body">ผลลัพธ์ที่คาดหวังของการจัดกระบวนในแต่ละครั้ง</p>
@@ -252,8 +251,100 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full py-12 bg-white sm:py-24">
-          <div className="max-w-6xl px-6 mx-auto text-body">
+          <div className="max-w-6xl mx-auto text-body">
             <h2 className="text-4xl font-bold text-center">ผลลัพธ์ที่คาดหวังได้</h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 pt-8 md:pt-16 md:grid-cols-2">
+            <div className="relative col-span-1 px-6 md:px-0">
+              <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
+            </div>
+            <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+              <h3 className="text-2xl font-bold">เนื้อหาที่ได้</h3>
+              <ul className="space-y-4 text-sm leading-relaxed list-inside sm:text-base">
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">ข้อมูลเชิงลึก</p>
+                    <p className="font-body">จากผู้เข้าร่วม จุดร่วมของปัญหา อุปสรรคและช่องโหว่ของประเด็นนั้นๆ</p>
+                  </div>
+                </li>
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">ความคิดเห็น</p>
+                    <p className="font-body">ความคิดเห็นของผู้เข้าร่วมที่หลากหลาย ไปจนถึงข้อเสนอที่เกิดขึ้นจากวง</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 pt-8 md:pt-24 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 px-6 space-y-4 md:order-first md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+              <h3 className="text-2xl font-bold">ช่วยในการขับเคลื่อนนโยบาย</h3>
+              <ul className="space-y-4 text-sm leading-relaxed list-inside sm:text-base">
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">สร้างการมีส่วนร่วมกับผู้คน</p>
+                    <p className="font-body">
+                      ภาคส่วนต่างๆ เข้าใจกันมากขึ้น ซึ่งอาจมีส่วนช่วยในการขับเคลื่อนนโยบาย หรือออกแบบการแก้ไขปัญหาในอนาคต สร้างความเข้าใจ หาจุดร่วม
+                      และแลกเปลี่ยนความต่าง อาจทำให้เกิดทางเลือกใหม่จากภาพที่ชัดขึ้น
+                    </p>
+                  </div>
+                </li>
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">โอกาสในการผลักดันต่อ</p>
+                    <p className="font-body">ผู้กำหนดนโยบายและผู้ที่นำไปใช้ในพื้นที่ได้รับฟังกันและกัน สามารถเติมเต็มและเพิ่มโอกาสผลักดันนโยบายร่วมกันต่อได้</p>
+                  </div>
+                </li>
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">การสื่อสารในวงกว้าง</p>
+                    <p className="font-body">เป็นอีกกระบอกเสียง แสดงพลังความต้องการและร่วมผลักดันนโยบาย</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="relative col-span-1 px-6 md:px-0">
+              <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 pt-8 md:pt-24 md:grid-cols-2">
+            <div className="relative col-span-1 px-6 md:px-0">
+              <Image src={Result3} height="640" width="1024" className="w-full" alt="expect-ressult-3" />
+            </div>
+            <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+              <h3 className="text-2xl font-bold">ตอบสนองการพัฒนา</h3>
+              <ul className="space-y-4 text-sm leading-relaxed list-inside sm:text-base">
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">ลดช่องว่างระหว่างตำแหน่งงาน</p>
+                    <p className="font-body">เกิดการพูดคุยแลกเปลี่ยนกันระหว่างผู้กำหนดใช้นโยบายและผู้ปฏิบัติงาน ทำให้ลดช่องว่างระหว่างกัน </p>
+                  </div>
+                </li>
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">เปลี่ยน-ปรับโจทย์ได้อย่างเหมาะสม</p>
+                    <p className="font-body">มีความยืดหยุ่นในการทบทวนสมมติฐานและตีโจทย์ เพื่อเลือกโจทย์ที่สามารถตอบสนองต่อบริบทที่เหมาะสมที่สุด</p>
+                  </div>
+                </li>
+                <li className="inline-flex space-x-2">
+                  <span className="text-2xl font-bold leading-none align-top">•</span>
+                  <div className="space-y-1">
+                    <p className="font-bold">เกิดการแบ่งปันทรัพยากร</p>
+                    <p className="font-body">ผู้เข้าร่วมได้เรียนรู้จากประสบการณ์ในพื้นที่อื่น เกิดการผลักดันและสร้างแรงบันดาลใจในการปฏิบัติงานต่อ</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
