@@ -216,4 +216,9 @@
   .border-t-yellow:after {
     border-top-color: #daa13d;
   }
+
+  .white-stoke {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+  }
 }

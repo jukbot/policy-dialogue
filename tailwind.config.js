@@ -56,6 +56,8 @@ module.exports = {
         'archive-pattern-mobile': "url('/image/background/archive-hero-pattern-mobile.svg')",
         'guideline-hero-pattern': "url('/image/background/guideline-hero-pattern.svg')",
         'guideline-hero-pattern-mobile': "url('/image/background/guideline-hero-pattern-mobile.svg')",
+        'value-hero-pattern': "url('/image/background/value-hero-pattern.svg')",
+        'value-hero-pattern-mobile': "url('/image/background/value-hero-pattern-mobile.svg')",
         'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
         'clean-water': "url('/image/policy/clean-water.jpg')",
         education: "url('/image/policy/education.jpg')",

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390.736" height="449.493" viewBox="0 0 390.736 449.493">
+    <defs>
+        <linearGradient id="linear-gradient" y1=".5" x2="1.042" y2="-.416" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#191919"/>
+            <stop offset="1" stop-color="#36723b" stop-opacity=".051"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" y1=".5" x2="1.042" y2="-.416" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#191919"/>
+            <stop offset="1" stop-color="#242054"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path style="fill:none" d="M69 96h390.736v449.493H69z"/>
+        </clipPath>
+        <style>
+            .cls-3{isolation:isolate;mix-blend-mode:screen;fill:url(#linear-gradient)}
+        </style>
+    </defs>
+    <g id="Scroll_Group_23" data-name="Scroll Group 23" transform="translate(-69 -96)" style="clip-path:url(#clip-path);isolation:isolate">
+        <g id="Group_1051" data-name="Group 1051" transform="translate(69.403 19.09)">
+            <path id="Union_32" data-name="Union 32" class="cls-3" d="M-2098.275 129V91.027l-57.13-57.13a41.357 41.357 0 0 1 0-58.487 41.357 41.357 0 0 1 58.487 0l40.164 40.163 40.034-40.034a41.01 41.01 0 0 1 58 0 41.01 41.01 0 0 1 0 58l-57 57V129z" transform="rotate(90 -1258.873 1324.242)"/>
+            <path id="Union_33" data-name="Union 33" class="cls-3" d="M-2098.275 129V91.027l-57.13-57.13a41.357 41.357 0 0 1 0-58.487 41.357 41.357 0 0 1 58.487 0l40.164 40.163 40.034-40.034a41.01 41.01 0 0 1 58 0 41.01 41.01 0 0 1 0 58l-57 57V129z" transform="rotate(180 -1008.058 102.5)"/>
+            <path id="Union_31" data-name="Union 31" d="M-2084.366 163.1v-46.26l-68.67-68.67a49.562 49.562 0 0 1 0-70.092 49.563 49.563 0 0 1 70.092 0l48.141 48.141 48.142-48.141a49.562 49.562 0 0 1 70.092 0 49.562 49.562 0 0 1 0 70.092l-68.672 68.671V163.1z" transform="translate(2330.803 362.897)" style="fill:url(#linear-gradient-3);mix-blend-mode:screen;isolation:isolate"/>
+            <path id="Path_259" data-name="Path 259" d="M190.79 943.891h38.178a4.28 4.28 0 0 0 3.707-6.421l-19.088-33.064a35.958 35.958 0 0 1 62.281-35.958l19.088 33.064a4.281 4.281 0 0 0 7.415 0l19.09-33.064a35.958 35.958 0 1 1 62.28 35.958l-19.09 33.063a4.282 4.282 0 0 0 3.708 6.422h38.179a35.958 35.958 0 1 1 0 71.916H368.36a4.282 4.282 0 0 0-3.708 6.422l19.09 33.064c.247.427.477.86.7 1.294l8.038 13.951 15.643 52.224a1.205 1.205 0 0 1-2.207.922l-29.864-23.159a35.945 35.945 0 0 1-54.594-9.275l-19.09-33.062a4.281 4.281 0 0 0-7.415 0l-19.088 33.063a35.958 35.958 0 1 1-62.281-35.957l19.088-33.064a4.281 4.281 0 0 0-3.707-6.422H190.79a35.958 35.958 0 0 1 0-71.916z" transform="translate(91.336 -866.964)" style="stroke:#daa13d;stroke-width:5px;fill:none"/>
+            <path id="Path_268" data-name="Path 268" d="M1381.689 41.633c-4.3 0-8.236 2.348-11.308 6.256-3.072-3.908-7.012-6.256-11.308-6.256-9.814 0-17.77 12.253-17.77 27.368s7.956 27.367 17.77 27.367c4.3 0 8.236-2.348 11.308-6.256 3.072 3.908 7.012 6.256 11.308 6.256 9.814 0 17.77-12.253 17.77-27.367s-7.959-27.368-17.77-27.368z" transform="translate(-1023.459 411.632)" style="stroke-width:3px;stroke:#cc79a7;fill:none"/>
+            <path id="Path_269" data-name="Path 269" d="M912.281 71.834h-62.288a8.341 8.341 0 0 1-2.638-16.254l13.526-4.509h-10.888a8.341 8.341 0 0 1-2.638-16.254l13.526-4.509h-10.888a8.341 8.341 0 1 1 0-16.682h62.288a8.341 8.341 0 0 1 2.638 16.254l-13.526 4.509h10.888a8.341 8.341 0 0 1 2.638 16.254l-13.526 4.509h10.888a8.341 8.341 0 1 1 0 16.682z" transform="translate(-881.137 229.166)" style="stroke:#36723b;stroke-width:3px;fill:none"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="950" viewBox="0 0 1920 950">
+    <defs>
+        <linearGradient id="linear-gradient" y1=".5" x2="1.042" y2="-.416" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#191919"/>
+            <stop offset="1" stop-color="#36723b" stop-opacity=".051"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" y1=".5" x2="1.042" y2="-.416" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#191919"/>
+            <stop offset="1" stop-color="#242054"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path id="Rectangle_730" data-name="Rectangle 730" style="fill:#fff;stroke:#707070" d="M0 0h1920v950H0z"/>
+        </clipPath>
+        <style>
+            .cls-3{mix-blend-mode:screen;isolation:isolate;fill:url(#linear-gradient)}
+        </style>
+    </defs>
+    <g id="Mask_Group_56" data-name="Mask Group 56" style="clip-path:url(#clip-path)">
+        <g id="Group_589" data-name="Group 589">
+            <path id="Union_21" data-name="Union 21" class="cls-3" d="M-2011.015 339.05V252l-129.221-129.221a93.265 93.265 0 0 1 0-131.9 93.264 93.264 0 0 1 131.9 0l90.59 90.591 90.59-90.59a93.264 93.264 0 0 1 131.9 0 93.264 93.264 0 0 1 0 131.9L-1824.486 252v87.05z" transform="rotate(180 -890.776 104.368)"/>
+            <path id="Union_20" data-name="Union 20" class="cls-3" d="M-1946 495V371.789l-182.89-182.89a132 132 0 0 1 0-186.676 132 132 0 0 1 186.676 0L-1814 130.438l128.215-128.214a132 132 0 0 1 186.675 0 132 132 0 0 1 0 186.676L-1682 371.792V495z" transform="rotate(90 -1085.64 1580.64)"/>
+            <path id="Union_16" data-name="Union 16" d="M-1946 495V371.789l-182.89-182.89a132 132 0 0 1 0-186.676 132 132 0 0 1 186.676 0L-1814 130.438l128.215-128.214a132 132 0 0 1 186.675 0 132 132 0 0 1 0 186.676L-1682 371.792V495z" transform="translate(3310 255)" style="fill:url(#linear-gradient-3);mix-blend-mode:screen;isolation:isolate"/>
+            <path id="Path_1" data-name="Path 1" d="M1671.369 622.995c-15.238-13.545-39.659-15.762-64.493-8.068-24.834-7.694-49.255-5.477-64.493 8.068s-17.733 35.252-9.076 57.327c-8.657 22.075-6.162 43.782 9.076 57.327.171.152.348.3.521.447l-7.937 26.5a.731.731 0 0 0 1.339.559l23.165-17.965c13.762 4.408 30.486 3.769 47.4-1.473 24.834 7.695 49.255 5.478 64.493-8.067s17.733-35.253 9.076-57.327c8.66-22.076 6.167-43.783-9.071-57.328z" transform="translate(-1606.877 -676.526)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#36723b;fill:none;stroke-width:5px"/>
+            <path id="Path_59" data-name="Path 59" d="M1404.02 41.633c-6.671 0-12.79 3.646-17.561 9.715-4.771-6.069-10.889-9.715-17.56-9.715-15.241 0-27.6 19.028-27.6 42.5s12.355 42.5 27.6 42.5c6.671 0 12.789-3.646 17.56-9.715 4.771 6.069 10.89 9.715 17.561 9.715 15.241 0 27.6-19.028 27.6-42.5s-12.359-42.5-27.6-42.5z" transform="translate(399.541 472.367)" style="stroke:#cc79a7;fill:none;stroke-width:5px"/>
+            <path id="Path_215" data-name="Path 215" d="M205.864 983.055h54.182a6.074 6.074 0 0 0 5.262-9.112l-27.09-46.924a51.032 51.032 0 0 1 88.39-51.032l27.09 46.924a6.076 6.076 0 0 0 10.523 0l27.092-46.924a51.031 51.031 0 1 1 88.387 51.032l-27.092 46.922a6.076 6.076 0 0 0 5.262 9.114h54.184a51.032 51.032 0 0 1 0 102.064h-54.183a6.076 6.076 0 0 0-5.262 9.114l27.092 46.924a50.43 50.43 0 0 1 1 1.836l11.407 19.8 22.2 74.116a1.711 1.711 0 0 1-3.132 1.308l-42.384-32.867a51.013 51.013 0 0 1-77.48-13.162l-27.092-46.922a6.076 6.076 0 0 0-10.523 0l-27.09 46.922a51.031 51.031 0 1 1-88.39-51.03l27.09-46.924a6.075 6.075 0 0 0-5.262-9.114h-54.181a51.032 51.032 0 0 1 0-102.064z" transform="translate(1513.462 -980.775)" style="stroke:#daa13d;fill:none;stroke-width:5px"/>
+            <path id="Path_216" data-name="Path 216" d="M956.549 108.315H855.221a13.569 13.569 0 0 1-4.291-26.441l22-7.335h-17.709A13.569 13.569 0 0 1 850.93 48.1l22-7.335h-17.709a13.569 13.569 0 1 1 0-27.138h101.328a13.569 13.569 0 0 1 4.291 26.441l-22 7.335h17.713a13.569 13.569 0 0 1 4.291 26.441l-22 7.335h17.713a13.569 13.569 0 1 1 0 27.138z" transform="translate(236.561 281.685)" style="stroke:#36723b;fill:none;stroke-width:5px"/>
+        </g>
+    </g>
+</svg>
