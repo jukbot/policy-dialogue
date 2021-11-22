@@ -1,11 +1,11 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
-import DialogueLoop from '@/components/Guideline/DialogueLoop'
-import DialogueLoopMobile from '@/components/Guideline/DialogueLoopMobile'
 import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
 import Image from 'next/image'
 import Link from 'next/link'
 import Content from '/public/image/guideline/content.svg'
+import DialogueLoopMobile from '/public/image/guideline/dialogue-loop-mobile.svg'
+import DialogueLoop from '/public/image/guideline/dialogue-loop.svg'
 import Result1 from '/public/image/guideline/expect-result-1.webp'
 import Result2 from '/public/image/guideline/expect-result-2.webp'
 import Result3 from '/public/image/guideline/expect-result-3.webp'
@@ -219,8 +219,12 @@ const GuidelinePage = () => {
               </p>
             </div>
             <div className="relative space-y-8">
-              <DialogueLoop className="hidden w-full md:block" />
-              <DialogueLoopMobile className="block w-full md:hidden" />
+              <div className="hidden md:block">
+                <Image src={DialogueLoop} alt="dialogue-loop" />
+              </div>
+              <div className="flex justify-center md:hidden">
+                <Image src={DialogueLoopMobile} alt="dialogue-loop" />
+              </div>
               <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
                 <div className="flex items-start space-x-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
