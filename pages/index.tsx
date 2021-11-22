@@ -29,7 +29,6 @@ const Home: NextPage = () => {
 
   return (
     <div className="relative">
-      <div className="bg-fixed fixed w-1/2 h-screen sm:w-[52%] bg-right bg-[#232151] mix-blend-screen bg-opacity-75 from-[#191919] to-[#232151] rounded-l-[100%] bg-gradient-to-b bottom-0 -top-24 right-0"></div>
       <main className="relative overflow-hidden">
         <section
           className={`${
@@ -45,6 +44,7 @@ const Home: NextPage = () => {
             </h2>
           </div>
         </section>
+        <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-right bg-no-repeat bg-cover opacity-75 mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
 
         <section className="relative h-full bg-white">
           <ScrollToContent />
