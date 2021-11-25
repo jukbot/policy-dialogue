@@ -130,7 +130,7 @@
     @apply relative p-6 w-full h-32 max-w-[250px] md:h-64 flex items-center justify-center;
   }
   .project-icon {
-    @apply w-8 h-8 transition-all ease-in transform transform-box group-hover:scale-110 group-hover:rotate-90;
+    @apply w-8 h-8 transition-all ease-in transform transform-box group-hover:scale-110 group-hover:rotate-180;
   }
   .role-icon {
     @apply cursor-pointer transform-box;
