@@ -36,7 +36,7 @@ const ProcessPage = () => {
               <span className="absolute bottom-0 right-24 text-white text-[180px] font-bold white-stoke align-bottom rotate-180 transform">“</span>
             </div>
           </section>
-          <section className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 py-12 sm:pt-64`}>
+          <section className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 p-6 sm:p-12 sm:pt-64`}>
             <div className="relative flex flex-col mx-24 space-y-12">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold">ก่อนกระบวนการ</h3>
@@ -52,7 +52,7 @@ const ProcessPage = () => {
               )}
             </div>
           </section>
-          <section className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 p-6 sm:pt-64`}>
+          <section className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 p-6 sm:p-12 sm:pt-64`}>
             <div className="relative flex flex-col mx-24 space-y-12 ">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold">ระหว่างกระบวนการ</h3>
@@ -68,7 +68,6 @@ const ProcessPage = () => {
               )}
             </div>
           </section>
-
           <section className="h-full py-24 bg-[#FEEDEA] col-span-full w-full">{selectedSection === 0 ? <PreProcess /> : <PostProcess />}</section>
         </section>
 
