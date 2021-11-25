@@ -29,7 +29,7 @@ const ValuePage = () => {
             <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-72 space-x-8">
               <span className="absolute top-6 left-24 text-white text-[180px] font-bold white-stoke align-top">“</span>
               <h2 className="flex items-center justify-center mt-12 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
-                หลังจากจัดกระบวนการกว่า 30 ครัั้ง RISE Impact
+                หลังจากจัดกระบวนการกว่า 30 ครั้ง RISE Impact
                 <br />
                 ได้ทบทวนผลลัพธ์ที่เกิดขึ้น และพบว่า Policy Dialogue
                 <br />

@@ -1,3 +1,4 @@
+import { Transition } from '@headlessui/react'
 import { PropsWithChildren } from 'react'
 
 interface Props {
@@ -31,7 +32,17 @@ const Accordion = ({ title, children, isOpen: isOpen, number, toggleClick = () =
         </button>
       </dt>
       <dd className="pr-6">
-        <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col py-2 space-y-4 text-sm font-body`}>{children}</div>
+        <Transition
+          show={isOpen}
+          enter="transition duration-100"
+          enterFrom="transform opacity-0"
+          enterTo="transform opacity-100"
+          leave="transition duration-150"
+          leaveFrom="transform opacity-100"
+          leaveTo="transform opacity-0"
+        >
+          <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col py-2 space-y-4 text-sm font-body`}>{children}</div>
+        </Transition>
       </dd>
     </section>
   )

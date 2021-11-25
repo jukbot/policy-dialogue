@@ -98,7 +98,7 @@ const TeamRoleChart = (props: Props): JSX.Element => {
             transform="translate(1507 451)"
             fill="#6badcb"
             strokeWidth="6"
-            className={`${selectedTeam === 1 ? 'fill-[#ffffff] stroke-[#f04e30]' : 'group-hover:fill-[#ffffff] group-hover:stroke-[#f04e30]'}`}
+            className={`${selectedTeam === 1 ? 'fill-[#ffffff] stroke-[#f04e30]' : 'group-hover:fill-[#ffffff] group-hover:stroke-[#f04e30]'} transition`}
           />
           <text
             id="\u0E17\u0E35\u0E21\u0E08\u0E31\u0E14_\u0E01\u0E23\u0E30\u0E1A\u0E27\u0E19\u0E01\u0E32\u0E23"
@@ -124,7 +124,7 @@ const TeamRoleChart = (props: Props): JSX.Element => {
             transform="translate(1259 917)"
             fill="#cc79a7"
             strokeWidth="6"
-            className={`${selectedTeam === 2 ? 'fill-[#ffffff] stroke-[#f04e30]' : 'group-hover:fill-[#ffffff] group-hover:stroke-[#f04e30]'}`}
+            className={`${selectedTeam === 2 ? 'fill-[#ffffff] stroke-[#f04e30]' : 'group-hover:fill-[#ffffff] group-hover:stroke-[#f04e30]'} transition`}
           />
           <text
             id="\u0E17\u0E35\u0E21_\u0E1B\u0E23\u0E30\u0E2A\u0E32\u0E19\u0E07\u0E32\u0E19"
@@ -151,7 +151,7 @@ const TeamRoleChart = (props: Props): JSX.Element => {
             transform="translate(1012.999 3149)"
             fill="#daa13d"
             strokeWidth="6"
-            className={`${selectedTeam === 0 ? 'fill-[#ffffff] stroke-[#f04e30]' : 'group-hover:fill-[#ffffff] group-hover:stroke-[#f04e30]'}`}
+            className={`${selectedTeam === 0 ? 'fill-[#ffffff] stroke-[#f04e30]' : 'group-hover:fill-[#ffffff] group-hover:stroke-[#f04e30]'} transition`}
           />
           <text
             id="\u0E17\u0E35\u0E21\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32"
