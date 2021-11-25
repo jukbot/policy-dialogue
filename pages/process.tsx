@@ -1,7 +1,10 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const ProcessPage = () => {
+  const [selectedSection, setSelectedSection] = useState<number>(0)
   return (
     <div className="relative">
       <main className="relative">
@@ -16,7 +19,7 @@ const ProcessPage = () => {
           </div>
         </section>
 
-        <section className="relative h-full py-24 bg-[#FEEDEA]">
+        <section className="relative grid h-full lg:grid-cols-2">
           <section className="absolute w-full h-full space-y-12 -top-24 ">
             <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-72 space-x-8">
               <span className="absolute top-6 left-24 text-white text-[180px] font-bold white-stoke align-top">“</span>
@@ -31,28 +34,40 @@ const ProcessPage = () => {
               <span className="absolute bottom-0 right-24 text-white text-[180px] font-bold white-stoke align-bottom rotate-180 transform">“</span>
             </div>
           </section>
-        </section>
-
-        <section className="relative h-full py-12 bg-white sm:py-24">
-          <div className="grid max-w-6xl grid-cols-1 gap-6 px-6 mx-auto text-body md:grid-cols-2">
-            <div className="flex flex-col col-span-1 space-y-8">
+          <section className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 py-12 sm:pt-64`}>
+            <div className="relative flex flex-col mx-24 space-y-12">
               <div className="space-y-4">
-                <h2 className="text-4xl font-semibold sm:text-5xl">จัดการอย่างไร</h2>
-                <h2 className="text-4xl font-semibold sm:text-5xl">ให้สำเร็จ</h2>
-                <p className="font-body">
-                  รวบรวมปัญหาที่พบ ข้อควรคำนึงและคำแนะนำ
-                  <br />
-                  จากประสบการณ์ของทีม เพื่อให้กระบวนการเป็นไปอย่างราบรื่น
-                  <br /> ชวนคุยได้บรรลุเป้าหมายที่ผู้จัดตั้งใจ
+                <h3 className="text-3xl font-bold">ก่อนกระบวนการ</h3>
+                <p className="font-body max-w-prose">
+                  เราใช้หลากหลายวิธีในการเตรียมข้อมูลให้ครบถ้วน และทันเหตุการณ์ เพื่อเข้าใจที่มาที่ไป ตั้งเป้าหมายที่ เป็นประโยชน์ต่อการออกแบบนโยบายสาธารณะ
+                  และสร้างการมีส่วนร่วมกับกลุ่มที่เกี่ยวข้อง
                 </p>
               </div>
+              {selectedSection === 0 ? (
+                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              ) : (
+                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              )}
             </div>
-            <div className="flex items-end justify-center">
-              <Link href="/">
-                <a className="w-1/2 btn">ดาวน์โหลดเอกสาร</a>
-              </Link>
+          </section>
+          <section className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 p-6 sm:pt-64`}>
+            <div className="relative flex flex-col mx-24 space-y-12 ">
+              <div className="space-y-4">
+                <h3 className="text-3xl font-bold">ระหว่างกระบวนการ</h3>
+                <p className="font-body max-w-prose">
+                  จัดวงหารือในหลากหลายแนวทาง เพื่อได้มาซึ่งผลลัพธ์ ที่มีคุณค่าต่อการผลักดันนโยบาย ผ่านการแลกเปลี่ยน ความคิดเห็น เพื่อหาจุดร่วม-จุดต่าง-ข้อสรุป
+                  ทั้งยังสร้าง การมีส่วนร่วมของภาคส่วนที่เกี่ยวข้องต่อประเด็นนั้นๆ
+                </p>
+              </div>
+              {selectedSection === 1 ? (
+                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              ) : (
+                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              )}
             </div>
-          </div>
+          </section>
+
+          <section className="h-full py-24 bg-[#FEEDEA] col-span-full w-full">test</section>
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
