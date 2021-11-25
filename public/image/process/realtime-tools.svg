@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="92.37" viewBox="0 0 116 92.37">
+    <defs>
+        <style>
+            .cls-5,.cls-7{fill:none}.cls-5{stroke-linecap:round;stroke-width:3px;stroke:#242054;stroke-linejoin:round}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_1170" data-name="Group 1170" transform="translate(-262 -2290.493)">
+        <path id="Line_40" data-name="Line 40" transform="translate(291.855 2351.428)" style="stroke-width:3px;stroke-linecap:round;stroke:#f04e30;fill:none" d="M0 29.928.145 0"/>
+        <path id="Line_47" data-name="Line 47" transform="translate(347.855 2292)" style="stroke:#daa13d;stroke-width:3px;stroke-linecap:round;fill:none" d="M0 29.928.145 0"/>
+        <g id="Ellipse_242" data-name="Ellipse 242" transform="translate(262 2291.428)" style="stroke-width:3px;stroke:#f04e30;fill:none">
+            <circle class="cls-6" cx="30" cy="30" r="30"/>
+            <circle class="cls-7" cx="30" cy="30" r="28.5"/>
+        </g>
+        <g id="Ellipse_250" data-name="Ellipse 250" transform="translate(318 2321.927)" style="fill:#daa13d;stroke:#daa13d;stroke-width:3px">
+            <circle class="cls-6" cx="30" cy="30" r="30"/>
+            <circle class="cls-7" cx="30" cy="30" r="28.5"/>
+        </g>
+        <path id="Icon_feather-check" data-name="Icon feather-check" class="cls-5" d="M30 9 13.5 25.5 6 18" transform="translate(274 2304.178)"/>
+        <g id="Group_169" data-name="Group 169" transform="translate(.5 30.501)">
+            <path id="Icon_feather-check-2" data-name="Icon feather-check" class="cls-5" d="M30 9 13.5 25.5" transform="translate(326 2304.428)"/>
+            <path id="Icon_feather-check-3" data-name="Icon feather-check" class="cls-5" d="M13.5 9 30 25.5" transform="translate(326 2304.428)"/>
+        </g>
+    </g>
+</svg>

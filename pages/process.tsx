@@ -1,4 +1,6 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import PostProcess from '@/components/Value/PostProgress'
+import PreProcess from '@/components/Value/PreProcess'
 import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -67,7 +69,7 @@ const ProcessPage = () => {
             </div>
           </section>
 
-          <section className="h-full py-24 bg-[#FEEDEA] col-span-full w-full">test</section>
+          <section className="h-full py-24 bg-[#FEEDEA] col-span-full w-full">{selectedSection === 0 ? <PreProcess /> : <PostProcess />}</section>
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">

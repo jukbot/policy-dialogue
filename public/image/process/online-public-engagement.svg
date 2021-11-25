@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="104" viewBox="0 0 96 104">
+    <defs>
+        <style>
+            .cls-9{fill:none}.cls-7{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_1172" data-name="Group 1172" transform="translate(-262 -2859)">
+        <g id="Polygon_21" data-name="Polygon 21" style="fill:none">
+            <path class="cls-7" d="M16.256 6.21a3 3 0 0 1 5.488 0l14.395 32.578A3 3 0 0 1 33.395 43H4.605a3 3 0 0 1-2.744-4.212z" transform="translate(262 2873)"/>
+            <path d="M19 7.423 4.605 40h28.79L19 7.423m0-3c1.109 0 2.218.596 2.744 1.787L36.14 38.788C37.015 40.77 35.563 43 33.395 43H4.605c-2.168 0-3.62-2.23-2.744-4.212L16.256 6.21C16.782 5.02 17.89 4.423 19 4.423z" style="fill:#f04e30;stroke:none" transform="translate(262 2873)"/>
+        </g>
+        <ellipse id="Ellipse_244" data-name="Ellipse 244" cx="28.5" cy="28" rx="28.5" ry="28" transform="translate(282 2888)" style="fill:#242054"/>
+        <circle id="Ellipse_245" data-name="Ellipse 245" cx="14" cy="14" r="14" transform="translate(320 2859)" style="fill:#daa13d"/>
+        <circle id="Ellipse_246" data-name="Ellipse 246" cx="9.5" cy="9.5" r="9.5" transform="translate(334 2869)" style="fill:#36723b"/>
+        <g id="Rectangle_227" data-name="Rectangle 227" transform="translate(321 2926)" style="stroke-width:3px;stroke:#6badcb;fill:none">
+            <rect class="cls-7" width="37" height="37" rx="2"/>
+            <rect class="cls-9" x="1.5" y="1.5" width="34" height="34" rx=".5"/>
+        </g>
+        <g id="Rectangle_228" data-name="Rectangle 228" transform="translate(262 2934)" style="fill:#cc79a7;stroke:#cc79a7;stroke-width:3px">
+            <rect class="cls-7" width="20" height="20" rx="2"/>
+            <rect class="cls-9" x="1.5" y="1.5" width="17" height="17" rx=".5"/>
+        </g>
+    </g>
+</svg>

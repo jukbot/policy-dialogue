@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="109" viewBox="0 0 96 109">
+    <defs>
+        <style>
+            .cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="Group_1166" data-name="Group 1166" transform="translate(-542 -2040.25)">
+        <g id="Rectangle_726" data-name="Rectangle 726" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#cc79a7;stroke:#cc79a7">
+            <path class="cls-4" d="M0 0h48v60H0z" transform="translate(542 2040.25)"/>
+            <path class="cls-5" d="M1.5 1.5h45v57h-45z" transform="translate(542 2040.25)"/>
+        </g>
+        <g id="Rectangle_727" data-name="Rectangle 727" style="fill:#242054;stroke:#242054;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px">
+            <path class="cls-4" d="M0 0h48v60H0z" transform="translate(566 2064.25)"/>
+            <path class="cls-5" d="M1.5 1.5h45v57h-45z" transform="translate(566 2064.25)"/>
+        </g>
+        <g id="Rectangle_728" data-name="Rectangle 728" style="fill:#f04e30;stroke:#f04e30;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px">
+            <path class="cls-4" d="M0 0h48v60H0z" transform="translate(590 2089.25)"/>
+            <path class="cls-5" d="M1.5 1.5h45v57h-45z" transform="translate(590 2089.25)"/>
+        </g>
+    </g>
+</svg>

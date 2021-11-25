@@ -34,7 +34,7 @@ const AboutPage = () => {
           </div>
           <div className="max-w-6xl px-6 py-12 mx-auto text-center lg:px-12">
             <div className="space-y-12">
-              <div className="mx-auto sm:max-w-xl lg:max-w-5xl">
+              <div className="mx-auto">
                 <h2 className="text-4xl font-bold lg:text-6xl">RISE IMPACT Team</h2>
               </div>
               <ul role="list" className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3">
