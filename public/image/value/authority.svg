@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="130.133" viewBox="0 0 140 130.133">
+    <defs>
+        <style>
+            .cls-6{stroke-width:3px}.cls-6,.cls-8{fill:none}.cls-6{stroke:#de5a3d;stroke-linecap:round;stroke-linejoin:round}.cls-7{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_1177" data-name="Group 1177" transform="translate(-262 -2040.25)">
+        <circle id="Ellipse_242" data-name="Ellipse 242" cx="13.422" cy="13.422" r="13.422" transform="translate(262 2096.827)" style="fill:#cc79a7"/>
+        <g id="Ellipse_1188" data-name="Ellipse 1188" transform="translate(318.578 2040.25)" style="stroke-width:3px;fill:#d9a13c;stroke:#daa13d">
+            <circle class="cls-7" cx="13.422" cy="13.422" r="13.422"/>
+            <circle class="cls-8" cx="13.422" cy="13.422" r="11.922"/>
+        </g>
+        <circle id="Ellipse_1186" data-name="Ellipse 1186" cx="13.422" cy="13.422" r="13.422" transform="translate(375.156 2096.827)" style="fill:#6badcb"/>
+        <circle id="Ellipse_1189" data-name="Ellipse 1189" cx="13.422" cy="13.422" r="13.422" transform="translate(355.023 2056.561)" style="fill:#36723b"/>
+        <g id="Ellipse_1191" data-name="Ellipse 1191" transform="translate(278.778 2053.205)" style="fill:#242054;stroke:#242054;stroke-width:3px">
+            <circle class="cls-7" cx="16.778" cy="16.778" r="16.778"/>
+            <circle class="cls-8" cx="16.778" cy="16.778" r="15.278"/>
+        </g>
+        <g id="Group_585" data-name="Group 585" transform="rotate(-14.98 8139.265 -72.664)">
+            <path id="Path_375" data-name="Path 375" class="cls-6" d="M0 7.416V4.2A4.2 4.2 0 0 1 4.2 0h0a4.2 4.2 0 0 1 4.2 4.2v16.993" transform="translate(23.054 13.601)"/>
+            <path id="Path_376" data-name="Path 376" class="cls-6" d="M0 7.415V4.2A4.2 4.2 0 0 1 4.2 0h0a4.2 4.2 0 0 1 4.2 4.2v16.992" transform="translate(31.46 16.404)"/>
+            <path id="Path_377" data-name="Path 377" class="cls-6" d="M39.866 28.47v-3.211a4.2 4.2 0 0 1 4.2-4.2h0a4.2 4.2 0 0 1 4.2 4.2v17.435a22.458 22.458 0 0 1-22.45 22.457h0a22.458 22.458 0 0 1-21.733-16.8L.143 33.224A4.41 4.41 0 0 1 2.1 28.353h0A4.41 4.41 0 0 1 8.287 30l6.359 11.68V4.2a4.2 4.2 0 0 1 4.2-4.2h0a4.2 4.2 0 0 1 4.2 4.2v27"/>
+        </g>
+    </g>
+</svg>

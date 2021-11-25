@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101.826" height="170.755" viewBox="0 0 101.826 170.755">
+    <defs>
+        <style>
+            .cls-6{stroke-width:3px;fill:none;stroke:#de5a3d;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="Group_1179" data-name="Group 1179" transform="translate(-977.868 -2070.34)">
+        <g id="Group_1187" data-name="Group 1187">
+            <g id="Group_595" data-name="Group 595" transform="translate(970.793 2053.25)">
+                <g id="Ellipse_1195" data-name="Ellipse 1195" transform="translate(32.678 37.478)" style="stroke-width:3px;fill:#242054;stroke:#242054">
+                    <circle cx="26.054" cy="26.054" r="26.054" style="stroke:none"/>
+                    <circle cx="26.054" cy="26.054" r="24.554" style="fill:none"/>
+                </g>
+                <path id="Union_34" data-name="Union 34" d="M0 22.333A22.333 22.333 0 0 1 22.333 0h22.331v22.333a22.332 22.332 0 0 1-44.664 0z" transform="rotate(180 52.443 30.878)" style="fill:#6badcb"/>
+                <path id="Union_36" data-name="Union 36" d="M0 11.166a11.166 11.166 0 0 0 11.166 11.166h11.166V11.166a11.166 11.166 0 0 0-22.332 0z" transform="translate(21.512 29.001)" style="fill:#36723b"/>
+                <path id="Union_35" data-name="Union 35" d="M0 22.333A22.333 22.333 0 0 1 22.333 0h22.331v22.333a22.332 22.332 0 0 1-44.664 0z" transform="translate(11.09 66.221)" style="fill:#f04e30"/>
+                <path id="Union_37" data-name="Union 37" d="M0 11.166a11.166 11.166 0 0 0 11.166 11.166h11.166V11.166a11.166 11.166 0 0 0-22.332 0z" transform="rotate(180 52.443 55.443)" style="fill:#cc79a7"/>
+            </g>
+            <g id="Group_594" data-name="Group 594" transform="translate(979.989 2155.564)">
+                <path id="Path_382" data-name="Path 382" class="cls-6" d="M23.24 24.61 40.063 7.787a4.562 4.562 0 0 0 0-6.451h0a4.562 4.562 0 0 0-6.451 0L20.481 14.467c-6.9.812-11.15 3.072-14.374 6.294C2.3 24.568.069 28.515 0 35.3v17.62" transform="rotate(45 13.434 47.355)"/>
+                <path id="Path_383" data-name="Path 383" class="cls-6" d="m17.793 36.238 10.9-10.9.117-20.363a5 5 0 0 1 5-4.975h0a5 5 0 0 1 5 5v20.37a14.057 14.057 0 0 1-2.149 7.472l-11.406 18.19a24.823 24.823 0 0 1-9.038 8.541L4.888 65.818A9.451 9.451 0 0 0 0 74.095v5.05" transform="rotate(45 35.069 84.663)"/>
+            </g>
+        </g>
+    </g>
+</svg>

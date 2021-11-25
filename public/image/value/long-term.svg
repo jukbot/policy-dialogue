@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="90" viewBox="0 0 170 90">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_329" data-name="Rectangle 329" style="stroke:#707070;fill:#fff" d="M0 0h46v46H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Rectangle_753" data-name="Rectangle 753" transform="translate(.49)" style="fill:#242054;stroke:#707070" d="M0 0h45v46H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="Rectangle_331" data-name="Rectangle 331" transform="translate(.49 .489)" style="stroke:#ef4e30;fill:#6badcb" d="M0 0h45v45H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <path id="Rectangle_753-2" data-name="Rectangle 753" transform="translate(.49)" style="fill:#447041;stroke:#707070" d="M0 0h45v46H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-6">
+            <path id="Rectangle_331-2" data-name="Rectangle 331" transform="translate(.49 .489)" style="stroke:#6badcc;fill:#6badcb" d="M0 0h45v45H0z"/>
+        </clipPath>
+        <style>
+            .cls-10,.cls-17{fill:none}.cls-7{clip-path:url(#clip-path)}.cls-16,.cls-18{stroke:none}.cls-18{fill:#242054}
+        </style>
+    </defs>
+    <g id="Group_1097" data-name="Group 1097" transform="translate(14581 -4648)">
+        <g id="Group_1094" data-name="Group 1094" transform="translate(-15942 2602)">
+            <g id="Group_611" data-name="Group 611">
+                <g id="Ellipse_297" data-name="Ellipse 297" transform="translate(1361 2046)" style="stroke-width:10px;stroke:#daa13d;fill:none">
+                    <circle class="cls-16" cx="45" cy="45" r="45"/>
+                    <circle class="cls-17" cx="45" cy="45" r="40"/>
+                </g>
+                <g id="Mask_Group_38" data-name="Mask Group 38" class="cls-7" transform="translate(1361 2046)">
+                    <g id="Ellipse_298" data-name="Ellipse 298" style="stroke:#cc79a7;stroke-width:10px;fill:none">
+                        <circle class="cls-16" cx="45" cy="45" r="45"/>
+                        <circle class="cls-17" cx="45" cy="45" r="40"/>
+                    </g>
+                </g>
+                <g id="Mask_Group_54" data-name="Mask Group 54" transform="translate(1405.51 2046)" style="clip-path:url(#clip-path-2)">
+                    <g id="Path_391" data-name="Path 391" class="cls-10">
+                        <path class="cls-16" d="M45.016 0A45.016 45.016 0 1 1 0 45.016 45.016 45.016 0 0 1 45.016 0z" transform="translate(-44.511)"/>
+                        <path class="cls-18" d="M45.016 10C25.708 10 10 25.708 10 45.016s15.708 35.017 35.016 35.017 35.017-15.709 35.017-35.017C80.033 25.708 64.324 10 45.016 10m0-10c24.862 0 45.017 20.155 45.017 45.016 0 24.862-20.155 45.017-45.017 45.017C20.155 90.033 0 69.878 0 45.016 0 20.155 20.155 0 45.016 0z" transform="translate(-44.511)"/>
+                    </g>
+                </g>
+                <g id="Mask_Group_40" data-name="Mask Group 40" transform="translate(1405.51 2090.51)" style="clip-path:url(#clip-path-3)">
+                    <g id="Path_393" data-name="Path 393" class="cls-10">
+                        <path class="cls-16" d="M45 0A45 45 0 1 1 0 45 45 45 0 0 1 45 0z" transform="translate(-44.51 -44.511)"/>
+                        <path d="M45 10c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35-15.7-35-35-35m0-10c24.853 0 45 20.147 45 45S69.853 90 45 90 0 69.853 0 45 20.147 0 45 0z" style="fill:#f04e30;stroke:none" transform="translate(-44.51 -44.511)"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_613" data-name="Group 613" transform="translate(80)">
+                <g id="Path_392" data-name="Path 392" class="cls-10">
+                    <path class="cls-16" d="M45 0A45 45 0 1 1 0 45 45 45 0 0 1 45 0z" transform="translate(1361 2046)"/>
+                    <path class="cls-18" d="M45 10c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35-15.7-35-35-35m0-10c24.853 0 45 20.147 45 45S69.853 90 45 90 0 69.853 0 45 20.147 0 45 0z" transform="translate(1361 2046)"/>
+                </g>
+                <g id="Mask_Group_38-2" data-name="Mask Group 38" class="cls-7" transform="translate(1361 2046)">
+                    <g id="Ellipse_298-2" data-name="Ellipse 298" style="stroke-width:10px;fill:none;stroke:#ef4e30">
+                        <circle class="cls-16" cx="45" cy="45" r="45"/>
+                        <circle class="cls-17" cx="45" cy="45" r="40"/>
+                    </g>
+                </g>
+                <g id="Mask_Group_54-2" data-name="Mask Group 54" transform="translate(1405.51 2046)" style="clip-path:url(#clip-path-5)">
+                    <g id="Path_391-2" data-name="Path 391" class="cls-10">
+                        <path class="cls-16" d="M45.016 0A45.016 45.016 0 1 1 0 45.016 45.016 45.016 0 0 1 45.016 0z" transform="translate(-44.511)"/>
+                        <path d="M45.016 10C25.708 10 10 25.708 10 45.016s15.708 35.017 35.016 35.017 35.017-15.709 35.017-35.017C80.033 25.708 64.324 10 45.016 10m0-10c24.862 0 45.017 20.155 45.017 45.016 0 24.862-20.155 45.017-45.017 45.017C20.155 90.033 0 69.878 0 45.016 0 20.155 20.155 0 45.016 0z" style="fill:#447042;stroke:none" transform="translate(-44.511)"/>
+                    </g>
+                </g>
+                <g id="Mask_Group_40-2" data-name="Mask Group 40" transform="translate(1405.51 2090.51)" style="clip-path:url(#clip-path-6)">
+                    <g id="Ellipse_300" data-name="Ellipse 300" transform="translate(-44.51 -44.511)" style="stroke-width:10px;fill:none;stroke:#6badcc">
+                        <circle class="cls-16" cx="45" cy="45" r="45"/>
+                        <circle class="cls-17" cx="45" cy="45" r="40"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

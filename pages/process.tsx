@@ -1,6 +1,6 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
-import PostProcess from '@/components/Value/PostProgress'
-import PreProcess from '@/components/Value/PreProcess'
+import PostProcess from '@/components/Process/PostProgress'
+import PreProcess from '@/components/Process/PreProcess'
 import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 import { useState } from 'react'

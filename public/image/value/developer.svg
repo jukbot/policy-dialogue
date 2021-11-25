@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143.639" height="134.645" viewBox="0 0 143.639 134.645">
+    <g data-name="Group 1178">
+        <g data-name="Group 599">
+            <g data-name="Ellipse 1193" style="stroke-dasharray:5 5;stroke-width:3px;stroke:#de5a3d;fill:none">
+                <circle cx="67.322" cy="67.322" r="67.322" style="stroke:none"/>
+                <circle cx="67.322" cy="67.322" r="65.822" style="fill:none"/>
+            </g>
+            <circle data-name="Ellipse 1194" cx="23.563" cy="23.563" r="23.563" transform="translate(84.826 83.48)" style="fill:#daa13d"/>
+            <g data-name="Icon feather-arrow-up">
+                <path data-name="Path 41" d="m0 0 10.1 10.1L20.2 0" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:#de5a3d;fill:none" transform="rotate(20 -160.476 384.828)"/>
+            </g>
+            <g data-name="Group 587">
+                <path data-name="Path 380" d="M426.236 215.084a17.453 17.453 0 1 1-17.453-17.453 17.453 17.453 0 0 1 17.453 17.453z" transform="translate(-341.459 -147.761)" style="stroke:#242054;fill:#242054;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"/>
+                <path data-name="Path 381" d="M464.338 235.922v-11.347h-4.478a5.748 5.748 0 0 1-5.442-4.085 31.7 31.7 0 0 0-2.018-4.89 5.753 5.753 0 0 1 .959-6.743l3.159-3.162-8.023-8.023-3.162 3.162a5.753 5.753 0 0 1-6.743.956 31.975 31.975 0 0 0-4.885-2.018 5.738 5.738 0 0 1-4.085-5.439v-4.481h-11.347v4.481a5.742 5.742 0 0 1-4.085 5.439 31.881 31.881 0 0 0-4.888 2.018 5.752 5.752 0 0 1-6.743-.956l-3.162-3.162-8.023 8.023 3.162 3.162a5.752 5.752 0 0 1 .956 6.743 31.872 31.872 0 0 0-2.018 4.888 5.744 5.744 0 0 1-5.439 4.085h-4.481v11.347h4.481a5.741 5.741 0 0 1 5.439 4.085 31.963 31.963 0 0 0 2.018 4.885 5.752 5.752 0 0 1-.956 6.743l-3.162 3.162 8.023 8.023 3.162-3.159a5.753 5.753 0 0 1 6.743-.959 31.709 31.709 0 0 0 4.888 2.018 5.748 5.748 0 0 1 4.085 5.442v4.478h11.347v-4.478a5.744 5.744 0 0 1 4.085-5.442 31.678 31.678 0 0 0 4.885-2.018 5.753 5.753 0 0 1 6.743.959l3.162 3.159 8.023-8.023-3.159-3.162a5.753 5.753 0 0 1-.959-6.743 31.67 31.67 0 0 0 2.018-4.885 5.744 5.744 0 0 1 5.442-4.085z" transform="translate(-356.622 -162.924)" style="stroke:#242054;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102.697" height="146.243" viewBox="0 0 102.697 146.243">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none;stroke-width:3px}.cls-1{stroke:#de5a3d;stroke-linecap:round;stroke-linejoin:round}.cls-4{stroke:#cc79a7}
+        </style>
+    </defs>
+    <g id="Group_1180" data-name="Group 1180" transform="translate(-2073.612 -12174.75)">
+        <g id="Group_586" data-name="Group 586" transform="translate(2075.112 12234.137)">
+            <path id="Path_378" data-name="Path 378" class="cls-1" d="M623.485 331.3v-71.167a3.941 3.941 0 1 1 7.881 0v-6.979a3.941 3.941 0 1 1 7.883 0v-3.273a3.941 3.941 0 0 1 7.883 0v5.255a3.941 3.941 0 1 1 7.883 0v36.374l10.885-11.748a5.507 5.507 0 0 1 7.286-.706h0a5.506 5.506 0 0 1 1.3 7.557L654.5 315.8v15.5" transform="translate(-623.485 -245.94)"/>
+            <path id="Line_114" data-name="Line 114" class="cls-1" transform="translate(23.646 9.196)" d="M0 0v21.773"/>
+            <path id="Line_115" data-name="Line 115" class="cls-1" transform="translate(15.764 7.214)" d="M0 0v23.755"/>
+            <path id="Line_116" data-name="Line 116" class="cls-1" transform="translate(7.882 14.192)" d="M0 0v16.777"/>
+            <path id="Path_379" data-name="Path 379" class="cls-1" d="M648.634 273.065h-.395c-7.318 0-15.371 6.648-15.371 6.648" transform="translate(-617.104 -227.494)"/>
+        </g>
+        <path id="Union_34" data-name="Union 34" d="M0 22.023a22.024 22.024 0 0 0 22.024 22.024h22.023V22.023a22.023 22.023 0 0 0-44.047 0z" transform="translate(2097.308 12174.75)" style="fill:#6badcb"/>
+        <path id="Path_211" data-name="Path 211" d="M-283.511 1088.507h-14.145a24.754 24.754 0 0 0-24.754 24.754h0a24.764 24.764 0 0 0 17.279 23.6h0l-2.457 8.2a.3.3 0 0 0 .543.227l9.39-7.281h14.145a24.754 24.754 0 0 0 24.754-24.754h0a24.754 24.754 0 0 0-24.755-24.746z" transform="translate(2433.567 11114.461)" style="stroke:#242054;stroke-linecap:round;stroke-linejoin:round;fill:none;stroke-width:3px"/>
+        <path id="Line_45" data-name="Line 45" class="cls-4" transform="translate(2119.331 12224.429)" d="M0 0h47.305"/>
+        <path id="Line_46" data-name="Line 46" class="cls-4" transform="translate(2119.331 12231.438)" d="M0 0h47.305"/>
+    </g>
+</svg>

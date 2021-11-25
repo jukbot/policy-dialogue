@@ -7,7 +7,7 @@ import Seminar from '/public/image/process/seminar.svg'
 
 const PreProcess = () => {
   return (
-    <div className="grid max-w-6xl grid-cols-1 gap-8 px-12 mx-auto md:gap-12 md:grid-cols-3">
+    <div className="grid max-w-6xl grid-cols-1 gap-8 px-12 mx-auto md:gap-16 md:grid-cols-3">
       <div className="flow-root">
         <div className="space-y-3">
           <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Interview} alt="intervew" />

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <defs>
+        <style>
+            .cls-3,.cls-4,.cls-7{fill:none}.cls-4{stroke:#dd5a3c}.cls-3{stroke:#242054}.cls-3,.cls-4{stroke-width:3px}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_1096" data-name="Group 1096" transform="translate(15050 -4648.032)">
+        <path id="Intersection_2" data-name="Intersection 2" d="M1330-5622v-44.968a45 45 0 0 1 45 44.968z" transform="translate(-16335 10315)" style="fill:#6badcb"/>
+        <g id="Ellipse_1389" data-name="Ellipse 1389" transform="translate(-15050 4648.033)" style="stroke-width:8px;stroke:#dd5a3c;fill:none">
+            <circle class="cls-6" cx="45" cy="45" r="45"/>
+            <circle class="cls-7" cx="45" cy="45" r="41"/>
+        </g>
+        <path id="Line_179" data-name="Line 179" class="cls-3" transform="translate(-15004.5 4673)" d="M0 0v20"/>
+        <path id="Line_180" data-name="Line 180" class="cls-4" transform="translate(-15004.5 4723.033)" d="M0 0v15"/>
+        <path id="Line_181" data-name="Line 181" class="cls-4" transform="rotate(45 -13203.8 -15780.14)" d="M0 0v15"/>
+        <path id="Line_182" data-name="Line 182" class="cls-4" transform="translate(-15004.5 4648.032)" d="M0 0v15"/>
+        <path id="Line_183" data-name="Line 183" class="cls-4" transform="rotate(45 -13113.265 -15742.641)" d="M0 0v15"/>
+        <path id="Line_184" data-name="Line 184" class="cls-3" transform="translate(-15005 4693)" d="M20 0H0"/>
+        <path id="Line_185" data-name="Line 185" class="cls-4" transform="rotate(90 -9864 -5171)" d="M0 0v15"/>
+        <path id="Line_186" data-name="Line 186" class="cls-4" transform="rotate(135 -8480.5 -776.063)" d="M0 0v15"/>
+        <path id="Line_187" data-name="Line 187" class="cls-4" transform="rotate(90 -9826.5 -5133.5)" d="M0 0v15"/>
+        <path id="Line_188" data-name="Line 188" class="cls-4" transform="rotate(135 -8464.967 -738.563)" d="M0 0v15"/>
+        <g id="Ellipse_1390" data-name="Ellipse 1390" transform="translate(-15013 4685)" style="fill:#242054;stroke-width:3px;stroke:#242054">
+            <circle class="cls-6" cx="8" cy="8" r="8"/>
+            <circle class="cls-7" cx="8" cy="8" r="6.5"/>
+        </g>
+    </g>
+</svg>

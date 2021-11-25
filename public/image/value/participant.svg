@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="137.183" height="120.198" viewBox="0 0 137.183 120.198">
+    <defs>
+        <style>
+            .cls-2,.cls-5{fill:none;stroke-width:3px}.cls-2{stroke-linecap:round;stroke-linejoin:round;stroke:#de5a3d}.cls-3{fill:#242054}.cls-5{stroke:#f04e30}
+        </style>
+    </defs>
+    <g id="Group_1098" data-name="Group 1098" transform="translate(15535.121 -4637.533)">
+        <g id="Group_1095" data-name="Group 1095" transform="translate(-15835 2602)">
+            <g id="Group_609" data-name="Group 609" transform="translate(383.562 2037.033)">
+                <path id="Path_211" data-name="Path 211" d="M-302.188 1088.507h11.555a20.222 20.222 0 0 1 20.222 20.222h0a20.231 20.231 0 0 1-14.116 19.283h0l2.008 6.7a.242.242 0 0 1-.444.185l-7.671-5.948h-11.555a20.222 20.222 0 0 1-20.222-20.222h0a20.222 20.222 0 0 1 20.223-20.22z" transform="translate(322.41 -1088.507)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#447041;fill:none;stroke-width:3px"/>
+            </g>
+            <g id="Group_605" data-name="Group 605" transform="translate(302 2092.007)">
+                <path id="Path_382" data-name="Path 382" class="cls-2" d="M17.164 18.176 29.589 5.751a3.369 3.369 0 0 0 0-4.765h0a3.369 3.369 0 0 0-4.764 0l-9.7 9.7c-5.1.6-8.235 2.269-10.616 4.649A13.9 13.9 0 0 0 0 26.075v13.01" transform="rotate(45 9.922 34.975)"/>
+                <path id="Path_383" data-name="Path 383" class="cls-2" d="m13.141 26.764 8.053-8.053.083-15.036A3.7 3.7 0 0 1 24.972 0h0a3.694 3.694 0 0 1 3.694 3.695v15.044a10.382 10.382 0 0 1-1.587 5.518L18.652 37.69A18.333 18.333 0 0 1 11.977 44L3.61 48.611A6.98 6.98 0 0 0 0 54.723v3.73" transform="rotate(45 25.9 62.528)"/>
+            </g>
+            <g id="Group_606" data-name="Group 606" transform="translate(366.211 2047.359)">
+                <path id="Union_34" data-name="Union 34" class="cls-3" d="M0 17.992A17.992 17.992 0 0 1 17.992 0h17.991v17.992a17.991 17.991 0 0 1-35.983 0z" transform="rotate(180 17.991 17.991)"/>
+                <path id="Union_38" data-name="Union 38" class="cls-3" d="M0 17.992A17.992 17.992 0 0 1 17.992 0h17.991v17.992a17.991 17.991 0 0 1-35.983 0z"/>
+            </g>
+            <g id="Group_608" data-name="Group 608" transform="translate(327.847 2060.085)">
+                <path id="Path_211-2" data-name="Path 211" d="M-290.632 1088.507h-11.555a20.222 20.222 0 0 0-20.222 20.222 20.231 20.231 0 0 0 14.116 19.283l-2.008 6.7a.242.242 0 0 0 .444.185l7.671-5.948h11.555a20.222 20.222 0 0 0 20.222-20.222 20.222 20.222 0 0 0-20.223-20.22z" transform="translate(322.41 -1088.507)" style="fill:#daa13d"/>
+                <path id="Line_45" data-name="Line 45" class="cls-5" transform="translate(6.678 17.532)" d="M0 0h38.644"/>
+                <path id="Line_46" data-name="Line 46" class="cls-5" transform="translate(6.678 23.257)" d="M0 0h38.644"/>
+            </g>
+        </g>
+    </g>
+</svg>
