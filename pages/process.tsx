@@ -26,7 +26,7 @@ const ProcessPage = () => {
             <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-72 space-x-8">
               <span className="absolute top-6 left-24 text-white text-[180px] font-bold white-stoke align-top">“</span>
               <p className="flex justify-center mt-6 text-white font-body">กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn’t built in a day</p>
-              <h2 className="flex items-center justify-center mt-6 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
+              <h2 className="relative mt-6 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
                 กว่าจะเป็นรูปเป็นร่าง Policy Dialogue ผ่านการกลั่นกรองมากมาย
                 <br />
                 ตั้งแต่การรวบรวมข้อมูลจากหลากหลายแหล่ง ไปจนถึงการออกแบบและดำเนิน
