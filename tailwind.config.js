@@ -42,6 +42,8 @@ module.exports = {
         'hero-pattern-mobile': "url('/image/background/landing-hero-mobile.svg')",
         'hero-circle': "url('/image/background/landing-hero-circle.svg')",
         'hero-circle-mobile': "url('/image/background/landing-hero-circle-mobile.svg')",
+        'landing-circle': "url('/image/background/landing-circle.svg')",
+        'landing-circle-mobile': "url('/image/background/landing-circle-mobile.svg')",
         'step-blur-pattern': "url('/image/background/landing-blur-shape.svg')",
         'step-blur-pattern-mobile': "url('/image/background/landing-blur-shape-mobile.svg')",
         'step-pattern': "url('/image/background/landing-shape.svg')",

@@ -168,7 +168,6 @@ const Home: NextPage = () => {
           <div className="absolute bottom-0 hidden -ml-4 lg:block triangle-up left-1/2"></div>
         </section>
         <section className="relative h-full overflow-hidden bg-secondary">
-          <div className="absolute top-0 right-0 translate-y-[50%] w-2/3 lg:w-[344px] h-[500px] lg:h-screen mix-blend-screen from-[#242054] to-[#191919] rounded-tl-full rounded-bl-full bg-gradient-to-b"></div>
           <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern-mobile lg:bg-step-blur-pattern"></div>
           <div className="absolute top-0 w-full h-full bg-fixed bg-top bg-no-repeat bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
           <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-16 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% lg:bg-contain bg-process-step-mobile lg:bg-process-step">
@@ -189,6 +188,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+          <div className="absolute right-0 w-full h-full bg-fixed bg-right-bottom bg-no-repeat bg-contain opacity-75 mix-blend-screen bg-landing-circle-mobile sm:bg-landing-circle"></div>
 
           <div className="relative space-y-8 flex flex-col items-center justify-between mt-[46rem] lg:mt-[32rem]">
             <Link href="/process">

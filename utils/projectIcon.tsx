@@ -110,7 +110,7 @@ export const projectList = [
     description: 'ระบบการดูแลแบบประคับประคอง ในช่วงท้ายของชีวิต',
     url: '/project/pc',
     icon: 'pc',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 4,
@@ -135,5 +135,64 @@ export const projectList = [
     url: '/project/lsd',
     icon: 'lsd',
     enabled: true,
+  },
+]
+
+export const projectDropdown = [
+  {
+    id: 0,
+    title: 'Aging in Place',
+    description: 'การสูงวัยในถิ่นที่อยู่อาศัยเดิม อย่างมีสุขภาวะ',
+    url: '/project/aip',
+    icon: 'aip',
+    enabled: true,
+  },
+  {
+    id: 2,
+    title: 'Local Service Delivery Network',
+    description: 'การจัดการโครงสร้างเครือข่าย ระบบบริการสุขภาพระดับจังหวัด',
+    url: '/project/lsd',
+    icon: 'lsd',
+    enabled: true,
+  },
+  {
+    id: 3,
+    title: 'Palliative Care',
+    description: 'ระบบการดูแลแบบประคับประคอง ในช่วงท้ายของชีวิต',
+    url: '/project/pc',
+    icon: 'pc',
+    enabled: true,
+  },
+  {
+    id: 1,
+    title: 'Intermediate Care',
+    description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทองหลังพ้นภาวะวิกฤต',
+    url: '/project/imc',
+    icon: 'imc',
+    enabled: false,
+  },
+  {
+    id: 2,
+    title: 'Long-Term Care',
+    description: 'ระบบการดูแลระยะยาว สำหรับผู้สูงอายุที่มีภาวะพึ่งพิง',
+    url: '/project/ltc',
+    icon: 'ltc',
+    enabled: false,
+  },
+  {
+    id: 5,
+    title: 'Governing Mechanism',
+    description: 'กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ',
+    url: '/project/gm',
+    icon: 'gm',
+    enabled: false,
+  },
+  {
+    id: 4,
+    title: 'Dementia',
+    description: 'ระบบบริการแลการดูแลผู้มีภาวะสมองเสื่อม',
+    url: '/project/dt',
+    icon: 'dt',
+    enabled: false,
   },
 ]

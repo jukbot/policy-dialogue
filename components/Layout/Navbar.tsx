@@ -4,10 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useWindowScroll } from 'react-use'
+import { Close } from '../Icon'
+import ProjectDropDown from '../Navbar/ProjectDropdown'
 import Logo from '/public/image/logo/logo.svg'
 
 const navigation = [
-  { name: 'นโยบายเพื่อสังคมสูงวัย', href: '/' },
   { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
   { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
   { name: 'คุณค่ากระบวนการ', href: '/value' },
@@ -27,13 +28,17 @@ const Navbar = (): JSX.Element => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className={`fixed z-10 w-full px-6 sm:py-4 mx-auto lg:px-24 bg-black transition ${y < 30 ? 'sm:bg-opacity-0' : 'sm:bg-opacity-100'}`}>
+          <div className={`fixed z-10 w-full px-6 sm:py-2 mx-auto lg:px-24 bg-black transition ${y < 30 ? 'sm:bg-opacity-100' : 'sm:bg-opacity-100'}`}>
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-4 text-white rounded-md hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-4 text-white hover:text-white hover:bg-primary">
                   <span className="sr-only">Open main menu</span>
-                  {open ? <XIcon className="block w-6 h-6" aria-hidden="true" /> : <MenuIcon className="block w-6 h-6" aria-hidden="true" />}
+                  {open ? (
+                    <XIcon className="block w-6 h-6 fill-current" aria-hidden="true" />
+                  ) : (
+                    <MenuIcon className="block w-6 h-6 fill-current" aria-hidden="true" />
+                  )}
                 </Disclosure.Button>
               </div>
               <div className="flex items-center justify-between flex-1 w-full justify-items-stretch">
@@ -46,10 +51,14 @@ const Navbar = (): JSX.Element => {
                 </div>
                 <div className="hidden w-full lg:block">
                   <div className="flex justify-center space-x-4 whitespace-nowrap">
+                    <ProjectDropDown />
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name}>
                         <a
-                          className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm font-body')}
+                          className={classNames(
+                            pathname === item.href ? ' text-primary' : 'text-white hover:text-primary',
+                            'px-2 text-sm font-body transition ease-in-out duration-150'
+                          )}
                           aria-current={pathname === item.href ? 'page' : undefined}
                         >
                           {item.name}
@@ -63,21 +72,37 @@ const Navbar = (): JSX.Element => {
           </div>
 
           <Disclosure.Panel className="lg:hidden">
-            <div className="absolute w-full h-full px-6 pt-12 pb-3 space-y-1 bg-secondary">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
+            <div className="fixed z-20 w-full h-screen px-6 pt-12 pb-3 space-y-6 overflow-hidden bg-secondary">
+              <Link href="/project/aip">
+                <a
                   className={classNames(
-                    pathname === item.href ? ' text-white' : 'text-gray-300 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    pathname === '/project/aip' ? ' text-primary' : 'text-white hover:text-primary',
+                    'text-base text-center font-body flex justify-center transition ease-in-out duration-150'
                   )}
-                  aria-current={pathname === item.href ? 'page' : undefined}
+                  aria-current={pathname === '/project/aip' ? 'page' : undefined}
                 >
-                  {item.name}
+                  นโยบายเพื่อสังคมสูงวัย
+                </a>
+              </Link>
+              <div className="pt-8 mx-20 space-y-8 border-t border-white border-opacity-40">
+                {navigation.map((item) => (
+                  <Disclosure.Button
+                    key={item.name}
+                    as="a"
+                    href={item.href}
+                    className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'block text-base text-center font-body')}
+                    aria-current={pathname === item.href ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </Disclosure.Button>
+                ))}
+              </div>
+              <div className="flex justify-center w-full whitespace-nowrap">
+                <Disclosure.Button className="p-4 text-white">
+                  <span className="sr-only">close menu</span>
+                  {open ? <Close className="block w-12 h-12 text-primary" aria-hidden="true" /> : null}
                 </Disclosure.Button>
-              ))}
+              </div>
             </div>
           </Disclosure.Panel>
         </>
