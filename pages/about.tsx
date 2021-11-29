@@ -88,7 +88,7 @@ const AboutPage = () => {
                       ชื่อ-สกุล
                     </label>
                     <div className="col-span-2">
-                      <input type="text" name="fullName" id="fullname" placeholder="ชื่อ/นามสกุล" className="text-input" maxLength={60} />
+                      <input type="text" name="fullName" id="fullname" placeholder="ชื่อ-สกุล" className="text-input" maxLength={60} />
                     </div>
                   </div>
                   <div className="grid items-start grid-cols-3 gap-4">
@@ -104,14 +104,7 @@ const AboutPage = () => {
                       ประเภทองค์กร *
                     </label>
                     <div className="col-span-2">
-                      <select
-                        name="organizeType"
-                        id="organizetype"
-                        onChange={(e) => setOrganizeType(e.target.value)}
-                        placeholder="ชื่อ/นามสกุล"
-                        required
-                        className="text-input"
-                      >
+                      <select name="organizeType" id="organizetype" onChange={(e) => setOrganizeType(e.target.value)} required className="text-input">
                         <option selected value="" disabled className="text-[#707070]">
                           เลือกประเภทองค์กร
                         </option>
