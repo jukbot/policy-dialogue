@@ -348,7 +348,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
             d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z"
             transform="translate(-351.303 536.367)"
           />
-          <Link href="/project/plc">
+          <Link href="/project/pc">
             <a>
               <g id="prefix__Component_25_1" data-name="Component 25 \u2013 1" transform="translate(791 755)" className="group">
                 <g id="prefix__Ellipse_149" data-name="Ellipse 149" fill="none" stroke="#f04e30" strokeWidth={3}>

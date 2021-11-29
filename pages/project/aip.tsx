@@ -3,6 +3,10 @@ import Circle from '/public/image/aip/circle.webp'
 import ElderlyHome from '/public/image/aip/elderly-home.svg'
 import ElderlyLogo from '/public/image/aip/elderly-logo.svg'
 import HeroImage from '/public/image/aip/hero-image.webp'
+import Icon1 from '/public/image/aip/icon-1.svg'
+import Icon2 from '/public/image/aip/icon-2.svg'
+import Icon3 from '/public/image/aip/icon-3.svg'
+import Icon4 from '/public/image/aip/icon-4.svg'
 import Result1 from '/public/image/aip/testimonial-1.webp'
 import Result2 from '/public/image/aip/testimonial-2.webp'
 import Result3 from '/public/image/aip/testimonial-3.webp'
@@ -37,7 +41,7 @@ const AipPage = () => {
               <br />
               การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
             </h2>
-            <p className="flex justify-center mt-6 text-center text-white font-body opacity-75">
+            <p className="flex justify-center mt-6 text-center text-white opacity-75 font-body">
               ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย
               <br />
               ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
@@ -126,17 +130,17 @@ const AipPage = () => {
           <Image src={Circle} width={250} height={250} alt="circle image" />
         </div>
         <div className="flex flex-col items-center justify-center pt-24 space-y-6 text-white">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center space-y-2">
             <h3 className="text-3xl font-bold">ผู้สูงอายุ 11 ล้านคน</h3>
             <Image src={ElderlyLogo} width={300} height={150} alt="elderly logo" />
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center space-y-2">
             <p className="text-sm font-bold">บ้านพักคนชระของรัฐท้ั้งประเทศ</p>
             <p className="text-4xl font-bold">12 แห่ง</p>
             <Image src={ElderlyHome} width={300} alt="elderly home" />
           </div>
           <div className="flex flex-col items-center space-y-8">
-            <p className="text-sm text-center font-body">
+            <p className="text-sm text-center sm:text-base font-body">
               ปัจจุบัน ไทยมีบ้านพักคนชราของรัฐเพียง 12 แห่ง
               <br />
               ขณะที่ประชากรผู้สูงอายุทั่วประเทศมีมากกว่า 11 ล้านคน**
@@ -153,22 +157,25 @@ const AipPage = () => {
             <br />
             เพื่อให้เกิดนโยบายที่ตอบโจทย์
           </h2>
-        </div>
-        <div className="grid max-w-6xl grid-cols-1 gap-16 py-16 mx-auto lg:py-32 md:grid-cols-2">
-          <div className="flex flex-col col-span-1 px-6 sm:px-12 text-body">
-            <div className="space-y-2">
-              <h2 className="text-4xl font-semibold sm:text-5xl">HELLO!</h2>
-              <h2 className="text-4xl font-semibold sm:text-5xl">WE ARE RISE IMPACT</h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div className="flex flex-col col-span-1 space-y-4 text-center">
+              <Image src={Icon1} width={120} height={120} />
+              <p className="text-sm sm:text-base font-body">
+                ขาดการบูรณาการ ระหว่างบริการทางสุขภาพและสังคม ทั้งในด้านการวางแผน การส่งต่อทรัพยากรและข้อมูล การกำหนดมาตรฐาน และตรวจสอบคุณภาพ
+              </p>
             </div>
-          </div>
-          <div className="relative col-span-1 px-6 sm:px-12">
-            <p className="lg:text-lg max-w-prose font-body">
-              พวกเราเป็นองค์กรเล็กที่ไม่ขึ้นกับใคร และมองว่าองค์กร
-              <br /> ของเราจะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ
-              <br /> โดยมุ่งใช้ความเป็นองค์กรที่ยืดหยุ่นนี้ เชื่อมช่องว่างทั้งหลาย
-              <br /> ในระบบนิเวศของนวัตกรรมทางสังคม
-              <br /> เพื่อสร้างผลกระทบเชิงบวกให้มากขึ้นกว่าเดิม
-            </p>
+            <div className="flex flex-col col-span-1 space-y-4 text-center">
+              <Image src={Icon2} width={120} height={120} />
+              <p className="text-sm sm:text-base font-body">อุปสรรคด้านข้อกฎหมายที่เกี่ยวข้องกับองค์การปกครองส่วนท้องถิ่น ทั้งอำนาจหน้าที่ และ งบประมาณ</p>
+            </div>
+            <div className="flex flex-col col-span-1 space-y-4 text-center">
+              <Image src={Icon3} width={120} height={120} />
+              <p className="text-sm sm:text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับ ผู้สูงอายุ</p>
+            </div>
+            <div className="flex flex-col col-span-1 space-y-4 text-center">
+              <Image src={Icon4} width={120} height={120} />
+              <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+            </div>
           </div>
         </div>
       </section>

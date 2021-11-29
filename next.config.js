@@ -117,7 +117,7 @@ module.exports = {
     return [
       {
         source: '/project',
-        destination: '/project/plc',
+        destination: '/project/aip',
         permanent: true,
       },
     ]
