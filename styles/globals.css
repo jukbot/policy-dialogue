@@ -160,6 +160,21 @@
     clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
   }
 
+  .bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    top: -32px;
+    left: 50%;
+    margin-left: -16px;
+    border: 1.5em solid transparent;
+    border-top: 0;
+    border-right: 0;
+  }
+
   .bubble-lt:after {
     content: '';
     position: absolute;
@@ -219,6 +234,10 @@
 
   .border-t-yellow:after {
     border-top-color: #daa13d;
+  }
+
+  .border-b-gray:after {
+    border-top-color: #474747;
   }
 
   .white-stoke {

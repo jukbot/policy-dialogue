@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import Circle from '/public/image/aip/circle.webp'
+import ElderlyHome from '/public/image/aip/elderly-home.svg'
+import ElderlyLogo from '/public/image/aip/elderly-logo.svg'
 import HeroImage from '/public/image/aip/hero-image.webp'
 import Result1 from '/public/image/aip/testimonial-1.webp'
 import Result2 from '/public/image/aip/testimonial-2.webp'
@@ -24,8 +27,8 @@ const AipPage = () => {
         </div>
       </section>
 
-      <section className="relative h-full bg-[#F9EFE9]">
-        <section className="absolute w-full h-full space-y-12 -top-24 ">
+      <section className="relative h-full bg-[#FCF5EB]">
+        <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
           <div className="relative max-w-6xl p-12 mx-auto space-x-8 bg-secondary h-80">
             <h2 className="relative text-3xl font-bold leading-relaxed tracking-wide text-center text-white">
               ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
@@ -34,7 +37,7 @@ const AipPage = () => {
               <br />
               การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
             </h2>
-            <p className="flex justify-center mt-6 text-center text-white font-body opacity-70">
+            <p className="flex justify-center mt-6 text-center text-white font-body opacity-75">
               ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย
               <br />
               ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
@@ -47,55 +50,32 @@ const AipPage = () => {
             <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
           </div>
           <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-            <h3 className="text-2xl font-bold">เนื้อหาที่ได้</h3>
-            <ul className="space-y-4 text-sm leading-relaxed list-inside sm:text-base">
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">ข้อมูลเชิงลึก</p>
-                  <p className="font-body">จากผู้เข้าร่วม จุดร่วมของปัญหา อุปสรรคและช่องโหว่ของประเด็นนั้นๆ</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">ความคิดเห็น</p>
-                  <p className="font-body">ความคิดเห็นของผู้เข้าร่วมที่หลากหลาย ไปจนถึงข้อเสนอที่เกิดขึ้นจากวง</p>
-                </div>
-              </li>
-            </ul>
+            <h3 className="text-2xl font-bold leading-snug">
+              คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน
+              <br />
+              หรือที่อยู่อาศัยเดิมได้นานที่สุดเท่าที่ต้องการ
+              <br />
+              ได้อย่างสะดวกปลอดภัย
+            </h3>
+            <p className="leading-relaxed font-body">
+              แม้ว่าจะมีสภาวะทางร่างกาย สังคมและจิตใจที่ค่อยๆ
+              <br /> เสื่อมถอยจากความชรา
+            </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="flex flex-col order-last col-span-1 px-6 space-y-4 md:order-first md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-            <h3 className="text-2xl font-bold">ช่วยในการขับเคลื่อนนโยบาย</h3>
-            <ul className="space-y-4 text-sm leading-relaxed list-inside sm:text-base">
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">สร้างการมีส่วนร่วมกับผู้คน</p>
-                  <p className="font-body">
-                    ภาคส่วนต่างๆ เข้าใจกันมากขึ้น ซึ่งอาจมีส่วนช่วยในการขับเคลื่อนนโยบาย หรือออกแบบการแก้ไขปัญหาในอนาคต สร้างความเข้าใจ หาจุดร่วม
-                    และแลกเปลี่ยนความต่าง อาจทำให้เกิดทางเลือกใหม่จากภาพที่ชัดขึ้น
-                  </p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">โอกาสในการผลักดันต่อ</p>
-                  <p className="font-body">ผู้กำหนดนโยบายและผู้ที่นำไปใช้ในพื้นที่ได้รับฟังกันและกัน สามารถเติมเต็มและเพิ่มโอกาสผลักดันนโยบายร่วมกันต่อได้</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">การสื่อสารในวงกว้าง</p>
-                  <p className="font-body">เป็นอีกกระบอกเสียง แสดงพลังความต้องการและร่วมผลักดันนโยบาย</p>
-                </div>
-              </li>
-            </ul>
+            <h3 className="text-2xl font-bold leading-snug">
+              ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต
+              <br />
+              หากสามารถอาศัยอยู่ที่บ้านของตนเองได้ต่อเนื่อง
+            </h3>
+            <p className="leading-relaxed font-body">
+              เพราะ ‘บ้าน’ คือพื้นที่ที่ให้ความรู้สึกปลอดภัย
+              <br /> มีสังคมและสิ่งแวดล้อมที่ผู้สูงอายุคุ้นเคย ลดความกังวลด้านจิตใจ
+              <br /> ส่งผลดีต่อการดูแลรักษาสุขภาพ ควบคุมโรค และคุณภาพชีวิต
+            </p>
           </div>
           <div className="relative col-span-1 px-6 md:px-0">
             <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
@@ -106,36 +86,74 @@ const AipPage = () => {
           <div className="relative col-span-1 px-6 md:px-0">
             <Image src={Result3} height="640" width="1024" className="w-full" alt="expect-ressult-3" />
           </div>
-          <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-            <h3 className="text-2xl font-bold">ตอบสนองการพัฒนา</h3>
-            <ul className="space-y-4 text-sm leading-relaxed list-inside sm:text-base">
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">ลดช่องว่างระหว่างตำแหน่งงาน</p>
-                  <p className="font-body">เกิดการพูดคุยแลกเปลี่ยนกันระหว่างผู้กำหนดใช้นโยบายและผู้ปฏิบัติงาน ทำให้ลดช่องว่างระหว่างกัน </p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">เปลี่ยน-ปรับโจทย์ได้อย่างเหมาะสม</p>
-                  <p className="font-body">มีความยืดหยุ่นในการทบทวนสมมติฐานและตีโจทย์ เพื่อเลือกโจทย์ที่สามารถตอบสนองต่อบริบทที่เหมาะสมที่สุด</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2">
-                <span className="text-2xl font-bold leading-none align-top">•</span>
-                <div className="space-y-1">
-                  <p className="font-bold">เกิดการแบ่งปันทรัพยากร</p>
-                  <p className="font-body">ผู้เข้าร่วมได้เรียนรู้จากประสบการณ์ในพื้นที่อื่น เกิดการผลักดันและสร้างแรงบันดาลใจในการปฏิบัติงานต่อ</p>
-                </div>
-              </li>
-            </ul>
+          <div className="relative flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+            <h3 className="text-2xl font-bold leading-snug">
+              ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
+              <br />
+              ที่มีแนวโน้มสูงขึ้นในทุกปี
+            </h3>
+            <p className="leading-relaxed font-body">
+              สามารถลดการพึ่งพิงสถานบริบาลที่มีค่าใช้จ่ายมาก
+              <br /> ทั้งงบประมาณภาครัฐและของผู้สูงอายุเอง
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="relative h-full space-y-12 bg-white">
+      <section className="relative px-6 h-full bg-[#D28354]">
+        <div className="flex flex-col items-center justify-center px-6 pb-32 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
+            <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
+              <tspan x="0" y="0">
+                !
+              </tspan>
+            </text>
+          </svg>
+          <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
+            การลงทุนสร้างบ้านพักคนชรา 1 แห่งในปัจจุบัน
+            <br /> ต้องใช้เงินลงทุนในการสร้างประมาณ 305 ล้านบาท สำหรับผู้สูงอายุ 150 คน
+            <br /> หรือคิดเป็นเงินลงทุนต่อหัวเท่ากับ 2 ล้านบาท*
+          </p>
+          <p className="mt-4 text-xs text-center font-body max-w-prose">
+            *อ้างอิงงบประมาณในการสร้างบ้านพักคนชราจากงบประมาณในการก่อสร้างบ้านพักคนชราบึงสะแกงาม จำนวน 305 ล้านบาท แหล่งที่มา
+            https://www.prachachat.net/property/news-596824
+          </p>
+        </div>
+      </section>
+
+      <section className="relative h-full px-6 py-20 bg-secondary">
+        <div className="absolute left-0 flex justify-center w-full -top-24">
+          <Image src={Circle} width={250} height={250} alt="circle image" />
+        </div>
+        <div className="flex flex-col items-center justify-center pt-24 space-y-6 text-white">
+          <div className="flex flex-col items-center">
+            <h3 className="text-3xl font-bold">ผู้สูงอายุ 11 ล้านคน</h3>
+            <Image src={ElderlyLogo} width={300} height={150} alt="elderly logo" />
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="text-sm font-bold">บ้านพักคนชระของรัฐท้ั้งประเทศ</p>
+            <p className="text-4xl font-bold">12 แห่ง</p>
+            <Image src={ElderlyHome} width={300} alt="elderly home" />
+          </div>
+          <div className="flex flex-col items-center space-y-8">
+            <p className="text-sm text-center font-body">
+              ปัจจุบัน ไทยมีบ้านพักคนชราของรัฐเพียง 12 แห่ง
+              <br />
+              ขณะที่ประชากรผู้สูงอายุทั่วประเทศมีมากกว่า 11 ล้านคน**
+            </p>
+            <p className="text-xs font-body">** ข้อมูลจากกรมกิจการผู้สูงอายุ</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative h-full py-12 bg-[#F9EFE9] sm:py-24">
+        <div className="max-w-6xl mx-auto space-y-12 text-body">
+          <h2 className="text-4xl font-bold leading-snug text-center">
+            แต่ยังมีความท้าทายที่ต้องฝ่าฝัน
+            <br />
+            เพื่อให้เกิดนโยบายที่ตอบโจทย์
+          </h2>
+        </div>
         <div className="grid max-w-6xl grid-cols-1 gap-16 py-16 mx-auto lg:py-32 md:grid-cols-2">
           <div className="flex flex-col col-span-1 px-6 sm:px-12 text-body">
             <div className="space-y-2">
@@ -153,66 +171,49 @@ const AipPage = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-6xl px-6 py-12 mx-auto text-center lg:px-12">
-          <div className="space-y-12">
-            <div className="mx-auto">
-              <h2 className="text-4xl font-bold lg:text-6xl">RISE IMPACT Team</h2>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-6xl px-6 pt-12 mx-auto text-center pb-36 lg:px-12">
-          <div className="space-y-12 lg:space-y-24">
-            <div className="mx-auto sm:max-w-xl lg:max-w-5xl">
-              <h2 className="text-4xl font-bold lg:text-6xl">Contributors</h2>
-            </div>
-          </div>
-        </div>
       </section>
       <section className="relative h-full space-y-12 bg-secondary">
         <div className="max-w-6xl px-6 py-16 mx-auto space-y-12 text-white sm:px-12">
           <h2 className="text-4xl font-bold">นโยบายสูงอายุที่คุณอาจสนใจ</h2>
 
           <ul className="flex w-full space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
-            <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#6badcb]">
+            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
               <div className="space-y-1">
                 <p className="text-lg font-bold">
-                  คู่มือการจัดกระบวนการ
-                  <br /> ฉบับเต็ม
+                  กลไกการติดตามขับเคลื่อน
+                  <br /> นโยบายเรื่องผู้สูงอายุ
                 </p>
-                <p className="text-sm font-body">
-                  จากประสบการณ์ของ
-                  <br /> RISE Impact
-                </p>
+                <p className="text-sm font-body">(Governing Mechanism)</p>
               </div>
             </li>
-            <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#36723b]">
+            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
               <div className="space-y-1">
-                <p className="text-lg font-bold">กระบวนการ</p>
-                <p className="text-sm font-body">
-                  Policy Dialogue ใช้วิธีการอะไร
+                <p className="text-lg font-bold">
+                  ระบบบริการสำหรับผู้ป่วย
                   <br />
-                  บ้าง เพื่อหาคำตอบ
+                  โรคสมองเสื่อม
                 </p>
+                <p className="text-sm font-body">(Dementia)</p>
               </div>
             </li>
-            <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#daa13d]">
+            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
               <div className="space-y-1">
-                <p className="text-lg font-bold">คุณค่าของกระบวนการ</p>
-                <p className="text-sm font-body">
-                  สิ่งที่เราเชื่อและประโยชน์ของ
-                  <br /> ‘policy dialogue’
-                </p>
-              </div>
-            </li>
-            <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#cc79a7]">
-              <div className="space-y-1">
-                <p className="text-lg font-bold">จัดการอย่างไรให้สำเร็จ</p>
-                <p className="text-sm font-body">
-                  รวบรวมปัญหาที่พบ
-                  <br /> และข้อควรคำนึง
+                <p className="text-lg font-bold">
+                  ระบบบริการดูแลแบบ
                   <br />
-                  เพื่อให้กระบวนการราบรื่น
+                  ประคับประคอง
                 </p>
+                <p className="text-sm font-body">(Palliative Care)</p>
+              </div>
+            </li>
+            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
+              <div className="space-y-1">
+                <p className="text-lg font-bold">
+                  ระบบบริการระยะยาวสำหรับ
+                  <br />
+                  กลุ่มผู้สูงอายุที่มีภาวะพึ่งพิง
+                </p>
+                <p className="text-sm font-body">(Long Term Care)</p>
               </div>
             </li>
           </ul>

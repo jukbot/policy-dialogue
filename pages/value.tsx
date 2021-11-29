@@ -24,7 +24,7 @@ const ValuePage = () => {
       </section>
 
       <section className="relative grid h-full lg:grid-cols-2">
-        <section className="absolute w-full h-full space-y-12 -top-24 ">
+        <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
           <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-72 space-x-8">
             <span className="absolute top-6 left-24 text-white text-[180px] font-bold white-stoke align-top">“</span>
             <h2 className="relative mt-12 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
@@ -78,7 +78,7 @@ const ValuePage = () => {
 
       <section className="relative h-full py-12 bg-white sm:py-24">
         <div className="max-w-6xl mx-auto space-y-12 text-body">
-          <h2 className="text-4xl font-bold text-center">
+          <h2 className="text-4xl font-bold leading-snug text-center">
             สรุปความคิดเห็น
             <br />
             จากผู้เข้าร่วมต่อกระบวนการ

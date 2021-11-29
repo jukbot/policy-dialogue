@@ -21,7 +21,7 @@ const ProcessPage = () => {
       </section>
 
       <section className="relative grid h-full lg:grid-cols-2">
-        <section className="absolute w-full h-full space-y-12 -top-24 ">
+        <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
           <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-72 space-x-8">
             <span className="absolute top-6 left-24 text-white text-[180px] font-bold white-stoke align-top">“</span>
             <p className="flex justify-center mt-6 text-white font-body">กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn’t built in a day</p>
