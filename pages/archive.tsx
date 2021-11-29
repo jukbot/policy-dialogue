@@ -37,14 +37,15 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <button className="btn-white">
+                  {/* <button disabled className="btn-white">
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                     <span>ชุดบริการ</span>
                   </button>
-                  <button className="btn-white">
+                  <button disabled className="btn-white">
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                     <span>บทบาท อปท.</span>
-                  </button>
+                  </button> */}
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -118,10 +119,11 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <button className="btn-white">
+                  {/* <button disabled className="btn-white">
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                     <span>ชุดบริการ</span>
-                  </button>
+                  </button> */}
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#daa13d] h-48 text-white">
@@ -139,10 +141,11 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <button className="btn-white">
+                  {/* <button disabled className="btn-white">
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                     <span>ชุดบริการ</span>
-                  </button>
+                  </button> */}
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -191,17 +194,17 @@ const ArchivePage = () => {
               </div>
               <div className="col-span-1 space-y-6">
                 <p className="text-sm leading-relaxed font-body">
-                  จากสถานการณ์ปัจจุบัน แม้ว่าระบบบริการสุขภาพ ของไทยจะมีหลายระดับและครอบคลุม แต่ยังคงมี ช่องว่างสำหรับการดูแลผู้สูงอายุ หน่วยงานต่างๆ
-                  ไม่ได้ประสานงานอย่าง ไร้รอยต่ออย่างแท้จริง และอาจให้บริการแก่ประชาชนได้ไม่เต็มศักยภาพ ส่งผลให้ ผู้ปฏิบัติงานมีภาระอันหนักอึ้ง
-                  ทั้งการบริการสุขภาพและการบริการทางสังคม รวมทั้งประชาชนเอง ไม่ทราบถึงสิทธิของตนที่จะได้รับการบริการ หรือหากทราบก็ไม่มี
-                  ผู้ที่คอยประสานงานเพื่อให้มั่นใจว่าประชาชนจะได้รับสิทธิประโยชน์ดังกล่าว
+                  จากสถานการณ์ปัจจุบัน แม้ว่าระบบบริการสุขภาพ ของไทยจะมีหลายระดับและครอบคลุม แต่ยังคงมีช่องว่างสำหรับการดูแลผู้สูงอายุ หน่วยงานต่างๆ
+                  ไม่ได้ประสานงานอย่างไร้รอยต่ออย่างแท้จริง และอาจให้บริการแก่ประชาชนได้ไม่เต็มศักยภาพ ส่งผลให้ผู้ปฏิบัติงานมีภาระอันหนักอึ้ง
+                  ทั้งการบริการสุขภาพและการบริการทางสังคม รวมทั้งประชาชนเอง ไม่ทราบถึงสิทธิของตนที่จะได้รับการบริการ
+                  หรือหากทราบก็ไม่มีผู้ที่คอยประสานงานเพื่อให้มั่นใจว่าประชาชนจะได้รับสิทธิประโยชน์ดังกล่าว
                 </p>
                 <p className="text-sm leading-relaxed font-body">
-                  ผู้จัดทำโครงการจึงเห็นว่าควรมี “หน่วยประสาน การดูแล” (Care Coordination Unit - CCU) อยู่ประจำ โรงพยาบาลระดับต่างๆ
-                  ตั้งแต่โรงพยาบาลชุมชนขึ้นไปถึงโรงพยาลทั่วไป และโรงพยาบาลศูนย์ เพื่อเป็นกลไก สำคัญสำหรับการดูแลอย่างรอบด้านแก่ผู้สูงอายุ ผู้ป่วย ญาติ และ อปท.
-                  ที่เกี่ยวข้อง โดยคาดหวัง ว่าจะทำให้ประชาชนเข้าถึงบริการทางสุขภาพ และสังคมมากขึ้น
+                  ผู้จัดทำโครงการจึงเห็นว่าควรมี “หน่วยประสานการดูแล” (Care Coordination Unit - CCU) อยู่ประจำโรงพยาบาลระดับต่างๆ
+                  ตั้งแต่โรงพยาบาลชุมชนขึ้นไปถึงโรงพยาลทั่วไป และโรงพยาบาลศูนย์ เพื่อเป็นกลไกสำคัญสำหรับการดูแลอย่างรอบด้านแก่ผู้สูงอายุ ผู้ป่วย ญาติ และ อปท.
+                  ที่เกี่ยวข้อง โดยคาดหวังว่าจะทำให้ประชาชนเข้าถึงบริการทางสุขภาพ และสังคมมากขึ้น
                 </p>
-                <button className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+                <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -233,7 +236,7 @@ const ArchivePage = () => {
                   ด้วยเหตุนี้ ผู้จัดทำโครงการจึงได้มีข้อเสนอแนวทางการเสริมพลังให้องค์กรปกครองส่วนท้องถิ่น โดยมีจุดประสงค์เพื่อเสริมสร้างความแข็งแรงของชุมชน
                   และเพื่อให้ผู้สูงอายุในพื้นที่มีคุณภาพชีวิตที่ดีขึ้น
                 </p>
-                <button className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+                <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -254,20 +257,20 @@ const ArchivePage = () => {
               </div>
               <div className="col-span-1 space-y-6">
                 <p className="text-sm leading-relaxed font-body">
-                  การดูแลผู้ป่วยระยะกลาง (intermediate care - IMC) มีความสำคัญในแง่ที่จะช่วยให้ผู้ป่วย ไม่กลายเป็นผู้พิการ ช่วยให้ดำเนินชีวิตได้อย่างอิสระ
+                  การดูแลผู้ป่วยระยะกลาง (intermediate care - IMC) มีความสำคัญในแง่ที่จะช่วยให้ผู้ป่วยไม่กลายเป็นผู้พิการ ช่วยให้ดำเนินชีวิตได้อย่างอิสระ
                   ลดอัตราการกลายเป็นผู้ป่วยระยะยาว และอาจลดภาระทางการคลังของประเทศได้ในอนาคต
                 </p>
                 <p className="text-sm leading-relaxed font-body">
                   แต่ระบบการดูแลผู้ป่วยระยะกลางในประเทศไทย ไม่ได้มุ่งเน้นไปที่การฟื้นฟูสมรรถภาพผู้ป่วยอย่างต่อเนื่อง และไม่ไร้รอยต่ออย่างแท้จริง
                   โรงพยาบาลศูนย์แออัด ทำให้คนไข้ถูกจำหน่ายออกจากโรงพยาบาลก่อนกำหนด ทั้งยังเน้นการรักษาแบบผู้ป่วยนอก (OPD)
-                  ซึ่งเสียงว่าผู้ป่วยจะหลุดออกจากระบบการรักษา ท้ายที่สุดจะไม่ได้รับการฟื้นฟู อย่างเพียงพอ
+                  ซึ่งเสี่ยงว่าผู้ป่วยจะหลุดออกจากระบบการรักษา ท้ายที่สุดจะไม่ได้รับการฟื้นฟูอย่างเพียงพอ
                 </p>
                 <p className="text-sm leading-relaxed font-body">
                   ทีมจัดทำโครงการจึงเสนอให้ปรับเกณฑ์การเบิกจ่ายเงินจากกองทุนฟื้นฟูสมรรถภาพทางการแพทย์ของ สปสช. โดยคาดหวังว่าจะส่งเสริม
-                  ให้โรงพยาบาลชุมชนมีทรัพยากรและศักยภาพมากขึ้นในการดูแลผู้ป่วย ระยะกลาง เพิ่มการเข้าถึงบริการฟื้นฟูสมรรถภาพอย่างเข้มข้น เพียงพอ ต่อเนื่อง
+                  ให้โรงพยาบาลชุมชนมีทรัพยากรและศักยภาพมากขึ้นในการดูแลผู้ป่วยระยะกลาง เพิ่มการเข้าถึงบริการฟื้นฟูสมรรถภาพอย่างเข้มข้น เพียงพอ ต่อเนื่อง
                   และไม่หลุดหายจากระบบ
                 </p>
-                <button className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+                <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -292,11 +295,11 @@ const ArchivePage = () => {
                   กผส. และคณะอนุกรรมการต่างๆ ยังขาดการมีส่วนร่วมของภาคประชาชน
                 </p>
                 <p className="text-sm leading-relaxed font-body">
-                  ผู้จัดทำโครงการจึงได้เสนอแนวทางการยกระดับการทำงานของ กผส. และคณะอนุกรรมที่เกี่ยวข้องให้เกิดการออกแบบติดตามนโยบายที่ประชาชนเป็นศูนย์กลาง
+                  ผู้จัดทำโครงการจึงได้เสนอแนวทางการยกระดับการทำงานของ กผส. และคณะอนุกรรมการที่เกี่ยวข้องให้เกิดการออกแบบติดตามนโยบายที่ประชาชนเป็นศูนย์กลาง
                   และก่อเกิด “วงจรสะท้อนผล” (feedback loop) ในการกำหนดนโยบาย โดยคาดหวังว่าการมีส่วนร่วมของภาคประชาชนและภาคประชาสังคม รวมถึงการสร้าง feedback
                   loop ในการกำหนดนโยบาย จะทำให้การออกแบบและพัฒนานโยบายเป็นไปโดยคำนึงถึงประชาชนเป็นศูนย์กลางมากยิ่งขึ้น
                 </p>
-                <button className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+                <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -322,7 +325,7 @@ const ArchivePage = () => {
                     <br /> RISE Impact
                   </p>
                 </div>
-                <button className="btn-white">
+                <button disabled className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -336,7 +339,7 @@ const ArchivePage = () => {
                     บ้าง เพื่อหาคำตอบ
                   </p>
                 </div>
-                <button className="btn-white">
+                <button disabled className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -349,7 +352,7 @@ const ArchivePage = () => {
                     <br /> ‘policy dialogue’
                   </p>
                 </div>
-                <button className="btn-white">
+                <button disabled className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>
@@ -364,7 +367,7 @@ const ArchivePage = () => {
                     เพื่อให้กระบวนการราบรื่น
                   </p>
                 </div>
-                <button className="btn-white">
+                <button disabled className="btn-white">
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
                 </button>

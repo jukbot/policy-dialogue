@@ -19,7 +19,7 @@ const PreProcess = () => {
         <div className="space-y-4">
           <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Seminar} alt="seminar" />
           <h3 className="text-xl font-bold">Seminar</h3>
-          <p className="text-sm leading-relaxed sm:text-base font-body">เข้าร่วมงานเสวนาวิชาการ-วงประชุมภายนอก ทั้งแบบออนไลน์และ ออฟไลน์</p>
+          <p className="text-sm leading-relaxed sm:text-base font-body">เข้าร่วมงานเสวนาวิชาการ วงประชุมภายนอก ทั้งแบบออนไลน์และออฟไลน์</p>
         </div>
       </div>
       <div className="flow-root">
@@ -27,7 +27,7 @@ const PreProcess = () => {
           <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Fieldwork} alt="fieldwork" />
           <h3 className="text-xl font-bold">Fieldwork</h3>
           <p className="text-sm leading-relaxed sm:text-base font-body">
-            ลงพื้นที่-ดูงานในสถานที่ต่าง ๆ ที่เกี่ยวข้อง เช่น ชมรมผู้สูงอายุ โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) สำนักงานเทศบาลตำบล
+            ลงพื้นที่ ดูงานในสถานที่ต่างๆ ที่เกี่ยวข้อง เช่น ชมรมผู้สูงอายุ โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) สำนักงานเทศบาลตำบล เป็นต้น
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ const PreProcess = () => {
         <div className="space-y-4">
           <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={LiteratureReview} alt="literature review" />
           <h3 className="text-xl font-bold">Literature Review</h3>
-          <p className="text-sm leading-relaxed sm:text-base font-body">ค้นคว้าข้อมูลจากรายงานวิจัย บทความวิชาการ และเอกสาร ที่น่าเชื่อถือ</p>
+          <p className="text-sm leading-relaxed sm:text-base font-body">ค้นคว้าข้อมูลจากรายงานวิจัย บทความวิชาการ และเอกสารที่น่าเชื่อถือ</p>
         </div>
       </div>
       <div className="flow-root">

@@ -1,8 +1,11 @@
 import Contributor from '@/data/contributors.json'
 import Team from '@/data/team.json'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const AboutPage = () => {
+  const [organizeType, setOrganizeType] = useState<string>('')
+  const [otherOrganize] = useState<string>('')
   return (
     <div className="relative">
       <main className="relative">
@@ -82,10 +85,10 @@ const AboutPage = () => {
                 <div className="col-span-1 space-y-6">
                   <div className="grid items-start grid-cols-3 gap-4">
                     <label htmlFor="fullname" className="label-input">
-                      ชื่อ/นามสกุล
+                      ชื่อ-สกุล
                     </label>
                     <div className="col-span-2">
-                      <input type="text" name="fullName" id="fullname" placeholder="ชื่อ/นามสกุล" className="text-input" />
+                      <input type="text" name="fullName" id="fullname" placeholder="ชื่อ/นามสกุล" className="text-input" maxLength={60} />
                     </div>
                   </div>
                   <div className="grid items-start grid-cols-3 gap-4">
@@ -93,7 +96,7 @@ const AboutPage = () => {
                       ชื่อองค์กร
                     </label>
                     <div className="col-span-2">
-                      <input type="text" name="organizeName" id="organizename" placeholder="ชื่อองค์กรของคุณ" className="text-input" />
+                      <input type="text" name="organizeName" id="organizename" placeholder="ชื่อองค์กรของคุณ" className="text-input" maxLength={60} />
                     </div>
                   </div>
                   <div className="grid items-start grid-cols-3 gap-4">
@@ -101,20 +104,32 @@ const AboutPage = () => {
                       ประเภทองค์กร *
                     </label>
                     <div className="col-span-2">
-                      <select name="organizetType" id="organizetype" placeholder="ชื่อ/นามสกุล" required className="text-input">
-                        <option selected disabled className="text-[#707070]">
-                          เลือกประเภทองค์กร
-                        </option>
-                        <option value="central-government">หน่วยงานราชการ (ส่วนกลางและภูมิภาค)</option>
-                        <option value="local-government">องค์กรปกครองส่วนท้องถิ่น</option>
-                        <option value="independent-org">องค์กรอิสระ (รวมถึงภายใต้กำกับของรัฐ)</option>
-                        <option value="public-company">บริษัทเอกชน ภาคธุรกิจ</option>
-                        <option value="educational-institution">สถาบันการศึกษา/วิจัย</option>
-                        <option value="student">นักเรียน นักศึกษา</option>
-                        <option value="international-org">องค์กรระหว่างประเทศ</option>
-                        <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
-                        <option value="other">อื่นๆ (โปรดระบุ)</option>
-                      </select>
+                      {otherOrganize.length === 0 && (
+                        <select
+                          name="organizeType"
+                          id="organizetype"
+                          onChange={(e) => setOrganizeType(e.target.value)}
+                          placeholder="ชื่อ/นามสกุล"
+                          required
+                          className="text-input"
+                        >
+                          <option selected value="" disabled className="text-[#707070]">
+                            เลือกประเภทองค์กร
+                          </option>
+                          <option value="central-government">หน่วยงานราชการ (ส่วนกลางและภูมิภาค)</option>
+                          <option value="local-government">องค์กรปกครองส่วนท้องถิ่น</option>
+                          <option value="independent-org">องค์กรอิสระ (รวมถึงภายใต้กำกับของรัฐ)</option>
+                          <option value="public-company">บริษัทเอกชน ภาคธุรกิจ</option>
+                          <option value="educational-institution">สถาบันการศึกษา/วิจัย</option>
+                          <option value="student">นักเรียน นักศึกษา</option>
+                          <option value="international-org">องค์กรระหว่างประเทศ</option>
+                          <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
+                          <option value="other">อื่นๆ (โปรดระบุ)</option>
+                        </select>
+                      )}
+                      {organizeType === 'other' && (
+                        <input type="text" value={otherOrganize} name="organizeType" placeholder="" className="text-input" maxLength={60} />
+                      )}
                     </div>
                   </div>
                   <div className="grid items-start grid-cols-3 gap-4">
@@ -122,7 +137,7 @@ const AboutPage = () => {
                       อีเมล *
                     </label>
                     <div className="col-span-2">
-                      <input type="email" name="email" id="email" required placeholder="youremail@mail.com" className="text-input" />
+                      <input type="email" name="email" id="email" required placeholder="youremail@mail.com" className="text-input" maxLength={60} />
                     </div>
                   </div>
                 </div>

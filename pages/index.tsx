@@ -30,10 +30,12 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <main className="relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-right bg-no-repeat bg-cover opacity-75 mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
+
         <section
           className={`${
-            intersection && intersection.intersectionRatio < 1 ? '' : 'blur-md backdrop-blur-md saturate-50 backdrop-saturate-50'
-          } grid h-[75vh] lg:h-[90vh] bg-top bg-fixed bg-140% sm:bg-landing-size filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
+            intersection && intersection.intersectionRatio < 1 ? '' : 'saturate-50 backdrop-saturate-50'
+          } relative grid h-[85vh] lg:h-[90vh] bg-top bg-fixed bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
         >
           <div className="pt-24 space-y-8 text-center text-white">
             <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
@@ -44,18 +46,17 @@ const Home: NextPage = () => {
             </h2>
           </div>
         </section>
-        <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-right bg-no-repeat bg-cover opacity-75 mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
 
         <section className="relative h-full bg-white">
           <ScrollToContent />
           <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 md:grid-cols-2" id="learnmore">
             <div className="flex flex-col col-span-1 px-6 pt-16 space-y-4 sm:px-24 text-body">
-              <div className="space-y-2">
+              <div className="space-y-2 whitespace-nowrap">
                 <h2 className="text-4xl font-semibold sm:text-5xl">นโยบายที่ดี สังคมต้อง</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">ร่วมกันออกแบบ</h2>
               </div>
               <p className="sm:text-lg font-body">
-                สร้างการมีส่วนร่วมที่เปิดกว้าง เปิดใจรับฟังความ แตกต่าง ให้ผู้คนได้แลกเปลี่ยนความคิดเห็นบนฐานความรู้และประสบการณ์ เพื่อร่วมออกแบบนโยบาย ให้เป็น
+                สร้างการมีส่วนร่วมที่เปิดกว้าง เปิดใจรับฟังความแตกต่าง ให้ผู้คนได้แลกเปลี่ยนความคิดเห็นบนฐานความรู้และประสบการณ์ เพื่อร่วมออกแบบนโยบาย ให้เป็น
                 ‘นโยบาย’ ของคนในสังคมอย่างแท้จริง
               </p>
             </div>
@@ -104,7 +105,7 @@ const Home: NextPage = () => {
               <PolicyCircle text="" position="hidden" bgColor="bg-secondary" borderColor="border-transparent" className="absolute hidden -bottom-8 md:block" />
             </div>
             <div className="flex flex-col justify-between col-span-1 px-6 py-16 space-y-4 sm:px-12 text-body">
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">เพราะนโยบาย</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">เกี่ยวข้องกับทุกมิติใน</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">ชีวิตของผู้คน</h2>
@@ -112,7 +113,7 @@ const Home: NextPage = () => {
                   เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
                 </p>
               </div>
-              <div className="bottom-0 hidden grid-cols-2 mx-auto gap-y-12 gap-x-16 col-span-full sm:grid">
+              <div className="bottom-0 hidden grid-cols-2 mx-auto gap-y-12 gap-x-16 col-span-full md:grid">
                 <PolicyCircle
                   text="ขนส่งมวลชนเชื่อมต่อ"
                   position="-translate-x-6 translate-y-6"
@@ -134,7 +135,7 @@ const Home: NextPage = () => {
         <section className="relative h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
             <h2 className="text-4xl font-bold text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
-            <div className="flex flex-col justify-center space-y-8 text-center md:space-x-8 md:flex-row font-body">
+            <div className="flex flex-col justify-center space-y-8 text-center lg:space-x-8 lg:flex-row font-body">
               <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                 <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
               </blockquote>
@@ -145,10 +146,10 @@ const Home: NextPage = () => {
                 <p className="text-xl">รัฐจะดูแลเราอย่างไร ตอนเราอายุ 70 ปี?</p>
               </blockquote>
               <blockquote className="bg-[#6badcb] speech-dialog bubble-rb border-t-blue md:top-8 justify-end flex ml-auto">
-                <p className="text-xl">ถ้าต้องอยู่ บ้านพักคนชรา จะจ่ายไหวไหม?</p>
+                <p className="text-xl">ถ้าต้องอยู่บ้านพักคนชรา จะจ่ายไหวไหม?</p>
               </blockquote>
               <blockquote className="bg-[#daa13d] speech-dialog bubble-rb border-t-yellow">
-                <p className="text-xl">หากเจ็บป่วยขึ้นมาใครจะพา ไปส่ง โรงพยาบาล?</p>
+                <p className="text-xl">หากเจ็บป่วยขึ้นมา ใครจะพาไปส่งโรงพยาบาล?</p>
               </blockquote>
             </div>
           </div>
@@ -156,9 +157,12 @@ const Home: NextPage = () => {
         <section className="relative h-full bg-[#242054]">
           <div className="flex flex-col items-center justify-center px-6 py-20 text-white">
             <QuestionMark className="w-48 h-48" />
-            <p className="text-lg text-center max-w-prose font-body">
-              คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย
-              แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
+            <p className="text-sm text-center sm:text-base lg:text-lg font-body">
+              คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ
+              <br />
+              กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง
+              <br />
+              ภาครัฐ ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
             </p>
           </div>
           <div className="absolute bottom-0 hidden -ml-4 lg:block triangle-up left-1/2"></div>
@@ -172,7 +176,7 @@ const Home: NextPage = () => {
               <div className="flex flex-col items-start justify-center pl-20 mt-48 space-y-6 font-bold bg-white rounded-full lg:mt-0 lg:text-center lg:pt-10 w-60 h-60 lg:pl-0 lg:items-center lg:w-80 lg:h-80 text-body">
                 <h3 className="hidden text-2xl lg:block">
                   ตอบคำถามดังกล่าว
-                  <br /> ผ่านกรอบการทำงาน
+                  <br /> ผ่านกรอบการทำงาน*
                   <br />
                 </h3>
                 <h3 className="block text-2xl lg:hidden">
@@ -237,7 +241,7 @@ const Home: NextPage = () => {
                 </p>
                 <p className="text-6xl">
                   {inView ? <CountUp end={400} duration={2.5} /> : '0'}
-                  <span className="text-base font-bold font-body"> ครั้ง</span>
+                  <span className="text-base font-bold font-body"> คน</span>
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-body">
@@ -247,18 +251,18 @@ const Home: NextPage = () => {
                 </p>
                 <p className="text-6xl">
                   {inView ? <CountUp end={2} duration={2} /> : '0'}
-                  <span className="text-base font-bold font-body"> ครั้ง</span>
+                  <span className="text-base font-bold font-body"> เว็บไซต์</span>
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-body">
                 <p className="font-body">
-                  มีผู้เข้าร่วมที่
+                  มีผู้แสดงความคิดเห็น
                   <br />
-                  หลากหลายมากกว่า
+                  มากกว่า
                 </p>
                 <p className="text-6xl">
                   {inView ? <CountUp end={1000} duration={2.75} separator="," /> : '0'}
-                  <span className="text-base font-bold font-body"> ครั้ง</span>
+                  <span className="text-base font-bold font-body"> คน</span>
                 </p>
               </div>
             </div>

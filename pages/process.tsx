@@ -41,14 +41,14 @@ const ProcessPage = () => {
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold">ก่อนกระบวนการ</h3>
                 <p className="font-body max-w-prose">
-                  เราใช้หลากหลายวิธีในการเตรียมข้อมูลให้ครบถ้วน และทันเหตุการณ์ เพื่อเข้าใจที่มาที่ไป ตั้งเป้าหมายที่ เป็นประโยชน์ต่อการออกแบบนโยบายสาธารณะ
+                  เราใช้หลากหลายวิธีในการเตรียมข้อมูลให้ครบถ้วนและทันเหตุการณ์ เพื่อเข้าใจที่มาที่ไป ตั้งเป้าหมายที่เป็นประโยชน์ต่อการออกแบบนโยบายสาธารณะ
                   และสร้างการมีส่วนร่วมกับกลุ่มที่เกี่ยวข้อง
                 </p>
               </div>
               {selectedSection === 0 ? (
-                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
-              ) : (
                 <MinusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              ) : (
+                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
               )}
             </div>
           </section>
@@ -58,13 +58,13 @@ const ProcessPage = () => {
                 <h3 className="text-3xl font-bold">ระหว่างกระบวนการ</h3>
                 <p className="font-body max-w-prose">
                   จัดวงหารือในหลากหลายแนวทาง เพื่อได้มาซึ่งผลลัพธ์ ที่มีคุณค่าต่อการผลักดันนโยบาย ผ่านการแลกเปลี่ยน ความคิดเห็น เพื่อหาจุดร่วม-จุดต่าง-ข้อสรุป
-                  ทั้งยังสร้าง การมีส่วนร่วมของภาคส่วนที่เกี่ยวข้องต่อประเด็นนั้นๆ
+                  ทั้งยังสร้างการมีส่วนร่วมของภาคส่วนที่เกี่ยวข้องต่อประเด็นนั้นๆ
                 </p>
               </div>
               {selectedSection === 1 ? (
-                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
-              ) : (
                 <MinusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              ) : (
+                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
               )}
             </div>
           </section>

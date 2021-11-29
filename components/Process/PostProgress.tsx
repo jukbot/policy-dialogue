@@ -65,8 +65,8 @@ const PostProcess = () => {
           <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={OnlinePublicEngagement} alt="online public engagement" />
           <h3 className="text-xl font-bold">Online Public Engagement</h3>
           <p className="text-sm leading-relaxed sm:text-base font-body">
-            ใช้เว็บแอปพลิเคชั่นเพื่อสื่อสารและสำรวจความคิดเห็นในวงกว้าง สร้างการรับรู้ต่อประเด็นนั้นๆ และ
-            อาจใช้ผลลัพธ์ที่ได้มาเป็นข้อมูลตั้งต้นจัดวงหารือครั้งต่อไป
+            ใช้เว็บแอปพลิเคชั่นเพื่อสื่อสารและสำรวจความคิดเห็นในวงกว้าง สร้างการรับรู้ต่อประเด็นนั้นๆ
+            และอาจใช้ผลลัพธ์ที่ได้มาเป็นข้อมูลตั้งต้นจัดวงหารือครั้งต่อไป
           </p>
         </div>
       </div>

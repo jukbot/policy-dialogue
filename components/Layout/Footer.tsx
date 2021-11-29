@@ -1,11 +1,21 @@
 import { ArrowSmRightIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState, MouseEvent } from 'react'
+import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
 import Logo from '/public/image/logo/logo.svg'
 import RiseImpactLogo from '/public/image/logo/rise-impact-white.svg'
 
 const Footer = (): JSX.Element => {
+  const [email, setEmail] = useState<string>('')
+
+  const subscribeNewsletter = (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+    e.preventDefault()
+    toast.success('Subscribe สำเร็จ')
+    setEmail('')
+  }
+
   return (
     <footer className="relative flex flex-col w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
       <ul className="grid w-full gap-4 text-white lg:grid-cols-4 font-body">
@@ -59,11 +69,12 @@ const Footer = (): JSX.Element => {
                   type="email"
                   name="email"
                   id="email"
+                  value={email}
                   required
                   className="block w-full px-6 py-4 border-primary bg-transparent rounded-full placeholder-[#a8a8a8] focus:ring-primary focus:border-primary sm:text-sm"
                   placeholder="dialogue.policy@example.com"
                 />
-                <button className="absolute inset-y-0 right-0 flex items-center pr-4 cursor-pointer">
+                <button className="absolute inset-y-0 right-0 flex items-center pr-4 cursor-pointer" onClick={(e) => subscribeNewsletter(e)}>
                   <ArrowSmRightIcon className="w-6 h-6 text-primary" aria-hidden="true" />
                 </button>
               </form>

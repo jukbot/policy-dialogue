@@ -29,7 +29,7 @@ const Navbar = (): JSX.Element => {
         <>
           <div className={`fixed z-10 w-full px-6 sm:py-4 mx-auto lg:px-24 bg-black transition ${y < 30 ? 'sm:bg-opacity-0' : 'sm:bg-opacity-100'}`}>
             <div className="relative flex items-center justify-between">
-              <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-4 text-white rounded-md hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -44,17 +44,17 @@ const Navbar = (): JSX.Element => {
                     </a>
                   </Link>
                 </div>
-                <div className="hidden w-full md:block">
-                  <div className="flex justify-center space-x-6">
+                <div className="hidden w-full lg:block">
+                  <div className="flex justify-center space-x-4 whitespace-nowrap">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm font-body')}
-                        aria-current={pathname === item.href ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href} key={item.name}>
+                        <a
+                          className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'px-2 text-sm font-body')}
+                          aria-current={pathname === item.href ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -62,8 +62,8 @@ const Navbar = (): JSX.Element => {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <Disclosure.Panel className="lg:hidden">
+            <div className="absolute w-full h-full px-6 pt-12 pb-3 space-y-1 bg-secondary">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

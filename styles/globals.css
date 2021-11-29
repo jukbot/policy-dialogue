@@ -111,6 +111,10 @@
     fill: #fff;
   }
 
+  button:disabled {
+    cursor: not-allowed;
+  }
+
   a {
     @apply cursor-pointer;
   }

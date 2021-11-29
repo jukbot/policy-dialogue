@@ -28,7 +28,7 @@ const SocialMedia = (): JSX.Element => {
         </svg>
       </a> */}
 
-      <a href={Meta.lineUrl} target="_blank" rel="noreferrer noopener" className="text-white hover:text-primary">
+      {/* <a href={Meta.lineUrl} target="_blank" rel="noreferrer noopener" className="text-white hover:text-primary">
         <span className="sr-only">LINE</span>
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 23.456 22.841">
           <path
@@ -36,7 +36,7 @@ const SocialMedia = (): JSX.Element => {
             transform="translate(0 -3.893)"
           />
         </svg>
-      </a>
+      </a> */}
 
       <a href={Meta.youtubeUrl} target="_blank" rel="noreferrer noopener" className="text-white hover:text-primary">
         <span className="sr-only">Youtube</span>

@@ -50,9 +50,9 @@ const ValuePage = () => {
                 </h3>
               </div>
               {selectedSection === 0 ? (
-                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
-              ) : (
                 <MinusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              ) : (
+                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
               )}
             </div>
           </section>
@@ -68,9 +68,9 @@ const ValuePage = () => {
                 </h3>
               </div>
               {selectedSection === 1 ? (
-                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
-              ) : (
                 <MinusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              ) : (
+                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
               )}
             </div>
           </section>
@@ -94,12 +94,18 @@ const ValuePage = () => {
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 213 คน</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-2 text-center">
-                <h3 className="pb-6 text-lg font-bold">คิดว่าตัวเองและหน่วยงาน ได้รับประโยชน์จากการเข้าร่วม</h3>
+                <h3 className="pb-6 text-lg font-bold">
+                  คิดว่าตัวเองและหน่วยงาน
+                  <br /> ได้รับประโยชน์จากการเข้าร่วม
+                </h3>
                 <Image src={YellowChart} width="500" height="500" alt="pink-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 151 คน</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-2 text-center">
-                <h3 className="pb-6 text-lg font-bold">สามารถนำประเด็นจากการ แลกเปลี่ยนไป ต่อยอดในการทำงานหรือในหน่วยงานได้</h3>
+                <h3 className="pb-6 text-lg font-bold">
+                  สามารถนำประเด็นจากการ แลกเปลี่ยนไป
+                  <br /> ต่อยอดในการทำงานหรือในหน่วยงานได้
+                </h3>
                 <Image src={BlueChart} width="500" height="500" alt="pink-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 54 คน</p>
               </div>
@@ -109,40 +115,21 @@ const ValuePage = () => {
               และมีบางคำถามที่เป็นการเก็บข้อมูลจากเพิ่มเติมระหว่างโครงการ จึงทำให้ตัวเลขจำนวนผู้ตอบแบบสอบถามไม่เท่ากันทั้งหมด
             </p>
           </div>
-
-          {/* <div className="grid max-w-6xl grid-cols-1 gap-6 px-6 mx-auto text-body md:grid-cols-2">
-            <div className="flex flex-col col-span-1 space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-4xl font-semibold sm:text-5xl">จัดการอย่างไร</h2>
-                <h2 className="text-4xl font-semibold sm:text-5xl">ให้สำเร็จ</h2>
-                <p className="font-body">
-                  รวบรวมปัญหาที่พบ ข้อควรคำนึงและคำแนะนำ
-                  <br />
-                  จากประสบการณ์ของทีม เพื่อให้กระบวนการเป็นไปอย่างราบรื่น
-                  <br /> ชวนคุยได้บรรลุเป้าหมายที่ผู้จัดตั้งใจ
-                </p>
-              </div>
-            </div>
-            <div className="flex items-end justify-center">
-              <Link href="/">
-                <a className="w-1/2 btn">ดาวน์โหลดเอกสาร</a>
-              </Link>
-            </div>
-          </div> */}
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center sm:space-y-8">
             <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
-              <h3>คุณค่าของกระบวนการ</h3>
               <h3>โพลิซี ไดอะล็อก</h3>
+              <h3>ทำงานอย่างไร ?</h3>
             </div>
             <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
-              กระบวนการหารือเชิงนโยบาย ไม่ได้เป็นเพียงวิธีการหาคำตอบเท่านั้น แต่ยังสามารถสร้างการมีส่วนร่วมกับผู้คน ช่วยจุดประเด็นและพลังใจเพื่อผลักดันต่อ
+              เราได้จัดทำคู่มือการจัดกระบวนการจากประสบการณ์ของทีมงาน ผู้ที่สนใจสามารถนำไปปรับใช้สำหรับออกแบบและพัฒนานโยบาย ทุกระดับ ทุกประเด็นในสังคม
+              เพื่อร่วมกันสร้างการเปลี่ยนแปลงเชิงระบบ
             </p>
             <div className="flex justify-center pt-8 pb-12">
-              <Link href="/value">
-                <a className="w-full btn">ดูรายละเอียดเพิ่มเติม</a>
+              <Link href="/guideline">
+                <a className="w-full btn">คู่มือการจัดกระบวนการ</a>
               </Link>
             </div>
             <AboutRiseImpact />

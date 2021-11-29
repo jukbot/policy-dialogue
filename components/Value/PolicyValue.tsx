@@ -46,14 +46,14 @@ const PolicyValue = () => {
             <li className="inline-flex space-x-2">
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
-                <p className="font-body">เกิดการพูดคุยแลกเปลี่ยน เพื่อหาจุดร่วมระหว่างผู้ที่เกี่ยวข้องกับประเด็นนั้นๆทุกระดับ</p>
+                <p className="font-body">เกิดการพูดคุยแลกเปลี่ยน เพื่อหาจุดร่วมระหว่างผู้ที่เกี่ยวข้องกับประเด็นนั้นๆ ทุกระดับ</p>
               </div>
             </li>
             <li className="inline-flex space-x-2">
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
                 <p className="font-body">
-                  เปิดโอกาสให้ผู้เข้าร่วมที่มาจากบริบทที่ต่างกัน ได้แลกเปลี่ยน เห็นจุดร่วมและจุดต่าง ทำให้เกิดทางเลือกใหม่ๆ ที่อาจเป็นการต่อยอดนโบายต่อไป
+                  เปิดโอกาสให้ผู้เข้าร่วมที่มาจากบริบทที่ต่างกัน ได้แลกเปลี่ยน เห็นจุดร่วมและจุดต่าง ทำให้เกิดทางเลือกใหม่ๆ ที่อาจเป็นการต่อยอดนโยบายต่อไป
                 </p>
               </div>
             </li>

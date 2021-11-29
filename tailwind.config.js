@@ -17,10 +17,8 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
-      '140%': '140%',
       '75%': '75%',
       'width-90': '90% 100%',
-      'landing-size': '160% 120%',
       'footer-size': '80% 180%',
     },
     extend: {

@@ -11,13 +11,8 @@ const PolicyContent = () => {
 
   return (
     <div className="relative">
-      <div className="absolute mx-auto mt-60 lg:mt-72 -ml-28 inset-x-1/2 ">
-        <div className="items-center justify-center hidden lg:flex w-56 h-56 p-6 rounded-full bg-[#FEEDEA]">
-          <h3 className="text-2xl text-center text-body">นโยบายเพื่อสังคมสูงวัย</h3>
-        </div>
-      </div>
       <PolicyWheel className="hidden w-full h-full fill-current text-primary lg:block" />
-      <PolicyWheelMobile className="block w-full h-full fill-current text-primary lg:hidden" />
+      <PolicyWheelMobile className="block max-w-[512px] w-full h-full fill-current text-primary lg:hidden" />
       <div className="flex justify-center mx-auto my-4 space-x-6 text-primary lg:hidden">
         <ArrowCircleLeftIcon
           className="flex-shrink-0 w-8 h-8 cursor-pointer"

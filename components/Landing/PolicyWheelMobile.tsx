@@ -165,7 +165,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
               transform="translate(176 554)"
               fill="#191919"
               fontSize="16px"
-              fontFamily="IBMPlexSansThaiLooped-SemiBold,IBM Plex Sans Thai Looped"
+              fontFamily="IBMPlexSansThaiLooped, sans-serif"
               fontWeight={600}
             >
               <tspan x={-42.864} y={0}>

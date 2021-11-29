@@ -65,7 +65,7 @@ const GuidelinePage = () => {
                     <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Resources} alt="resources" />
                     <h3 className="text-xl font-bold">Resources</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
-                      มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่าง ๆ
+                      มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่างๆ
                       เพื่อหาคำตอบและจัดกระบวนการ
                     </p>
                   </div>
@@ -117,7 +117,7 @@ const GuidelinePage = () => {
                         <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Communication skills</p>
-                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่าง ๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
+                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่างๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
@@ -139,7 +139,7 @@ const GuidelinePage = () => {
                       <li className="inline-flex space-x-2">
                         <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
-                          <p className="font-bold">Goals</p>
+                          <p className="font-bold">Goal</p>
                           <p className="font-body">เป้าหมายของการจัดกระบวนการทั้งหมด</p>
                         </div>
                       </li>
@@ -153,7 +153,7 @@ const GuidelinePage = () => {
                       <li className="inline-flex space-x-2">
                         <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
-                          <p className="font-bold">Expected</p>
+                          <p className="font-bold">Expected outcome</p>
                           <p className="font-body">ผลลัพธ์ที่คาดหวังของการจัดกระบวนในแต่ละครั้ง</p>
                         </div>
                       </li>
