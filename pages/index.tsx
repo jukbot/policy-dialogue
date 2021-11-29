@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 
         <section
           className={`${
-            intersection && intersection.intersectionRatio < 1 ? '' : 'saturate-50 backdrop-saturate-50'
+            intersection && intersection.intersectionRatio < 1 ? '' : ''
           } relative grid h-[85vh] lg:h-[90vh] bg-top bg-fixed bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
         >
           <div className="pt-24 space-y-8 text-center text-white">
