@@ -1,7 +1,7 @@
 import { ArrowSmRightIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState, MouseEvent } from 'react'
+import { MouseEvent, useState } from 'react'
 import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
 import Logo from '/public/image/logo/logo.svg'
@@ -11,9 +11,12 @@ const Footer = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
 
   const subscribeNewsletter = (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+    if (!email) {
+      return toast.error('โปรดระบุอีเมล')
+    }
     e.preventDefault()
-    toast.success('Subscribe สำเร็จ')
     setEmail('')
+    toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
   }
 
   return (
@@ -70,6 +73,7 @@ const Footer = (): JSX.Element => {
                   name="email"
                   id="email"
                   value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                   className="block w-full px-6 py-4 border-primary bg-transparent rounded-full placeholder-[#a8a8a8] focus:ring-primary focus:border-primary sm:text-sm"
                   placeholder="dialogue.policy@example.com"
