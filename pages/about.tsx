@@ -104,31 +104,37 @@ const AboutPage = () => {
                       ประเภทองค์กร *
                     </label>
                     <div className="col-span-2">
-                      {otherOrganize.length === 0 && (
-                        <select
-                          name="organizeType"
-                          id="organizetype"
-                          onChange={(e) => setOrganizeType(e.target.value)}
-                          placeholder="ชื่อ/นามสกุล"
-                          required
-                          className="text-input"
-                        >
-                          <option selected value="" disabled className="text-[#707070]">
-                            เลือกประเภทองค์กร
-                          </option>
-                          <option value="central-government">หน่วยงานราชการ (ส่วนกลางและภูมิภาค)</option>
-                          <option value="local-government">องค์กรปกครองส่วนท้องถิ่น</option>
-                          <option value="independent-org">องค์กรอิสระ (รวมถึงภายใต้กำกับของรัฐ)</option>
-                          <option value="public-company">บริษัทเอกชน ภาคธุรกิจ</option>
-                          <option value="educational-institution">สถาบันการศึกษา/วิจัย</option>
-                          <option value="student">นักเรียน นักศึกษา</option>
-                          <option value="international-org">องค์กรระหว่างประเทศ</option>
-                          <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
-                          <option value="other">อื่นๆ (โปรดระบุ)</option>
-                        </select>
-                      )}
+                      <select
+                        name="organizeType"
+                        id="organizetype"
+                        onChange={(e) => setOrganizeType(e.target.value)}
+                        placeholder="ชื่อ/นามสกุล"
+                        required
+                        className="text-input"
+                      >
+                        <option selected value="" disabled className="text-[#707070]">
+                          เลือกประเภทองค์กร
+                        </option>
+                        <option value="central-government">หน่วยงานราชการ (ส่วนกลางและภูมิภาค)</option>
+                        <option value="local-government">องค์กรปกครองส่วนท้องถิ่น</option>
+                        <option value="independent-org">องค์กรอิสระ (รวมถึงภายใต้กำกับของรัฐ)</option>
+                        <option value="public-company">บริษัทเอกชน ภาคธุรกิจ</option>
+                        <option value="educational-institution">สถาบันการศึกษา/วิจัย</option>
+                        <option value="student">นักเรียน นักศึกษา</option>
+                        <option value="international-org">องค์กรระหว่างประเทศ</option>
+                        <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
+                        <option value="other">อื่นๆ (โปรดระบุ)</option>
+                      </select>
                       {organizeType === 'other' && (
-                        <input type="text" value={otherOrganize} name="organizeType" placeholder="" className="text-input" maxLength={60} />
+                        <input
+                          type="text"
+                          value={otherOrganize}
+                          required
+                          name="organizeType"
+                          placeholder="ระบุประเภทองค์กร"
+                          className="mt-2 text-input"
+                          maxLength={60}
+                        />
                       )}
                     </div>
                   </div>
