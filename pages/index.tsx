@@ -30,8 +30,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <main className="relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-right bg-no-repeat bg-cover opacity-75 mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
-
+        <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-right bg-no-repeat bg-contain opacity-75 sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
         <section
           className={`${
             intersection && intersection.intersectionRatio < 1 ? '' : ''
@@ -46,7 +45,6 @@ const Home: NextPage = () => {
             </h2>
           </div>
         </section>
-
         <section className="relative h-full bg-white">
           <ScrollToContent />
           <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 md:grid-cols-2" id="learnmore">

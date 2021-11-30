@@ -34,26 +34,24 @@ const ProjectDropDown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute z-10 w-screen max-w-[960px] px-4 mt-6 transform -translate-x-32 sm:px-0 lg:max-w-[1200px]">
-                <div className="overflow-hidden">
-                  <div className="relative grid gap-2 p-6 h-full shadow bg-[#474747] lg:grid-cols-7">
-                    {projectDropdown.map((item) => (
-                      <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
-                        <a
-                          onClick={() => close()}
-                          className={`${
-                            item.enabled ? (pathname === item.url ? 'text-primary' : 'text-white hover:text-primary') : 'text-white opacity-50'
-                          } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 space-y-2 transition duration-150 ease-in-out`}
-                        >
-                          <div className="flex flex-shrink-0">{projectIcon.get(item.icon)}</div>
-                          <div className="flex flex-col text-sm whitespace-normal font-body">
-                            <p>{item.description}</p>
-                            <p className="font-bold">({item.title})</p>
-                          </div>
-                        </a>
-                      </Popover.Button>
-                    ))}
-                  </div>
+              <Popover.Panel className="absolute z-10 px-4 mt-6 transform -translate-x-32 sm:px-0 w-screen max-w-[900px] lg:max-w-[1200px]">
+                <div className="relative grid gap-2 p-6 w-full h-full shadow bg-[#474747] lg:grid-cols-7 overflow-hidden">
+                  {projectDropdown.map((item) => (
+                    <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
+                      <a
+                        onClick={() => close()}
+                        className={`${
+                          item.enabled ? (pathname === item.url ? 'text-primary' : 'text-white hover:text-primary') : 'text-white opacity-50'
+                        } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 space-y-2 transition duration-150 ease-in-out`}
+                      >
+                        <div className="flex flex-shrink-0">{projectIcon.get(item.icon)}</div>
+                        <div className="flex flex-col text-sm whitespace-normal font-body">
+                          <p>{item.description}</p>
+                          <p className="font-bold">({item.title})</p>
+                        </div>
+                      </a>
+                    </Popover.Button>
+                  ))}
                 </div>
               </Popover.Panel>
             </Transition>
