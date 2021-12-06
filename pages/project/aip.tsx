@@ -177,6 +177,18 @@ const AipPage = () => {
               <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
             </div>
           </div>
+          <div className="w-full max-w-4xl px-24 py-16 mx-auto space-y-8 text-white h-72 bg-secondary">
+            <div className="flex flex-col items-center justify-between md:flex-row">
+              <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
+              <p className="max-w-sm text-base font-bold font-body">
+                เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
+              </p>
+            </div>
+            <p className="text-base text-center font-body">
+              บ้านหรือที่อยู่อาศัยที่เหมาะสม | ชุดบริการที่จำเป็นเพื่ออาศัยในถิ่นที่อยู่เดิมอย่างมีคุณภาพชีวิตที่ดีได้ ในบริบทสังคมไทย |
+              สร้างความร่วมมือและบูรณาการระหว่างรัฐบาล องค์การปกครองส่วนท้องถิ่น ภาคเอกชน ชุมชน และภาคประชาสังคม ผ่านโมเดลการทำงานรูปแบบใหม่
+            </p>
+          </div>
         </div>
       </section>
       <section className="relative h-full space-y-12 bg-secondary">

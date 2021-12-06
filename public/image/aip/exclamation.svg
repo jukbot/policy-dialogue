@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="62" height="330" viewBox="0 0 62 330">
-    <text data-name="!" transform="translate(0 223)" style="fill:#fff;font-size:200px;font-family:IBMPlexSansThai-SemiBold,IBM Plex Sans Thai;font-weight:600;letter-spacing:.05em"><tspan x="0" y="0">!</tspan></text>
-</svg>
+<svg height="330" viewBox="0 0 62 330" width="62" xmlns="http://www.w3.org/2000/svg"><text fill="#fff" font-family="IBMPlexSansThai-SemiBold,IBM Plex Sans Thai" font-size="200" font-weight="600" letter-spacing=".05em" transform="translate(0 223)"><tspan x="0" y="0">!</tspan></text></svg>
