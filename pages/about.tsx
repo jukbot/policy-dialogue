@@ -1,11 +1,28 @@
 import Contributor from '@/data/contributors.json'
 import Team from '@/data/team.json'
+import { useForm, ValidationError } from '@formspree/react'
 import Image from 'next/image'
-import { useState } from 'react'
+import { FormEvent, useCallback, useEffect, useState } from 'react'
+import toast from 'react-hot-toast'
 
 const AboutPage = () => {
   const [organizeType, setOrganizeType] = useState<string>('')
-  const [otherOrganize] = useState<string>('')
+  const [state, handleSubmit] = useForm('mlezrlpp')
+  const handleFormSubmit = useCallback(
+    (e: FormEvent<HTMLFormElement>) => {
+      handleSubmit(e)
+      e.preventDefault()
+      e.currentTarget.reset()
+    },
+    [handleSubmit]
+  )
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success('ขอบคุณสำหรับข้อมูลติดต่อเรา')
+    }
+  }, [state.succeeded])
+
   return (
     <main className="relative">
       <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
@@ -79,7 +96,7 @@ const AboutPage = () => {
             <h2 className="text-4xl font-bold lg:text-6xl">ติดต่อเรา</h2>
             <p className="text-4xl font-body">Get in touch!</p>
           </div>
-          <form>
+          <form onSubmit={(e) => handleFormSubmit(e)}>
             <div className="grid grid-cols-1 gap-y-6 gap-x-12 lg:grid-cols-2">
               <div className="col-span-1 space-y-6">
                 <div className="grid items-start grid-cols-3 gap-4">
@@ -87,7 +104,7 @@ const AboutPage = () => {
                     ชื่อ-สกุล
                   </label>
                   <div className="col-span-2">
-                    <input type="text" name="fullName" id="fullname" placeholder="ชื่อ-สกุล" className="text-input" maxLength={60} />
+                    <input type="text" name="full-name" id="fullname" placeholder="ชื่อ-สกุล" className="text-input" maxLength={60} />
                   </div>
                 </div>
                 <div className="grid items-start grid-cols-3 gap-4">
@@ -95,7 +112,7 @@ const AboutPage = () => {
                     ชื่อองค์กร
                   </label>
                   <div className="col-span-2">
-                    <input type="text" name="organizeName" id="organizename" placeholder="ชื่อองค์กรของคุณ" className="text-input" maxLength={60} />
+                    <input type="text" name="organization-name" id="organizename" placeholder="ชื่อองค์กรของคุณ" className="text-input" maxLength={60} />
                   </div>
                 </div>
                 <div className="grid items-start grid-cols-3 gap-4">
@@ -103,7 +120,7 @@ const AboutPage = () => {
                     ประเภทองค์กร *
                   </label>
                   <div className="col-span-2">
-                    <select name="organizeType" id="organizetype" onChange={(e) => setOrganizeType(e.target.value)} required className="text-input">
+                    <select name="organize-type" id="organizetype" onChange={(e) => setOrganizeType(e.target.value)} required className="text-input">
                       <option selected value="" disabled className="text-[#707070]">
                         เลือกประเภทองค์กร
                       </option>
@@ -118,15 +135,7 @@ const AboutPage = () => {
                       <option value="other">อื่นๆ (โปรดระบุ)</option>
                     </select>
                     {organizeType === 'other' && (
-                      <input
-                        type="text"
-                        value={otherOrganize}
-                        required
-                        name="organizeType"
-                        placeholder="ระบุประเภทองค์กร"
-                        className="mt-2 text-input"
-                        maxLength={60}
-                      />
+                      <input type="text" required name="organize-other" placeholder="ระบุประเภทองค์กร" className="mt-2 text-input" maxLength={60} />
                     )}
                   </div>
                 </div>
@@ -137,6 +146,7 @@ const AboutPage = () => {
                   <div className="col-span-2">
                     <input type="email" name="email" id="email" required placeholder="youremail@mail.com" className="text-input" maxLength={60} />
                   </div>
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
               </div>
               <div className="col-span-1">
@@ -148,9 +158,20 @@ const AboutPage = () => {
                     <textarea name="message" id="message" maxLength={1000} rows={11} placeholder="ข้อความของคุณ" className="text-input" defaultValue={''} />
                     <button
                       type="submit"
+                      disabled={state.submitting}
                       className="inline-flex justify-center px-12 py-4 text-center text-white border border-transparent rounded-none lg:w-full bg-primary hover:bg-accent"
                     >
-                      บันทึก
+                      ส่งข้อมูล{' '}
+                      {state.submitting && (
+                        <svg className="w-6 h-6 ml-3 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
+                        </svg>
+                      )}
                     </button>
                   </div>
                 </div>

@@ -3,9 +3,10 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { Toaster } from 'react-hot-toast'
 
-const Navbar = dynamic(() => import('@/components/Layout/Navbar'), { ssr: false })
+const Navbar = dynamic(() => import('@/components/Layout/Navbar'))
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer />
       </main>
+      <Toaster position="bottom-center" reverseOrder={false} />
     </>
   )
 }

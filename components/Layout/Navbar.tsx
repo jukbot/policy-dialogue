@@ -3,7 +3,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useWindowScroll } from 'react-use'
+// import { useWindowScroll } from 'react-use'
 import { Close } from '../Icon'
 import ProjectDropDown from '../Navbar/ProjectDropdown'
 import Logo from '/public/image/logo/logo.svg'
@@ -22,7 +22,8 @@ function classNames(...classes: string[]) {
 
 const Navbar = (): JSX.Element => {
   const { pathname } = useRouter()
-  const { y } = useWindowScroll()
+  const y = 0
+  // const { y } = useWindowScroll()
 
   return (
     <Disclosure as="nav">
@@ -45,7 +46,7 @@ const Navbar = (): JSX.Element => {
                 <div className="flex items-center justify-center flex-shrink-0">
                   <Link href="/">
                     <a className="flex">
-                      <Image className="hidden lg:block" width="120" height="60" src={Logo} alt="logo" />
+                      <Image className="hidden lg:block" width="120" height="60" src={Logo} priority decoding="async" alt="logo" />
                     </a>
                   </Link>
                 </div>
