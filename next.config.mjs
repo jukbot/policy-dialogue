@@ -1,4 +1,6 @@
-import { join } from 'path'
+import path from 'path'
+import { fileURLToPath } from 'url'
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const ContentSecurityPolicy = `
   default-src 'self' data:;
@@ -32,33 +34,33 @@ const nextConfig = {
       '',
     ],
   },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@/components': join(__dirname, 'components'),
-      '@/contexts': join(__dirname, 'contexts'),
-      '@/data': join(__dirname, 'data'),
-      '@/models': join(__dirname, 'models'),
-      '@/generated': join(__dirname, 'generated'),
-      '@/graphql': join(__dirname, 'graphql'),
-      '@/libs': join(__dirname, 'libs'),
-      '@/pages': join(__dirname, 'pages'),
-      '@/providers': join(__dirname, 'providers'),
-      '@/services': join(__dirname, 'services'),
-      '@/stores': join(__dirname, 'stores'),
-      '@/styles': join(__dirname, 'styles'),
-      '@/utils': join(__dirname, 'utils'),
-      '@/public': join(__dirname, 'public'),
-    }
+  // webpack: (config) => {
+  //   config.resolve.alias = {
+  //     ...config.resolve.alias,
+  //     '@/components': path.join(__dirname, 'components'),
+  //     '@/contexts': path.join(__dirname, 'contexts'),
+  //     '@/data': path.join(__dirname, 'data'),
+  //     '@/models': path.join(__dirname, 'models'),
+  //     '@/generated': path.join(__dirname, 'generated'),
+  //     '@/graphql': path.join(__dirname, 'graphql'),
+  //     '@/libs': path.join(__dirname, 'libs'),
+  //     '@/pages': path.join(__dirname, 'pages'),
+  //     '@/providers': path.join(__dirname, 'providers'),
+  //     '@/services': path.join(__dirname, 'services'),
+  //     '@/stores': path.join(__dirname, 'stores'),
+  //     '@/styles': path.join(__dirname, 'styles'),
+  //     '@/utils': path.join(__dirname, 'utils'),
+  //     '@/public': path.join(__dirname, 'public'),
+  //   }
 
-    config.module.rules.push({
-      test: /\.(graphql|gql)$/,
-      exclude: /node_modules/,
-      loader: 'graphql-tag/loader',
-    })
+  //   config.module.rules.push({
+  //     test: /\.(graphql|gql)$/,
+  //     exclude: /node_modules/,
+  //     loader: 'graphql-tag/loader',
+  //   })
 
-    return config
-  },
+  //   return config
+  // },
   async headers() {
     return [
       {
