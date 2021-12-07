@@ -79,6 +79,13 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
           </g>
+          {/* <path
+            id="Path_59"
+            data-name="ltc-icon"
+            d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z"
+            transform="translate(-1025.484 6683.785)"
+            className={`${selectedProject.icon === 'ltc' ? 'fill-[#CECECE]' : 'cls-4'}`}
+          /> */}
           <path
             id="Path_173"
             data-name="ltc-icon"
@@ -112,6 +119,12 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             transform="translate(-583.424 5721.847)"
             className={`${selectedProject.icon === 'dt' ? 'fill-[#CECECE]' : 'cls-4'}`}
           />
+          {/* <path id="Path_56"
+            data-name="dt-icon"
+            className={`${selectedProject.icon === 'dt' ? 'fill-[#CECECE]' : 'cls-4'}`}
+            d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.594 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.594 7.919 7.919 0 0 0 6.045 14.593 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.593z"
+            transform="translate(-583.424 5721.847)"
+          /> */}
         </g>
         <g id="Group_1247" data-name="Group 1247">
           <path id="Path_516" data-name="aip" className={selectedProject.icon === 'aip' ? 'cls-5' : 'cls-6'} transform="translate(175 445.5)" d="M0 38.009V0" />

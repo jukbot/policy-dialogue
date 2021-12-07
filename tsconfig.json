@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,25 +20,67 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["./components/*"],
-      "@/contexts/*": ["./contexts/*"],
-      "@/data/*": ["./data/*"],
-      "@/models/*": ["./models/*"],
-      "@/graphql/*": ["./graphql/*"],
-      "@/localize/*": ["./localize/*"],
-      "@/libs/*": ["./libs/*"],
-      "@/pages/*": ["./pages/*"],
-      "@/providers/*": ["./providers/*"],
-      "@/services/*": ["./services/*"],
-      "@/stores/*": ["./stores/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/utils/*": ["./utils/*"],
-      "@/generated/*": ["./generated/*"],
-      "@types": ["./@types/index.ts"],
-      "@types/*": ["./@types/^"]
+      "@/components/*": [
+        "./components/*"
+      ],
+      "@/contexts/*": [
+        "./contexts/*"
+      ],
+      "@/data/*": [
+        "./data/*"
+      ],
+      "@/models/*": [
+        "./models/*"
+      ],
+      "@/graphql/*": [
+        "./graphql/*"
+      ],
+      "@/localize/*": [
+        "./localize/*"
+      ],
+      "@/libs/*": [
+        "./libs/*"
+      ],
+      "@/pages/*": [
+        "./pages/*"
+      ],
+      "@/providers/*": [
+        "./providers/*"
+      ],
+      "@/services/*": [
+        "./services/*"
+      ],
+      "@/stores/*": [
+        "./stores/*"
+      ],
+      "@/styles/*": [
+        "./styles/*"
+      ],
+      "@/utils/*": [
+        "./utils/*"
+      ],
+      "@/generated/*": [
+        "./generated/*"
+      ],
+      "@types": [
+        "./@types/index.ts"
+      ],
+      "@types/*": [
+        "./@types/^"
+      ]
     },
-    "typeRoots": ["@types", "node_modules/@types"]
+    "typeRoots": [
+      "@types",
+      "node_modules/@types"
+    ],
+    "allowJs": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
