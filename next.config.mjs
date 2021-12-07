@@ -1,4 +1,4 @@
-const { join } = require('path')
+import { join } from 'path'
 
 const ContentSecurityPolicy = `
   default-src 'self' data:;
@@ -14,7 +14,7 @@ const ContentSecurityPolicy = `
 `
 
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   swcMinify: true,
@@ -123,3 +123,5 @@ module.exports = {
     ]
   },
 }
+
+export default nextConfig
