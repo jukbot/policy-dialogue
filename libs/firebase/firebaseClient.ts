@@ -17,7 +17,7 @@ const firebaseConfig = {
   appId: '1:104941627354:web:b5f44ebdb9ee927b34c2e3',
 }
 
-if (typeof window !== 'undefined' && !window.firebase) {
+if (typeof window !== 'undefined') {
   firebaseClient = initializeApp(firebaseConfig)
   // appCheck = initializeAppCheck(firebaseClient, {
   //   provider: new ReCaptchaV3Provider(process.env['NEXT_PUBLIC_RECAPTCHA_SITE_KEY'] ?? ''),

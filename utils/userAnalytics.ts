@@ -21,5 +21,6 @@ export const downloadContent = async (fileName: string) => {
   const newWindow = window.open(fileUrl, '_blank', 'noopener,noreferrer')
   if (newWindow) newWindow.opener = null
   trackUserDownload(fileName)
-  logUserEvent('download', { fileName, page: fileName.split('/')[0] })
+  const email = localStorage.getItem('policy-dialogue:email') || null
+  logUserEvent('download', { fileName, page: fileName.split('/')[0], email })
 }

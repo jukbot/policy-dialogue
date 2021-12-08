@@ -16,6 +16,9 @@ const DownloadModal = ({ isOpen, fileName }: { isOpen: boolean; fileName: string
       // e.preventDefault()
       e.currentTarget.reset()
       localStorage.setItem('policy-dialogue:has-submit-contact', 'true')
+      if (e.currentTarget.email.value) {
+        localStorage.setItem('policy-dialogue:email', e.currentTarget.email.value)
+      }
       if (fileName) downloadContent(fileName)
       setModalState({ open: false, type: 'download', link: null })
     },
