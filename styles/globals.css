@@ -77,7 +77,7 @@
 
   /* https://www.stefanjudis.com/today-i-learned/the-ex-unit-in-css/ */
   [id] {
-    scroll-margin-top: 0ex;
+    scroll-margin-top: 12ex;
   }
 
   /* https://web.dev/content-visibility/ */

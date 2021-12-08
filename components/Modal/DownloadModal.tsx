@@ -14,12 +14,13 @@ const DownloadModal = ({ isOpen, fileName }: { isOpen: boolean; fileName: string
     (e: FormEvent<HTMLFormElement>) => {
       handleSubmit(e)
       // e.preventDefault()
-      e.currentTarget.reset()
-      localStorage.setItem('policy-dialogue:has-submit-contact', 'true')
       if (e.currentTarget.email.value) {
         localStorage.setItem('policy-dialogue:email', e.currentTarget.email.value)
       }
+      localStorage.setItem('policy-dialogue:has-submit-contact', 'true')
+
       if (fileName) downloadContent(fileName)
+      e.currentTarget.reset()
       setModalState({ open: false, type: 'download', link: null })
     },
     [fileName, handleSubmit, setModalState]

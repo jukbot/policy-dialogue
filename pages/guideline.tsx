@@ -196,7 +196,7 @@ const GuidelinePage = () => {
             </div>
           </div>
           <div className="flex items-end justify-center">
-            <Link href="/">
+            <Link href="/archive#practical-guidelines">
               <a className="w-1/2 btn">ดาวน์โหลดเอกสาร</a>
             </Link>
           </div>
@@ -246,7 +246,7 @@ const GuidelinePage = () => {
             </div>
           </div>
           <div className="flex items-end justify-center">
-            <Link href="/">
+            <Link href="/archive#practical-guidelines">
               <a className="btn">ดาวน์โหลดคู่มือฉบับเต็ม</a>
             </Link>
           </div>
