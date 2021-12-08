@@ -57,7 +57,7 @@ const Navbar = (): JSX.Element => {
                       <Link href={item.href} key={item.name}>
                         <a
                           className={classNames(
-                            pathname === item.href ? ' text-primary' : 'text-white hover:text-primary',
+                            pathname === item.href ? ' text-primary' : 'text-link',
                             'px-2 text-sm font-body transition ease-in-out duration-150'
                           )}
                           aria-current={pathname === item.href ? 'page' : undefined}
@@ -77,7 +77,7 @@ const Navbar = (): JSX.Element => {
               <Link href="/project/aip">
                 <a
                   className={classNames(
-                    pathname === '/project/aip' ? ' text-primary' : 'text-white hover:text-primary',
+                    pathname === '/project/aip' ? ' text-primary' : 'text-link',
                     'text-base text-center font-body flex justify-center transition ease-in-out duration-150'
                   )}
                   aria-current={pathname === '/project/aip' ? 'page' : undefined}
@@ -91,7 +91,7 @@ const Navbar = (): JSX.Element => {
                     key={item.name}
                     as="a"
                     href={item.href}
-                    className={classNames(pathname === item.href ? ' text-primary' : 'text-white hover:text-primary', 'block text-base text-center font-body')}
+                    className={classNames(pathname === item.href ? ' text-primary' : 'text-link', 'block text-base text-center font-body')}
                     aria-current={pathname === item.href ? 'page' : undefined}
                   >
                     {item.name}

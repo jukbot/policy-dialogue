@@ -33,32 +33,32 @@ const Footer = (): JSX.Element => {
           <ul className="flex flex-col space-y-4">
             <li>
               <Link href="/project">
-                <a className="text-white hover:text-primary">นโยบายเพื่อสังคมสูงวัย</a>
+                <a className="text-link">นโยบายเพื่อสังคมสูงวัย</a>
               </Link>
             </li>
             <li>
               <Link href="/process">
-                <a className="text-white hover:text-primary">การออกแบบนโยบายอย่างมีส่วนร่วม</a>
+                <a className="text-link">การออกแบบนโยบายอย่างมีส่วนร่วม</a>
               </Link>
             </li>
             <li>
               <Link href="/value">
-                <a className="text-white hover:text-primary">คุณค่าของนโยบาย</a>
+                <a className="text-link">คุณค่าของนโยบาย</a>
               </Link>
             </li>
             <li>
               <Link href="/guideline">
-                <a className="text-white hover:text-primary">คู่มือการจัดกระบวนการ</a>
+                <a className="text-link">คู่มือการจัดกระบวนการ</a>
               </Link>
             </li>
             <li>
               <Link href="/archive">
-                <a className="text-white hover:text-primary">คลังข้อมูล</a>
+                <a className="text-link">คลังข้อมูล</a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a className="text-white hover:text-primary">เกี่ยวกับเรา</a>
+                <a className="text-link">เกี่ยวกับเรา</a>
               </Link>
             </li>
           </ul>

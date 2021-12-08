@@ -16,7 +16,7 @@ const Accordion = ({ title, children, isOpen: isOpen, number, toggleClick = () =
           className={`flex justify-between w-full py-2 text-xl font-bold text-left items-start mr-3 group focus:outline-none`}
           onClick={() => toggleClick(number)}
         >
-          <span className={`${isOpen ? 'text-white' : ''} text-white`}>{title}</span>
+          <span className={`${isOpen ? '' : 'hover:text-primary'} text-white transition`}>{title}</span>
           <span className="flex items-center ml-6 h-7 text-primary">
             <svg
               className={`${isOpen ? '-rotate-180' : 'rotate-0'} w-6 h-6 transform`}

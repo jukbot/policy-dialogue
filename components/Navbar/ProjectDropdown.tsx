@@ -15,7 +15,7 @@ const ProjectDropDown = () => {
           <>
             <Popover.Button
               className={`
-              ${open ? 'text-primary' : 'text-white hover:text-primary'}
+              ${open ? 'text-primary' : 'text-link'}
               group inline-flex items-center px-2 text-sm font-body`}
             >
               <span>นโยบายเพื่อสังคมสูงวัย</span>
@@ -42,7 +42,7 @@ const ProjectDropDown = () => {
                         <a
                           onClick={() => close()}
                           className={`${
-                            item.enabled ? (pathname === item.url ? 'text-primary' : 'text-white hover:text-primary') : 'text-white opacity-50'
+                            item.enabled ? (pathname === item.url ? 'text-primary' : 'text-link') : 'text-white opacity-50'
                           } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 space-y-2 transition duration-150 ease-in-out`}
                         >
                           <div className="inline-flex flex-shrink-0">{projectIcon.get(item.icon)}</div>

@@ -123,19 +123,19 @@
 
 @layer components {
   .btn {
-    @apply px-8 py-3 text-sm text-center text-white rounded-full sm:text-base bg-primary hover:bg-accent font-body;
+    @apply px-8 py-3 text-sm text-center text-white transition rounded-full sm:text-base bg-primary hover:bg-accent font-body;
   }
   .btn-disabled {
     @apply px-8 py-3 text-sm text-center text-white rounded-full sm:text-base bg-[#CFCFCF] font-body cursor-not-allowed;
   }
   .btn-white {
-    @apply flex items-center space-x-1 text-sm text-white hover:text-black font-body;
+    @apply flex items-center space-x-1 text-sm text-white transition hover:text-black font-body;
   }
   .speech-dialog {
     @apply relative p-6 w-full h-32 max-w-[250px] md:h-64 flex items-center justify-center;
   }
   .project-icon {
-    @apply w-8 h-8 transition-all ease-in transform transform-box group-hover:scale-110 group-hover:rotate-180;
+    @apply w-8 h-8 transition-all transition ease-in transform transform-box group-hover:scale-110 group-hover:rotate-180;
   }
   .role-icon {
     @apply cursor-pointer transform-box;
@@ -148,6 +148,9 @@
   }
   .required {
     @apply inline-block text-sm align-top text-primary;
+  }
+  .text-link {
+    @apply text-white transition hover:text-primary;
   }
 }
 

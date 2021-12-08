@@ -21,8 +21,6 @@ class MyDocument extends Document {
           <link rel="preload" href="/fonts/IBMPlexSansThaiLooped-Bold.ttf" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/IBMPlexSansThaiLooped-SemiBold.ttf" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/IBMPlexSansThaiLooped-Regular.ttf" as="font" crossOrigin="" />
-          {/* Preload api */}
-          <link rel="preload" href="https://www.google.com/recaptcha/api.js" as="script" />
         </Head>
         <body>
           <Main />
