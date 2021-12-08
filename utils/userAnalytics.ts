@@ -1,3 +1,7 @@
+import { analytics } from '@/libs/firebase/firebaseClient'
+import { logEvent } from '@firebase/analytics'
+import { getDownloadFileUrl } from './downloadUrl'
+
 export const trackUserDownload = (path: string) => {
   fetch(`/api/track/${path}`, {
     headers: {
@@ -8,8 +12,14 @@ export const trackUserDownload = (path: string) => {
   })
 }
 
-export const downloadContent = (fileName: string) => {
-  const newWindow = window.open(`/pdf/${fileName}`, '_blank', 'noopener,noreferrer')
+export const logUserEvent = (eventName: string, data?: any) => {
+  logEvent(analytics, eventName, data)
+}
+
+export const downloadContent = async (fileName: string) => {
+  const fileUrl = await getDownloadFileUrl(fileName)
+  const newWindow = window.open(fileUrl, '_blank', 'noopener,noreferrer')
   if (newWindow) newWindow.opener = null
   trackUserDownload(fileName)
+  logUserEvent('download', { fileName, page: fileName.split('/')[0] })
 }
