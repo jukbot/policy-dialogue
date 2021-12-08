@@ -5,7 +5,7 @@ import ShortTerm from '/public/image/value/short-term.svg'
 
 const SystemValue = () => {
   return (
-    <div className="grid max-w-6xl grid-cols-1 gap-8 px-12 mx-auto md:gap-16 md:grid-cols-3">
+    <div className="relative grid max-w-6xl grid-cols-1 gap-8 px-6 mx-auto md:px-12 md:gap-16 md:grid-cols-3">
       <div className="flow-root">
         <div className="space-y-3">
           <Image className="flex-shrink-0" height="48" width="64" aria-hidden="true" src={Participant} alt="participant" />

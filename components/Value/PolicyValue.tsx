@@ -6,7 +6,7 @@ import UsageStaff from '/public/image/value/usage-staff.svg'
 
 const PolicyValue = () => {
   return (
-    <div className="grid max-w-6xl grid-cols-1 gap-8 px-12 mx-auto md:gap-16 md:grid-cols-2">
+    <div className="relative grid max-w-6xl grid-cols-1 gap-8 px-6 mx-auto md:px-12 md:gap-16 md:grid-cols-2">
       <div className="flow-root">
         <div className="space-y-4">
           <Image className="flex-shrink-0" width="64" height="64" aria-hidden="true" src={Authority} alt="authority" />

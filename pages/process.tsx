@@ -10,7 +10,7 @@ const ProcessPage = () => {
   return (
     <main className="relative">
       <section className="relative grid h-[50vh] lg:h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
-        <div className="flex flex-col items-center justify-center pt-24 space-y-3 text-white lg:items-start lg:justify-start lg:ml-48">
+        <div className="flex flex-col items-center justify-center py-12 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
           <h1 className="text-4xl font-semibold lg:text-5xl">กระบวนการ</h1>
           <div className="space-y-1">
             <h2 className="text-xl lg:text-2xl font-body">ก่อนจะถึงจุดหมาย</h2>
@@ -21,10 +21,10 @@ const ProcessPage = () => {
       </section>
 
       <section className="relative grid h-full lg:grid-cols-2">
-        <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
-          <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-72 space-x-8">
-            <span className="absolute top-6 left-24 text-white text-[180px] font-bold white-stoke align-top">“</span>
-            <p className="flex justify-center mt-6 text-white font-body">กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn’t built in a day</p>
+        <section className="absolute left-0 w-full h-full space-y-12 -top-24">
+          <div className="relative bg-[#242054] mx-auto max-w-6xl py-20 px-12 md:p-12 md:h-72 space-x-8">
+            <span className="absolute top-6 md:left-24 text-white text-[96px] md:text-[180px] font-bold white-stoke align-top">“</span>
+            <p className="flex justify-center mt-6 text-center text-white font-body">กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn’t built in a day</p>
             <h2 className="relative mt-6 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
               กว่าจะเป็นรูปเป็นร่าง Policy Dialogue ผ่านการกลั่นกรองมากมาย
               <br />
@@ -32,10 +32,12 @@ const ProcessPage = () => {
               <br />
               กระบวนการให้เหมาะสมกับผู้เข้าร่วม เพื่อให้บรรลุเป้าหมายที่คาดหวัง
             </h2>
-            <span className="absolute bottom-0 right-24 text-white text-[180px] font-bold white-stoke align-bottom rotate-180 transform">“</span>
+            <span className="absolute bottom-0 right-12 md:right-24 text-white text-[96px] md:text-[180px] font-bold white-stoke align-bottom rotate-180 transform">
+              “
+            </span>
           </div>
         </section>
-        <section className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 p-6 sm:p-12 sm:pt-64`}>
+        <section className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} hidden md:block cols-span-1 p-6 sm:p-12 sm:pt-64`}>
           <div className="relative flex flex-col mx-24 space-y-12">
             <div className="space-y-4">
               <h3 className="text-3xl font-bold">ก่อนกระบวนการ</h3>
@@ -51,7 +53,7 @@ const ProcessPage = () => {
             )}
           </div>
         </section>
-        <section className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} cols-span-1 p-6 sm:p-12 sm:pt-64`}>
+        <section className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} hidden md:block cols-span-1 p-6 sm:p-12 sm:pt-64`}>
           <div className="relative flex flex-col mx-24 space-y-12 ">
             <div className="space-y-4">
               <h3 className="text-3xl font-bold">ระหว่างกระบวนการ</h3>
@@ -67,7 +69,20 @@ const ProcessPage = () => {
             )}
           </div>
         </section>
-        <section className="h-full py-24 bg-[#FEEDEA] col-span-full w-full">{selectedSection === 0 ? <PreProcess /> : <PostProcess />}</section>
+        <section className="h-full py-24 bg-[#FEEDEA] hidden md:block col-span-full w-full">{selectedSection === 0 ? <PreProcess /> : <PostProcess />}</section>
+
+        <section className="block py-12 space-y-6 bg-white md:hidden col-span-full pt-96">
+          <div className="relative px-6">
+            <h3 className="text-3xl font-bold">ก่อนกระบวนการ</h3>
+          </div>
+          <PreProcess />
+        </section>
+        <section className="block md:hidden bg-[#FEEDEA] space-y-6 py-12 col-span-full">
+          <div className="relative px-6">
+            <h3 className="text-3xl font-bold">ระหว่างกระบวนการ</h3>
+          </div>
+          <PostProcess />
+        </section>
       </section>
 
       <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
