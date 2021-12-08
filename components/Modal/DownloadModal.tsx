@@ -18,8 +18,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
 
   const handleFormSubmit = useCallback(
     (e: FormEvent<HTMLFormElement>) => {
-      handleSubmit(e)
-      // e.preventDefault()
+      e.preventDefault()
       if (e.currentTarget.email.value) {
         localStorage.setItem('policy-dialogue:email', e.currentTarget.email.value)
       }
@@ -29,6 +28,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
         downloadContent(fileName)
       }
 
+      handleSubmit(e)
       e.currentTarget.reset()
       setModalState({ open: false, type, link: null })
     },

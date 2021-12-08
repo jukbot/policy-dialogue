@@ -15,6 +15,8 @@ const Footer = (): JSX.Element => {
 
   const handleFormSubmit = useCallback(
     (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
+
       if (!email) {
         return toast.error('โปรดระบุอีเมล')
       }

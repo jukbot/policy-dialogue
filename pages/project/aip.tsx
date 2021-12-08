@@ -1,3 +1,4 @@
+import InterestProjects from '@/components/Project/InterestProjects'
 import Image from 'next/image'
 import Circle from '/public/image/aip/circle.webp'
 import ElderlyHome from '/public/image/aip/elderly-home.svg'
@@ -16,7 +17,7 @@ const AipPage = () => {
     <main className="relative">
       <section className="relative h-[75vh] lg:h-[90vh] transition grid items-center bg-[#c7642a]">
         <div className="items-center justify-between lg:flex">
-          <div className="flex flex-col justify-start pt-24 space-y-4 text-white item-center lg:item-start lg:ml-48">
+          <div className="flex flex-col justify-start py-12 pt-12 space-y-4 text-center text-white item-center lg:item-start lg:text-left lg:ml-48">
             <h1 className="text-4xl font-semibold leading-relaxed lg:text-5xl">
               เตรียมพร้อมอย่างไร ?<br />
               หากอยากอยู่บ้านในยามชรา
@@ -27,21 +28,21 @@ const AipPage = () => {
               <br /> บริการทางสังคมสำหรับผู้สูงอายุ
             </h2>
           </div>
-          <Image src={HeroImage} width={800} height={480} alt="cover image" />
+          <Image src={HeroImage} width={800} height={480} className="w-full" alt="cover image" />
         </div>
       </section>
 
       <section className="relative h-full bg-[#FCF5EB]">
         <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
-          <div className="relative max-w-6xl p-12 mx-auto space-x-8 bg-secondary h-80">
-            <h2 className="relative text-3xl font-bold leading-relaxed tracking-wide text-center text-white">
+          <div className="relative max-w-6xl p-12 mx-auto md:space-x-8 bg-secondary h-80">
+            <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
               ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
               <br />
               สังคมผู้สูงวัยที่โดดเด่นด้านสุขภาพ แต่ยังขาด
               <br />
               การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
             </h2>
-            <p className="flex justify-center mt-6 text-center text-white opacity-75 font-body">
+            <p className="flex mt-6 text-white opacity-75 md:justify-center md:text-center font-body">
               ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย
               <br />
               ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
@@ -49,11 +50,11 @@ const AipPage = () => {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 gap-6 pt-72 md:grid-cols-2">
+        <div className="relative grid grid-cols-1 gap-6 pt-72 md:grid-cols-2">
           <div className="relative col-span-1 px-6 md:px-0">
             <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
           </div>
-          <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+          <div className="flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
             <h3 className="text-2xl font-bold leading-snug">
               คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน
               <br />
@@ -68,8 +69,8 @@ const AipPage = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="flex flex-col order-last col-span-1 px-6 space-y-4 md:order-first md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+        <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="flex flex-col order-last col-span-1 p-6 space-y-4 md:order-first md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
             <h3 className="text-2xl font-bold leading-snug">
               ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต
               <br />
@@ -86,11 +87,11 @@ const AipPage = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="relative col-span-1 px-6 md:px-0">
             <Image src={Result3} height="640" width="1024" className="w-full" alt="expect-ressult-3" />
           </div>
-          <div className="relative flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+          <div className="relative flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
             <h3 className="text-2xl font-bold leading-snug">
               ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
               <br />
@@ -104,7 +105,7 @@ const AipPage = () => {
         </div>
       </section>
 
-      <section className="relative px-6 h-full bg-[#D28354]">
+      <section className="relative h-full bg-[#D28354]">
         <div className="flex flex-col items-center justify-center px-6 pb-32 text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
             <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
@@ -150,9 +151,9 @@ const AipPage = () => {
         </div>
       </section>
 
-      <section className="relative h-full py-12 bg-[#F9EFE9] sm:py-24">
-        <div className="max-w-6xl mx-auto space-y-12 text-body">
-          <h2 className="text-4xl font-bold leading-snug text-center">
+      <section className="relative h-full pt-6 bg-[#F9EFE9] sm:pt-12">
+        <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
+          <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
             แต่ยังมีความท้าทายที่ต้องฝ่าฝัน
             <br />
             เพื่อให้เกิดนโยบายที่ตอบโจทย์
@@ -177,10 +178,12 @@ const AipPage = () => {
               <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
             </div>
           </div>
-          <div className="w-full max-w-4xl px-24 py-16 mx-auto space-y-8 text-white h-72 bg-secondary">
-            <div className="flex flex-col items-center justify-between md:flex-row">
+        </div>
+        <div className="max-w-6xl mx-auto text-body">
+          <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
+            <div className="flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
               <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
-              <p className="max-w-sm text-base font-bold font-body">
+              <p className="font-bold text-center md:max-w-sm md:text-left font-body">
                 เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
               </p>
             </div>
@@ -191,53 +194,38 @@ const AipPage = () => {
           </div>
         </div>
       </section>
-      <section className="relative h-full space-y-12 bg-secondary">
-        <div className="max-w-6xl px-6 py-16 mx-auto space-y-12 text-white sm:px-12">
-          <h2 className="text-4xl font-bold">นโยบายสูงอายุที่คุณอาจสนใจ</h2>
+      <section className="relative h-full bg-[#DDA27F]">
+        <div className="max-w-6xl mx-auto text-body">
+          <div className="w-full h-full max-w-4xl px-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
+            <div className="w-full border-t-2 border-white md:px-24" />
+            <p className="text-base text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
+            <div className="grid w-full grid-cols-1 gap-12 mt-6 md:grid-cols-2">
+              <div className="flex flex-col col-span-1 space-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                  <path
+                    fill="#c7642a"
+                    d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
+                    transform="translate(-257.346 -9.572)"
+                  />
+                </svg>
+                <p>การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อความต้องการของผู้สูงอายุในการใช้ชีวิตในถิ่นที่เดิม (Aging in Place) </p>
+              </div>
+              <div className="flex flex-col col-span-1 space-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                  <path
+                    fill="#36723b"
+                    d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
+                    transform="translate(-257.346 -9.572)"
+                  />
+                </svg>
 
-          <ul className="flex w-full space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
-            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
-              <div className="space-y-1">
-                <p className="text-lg font-bold">
-                  กลไกการติดตามขับเคลื่อน
-                  <br /> นโยบายเรื่องผู้สูงอายุ
-                </p>
-                <p className="text-sm font-body">(Governing Mechanism)</p>
+                <p>การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย </p>
               </div>
-            </li>
-            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
-              <div className="space-y-1">
-                <p className="text-lg font-bold">
-                  ระบบบริการสำหรับผู้ป่วย
-                  <br />
-                  โรคสมองเสื่อม
-                </p>
-                <p className="text-sm font-body">(Dementia)</p>
-              </div>
-            </li>
-            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
-              <div className="space-y-1">
-                <p className="text-lg font-bold">
-                  ระบบบริการดูแลแบบ
-                  <br />
-                  ประคับประคอง
-                </p>
-                <p className="text-sm font-body">(Palliative Care)</p>
-              </div>
-            </li>
-            <li className="flex flex-col justify-between w-64 p-6 bg-white h-72 text-secondary">
-              <div className="space-y-1">
-                <p className="text-lg font-bold">
-                  ระบบบริการระยะยาวสำหรับ
-                  <br />
-                  กลุ่มผู้สูงอายุที่มีภาวะพึ่งพิง
-                </p>
-                <p className="text-sm font-body">(Long Term Care)</p>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
+      <InterestProjects />
     </main>
   )
 }
