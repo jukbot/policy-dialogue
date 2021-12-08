@@ -25,6 +25,7 @@ module.exports = {
       colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
+        gray: 'var(--color-gray)',
         body: 'var(--color-body-text)',
         accent: 'var(--color-accent)',
         danger: 'var(--color-danger)',

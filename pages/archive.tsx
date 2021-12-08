@@ -1,8 +1,27 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import { isModalOpenAtom } from '@/stores/global'
+import { downloadContent } from '@/utils/userAnalytics'
 import { ArrowCircleDownIcon } from '@heroicons/react/solid'
+import { useAtom } from 'jotai'
 import Link from 'next/link'
+import { MouseEvent, useCallback } from 'react'
 
 const ArchivePage = () => {
+  const [, setModalState] = useAtom(isModalOpenAtom)
+
+  const checkDownload = useCallback(
+    (e: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>, fileName: string) => {
+      e.preventDefault()
+      const hasSendContact = localStorage.getItem('policy-dialogue:has-submit-contact')
+      if (!hasSendContact) {
+        setModalState({ type: 'download', open: true, link: fileName })
+      } else {
+        downloadContent(fileName)
+      }
+    },
+    [setModalState]
+  )
+
   return (
     <main className="relative">
       <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain mix-blend-screen bg-archive-hero-shape" />
@@ -15,7 +34,7 @@ const ArchivePage = () => {
 
       <section className="relative h-full space-y-12 bg-white">
         <div className="max-w-6xl px-6 py-16 mx-auto space-y-12 sm:px-12 text-body">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2" id="thematic-briefs">
             <h2 className="text-3xl font-bold">ข้อสรุปจากกระบวนการ</h2>
             <h3 className="text-xl font-body">thematic briefs</h3>
           </div>
@@ -36,15 +55,28 @@ const ArchivePage = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                {/* <button disabled className="btn-white">
-                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ชุดบริการ</span>
-                  </button>
-                  <button disabled className="btn-white">
-                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>บทบาท อปท.</span>
-                  </button> */}
-                <p>เร็วๆ นี้</p>
+                <a
+                  className="btn-white"
+                  href="/pdf/archive/thematic-briefs/AIP1.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/thematic-briefs/AIP1.pdf')}
+                >
+                  <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                  <span>ชุดบริการ</span>
+                </a>
+                <a
+                  className="btn-white"
+                  href="/pdf/archive/thematic-briefs/AIP2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/thematic-briefs/AIP2.pdf')}
+                >
+                  <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                  <span>บทบาท อปท.</span>
+                </a>
               </div>
             </div>
             <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -118,11 +150,17 @@ const ArchivePage = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                {/* <button disabled className="btn-white">
-                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ชุดบริการ</span>
-                  </button> */}
-                <p>เร็วๆ นี้</p>
+                <a
+                  className="btn-white"
+                  href="/pdf/archive/thematic-briefs/PC.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/thematic-briefs/PC.pdf')}
+                >
+                  <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                  <span>ชุดบริการ</span>
+                </a>
               </div>
             </div>
             <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#daa13d] h-48 text-white">
@@ -140,11 +178,17 @@ const ArchivePage = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                {/* <button disabled className="btn-white">
-                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ชุดบริการ</span>
-                  </button> */}
-                <p>เร็วๆ นี้</p>
+                <a
+                  className="btn-white"
+                  href="/pdf/archive/thematic-briefs/LSD.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LSD.pdf')}
+                >
+                  <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                  <span>ชุดบริการ</span>
+                </a>
               </div>
             </div>
             <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -167,7 +211,7 @@ const ArchivePage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2" id="policy-recommendations">
             <h2 className="text-3xl font-bold">ข้อเสนอแนะ</h2>
             <h2 className="text-3xl font-bold">เชิงนโยบาย</h2>
             <h3 className="text-xl font-body">policy recommendations</h3>
@@ -203,10 +247,17 @@ const ArchivePage = () => {
                 ตั้งแต่โรงพยาบาลชุมชนขึ้นไปถึงโรงพยาลทั่วไป และโรงพยาบาลศูนย์ เพื่อเป็นกลไกสำคัญสำหรับการดูแลอย่างรอบด้านแก่ผู้สูงอายุ ผู้ป่วย ญาติ และ อปท.
                 ที่เกี่ยวข้อง โดยคาดหวังว่าจะทำให้ประชาชนเข้าถึงบริการทางสุขภาพ และสังคมมากขึ้น
               </p>
-              <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+              <a
+                className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
+                href="/pdf/archive/policy-recommendations/01_CCU_Policy_Recommendation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
+                onClick={(e) => checkDownload(e, '/archive/policy-recommendations/01_CCU_Policy_Recommendation.pdf')}
+              >
                 <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                 <span>ดาวน์โหลดเอกสาร</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -235,10 +286,17 @@ const ArchivePage = () => {
                 ด้วยเหตุนี้ ผู้จัดทำโครงการจึงได้มีข้อเสนอแนวทางการเสริมพลังให้องค์กรปกครองส่วนท้องถิ่น โดยมีจุดประสงค์เพื่อเสริมสร้างความแข็งแรงของชุมชน
                 และเพื่อให้ผู้สูงอายุในพื้นที่มีคุณภาพชีวิตที่ดีขึ้น
               </p>
-              <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+              <a
+                className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
+                href="/pdf/archive/policy-recommendations/02_อปท_Policy_Recommendation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
+                onClick={(e) => checkDownload(e, '/archive/policy-recommendations/02_อปท_Policy_Recommendation.pdf')}
+              >
                 <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                 <span>ดาวน์โหลดเอกสาร</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -269,10 +327,17 @@ const ArchivePage = () => {
                 ให้โรงพยาบาลชุมชนมีทรัพยากรและศักยภาพมากขึ้นในการดูแลผู้ป่วยระยะกลาง เพิ่มการเข้าถึงบริการฟื้นฟูสมรรถภาพอย่างเข้มข้น เพียงพอ ต่อเนื่อง
                 และไม่หลุดหายจากระบบ
               </p>
-              <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+              <a
+                className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
+                href="/pdf/archive/policy-recommendations/03_IMC_Policy_Recommendation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
+                onClick={(e) => checkDownload(e, '/archive/policy-recommendations/03_IMC_Policy_Recommendation.pdf')}
+              >
                 <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                 <span>ดาวน์โหลดเอกสาร</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -298,14 +363,21 @@ const ArchivePage = () => {
                 และก่อเกิด “วงจรสะท้อนผล” (feedback loop) ในการกำหนดนโยบาย โดยคาดหวังว่าการมีส่วนร่วมของภาคประชาชนและภาคประชาสังคม รวมถึงการสร้าง feedback loop
                 ในการกำหนดนโยบาย จะทำให้การออกแบบและพัฒนานโยบายเป็นไปโดยคำนึงถึงประชาชนเป็นศูนย์กลางมากยิ่งขึ้น
               </p>
-              <button disabled className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body">
+              <a
+                className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
+                href="/pdf/archive/policy-recommendations/04_GM_Policy_Recommendation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
+                onClick={(e) => checkDownload(e, '/archive/policy-recommendations/04_GM_Policy_Recommendation.pdf')}
+              >
                 <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                 <span>ดาวน์โหลดเอกสาร</span>
-              </button>
+              </a>
             </div>
           </div>
 
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2" id="practical-guidelines">
             <h2 className="text-3xl font-bold">ถอดบทเรียนและแนวทาง</h2>
             <h2 className="text-3xl font-bold">การจัดกระบวนการ</h2>
             <h2 className="text-3xl font-bold">โพลิซี ไดอะล็อก</h2>
@@ -351,10 +423,17 @@ const ArchivePage = () => {
                   <br /> ‘policy dialogue’
                 </p>
               </div>
-              <button disabled className="btn-white">
+              <a
+                className="btn-white"
+                href="/pdf/archive/practical-guidelines/03_Policy_Dialogue_Value.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
+                onClick={(e) => checkDownload(e, '/archive/practical-guidelines/03_Policy_Dialogue_Value.pdf')}
+              >
                 <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                 <span>ดาวน์โหลดเอกสาร</span>
-              </button>
+              </a>
             </li>
             <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#cc79a7]">
               <div className="space-y-1">

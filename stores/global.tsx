@@ -18,3 +18,11 @@ export const selectedProjectAtom = atom<Project>({
   icon: 'aip',
   enabled: true,
 })
+
+interface ModalProps {
+  open: boolean
+  type: 'download' | 'newsletter'
+  link: string | null
+}
+
+export const isModalOpenAtom = atom<ModalProps>({ open: false, type: 'download', link: null })

@@ -120,8 +120,15 @@ const AboutPage = () => {
                     ประเภทองค์กร *
                   </label>
                   <div className="col-span-2">
-                    <select name="organize-type" id="organizetype" onChange={(e) => setOrganizeType(e.target.value)} required className="text-input">
-                      <option selected value="" disabled className="text-[#707070]">
+                    <select
+                      name="organize-type"
+                      id="organizetype"
+                      defaultValue=""
+                      onChange={(e) => setOrganizeType(e.target.value)}
+                      required
+                      className="text-input"
+                    >
+                      <option value="" disabled className="text-[#707070]">
                         เลือกประเภทองค์กร
                       </option>
                       <option value="central-government">หน่วยงานราชการ (ส่วนกลางและภูมิภาค)</option>
@@ -151,7 +158,7 @@ const AboutPage = () => {
               </div>
               <div className="col-span-1">
                 <div className="grid items-start grid-cols-3 gap-4">
-                  <label htmlFor="message" className="flex col-span-1 label-input lg:justify-end lg:mr-6">
+                  <label htmlFor="message" className="items-start col-span-1 label-input lg:justify-end lg:mr-6">
                     ข้อความ
                   </label>
                   <div className="col-span-2 space-y-6">

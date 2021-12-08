@@ -6,6 +6,7 @@
   :root {
     --color-primary: #f04e30;
     --color-secondary: #2b2b2b;
+    --color-gray: #474747;
     --color-body-text: #191919;
     --color-accent: #3f36b7;
   }
@@ -143,7 +144,10 @@
     @apply p-4 block w-full max-w-lg font-body placeholder-[#707070] bg-[#a8a8a8] focus:outline-none focus:ring-primary focus:border-primary;
   }
   .label-input {
-    @apply block pt-2 mt-px text-xl text-white;
+    @apply inline-flex items-center block h-full text-xl text-white;
+  }
+  .required {
+    @apply inline-block text-sm align-top text-primary;
   }
 }
 
