@@ -57,7 +57,7 @@ const ArchivePage = () => {
               <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
                 <a
                   className="btn-white"
-                  href="/pdf/archive/thematic-briefs/AIP1.pdf"
+                  href="javascript:void(0)"
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
@@ -68,7 +68,7 @@ const ArchivePage = () => {
                 </a>
                 <a
                   className="btn-white"
-                  href="/pdf/archive/thematic-briefs/AIP2.pdf"
+                  href="javascript:void(0)"
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
@@ -152,7 +152,7 @@ const ArchivePage = () => {
               <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
                 <a
                   className="btn-white"
-                  href="/pdf/archive/thematic-briefs/PC.pdf"
+                  href="javascript:void(0)"
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
@@ -180,7 +180,7 @@ const ArchivePage = () => {
               <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
                 <a
                   className="btn-white"
-                  href="/pdf/archive/thematic-briefs/LSD.pdf"
+                  href="javascript:void(0)"
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
@@ -249,7 +249,7 @@ const ArchivePage = () => {
               </p>
               <a
                 className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
-                href="/pdf/archive/policy-recommendations/01_CCU_Policy_Recommendation.pdf"
+                href="javascript:void(0)"
                 target="_blank"
                 rel="noopener noreferrer"
                 type="application/pdf"
@@ -288,7 +288,7 @@ const ArchivePage = () => {
               </p>
               <a
                 className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
-                href="/pdf/archive/policy-recommendations/02_อปท_Policy_Recommendation.pdf"
+                href="javascript:void(0)"
                 target="_blank"
                 rel="noopener noreferrer"
                 type="application/pdf"
@@ -329,7 +329,7 @@ const ArchivePage = () => {
               </p>
               <a
                 className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
-                href="/pdf/archive/policy-recommendations/03_IMC_Policy_Recommendation.pdf"
+                href="javascript:void(0)"
                 target="_blank"
                 rel="noopener noreferrer"
                 type="application/pdf"
@@ -365,7 +365,7 @@ const ArchivePage = () => {
               </p>
               <a
                 className="flex items-center space-x-1 text-sm text-primary hover:text-accent font-body"
-                href="/pdf/archive/policy-recommendations/04_GM_Policy_Recommendation.pdf"
+                href="javascript:void(0)"
                 target="_blank"
                 rel="noopener noreferrer"
                 type="application/pdf"
@@ -425,7 +425,7 @@ const ArchivePage = () => {
               </div>
               <a
                 className="btn-white"
-                href="/pdf/archive/practical-guidelines/03_Policy_Dialogue_Value.pdf"
+                href="javascript:void(0)"
                 target="_blank"
                 rel="noopener noreferrer"
                 type="application/pdf"

@@ -5,7 +5,13 @@ import { Dialog, Transition } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import React, { FormEvent, Fragment, useCallback, useState } from 'react'
 
-const DownloadModal = ({ isOpen, fileName }: { isOpen: boolean; fileName: string | null }) => {
+interface Props {
+  isOpen: boolean
+  type: 'download' | 'newsletter'
+  fileName: string | null
+}
+
+const DownloadModal = ({ isOpen, type, fileName }: Props) => {
   const [, setModalState] = useAtom(isModalOpenAtom)
   const [organizeType, setOrganizeType] = useState<string>('')
   const [state, handleSubmit] = useForm('mqknzlyd')
@@ -19,11 +25,14 @@ const DownloadModal = ({ isOpen, fileName }: { isOpen: boolean; fileName: string
       }
       localStorage.setItem('policy-dialogue:has-submit-contact', 'true')
 
-      if (fileName) downloadContent(fileName)
+      if (type === 'download' && fileName) {
+        downloadContent(fileName)
+      }
+
       e.currentTarget.reset()
-      setModalState({ open: false, type: 'download', link: null })
+      setModalState({ open: false, type, link: null })
     },
-    [fileName, handleSubmit, setModalState]
+    [fileName, handleSubmit, setModalState, type]
   )
 
   return (
@@ -145,7 +154,7 @@ const DownloadModal = ({ isOpen, fileName }: { isOpen: boolean; fileName: string
                     ยกเลิก
                   </button>
                   <button type="submit" className="w-full rounded-none btn">
-                    ดาวน์โหลด
+                    {type === 'download' ? 'ดาวน์โหลด' : 'บันทึก'}
                   </button>
                 </div>
               </form>

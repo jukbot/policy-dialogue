@@ -1,7 +1,9 @@
+import { isModalOpenAtom } from '@/stores/global'
 import { ArrowSmRightIcon } from '@heroicons/react/outline'
+import { useAtom } from 'jotai'
 import Image from 'next/image'
 import Link from 'next/link'
-import { MouseEvent, useState } from 'react'
+import { FormEvent, useCallback, useState } from 'react'
 import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
 import Logo from '/public/image/logo/logo.svg'
@@ -9,15 +11,25 @@ import RiseImpactLogo from '/public/image/logo/rise-impact-white.svg'
 
 const Footer = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
+  const [, setModalState] = useAtom(isModalOpenAtom)
 
-  const subscribeNewsletter = (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
-    if (!email) {
-      return toast.error('โปรดระบุอีเมล')
-    }
-    e.preventDefault()
-    setEmail('')
-    toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
-  }
+  const handleFormSubmit = useCallback(
+    (e: FormEvent<HTMLFormElement>) => {
+      if (!email) {
+        return toast.error('โปรดระบุอีเมล')
+      }
+
+      if (!localStorage.getItem('policy-dialogue:has-submit-contact')) {
+        setModalState({ open: true, type: 'newsletter', link: null })
+      } else {
+        // TODO: submit email to sendgrid api
+        setModalState({ open: false, type: 'newsletter', link: null })
+        toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
+      }
+      e.currentTarget.reset()
+    },
+    [email, setModalState]
+  )
 
   return (
     <footer className="relative flex flex-col w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
@@ -67,7 +79,7 @@ const Footer = (): JSX.Element => {
           <div className="flex flex-col space-y-4">
             <h4 className="font-bold">ต้องการรับข่าวสารเกี่ยวกับ Policy Dialogue</h4>
             <div className="relative mt-1 sm:max-w-[270px]">
-              <form>
+              <form onSubmit={(e) => handleFormSubmit(e)}>
                 <input
                   type="email"
                   name="email"
@@ -78,7 +90,7 @@ const Footer = (): JSX.Element => {
                   className="block w-full px-6 py-4 border-primary bg-transparent rounded-full placeholder-[#a8a8a8] focus:ring-primary focus:border-primary sm:text-sm"
                   placeholder="dialogue.policy@example.com"
                 />
-                <button className="absolute inset-y-0 right-0 flex items-center pr-4 cursor-pointer" onClick={(e) => subscribeNewsletter(e)}>
+                <button type="submit" className="absolute inset-y-0 right-0 flex items-center pr-4 cursor-pointer">
                   <ArrowSmRightIcon className="w-6 h-6 text-primary" aria-hidden="true" />
                 </button>
               </form>

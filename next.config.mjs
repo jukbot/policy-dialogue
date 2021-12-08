@@ -24,7 +24,6 @@ const nextConfig = {
   images: {
     minimumCacheTTL: 86400,
     domains: [
-      'images.unsplash.com',
       'via.placeholder.com',
       'lh3.googleusercontent.com',
       'lh4.googleusercontent.com',

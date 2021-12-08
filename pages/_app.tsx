@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Footer />
       </main>
       <Toaster position="bottom-center" reverseOrder={false} />
-      {modal.open && modal.type === 'download' ? <DownloadModal isOpen={modal.open} fileName={modal.link} /> : null}
+      {modal.open ? <DownloadModal isOpen={modal.open} type={modal.type} fileName={modal.link} /> : null}
     </>
   )
 }
