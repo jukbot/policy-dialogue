@@ -2,11 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   mode: 'jit',
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    preserveHtmlElements: false,
-    content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-  },
+  content: ['./components/**/*.{ts,tsx,mdx}', './pages/**/*.{ts,tsx,mdx}'],
   darkMode: false,
   theme: {
     fontFamily: {
@@ -30,12 +26,6 @@ module.exports = {
         accent: 'var(--color-accent)',
         danger: 'var(--color-danger)',
         disabled: 'var(--color-disabled)',
-      },
-      strokeWidth: {
-        3: '3',
-        4: '4',
-        6: '5',
-        5: '6',
       },
       backgroundImage: {
         'landing-footer': "url('/image/background/landing-footer.svg')",
