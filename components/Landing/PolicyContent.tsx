@@ -15,11 +15,11 @@ const PolicyContent = () => {
       <PolicyWheelMobile className="block max-w-[512px] w-full h-full fill-current text-primary lg:hidden" />
       <div className="flex justify-center mx-auto my-4 space-x-6 text-primary lg:hidden">
         <ArrowCircleLeftIcon
-          className="flex-shrink-0 w-8 h-8 cursor-pointer"
+          className="shrink-0 w-8 h-8 cursor-pointer"
           onClick={() => setSelectedProject(projectList[selectedProject?.id === 0 ? projectList.length - 1 : (selectedProject?.id - 1) % projectList.length])}
         />
         <ArrowCircleRightIcon
-          className="flex-shrink-0 w-8 h-8 cursor-pointer"
+          className="shrink-0 w-8 h-8 cursor-pointer"
           onClick={() => setSelectedProject(projectList[(selectedProject?.id + 1) % projectList.length])}
         />
       </div>

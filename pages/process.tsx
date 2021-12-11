@@ -47,9 +47,9 @@ const ProcessPage = () => {
               </p>
             </div>
             {selectedSection === 0 ? (
-              <MinusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              <MinusCircleIcon onClick={() => setSelectedSection(0)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
             ) : (
-              <PlusCircleIcon onClick={() => setSelectedSection(0)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              <PlusCircleIcon onClick={() => setSelectedSection(0)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
             )}
           </div>
         </section>
@@ -63,9 +63,9 @@ const ProcessPage = () => {
               </p>
             </div>
             {selectedSection === 1 ? (
-              <MinusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              <MinusCircleIcon onClick={() => setSelectedSection(1)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
             ) : (
-              <PlusCircleIcon onClick={() => setSelectedSection(1)} className="flex-shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+              <PlusCircleIcon onClick={() => setSelectedSection(1)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
             )}
           </div>
         </section>

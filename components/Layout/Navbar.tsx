@@ -43,7 +43,7 @@ const Navbar = (): JSX.Element => {
                 </Disclosure.Button>
               </div>
               <div className="flex items-center justify-between flex-1 w-full justify-items-stretch">
-                <div className="flex items-center justify-center flex-shrink-0">
+                <div className="flex items-center justify-center shrink-0">
                   <Link href="/">
                     <a className="flex">
                       <Image className="hidden lg:block" width="120" height="60" src={Logo} priority decoding="async" alt="logo" />

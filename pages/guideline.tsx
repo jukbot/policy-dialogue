@@ -42,7 +42,7 @@ const GuidelinePage = () => {
             <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
               <div className="flow-root">
                 <div className="space-y-3">
-                  <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Participants} alt="participants" />
+                  <Image className="shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Participants} alt="participants" />
                   <h3 className="text-xl font-bold">Participants</h3>
                   <p className="text-sm leading-relaxed sm:text-base font-body">
                     เฟ้นหาผู้มีส่วนร่วมในแต่ละประเด็นอย่างเหมาะสม อาจมาจากหลายภาคส่วน กระจายพื้นที่ เข้าถึงผู้คนให้มากที่สุด
@@ -51,7 +51,7 @@ const GuidelinePage = () => {
               </div>
               <div className="flow-root">
                 <div className="space-y-4">
-                  <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Content} alt="content" />
+                  <Image className="shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Content} alt="content" />
                   <h3 className="text-xl font-bold">Content</h3>
                   <p className="text-sm leading-relaxed sm:text-base font-body">
                     มีข้อมูลที่หลากหลาย น่าเชื่อถือ และตรงประเด็น อาจเป็นข่าวสาร บทความวิชาการ งานวิจัยที่เกี่ยวข้อง ฯลฯ เพื่อนำมาวิเคราะห์ ตั้งเป้าหมาย
@@ -61,7 +61,7 @@ const GuidelinePage = () => {
               </div>
               <div className="flow-root">
                 <div className="space-y-4">
-                  <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Resources} alt="resources" />
+                  <Image className="shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Resources} alt="resources" />
                   <h3 className="text-xl font-bold">Resources</h3>
                   <p className="text-sm leading-relaxed sm:text-base font-body">
                     มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่างๆ
@@ -74,7 +74,7 @@ const GuidelinePage = () => {
             <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
               <div className="flow-root">
                 <div className="space-y-4">
-                  <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Process} alt="process" />
+                  <Image className="shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Process} alt="process" />
                   <h3 className="text-xl font-bold">Process</h3>
                   <p className="text-sm leading-relaxed sm:text-base font-body">
                     มีบรรยากาศการแลกเปลี่ยนที่ปลอดภัยและบรรลุเป้าหมายที่ตั้งไว้ กระบวนการควรประกอบด้วย
@@ -106,7 +106,7 @@ const GuidelinePage = () => {
               </div>
               <div className="flow-root">
                 <div className="space-y-4">
-                  <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Teamwork} alt="teamwork" />
+                  <Image className="shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Teamwork} alt="teamwork" />
                   <h3 className="text-xl font-bold">Team Work</h3>
                   <p className="text-sm leading-relaxed sm:text-base font-body">
                     การทำงานเป็นทีมที่สอดประสานกัน เพื่อรองรับ ‘ความยืดหยุ่น’ ของเนื้อหาและกระบวนการ
@@ -131,7 +131,7 @@ const GuidelinePage = () => {
               </div>
               <div className="flow-root">
                 <div className="space-y-4">
-                  <Image className="flex-shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Goals} alt="goals" />
+                  <Image className="shrink-0 w-12 h-12" width="48" height="48" aria-hidden="true" src={Goals} alt="goals" />
                   <h3 className="text-xl font-bold">Goals</h3>
                   <p className="text-sm leading-relaxed sm:text-base font-body">เป้าหมายที่ชัดเจน แต่ยืดหยุ่น</p>
                   <ul className="space-y-2 text-sm leading-relaxed list-inside sm:text-base">
@@ -226,19 +226,19 @@ const GuidelinePage = () => {
             </div>
             <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
               <div className="flex items-start space-x-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
                   <circle cx="25" cy="25" r="25" fill="#6badcb" />
                 </svg>
                 <p className="text-sm font-body">จุดประสงค์ (Objectives) ของกระบวนการหารือเชิงนโยบายแต่ละครั้ง</p>
               </div>
               <div className="flex items-start space-x-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
                   <circle cx="25" cy="25" r="25" fill="#daa13d" />
                 </svg>
                 <p className="text-sm font-body">ผลลัพธ์ (Outcomes) ของกระบวนการหารือเชิงนโยบายแต่ละครั้ง</p>
               </div>
               <div className="flex items-start space-x-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
                   <circle cx="25" cy="25" r="25" fill="#36723b" />
                 </svg>
                 <p className="text-sm font-body">เป้าหมาย (Goal) หรือข้อเสนอแนะเชิงนโยบายของแต่ละหัวข้อ</p>

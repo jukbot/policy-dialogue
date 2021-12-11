@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -26,6 +27,10 @@ module.exports = {
         accent: 'var(--color-accent)',
         danger: 'var(--color-danger)',
         disabled: 'var(--color-disabled)',
+        green: colors.emerald,
+        yellow: colors.amber,
+        purple: colors.violet,
+      
       },
       backgroundImage: {
         'landing-footer': "url('/image/background/landing-footer.svg')",

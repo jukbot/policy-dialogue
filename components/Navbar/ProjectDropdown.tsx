@@ -45,7 +45,7 @@ const ProjectDropDown = () => {
                             item.enabled ? (pathname === item.url ? 'text-primary' : 'text-link') : 'text-white opacity-50'
                           } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 space-y-2 transition duration-150 ease-in-out`}
                         >
-                          <div className="inline-flex flex-shrink-0">{projectIcon.get(item.icon)}</div>
+                          <div className="inline-flex shrink-0">{projectIcon.get(item.icon)}</div>
                           <div className="flex flex-col flex-1 text-sm whitespace-normal font-body">
                             <p>{item.description}</p>
                             <p className="font-bold">({item.title})</p>

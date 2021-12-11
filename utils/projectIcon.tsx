@@ -1,7 +1,7 @@
 export const projectIcon = new Map([
   [
     'aip',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'aip'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 30 30">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'aip'} className="shrink-0 w-8 h-8" viewBox="0 0 30 30">
       <path
         fill="#c7642a"
         data-name="aip"
@@ -12,7 +12,7 @@ export const projectIcon = new Map([
   ],
   [
     'imc',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'imc'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 45">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'imc'} className="shrink-0 w-8 h-8" viewBox="0 0 50 45">
       <path
         fill="#CECECE"
         data-name="imc"
@@ -23,7 +23,7 @@ export const projectIcon = new Map([
   ],
   [
     'ltc',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'ltc'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 47.812 45">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'ltc'} className="shrink-0 w-8 h-8" viewBox="0 0 47.812 45">
       <path
         fill="#CECECE"
         data-name="ltc"
@@ -34,7 +34,7 @@ export const projectIcon = new Map([
   ],
   [
     'pc',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'pc'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 50.625 45">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'pc'} className="shrink-0 w-8 h-8" viewBox="0 0 50.625 45">
       <path
         fill="#3f36b7"
         data-name="pc"
@@ -45,7 +45,7 @@ export const projectIcon = new Map([
   ],
   [
     'dt',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'dt'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 50">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'dt'} className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
       <path
         fill="#CECECE"
         id="Path_56"
@@ -57,7 +57,7 @@ export const projectIcon = new Map([
   ],
   [
     'gm',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'gm'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 36.853">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'gm'} className="shrink-0 w-8 h-8" viewBox="0 0 50 36.853">
       <path
         fill="#CECECE"
         data-name="gm"
@@ -68,7 +68,7 @@ export const projectIcon = new Map([
   ],
   [
     'lsd',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'lsd'} className="flex-shrink-0 w-8 h-8" viewBox="0 0 50 44.978">
+    <svg xmlns="http://www.w3.org/2000/svg" key={'lsd'} className="shrink-0 w-8 h-8" viewBox="0 0 50 44.978">
       <path
         fill="#daa13d"
         data-name="lsd"
