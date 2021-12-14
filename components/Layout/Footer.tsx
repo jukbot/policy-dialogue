@@ -105,7 +105,9 @@ const Footer = (): JSX.Element => {
         </li>
         <li className="flex flex-col items-start col-span-1 space-y-4">
           <div>
-            <Image src={RiseImpactLogo} alt="logo" className="w-full h-full" objectFit="contain" />
+            <a href="https://www.riseimpact.co/" target="_blank" rel="noreferrer noopenner">
+              <Image src={RiseImpactLogo} alt="logo" className="w-full h-full" objectFit="contain" />
+            </a>
           </div>
           <p className="font-bold">สำนักงานใหญ่</p>
           <p>
