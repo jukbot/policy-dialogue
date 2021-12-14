@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { default as HeroImage, default as Result1 } from '/public/image/pc/testimonial-1.webp'
+import HeroImage from '/public/image/pc/hero-image.webp'
+import Result1 from '/public/image/pc/testimonial-1.webp'
 import Result2 from '/public/image/pc/testimonial-2.webp'
 import Result3 from '/public/image/pc/testimonial-3.webp'
 
