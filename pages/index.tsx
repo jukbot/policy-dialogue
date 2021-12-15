@@ -29,12 +29,12 @@ const Home: NextPage = () => {
 
   return (
     <div className="relative">
-      <main className="relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-full h-screen bg-fixed bg-right bg-no-repeat bg-contain sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
+      <main className="relative overflow-hidden grid min-h-full">
+        <div className="absolute top-0 right-0 w-full h-screen bg-fixed sm:bg-right bg-no-repeat bg-contain sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
         <section
           className={`${
             intersection && intersection.intersectionRatio < 1 ? '' : ''
-          } relative grid h-[85vh] lg:h-[90vh] bg-top bg-fixed bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
+          } relative grid h-[75vh] lg:h-[90vh] bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
         >
           <div className="pt-24 space-y-8 text-center text-white">
             <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
