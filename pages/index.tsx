@@ -29,12 +29,12 @@ const Home: NextPage = () => {
 
   return (
     <div className="relative">
-      <main className="relative overflow-hidden grid min-h-full">
+      <main className="relative overflow-hidden">
         <div className="absolute top-0 right-0 w-full h-screen bg-fixed sm:bg-right bg-no-repeat bg-contain sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
         <section
           className={`${
             intersection && intersection.intersectionRatio < 1 ? '' : ''
-          } relative grid h-[75vh] lg:h-[90vh] bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
+          } relative grid h-[75vh] lg:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
         >
           <div className="pt-24 space-y-8 text-center text-white">
             <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
         </section>
         <section className="relative h-full bg-secondary">
           <div className="px-12 py-12 space-y-12 text-white sm:py-24">
-            <h2 className="text-4xl font-bold text-center sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
+            <h2 className="text-4xl font-bold text-center sm:text-5xl break-words">นโยบายเพื่อสังคมสูงวัย</h2>
             <div className="flex flex-col justify-center space-y-8 text-center lg:space-x-8 lg:flex-row font-body">
               <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                 <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
@@ -153,9 +153,9 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#242054]">
-          <div className="flex flex-col items-center justify-center px-6 py-20 text-white">
+          <div className="flex flex-col items-center justify-center px-6 py-12 text-white">
             <QuestionMark className="w-48 h-48" />
-            <p className="text-sm text-center sm:text-base lg:text-lg font-body">
+            <p className="text-sm text-center sm:text-base lg:text-lg font-body leading-relaxed">
               คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ
               <br />
               กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง
@@ -188,7 +188,7 @@ const Home: NextPage = () => {
           </div>
           <div className="absolute right-0 w-full h-full bg-fixed bg-right-bottom bg-no-repeat bg-contain opacity-75 mix-blend-screen bg-landing-circle-mobile sm:bg-landing-circle"></div>
 
-          <div className="relative space-y-8 flex flex-col items-center justify-between mt-[46rem] lg:mt-[32rem]">
+          <div className="relative space-y-8 flex flex-col items-center justify-between mt-[40rem] lg:mt-[32rem]">
             <Link href="/process">
               <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
             </Link>
@@ -266,7 +266,7 @@ const Home: NextPage = () => {
             </div>
             <div className="flex justify-center mt-12 sm:hidden">
               <Link href="/value">
-                <a className="w-full lg:w-3/4 btn">คุณค่ากระบวนการ</a>
+                <a className="px-16 btn">คุณค่ากระบวนการ</a>
               </Link>
             </div>
           </div>

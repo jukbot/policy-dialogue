@@ -2,9 +2,7 @@ const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: 'jit',
   content: ['./components/**/*.{ts,tsx,mdx}', './pages/**/*.{ts,tsx,mdx}'],
-  darkMode: false,
   theme: {
     fontFamily: {
       sans: ['IBMPlexSansThai', 'sans-serif'],
@@ -30,7 +28,6 @@ module.exports = {
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
-      
       },
       backgroundImage: {
         'landing-footer': "url('/image/background/landing-footer.svg')",
