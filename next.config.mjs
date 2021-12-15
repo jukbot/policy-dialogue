@@ -20,7 +20,6 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   swcMinify: true,
-  pageExtensions: ['ts', 'tsx', 'mdx'],
   images: {
     minimumCacheTTL: 86400,
     domains: [
