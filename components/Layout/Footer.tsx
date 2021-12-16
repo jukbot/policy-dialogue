@@ -64,7 +64,7 @@ const Footer = (): JSX.Element => {
             </li>
             <li>
               <Link href="/value">
-                <a className="text-link">คุณค่าของนโยบาย</a>
+                <a className="text-link">คุณค่าของกระบวนการ</a>
               </Link>
             </li>
             <li>

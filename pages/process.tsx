@@ -11,7 +11,7 @@ const ProcessPage = () => {
   return (
     <>
       <Head>
-        <title>กระบวนการ</title>
+        <title>การออกแบบนโยบายอย่างมีส่วนร่วม</title>
       </Head>
       <main className="relative">
         <section className="relative grid h-[50vh] lg:h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
