@@ -28,6 +28,7 @@ const Footer = (): JSX.Element => {
         setModalState({ open: false, type: 'newsletter', link: null })
         toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
       }
+      setEmail('')
       e.currentTarget.reset()
     },
     [email, setModalState]
@@ -118,7 +119,7 @@ const Footer = (): JSX.Element => {
           </p>
         </li>
       </ul>
-      <div className="pt-6 text-white border-t border-gray-200 font-body">
+      <div className="pt-6 text-white border-t border-slate-200/75 font-body">
         <p className="text-sm">Copyright &copy; {new Date().getFullYear()} Rise Impact. All rights reserved.</p>
       </div>
     </footer>

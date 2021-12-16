@@ -64,7 +64,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="inline-block w-full h-screen max-w-xl p-6 space-y-8 overflow-hidden text-left align-middle transition-all transform bg-black shadow-xl sm:my-8 sm:h-auto sm:p-12 sm:bg-gray">
+            <div className="inline-block w-full h-screen max-w-xl p-6 space-y-8 overflow-hidden text-left align-middle transition-all transform bg-black shadow-xl sm:my-8 sm:h-auto sm:p-12 sm:bg-[#474747]">
               <div className="space-y-4 md:space-y-2">
                 <Dialog.Title as="h2" className="text-xl leading-6 text-white sm:text-[#a3a3a3]">
                   ให้เราได้รู้จักคุณ

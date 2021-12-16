@@ -13,7 +13,7 @@ const RelatedPolicy = () => {
           <li className="flex flex-col items-center justify-between w-64 p-6 bg-[#36723b] text-white h-72 text-center">
             <p className="font-bold mt-12">การเสริมพลังองค์กรปกครองส่วนท้องถิ่นเพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน และส่งเสริมการมีส่วนร่วมของประชาชน</p>
             <Link href="/archive#aip-1">
-              <a>
+              <a target="_self">
                 <ArrowRightIcon className="shrink-0 w-8 h-8 fill-current hover:text-primary" />
               </a>
             </Link>
@@ -21,7 +21,7 @@ const RelatedPolicy = () => {
           <li className="flex flex-col items-center justify-between w-64 p-6 bg-[#daa13d] text-white h-72 text-center">
             <p className="font-bold mt-12">การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด</p>
             <Link href="/archive#aip-2">
-              <a>
+              <a target="_self">
                 <ArrowRightIcon className="shrink-0 w-8 h-8 fill-current hover:text-primary" />
               </a>
             </Link>
