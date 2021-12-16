@@ -5,6 +5,7 @@ import InterestProjects from '@/components/Project/InterestProjects'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import { DownloadIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
+import Link from 'next/link'
 import Circle from '/public/image/aip/circle.webp'
 import ElderlyHome from '/public/image/aip/elderly-home.svg'
 import ElderlyLogo from '/public/image/aip/elderly-logo.svg'
@@ -265,15 +266,12 @@ const AipPage = () => {
                     <p className="font-body text-sm">ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ</p>
                   </li>
                 </ul>
-                <a
-                  className="text-[#c7642a] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full"
-                  href="javascript:void(0)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <DownloadIcon className="w-6 h-6 fill-current mr-2" />
-                  <span>ดาวน์โหลดข้อสรุป</span>
-                </a>
+                <Link href="/archive#thematic-briefs">
+                  <a className="text-[#c7642a] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full" target="_blank" rel="noopener noreferrer">
+                    <DownloadIcon className="w-6 h-6 fill-current mr-2" />
+                    <span>ดาวน์โหลดข้อสรุป</span>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col col-span-1 max-w-sm space-y-4">
@@ -293,15 +291,12 @@ const AipPage = () => {
                     <p className="font-body text-sm">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
                   </li>
                 </ul>
-                <a
-                  className="text-[#36723b] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full"
-                  href="javascript:void(0)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <DownloadIcon className="w-6 h-6 fill-current mr-2" />
-                  <span>ดาวน์โหลดข้อสรุป</span>
-                </a>
+                <Link href="/archive#thematic-briefs">
+                  <a className="text-[#36723b] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full" target="_blank" rel="noopener noreferrer">
+                    <DownloadIcon className="w-6 h-6 fill-current mr-2" />
+                    <span>ดาวน์โหลดข้อสรุป</span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
