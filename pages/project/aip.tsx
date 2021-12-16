@@ -14,6 +14,7 @@ import Icon1 from '/public/image/aip/icon-1.svg'
 import Icon2 from '/public/image/aip/icon-2.svg'
 import Icon3 from '/public/image/aip/icon-3.svg'
 import Icon4 from '/public/image/aip/icon-4.svg'
+import ProcessResult from '/public/image/aip/process-result.webp'
 import Result1 from '/public/image/aip/testimonial-1.webp'
 import Result2 from '/public/image/aip/testimonial-2.webp'
 import Result3 from '/public/image/aip/testimonial-3.webp'
@@ -252,7 +253,7 @@ const AipPage = () => {
               <p>การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อ ความต้องการของผู้สูงอายุในการใช้ชีวิต ในถิ่นที่เดิม (Aging in Place) </p>
               <div className="w-full border-t-2 border-white md:px-24" />
               <div className="pt-6 space-y-6">
-                <ul className="flex flex-col space-y-4">
+                <ul className="flex flex-col space-y-6">
                   <li className="space-y-2">
                     <h3 className="font-bold text-lg">ข้อเสนอระยะสั้น</h3>
                     <p className="font-body text-sm">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
@@ -267,8 +268,12 @@ const AipPage = () => {
                   </li>
                 </ul>
                 <Link href="/archive#thematic-briefs">
-                  <a className="text-[#c7642a] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full" target="_blank" rel="noopener noreferrer">
-                    <DownloadIcon className="w-6 h-6 fill-current mr-2" />
+                  <a
+                    className="text-[#c7642a] text-sm inline-flex items-center btn bg-white hover:text-white rounded-full"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DownloadIcon className="w-5 h-5 fill-current mr-2" />
                     <span>ดาวน์โหลดข้อสรุป</span>
                   </a>
                 </Link>
@@ -285,19 +290,66 @@ const AipPage = () => {
               <p>การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย</p>
               <div className="w-full border-t-2 border-white md:px-24" />
               <div className="pt-6 space-y-6">
-                <ul className="flex flex-col space-y-4">
+                <ul className="flex flex-col space-y-6">
                   <li className="space-y-2">
                     <h3 className="font-bold text-lg">ข้อเสนอ 1</h3>
                     <p className="font-body text-sm">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
                   </li>
                 </ul>
                 <Link href="/archive#thematic-briefs">
-                  <a className="text-[#36723b] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full" target="_blank" rel="noopener noreferrer">
-                    <DownloadIcon className="w-6 h-6 fill-current mr-2" />
+                  <a className="text-[#36723b] text-sm inline-flex btn bg-white hover:text-white rounded-full" target="_blank" rel="noopener noreferrer">
+                    <DownloadIcon className="w-5 h-5 fill-current mr-2" />
                     <span>ดาวน์โหลดข้อสรุป</span>
                   </a>
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="relative h-full bg-[#F9EFE9]">
+        <div className="max-w-4xl mx-auto py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="col-span-1 flex flex-col space-y-6 text-body space-y-6">
+              <div className="px-6">
+                <h3 className="font-bold text-2xl">
+                  สิ่งที่เกิดขึ้นจาก
+                  <br />
+                  กระบวนการ
+                </h3>
+                <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
+              </div>
+              <div className="md:absolute left-0 px-6 md:px-0 md:pt-40">
+                <Image width={640} height={380} src={ProcessResult} />
+              </div>
+            </div>
+            <div className="col-span-1 h-full px-6">
+              <ul className="space-y-12">
+                <li className="space-y-2">
+                  <h3 className="font-bold text-xl">ผู้เข้าร่วมแสดงความสนใจและอยาก ผลักดันต่อ</h3>
+                  <p className="font-body">
+                    ตัวแทนหน่วยงานภาครัฐที่มาร่วม มีความเปิดกว้างต่อการรับแนวคิดใหม่ พยายามหาแนวทางในการพัฒนาบทบาทของหน่วยงานในการส่งเสริมงานด้านผู้สูงอายุ
+                  </p>
+                </li>
+                <li className="space-y-2">
+                  <h3 className="font-bold text-xl">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
+                  <p className="font-body">
+                    ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
+                    ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
+                  </p>
+                </li>
+                <li className="space-y-2">
+                  <h3 className="font-bold text-xl">เกิดพื้นที่คลายข้อสงสัยระหว่างหน่วยงานส่วนกลางและท้องถิ่น</h3>
+                  <p className="font-body">
+                    เปิดพื้นที่ให้ อปท. ได้มีโอกาสพูดคุยโดยตรงกับตัวแทนจากหน่วยงานนโยบาย หลายท่านสะท้อนว่าเป็นประโยชน์
+                    เนื่องจากที่ผ่านมาไม่ค่อยมีโอกาสได้สื่อสารโดยตรง กระบวนการนี้ทำให้ได้รับฟังความเห็นระหว่างกันและกัน และได้คลายความสงสัยในหลายปัญหาข้อติดขัด
+                  </p>
+                </li>
+                <li className="space-y-2">
+                  <h3 className="font-bold text-xl">ได้ประเด็นที่สมควรศึกษาวิจัยต่อเพื่อพัฒนานโยบาย</h3>
+                  <p className="font-body">ได้หัวข้อสิ่งที่น่าจะนำไปศึกษาเพิ่มเติมเพื่อช่วยกำหนด กรอบนโยบายต่อไปได้ เช่น การจัดการทรัพยากรในแต่ละพื้นที่</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
