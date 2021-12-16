@@ -311,8 +311,8 @@ const AipPage = () => {
         <div className="max-w-4xl mx-auto py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="col-span-1 flex flex-col space-y-6 text-body space-y-6">
-              <div className="px-6">
-                <h3 className="font-bold text-2xl">
+              <div className="px-6 space-y-6">
+                <h3 className="font-bold leading-relaxed text-3xl">
                   สิ่งที่เกิดขึ้นจาก
                   <br />
                   กระบวนการ

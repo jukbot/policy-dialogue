@@ -225,7 +225,7 @@ const ArchivePage = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
-            <div className="col-span-1">
+            <div className="col-span-1" id="aip-2">
               <p className="text-lg font-bold">
                 การพัฒนาหน่วยประสานการดูแล
                 <br />
@@ -262,7 +262,7 @@ const ArchivePage = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
-            <div className="col-span-1">
+            <div className="col-span-1" id="aip-1">
               <p className="text-lg font-bold">
                 การเสริมพลังองค์กรปกครองส่วนท้องถิ่น
                 <br />
