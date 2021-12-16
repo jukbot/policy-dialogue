@@ -45,7 +45,7 @@ const AipPage = () => {
         </section>
 
         <section className="relative h-full bg-[#FCF5EB]">
-          <section className="absolute left-0 w-full h-full space-y-12 -top-24 z-10">
+          <section className="absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative max-w-6xl p-12 mx-auto space-y-6 md:space-x-8 bg-secondary h-80">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
@@ -62,11 +62,11 @@ const AipPage = () => {
             </div>
           </section>
 
-          <div className="relative grid grid-cols-1 gap-6 pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 pt-72 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
             </div>
-            <div className="flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+            <div className="relative flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน
                 <br />
