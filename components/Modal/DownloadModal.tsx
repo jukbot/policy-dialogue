@@ -38,7 +38,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
         })
       }
 
-      await handleSubmit(e)
+      handleSubmit(e)
       e.currentTarget?.reset()
 
       setModalState({ open: false, type, link: null })

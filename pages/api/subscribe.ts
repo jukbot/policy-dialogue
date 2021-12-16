@@ -7,7 +7,7 @@ export const config = {
   },
 }
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const body = JSON.parse(req.body)
     if (!body.email) {
@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   res.end()
 }
 
-const addToSendGridContact = async (email: string, name: string) => {
+const addToSendGridContact = (email: string, name: string) => {
   const options = {
     method: 'PUT',
     hostname: 'api.sendgrid.com',
@@ -42,6 +42,9 @@ const addToSendGridContact = async (email: string, name: string) => {
       console.log(body.toString())
     })
   })
+
+  console.log(name?.split(' ')[0])
+  console.log(name?.split(' ')[1])
 
   req.write(
     JSON.stringify({
