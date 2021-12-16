@@ -45,7 +45,7 @@ const AipPage = () => {
         </section>
 
         <section className="relative h-full bg-[#FCF5EB]">
-          <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
+          <section className="absolute left-0 w-full h-full space-y-12 -top-24 z-10">
             <div className="relative max-w-6xl p-12 mx-auto space-y-6 md:space-x-8 bg-secondary h-80">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
@@ -100,10 +100,10 @@ const AipPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" className="w-full" alt="expect-ressult-3" />
+            <div className="col-span-1 px-6 md:px-0">
+              <Image src={Result3} height="640" width="1024" className="h-full w-full" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+            <div className="relative flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
                 <br />
@@ -148,7 +148,7 @@ const AipPage = () => {
               <Image src={ElderlyLogo} width={300} height={150} alt="elderly logo" />
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <p className="text-sm font-bold">บ้านพักคนชระของรัฐท้ั้งประเทศ</p>
+              <p className="text-base font-bold">บ้านพักคนชราของรัฐท้ั้งประเทศ</p>
               <p className="text-4xl font-bold">12 แห่ง</p>
               <Image src={ElderlyHome} width={300} alt="elderly home" />
             </div>

@@ -148,7 +148,7 @@ export const projectDropdown = [
     enabled: true,
   },
   {
-    id: 2,
+    id: 1,
     title: 'Local Service Delivery Network',
     description: 'การจัดการโครงสร้างเครือข่าย ระบบบริการสุขภาพระดับจังหวัด',
     url: '/project/lsd',
@@ -156,7 +156,7 @@ export const projectDropdown = [
     enabled: true,
   },
   {
-    id: 3,
+    id: 2,
     title: 'Palliative Care',
     description: 'ระบบการดูแลแบบประคับประคอง ในช่วงท้ายของชีวิต',
     url: '/project/pc',
@@ -164,7 +164,7 @@ export const projectDropdown = [
     enabled: true,
   },
   {
-    id: 1,
+    id: 3,
     title: 'Intermediate Care',
     description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทอง หลังพ้นภาวะวิกฤต',
     url: '/project/imc',
@@ -172,7 +172,7 @@ export const projectDropdown = [
     enabled: false,
   },
   {
-    id: 2,
+    id: 4,
     title: 'Long-Term Care',
     description: 'ระบบการดูแลระยะยาว สำหรับผู้สูงอายุที่มีภาวะพึ่งพิง',
     url: '/project/ltc',
@@ -188,7 +188,7 @@ export const projectDropdown = [
     enabled: false,
   },
   {
-    id: 4,
+    id: 6,
     title: 'Dementia',
     description: 'ระบบบริการแลการดูแลผู้มีภาวะสมองเสื่อม',
     url: '/project/dt',

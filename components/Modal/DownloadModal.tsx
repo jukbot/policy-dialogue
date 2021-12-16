@@ -17,7 +17,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
   const [state, handleSubmit] = useForm('mqknzlyd')
 
   const handleFormSubmit = useCallback(
-    (e: FormEvent<HTMLFormElement>) => {
+    async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault()
       if (e.currentTarget.email.value) {
         localStorage.setItem('policy-dialogue:email', e.currentTarget.email.value)
@@ -28,8 +28,19 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
         downloadContent(fileName)
       }
 
-      handleSubmit(e)
-      e.currentTarget.reset()
+      if (type === 'newsletter') {
+        await fetch('/api/subscribe', {
+          method: 'POST',
+          body: JSON.stringify({
+            email: e.currentTarget.email.value,
+            name: e.currentTarget.fullname.value ?? null,
+          }),
+        })
+      }
+
+      await handleSubmit(e)
+      e.currentTarget?.reset()
+
       setModalState({ open: false, type, link: null })
     },
     [fileName, handleSubmit, setModalState, type]
@@ -80,7 +91,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
                       ชื่อ-สกุล
                     </label>
                     <div className="col-span-4">
-                      <input type="text" name="full-name" id="fullname" placeholder="ชื่อ-สกุล" className="bg-white text-input" maxLength={60} />
+                      <input type="text" name="fullname" id="fullname" placeholder="ชื่อ-สกุล" className="bg-white text-input" maxLength={60} />
                     </div>
                   </div>
                   <div className="items-start grid-cols-5 gap-4 sm:grid">

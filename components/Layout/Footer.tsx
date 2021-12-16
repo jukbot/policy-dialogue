@@ -14,7 +14,7 @@ const Footer = (): JSX.Element => {
   const [, setModalState] = useAtom(isModalOpenAtom)
 
   const handleFormSubmit = useCallback(
-    (e: FormEvent<HTMLFormElement>) => {
+    async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault()
 
       if (!email) {
@@ -24,12 +24,18 @@ const Footer = (): JSX.Element => {
       if (!localStorage.getItem('policy-dialogue:has-submit-contact')) {
         setModalState({ open: true, type: 'newsletter', link: null })
       } else {
-        // TODO: submit email to sendgrid api
         setModalState({ open: false, type: 'newsletter', link: null })
+        await fetch('/api/subscribe', {
+          method: 'POST',
+          body: JSON.stringify({
+            email,
+            name: null,
+          }),
+        })
         toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
       }
       setEmail('')
-      e.currentTarget.reset()
+      e.currentTarget?.reset()
     },
     [email, setModalState]
   )
