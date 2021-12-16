@@ -91,7 +91,7 @@ export const projectList = [
   {
     id: 1,
     title: 'Intermediate Care',
-    description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทองหลังพ้นภาวะวิกฤต',
+    description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทอง หลังพ้นภาวะวิกฤต',
     url: '/project/imc',
     icon: 'imc',
     enabled: false,
@@ -131,7 +131,7 @@ export const projectList = [
   {
     id: 6,
     title: 'Local Service Delivery Network',
-    description: 'การจัดการโครงสร้างเครือข่าย ระบบบริการสุขภาพระดับจังหวัด',
+    description: 'โครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด',
     url: '/project/lsd',
     icon: 'lsd',
     enabled: true,
@@ -166,7 +166,7 @@ export const projectDropdown = [
   {
     id: 1,
     title: 'Intermediate Care',
-    description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทองหลังพ้นภาวะวิกฤต',
+    description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทอง หลังพ้นภาวะวิกฤต',
     url: '/project/imc',
     icon: 'imc',
     enabled: false,

@@ -15,14 +15,14 @@ import Result3 from '/public/image/aip/testimonial-3.webp'
 const AipPage = () => {
   return (
     <main className="relative">
-      <section className="relative h-[75vh] lg:h-[90vh] transition grid items-center bg-[#c7642a]">
+      <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
         <div className="items-center justify-between lg:flex">
-          <div className="flex flex-col justify-start py-12 pt-12 space-y-4 text-center text-white item-center lg:item-start lg:text-left lg:ml-48">
-            <h1 className="text-4xl font-semibold leading-relaxed lg:text-5xl">
+          <div className="flex flex-col justify-start px-6 py-12 mt-0 lg:mt-12 space-y-4 text-center text-white item-center lg:item-start lg:text-left lg:ml-48">
+            <h1 className="text-2xl lg:text-4xl font-semibold leading-snug lg:text-5xl">
               เตรียมพร้อมอย่างไร ?<br />
               หากอยากอยู่บ้านในยามชรา
             </h1>
-            <h2 className="text-lg leading-relaxed sm:text-xl font-body">
+            <h2 className="text-base lg:text-lg leading-snug sm:text-xl font-body">
               แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place)
               <br /> นโยบายเพื่อการเตรียมพร้อมด้านที่อยู่อาศัยและ
               <br /> บริการทางสังคมสำหรับผู้สูงอายุ
@@ -35,14 +35,14 @@ const AipPage = () => {
       <section className="relative h-full bg-[#FCF5EB]">
         <section className="absolute left-0 w-full h-full space-y-12 -top-24 ">
           <div className="relative max-w-6xl p-12 mx-auto md:space-x-8 bg-secondary h-80">
-            <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
+            <h2 className="relative text-lg font-bold leading-snug tracking-wide text-white md:text-center md:text-3xl">
               ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
               <br />
               สังคมผู้สูงวัยที่โดดเด่นด้านสุขภาพ แต่ยังขาด
               <br />
               การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
             </h2>
-            <p className="flex mt-6 text-white opacity-75 md:justify-center md:text-center font-body">
+            <p className="flex mt-6 text-white leading-snug opacity-75 md:justify-center md:text-center font-body">
               ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย
               <br />
               ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง

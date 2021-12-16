@@ -1,5 +1,7 @@
+import { projectList } from '@/utils/projectIcon'
 import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { ChevronDownIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -73,19 +75,38 @@ const Navbar = (): JSX.Element => {
           </div>
 
           <Disclosure.Panel className="lg:hidden">
-            <div className="fixed z-20 w-full h-screen px-6 pt-12 pb-3 space-y-6 overflow-hidden bg-secondary">
-              <Link href="/project/aip">
-                <a
-                  className={classNames(
-                    pathname === '/project/aip' ? ' text-primary' : 'text-link',
-                    'text-base text-center font-body flex justify-center transition ease-in-out duration-150'
-                  )}
-                  aria-current={pathname === '/project/aip' ? 'page' : undefined}
-                >
-                  นโยบายเพื่อสังคมสูงวัย
-                </a>
-              </Link>
-              <div className="pt-8 mx-20 space-y-8 border-t border-white border-opacity-40">
+            <div className="fixed z-20 w-full h-screen px-6 pt-12 pb-3 space-y-6 overflow-y-auto bg-secondary">
+              <Disclosure>
+                {({ open }) => (
+                  <>
+                    <Disclosure.Button className="flex w-full items-center justify-center text-white">
+                      <span>นโยบายเพื่อสังคมสูงวัย</span>
+                      <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-4 h-4 text-primary ml-2`} />
+                    </Disclosure.Button>
+                    <Disclosure.Panel className="py-2 px-2">
+                      <ul className="space-y-4">
+                        {projectList.map((project) => (
+                          <li key={project.id}>
+                            <Disclosure.Button
+                              key={project.id}
+                              as="a"
+                              href={project.enabled ? project.url : '#'}
+                              className={classNames(
+                                pathname === project.url ? ' text-primary' : project.enabled ? 'text-link' : 'text-neutral-500',
+                                'text-sm text-center font-body flex justify-center'
+                              )}
+                              aria-current={pathname === project.url ? 'page' : undefined}
+                            >
+                              {project.description} <br /> ({project.title})
+                            </Disclosure.Button>
+                          </li>
+                        ))}
+                      </ul>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+              <div className="pt-8 mx-20 space-y-4 border-t border-white border-opacity-40">
                 {navigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}
