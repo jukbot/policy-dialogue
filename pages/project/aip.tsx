@@ -1,7 +1,9 @@
 import Timeline from '@/components/Project/AIP/Timeline'
 import TimelineHeader from '@/components/Project/AIP/TimelineHeader'
+import TimelineSummary from '@/components/Project/AIP/TimelineSummary'
 import InterestProjects from '@/components/Project/InterestProjects'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
+import { DownloadIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import Circle from '/public/image/aip/circle.webp'
 import ElderlyHome from '/public/image/aip/elderly-home.svg'
@@ -230,6 +232,79 @@ const AipPage = () => {
             <TimelineHeader />
           </div>
           <Timeline />
+        </div>
+      </section>
+      <section className="relative h-full bg-[#c7642a]">
+        <div className="max-w-4xl mx-auto bg-[#2b2b2b] pb-12">
+          <div className="w-full h-full flex justify-center">
+            <TimelineSummary />
+          </div>
+          <div className="grid w-full grid-cols-1 gap-12 md:gap-24 mt-6 md:grid-cols-2 px-24 text-white">
+            <div className="flex flex-col col-span-1 max-w-sm space-y-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                <path
+                  fill="#c7642a"
+                  d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
+                  transform="translate(-257.346 -9.572)"
+                />
+              </svg>
+              <p>การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อ ความต้องการของผู้สูงอายุในการใช้ชีวิต ในถิ่นที่เดิม (Aging in Place) </p>
+              <div className="w-full border-t-2 border-white md:px-24" />
+              <div className="pt-6 space-y-6">
+                <ul className="flex flex-col space-y-4">
+                  <li className="space-y-2">
+                    <h3 className="font-bold text-lg">ข้อเสนอระยะสั้น</h3>
+                    <p className="font-body text-sm">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
+                  </li>
+                  <li className="space-y-2">
+                    <h3 className="font-bold text-lg">ข้อเสนอระยะกลาง</h3>
+                    <p className="font-body text-sm">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
+                  </li>
+                  <li className="space-y-2">
+                    <h3 className="font-bold text-lg">ข้อเสนอระยะยาว</h3>
+                    <p className="font-body text-sm">ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ</p>
+                  </li>
+                </ul>
+                <a
+                  className="text-[#c7642a] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full"
+                  href="javascript:void(0)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <DownloadIcon className="w-6 h-6 fill-current mr-2" />
+                  <span>ดาวน์โหลดข้อสรุป</span>
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col col-span-1 max-w-sm space-y-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                <path
+                  fill="#36723b"
+                  d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
+                  transform="translate(-257.346 -9.572)"
+                />
+              </svg>
+              <p>การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย</p>
+              <div className="w-full border-t-2 border-white md:px-24" />
+              <div className="pt-6 space-y-6">
+                <ul className="flex flex-col space-y-4">
+                  <li className="space-y-2">
+                    <h3 className="font-bold text-lg">ข้อเสนอ 1</h3>
+                    <p className="font-body text-sm">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                  </li>
+                </ul>
+                <a
+                  className="text-[#36723b] text-sm inline-flex btn py-2 bg-white hover:text-white rounded-full"
+                  href="javascript:void(0)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <DownloadIcon className="w-6 h-6 fill-current mr-2" />
+                  <span>ดาวน์โหลดข้อสรุป</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <RelatedPolicy />
