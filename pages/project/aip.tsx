@@ -1,4 +1,7 @@
+import Timeline from '@/components/Project/AIP/Timeline'
+import TimelineHeader from '@/components/Project/AIP/TimelineHeader'
 import InterestProjects from '@/components/Project/InterestProjects'
+import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Image from 'next/image'
 import Circle from '/public/image/aip/circle.webp'
 import ElderlyHome from '/public/image/aip/elderly-home.svg'
@@ -196,7 +199,7 @@ const AipPage = () => {
       </section>
       <section className="relative h-full bg-[#DDA27F]">
         <div className="max-w-6xl mx-auto text-body">
-          <div className="w-full h-full max-w-4xl px-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
+          <div className="w-full h-full max-w-4xl px-6 pb-6 md:pb-12 mx-auto space-y-8 text-white md:px-24 bg-secondary">
             <div className="w-full border-t-2 border-white md:px-24" />
             <p className="text-base text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
             <div className="grid w-full grid-cols-1 gap-12 mt-6 md:grid-cols-2">
@@ -223,8 +226,13 @@ const AipPage = () => {
               </div>
             </div>
           </div>
+          <div className="w-full h-full flex justify-center">
+            <TimelineHeader />
+          </div>
+          <Timeline />
         </div>
       </section>
+      <RelatedPolicy />
       <InterestProjects />
     </main>
   )
