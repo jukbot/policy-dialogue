@@ -4144,9 +4144,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jotai@npm:^1.4.7":
-  version: 1.4.7
-  resolution: "jotai@npm:1.4.7"
+"jotai@npm:^1.4.8":
+  version: 1.4.8
+  resolution: "jotai@npm:1.4.8"
   peerDependencies:
     "@babel/core": "*"
     "@babel/template": "*"
@@ -4177,7 +4177,7 @@ __metadata:
       optional: true
     xstate:
       optional: true
-  checksum: 53f14518fd773f4058974e6af4d9f4ec8dd0652da3dd1c476286ea354319bedbf6347e6247c10643a436048fbc29bbf77f012ff105e675c13a98eddbb9ac7fcf
+  checksum: 98d1c6bcd69271478badc02fae351914c27dbe04b0bf588a65cd0b277f8bbdf82629f4efa62a2146f364a342d8ebe50bccd12f39debe738ff21a6737965122c4
   languageName: node
   linkType: hard
 
@@ -5352,7 +5352,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     firebase: ^9.6.1
     husky: ^7.0.4
-    jotai: ^1.4.7
+    jotai: ^1.4.8
     lint-staged: ^12.1.2
     next: 12.0.7
     postcss: 8.4.5
@@ -5362,10 +5362,10 @@ __metadata:
     react-countup: ^6.1.0
     react-dom: 17.0.2
     react-hot-toast: ^2.1.1
-    react-intersection-observer: ^8.33.0
+    react-intersection-observer: ^8.33.1
     react-use: ^17.3.1
     react-visibility-sensor: ^5.1.1
-    tailwindcss: ~3.0.5
+    tailwindcss: ~3.0.6
     tailwindcss-debug-screens: ^2.2.1
     twind: ^0.16.16
     type-fest: ^2.8.0
@@ -5417,6 +5417,16 @@ __metadata:
     cssesc: ^3.0.0
     util-deprecate: ^1.0.2
   checksum: 3602758798048bffbd6a97d6f009b32a993d6fd2cc70775bb59593e803d7fa8738822ecffb2fafc745edf7fad297dad53c30d2cfe78446a7d3f4a4a258cb15b2
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^6.0.7":
+  version: 6.0.7
+  resolution: "postcss-selector-parser@npm:6.0.7"
+  dependencies:
+    cssesc: ^3.0.0
+    util-deprecate: ^1.0.2
+  checksum: 661808ad629e3f289e0d237fbe9bb13766dadd2d548ec09ae86f68118f5d98be0f25bbaf5cd88486c5416e2eefaa9f73c59c2fc98dc370872fa51b250c7d1d9c
   languageName: node
   linkType: hard
 
@@ -5725,12 +5735,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:^8.33.0":
-  version: 8.33.0
-  resolution: "react-intersection-observer@npm:8.33.0"
+"react-intersection-observer@npm:^8.33.1":
+  version: 8.33.1
+  resolution: "react-intersection-observer@npm:8.33.1"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
-  checksum: 4426807a37a8d5b67a28bbbf325e4a015715dee11ecee6be7e1f2cea91cbda500875c334a8d5242aa236222a44ea95efa69a72bf6ed126c9e28d3114e4e6f91c
+  checksum: 5feb0df01dd64f1fa0b8300fb4fc12db95350c1ae2514f66f0652371f65e5501758a662746000dc2584d24dcce07139590e5375d6c9920a60b282af83468d0c4
   languageName: node
   linkType: hard
 
@@ -6650,9 +6660,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:~3.0.5":
-  version: 3.0.5
-  resolution: "tailwindcss@npm:3.0.5"
+"tailwindcss@npm:~3.0.6":
+  version: 3.0.6
+  resolution: "tailwindcss@npm:3.0.6"
   dependencies:
     arg: ^5.0.1
     chalk: ^4.1.2
@@ -6670,7 +6680,7 @@ __metadata:
     postcss-js: ^3.0.3
     postcss-load-config: ^3.1.0
     postcss-nested: 5.0.6
-    postcss-selector-parser: ^6.0.6
+    postcss-selector-parser: ^6.0.7
     postcss-value-parser: ^4.2.0
     quick-lru: ^5.1.1
     resolve: ^1.20.0
@@ -6681,7 +6691,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 8509923d71e83348a4f9871c545bc44eb2c8ffb2d8e78d7018bde964812d60c9ac2b3a43bd3a001ca15e20efe32c79cd5e378df7267d8b9d970a4b2e3f1b4022
+  checksum: 9b381caadb1d058fbfede02d87a3f3ce2d64de08fd1b13528b2bdc8aebb31d66af254355dbe96195cb5fb7769631803396494a452cb3b373b0e4f79a8fe1169a
   languageName: node
   linkType: hard
 
