@@ -401,10 +401,17 @@ const ArchivePage = () => {
                     <br /> RISE Impact
                   </p>
                 </div>
-                <button disabled className="btn-white">
+                <a
+                  className="btn-white"
+                  href="javascript:void(0)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/01_Policy_Dialogue_Guideline.pdf')}
+                >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
-                </button>
+                </a>
               </li>
               <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#36723b]">
                 <div className="space-y-1">
@@ -415,10 +422,17 @@ const ArchivePage = () => {
                     บ้าง เพื่อหาคำตอบ
                   </p>
                 </div>
-                <button disabled className="btn-white">
+                <a
+                  className="btn-white"
+                  href="javascript:void(0)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/02_Policy_Dialogue_Methods.pdf')}
+                >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
-                </button>
+                </a>
               </li>
               <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#daa13d]">
                 <div className="space-y-1">
@@ -450,10 +464,17 @@ const ArchivePage = () => {
                     เพื่อให้กระบวนการราบรื่น
                   </p>
                 </div>
-                <button disabled className="btn-white">
+                <a
+                  className="btn-white"
+                  href="javascript:void(0)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/04_Policy_Dialogue_Tips.pdf')}
+                >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
