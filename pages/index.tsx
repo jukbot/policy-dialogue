@@ -199,21 +199,23 @@ const Home: NextPage = () => {
             </div>
             <div className="absolute right-0 w-full h-full bg-fixed bg-right-bottom bg-no-repeat bg-contain opacity-75 mix-blend-screen bg-landing-circle-mobile sm:bg-landing-circle"></div>
 
-            <div className="relative space-y-8 flex flex-col items-center justify-between mt-[40rem] lg:mt-[32rem]">
+            <div className="relative space-y-8 flex flex-col items-center justify-between mt-[46rem] sm:mt-[60rem] lg:mt-[32rem]">
               <Link href="/process">
                 <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
               </Link>
               <p className="text-sm text-white font-body">*Adapted from Systemicdesigntoolkit.org</p>
             </div>
-            <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 my-8 bg-white sm:p-12 lg:mx-24 rounded-xl">
-              <div className="flex flex-col py-8 space-y-4 jutify-center">
-                <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
-                <p className="text-center sm:text-lg text-body font-body max-w-prose">
-                  มูลนิธิสถาบันวิจัยและพัฒนาผู้สูงอายุไทย (มส.ผส.) และ ไรซ์ อิมแพค ได้ร่วมกันออกแบบกระบวนการ พัฒนานโยบายเพื่อรองรับสังคมผู้สูงวัย โดยครอบคลุม 7
-                  ประเด็นหลัก
-                </p>
+            <div className="mx-auto max-w-7xl">
+              <div className="relative flex flex-col items-center justify-center h-full p-6 my-8 bg-white sm:p-12 mx-6 mx-auto rounded-xl">
+                <div className="flex flex-col py-8 space-y-4 jutify-center">
+                  <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
+                  <p className="text-center sm:text-lg text-body font-body max-w-prose">
+                    มูลนิธิสถาบันวิจัยและพัฒนาผู้สูงอายุไทย (มส.ผส.) และ ไรซ์ อิมแพค ได้ร่วมกันออกแบบกระบวนการ พัฒนานโยบายเพื่อรองรับสังคมผู้สูงวัย โดยครอบคลุม
+                    7 ประเด็นหลัก
+                  </p>
+                </div>
+                <PolicyContent />
               </div>
-              <PolicyContent />
             </div>
           </section>
           <section className="relative h-full py-24 bg-white" ref={ref}>
