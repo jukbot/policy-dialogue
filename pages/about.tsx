@@ -95,7 +95,7 @@ const AboutPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-secondary">
-          <div className="max-w-6xl px-6 py-24 mx-auto space-y-12 lg:px-12">
+          <div className="max-w-6xl px-6 py-24 mx-auto space-y-6 md:space-y-12 lg:px-12">
             <div className="space-y-2 text-white">
               <h2 className="text-4xl font-bold lg:text-6xl">ติดต่อเรา</h2>
               <p className="text-4xl font-body">Get in touch!</p>
@@ -103,7 +103,7 @@ const AboutPage = () => {
             <form onSubmit={(e) => handleFormSubmit(e)}>
               <div className="grid grid-cols-1 gap-y-6 gap-x-12 lg:grid-cols-2">
                 <div className="col-span-1 space-y-6">
-                  <div className="grid items-start grid-cols-3 gap-4">
+                  <div className="md:grid items-start grid-cols-3 gap-4">
                     <label htmlFor="fullname" className="label-input">
                       ชื่อ-สกุล
                     </label>
@@ -111,7 +111,7 @@ const AboutPage = () => {
                       <input type="text" name="full-name" id="fullname" placeholder="ชื่อ-สกุล" className="text-input" maxLength={60} />
                     </div>
                   </div>
-                  <div className="grid items-start grid-cols-3 gap-4">
+                  <div className="md:grid items-start grid-cols-3 gap-4">
                     <label htmlFor="organizename" className="label-input">
                       ชื่อองค์กร
                     </label>
@@ -119,7 +119,7 @@ const AboutPage = () => {
                       <input type="text" name="organization-name" id="organizename" placeholder="ชื่อองค์กรของคุณ" className="text-input" maxLength={60} />
                     </div>
                   </div>
-                  <div className="grid items-start grid-cols-3 gap-4">
+                  <div className="md:grid items-start grid-cols-3 gap-4">
                     <label htmlFor="organizetype" className="label-input">
                       ประเภทองค์กร *
                     </label>
@@ -150,7 +150,7 @@ const AboutPage = () => {
                       )}
                     </div>
                   </div>
-                  <div className="grid items-start grid-cols-3 gap-4">
+                  <div className="md:grid items-start grid-cols-3 gap-4">
                     <label htmlFor="email" className="label-input">
                       อีเมล *
                     </label>
@@ -161,8 +161,8 @@ const AboutPage = () => {
                   </div>
                 </div>
                 <div className="col-span-1">
-                  <div className="grid items-start grid-cols-3 gap-4">
-                    <label htmlFor="message" className="items-start col-span-1 label-input lg:justify-end lg:mr-6">
+                  <div className="md:grid items-start grid-cols-3 gap-4">
+                    <label htmlFor="message" className="items-start label-input lg:justify-end lg:mr-6">
                       ข้อความ
                     </label>
                     <div className="col-span-2 space-y-6">

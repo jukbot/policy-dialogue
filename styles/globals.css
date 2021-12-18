@@ -143,7 +143,7 @@
     @apply p-4 block w-full max-w-lg font-body placeholder-[#707070] bg-[#a8a8a8] focus:outline-none focus:ring-primary focus:border-primary;
   }
   .label-input {
-    @apply inline-flex items-center block h-full text-xl text-white;
+    @apply inline-flex items-center block h-full text-base sm:text-lg lg:text-xl text-white;
   }
   .required {
     @apply inline-block text-sm align-top text-primary;

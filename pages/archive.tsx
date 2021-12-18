@@ -96,7 +96,10 @@ const ArchivePage = () => {
 
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Intermediate Care</p>
-                    <p className="font-body">ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุ ที่อยู่ในช่วง 6 เดือนทองหลังพ้นภาวะวิกฤต</p>
+                    <p className="font-body">
+                      ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุ ที่อยู่ในช่วง
+                      <br /> 6 เดือนทองหลังพ้นภาวะวิกฤต
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto text-sm font-body">
