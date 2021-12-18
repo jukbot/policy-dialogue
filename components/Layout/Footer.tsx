@@ -1,5 +1,8 @@
 import { isModalOpenAtom } from '@/stores/global'
-import { ArrowSmRightIcon } from '@heroicons/react/outline'
+import { classNames } from '@/utils/formatClass'
+import { projectList } from '@/utils/projectIcon'
+import { Disclosure } from '@headlessui/react'
+import { ArrowSmRightIcon, ChevronDownIcon } from '@heroicons/react/outline'
 import { useAtom } from 'jotai'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -52,7 +55,37 @@ const Footer = (): JSX.Element => {
         </li>
         <li className="col-span-1">
           <ul className="flex flex-col space-y-4">
-            <li>
+            <li className="block md:hidden">
+              <Disclosure>
+                {({ open }) => (
+                  <>
+                    <Disclosure.Button className="flex items-center w-full text-white">
+                      <span>นโยบายเพื่อสังคมสูงวัย</span>
+                      <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-4 h-4 text-primary ml-2`} />
+                    </Disclosure.Button>
+                    <Disclosure.Panel className="py-2">
+                      <ul className="space-y-4">
+                        {projectList
+                          .sort((x, y) => Number(y.enabled) - Number(x.enabled))
+                          .map((project) => (
+                            <li key={project.id}>
+                              <Disclosure.Button
+                                key={project.id}
+                                as="a"
+                                href={project.enabled ? project.url : '#'}
+                                className={classNames(project.enabled ? 'text-link' : 'text-neutral-500', 'text-sm font-body flex')}
+                              >
+                                {project.description} <br /> ({project.title})
+                              </Disclosure.Button>
+                            </li>
+                          ))}
+                      </ul>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            </li>
+            <li className="hidden md:block">
               <Link href="/project">
                 <a className="text-link">นโยบายเพื่อสังคมสูงวัย</a>
               </Link>

@@ -1,5 +1,6 @@
 import Timeline from '@/components/Project/AIP/Timeline'
 import TimelineHeader from '@/components/Project/AIP/TimelineHeader'
+import TimelineMobile from '@/components/Project/AIP/TimelineMobile'
 import TimelineSummary from '@/components/Project/AIP/TimelineSummary'
 import InterestProjects from '@/components/Project/InterestProjects'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
@@ -29,12 +30,12 @@ const AipPage = () => {
       <main className="relative">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
           <div className="items-center justify-between lg:flex">
-            <div className="flex flex-col justify-start px-6 py-12 mt-0 lg:mt-12 space-y-4 text-center text-white item-center lg:item-start lg:text-left lg:ml-48">
-              <h1 className="text-2xl lg:text-4xl font-semibold leading-snug lg:text-5xl">
+            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:mt-12 item-center lg:item-start lg:text-left lg:ml-48">
+              <h1 className="text-2xl font-semibold leading-snug lg:text-4xl lg:text-5xl">
                 เตรียมพร้อมอย่างไร ?<br />
                 หากอยากอยู่บ้านในยามชรา
               </h1>
-              <h2 className="text-base lg:text-lg leading-snug sm:text-xl font-body">
+              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body">
                 แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place)
                 <br /> นโยบายเพื่อการเตรียมพร้อมด้านที่อยู่อาศัยและ
                 <br /> บริการทางสังคมสำหรับผู้สูงอายุ
@@ -44,9 +45,9 @@ const AipPage = () => {
           </div>
         </section>
 
-        <section className="relative h-full bg-[#FCF5EB]">
+        <section className="relative h-full bg-[#FCF5EB] pb-6 md:pb-0">
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
-            <div className="relative max-w-6xl p-12 mx-auto space-y-6 md:space-x-8 bg-secondary h-80">
+            <div className="relative max-w-6xl p-6 mx-auto space-y-6 md:p-12 md:space-x-8 bg-secondary h-80">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
                 <br />
@@ -54,15 +55,13 @@ const AipPage = () => {
                 <br />
                 การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
               </h2>
-              <p className="relative flex text-white leading-relaxed opacity-75 md:justify-center md:text-center font-body">
-                ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย
-                <br />
-                ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
+              <p className="relative flex leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
+                ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
               </p>
             </div>
           </section>
 
-          <div className="grid grid-cols-1 gap-6 pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 pt-64 md:pt-72 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
             </div>
@@ -101,7 +100,7 @@ const AipPage = () => {
 
           <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" className="h-full w-full" alt="expect-ressult-3" />
+              <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
             </div>
             <div className="relative flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
               <h3 className="text-2xl font-bold leading-snug">
@@ -199,56 +198,63 @@ const AipPage = () => {
                   เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
                 </p>
               </div>
-              <p className="text-base text-center font-body">
-                บ้านหรือที่อยู่อาศัยที่เหมาะสม | ชุดบริการที่จำเป็นเพื่ออาศัยในถิ่นที่อยู่เดิมอย่างมีคุณภาพชีวิตที่ดีได้ ในบริบทสังคมไทย |
-                สร้างความร่วมมือและบูรณาการระหว่างรัฐบาล องค์การปกครองส่วนท้องถิ่น ภาคเอกชน ชุมชน และภาคประชาสังคม ผ่านโมเดลการทำงานรูปแบบใหม่
+              <p className="flex flex-col flex-wrap text-sm text-center md:text-base font-body md:block">
+                <span>บ้านหรือที่อยู่อาศัยที่เหมาะสม</span> <span>|</span>{' '}
+                <span>ชุดบริการที่จำเป็นเพื่ออาศัยในถิ่นที่อยู่เดิมอย่างมีคุณภาพชีวิตที่ดีได้ ในบริบทสังคมไทย</span> <span>|</span>{' '}
+                <span>สร้างความร่วมมือและบูรณาการระหว่างรัฐบาล องค์การปกครองส่วนท้องถิ่น ภาคเอกชน ชุมชน และภาคประชาสังคม ผ่านโมเดลการทำงานรูปแบบใหม่</span>
               </p>
             </div>
           </div>
         </section>
         <section className="relative h-full bg-[#DDA27F]">
           <div className="max-w-6xl mx-auto text-body">
-            <div className="w-full h-full max-w-4xl px-6 pb-6 md:pb-12 mx-auto space-y-8 text-white md:px-24 bg-secondary">
+            <div className="w-full h-full max-w-4xl px-6 pb-6 mx-auto space-y-8 text-white md:pb-12 md:px-24 bg-secondary">
               <div className="w-full border-t-2 border-white md:px-24" />
-              <p className="text-base text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
+              <p className="text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
               <div className="grid w-full grid-cols-1 gap-12 mt-6 md:grid-cols-2">
                 <div className="flex flex-col col-span-1 space-y-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                     <path
                       fill="#c7642a"
                       d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
                       transform="translate(-257.346 -9.572)"
                     />
                   </svg>
-                  <p>การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อความต้องการของผู้สูงอายุในการใช้ชีวิตในถิ่นที่เดิม (Aging in Place) </p>
+                  <p className="font-body">การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อความต้องการของผู้สูงอายุในการใช้ชีวิตในถิ่นที่เดิม (Aging in Place) </p>
                 </div>
                 <div className="flex flex-col col-span-1 space-y-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                     <path
                       fill="#36723b"
                       d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
                       transform="translate(-257.346 -9.572)"
                     />
                   </svg>
-
-                  <p>การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย </p>
+                  <p className="font-body">
+                    การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย{' '}
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="w-full h-full flex justify-center">
+            <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>
-            <Timeline />
+            <div className="hidden md:block">
+              <Timeline />
+            </div>
+            <div className="block md:hidden">
+              <TimelineMobile />
+            </div>
           </div>
         </section>
         <section className="relative h-full bg-[#c7642a]">
           <div className="max-w-4xl mx-auto bg-[#2b2b2b] pb-12">
-            <div className="w-full h-full flex justify-center">
+            <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-12 md:gap-24 mt-6 md:grid-cols-2 px-24 text-white">
-              <div className="flex flex-col col-span-1 max-w-sm space-y-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
+            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-6 text-white md:gap-24 md:grid-cols-2 md:px-24">
+              <div className="flex flex-col max-w-sm col-span-1 space-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
                     fill="#c7642a"
                     d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
@@ -260,16 +266,16 @@ const AipPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="font-bold text-lg">ข้อเสนอระยะสั้น</h3>
-                      <p className="font-body text-sm">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
+                      <h3 className="text-lg font-bold">ข้อเสนอระยะสั้น</h3>
+                      <p className="text-sm font-body">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="font-bold text-lg">ข้อเสนอระยะกลาง</h3>
-                      <p className="font-body text-sm">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
+                      <h3 className="text-lg font-bold">ข้อเสนอระยะกลาง</h3>
+                      <p className="text-sm font-body">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="font-bold text-lg">ข้อเสนอระยะยาว</h3>
-                      <p className="font-body text-sm">
+                      <h3 className="text-lg font-bold">ข้อเสนอระยะยาว</h3>
+                      <p className="text-sm font-body">
                         ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ
                       </p>
                     </li>
@@ -280,14 +286,14 @@ const AipPage = () => {
                       target="_self"
                       rel="noopener noreferrer"
                     >
-                      <DownloadIcon className="w-5 h-5 fill-current mr-2" />
+                      <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col col-span-1 max-w-sm space-y-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8" viewBox="0 0 50 50">
+              <div className="flex flex-col max-w-sm col-span-1 space-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
                     fill="#36723b"
                     d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
@@ -299,13 +305,13 @@ const AipPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="font-bold text-lg">ข้อเสนอ 1</h3>
-                      <p className="font-body text-sm">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                      <h3 className="text-lg font-bold">ข้อเสนอ 1</h3>
+                      <p className="text-sm font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
                     <a className="text-[#36723b] text-sm inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
-                      <DownloadIcon className="w-5 h-5 fill-current mr-2" />
+                      <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
                   </Link>
@@ -315,38 +321,38 @@ const AipPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#F9EFE9]">
-          <div className="max-w-4xl mx-auto py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="col-span-1 flex flex-col space-y-6 text-body space-y-6">
+          <div className="max-w-4xl py-12 mx-auto">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+              <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="px-6 space-y-6">
-                  <h3 className="font-bold leading-relaxed text-3xl">
+                  <h3 className="text-3xl font-bold leading-relaxed">
                     สิ่งที่เกิดขึ้นจาก
                     <br />
                     กระบวนการ
                   </h3>
                   <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
                 </div>
-                <div className="md:absolute left-0 px-6 md:px-0 md:pt-48">
+                <div className="left-0 px-6 md:absolute md:px-0 md:pt-48">
                   <Image width={640} height={380} src={ProcessResult} />
                 </div>
               </div>
-              <div className="col-span-1 h-full px-6">
+              <div className="h-full col-span-1 px-6">
                 <ul className="space-y-12">
                   <li className="space-y-2">
-                    <h3 className="font-bold text-xl">ผู้เข้าร่วมแสดงความสนใจและอยาก ผลักดันต่อ</h3>
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมแสดงความสนใจและอยาก ผลักดันต่อ</h3>
                     <p className="font-body">
                       ตัวแทนหน่วยงานภาครัฐที่มาร่วม มีความเปิดกว้างต่อการรับแนวคิดใหม่ พยายามหาแนวทางในการพัฒนาบทบาทของหน่วยงานในการส่งเสริมงานด้านผู้สูงอายุ
                     </p>
                   </li>
                   <li className="space-y-2">
-                    <h3 className="font-bold text-xl">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
+                    <h3 className="text-xl font-bold">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
                     <p className="font-body">
                       ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
                       ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
                     </p>
                   </li>
                   <li className="space-y-2">
-                    <h3 className="font-bold text-xl">เกิดพื้นที่คลายข้อสงสัยระหว่างหน่วยงานส่วนกลางและท้องถิ่น</h3>
+                    <h3 className="text-xl font-bold">เกิดพื้นที่คลายข้อสงสัยระหว่างหน่วยงานส่วนกลางและท้องถิ่น</h3>
                     <p className="font-body">
                       เปิดพื้นที่ให้ อปท. ได้มีโอกาสพูดคุยโดยตรงกับตัวแทนจากหน่วยงานนโยบาย หลายท่านสะท้อนว่าเป็นประโยชน์
                       เนื่องจากที่ผ่านมาไม่ค่อยมีโอกาสได้สื่อสารโดยตรง กระบวนการนี้ทำให้ได้รับฟังความเห็นระหว่างกันและกัน
@@ -354,7 +360,7 @@ const AipPage = () => {
                     </p>
                   </li>
                   <li className="space-y-2">
-                    <h3 className="font-bold text-xl">ได้ประเด็นที่สมควรศึกษาวิจัยต่อเพื่อพัฒนานโยบาย</h3>
+                    <h3 className="text-xl font-bold">ได้ประเด็นที่สมควรศึกษาวิจัยต่อเพื่อพัฒนานโยบาย</h3>
                     <p className="font-body">ได้หัวข้อสิ่งที่น่าจะนำไปศึกษาเพิ่มเติมเพื่อช่วยกำหนด กรอบนโยบายต่อไปได้ เช่น การจัดการทรัพยากรในแต่ละพื้นที่</p>
                   </li>
                 </ul>
