@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: ['./components/**/*.{ts,tsx,mdx}', './pages/**/*.{ts,tsx,mdx}'],
+  safelist: ['bg-[#36723b]', 'bg-[#daa13d]', 'bg-[#3f36b7]', 'bg-[#c7642a]', 'bg-[#a8a8a8]', 'bg-[#6badcb]'],
   theme: {
     fontFamily: {
       sans: ['IBMPlexSansThai', 'sans-serif'],

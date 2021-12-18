@@ -8,21 +8,21 @@ const TimelineHeader = () => {
             transform="translate(-224 -776)"
             fill="#fff"
           />
-          <text transform="translate(440 90)" fontSize="2.5rem" fontFamily="IBMPlexSansThai,san-serif" fontWeight="600" fill="#c7642a">
+          <text transform="translate(440 90)" fontSize="2.5rem" fontFamily="IBMPlexSansThai,san-serif" fontWeight="600" fill="#3f36b7">
             <tspan x="-230.025" y="0">
               กระบวนการหาคำตอบ
             </tspan>
           </text>
-          <text transform="translate(120 130)" fontSize="1.5rem" fontFamily="IBMPlexSansThaiLooped,san-serif" fill="#c7642a">
+          <text transform="translate(120 130)" fontSize="1.5rem" fontFamily="IBMPlexSansThaiLooped,san-serif" fill="#3f36b7">
             <tspan x="75.238" y="28">
               RISE Impact{' '}
             </tspan>
             <tspan y="28">ได้จัดกระบวนการหารือ</tspan>
-            <tspan x="68.15" y="69">
-              เชิงนโยบาย ในประเด็นนี้ทั้งหมด 5 ครั้ง{' '}
+            <tspan x="68" y="69">
+              เชิงนโยบายในประเด็นนี้ทั้งหมด 3 ครั้ง
             </tspan>
             <tspan x="146.688" y="110">
-              รวมผู้เข้าร่วมกว่า 79 คน
+              รวมผู้เข้าร่วมกว่า 96 คน
             </tspan>
           </text>
         </g>

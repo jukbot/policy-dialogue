@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="542.5" viewBox="0 0 650 542.5">
+    <defs>
+        <style>
+            .cls-1,.cls-10,.cls-4,.cls-8{fill:none}.cls-1{stroke:#fff;stroke-width:2px;stroke-dasharray:5 5}.cls-2{fill:#fff;font-size:25px;font-family:IBMPlexSansThai,sans-serif;font-weight:600}.cls-3{fill:#daa13d}.cls-4,.cls-8{stroke:#d2a250;stroke-width:3px;stroke-dasharray:5 0}.cls-8{stroke:#6badcb}.cls-6{fill:#6badcb}.cls-9{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_1227" data-name="Group 1227" transform="translate(-637 -4652)">
+        <path id="Line_167" data-name="Line 167" class="cls-1" transform="translate(637 4921)" d="M0 0h199"/>
+        <path id="Line_168" data-name="Line 168" class="cls-1" transform="translate(637 4766)" d="M0 0h199"/>
+        <path id="Line_169" data-name="Line 169" class="cls-1" transform="translate(1074 5051)" d="M213 0H0"/>
+        <text id="_45_000_บาท" data-name="45,000 บาท" class="cls-2" transform="translate(637 4879)"><tspan x="0" y="28">45,000 บาท</tspan></text>
+        <text id="_340_000_บาท" data-name="340,000 บาท" class="cls-2" transform="translate(637 4725)"><tspan x="0" y="28">340,000 บาท</tspan></text>
+        <text id="_27_000_บาท" data-name="27,000 บาท" class="cls-2" transform="translate(1133 5008)"><tspan x="16" y="28">27,000 บาท</tspan></text>
+        <path id="Rectangle_803" data-name="Rectangle 803" class="cls-3" transform="translate(978 5051)" d="M0 0h96v142H0z"/>
+        <path id="Icon_ionic-md-home" data-name="Icon ionic-md-home" class="cls-3" d="M19.513 43.231v-12.91H29.2v12.91h9.84V23.865h6.294L24.354 4.5 3.375 23.865h6.294v19.366z" transform="translate(1002.004 4949.953)"/>
+        <g id="Group_859" data-name="Group 859" transform="translate(987.563 4935.281)">
+            <g id="Ellipse_527" data-name="Ellipse 527" class="cls-4" transform="translate(.437 -.281)">
+                <ellipse class="cls-9" cx="38.5" cy="39" rx="38.5" ry="39"/>
+                <ellipse class="cls-10" cx="38.5" cy="39" rx="37" ry="37.5"/>
+            </g>
+            <path id="Line_91" data-name="Line 91" class="cls-4" transform="translate(39.118 77.462)" d="M0 0v38.731"/>
+        </g>
+        <g id="Group_1226" data-name="Group 1226">
+            <g id="Rectangle_801" data-name="Rectangle 801" style="stroke-width:4px;stroke:#6badcb;fill:none">
+                <path class="cls-9" d="M0 0h96v427H0z" transform="translate(836 4766)"/>
+                <path class="cls-10" d="M2 2h92v423H2z" transform="translate(836 4766)"/>
+            </g>
+            <path id="Rectangle_802" data-name="Rectangle 802" class="cls-6" transform="translate(836 4921)" d="M0 0h96v272H0z"/>
+            <path id="Line_170" data-name="Line 170" transform="translate(733 5192)" style="stroke-width:5px;stroke:#fff;fill:none" d="M0 0h446"/>
+            <g id="Group_1225" data-name="Group 1225">
+                <g id="Group_858" data-name="Group 858" transform="translate(845.033 4651.771)">
+                    <g id="Ellipse_526" data-name="Ellipse 526" class="cls-8" transform="translate(-.032 .229)">
+                        <circle class="cls-9" cx="38.5" cy="38.5" r="38.5"/>
+                        <circle class="cls-10" cx="38.5" cy="38.5" r="37"/>
+                    </g>
+                    <path id="Line_90" data-name="Line 90" class="cls-8" transform="translate(39.118 77.013)" d="M0 0v38.731"/>
+                </g>
+                <g id="Group_860" data-name="Group 860" transform="translate(864.398 4671.137)">
+                    <path id="Rectangle_806" data-name="Rectangle 806" class="cls-6" transform="translate(12.602 -.137)" d="M0 0h14v39H0z"/>
+                    <path id="Rectangle_807" data-name="Rectangle 807" class="cls-6" transform="rotate(-90 12.733 13.13)" d="M0 0h13v39H0z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

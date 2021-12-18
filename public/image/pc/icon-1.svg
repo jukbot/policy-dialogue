@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="160" viewBox="0 0 180 160">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_1228" data-name="Group 1228" transform="translate(-304.001 -5996)">
+        <path id="Path_459" data-name="Path 459" d="M1752.236 1202.572c-17.466-15.525-45.458-18.066-73.922-9.247-28.465-8.819-56.457-6.278-73.923 9.247s-20.325 40.406-10.4 65.709c-9.922 25.3-7.063 50.184 10.4 65.709s45.458 18.067 73.923 9.247c28.465 8.82 56.457 6.279 73.922-9.247s20.325-40.407 10.4-65.709c9.925-25.303 7.064-50.181-10.4-65.709z" transform="translate(-1284.313 4807.719)" style="fill:#3f36b7"/>
+        <g id="Group_863" data-name="Group 863" transform="translate(-336.42 5694.908)">
+            <path id="Path_108" data-name="Path 108" class="cls-2" d="M754.28 338.011c-6.9-4.32-13.775 5.079-13.775 5.079s-6.876-9.4-13.774-5.079c-9.071 5.679-.339 21.276 13.774 31.7 14.114-10.424 22.844-26.022 13.775-31.7z" transform="translate(11.783)"/>
+            <g id="Group_89" data-name="Group 89" transform="translate(675.263 356.106)">
+                <path id="Path_109" data-name="Path 109" class="cls-2" d="M738.607 372.873v42.471h-56.422v-46.2" transform="translate(-673.556 -348.145)"/>
+                <path id="Path_110" data-name="Path 110" class="cls-2" d="m762.342 362.489 22.077 17.747h-39.654L710.014 352.3l-34.751 27.936h8.629" transform="translate(-675.263 -352.301)"/>
+                <path id="Line_16" data-name="Line 16" class="cls-2" transform="translate(34.751)" d="M0 0h28.995"/>
+                <path id="Path_111" data-name="Path 111" class="cls-2" d="M727.442 413.971h38.045v-39.263" transform="translate(-662.391 -346.773)"/>
+                <path id="Rectangle_178" data-name="Rectangle 178" class="cls-2" transform="translate(17.231 39.119)" d="M0 0h15.171v28.08H0z"/>
+                <path id="Rectangle_179" data-name="Rectangle 179" class="cls-2" transform="translate(38.502 39.119)" d="M0 0h17.674v12.043H0z"/>
+            </g>
+        </g>
+    </g>
+</svg>

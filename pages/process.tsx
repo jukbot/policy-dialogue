@@ -29,7 +29,7 @@ const ProcessPage = () => {
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative bg-[#242054] mx-auto max-w-6xl py-20 px-12 md:p-12 md:h-72 space-x-8">
               <span className="absolute top-6 md:left-24 text-white text-[96px] md:text-[180px] font-bold white-stoke align-top">“</span>
-              <p className="flex justify-center mt-6 text-center text-white font-body">กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn’t built in a day</p>
+              <p className="flex justify-center mt-6 text-center text-white font-body">กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn&apos;t built in a day</p>
               <h2 className="relative mt-6 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
                 กว่าจะเป็นรูปเป็นร่าง Policy Dialogue ผ่านการกลั่นกรองมากมาย
                 <br />
@@ -52,9 +52,9 @@ const ProcessPage = () => {
                 </p>
               </div>
               {selectedSection === 0 ? (
-                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
               ) : (
-                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
               )}
             </div>
           </section>
@@ -68,9 +68,9 @@ const ProcessPage = () => {
                 </p>
               </div>
               {selectedSection === 1 ? (
-                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
               ) : (
-                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="shrink-0 w-12 h-12 cursor-pointer text-primary hover:text-accent" />
+                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
               )}
             </div>
           </section>

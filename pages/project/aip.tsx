@@ -4,7 +4,9 @@ import TimelineMobile from '@/components/Project/AIP/TimelineMobile'
 import TimelineSummary from '@/components/Project/AIP/TimelineSummary'
 import InterestProjects from '@/components/Project/InterestProjects'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
+import { projectList } from '@/utils/projectIcon'
 import { DownloadIcon } from '@heroicons/react/solid'
+import { Policy, Project } from '@types'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -21,6 +23,23 @@ import Result1 from '/public/image/aip/testimonial-1.webp'
 import Result2 from '/public/image/aip/testimonial-2.webp'
 import Result3 from '/public/image/aip/testimonial-3.webp'
 
+const relatedPolicy: Policy[] = [
+  {
+    id: 0,
+    text: 'การเสริมพลังองค์กรปกครองส่วนท้องถิ่นเพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน และส่งเสริมการมีส่วนร่วมของประชาชน',
+    url: '/archive#aip-1',
+    color: 'bg-[#36723b]',
+  },
+  {
+    id: 1,
+    text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด',
+    url: '/archive#aip-2',
+    color: 'bg-[#daa13d]',
+  },
+]
+
+const interestProjects: Project[] = [projectList[5], projectList[4], projectList[3], projectList[6]]
+
 const AipPage = () => {
   return (
     <>
@@ -29,8 +48,8 @@ const AipPage = () => {
       </Head>
       <main className="relative">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
-          <div className="items-center justify-between lg:flex">
-            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:mt-12 item-center lg:item-start lg:text-left lg:ml-48">
+          <div className="items-center justify-between mb-6 lg:flex">
+            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
               <h1 className="text-2xl font-semibold leading-snug lg:text-4xl lg:text-5xl">
                 เตรียมพร้อมอย่างไร ?<br />
                 หากอยากอยู่บ้านในยามชรา
@@ -47,7 +66,7 @@ const AipPage = () => {
 
         <section className="relative h-full bg-[#FCF5EB] pb-6 md:pb-0">
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
-            <div className="relative max-w-6xl p-6 mx-auto space-y-6 md:p-12 md:space-x-8 bg-secondary h-80">
+            <div className="relative flex flex-col items-center max-w-6xl p-6 mx-auto space-y-6 md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
                 <br />
@@ -55,7 +74,7 @@ const AipPage = () => {
                 <br />
                 การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
               </h2>
-              <p className="relative flex leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
+              <p className="relative flex max-w-2xl leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
                 ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
               </p>
             </div>
@@ -162,7 +181,7 @@ const AipPage = () => {
           </div>
         </section>
 
-        <section className="relative h-full pt-6 bg-[#F9EFE9] sm:pt-12">
+        <section className="relative h-full pt-6 bg-[#F9EFE9] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
               แต่ยังมีความท้าทายที่ต้องฝ่าฝัน
@@ -325,7 +344,7 @@ const AipPage = () => {
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="px-6 space-y-6">
-                  <h3 className="text-3xl font-bold leading-relaxed">
+                  <h3 className="text-3xl font-bold leading-snug">
                     สิ่งที่เกิดขึ้นจาก
                     <br />
                     กระบวนการ
@@ -368,8 +387,8 @@ const AipPage = () => {
             </div>
           </div>
         </section>
-        <RelatedPolicy />
-        <InterestProjects />
+        <RelatedPolicy policies={relatedPolicy} />
+        <InterestProjects projects={interestProjects} />
       </main>
     </>
   )
