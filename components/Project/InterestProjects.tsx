@@ -22,7 +22,11 @@ const InterestProjects = ({ projects = [] }: Props) => {
             <li key={project.icon} className="relative w-64 overflow-visible shrink-0">
               <Link href={project.enabled ? project.url : 'javascript:void(0)'}>
                 <a>
-                  <div className={`shrink-0 ${project.color} flex p-6 items-center justify-center w-52 h-36 left-1/2 -translate-x-1/2 top-0  absolute`}>
+                  <div
+                    className={`shrink-0 ${project.color} ${
+                      project.enabled ? 'hover:brightness-90' : ''
+                    } flex p-6 items-center justify-center w-52 h-36 left-1/2 -translate-x-1/2 top-0  absolute`}
+                  >
                     {projectLargeIcon.get(project.icon)}
                   </div>
                 </a>
