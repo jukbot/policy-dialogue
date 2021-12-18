@@ -20,7 +20,7 @@ const RelatedPolicy = ({ policies = [] }: Props) => {
               <p className="mt-12 font-bold whitespace-normal">{policy.text}</p>
               <Link href={policy.url}>
                 <a target="_self">
-                  <ArrowRightIcon className="w-8 h-8 fill-current shrink-0 hover:text-primary" />
+                  <ArrowRightIcon className="w-8 h-8 fill-current shrink-0 hover:text-neutral-900" />
                 </a>
               </Link>
             </li>
