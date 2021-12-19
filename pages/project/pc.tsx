@@ -53,6 +53,8 @@ const PcPage = () => {
         title="ระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)"
         description="บั้นปลายชีวิตคนไทย อยู่อย่างไรจึงเป็นสุข ?"
         image={`${Meta.baseUrl}${HeroImage.src}`}
+        width={HeroImage.width}
+        height={HeroImage.height}
       />
       <main className="relative bg-[#EBEAF8]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#3f36b7]">

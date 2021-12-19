@@ -35,6 +35,8 @@ const Home: NextPage = () => {
         title="Policy Dialogue | กระบวนการหารือเชิงนโยบาย"
         description="นโยบายที่ดี สังคมต้องร่วมกันออกแบบ"
         image={`${Meta.baseUrl}${DesignPolicy.src}`}
+        width={DesignPolicy.width}
+        height={DesignPolicy.height}
       />
       <div className="relative">
         <main className="relative overflow-hidden">

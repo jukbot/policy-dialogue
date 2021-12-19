@@ -48,6 +48,8 @@ const AipPage = () => {
         title="การสูงวัยในถิ่นที่อยู่อาศัยเดิม อย่างมีสุขภาวะ (Aging in Place)"
         description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
         image={`${Meta.baseUrl}${HeroImage.src}`}
+        width={HeroImage.width}
+        height={HeroImage.height}
       />
       <main className="relative bg-[#F9EEE9]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">

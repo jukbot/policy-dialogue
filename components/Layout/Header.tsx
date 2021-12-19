@@ -7,6 +7,8 @@ interface Props {
   title?: string
   description?: string
   image?: string | null
+  width?: number
+  height?: number
 }
 
 const Header = (props: Props): JSX.Element => {
@@ -38,6 +40,8 @@ const Header = (props: Props): JSX.Element => {
       <meta property="og:url" content={`${baseUrl}${asPath}`} />
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={title} />
+      <meta property="og:image:width" content={String(props?.width) ?? '1200'} />
+      <meta property="og:image:height" content={String(props?.width) ?? '630'} />
       {/* Twitter card */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={`${baseUrl}${asPath}`} />

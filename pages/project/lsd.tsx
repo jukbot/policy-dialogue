@@ -56,6 +56,8 @@ const LsdPage = () => {
         title="การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด (Local Service Delivery Network)"
         description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
         image={`${Meta.baseUrl}${HeroImage.src}`}
+        width={HeroImage.width}
+        height={HeroImage.height}
       />
       <main className="relative bg-[#FBF5EB]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#daa13d]">
