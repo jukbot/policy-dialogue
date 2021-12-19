@@ -2,6 +2,7 @@ import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
 import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
 import Header from '@/components/Layout/Header'
+import { DownloadIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import Link from 'next/link'
 import Content from '/public/image/guideline/content.svg'
@@ -200,7 +201,10 @@ const GuidelinePage = () => {
             </div>
             <div className="flex items-end justify-center">
               <Link href="/archive#practical-guidelines">
-                <a className="w-1/2 btn">ดาวน์โหลดเอกสาร</a>
+                <a className="inline-flex btn" target="_self" rel="noopener noreferrer">
+                  <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
+                  <span>ดาวน์โหลดเอกสาร</span>
+                </a>
               </Link>
             </div>
           </div>
@@ -250,7 +254,10 @@ const GuidelinePage = () => {
             </div>
             <div className="flex items-end justify-center">
               <Link href="/archive#practical-guidelines">
-                <a className="btn">ดาวน์โหลดคู่มือฉบับเต็ม</a>
+                <a className="inline-flex btn" target="_self" rel="noopener noreferrer">
+                  <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
+                  <span>ดาวน์โหลดคู่มือฉบับเต็ม</span>
+                </a>
               </Link>
             </div>
           </div>
