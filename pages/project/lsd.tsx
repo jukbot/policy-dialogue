@@ -156,7 +156,9 @@ const LsdPage = () => {
             </p>
             <p className="mt-4 text-xs text-center font-body max-w-prose">
               *อ้างอิงงบประมาณในการสร้างบ้านพักคนชราจากงบประมาณในการก่อสร้างบ้านพักคนชราบึงสะแกงาม จำนวน 305 ล้านบาท แหล่งที่มา
-              https://www.prachachat.net/property/news-596824
+              <a href="https://www.prachachat.net/property/news-596824" target="_blank" rel="noopener noreferrer">
+                https://www.prachachat.net/property/news-596824
+              </a>
             </p>
           </div>
         </section>
