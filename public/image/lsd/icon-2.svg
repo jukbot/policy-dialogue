@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178.863" height="160.898" viewBox="0 0 178.863 160.898">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_1238" data-name="Group 1238" transform="translate(-875.07 -6072)">
+        <path id="Path_479" data-name="Path 479" d="M311.337 657.018a16.367 16.367 0 0 1-14.174-24.55 22.357 22.357 0 0 0-8.183-30.542 22.358 22.358 0 0 0-30.542 8.184 16.367 16.367 0 0 1-28.348 0 22.357 22.357 0 0 0-30.541-8.184 22.357 22.357 0 0 0-8.183 30.542 16.367 16.367 0 0 1-14.174 24.55 22.358 22.358 0 0 0-22.358 22.358 22.358 22.358 0 0 0 22.358 22.358 16.367 16.367 0 0 1 14.174 24.55 22.358 22.358 0 0 0 8.183 30.542 22.357 22.357 0 0 0 30.541-8.184 16.367 16.367 0 0 1 28.348 0 22.358 22.358 0 0 0 30.542 8.184 22.358 22.358 0 0 0 8.183-30.542 16.367 16.367 0 0 1 14.174-24.55 22.358 22.358 0 0 0 22.357-22.358 22.358 22.358 0 0 0-22.357-22.358z" transform="translate(720.238 5473.073)" style="fill:#daa13d"/>
+        <g id="Group_507" data-name="Group 507" transform="translate(653.556 5861.092)">
+            <g id="Group_506" data-name="Group 506" transform="translate(285.637 257.821)">
+                <path id="Path_356" data-name="Path 356" class="cls-2" d="m303.554 313.95-9.563 2.143a10.694 10.694 0 0 0-8.354 10.434v15.167h50.616v-15.167a10.693 10.693 0 0 0-8.354-10.434l-9.565-2.144" transform="translate(-285.637 -277.155)"/>
+                <path id="Path_357" data-name="Path 357" class="cls-2" d="M312.67 310.227v.735a7.586 7.586 0 0 0 7.587 7.587h0a7.586 7.586 0 0 0 7.587-7.587v-.735" transform="translate(-294.949 -275.873)"/>
+                <path id="Path_358" data-name="Path 358" class="cls-2" d="M303.885 285.831v5.017a13.346 13.346 0 0 0 13.345 13.346h0a13.346 13.346 0 0 0 13.345-13.346v-5.017" transform="translate(-291.923 -267.469)"/>
+                <path id="Path_359" data-name="Path 359" class="cls-2" d="M303.885 276.183v-5.016a13.345 13.345 0 0 1 13.345-13.345h0a13.345 13.345 0 0 1 13.345 13.345v5.016c-15.48-6.597-26.69 0-26.69 0z" transform="translate(-291.923 -257.821)"/>
+                <path id="Path_360" data-name="Path 360" class="cls-2" d="M310.977 298.036v6.3a13.29 13.29 0 0 0 8.7 3.227h0a13.29 13.29 0 0 0 8.7-3.227v-6.3c-3.077-3.074-14.667-3.382-17.4 0z" transform="translate(-294.366 -270.839)"/>
+                <path id="Line_143" data-name="Line 143" class="cls-2" transform="translate(34.005 23.379)" d="M0 3.819 4.649 0"/>
+                <path id="Line_144" data-name="Line 144" class="cls-2" transform="translate(11.963 23.379)" d="M4.649 3.819 0 0"/>
+            </g>
+        </g>
+    </g>
+</svg>

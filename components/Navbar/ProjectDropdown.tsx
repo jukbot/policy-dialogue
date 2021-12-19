@@ -34,7 +34,7 @@ const ProjectDropDown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-32 shadow">
+              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-32 shadow-xl shadow-gray-900">
                 <div className="bg-[#474747]">
                   <div className="grid p-6 mx-auto mt-6 overflow-hidden gap-y-2 lg:grid-cols-7 max-w-7xl">
                     {projectDropdown.map((item) => (
@@ -43,9 +43,9 @@ const ProjectDropDown = () => {
                           onClick={() => close()}
                           className={`${
                             item.enabled ? (pathname === item.url ? 'text-primary' : 'text-link') : 'text-white opacity-50'
-                          } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 space-y-2 transition duration-150 ease-in-out`}
+                          } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 shrink-0 space-y-2 transition`}
                         >
-                          <div className="inline-flex shrink-0">{projectIcon.get(item.icon)}</div>
+                          <div className="inline-flex">{projectIcon.get(item.icon)}</div>
                           <div className="flex flex-col flex-1 text-sm whitespace-normal font-body">
                             <p>{item.description}</p>
                             <p className="font-bold">({item.title})</p>
