@@ -159,7 +159,7 @@ const Footer = (): JSX.Element => {
         </li>
       </ul>
       <div className="py-4 text-white border-t md:pt-6 border-slate-200/75 font-body">
-        <p className="pb-4 text-sm">Copyright &copy; {new Date().getFullYear()} Rise Impact. All rights reserved.</p>
+        <p className="pb-4 text-sm">Copyright &copy; {new Date().getFullYear()} RISE Impact. All rights reserved.</p>
       </div>
     </footer>
   )
