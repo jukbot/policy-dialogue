@@ -1,7 +1,7 @@
+import Header from '@/components/Layout/Header'
 import Contributor from '@/data/contributors.json'
 import Team from '@/data/team.json'
 import { useForm, ValidationError } from '@formspree/react'
-import Head from 'next/head'
 import Image from 'next/image'
 import { FormEvent, useCallback, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
@@ -26,9 +26,10 @@ const AboutPage = () => {
 
   return (
     <>
-      <Head>
-        <title>เกี่ยวกับเรา</title>
-      </Head>
+      <Header
+        title="เกี่ยวกับเรา"
+        description="พวกเราเป็นองค์กรเล็กที่ไม่ขึ้นกับใคร และมองว่าองค์กร ของเราจะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ โดยมุ่งใช้ความเป็นองค์กรที่ยืดหยุ่นนี้ เชื่อมช่องว่างทั้งหลาย ในระบบนิเวศของนวัตกรรมทางสังคม เพื่อสร้างผลกระทบเชิงบวกให้มากขึ้นกว่าเดิม"
+      />
       <main className="relative">
         <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
         <section className="relative h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat grid items-center bg-about-pattern-mobile sm:bg-about-pattern">
@@ -47,7 +48,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div className="relative col-span-1 px-6 sm:px-12">
-              <p className="lg:text-lg max-w-prose leading-relaxed font-body">
+              <p className="leading-relaxed lg:text-lg max-w-prose font-body">
                 พวกเราเป็นองค์กรเล็กที่ไม่ขึ้นกับใคร และมองว่าองค์กร
                 <br /> ของเราจะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ
                 <br /> โดยมุ่งใช้ความเป็นองค์กรที่ยืดหยุ่นนี้ เชื่อมช่องว่างทั้งหลาย ในระบบนิเวศของนวัตกรรมทางสังคม
@@ -103,7 +104,7 @@ const AboutPage = () => {
             <form onSubmit={(e) => handleFormSubmit(e)}>
               <div className="grid grid-cols-1 gap-y-6 gap-x-12 lg:grid-cols-2">
                 <div className="col-span-1 space-y-6">
-                  <div className="md:grid items-start grid-cols-3 gap-4">
+                  <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="fullname" className="label-input">
                       ชื่อ-สกุล
                     </label>
@@ -111,7 +112,7 @@ const AboutPage = () => {
                       <input type="text" name="full-name" id="fullname" placeholder="ชื่อ-สกุล" className="text-input" maxLength={60} />
                     </div>
                   </div>
-                  <div className="md:grid items-start grid-cols-3 gap-4">
+                  <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="organizename" className="label-input">
                       ชื่อองค์กร
                     </label>
@@ -119,7 +120,7 @@ const AboutPage = () => {
                       <input type="text" name="organization-name" id="organizename" placeholder="ชื่อองค์กรของคุณ" className="text-input" maxLength={60} />
                     </div>
                   </div>
-                  <div className="md:grid items-start grid-cols-3 gap-4">
+                  <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="organizetype" className="label-input">
                       ประเภทองค์กร *
                     </label>
@@ -150,7 +151,7 @@ const AboutPage = () => {
                       )}
                     </div>
                   </div>
-                  <div className="md:grid items-start grid-cols-3 gap-4">
+                  <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="email" className="label-input">
                       อีเมล *
                     </label>
@@ -161,7 +162,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 <div className="col-span-1">
-                  <div className="md:grid items-start grid-cols-3 gap-4">
+                  <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="message" className="items-start label-input lg:justify-end lg:mr-6">
                       ข้อความ
                     </label>

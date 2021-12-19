@@ -21,17 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     })
   }, [])
 
-  // useEffect(() => {
-  //   const handleRouteChange = (url: string) => {
-  //     // Log beacon view to Google Analytics
-  //     pageView(url)
-  //   }
-  //   events.on('routeChangeComplete', handleRouteChange)
-  //   return () => {
-  //     events.off('routeChangeComplete', handleRouteChange)
-  //   }
-  // }, [events])
-
   return (
     <>
       <Head>

@@ -1,8 +1,8 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import Header from '@/components/Layout/Header'
 import PolicyValue from '@/components/Value/PolicyValue'
 import SystemValue from '@/components/Value/SystemValue'
 import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -14,16 +14,14 @@ const ValuePage = () => {
   const [selectedSection, setSelectedSection] = useState<number>(0)
   return (
     <>
-      <Head>
-        <title>คุณค่าของกระบวนการ</title>
-      </Head>
+      <Header title="คุณค่าของกระบวนการ" description="สิ่งที่เราเชื่อและประโยชน์ของ Policy Dialogue" />
       <main className="relative">
         <section className="relative grid h-[50vh] lg:h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
           <div className="flex flex-col items-center justify-center py-12 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-5xl">คุณค่าของกระบวนการ</h1>
             <div className="space-y-1">
-              <h2 className="text-xl lg:text-2xl font-body">สิ่งที่เราเชื่อและประโยชน์ของ </h2>
-              <h2 className="text-xl lg:text-2xl font-body">‘policy dialogue’</h2>
+              <h2 className="text-xl lg:text-2xl font-body">สิ่งที่เราเชื่อและประโยชน์ของ</h2>
+              <h2 className="text-xl lg:text-2xl font-body">&lsquo;Policy Dialogue&rsquo;</h2>
             </div>
           </div>
         </section>

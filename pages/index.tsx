@@ -1,7 +1,8 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
 import PolicyContent from '@/components/Landing/PolicyContent'
+import Header from '@/components/Layout/Header'
+import Meta from '@/data/meta.json'
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
@@ -30,9 +31,11 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Policy Dialogue | กระบวนการหารือเชิงนโยบาย</title>
-      </Head>
+      <Header
+        title="Policy Dialogue | กระบวนการหารือเชิงนโยบาย"
+        description="นโยบายที่ดี สังคมต้องร่วมกันออกแบบ"
+        image={`${Meta.baseUrl}${DesignPolicy.src}`}
+      />
       <div className="relative">
         <main className="relative overflow-hidden">
           <div className="absolute top-0 right-0 w-full h-screen bg-fixed bg-no-repeat bg-contain sm:bg-right sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>

@@ -1,9 +1,9 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import Header from '@/components/Layout/Header'
 import { isModalOpenAtom } from '@/stores/global'
 import { downloadContent } from '@/utils/userAnalytics'
 import { ArrowCircleDownIcon } from '@heroicons/react/solid'
 import { useAtom } from 'jotai'
-import Head from 'next/head'
 import Link from 'next/link'
 import { MouseEvent, useCallback } from 'react'
 
@@ -25,9 +25,7 @@ const ArchivePage = () => {
 
   return (
     <>
-      <Head>
-        <title>คลังข้อมูล</title>
-      </Head>
+      <Header title="คลังข้อมูล" description="คลังข้อมูลและเอกสารดาวน์โหลด" />
       <main className="relative">
         <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain mix-blend-screen bg-archive-hero-shape" />
         <section className="relative grid h-[50vh] lg:h-[75vh] ≈ bg-cover bg-no-repeat items-center bg-archive-pattern-mobile sm:bg-archive-pattern">

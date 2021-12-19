@@ -1,8 +1,8 @@
 import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
+import Header from '@/components/Layout/Header'
 import PostProcess from '@/components/Process/PostProgress'
 import PreProcess from '@/components/Process/PreProcess'
 import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
-import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -10,16 +10,14 @@ const ProcessPage = () => {
   const [selectedSection, setSelectedSection] = useState<number>(0)
   return (
     <>
-      <Head>
-        <title>การออกแบบนโยบายอย่างมีส่วนร่วม</title>
-      </Head>
+      <Header title="การออกแบบนโยบายอย่างมีส่วนร่วม" description="ก่อนจะถึงจุดหมาย ระหว่างทาง Policy Dialogue ใช้วิธีการอะไรบ้าง เพื่อหาคำตอบ" />
       <main className="relative">
         <section className="relative grid h-[50vh] lg:h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
           <div className="flex flex-col items-center justify-center py-12 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-5xl">กระบวนการ</h1>
             <div className="space-y-1">
               <h2 className="text-xl lg:text-2xl font-body">ก่อนจะถึงจุดหมาย</h2>
-              <h2 className="text-xl lg:text-2xl font-body">ระหว่างทาง Policy Dialogue </h2>
+              <h2 className="text-xl lg:text-2xl font-body">ระหว่างทาง Policy Dialogue</h2>
               <h2 className="text-xl lg:text-2xl font-body">ใช้วิธีการอะไรบ้าง เพื่อหาคำตอบ</h2>
             </div>
           </div>
