@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/process</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/guideline</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/value</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/archive</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/about</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/project/aip</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/project/pc</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://policy-dialogue.riseimpact.co/project/lsd</loc>
+  <lastmod>2021-12-19T15:19:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

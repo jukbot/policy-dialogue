@@ -15,6 +15,7 @@ const firebaseConfig = {
   storageBucket: 'policy-dialogue.appspot.com',
   messagingSenderId: '104941627354',
   appId: '1:104941627354:web:b5f44ebdb9ee927b34c2e3',
+  measurementId: 'G-8CN2SRSQNQ',
 }
 
 if (typeof window !== 'undefined') {

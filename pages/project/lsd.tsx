@@ -188,28 +188,40 @@ const LsdPage = () => {
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
                 <p className="text-sm sm:text-base font-body">
-                  ขาดการบูรณาการ ระหว่างบริการทางสุขภาพและสังคม ทั้งในด้านการวางแผน การส่งต่อทรัพยากรและข้อมูล การกำหนดมาตรฐาน และตรวจสอบคุณภาพ
+                  การนำรูปแบบการจัดการที่มีอยู่ไปทำซ้ำหรือขยายผลในแต่ละพื้นที่ยังมีข้อจำกัด เนื่องจากบริบทที่แตกต่าง
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">อุปสรรคด้านข้อกฎหมายที่เกี่ยวข้องกับองค์การปกครองส่วนท้องถิ่น ทั้งอำนาจหน้าที่ และ งบประมาณ</p>
+                <p className="text-sm sm:text-base font-body">
+                  ในปัจจุบัน พยาบาลและนักกายภาพบำบัดมักต้องทำหน้าที่ประสานการดูแลไปด้วย ทำให้มีภาระงานหนักเกินควร
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับ ผู้สูงอายุ</p>
+                <p className="text-sm sm:text-base font-body">
+                  ขาดการบูรณาการการทำงานระดับหน่วยงานในพื้นที่ ทั้งโรงพยาบาลชุมชน โรงพยาบาลส่งเสริมสุขภาพตำบล องค์กรปกครองส่วนท้องถิ่น
+                  และสำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัด
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+                <p className="text-sm sm:text-base font-body">
+                  ขาดระบบขนส่งสาธารณะและโครงสร้างพื้นฐานที่เป็นมิตรกับผู้สูงอายุ หรือผู้ที่ต้องใช้กายอุปกรณ์
+                  ทำให้เข้ารับบริการสุขภาพและเข้าร่วมกิจกรรมทางสังคมได้ยากลำบาก
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon5} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+                <p className="text-sm sm:text-base font-body">
+                  ระบบการส่งต่อคนไข้ยังเน้นเป็นรายครั้งและดูแลเฉพาะโรค ทำให้หน่วยงานในพื้นที่ที่นอกเหนือจากโรงพยาบาลชุมชนไม่ได้รับข้อมูลคนไข้อย่างทั่วถึง
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon6} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+                <p className="text-sm sm:text-base font-body">
+                  ภาครัฐขาดระบบการช่วยเหลือดูแลผู้สูงอายุชั่วคราว (respite care) รวมถึงระบบที่สามารถให้ความช่วยเหลือและคำปรึกษาแก่ญาติที่เป็นผู้ดูแลได้
+                </p>
               </div>
             </div>
           </div>

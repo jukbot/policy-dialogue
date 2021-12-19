@@ -1046,6 +1046,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/gtag.js@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "@types/gtag.js@npm:0.0.8"
+  checksum: fecb1d772a0cdbf8573741ad4f8932a418bf44c3d38dec01221504e35658040fb82d6c7916577bb2cd5f3eff4a30642bda81fc35847443101eda05cf58107199
+  languageName: node
+  linkType: hard
+
 "@types/js-cookie@npm:^2.2.6":
   version: 2.2.7
   resolution: "@types/js-cookie@npm:2.2.7"
@@ -5340,6 +5347,7 @@ __metadata:
     "@tailwindcss/forms": 0.4.0
     "@tailwindcss/line-clamp": 0.3.0
     "@tailwindcss/typography": 0.5.0
+    "@types/gtag.js": ^0.0.8
     "@types/prettier": ^2
     "@types/react": 17.0.37
     "@types/react-visibility-sensor": ^5

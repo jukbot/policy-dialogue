@@ -1,5 +1,5 @@
 import { analytics } from '@/libs/firebase/firebaseClient'
-import { logEvent } from '@firebase/analytics'
+import { logEvent, isSupported } from '@firebase/analytics'
 import { getDownloadFileUrl } from './downloadUrl'
 
 export const trackUserDownload = (path: string) => {
@@ -12,8 +12,11 @@ export const trackUserDownload = (path: string) => {
   })
 }
 
-export const logUserEvent = (eventName: string, data?: any) => {
-  logEvent(analytics, eventName, data)
+export const logUserEvent = async (eventName: string, data?: any) => {
+  const isBrowserSupported = await isSupported()
+  if (isBrowserSupported) {
+    logEvent(analytics, eventName, data)
+  }
 }
 
 export const downloadContent = async (fileName: string) => {

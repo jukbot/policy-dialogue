@@ -41,6 +41,7 @@
     "@tailwindcss/forms": "0.4.0",
     "@tailwindcss/line-clamp": "0.3.0",
     "@tailwindcss/typography": "0.5.0",
+    "@types/gtag.js": "^0.0.8",
     "@types/prettier": "^2",
     "@types/react": "17.0.37",
     "@types/react-visibility-sensor": "^5",
