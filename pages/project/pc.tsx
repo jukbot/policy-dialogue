@@ -1,13 +1,14 @@
+import Header from '@/components/Layout/Header'
 import InterestProjects from '@/components/Project/InterestProjects'
 import Timeline from '@/components/Project/PC/Timeline'
 import TimelineHeader from '@/components/Project/PC/TimelineHeader'
 import TimelineMobile from '@/components/Project/PC/TimelineMobile'
 import TimelineSummary from '@/components/Project/PC/TimelineSummary'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
+import Meta from '@/data/meta.json'
 import { projectList } from '@/utils/projectIcon'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Chart from '/public/image/pc/chart.svg'
@@ -48,9 +49,11 @@ const interestProjects: Project[] = [projectList[5], projectList[4], projectList
 const PcPage = () => {
   return (
     <>
-      <Head>
-        <title>นโยบายระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)</title>
-      </Head>
+      <Header
+        title="ระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)"
+        description="บั้นปลายชีวิตคนไทย อยู่อย่างไรจึงเป็นสุข ?"
+        image={`${Meta.baseUrl}${HeroImage.src}`}
+      />
       <main className="relative bg-[#EBEAF8]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#3f36b7]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
@@ -68,7 +71,7 @@ const PcPage = () => {
                 ที่ต้องชวนคุย
               </h2>
             </div>
-            <Image src={HeroImage} width={800} height={480} className="w-full" alt="cover image" />
+            <Image src={HeroImage} width={800} height={480} priority className="w-full" alt="cover image" />
           </div>
         </section>
 
@@ -127,7 +130,7 @@ const PcPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
               <p className="leading-relaxed font-body">
                 การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของ
@@ -164,7 +167,7 @@ const PcPage = () => {
             <Image src={Circle} width={250} height={250} alt="circle image" />
           </div>
           <div className="flex flex-col items-center justify-center pt-24 space-y-6 text-white">
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center">
               <Image src={Chart} width={450} height={450} alt="chart" />
             </div>
             <div className="flex flex-col items-center space-y-8">

@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html className="notranslate">
         <Head>
           <meta charSet="utf8" />
-          <meta name="description" content="นโยบายที่ดี สังคมต้องร่วมกันออกแบบ" />
+          <meta name="fragment" content="!" />
           <meta name="google-site-verification" content="CP2afkl7ksSSL_bXL2bHBcnsI4cVSw6JJ5fFR6l_phA" />
           <link rel="icon" type="image/svg+xml" href="/image/favicon/favicon.svg" />
           <link rel="alternate icon" type="image/png" href="/image/favicon/favicon.png" />

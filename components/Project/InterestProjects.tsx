@@ -20,7 +20,7 @@ const InterestProjects = ({ projects = [] }: Props) => {
         <ul className="flex w-full space-x-6 overflow-x-auto xl:justify-center flex-nowrap">
           {projects.map((project) => (
             <li key={project.icon} className="relative w-64 overflow-visible shrink-0">
-              <Link href={project.enabled ? project.url : 'javascript:void(0)'}>
+              <Link href={project.enabled ? project.url : '#'}>
                 <a>
                   <div
                     className={`shrink-0 ${project.color} ${

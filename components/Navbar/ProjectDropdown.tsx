@@ -38,7 +38,7 @@ const ProjectDropDown = () => {
                 <div className="bg-[#474747]">
                   <div className="grid p-6 mx-auto mt-6 overflow-hidden gap-y-2 lg:grid-cols-7 max-w-7xl">
                     {projectDropdown.map((item) => (
-                      <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : 'javascript:void(0)'}>
+                      <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
                         <a
                           onClick={() => close()}
                           className={`${

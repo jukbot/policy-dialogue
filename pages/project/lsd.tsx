@@ -1,22 +1,25 @@
-import Timeline from '@/components/Project/AIP/Timeline'
-import TimelineHeader from '@/components/Project/AIP/TimelineHeader'
-import TimelineMobile from '@/components/Project/AIP/TimelineMobile'
-import TimelineSummary from '@/components/Project/AIP/TimelineSummary'
+import Header from '@/components/Layout/Header'
 import InterestProjects from '@/components/Project/InterestProjects'
+import Timeline from '@/components/Project/LSD/Timeline'
+import TimelineHeader from '@/components/Project/LSD/TimelineHeader'
+import TimelineMobile from '@/components/Project/LSD/TimelineMobile'
+import TimelineSummary from '@/components/Project/LSD/TimelineSummary'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
+import Meta from '@/data/meta.json'
 import { projectList } from '@/utils/projectIcon'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Icon1 from '/public/image/aip/icon-1.svg'
-import Icon2 from '/public/image/aip/icon-2.svg'
-import Icon3 from '/public/image/aip/icon-3.svg'
-import Icon4 from '/public/image/aip/icon-4.svg'
 import Chart from '/public/image/lsd/chart.svg'
 import Circle from '/public/image/lsd/circle.webp'
 import HeroImage from '/public/image/lsd/hero-image.webp'
+import Icon1 from '/public/image/lsd/icon-1.svg'
+import Icon2 from '/public/image/lsd/icon-2.svg'
+import Icon3 from '/public/image/lsd/icon-3.svg'
+import Icon4 from '/public/image/lsd/icon-4.svg'
+import Icon5 from '/public/image/lsd/icon-5.svg'
+import Icon6 from '/public/image/lsd/icon-6.svg'
 import ProcessResult from '/public/image/lsd/process-result.webp'
 import Result1 from '/public/image/lsd/testimonial-1.webp'
 import Result2 from '/public/image/lsd/testimonial-2.webp'
@@ -48,24 +51,27 @@ const interestProjects: Project[] = [projectList[5], projectList[4], projectList
 const LsdPage = () => {
   return (
     <>
-      <Head>
-        <title>แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place)</title>
-      </Head>
+      <Header
+        title="การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด (Local Service Delivery Network)"
+        description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
+        image={`${Meta.baseUrl}${HeroImage.src}`}
+      />
       <main className="relative">
-        <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
+        <section className="relative h-full h-[90vh] transition grid items-center bg-[#daa13d]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
             <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
-              <h1 className="text-2xl font-semibold leading-snug lg:text-4xl lg:text-5xl">
-                เตรียมพร้อมอย่างไร ?<br />
-                หากอยากอยู่บ้านในยามชรา
+              <h1 className="text-2xl font-semibold leading-relaxed lg:text-4xl lg:text-5xl">
+                ระบบการดูแลผู้สูงอายุ
+                <br />
+                แบบใดที่คนไทยต้องการ?
               </h1>
               <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body">
-                แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place)
-                <br /> นโยบายเพื่อการเตรียมพร้อมด้านที่อยู่อาศัยและ
-                <br /> บริการทางสังคมสำหรับผู้สูงอายุ
+                การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด
+                <br /> (Local Service Delivery Network)
+                <br /> นโยบายเพื่อผู้สูงอายุที่ต้องจับเข่าคุย
               </h2>
             </div>
-            <Image src={HeroImage} width={800} height={480} className="w-full" alt="cover image" />
+            <Image src={HeroImage} width={800} height={480} priority className="w-full" alt="cover image" />
           </div>
         </section>
 
@@ -73,14 +79,14 @@ const LsdPage = () => {
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
-                ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
+                ปัจจุบัน ยังมีผู้สูงอายุ
                 <br />
-                สังคมผู้สูงวัยที่โดดเด่นด้านสุขภาพ แต่ยังขาด
+                ที่เข้าไม่ถึงการรักษาหรือตกหล่น
                 <br />
-                การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
+                จากบริการสุขภาพที่ควรได้รับ
               </h2>
               <p className="relative flex max-w-2xl leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
-                ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
+                ส่งผลต่อสุขภาพกายใจของผู้สูงอายุและคนในครอบครัว ทั้งยังเสียโอกาสทางเศรษฐกิจเมื่อผู้สูงอายุไม่สามารถดูแลตนเองได้
               </p>
             </div>
           </section>
@@ -90,16 +96,15 @@ const LsdPage = () => {
               <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
-                คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน
-                <br />
-                หรือที่อยู่อาศัยเดิมได้นานที่สุดเท่าที่ต้องการ
-                <br />
-                ได้อย่างสะดวกปลอดภัย
-              </h3>
+              <h3 className="text-2xl font-bold leading-snug">จะดีกว่าไหม?</h3>
               <p className="leading-relaxed font-body">
-                แม้ว่าจะมีสภาวะทางร่างกาย สังคมและจิตใจที่ค่อยๆ
-                <br /> เสื่อมถอยจากความชรา
+                หากประเทศไทยมีระบบดูแลผู้สูงอายุแบบองค์รวม และไร้รอยต่อ สามารถยกระดับเครือข่ายการบริการ ในท้องถิ่นให้เป็นมาตรฐานและครอบคลุม
+                <br />
+                <br />- มีหน่วยประสานงานเรื่องสิทธิในโรงพยาบาล
+                <br />- ไม่ยุ่งยากเรื่องข้อมูลและการติดต่อ
+                <br />- มีบริการรถรับ-ส่งจากบ้านถึงโรงพยาบาล
+                <br />- มีกลุ่มให้คำปรึกษาและกำลังใจแก่ครอบครัว
+                <br />- มีอุปกรณ์ที่จำเป็นให้หมุนเวียนใช้ฟรี ฯลฯ
               </p>
             </div>
           </div>
@@ -107,15 +112,12 @@ const LsdPage = () => {
           <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
             <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-8 md:order-first md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">
-                ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต
+                เพิ่มการเข้าถึงระบบบริการที่จำเป็น
                 <br />
-                หากสามารถอาศัยอยู่ที่บ้านของตนเองได้ต่อเนื่อง
+                มีชีวิตยามชราที่แข็งแรง
+                <br />
+                ให้มากที่สุดเท่าที่จะเป็นไปได้
               </h3>
-              <p className="leading-relaxed font-body">
-                เพราะ ‘บ้าน’ คือพื้นที่ที่ให้ความรู้สึกปลอดภัย
-                <br /> มีสังคมและสิ่งแวดล้อมที่ผู้สูงอายุคุ้นเคย ลดความกังวลด้านจิตใจ
-                <br /> ส่งผลดีต่อการดูแลรักษาสุขภาพ ควบคุมโรค และคุณภาพชีวิต
-              </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
@@ -126,21 +128,18 @@ const LsdPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
-                ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
-                <br />
-                ที่มีแนวโน้มสูงขึ้นในทุกปี
-              </h3>
+            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+              <h3 className="text-2xl font-bold leading-snug">เพื่อพัฒนาคุณภาพชีวิตของผู้สูงอายุ</h3>
               <p className="leading-relaxed font-body">
-                สามารถลดการพึ่งพิงสถานบริบาลที่มีค่าใช้จ่ายมาก
-                <br /> ทั้งงบประมาณภาครัฐและของผู้สูงอายุเอง
+                ได้รับบริการสุขภาพครบถ้วน ต่อเนื่อง และทันเวลา
+                <br />
+                ทั้งด้านการรักษาและการป้องกันโรค รวมถึงการทำกายภาพฟื้นฟู
               </p>
             </div>
           </div>
         </section>
 
-        <section className="relative h-full bg-[#D28354]">
+        <section className="relative h-full bg-[#E1B363]">
           <div className="flex flex-col items-center justify-center px-6 pb-32 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
               <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
@@ -150,15 +149,9 @@ const LsdPage = () => {
               </text>
             </svg>
             <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
-              การลงทุนสร้างบ้านพักคนชรา 1 แห่งในปัจจุบัน
-              <br /> ต้องใช้เงินลงทุนในการสร้างประมาณ 305 ล้านบาท สำหรับผู้สูงอายุ 150 คน
-              <br /> หรือคิดเป็นเงินลงทุนต่อหัวเท่ากับ 2 ล้านบาท*
-            </p>
-            <p className="mt-4 text-xs text-center font-body max-w-prose">
-              *อ้างอิงงบประมาณในการสร้างบ้านพักคนชราจากงบประมาณในการก่อสร้างบ้านพักคนชราบึงสะแกงาม จำนวน 305 ล้านบาท แหล่งที่มา
-              <a href="https://www.prachachat.net/property/news-596824" target="_blank" rel="noopener noreferrer">
-                https://www.prachachat.net/property/news-596824
-              </a>
+              จำเป็นต้องมีระบบที่รองรับสัดส่วนผู้สูงอายุที่เพิ่มสูงขึ้นเรื่อยๆ
+              <br />
+              เพื่ออำนวยความสะดวก และลดอัตราที่ผู้สูงอายุจะเข้าสู่ภาวะพึ่งพิงโดยไม่จำเป็น
             </p>
           </div>
         </section>
@@ -168,29 +161,30 @@ const LsdPage = () => {
             <Image src={Circle} width={250} height={250} alt="circle image" />
           </div>
           <div className="flex flex-col items-center justify-center pt-24 space-y-6 text-white">
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-4">
               <h3 className="text-3xl font-bold">สัดส่วนผู้สูงอายุ ต่อประชากรทั้งหมด (%)</h3>
-              <Image src={Chart} width={400} height={250} alt="chart" />
+              <div>
+                <Image src={Chart} width={400} height={250} alt="chart" />
+              </div>
             </div>
             <div className="flex flex-col items-center space-y-8">
-              <p className="text-sm text-center sm:text-base font-body">
-                ปัจจุบัน ไทยมีบ้านพักคนชราของรัฐเพียง 12 แห่ง
-                <br />
-                ขณะที่ประชากรผู้สูงอายุทั่วประเทศมีมากกว่า 11 ล้านคน**
+              <p className="text-sm text-center sm:text-base font-body max-w-prose">
+                จากข้อมูลปี พ.ศ. 2563 ประเทศไทยมีประชากรผู้สูงอายุกว่า 12 ล้านคน ซึ่งคิดเป็น 18% จากประชากรทั้งหมด 66.5 ล้านคน และคาดการณ์ว่าภายใน ปีพ.ศ. 2565
+                สัดส่วนผู้สูงอายุจะเพิ่มขึ้นเป็น 20% ของประชากรทั้งหมด* ซึ่งหมายถึงการเข้าสู่ “สังคมสูงวัยอย่างสมบูรณ์ (Aged Society)”
               </p>
-              <p className="text-xs font-body">** ข้อมูลจากกรมกิจการผู้สูงอายุ</p>
+              <p className="text-xs font-body">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย ปี 2563 โดย มส.ผส.</p>
             </div>
           </div>
         </section>
 
-        <section className="relative h-full pt-6 bg-[#F9EFE9] md:pt-12">
+        <section className="relative h-full pt-6 bg-[#FBF5EB] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
               แต่ยังมีความท้าทายที่ต้องฝ่าฝัน
               <br />
               เพื่อให้เกิดนโยบายที่ตอบโจทย์
             </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
                 <p className="text-sm sm:text-base font-body">
@@ -207,6 +201,14 @@ const LsdPage = () => {
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
+                <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+              </div>
+              <div className="flex flex-col col-span-1 space-y-4 text-center">
+                <Image src={Icon5} width={120} height={120} />
+                <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+              </div>
+              <div className="flex flex-col col-span-1 space-y-4 text-center">
+                <Image src={Icon6} width={120} height={120} />
                 <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
               </div>
             </div>
@@ -227,7 +229,7 @@ const LsdPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#DDA27F]">
+        <section className="relative h-full bg-[#E9C68A]">
           <div className="max-w-6xl mx-auto text-body">
             <div className="w-full h-full max-w-4xl px-6 pb-6 mx-auto space-y-8 text-white md:pb-12 md:px-24 bg-secondary">
               <div className="w-full border-t-2 border-white md:px-24" />
@@ -236,7 +238,7 @@ const LsdPage = () => {
                 <div className="flex flex-col col-span-1 space-y-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                     <path
-                      fill="#c7642a"
+                      fill="#daa13d"
                       d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
                       transform="translate(-257.346 -9.572)"
                     />
@@ -268,7 +270,7 @@ const LsdPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#c7642a]">
+        <section className="relative h-full bg-[#daa13d]">
           <div className="max-w-4xl mx-auto bg-[#2b2b2b] pb-12">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
@@ -277,7 +279,7 @@ const LsdPage = () => {
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
-                    fill="#c7642a"
+                    fill="#daa13d"
                     d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
                     transform="translate(-257.346 -9.572)"
                   />
@@ -303,7 +305,7 @@ const LsdPage = () => {
                   </ul>
                   <Link href="/archive#thematic-briefs">
                     <a
-                      className="text-[#c7642a] text-sm inline-flex items-center btn bg-white hover:text-white rounded-full"
+                      className="text-[#daa13d] text-sm inline-flex items-center btn bg-white hover:text-white rounded-full"
                       target="_self"
                       rel="noopener noreferrer"
                     >
@@ -341,7 +343,7 @@ const LsdPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#F9EFE9]">
+        <section className="relative h-full bg-[#FBF5EB]">
           <div className="max-w-4xl py-12 mx-auto">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">

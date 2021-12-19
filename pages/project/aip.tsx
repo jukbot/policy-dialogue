@@ -1,13 +1,14 @@
+import Header from '@/components/Layout/Header'
 import Timeline from '@/components/Project/AIP/Timeline'
 import TimelineHeader from '@/components/Project/AIP/TimelineHeader'
 import TimelineMobile from '@/components/Project/AIP/TimelineMobile'
 import TimelineSummary from '@/components/Project/AIP/TimelineSummary'
 import InterestProjects from '@/components/Project/InterestProjects'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
+import Meta from '@/data/meta.json'
 import { projectList } from '@/utils/projectIcon'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Circle from '/public/image/aip/circle.webp'
@@ -43,9 +44,11 @@ const interestProjects: Project[] = [projectList[5], projectList[4], projectList
 const AipPage = () => {
   return (
     <>
-      <Head>
-        <title>แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place)</title>
-      </Head>
+      <Header
+        title="การสูงวัยในถิ่นที่อยู่อาศัยเดิม อย่างมีสุขภาวะ (Aging in Place)"
+        description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
+        image={`${Meta.baseUrl}${HeroImage.src}`}
+      />
       <main className="relative">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
@@ -60,7 +63,7 @@ const AipPage = () => {
                 <br /> บริการทางสังคมสำหรับผู้สูงอายุ
               </h2>
             </div>
-            <Image src={HeroImage} width={800} height={480} className="w-full" alt="cover image" />
+            <Image src={HeroImage} width={800} height={480} priority className="w-full" alt="cover image" />
           </div>
         </section>
 
@@ -121,7 +124,7 @@ const AipPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
                 <br />
@@ -164,8 +167,8 @@ const AipPage = () => {
           </div>
           <div className="flex flex-col items-center justify-center pt-24 space-y-6 text-white">
             <div className="flex flex-col items-center space-y-2">
-              <h3 className="text-3xl font-bold">ผู้สูงอายุ 11 ล้านคน</h3>
-              <Image src={ElderlyLogo} width={300} height={150} alt="elderly logo" />
+              <h3 className="text-4xl font-bold">ผู้สูงอายุ 11 ล้านคน</h3>
+              <Image src={ElderlyLogo} width={350} height={180} alt="elderly logo" />
             </div>
             <div className="flex flex-col items-center space-y-2">
               <p className="text-base font-bold">บ้านพักคนชราของรัฐท้ั้งประเทศ</p>
