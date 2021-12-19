@@ -47,7 +47,7 @@ const ArchivePage = () => {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#c7642a] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 30 30">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 30 30">
                     <path
                       data-name="Path 278"
                       d="m272.723 14.708 1.559-4.861a.4.4 0 0 1 .773.122l-.019 5.1a.4.4 0 0 0 .717.233l2.985-4.141a.4.4 0 0 1 .7.355l-1.6 4.849a.4.4 0 0 0 .61.443l4.119-3.016a.4.4 0 0 1 .553.553l-3.02 4.124a.4.4 0 0 0 .443.61l4.849-1.6a.4.4 0 0 1 .355.7l-4.141 2.985a.4.4 0 0 0 .233.717l5.1-.019a.4.4 0 0 1 .122.773L282.21 24.2a.4.4 0 0 0 0 .754l4.861 1.559a.4.4 0 0 1-.122.773l-5.1-.019a.4.4 0 0 0-.233.717l4.141 2.985a.4.4 0 0 1-.355.7l-4.849-1.6a.4.4 0 0 0-.443.61l3.016 4.119a.4.4 0 0 1-.553.553l-4.119-3.016a.4.4 0 0 0-.61.443l1.6 4.849a.4.4 0 0 1-.7.355l-2.985-4.141a.4.4 0 0 0-.717.233l.019 5.1a.4.4 0 0 1-.773.122l-1.559-4.861a.4.4 0 0 0-.754 0L270.41 39.3a.4.4 0 0 1-.773-.122l.019-5.1a.4.4 0 0 0-.717-.233l-2.985 4.141a.4.4 0 0 1-.7-.355l1.6-4.849a.4.4 0 0 0-.61-.443l-4.119 3.016a.4.4 0 0 1-.553-.553l3.016-4.119a.4.4 0 0 0-.443-.61l-4.849 1.6a.4.4 0 0 1-.355-.7l4.141-2.985a.4.4 0 0 0-.233-.717l-5.1.019a.4.4 0 0 1-.122-.773l4.861-1.559a.4.4 0 0 0 0-.754l-4.861-1.559a.4.4 0 0 1 .122-.773l5.1.019a.4.4 0 0 0 .233-.717l-4.141-2.985a.4.4 0 0 1 .355-.7l4.849 1.6a.4.4 0 0 0 .443-.61l-3.016-4.119a.4.4 0 0 1 .553-.553l4.119 3.016a.4.4 0 0 0 .61-.443l-1.6-4.849a.4.4 0 0 1 .7-.355l2.985 4.141a.4.4 0 0 0 .717-.233l-.019-5.1a.4.4 0 0 1 .773-.122l1.559 4.861a.4.4 0 0 0 .754-.015z"
@@ -86,7 +86,7 @@ const ArchivePage = () => {
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 50 45">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 45">
                     <path
                       data-name="Path 130"
                       d="M545.354 25.807c0-2.974-3.219-5.645-8.333-7.483 3.624-1.059 5.833-2.466 5.833-4.009 0-2.269-4.773-4.241-11.8-5.251 1.183-.572 1.867-1.245 1.867-1.967 0-2.071-5.627-3.75-12.568-3.75S507.786 5.026 507.786 7.1c0 .722.684 1.4 1.867 1.967-7.027 1.01-11.8 2.982-11.8 5.251 0 1.543 2.209 2.95 5.833 4.009-5.114 1.839-8.333 4.509-8.333 7.483 0 3 3.272 5.688 8.459 7.528-3.7 1.063-5.959 2.484-5.959 4.045 0 2.269 4.773 4.241 11.8 5.251-1.183.572-1.867 1.245-1.867 1.967 0 2.071 5.627 3.75 12.568 3.75s12.568-1.679 12.568-3.75c0-.722-.684-1.4-1.867-1.967 7.027-1.01 11.8-2.982 11.8-5.251 0-1.561-2.26-2.982-5.959-4.045 5.186-1.843 8.458-4.538 8.458-7.531z"
@@ -108,7 +108,7 @@ const ArchivePage = () => {
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 50 50">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 50">
                     <path
                       id="Path_56"
                       data-name="Path 56"
@@ -127,7 +127,7 @@ const ArchivePage = () => {
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 47.812 45">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 47.812 45">
                     <path
                       data-name="Path 236"
                       d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z"
@@ -145,7 +145,7 @@ const ArchivePage = () => {
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#3f36b7] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 50.625 45">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50.625 45">
                     <path
                       data-name="Path 129"
                       d="M1634.417 1192.3c-4.912-4.366-12.785-5.081-20.791-2.6-8.006-2.48-15.878-1.766-20.791 2.6s-5.716 11.364-2.926 18.481c-2.791 7.116-1.986 14.114 2.926 18.481s12.785 5.081 20.791 2.6c8.006 2.481 15.878 1.766 20.791-2.6s5.716-11.364 2.926-18.481c2.79-7.116 1.986-14.114-2.926-18.481z"
@@ -173,7 +173,7 @@ const ArchivePage = () => {
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#daa13d] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 50 44.978">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 44.978">
                     <path
                       data-name="Path 55"
                       d="M198.582 615.166h-6.636a.744.744 0 0 1-.644-1.116l3.318-5.747a6.25 6.25 0 0 0-2.288-8.538 6.25 6.25 0 0 0-8.538 2.288l-3.318 5.747a.744.744 0 0 1-1.289 0l-3.318-5.747a6.25 6.25 0 0 0-8.538-2.288 6.25 6.25 0 0 0-2.288 8.538l3.318 5.747a.744.744 0 0 1-.644 1.116h-6.636a6.25 6.25 0 0 0-6.25 6.25 6.25 6.25 0 0 0 6.25 6.25h6.636a.744.744 0 0 1 .644 1.116l-3.318 5.747a6.25 6.25 0 0 0 2.288 8.538 6.25 6.25 0 0 0 8.538-2.288l3.318-5.747a.744.744 0 0 1 1.289 0l3.318 5.747a6.25 6.25 0 0 0 8.538 2.288 6.25 6.25 0 0 0 2.288-8.538l-3.318-5.747a.744.744 0 0 1 .644-1.116h6.636a6.25 6.25 0 0 0 6.25-6.25 6.25 6.25 0 0 0-6.25-6.25z"
@@ -201,7 +201,7 @@ const ArchivePage = () => {
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
                 <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 w-8 h-8 fill-current current-color" viewBox="0 0 50 36.853">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 36.853">
                     <path
                       data-name="Path 237"
                       d="M886.369 50.479h-39.436a5.281 5.281 0 0 1-1.67-10.291l8.564-2.855h-6.894a5.281 5.281 0 0 1-1.67-10.291l8.564-2.855h-6.894a5.281 5.281 0 1 1 0-10.562h39.437a5.281 5.281 0 0 1 1.67 10.291l-8.564 2.855h6.894a5.281 5.281 0 0 1 1.67 10.291l-8.564 2.855h6.894a5.281 5.281 0 1 1 0 10.562z"
@@ -310,7 +310,7 @@ const ArchivePage = () => {
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-slate-500 md:grid-cols-2">
               <div className="col-span-1">
-                <p className="text-lg font-bold">
+                <p className="text-lg font-bold" id="pc-3">
                   การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุข
                   <br />
                   ของสำนักงานหลักประกันสุขภาพแห่งชาติ

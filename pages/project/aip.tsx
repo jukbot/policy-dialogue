@@ -32,7 +32,7 @@ const relatedPolicy: Policy[] = [
   },
   {
     id: 1,
-    text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด',
+    text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพ ระดับจังหวัด',
     url: '/archive#aip-2',
     color: 'bg-[#daa13d]',
   },
@@ -66,7 +66,7 @@ const AipPage = () => {
 
         <section className="relative h-full bg-[#FCF5EB] pb-6 md:pb-0">
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
-            <div className="relative flex flex-col items-center max-w-6xl p-6 mx-auto space-y-6 md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
+            <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
                 <br />
@@ -80,11 +80,11 @@ const AipPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 gap-6 pt-48 md:pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 pt-48 md:gap-6 md:pt-72 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน
                 <br />
@@ -99,8 +99,8 @@ const AipPage = () => {
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-4 md:order-first md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-8 md:order-first md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต
                 <br />
@@ -117,11 +117,11 @@ const AipPage = () => {
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
                 <br />

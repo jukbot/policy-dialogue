@@ -24,8 +24,8 @@ import Result3 from '/public/image/pc/testimonial-3.webp'
 const relatedPolicy: Policy[] = [
   {
     id: 0,
-    text: 'การจัดการโครงสร้าง เครือข่ายบริการสุขภาพ ระดับจังหวัด',
-    url: '/archive#pc-1',
+    text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพ ระดับจังหวัด',
+    url: '/archive#aip-2',
     color: 'bg-[#36723b]',
   },
   {
@@ -73,7 +73,7 @@ const PcPage = () => {
 
         <section className="relative h-full bg-[#EBEAF8] pb-6 md:pb-0">
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
-            <div className="relative flex flex-col items-center max-w-6xl p-6 mx-auto space-y-6 md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
+            <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
               <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบัน การดูแลผู้ป่วยแบบประคับประคอง
                 <br />
@@ -88,11 +88,11 @@ const PcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 gap-6 pt-48 md:pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 pt-48 md:gap-6 md:pt-72 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">
                 จะเป็นอย่างไร
                 <br />
@@ -108,8 +108,8 @@ const PcPage = () => {
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-4 md:order-first md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
+          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-8 md:order-first md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold leading-snug">เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว</h3>
               <p className="leading-relaxed font-body">
                 ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย
@@ -122,11 +122,11 @@ const PcPage = () => {
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
+            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-24 text-body">
               <h3 className="text-2xl font-bold leading-snug">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
               <p className="leading-relaxed font-body">
                 การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของ

@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="relative">
         <main className="relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-full h-screen bg-fixed sm:bg-right bg-no-repeat bg-contain sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
+          <div className="absolute top-0 right-0 w-full h-screen bg-fixed bg-no-repeat bg-contain sm:bg-right sm:bg-cover mix-blend-screen bg-hero-circle-mobile sm:bg-hero-circle"></div>
           <section
             className={`${
               intersection && intersection.intersectionRatio < 1 ? '' : ''
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
           </section>
           <section className="relative h-full bg-secondary">
             <div className="px-12 py-12 space-y-12 text-white sm:py-24">
-              <h2 className="text-4xl font-bold text-center sm:text-5xl break-words">นโยบายเพื่อสังคมสูงวัย</h2>
+              <h2 className="text-4xl font-bold text-center break-words sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
               <div className="flex flex-col justify-center space-y-8 text-center lg:space-x-8 lg:flex-row font-body">
                 <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                   <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
           <section className="relative h-full bg-[#242054]">
             <div className="flex flex-col items-center justify-center px-6 py-12 text-white">
               <QuestionMark className="w-48 h-48" />
-              <p className="text-sm text-center sm:text-base lg:text-lg font-body leading-relaxed">
+              <p className="text-base leading-relaxed text-center lg:text-lg font-body">
                 คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ
                 <br />
                 กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง
@@ -206,7 +206,7 @@ const Home: NextPage = () => {
               <p className="text-sm text-white font-body">*Adapted from Systemicdesigntoolkit.org</p>
             </div>
             <div className="mx-auto max-w-7xl">
-              <div className="relative flex flex-col items-center justify-center h-full p-6 my-8 bg-white sm:p-12 mx-6 mx-auto rounded-xl">
+              <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 mx-auto my-8 bg-white sm:p-12 rounded-xl">
                 <div className="flex flex-col py-8 space-y-4 jutify-center">
                   <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
                   <p className="text-center sm:text-lg text-body font-body max-w-prose">
@@ -285,8 +285,8 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
-            <div className="flex flex-col items-center justify-center sm:space-y-8">
-              <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
+            <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
+              <div className="text-4xl font-bold leading-snug text-center text-white sm:text-5xl">
                 <h3>โพลิซี ไดอะล็อก</h3>
                 <h3>ทำงานอย่างไร ?</h3>
               </div>
