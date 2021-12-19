@@ -30,7 +30,7 @@ const ValuePage = () => {
 
         <section className="relative grid h-full lg:grid-cols-2">
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
-            <div className="relative bg-[#242054] mx-auto max-w-6xl p-12 h-96 md:h-72 space-x-8">
+            <div className="relative bg-[#242054] mx-auto max-w-6xl p-6 md:p-12 h-96 md:h-72 md:space-x-8">
               <span className="absolute top-6 md:left-24 text-white text-[96px] md:text-[180px] font-bold white-stoke align-top">“</span>
               <h2 className="relative mt-12 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
                 หลังจากจัดกระบวนการกว่า 30 ครั้ง RISE Impact
