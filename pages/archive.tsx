@@ -393,7 +393,7 @@ const ArchivePage = () => {
             </div>
 
             <ul className="flex w-full space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#6badcb]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#6badcb] shrink-0">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">
                     คู่มือการจัดกระบวนการ
@@ -416,7 +416,7 @@ const ArchivePage = () => {
                   <span>ดาวน์โหลดเอกสาร</span>
                 </a>
               </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#36723b]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#36723b] shrink-0">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">กระบวนการ</p>
                   <p className="text-sm font-body">
@@ -437,7 +437,7 @@ const ArchivePage = () => {
                   <span>ดาวน์โหลดเอกสาร</span>
                 </a>
               </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#daa13d]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#daa13d] shrink-0">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">คุณค่าของกระบวนการ</p>
                   <p className="text-sm font-body">
@@ -457,7 +457,7 @@ const ArchivePage = () => {
                   <span>ดาวน์โหลดเอกสาร</span>
                 </a>
               </li>
-              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#cc79a7]">
+              <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#cc79a7] shrink-0">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">จัดการอย่างไรให้สำเร็จ</p>
                   <p className="text-sm font-body">
