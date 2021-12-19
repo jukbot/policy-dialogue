@@ -12,6 +12,7 @@ import ProjectDropDown from '../Navbar/ProjectDropdown'
 import Logo from '/public/image/logo/logo.svg'
 
 const navigation = [
+  { name: 'หน้าแรก', href: '/' },
   { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
   { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
   { name: 'คุณค่ากระบวนการ', href: '/value' },

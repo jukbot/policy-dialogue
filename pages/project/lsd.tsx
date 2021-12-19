@@ -7,6 +7,7 @@ import TimelineSummary from '@/components/Project/LSD/TimelineSummary'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Meta from '@/data/meta.json'
 import { projectList } from '@/utils/projectIcon'
+import { ArrowRightIcon } from '@heroicons/react/outline'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
 import Image from 'next/image'
@@ -29,7 +30,7 @@ const relatedPolicy: Policy[] = [
   {
     id: 0,
     text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพ ระดับจังหวัด',
-    url: '/archive#aip-2',
+    url: '/archive#ccu',
     color: 'bg-[#36723b]',
   },
   {
@@ -223,7 +224,7 @@ const LsdPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#E9C68A] md:mt-16">
-          <div className="w-full mx-auto md:absolute md:h-56 md:-mt-12 text-body md:-transform-x-1/2">
+          <div className="w-full mx-auto md:absolute md:h-72 md:-mt-12 text-body md:-transform-x-1/2">
             <div className="w-full h-full max-w-4xl px-6 py-16 mx-auto space-y-8 text-white md:px-24 bg-secondary">
               <div className="flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
@@ -232,9 +233,13 @@ const LsdPage = () => {
                   เพื่อส่งเสริมคุณภาพชีวิตของผู้คนได้
                 </p>
               </div>
+              <p className="text-sm text-center font-body">
+                การดูแลผู้ป่วยระยะกลาง (Intermediate Care) การดูแลผู้สูงอายุระยะยาว (Long-Term Care)
+                <br /> ผู้สูงอายุที่มีภาวะสมองเสื่อม และ การดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)
+              </p>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto text-body md:pt-[11rem]">
+          <div className="max-w-6xl mx-auto text-body md:pt-[15rem]">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>
@@ -257,19 +262,29 @@ const LsdPage = () => {
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">ข้อเสนอที่ 1</h3>
-                      <p className="font-body">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
+                      <p className="font-body">การบูรณาการข้อมูลเพื่อการดูแลอย่าง รอบด้าน</p>
                     </li>
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">ข้อเสนอที่ 2</h3>
-                      <p className="font-body">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
+                      <p className="font-body">การสร้างพื้นที่และบริการดูแลผู้สูงอายุชั่วคราว (Respite Care)</p>
                     </li>
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">ข้อเสนอที่ 3</h3>
-                      <p className="font-body">ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ</p>
+                      <p className="font-body">การจัดกลุ่มหนุนใจ (Support Group) ให้ผู้ดูแล</p>
+                    </li>
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ข้อเสนอที่ 4</h3>
+                      <p className="font-body">
+                        การจัดระบบรถรับส่งให้เข้าถึงบริการสุขภาพและบริการทางสังคมสำหรับผู้สูงอายุทั้งกลุ่มติดสังคม ติดบ้าน และติดเตียง
+                      </p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a className="text-[#daa13d] inline-flex items-center btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
+                    <a
+                      className="inline-flex items-center bg-white rounded-full text-neutral-900 btn hover:text-white"
+                      target="_self"
+                      rel="noopener noreferrer"
+                    >
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -277,26 +292,17 @@ const LsdPage = () => {
                 </div>
               </div>
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
-                  <path
-                    fill="#36723b"
-                    d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
-                    transform="translate(-257.346 -9.572)"
-                  />
-                </svg>
-                <p>การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย</p>
-                <div className="w-full border-t-2 border-white md:px-24" />
-                <div className="pt-6 space-y-6">
+                <div className="space-y-6 md:pt-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอที่ 1</h3>
-                      <p className="font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                      <h3 className="text-xl font-bold">ข้อเสนอที่ 5</h3>
+                      <p className="font-body">การพัฒนาหน่วยประสานการดูแลเพื่อยกระดับการให้บริการแก่ผู้สูงอายุและผู้ป่วยในระดับจังหวัด</p>
                     </li>
                   </ul>
-                  <Link href="/archive#thematic-briefs">
-                    <a className="text-[#daa13d] inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
-                      <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
-                      <span>ดาวน์โหลดข้อสรุป</span>
+                  <Link href="/archive#ccu">
+                    <a className="inline-flex items-center text-white hover:text-primary" target="_self" rel="noopener noreferrer">
+                      <ArrowRightIcon className="w-5 h-5 mr-2 fill-current text-primary" />
+                      <span>Policy Recomendation หัวข้อ CCU</span>
                     </a>
                   </Link>
                 </div>

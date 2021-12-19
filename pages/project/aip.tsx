@@ -34,7 +34,7 @@ const relatedPolicy: Policy[] = [
   {
     id: 1,
     text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพ ระดับจังหวัด',
-    url: '/archive#aip-2',
+    url: '/archive#ccu',
     color: 'bg-[#daa13d]',
   },
 ]

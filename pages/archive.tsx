@@ -233,7 +233,7 @@ const ArchivePage = () => {
             </div>
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-slate-500/75 md:grid-cols-2">
-              <div className="col-span-1" id="aip-2">
+              <div className="col-span-1" id="ccu">
                 <p className="text-lg font-bold">
                   การพัฒนาหน่วยประสานการดูแล
                   <br />

@@ -83,6 +83,7 @@ const Home: NextPage = () => {
                   bgHover="group-hover:bg-education"
                   bgColor="bg-[#cc79a7]"
                   borderColor="border-[#cc79a7]"
+                  className="hidden md:block"
                 />
                 <PolicyCircle
                   text="รัฐสวัสดิการถ้วนหน้า"
@@ -90,6 +91,23 @@ const Home: NextPage = () => {
                   bgHover="group-hover:bg-welfare"
                   bgColor="bg-[#daa13d]"
                   borderColor="border-[#daa13d]"
+                  className="hidden md:block"
+                />
+                <PolicyCircle
+                  text="สวนสาธารณะพื้นที่ออกกำลังกาย"
+                  position="translate-x-6 -translate-y-6"
+                  bgHover="group-hover:bg-public-park"
+                  bgColor="bg-[#36723b]"
+                  borderColor="border-[#36723b]"
+                  className="block md:hidden"
+                />
+                <PolicyCircle
+                  text="ขนส่งมวลชนเชื่อมต่อ"
+                  position="-translate-x-6 translate-y-6"
+                  bgHover="group-hover:bg-public-transport"
+                  bgColor="bg-[#daa13d]"
+                  borderColor="border-[#daa13d]"
+                  className="block md:hidden"
                 />
                 <PolicyCircle
                   text="อากาศบริสุทธิ์ปลอดฝุ่นควัน"
