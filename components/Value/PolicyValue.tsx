@@ -38,7 +38,7 @@ const PolicyValue = () => {
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
                 <p className="font-body">
-                  เป็นเครื่องมือในการพัฒนานโยบายสาธารณะที่สร้างการมีส่วนร่วม ทำให้สามารถตอบสนองต่อการเปลี่ยนแปลง ของสถานการณ์ต่างๆ
+                  เป็นเครื่องมือในการพัฒนานโยบายสาธารณะที่สร้างการมีส่วนร่วม ทำให้สามารถตอบสนองต่อการเปลี่ยนแปลง ของสถานการณ์ต่าง ๆ
                   ได้รวดเร็วและยืดหยุ่นกว่าการทำงานวิจัย
                 </p>
               </div>
@@ -46,14 +46,14 @@ const PolicyValue = () => {
             <li className="inline-flex space-x-2">
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
-                <p className="font-body">เกิดการพูดคุยแลกเปลี่ยน เพื่อหาจุดร่วมระหว่างผู้ที่เกี่ยวข้องกับประเด็นนั้นๆ ทุกระดับ</p>
+                <p className="font-body">เกิดการพูดคุยแลกเปลี่ยน เพื่อหาจุดร่วมระหว่างผู้ที่เกี่ยวข้องกับประเด็นนั้น ๆ ทุกระดับ</p>
               </div>
             </li>
             <li className="inline-flex space-x-2">
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
                 <p className="font-body">
-                  เปิดโอกาสให้ผู้เข้าร่วมที่มาจากบริบทที่ต่างกัน ได้แลกเปลี่ยน เห็นจุดร่วมและจุดต่าง ทำให้เกิดทางเลือกใหม่ๆ ที่อาจเป็นการต่อยอดนโยบายต่อไป
+                  เปิดโอกาสให้ผู้เข้าร่วมที่มาจากบริบทที่ต่างกัน ได้แลกเปลี่ยน เห็นจุดร่วมและจุดต่าง ทำให้เกิดทางเลือกใหม่ ๆ ที่อาจเป็นการต่อยอดนโยบายต่อไป
                 </p>
               </div>
             </li>
@@ -69,14 +69,14 @@ const PolicyValue = () => {
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
                 <p className="font-body">
-                  เป็นพื้นที่ ‘ส่งเสียง’ ได้มีส่วนร่วมในการออกแบบนโยบายที่จะมีผลกับการทำงาน ทั้งยังได้รับรู้ข้อจำกัดของผู้ที่เกี่ยวข้อง ในบทบาทอื่น
+                  เป็นพื้นที่ &lsquo;ส่งเสียง&rsquo; ได้มีส่วนร่วมในการออกแบบนโยบายที่จะมีผลกับการทำงาน ทั้งยังได้รับรู้ข้อจำกัดของผู้ที่เกี่ยวข้อง ในบทบาทอื่น
                 </p>
               </div>
             </li>
             <li className="inline-flex space-x-2">
               <span className="text-2xl font-bold leading-none align-top">•</span>
               <div className="space-y-1">
-                <p className="font-body">เมื่อได้มีส่วนร่วม ทำให้รู้สึกว่าตัวเองเป็นส่วนสำคัญของประเด็นนั้นๆ นำไปสู่การผลักดันให้เกิดการลงมือทำจริง</p>
+                <p className="font-body">เมื่อได้มีส่วนร่วม ทำให้รู้สึกว่าตัวเองเป็นส่วนสำคัญของประเด็นนั้น ๆ นำไปสู่การผลักดันให้เกิดการลงมือทำจริง</p>
               </div>
             </li>
             <li className="inline-flex space-x-2">
@@ -93,7 +93,7 @@ const PolicyValue = () => {
           <Image className="shrink-0" width="64" height="64" aria-hidden="true" src={AffectPerson} alt="affect person" />
           <h3 className="text-xl font-bold">เราทุกคนที่ได้รับผลกระทบจากนโยบาย</h3>
           <p className="text-sm leading-relaxed sm:text-base font-body">
-            ได้มีโอกาสทำความเข้าใจประเด็นเชิงนโยบาย ร่วมให้ความเห็นบนฐานความรู้ และสะท้อนความต้องการและสิ่งที่ไม่พึงประสงค์ของนโยบายนั้นๆ
+            ได้มีโอกาสทำความเข้าใจประเด็นเชิงนโยบาย ร่วมให้ความเห็นบนฐานความรู้ และสะท้อนความต้องการและสิ่งที่ไม่พึงประสงค์ของนโยบายนั้น ๆ
             เพื่อที่ผู้ที่มีบทบาทจะนำข้อมูลไปทำงานต่อ
           </p>
         </div>
