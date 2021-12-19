@@ -22,7 +22,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 2592000,
+    minimumCacheTTL: 31536000,
     domains: [
       'via.placeholder.com',
       'lh3.googleusercontent.com',
@@ -72,7 +72,7 @@ const nextConfig = {
           },
           {
             key: 'Cache-Control',
-            value: 'public, max-age=2592000, stale-while-revalidate=59',
+            value: 'public, max-age=31536000, stale-while-revalidate=59',
           },
         ],
       },
@@ -90,7 +90,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=2592000, stale-while-revalidate=59',
+            value: 'public, max-age=31536000, stale-while-revalidate=59',
           },
         ],
       },
