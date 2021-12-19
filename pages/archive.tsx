@@ -440,7 +440,7 @@ const ArchivePage = () => {
                   <p className="text-lg font-bold">คุณค่าของกระบวนการ</p>
                   <p className="text-sm font-body">
                     สิ่งที่เราเชื่อและประโยชน์ของ
-                    <br /> ‘policy dialogue’
+                    <br /> &lsquo;Policy Dialogue&rsquo;
                   </p>
                 </div>
                 <a
