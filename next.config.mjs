@@ -21,6 +21,7 @@ const nextConfig = {
   poweredByHeader: false,
   swcMinify: true,
   images: {
+    formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 86400,
     domains: [
       'via.placeholder.com',
@@ -32,33 +33,6 @@ const nextConfig = {
       '',
     ],
   },
-  // webpack: (config) => {
-  //   config.resolve.alias = {
-  //     ...config.resolve.alias,
-  //     '@/components': path.join(__dirname, 'components'),
-  //     '@/contexts': path.join(__dirname, 'contexts'),
-  //     '@/data': path.join(__dirname, 'data'),
-  //     '@/models': path.join(__dirname, 'models'),
-  //     '@/generated': path.join(__dirname, 'generated'),
-  //     '@/graphql': path.join(__dirname, 'graphql'),
-  //     '@/libs': path.join(__dirname, 'libs'),
-  //     '@/pages': path.join(__dirname, 'pages'),
-  //     '@/providers': path.join(__dirname, 'providers'),
-  //     '@/services': path.join(__dirname, 'services'),
-  //     '@/stores': path.join(__dirname, 'stores'),
-  //     '@/styles': path.join(__dirname, 'styles'),
-  //     '@/utils': path.join(__dirname, 'utils'),
-  //     '@/public': path.join(__dirname, 'public'),
-  //   }
-
-  //   config.module.rules.push({
-  //     test: /\.(graphql|gql)$/,
-  //     exclude: /node_modules/,
-  //     loader: 'graphql-tag/loader',
-  //   })
-
-  //   return config
-  // },
   async headers() {
     return [
       {
