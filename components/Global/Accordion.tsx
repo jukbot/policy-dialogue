@@ -12,11 +12,8 @@ const Accordion = ({ title, children, isOpen: isOpen, number, toggleClick = () =
   return (
     <section>
       <dt>
-        <button
-          className={`flex justify-between w-full py-2 text-xl font-bold text-left items-start mr-3 group focus:outline-none`}
-          onClick={() => toggleClick(number)}
-        >
-          <span className={`${isOpen ? '' : 'hover:text-primary'} text-white transition`}>{title}</span>
+        <button className={`flex justify-between w-full py-2 items-start mr-3 group focus:outline-none`} onClick={() => toggleClick(number)}>
+          <span className={`${isOpen ? '' : 'hover:text-primary'} text-white transition font-bold text-left text-lg md:text-xl`}>{title}</span>
           <span className="flex items-center ml-6 h-7 text-primary">
             <svg
               className={`${isOpen ? '-rotate-180' : 'rotate-0'} w-6 h-6 transform`}
@@ -41,7 +38,7 @@ const Accordion = ({ title, children, isOpen: isOpen, number, toggleClick = () =
           leaveFrom="transform opacity-100"
           leaveTo="transform opacity-0"
         >
-          <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col py-2 space-y-4 text-sm font-body`}>{children}</div>
+          <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col py-2 space-y-4 text-sm md:text-base font-body`}>{children}</div>
         </Transition>
       </dd>
     </section>
