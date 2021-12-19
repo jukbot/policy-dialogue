@@ -11,8 +11,16 @@ import { Close } from '../Icon'
 import ProjectDropDown from '../Navbar/ProjectDropdown'
 import Logo from '/public/image/logo/logo.svg'
 
-const navigation = [
+const mobileNav = [
   { name: 'หน้าแรก', href: '/' },
+  { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
+  { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
+  { name: 'คุณค่ากระบวนการ', href: '/value' },
+  { name: 'คลังข้อมูล', href: '/archive' },
+  { name: 'เกี่ยวกับเรา', href: '/about' },
+]
+
+const desktopNav = [
   { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
   { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
   { name: 'คุณค่ากระบวนการ', href: '/value' },
@@ -53,7 +61,7 @@ const Navbar = (): JSX.Element => {
                 <div className="hidden w-full lg:block">
                   <div className="flex justify-center space-x-4 whitespace-nowrap">
                     <ProjectDropDown />
-                    {navigation.map((item) => (
+                    {desktopNav.map((item) => (
                       <Link href={item.href} key={item.name}>
                         <a
                           className={classNames(
@@ -107,7 +115,7 @@ const Navbar = (): JSX.Element => {
                 )}
               </Disclosure>
               <div className="pt-8 mx-20 space-y-4 border-t border-white border-opacity-40">
-                {navigation.map((item) => (
+                {mobileNav.map((item) => (
                   <Disclosure.Button
                     key={item.name}
                     as="a"

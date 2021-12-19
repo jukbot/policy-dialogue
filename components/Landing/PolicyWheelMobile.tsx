@@ -1,5 +1,5 @@
+import projects from '@/data/projects.json'
 import { selectedProjectAtom } from '@/stores/global'
-import { projectList } from '@/utils/projectIcon'
 import { useAtom } from 'jotai'
 import React from 'react'
 
@@ -20,7 +20,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
         </style>
       </defs>
       <g id="Group_1248" data-name="outer-circle-group" transform="translate(-23 -401)">
-        <g id="Group_678" data-name="aip" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[0])}>
+        <g id="Group_678" data-name="aip" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[0])}>
           <g id="Ellipse_1255" data-name="aip-circle" transform="translate(176 6541)" className={`${selectedProject.icon === 'aip' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
@@ -35,7 +35,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             />
           </g>
         </g>
-        <g id="Group_697" data-name="imc" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[3])}>
+        <g id="Group_697" data-name="imc" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[3])}>
           <g id="Group_691" data-name="Group 691">
             <g id="Ellipse_197" data-name="imc-circle" transform="translate(286 6598)" className={`${selectedProject.icon === 'imc' ? 'cls-5' : 'cls-3'}`}>
               <circle className="cls-11" cx={20} cy={20} r={20} />
@@ -50,7 +50,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             />
           </g>
         </g>
-        <g id="Group_696" data-name="lsd" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[2])}>
+        <g id="Group_696" data-name="lsd" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[2])}>
           <g id="Ellipse_213" data-name="lsd-circle" transform="translate(64 6598)" className={`${selectedProject.icon === 'lsd' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
@@ -63,7 +63,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             className={`${selectedProject.icon === 'lsd' ? 'fill-[#daa13d]' : 'cls-4'}`}
           />
         </g>
-        <g id="Group_693" data-name="pc" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[1])}>
+        <g id="Group_693" data-name="pc" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[1])}>
           <g id="Ellipse_214" data-name="pc-circle" transform="translate(234 6801)" className={`${selectedProject.icon === 'pc' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
@@ -76,7 +76,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             className={`${selectedProject.icon === 'pc' ? 'fill-[#3f36b7]' : 'cls-4'}`}
           />
         </g>
-        <g id="Group_692" data-name="ltc" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[4])}>
+        <g id="Group_692" data-name="ltc" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[4])}>
           <g id="Ellipse_209" data-name="ltc-circle" transform="translate(306 6715)" className={`${selectedProject.icon === 'ltc' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
@@ -89,7 +89,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             className={`${selectedProject.icon === 'ltc' ? 'fill-[#CECECE]' : 'cls-4'}`}
           />
         </g>
-        <g id="Group_695" data-name="gm" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[6])}>
+        <g id="Group_695" data-name="gm" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[6])}>
           <g id="Ellipse_212" data-name="gm-circle" transform="translate(44 6715)" className={`${selectedProject.icon === 'gm' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
@@ -102,7 +102,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             className={`${selectedProject.icon === 'gm' ? 'fill-[#CECECE]' : 'cls-4'}`}
           />
         </g>
-        <g id="Group_694" data-name="dt" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projectList[5])}>
+        <g id="Group_694" data-name="dt" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[5])}>
           <g id="Ellipse_217" data-name="dt-circle" transform="translate(116 6801)" className={`${selectedProject.icon === 'dt' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />

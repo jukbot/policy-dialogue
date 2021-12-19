@@ -1,5 +1,6 @@
+import projects from '@/data/projects.json'
 import { selectedProjectAtom } from '@/stores/global'
-import { projectIcon, projectList } from '@/utils/projectIcon'
+import { projectIcon } from '@/utils/projectIcon'
 import { ArrowCircleLeftIcon, ArrowCircleRightIcon } from '@heroicons/react/outline'
 import { useAtom } from 'jotai'
 import Link from 'next/link'
@@ -8,6 +9,7 @@ import PolicyWheelMobile from './PolicyWheelMobile'
 
 const PolicyContent = () => {
   const [selectedProject, setSelectedProject] = useAtom(selectedProjectAtom)
+  // const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   return (
     <div className="relative">
@@ -16,11 +18,19 @@ const PolicyContent = () => {
       <div className="flex justify-center mx-auto my-4 space-x-6 text-primary lg:hidden">
         <ArrowCircleLeftIcon
           className="w-8 h-8 cursor-pointer shrink-0"
-          onClick={() => setSelectedProject(projectList[selectedProject?.id === 0 ? projectList.length - 1 : (selectedProject?.id - 1) % projectList.length])}
+          onClick={() => {
+            setSelectedProject(projects[selectedProject.id === 0 ? projects.length - 1 : (selectedProject.id - 1) % projects.length])
+            console.log((selectedProject.id - 1) % projects.length)
+            console.log(projects[selectedProject.id === 0 ? projects.length - 1 : (selectedProject.id - 1) % projects.length])
+          }}
         />
         <ArrowCircleRightIcon
           className="w-8 h-8 cursor-pointer shrink-0"
-          onClick={() => setSelectedProject(projectList[(selectedProject?.id + 1) % projectList.length])}
+          onClick={() => {
+            setSelectedProject(projects[(selectedProject.id + 1) % projects.length])
+            console.log((selectedProject.id + 1) % projects.length)
+            console.log(projects[(selectedProject.id + 1) % projects.length])
+          }}
         />
       </div>
       <div className="flex flex-col justify-between w-full h-50 p-6 mt-8 space-y-4 rounded-lg lg:hidden bg-[#FFECEA]">

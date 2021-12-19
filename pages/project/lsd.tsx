@@ -6,7 +6,7 @@ import TimelineMobile from '@/components/Project/LSD/TimelineMobile'
 import TimelineSummary from '@/components/Project/LSD/TimelineSummary'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Meta from '@/data/meta.json'
-import { projectList } from '@/utils/projectIcon'
+import projects from '@/data/projects.json'
 import { ArrowRightIcon } from '@heroicons/react/outline'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
@@ -47,7 +47,7 @@ const relatedPolicy: Policy[] = [
   },
 ]
 
-const interestProjects: Project[] = [projectList[5], projectList[4], projectList[0], projectList[3]]
+const interestProjects: Project[] = [projects[5], projects[4], projects[0], projects[3]]
 
 const LsdPage = () => {
   return (

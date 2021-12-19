@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "title": "Aging in Place",
+    "description": "การสูงวัยในถิ่นที่อยู่อาศัยเดิม อย่างมีสุขภาวะ",
+    "url": "/project/aip",
+    "icon": "aip",
+    "color": "bg-[#c7642a]",
+    "enabled": true
+  },
+  {
+    "id": 1,
+    "title": "Intermediate Care",
+    "description": "ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทอง หลังพ้นภาวะวิกฤต",
+    "url": "/project/imc",
+    "icon": "imc",
+    "color": "bg-[#a8a8a8]",
+    "enabled": false
+  },
+  {
+    "id": 2,
+    "title": "Long-Term Care",
+    "description": "ระบบการดูแลระยะยาว สำหรับกลุ่มผู้สูงอายุที่มีภาวะพึ่งพิง",
+    "url": "/project/ltc",
+    "icon": "ltc",
+    "color": "bg-[#a8a8a8]",
+    "enabled": false
+  },
+  {
+    "id": 3,
+    "title": "Palliative Care",
+    "description": "ระบบการดูแลแบบประคับประคอง",
+    "url": "/project/pc",
+    "icon": "pc",
+    "color": "bg-[#3f36b7]",
+    "enabled": true
+  },
+  {
+    "id": 4,
+    "title": "Dementia",
+    "description": "ระบบบริการแลการดูแลผู้มีภาวะสมองเสื่อม",
+    "url": "/project/dt",
+    "icon": "dt",
+    "color": "bg-[#a8a8a8]",
+    "enabled": false
+  },
+  {
+    "id": 5,
+    "title": "Governing Mechanism",
+    "description": "กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ",
+    "url": "/project/gm",
+    "icon": "gm",
+    "color": "bg-[#a8a8a8]",
+    "enabled": false
+  },
+  {
+    "id": 6,
+    "title": "Local Service Delivery Network",
+    "description": "โครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด",
+    "url": "/project/lsd",
+    "icon": "lsd",
+    "color": "bg-[#daa13d]",
+    "enabled": true
+  }
+]
