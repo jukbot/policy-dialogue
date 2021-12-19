@@ -23,7 +23,7 @@ const GuidelinePage = () => {
     <>
       <Header
         title="คู่มือจัดกระบวนการ"
-        description="ทีมงานต้องเตรียมงานและจัดการอย่างไร ตั้งแต่ต้นจนจบ เราได้รวบรวมไว้แล้ว"
+        description="ทีมงานต้องเตรียมงานและจัดการอย่างไร ตั้งแต่ต้นจนจบ"
         image={`${Meta.baseUrl}${Result2.src}`}
         width={Result2.width}
         height={Result2.height}
