@@ -10,7 +10,7 @@ const ProcessPage = () => {
   const [selectedSection, setSelectedSection] = useState<number>(0)
   return (
     <>
-      <Header title="การออกแบบนโยบายอย่างมีส่วนร่วม" description="ก่อนจะถึงจุดหมาย ระหว่างทาง Policy Dialogue ใช้วิธีการอะไรบ้าง เพื่อหาคำตอบ" />
+      <Header title="การออกแบบนโยบายอย่างมีส่วนร่วม" description="ระหว่างทาง Policy Dialogue ใช้วิธีการอะไรบ้าง เพื่อหาคำตอบ" />
       <main className="relative">
         <section className="relative grid h-[50vh] lg:h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
           <div className="flex flex-col items-center justify-center py-12 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">

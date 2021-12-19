@@ -26,10 +26,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Header
-        title="เกี่ยวกับเรา"
-        description="พวกเราเป็นองค์กรเล็กที่ไม่ขึ้นกับใคร และมองว่าองค์กร ของเราจะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ โดยมุ่งใช้ความเป็นองค์กรที่ยืดหยุ่นนี้ เชื่อมช่องว่างทั้งหลาย ในระบบนิเวศของนวัตกรรมทางสังคม เพื่อสร้างผลกระทบเชิงบวกให้มากขึ้นกว่าเดิม"
-      />
+      <Header title="เกี่ยวกับเรา" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
       <main className="relative">
         <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
         <section className="relative h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat grid items-center bg-about-pattern-mobile sm:bg-about-pattern">
