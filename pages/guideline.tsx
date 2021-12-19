@@ -2,6 +2,7 @@ import AboutRiseImpact from '@/components/Footer/AboutRiseImpact'
 import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
 import Header from '@/components/Layout/Header'
+import Meta from '@/data/meta.json'
 import { DownloadIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -20,7 +21,13 @@ import Teamwork from '/public/image/guideline/teamwork.svg'
 const GuidelinePage = () => {
   return (
     <>
-      <Header title="คู่มือจัดกระบวนการ" description="ทีมงานต้องเตรียมงานและจัดการอย่างไร ตั้งแต่ต้นจนจบ เราได้รวบรวมไว้แล้ว" />
+      <Header
+        title="คู่มือจัดกระบวนการ"
+        description="ทีมงานต้องเตรียมงานและจัดการอย่างไร ตั้งแต่ต้นจนจบ เราได้รวบรวมไว้แล้ว"
+        image={`${Meta.baseUrl}${Result2.src}`}
+        width={Result2.width}
+        height={Result2.height}
+      />
       <main className="relative">
         <section className="relative grid h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover bg-no-repeat mix-blend-screen filter saturate-150 items-center bg-guideline-hero-pattern-mobile sm:bg-guideline-hero-pattern">
           <div className="flex flex-col items-center justify-center pt-24 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">

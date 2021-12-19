@@ -8,7 +8,7 @@ const ContentSecurityPolicy = `
   child-src *.youtube.com *.google.com *.twitter.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com *.gstatic.com;
   img-src * blob: data:;
-  object-src 'self';
+  object-src data: 'self';
   media-src 'self';
   frame-src 'self' https://www.youtube.com/ https://www.youtube-nocookie.com/ https://www.google.com/ https://www.recaptcha.net/ https://nongcalcal-cf9db.firebaseapp.com/;
   connect-src *;
