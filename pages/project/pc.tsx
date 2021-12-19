@@ -171,7 +171,7 @@ const PcPage = () => {
               <Image src={Chart} width={450} height={450} alt="chart" />
             </div>
             <div className="flex flex-col items-center space-y-8">
-              <p className="max-w-xl text-sm text-center sm:text-base font-body">
+              <p className="max-w-xl text-base text-center font-body">
                 ค่ารักษาพยาบาลเดือนสุดท้ายก่อนเสียชีวิตมีค่าเฉลี่ยที่ ประมาณ 45,000 บาท และมีค่าสูงสุดที่กว่า 340,000 บาท
                 แต่หากเป็นการดูแลที่บ้านอย่างได้มาตรฐาน จะมีค่าใช้จ่ายในเดือนสุดท้ายราว 27,000 บาท**
               </p>
@@ -190,19 +190,19 @@ const PcPage = () => {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">การถ่ายทอดความรู้ความเข้าใจยังมีจำกัด ทั้งต่อตัวผู้ป่วย ครอบครัว และบุคลากรในระบบ</p>
+                <p className="text-base font-body">การถ่ายทอดความรู้ความเข้าใจยังมีจำกัด ทั้งต่อตัวผู้ป่วย ครอบครัว และบุคลากรในระบบ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">กฎหมายไม่เอื้อต่อระบบบริหารจัดการการใช้ยาระงับปวดที่บ้าน เพื่อลดความเจ็บไข้ให้ผู้ป่วย</p>
+                <p className="text-base font-body">กฎหมายไม่เอื้อต่อระบบบริหารจัดการการใช้ยาระงับปวดที่บ้าน เพื่อลดความเจ็บไข้ให้ผู้ป่วย</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดแคลนบุคลากรเฉพาะทาง</p>
+                <p className="text-base font-body">ขาดแคลนบุคลากรเฉพาะทาง</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">การเชื่อมประสานระหว่างผู้มีส่วนได้ส่วนเสียในบางพื้นที่ยังไม่ ‘ไร้รอยต่อ’ อย่างแท้จริง</p>
+                <p className="text-base font-body">การเชื่อมประสานระหว่างผู้มีส่วนได้ส่วนเสียในบางพื้นที่ยังไม่ ‘ไร้รอยต่อ’ อย่างแท้จริง</p>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@ const PcPage = () => {
             <div className="flex justify-center mt-12">
               <Link href="/archive#thematic-briefs">
                 <a
-                  className="text-[#3f36b7] text-sm inline-flex btn bg-white hover:text-white hover:bg-neutral-900 rounded-full"
+                  className="text-[#3f36b7] inline-flex btn bg-white hover:text-white hover:bg-neutral-900 rounded-full"
                   target="_self"
                   rel="noopener noreferrer"
                 >
@@ -286,18 +286,18 @@ const PcPage = () => {
               </div>
               <div className="h-full col-span-1 px-6">
                 <ul className="space-y-12">
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมเห็นภาพปัญหาที่สำคัญ และเร่งด่วนที่สุดร่วมกัน</h3>
                     <p className="font-body">โดยเฉพาะการทำงานระหว่างผู้มีส่วนได้ส่วนเสียยังไม่เชื่อมประสานและบูรณาการอย่างแท้จริง</p>
                   </li>
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมจากแต่ละวงหารือ ฟังสถานการณ์ รวมถึงได้รับฟังแนวทางการรับมือกับปัญหาและข้อจำกัด</h3>
                     <p className="font-body">
                       ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
                       ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
                     </p>
                   </li>
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมมีความสนใจต่อการขับเคลื่อน</h3>
                     <p className="font-body">
                       อยากให้การดูแลแบบประคับประคองโดยการมีส่วนร่วมในชุมชนเกิดขึ้นได้จริง และแพร่หลายในระดับประเทศ

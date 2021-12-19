@@ -4,7 +4,7 @@ const Timeline = () => {
       <defs>
         <style>
           {
-            '.cls-1,.cls-11{fill:#fff}.cls-2{fill:#b2aee2;stroke:#fff;stroke-width:3px}.cls-10,.cls-3,.cls-4,.cls-9{fill:#3f36b7}.cls-3{font-size:30px}.cls-3,.cls-4,.cls-7{font-family:IBMPlexSansThai,sans-serif;font-weight:600}.cls-3,.cls-4{letter-spacing:.05em}.cls-4,.cls-7{font-size:25px}.cls-5{fill:#2b2b2b}.cls-6{fill:#707070}.cls-7,.cls-8{fill:#191919}.cls-8{font-size:18px;font-family:IBMPlexSansThaiLooped,sans-serif}.cls-10{stroke:transparent;stroke-miterlimit:10}.cls-11{stroke:#3f36b7;stroke-width:2px}.cls-12{stroke:none}.cls-13{fill:none}'
+            '.cls-1,.cls-11{fill:#fff}.cls-2{fill:#b2aee2;stroke:#fff;stroke-width:3px}.cls-10,.cls-3,.cls-4,.cls-9{fill:#3f36b7}.cls-3{font-size:1.875rem}.cls-3,.cls-4,.cls-7{font-family:IBMPlexSansThai,sans-serif;font-weight:600}.cls-3,.cls-4{letter-spacing:.05em}.cls-4,.cls-7{font-size:1.5rem}.cls-5{fill:#2b2b2b}.cls-6{fill:#707070}.cls-7,.cls-8{fill:#191919}.cls-8{font-size:1.125rem;font-family:IBMPlexSansThaiLooped,sans-serif}.cls-10{stroke:transparent;stroke-miterlimit:10}.cls-11{stroke:#3f36b7;stroke-width:2px}.cls-12{stroke:none}.cls-13{fill:none}'
           }
         </style>
       </defs>

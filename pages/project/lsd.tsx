@@ -46,7 +46,7 @@ const relatedPolicy: Policy[] = [
   },
 ]
 
-const interestProjects: Project[] = [projectList[5], projectList[4], projectList[3], projectList[6]]
+const interestProjects: Project[] = [projectList[5], projectList[4], projectList[0], projectList[3]]
 
 const LsdPage = () => {
   return (
@@ -56,7 +56,7 @@ const LsdPage = () => {
         description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
         image={`${Meta.baseUrl}${HeroImage.src}`}
       />
-      <main className="relative">
+      <main className="relative bg-[#FBF5EB]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#daa13d]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
             <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
@@ -168,7 +168,7 @@ const LsdPage = () => {
               </div>
             </div>
             <div className="flex flex-col items-center space-y-8">
-              <p className="text-sm text-center sm:text-base font-body max-w-prose">
+              <p className="text-base text-center font-body max-w-prose">
                 จากข้อมูลปี พ.ศ. 2563 ประเทศไทยมีประชากรผู้สูงอายุกว่า 12 ล้านคน ซึ่งคิดเป็น 18% จากประชากรทั้งหมด 66.5 ล้านคน และคาดการณ์ว่าภายใน ปีพ.ศ. 2565
                 สัดส่วนผู้สูงอายุจะเพิ่มขึ้นเป็น 20% ของประชากรทั้งหมด* ซึ่งหมายถึงการเข้าสู่ “สังคมสูงวัยอย่างสมบูรณ์ (Aged Society)”
               </p>
@@ -187,90 +187,54 @@ const LsdPage = () => {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
-                  การนำรูปแบบการจัดการที่มีอยู่ไปทำซ้ำหรือขยายผลในแต่ละพื้นที่ยังมีข้อจำกัด เนื่องจากบริบทที่แตกต่าง
-                </p>
+                <p className="text-base font-body">การนำรูปแบบการจัดการที่มีอยู่ไปทำซ้ำหรือขยายผลในแต่ละพื้นที่ยังมีข้อจำกัด เนื่องจากบริบทที่แตกต่าง</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
-                  ในปัจจุบัน พยาบาลและนักกายภาพบำบัดมักต้องทำหน้าที่ประสานการดูแลไปด้วย ทำให้มีภาระงานหนักเกินควร
-                </p>
+                <p className="text-base font-body">ในปัจจุบัน พยาบาลและนักกายภาพบำบัดมักต้องทำหน้าที่ประสานการดูแลไปด้วย ทำให้มีภาระงานหนักเกินควร</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
+                <p className="text-base font-body">
                   ขาดการบูรณาการการทำงานระดับหน่วยงานในพื้นที่ ทั้งโรงพยาบาลชุมชน โรงพยาบาลส่งเสริมสุขภาพตำบล องค์กรปกครองส่วนท้องถิ่น
                   และสำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัด
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
+                <p className="text-base font-body">
                   ขาดระบบขนส่งสาธารณะและโครงสร้างพื้นฐานที่เป็นมิตรกับผู้สูงอายุ หรือผู้ที่ต้องใช้กายอุปกรณ์
                   ทำให้เข้ารับบริการสุขภาพและเข้าร่วมกิจกรรมทางสังคมได้ยากลำบาก
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon5} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
+                <p className="text-base font-body">
                   ระบบการส่งต่อคนไข้ยังเน้นเป็นรายครั้งและดูแลเฉพาะโรค ทำให้หน่วยงานในพื้นที่ที่นอกเหนือจากโรงพยาบาลชุมชนไม่ได้รับข้อมูลคนไข้อย่างทั่วถึง
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon6} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
+                <p className="text-base font-body">
                   ภาครัฐขาดระบบการช่วยเหลือดูแลผู้สูงอายุชั่วคราว (respite care) รวมถึงระบบที่สามารถให้ความช่วยเหลือและคำปรึกษาแก่ญาติที่เป็นผู้ดูแลได้
                 </p>
               </div>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto text-body">
-            <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
+        </section>
+        <section className="relative h-full bg-[#E9C68A] md:mt-16">
+          <div className="w-full mx-auto md:absolute md:h-56 md:-mt-12 text-body md:-transform-x-1/2">
+            <div className="w-full h-full max-w-4xl px-6 py-16 mx-auto space-y-8 text-white md:px-24 bg-secondary">
               <div className="flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
-                <p className="font-bold text-center md:max-w-sm md:text-left font-body">
-                  เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
+                <p className="leading-relaxed text-center md:max-w-sm md:text-left font-body">
+                  จึงจะมีรูปแบบการดูแลผู้ป่วยแบบประคับประคอง ที่บูรณาการการทำงานเชิงระบบ ทั้งฝ่ายสาธารณสุขและชุมชนอย่างมีประสิทธิภาพ สามารถปรับใช้ในแต่ละพื้นที่
+                  เพื่อส่งเสริมคุณภาพชีวิตของผู้คนได้
                 </p>
               </div>
-              <p className="flex flex-col flex-wrap text-sm text-center md:text-base font-body md:block">
-                <span>บ้านหรือที่อยู่อาศัยที่เหมาะสม</span> <span>|</span>{' '}
-                <span>ชุดบริการที่จำเป็นเพื่ออาศัยในถิ่นที่อยู่เดิมอย่างมีคุณภาพชีวิตที่ดีได้ ในบริบทสังคมไทย</span> <span>|</span>{' '}
-                <span>สร้างความร่วมมือและบูรณาการระหว่างรัฐบาล องค์การปกครองส่วนท้องถิ่น ภาคเอกชน ชุมชน และภาคประชาสังคม ผ่านโมเดลการทำงานรูปแบบใหม่</span>
-              </p>
             </div>
           </div>
-        </section>
-        <section className="relative h-full bg-[#E9C68A]">
-          <div className="max-w-6xl mx-auto text-body">
-            <div className="w-full h-full max-w-4xl px-6 pb-6 mx-auto space-y-8 text-white md:pb-12 md:px-24 bg-secondary">
-              <div className="w-full border-t-2 border-white md:px-24" />
-              <p className="text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
-              <div className="grid w-full grid-cols-1 gap-12 mt-6 md:grid-cols-2">
-                <div className="flex flex-col col-span-1 space-y-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
-                    <path
-                      fill="#daa13d"
-                      d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
-                      transform="translate(-257.346 -9.572)"
-                    />
-                  </svg>
-                  <p className="font-body">การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อความต้องการของผู้สูงอายุในการใช้ชีวิตในถิ่นที่เดิม (Aging in Place) </p>
-                </div>
-                <div className="flex flex-col col-span-1 space-y-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
-                    <path
-                      fill="#36723b"
-                      d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
-                      transform="translate(-257.346 -9.572)"
-                    />
-                  </svg>
-                  <p className="font-body">
-                    การปรับการจัดการและบทบาทการทำงานขององค์กรปกครองส่วนท้องถิ่น เพื่อสนับสนุนการจัดบริการสำหรับผู้สูงอายุที่บ้านที่เหมาะสมกับบริบทของไทย{' '}
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto text-body md:pt-[11rem]">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>
@@ -289,38 +253,23 @@ const LsdPage = () => {
             </div>
             <div className="grid w-full grid-cols-1 gap-12 px-6 mt-6 text-white md:gap-24 md:grid-cols-2 md:px-24">
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
-                  <path
-                    fill="#daa13d"
-                    d="m282.975 18.132 2.6-8.1a.66.66 0 0 1 1.288.2l-.032 8.508a.66.66 0 0 0 1.195.388l4.975-6.9a.66.66 0 0 1 1.162.592L291.5 20.9a.66.66 0 0 0 1.016.738l6.864-5.027a.66.66 0 0 1 .922.922l-5.025 6.867a.66.66 0 0 0 .739 1.016l8.082-2.66a.66.66 0 0 1 .592 1.162l-6.9 4.975a.66.66 0 0 0 .388 1.195l8.508-.032a.66.66 0 0 1 .2 1.288l-8.1 2.6a.66.66 0 0 0 0 1.256l8.1 2.6a.66.66 0 0 1-.2 1.288l-8.508-.032a.66.66 0 0 0-.388 1.195l6.9 4.975a.66.66 0 0 1-.592 1.162l-8.082-2.66a.66.66 0 0 0-.739 1.016l5.027 6.864a.66.66 0 0 1-.922.922l-6.864-5.03a.66.66 0 0 0-1.016.738l2.66 8.082a.66.66 0 0 1-1.162.592l-4.975-6.9a.66.66 0 0 0-1.195.388l.032 8.508a.66.66 0 0 1-1.288.2l-2.6-8.1a.66.66 0 0 0-1.256 0l-2.6 8.1a.66.66 0 0 1-1.288-.2l.032-8.508a.66.66 0 0 0-1.195-.388l-4.975 6.9a.66.66 0 0 1-1.162-.592l2.66-8.082a.66.66 0 0 0-1.017-.738l-6.864 5.027a.66.66 0 0 1-.922-.922l5.027-6.864a.66.66 0 0 0-.738-1.016l-8.082 2.66a.66.66 0 0 1-.594-1.16l6.9-4.975a.66.66 0 0 0-.388-1.195l-8.508.032a.66.66 0 0 1-.2-1.288l8.1-2.6a.66.66 0 0 0 0-1.256l-8.1-2.6a.66.66 0 0 1 .2-1.288l8.508.032a.66.66 0 0 0 .388-1.195L260 23.92a.66.66 0 0 1 .592-1.162l8.082 2.66a.66.66 0 0 0 .738-1.016l-5.027-6.864a.66.66 0 0 1 .922-.922l6.864 5.027a.66.66 0 0 0 1.017-.738l-2.66-8.082a.66.66 0 0 1 1.162-.592l4.975 6.9a.66.66 0 0 0 1.195-.388l-.032-8.508a.66.66 0 0 1 1.288-.2l2.6 8.1a.66.66 0 0 0 1.259-.003z"
-                    transform="translate(-257.346 -9.572)"
-                  />
-                </svg>
-                <p>การพัฒนาชุดบริการสำคัญที่ตอบสนองต่อ ความต้องการของผู้สูงอายุในการใช้ชีวิต ในถิ่นที่เดิม (Aging in Place) </p>
-                <div className="w-full border-t-2 border-white md:px-24" />
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอระยะสั้น</h3>
-                      <p className="text-sm font-body">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
+                      <h3 className="text-xl font-bold">ข้อเสนอที่ 1</h3>
+                      <p className="font-body">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอระยะกลาง</h3>
-                      <p className="text-sm font-body">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
+                      <h3 className="text-xl font-bold">ข้อเสนอที่ 2</h3>
+                      <p className="font-body">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอระยะยาว</h3>
-                      <p className="text-sm font-body">
-                        ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ
-                      </p>
+                      <h3 className="text-xl font-bold">ข้อเสนอที่ 3</h3>
+                      <p className="font-body">ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ</p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a
-                      className="text-[#daa13d] text-sm inline-flex items-center btn bg-white hover:text-white rounded-full"
-                      target="_self"
-                      rel="noopener noreferrer"
-                    >
+                    <a className="text-[#daa13d] inline-flex items-center btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -340,12 +289,12 @@ const LsdPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอ 1</h3>
-                      <p className="text-sm font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                      <h3 className="text-lg font-bold">ข้อเสนอที่ 1</h3>
+                      <p className="font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a className="text-[#36723b] text-sm inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
+                    <a className="text-[#daa13d] inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -373,30 +322,25 @@ const LsdPage = () => {
               </div>
               <div className="h-full col-span-1 px-6">
                 <ul className="space-y-12">
-                  <li className="space-y-2">
-                    <h3 className="text-xl font-bold">ผู้เข้าร่วมแสดงความสนใจและอยาก ผลักดันต่อ</h3>
+                  <li className="space-y-2 md:space-y-4">
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมหลากหลายระดับได้หารือและแลกเปลี่ยนความคิดเห็น</h3>
                     <p className="font-body">
-                      ตัวแทนหน่วยงานภาครัฐที่มาร่วม มีความเปิดกว้างต่อการรับแนวคิดใหม่ พยายามหาแนวทางในการพัฒนาบทบาทของหน่วยงานในการส่งเสริมงานด้านผู้สูงอายุ
+                      ผู้เข้าร่วมให้ความสนใจและมีแรงบันดาลใจอย่างมาก เนื่องจากประเด็นเหล่านี้ เป็นปัญหาสำคัญของการดูแลผู้สูงอายุในปัจจุบัน
+                      เกิดความคิดเห็นผู้เข้าร่วม หลายระดับ หลายหน่วยงาน ทั้งระบบบริการสุขภาพ และหน่วยงานที่ดูแลคุณภาพชีวิตแบบองค์รวม
                     </p>
                   </li>
-                  <li className="space-y-2">
-                    <h3 className="text-xl font-bold">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
-                    <p className="font-body">
-                      ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
-                      ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
-                    </p>
+                  <li className="space-y-2 md:space-y-4">
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมส่วนใหญ่มีความรู้สึกเชิงบวกต่อข้อเสนอเรื่องการบูรณาการข้อมูล</h3>
+                    <p className="font-body">ผู้เข้าร่วมส่วนใหญ่มีความรู้สึกเชิงบวกต่อข้อเสนอเรื่องการบูรณาการข้อมูล</p>
                   </li>
-                  <li className="space-y-2">
-                    <h3 className="text-xl font-bold">เกิดพื้นที่คลายข้อสงสัยระหว่างหน่วยงานส่วนกลางและท้องถิ่น</h3>
+                  <li className="space-y-2 md:space-y-4">
+                    <h3 className="text-xl font-bold">
+                      ผู้เข้าร่วมวงหารือทุกคนสนใจและรู้สึกว่าข้อเสนอเรื่องการจัดกลุ่มหนุนใจ (support group) สร้างแรงบันดาลใจ
+                    </h3>
                     <p className="font-body">
-                      เปิดพื้นที่ให้ อปท. ได้มีโอกาสพูดคุยโดยตรงกับตัวแทนจากหน่วยงานนโยบาย หลายท่านสะท้อนว่าเป็นประโยชน์
-                      เนื่องจากที่ผ่านมาไม่ค่อยมีโอกาสได้สื่อสารโดยตรง กระบวนการนี้ทำให้ได้รับฟังความเห็นระหว่างกันและกัน
-                      และได้คลายความสงสัยในหลายปัญหาข้อติดขัด
+                      ผู้เข้าร่วมจากหน่วยงานต่างๆ ทั้งกระทรวงสาธารณสุข กรมกิจการผู้สูงอายุ และองค์การปกครองส่วนท้องถิ่น มองว่าเรื่องนี้มีความสำคัญ
+                      ทุกหน่วยงานกำลังพยายามทำอยู่และจะทำต่อไป หลังจากได้หารือในวงพูดคุย
                     </p>
-                  </li>
-                  <li className="space-y-2">
-                    <h3 className="text-xl font-bold">ได้ประเด็นที่สมควรศึกษาวิจัยต่อเพื่อพัฒนานโยบาย</h3>
-                    <p className="font-body">ได้หัวข้อสิ่งที่น่าจะนำไปศึกษาเพิ่มเติมเพื่อช่วยกำหนด กรอบนโยบายต่อไปได้ เช่น การจัดการทรัพยากรในแต่ละพื้นที่</p>
                   </li>
                 </ul>
               </div>

@@ -49,7 +49,7 @@ const AipPage = () => {
         description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
         image={`${Meta.baseUrl}${HeroImage.src}`}
       />
-      <main className="relative">
+      <main className="relative bg-[#F9EEE9]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
             <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
@@ -176,7 +176,7 @@ const AipPage = () => {
               <Image src={ElderlyHome} width={300} alt="elderly home" />
             </div>
             <div className="flex flex-col items-center space-y-8">
-              <p className="text-sm text-center sm:text-base font-body">
+              <p className="text-base text-center font-body">
                 ปัจจุบัน ไทยมีบ้านพักคนชราของรัฐเพียง 12 แห่ง
                 <br />
                 ขณะที่ประชากรผู้สูงอายุทั่วประเทศมีมากกว่า 11 ล้านคน**
@@ -196,21 +196,21 @@ const AipPage = () => {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">
+                <p className="text-base font-body">
                   ขาดการบูรณาการ ระหว่างบริการทางสุขภาพและสังคม ทั้งในด้านการวางแผน การส่งต่อทรัพยากรและข้อมูล การกำหนดมาตรฐาน และตรวจสอบคุณภาพ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">อุปสรรคด้านข้อกฎหมายที่เกี่ยวข้องกับองค์การปกครองส่วนท้องถิ่น ทั้งอำนาจหน้าที่ และ งบประมาณ</p>
+                <p className="text-base font-body">อุปสรรคด้านข้อกฎหมายที่เกี่ยวข้องกับองค์การปกครองส่วนท้องถิ่น ทั้งอำนาจหน้าที่ และ งบประมาณ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับ ผู้สูงอายุ</p>
+                <p className="text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับ ผู้สูงอายุ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
-                <p className="text-sm sm:text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+                <p className="text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ const AipPage = () => {
                   เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
                 </p>
               </div>
-              <p className="flex flex-col flex-wrap text-sm text-center md:text-base font-body md:block">
+              <p className="flex flex-col flex-wrap text-base text-center font-body md:block">
                 <span>บ้านหรือที่อยู่อาศัยที่เหมาะสม</span> <span>|</span>{' '}
                 <span>ชุดบริการที่จำเป็นเพื่ออาศัยในถิ่นที่อยู่เดิมอย่างมีคุณภาพชีวิตที่ดีได้ ในบริบทสังคมไทย</span> <span>|</span>{' '}
                 <span>สร้างความร่วมมือและบูรณาการระหว่างรัฐบาล องค์การปกครองส่วนท้องถิ่น ภาคเอกชน ชุมชน และภาคประชาสังคม ผ่านโมเดลการทำงานรูปแบบใหม่</span>
@@ -290,26 +290,20 @@ const AipPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอระยะสั้น</h3>
-                      <p className="text-sm font-body">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
+                      <h3 className="text-xl font-bold">ข้อเสนอระยะสั้น</h3>
+                      <p className="font-body">การจัดทำกรอบแนวคิดชุดบริการสำคัญสำหรับผู้สูงอายุในบริบทไทย</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอระยะกลาง</h3>
-                      <p className="text-sm font-body">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
+                      <h3 className="text-xl font-bold">ข้อเสนอระยะกลาง</h3>
+                      <p className="font-body">ปรับเปลี่ยนรูปแบบการจ่ายเงินอุดหนุนด้านการจัดบริการสำหรับผู้สูงอายุ</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอระยะยาว</h3>
-                      <p className="text-sm font-body">
-                        ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ
-                      </p>
+                      <h3 className="text-xl font-bold">ข้อเสนอระยะยาว</h3>
+                      <p className="font-body">ผลักดันให้มีหน่วยงานภาครัฐที่ทำหน้าที่ในฐานะเจ้าภาพการจัดบริการทางสังคมเพื่อพัฒนาคุณภาพชีวิตผู้สูงอายุ</p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a
-                      className="text-[#c7642a] text-sm inline-flex items-center btn bg-white hover:text-white rounded-full"
-                      target="_self"
-                      rel="noopener noreferrer"
-                    >
+                    <a className="text-[#c7642a]  inline-flex items-center btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -329,12 +323,12 @@ const AipPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-lg font-bold">ข้อเสนอ 1</h3>
-                      <p className="text-sm font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                      <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
+                      <p className="font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a className="text-[#36723b] text-sm inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
+                    <a className="text-[#36723b] inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -362,20 +356,20 @@ const AipPage = () => {
               </div>
               <div className="h-full col-span-1 px-6">
                 <ul className="space-y-12">
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมแสดงความสนใจและอยาก ผลักดันต่อ</h3>
                     <p className="font-body">
                       ตัวแทนหน่วยงานภาครัฐที่มาร่วม มีความเปิดกว้างต่อการรับแนวคิดใหม่ พยายามหาแนวทางในการพัฒนาบทบาทของหน่วยงานในการส่งเสริมงานด้านผู้สูงอายุ
                     </p>
                   </li>
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
                     <p className="font-body">
                       ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
                       ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
                     </p>
                   </li>
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">เกิดพื้นที่คลายข้อสงสัยระหว่างหน่วยงานส่วนกลางและท้องถิ่น</h3>
                     <p className="font-body">
                       เปิดพื้นที่ให้ อปท. ได้มีโอกาสพูดคุยโดยตรงกับตัวแทนจากหน่วยงานนโยบาย หลายท่านสะท้อนว่าเป็นประโยชน์
@@ -383,7 +377,7 @@ const AipPage = () => {
                       และได้คลายความสงสัยในหลายปัญหาข้อติดขัด
                     </p>
                   </li>
-                  <li className="space-y-2">
+                  <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ได้ประเด็นที่สมควรศึกษาวิจัยต่อเพื่อพัฒนานโยบาย</h3>
                     <p className="font-body">ได้หัวข้อสิ่งที่น่าจะนำไปศึกษาเพิ่มเติมเพื่อช่วยกำหนด กรอบนโยบายต่อไปได้ เช่น การจัดการทรัพยากรในแต่ละพื้นที่</p>
                   </li>
