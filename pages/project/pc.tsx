@@ -52,7 +52,7 @@ const PcPage = () => {
       </Head>
       <main className="relative bg-[#EBEAF8]">
         <section className="relative h-full h-[90vh] transition grid items-center bg-[#3f36b7]">
-          <div className="items-center justify-between mb-6 lg:flex">
+          <div className="items-center justify-between lg:mb-6 lg:flex">
             <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
               <h1 className="text-2xl font-semibold leading-snug lg:text-4xl lg:text-5xl">
                 บั้นปลายชีวิตคนไทย
@@ -88,7 +88,7 @@ const PcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 gap-6 pt-64 md:pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 pt-48 md:pt-72 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
             </div>
