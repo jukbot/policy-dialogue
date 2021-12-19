@@ -68,7 +68,7 @@ const GuidelinePage = () => {
                     <Image className="w-12 h-12 shrink-0" width="48" height="48" aria-hidden="true" src={Resources} alt="resources" />
                     <h3 className="text-xl font-bold">Resources</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
-                      มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่างๆ
+                      มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่าง ๆ
                       เพื่อหาคำตอบและจัดกระบวนการ
                     </p>
                   </div>
@@ -120,7 +120,7 @@ const GuidelinePage = () => {
                         <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Communication skills</p>
-                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่างๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
+                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่าง ๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
@@ -279,7 +279,7 @@ const GuidelinePage = () => {
                   <span className="text-2xl font-bold leading-none align-top">•</span>
                   <div className="space-y-1">
                     <p className="font-bold">ข้อมูลเชิงลึก</p>
-                    <p className="font-body">จากผู้เข้าร่วม จุดร่วมของปัญหา อุปสรรคและช่องโหว่ของประเด็นนั้นๆ</p>
+                    <p className="font-body">จากผู้เข้าร่วม จุดร่วมของปัญหา อุปสรรคและช่องโหว่ของประเด็นนั้น ๆ</p>
                   </div>
                 </li>
                 <li className="inline-flex space-x-2">
@@ -302,7 +302,7 @@ const GuidelinePage = () => {
                   <div className="space-y-1">
                     <p className="font-bold">สร้างการมีส่วนร่วมกับผู้คน</p>
                     <p className="font-body">
-                      ภาคส่วนต่างๆ เข้าใจกันมากขึ้น ซึ่งอาจมีส่วนช่วยในการขับเคลื่อนนโยบาย หรือออกแบบการแก้ไขปัญหาในอนาคต สร้างความเข้าใจ หาจุดร่วม
+                      ภาคส่วนต่าง ๆ เข้าใจกันมากขึ้น ซึ่งอาจมีส่วนช่วยในการขับเคลื่อนนโยบาย หรือออกแบบการแก้ไขปัญหาในอนาคต สร้างความเข้าใจ หาจุดร่วม
                       และแลกเปลี่ยนความต่าง อาจทำให้เกิดทางเลือกใหม่จากภาพที่ชัดขึ้น
                     </p>
                   </div>

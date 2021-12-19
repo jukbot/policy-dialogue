@@ -43,7 +43,7 @@ const PolicyContent = () => {
         </div>
         <Link href={selectedProject?.url} passHref>
           <button disabled={!selectedProject?.enabled} className={`${selectedProject?.enabled ? 'btn' : 'btn-disabled'} w-full`}>
-            {selectedProject?.enabled ? 'อ่านต่อ' : 'เร็วๆ นี้'}
+            {selectedProject?.enabled ? 'อ่านต่อ' : 'เร็ว ๆ นี้'}
           </button>
         </Link>
       </div>

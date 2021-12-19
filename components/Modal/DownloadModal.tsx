@@ -136,7 +136,7 @@ const DownloadModal = ({ isOpen, type, fileName }: Props) => {
                         <option value="student">นักเรียน นักศึกษา</option>
                         <option value="international-org">องค์กรระหว่างประเทศ</option>
                         <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
-                        <option value="other">อื่นๆ (โปรดระบุ)</option>
+                        <option value="other">อื่น ๆ (โปรดระบุ)</option>
                       </select>
                       {organizeType === 'other' && (
                         <input type="text" required name="organize-other" placeholder="ระบุประเภทองค์กร" className="mt-2 bg-white text-input" maxLength={60} />

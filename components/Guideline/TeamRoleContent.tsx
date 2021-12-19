@@ -82,7 +82,7 @@ const TeamRoleContent = () => {
               </li>
               <li className="flex space-x-2">
                 <span className="text-xl font-bold leading-none align-top">•</span>
-                <p>ความสามารถการจัดเตรียมอำนวยความสะดวกต่างๆ</p>
+                <p>ความสามารถการจัดเตรียมอำนวยความสะดวกต่าง ๆ</p>
               </li>
             </ul>
           </div>
