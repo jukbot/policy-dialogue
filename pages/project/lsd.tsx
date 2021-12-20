@@ -241,7 +241,7 @@ const LsdPage = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto px-6 text-body md:pt-[15rem]">
+          <div className="max-w-6xl mx-auto px-0 md:px-6 text-body md:pt-[15rem]">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>

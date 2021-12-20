@@ -221,7 +221,7 @@ const PcPage = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto md:pt-[11rem]">
+          <div className="max-w-6xl mx-auto px-0 md:px-6 md:pt-[11rem]">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>
