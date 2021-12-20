@@ -259,7 +259,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/01_CCU_Policy_Recommendation.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_CCU.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -298,7 +298,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/02_อปท_Policy_Recommendation.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_อปท.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -339,7 +339,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/03_IMC_Policy_Recommendation.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_IMC.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -375,7 +375,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/04_GM_Policy_Recommendation.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_GM.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -408,7 +408,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/01_Policy_Dialogue_Guideline.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Guideline.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -429,7 +429,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/02_Policy_Dialogue_Methods.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Methods.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -449,7 +449,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/03_Policy_Dialogue_Value.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Value.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>
@@ -471,7 +471,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
-                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/04_Policy_Dialogue_Tips.pdf')}
+                  onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Tips.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
                   <span>ดาวน์โหลดเอกสาร</span>

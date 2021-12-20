@@ -285,7 +285,7 @@ const GuidelinePage = () => {
                 target="_self"
                 rel="noopener noreferrer"
                 type="application/pdf"
-                onClick={(e) => checkDownload(e, '/archive/practical-guidelines/01_Policy_Dialogue_Guideline.pdf')}
+                onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Guideline.pdf')}
               >
                 <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                 <span>ดาวน์โหลดคู่มือฉบับเต็ม</span>

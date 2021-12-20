@@ -189,12 +189,10 @@ const Home: NextPage = () => {
           <section className="relative h-full bg-[#242054]">
             <div className="flex flex-col items-center justify-center px-6 py-12 text-white">
               <QuestionMark className="w-48 h-48" />
-              <p className="text-base leading-relaxed text-center lg:text-lg font-body">
-                คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ
-                <br />
-                กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง
-                <br />
-                ภาครัฐ ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
+              <p className="text-base leading-relaxed text-center lg:text-lg font-body max-w-prose break-words">
+                คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย
+                <br /> เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ
+                ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
               </p>
             </div>
             <div className="absolute bottom-0 hidden -ml-4 lg:block triangle-up left-1/2"></div>
