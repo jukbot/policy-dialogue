@@ -45,8 +45,8 @@ const Footer = (): JSX.Element => {
 
   return (
     <footer className="relative flex flex-col w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
-      <ul className="grid w-full text-white gap-y-8 lg:gap-4 lg:grid-cols-4 font-body">
-        <li className="col-span-1 text-center">
+      <ul className="grid w-full h-full text-white gap-y-8 md:grid-cols-2 gap-4 lg:grid-cols-4 font-body">
+        <li className="col-span-1 lg:text-center">
           <Link href="/">
             <a>
               <Image src={Logo} alt="logo" className="w-full h-full" objectFit="contain" width="200" height="80" />
@@ -159,7 +159,7 @@ const Footer = (): JSX.Element => {
         </li>
       </ul>
       <div className="py-4 text-white border-t md:pt-6 border-slate-200/75 font-body">
-        <p className="pb-4 text-sm">Copyright &copy; {new Date().getFullYear()} RISE Impact. All rights reserved.</p>
+        <p className="text-sm">Copyright &copy; {new Date().getFullYear()} RISE Impact. All rights reserved.</p>
       </div>
     </footer>
   )
