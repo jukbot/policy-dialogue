@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { FormEvent, useCallback, useState } from 'react'
 import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
+import ProjectDropDown from '../Navbar/ProjectDropdown'
 import Logo from '/public/image/logo/logo.svg'
 import RiseImpactLogo from '/public/image/logo/rise-impact-white.svg'
 
@@ -79,33 +80,34 @@ const Footer = (): JSX.Element => {
               </Disclosure>
             </li>
             <li className="hidden md:block">
-              <Link href="/project">
+              {/* <Link href="/project">
                 <a className="text-link">นโยบายเพื่อสังคมสูงวัย</a>
-              </Link>
+              </Link> */}
+              <ProjectDropDown />
             </li>
             <li>
               <Link href="/process">
-                <a className="text-link">การออกแบบนโยบายอย่างมีส่วนร่วม</a>
+                <a className="text-sm text-link">การออกแบบนโยบายอย่างมีส่วนร่วม</a>
               </Link>
             </li>
             <li>
               <Link href="/value">
-                <a className="text-link">คุณค่าของกระบวนการ</a>
+                <a className="text-sm text-link">คุณค่าของกระบวนการ</a>
               </Link>
             </li>
             <li>
               <Link href="/guideline">
-                <a className="text-link">คู่มือการจัดกระบวนการ</a>
+                <a className="text-sm text-link">คู่มือการจัดกระบวนการ</a>
               </Link>
             </li>
             <li>
               <Link href="/archive">
-                <a className="text-link">คลังข้อมูล</a>
+                <a className="text-sm text-link">คลังข้อมูล</a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a className="text-link">เกี่ยวกับเรา</a>
+                <a className="text-sm text-link">เกี่ยวกับเรา</a>
               </Link>
             </li>
           </ul>
@@ -143,7 +145,7 @@ const Footer = (): JSX.Element => {
             </a>
           </div>
           <p className="font-bold">สำนักงานใหญ่</p>
-          <p>
+          <p className="text-sm">
             บริษัท ไรซ์ อิมแพค จำกัด
             <br /> 14 ซอยเจริญนคร 2 ถนนเจริญนคร
             <br /> แขวงคลองต้นไทร เขตคลองสาน
@@ -151,7 +153,7 @@ const Footer = (): JSX.Element => {
           </p>
         </li>
       </ul>
-      <div className="py-4 text-white border-t md:pt-6 border-slate-200/50 font-body">
+      <div className="py-4 text-white border-t md:pt-6 border-gray-200/50 font-body">
         <p className="text-sm">Copyright &copy; {new Date().getFullYear()} RISE Impact. All rights reserved.</p>
       </div>
     </footer>

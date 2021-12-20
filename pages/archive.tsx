@@ -230,7 +230,7 @@ const ArchivePage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-slate-500/75 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500/75 md:grid-cols-2">
               <div className="col-span-1" id="ccu">
                 <p className="text-lg font-bold">
                   การพัฒนาหน่วยประสานการดูแล
@@ -267,7 +267,7 @@ const ArchivePage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-slate-500 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1" id="aip-1">
                 <p className="text-lg font-bold">
                   การเสริมพลังองค์กรปกครองส่วนท้องถิ่น
@@ -306,7 +306,7 @@ const ArchivePage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-slate-500 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1">
                 <p className="text-lg font-bold" id="pc-3">
                   การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุข
@@ -347,7 +347,7 @@ const ArchivePage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-slate-500 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1">
                 <p className="text-lg font-bold">
                   การปรับกลไกการทำงานของคณะกรรมการ

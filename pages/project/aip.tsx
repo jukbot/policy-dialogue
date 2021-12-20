@@ -149,7 +149,7 @@ const AipPage = () => {
                 </tspan>
               </text>
             </svg>
-            <a href="https://www.prachachat.net/property/news-596824" className="hover:text-slate-900" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.prachachat.net/property/news-596824" className="hover:text-gray-900" target="_blank" rel="noopener noreferrer">
               <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
                 การลงทุนสร้างบ้านพักคนชรา 1 แห่งในปัจจุบัน
                 <br /> ต้องใช้เงินลงทุนในการสร้างประมาณ 305 ล้านบาท สำหรับผู้สูงอายุ 150 คน
