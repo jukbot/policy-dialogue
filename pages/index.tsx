@@ -199,7 +199,7 @@ const Home: NextPage = () => {
           </section>
           <section className="relative h-full overflow-hidden bg-secondary">
             <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern-mobile lg:bg-step-blur-pattern"></div>
-            <div className="absolute top-0 w-full h-full bg-fixed bg-top bg-no-repeat bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
+            <div className="absolute top-0 w-full h-full bg-fixed bg-top bg-no-repeat opacity-70 bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
             <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-4 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% bg-process-step-mobile lg:bg-process-step">
               <div className="justify-start hidden lg:justify-center lg:flex">
                 <div className="flex flex-col items-start justify-center pl-20 mt-48 space-y-6 font-bold bg-white rounded-full lg:mt-0 lg:text-center lg:pt-10 w-60 h-60 lg:pl-0 lg:items-center lg:w-80 lg:h-80 text-body">
