@@ -186,7 +186,7 @@ const GuidelinePage = () => {
                   <h3 className="text-4xl font-bold">บทบาทของทีม</h3>
                   <p className="text-sm sm:text-base font-body">ทีม RISE Impact แบ่งการทำงานเป็นทีมย่อยของแต่ละประเด็น ออกเป็น 3 บทบาท ดังนี้</p>
                 </div>
-                <TeamRoleChart className="w-full h-full" />
+                <TeamRoleChart className="relative" />
               </article>
             </div>
           </div>

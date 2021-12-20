@@ -10,7 +10,7 @@ interface Props {
 
 const Accordion = ({ title, children, isOpen: isOpen, number, toggleClick = () => {} }: PropsWithChildren<Props>): JSX.Element => {
   return (
-    <section>
+    <section className={`${number < 2 && 'border-b border-neutral-300/25'} py-1 pb-2`}>
       <dt>
         <button className={`flex justify-between w-full py-2 items-start mr-3 group focus:outline-none`} onClick={() => toggleClick(number)}>
           <span className={`${isOpen ? '' : 'hover:text-primary'} text-white transition font-bold text-left text-lg md:text-xl`}>{title}</span>
