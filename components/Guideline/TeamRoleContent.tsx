@@ -54,7 +54,7 @@ const TeamRoleContent = () => {
               </li>
               <li className="flex space-x-2">
                 <span className="text-xl font-bold leading-none align-top">•</span>
-                <p>ทักษะการชวนคุย (Moderator)</p>
+                <p>ทักษะการออกแบบและจัดกระบวนการ</p>
               </li>
               <li className="flex space-x-2">
                 <span className="text-xl font-bold leading-none align-top">•</span>
@@ -82,7 +82,7 @@ const TeamRoleContent = () => {
               </li>
               <li className="flex space-x-2">
                 <span className="text-xl font-bold leading-none align-top">•</span>
-                <p>ความสามารถการจัดเตรียมอำนวยความสะดวกต่าง ๆ</p>
+                <p>ความสามารถการจัดเตรียมอำนวยความสะดวกต่างๆ</p>
               </li>
             </ul>
           </div>

@@ -69,7 +69,7 @@ module.exports = {
         welfare: "url('/image/policy/welfare.jpg')",
       },
       backgroundPosition: {
-        'top-left-2': '3.5rem 2.5rem',
+        'top-left-2': 'top 2rem left 1rem',
         '-top-6': 'center top -6rem',
         '-top-16': 'center top -16rem',
         'top-right': 'top right 1rem',

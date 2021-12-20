@@ -114,7 +114,7 @@ const Navbar = (): JSX.Element => {
                   </>
                 )}
               </Disclosure>
-              <div className="pt-8 mx-20 space-y-4 border-t border-white border-opacity-40">
+              <div className="pt-8 space-y-4 border-t border-white border-opacity-40">
                 {mobileNav.map((item) => (
                   <Disclosure.Button
                     key={item.name}

@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           <section
             className={`${
               intersection && intersection.intersectionRatio < 1 ? '' : ''
-            } relative grid h-[75vh] lg:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile sm:bg-hero-pattern`}
+            } relative grid h-[75vh] lg:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile lg:bg-hero-pattern`}
           >
             <div className="pt-24 space-y-8 text-center text-white">
               <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
@@ -58,12 +58,12 @@ const Home: NextPage = () => {
           <section className="relative h-full bg-white">
             <ScrollToContent />
             <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 md:grid-cols-2" id="learnmore">
-              <div className="flex flex-col col-span-1 px-6 pt-16 space-y-4 sm:px-24 text-body">
+              <div className="flex flex-col col-span-1 px-6 pt-4 lg:pt-16 space-y-4 lg:px-24 text-body">
                 <div className="space-y-2 whitespace-nowrap">
-                  <h2 className="text-4xl font-semibold sm:text-5xl">นโยบายที่ดี สังคมต้อง</h2>
-                  <h2 className="text-4xl font-semibold sm:text-5xl">ร่วมกันออกแบบ</h2>
+                  <h2 className="text-3xl font-semibold lg:text-5xl">นโยบายที่ดี สังคมต้อง</h2>
+                  <h2 className="text-3xl font-semibold lg:text-5xl">ร่วมกันออกแบบ</h2>
                 </div>
-                <p className="sm:text-lg font-body">
+                <p className="lg:text-lg font-body">
                   สร้างการมีส่วนร่วมที่เปิดกว้าง เปิดใจรับฟังความแตกต่าง ให้ผู้คนได้แลกเปลี่ยนความคิดเห็นบนฐานความรู้และประสบการณ์ เพื่อร่วมออกแบบนโยบาย ให้เป็น
                   ‘นโยบาย’ ของคนในสังคมอย่างแท้จริง
                 </p>
@@ -73,10 +73,10 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-12 pt-12 md:grid-cols-2">
-              <div className="grid grid-cols-1 col-span-1 px-6 mx-auto md:grid-cols-2 sm:px-12 gap-y-12 gap-x-16 ">
+              <div className="grid grid-cols-1 col-span-1 px-6 mx-auto md:grid-cols-2 lg:px-12 gap-8 lg:gap-y-12 lg:gap-x-16 ">
                 <PolicyCircle
                   text="น้ำประปาดื่มได้"
-                  position="-translate-x-6 -translate-y-6"
+                  position="-translate-x-4 -translate-y-4"
                   bgHover="group-hover:bg-clean-water"
                   bgColor="bg-[#6badcb]"
                   borderColor="border-[#6badcb]"
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                 />
                 <PolicyCircle
                   text="การศึกษาขั้นพื้นฐาน"
-                  position="-translate-x-6 translate-y-6"
+                  position="-translate-x-4 translate-y-4"
                   bgHover="group-hover:bg-education"
                   bgColor="bg-[#cc79a7]"
                   borderColor="border-[#cc79a7]"
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                 />
                 <PolicyCircle
                   text="รัฐสวัสดิการถ้วนหน้า"
-                  position="-translate-x-6 translate-y-6"
+                  position="-translate-x-4 translate-y-4"
                   bgHover="group-hover:bg-welfare"
                   bgColor="bg-[#daa13d]"
                   borderColor="border-[#daa13d]"
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
                 />
                 <PolicyCircle
                   text="สวนสาธารณะพื้นที่ออกกำลังกาย"
-                  position="translate-x-6 -translate-y-6"
+                  position="translate-x-4 -translate-y-4"
                   bgHover="group-hover:bg-public-park"
                   bgColor="bg-[#36723b]"
                   borderColor="border-[#36723b]"
@@ -108,7 +108,7 @@ const Home: NextPage = () => {
                 />
                 <PolicyCircle
                   text="ขนส่งมวลชนเชื่อมต่อ"
-                  position="-translate-x-6 translate-y-6"
+                  position="-translate-x-4 translate-y-4"
                   bgHover="group-hover:bg-public-transport"
                   bgColor="bg-[#daa13d]"
                   borderColor="border-[#daa13d]"
@@ -116,14 +116,14 @@ const Home: NextPage = () => {
                 />
                 <PolicyCircle
                   text="อากาศบริสุทธิ์ปลอดฝุ่นควัน"
-                  position="translate-x-6 translate-y-6"
+                  position="translate-x-4 translate-y-4"
                   bgHover="group-hover:bg-environment"
                   bgColor="bg-[#6badcb]"
                   borderColor="border-[#6badcb]"
                 />
                 <PolicyCircle
                   text="สวัสดิการค่ารักษาพยาบาล"
-                  position="translate-x-6 translate-y-6"
+                  position="translate-x-4 translate-y-4"
                   bgHover="group-hover:bg-healthcare"
                   bgColor="bg-[#cc79a7]"
                   borderColor="border-[#cc79a7]"
@@ -136,26 +136,26 @@ const Home: NextPage = () => {
                   className="absolute hidden -bottom-8 md:block"
                 />
               </div>
-              <div className="flex flex-col justify-between col-span-1 px-6 py-16 space-y-4 sm:px-12 text-body">
+              <div className="flex flex-col justify-between col-span-1 p-6 lg:py-16 space-y-4 lg:px-12 text-body">
                 <div className="space-y-2">
-                  <h2 className="text-4xl font-semibold sm:text-5xl">เพราะนโยบาย</h2>
-                  <h2 className="text-4xl font-semibold sm:text-5xl">เกี่ยวข้องกับทุกมิติใน</h2>
-                  <h2 className="text-4xl font-semibold sm:text-5xl">ชีวิตของผู้คน</h2>
-                  <p className="pt-4 sm:text-lg font-body">
+                  <h2 className="text-3xl font-semibold lg:text-5xl">เพราะนโยบาย</h2>
+                  <h2 className="text-3xl font-semibold lg:text-5xl">เกี่ยวข้องกับทุกมิติใน</h2>
+                  <h2 className="text-3xl font-semibold lg:text-5xl">ชีวิตของผู้คน</h2>
+                  <p className="pt-4 lg:text-lg font-body">
                     เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
                   </p>
                 </div>
-                <div className="bottom-0 hidden grid-cols-2 mx-auto gap-y-12 gap-x-16 col-span-full md:grid">
+                <div className="bottom-0 hidden grid-cols-2 mx-auto gap-y-12 gap-x-6 lg:gap-x-16 col-span-full md:grid">
                   <PolicyCircle
                     text="ขนส่งมวลชนเชื่อมต่อ"
-                    position="-translate-x-6 translate-y-6"
+                    position="-translate-x-4 translate-y-4"
                     bgHover="group-hover:bg-public-transport"
                     bgColor="bg-[#daa13d]"
                     borderColor="border-[#daa13d]"
                   />
                   <PolicyCircle
                     text="สวนสาธารณะพื้นที่ออกกำลังกาย"
-                    position="translate-x-6 -translate-y-6"
+                    position="translate-x-4 -translate-y-4"
                     bgHover="group-hover:bg-public-park"
                     bgColor="bg-[#36723b]"
                     borderColor="border-[#36723b]"
@@ -166,22 +166,22 @@ const Home: NextPage = () => {
           </section>
           <section className="relative h-full bg-secondary">
             <div className="px-12 py-12 space-y-12 text-white sm:py-24">
-              <h2 className="text-4xl font-bold text-center break-words sm:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
-              <div className="flex flex-col justify-center space-y-8 text-center lg:space-x-8 lg:flex-row font-body">
+              <h2 className="text-4xl font-bold text-center break-words lg:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
+              <div className="flex flex-col justify-center space-y-8 text-center md:space-x-4 lg:space-x-8 md:flex-row font-body">
                 <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
-                  <p className="text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
+                  <p className="lg:text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>
                 </blockquote>
                 <blockquote className="bg-[#cc79a7] speech-dialog bubble-rt boder-b-pink md:top-12 justify-end flex ml-auto">
-                  <p className="text-xl">ถ้าทำงานไม่ไหว จะมีกินมีใช้ หรือเปล่า?</p>
+                  <p className="lg:text-xl">ถ้าทำงานไม่ไหว จะมีกินมีใช้ หรือเปล่า?</p>
                 </blockquote>
                 <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
-                  <p className="text-xl">รัฐจะดูแลเราอย่างไร ตอนเราอายุ 70 ปี?</p>
+                  <p className="lg:text-xl">รัฐจะดูแลเราอย่างไร ตอนเราอายุ 70 ปี?</p>
                 </blockquote>
                 <blockquote className="bg-[#6badcb] speech-dialog bubble-rb border-t-blue md:top-8 justify-end flex ml-auto">
-                  <p className="text-xl">ถ้าต้องอยู่บ้านพักคนชรา จะจ่ายไหวไหม?</p>
+                  <p className="lg:text-xl">ถ้าต้องอยู่บ้านพักคนชรา จะจ่ายไหวไหม?</p>
                 </blockquote>
                 <blockquote className="bg-[#daa13d] speech-dialog bubble-rb border-t-yellow">
-                  <p className="text-xl">หากเจ็บป่วยขึ้นมา ใครจะพาไปส่งโรงพยาบาล?</p>
+                  <p className="lg:text-xl">หากเจ็บป่วยขึ้นมา ใครจะพาไปส่งโรงพยาบาล?</p>
                 </blockquote>
               </div>
             </div>
@@ -202,7 +202,7 @@ const Home: NextPage = () => {
           <section className="relative h-full overflow-hidden bg-secondary">
             <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern-mobile lg:bg-step-blur-pattern"></div>
             <div className="absolute top-0 w-full h-full bg-fixed bg-top bg-no-repeat bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
-            <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-16 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% lg:bg-contain bg-process-step-mobile lg:bg-process-step">
+            <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-4 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% bg-process-step-mobile lg:bg-process-step">
               <div className="justify-start hidden lg:justify-center lg:flex">
                 <div className="flex flex-col items-start justify-center pl-20 mt-48 space-y-6 font-bold bg-white rounded-full lg:mt-0 lg:text-center lg:pt-10 w-60 h-60 lg:pl-0 lg:items-center lg:w-80 lg:h-80 text-body">
                   <h3 className="hidden text-2xl lg:block">
@@ -221,8 +221,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="absolute right-0 w-full h-full bg-fixed bg-right-bottom bg-no-repeat bg-contain opacity-75 mix-blend-screen bg-landing-circle-mobile sm:bg-landing-circle"></div>
-
-            <div className="relative space-y-8 flex flex-col items-center justify-between mt-[46rem] sm:mt-[60rem] lg:mt-[32rem]">
+            <div className="relative space-y-8 flex flex-col items-center justify-between mt-[36rem] sm:mt-[54rem] lg:mt-[32rem]">
               <Link href="/process">
                 <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
               </Link>
@@ -232,7 +231,7 @@ const Home: NextPage = () => {
               <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 mx-auto my-8 bg-white sm:p-12 rounded-xl">
                 <div className="flex flex-col py-8 space-y-4 jutify-center">
                   <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
-                  <p className="text-center sm:text-lg text-body font-body max-w-prose">
+                  <p className="text-center lg:text-lg text-body font-body max-w-prose">
                     มูลนิธิสถาบันวิจัยและพัฒนาผู้สูงอายุไทย (มส.ผส.) และ ไรซ์ อิมแพค ได้ร่วมกันออกแบบกระบวนการ พัฒนานโยบายเพื่อรองรับสังคมผู้สูงวัย โดยครอบคลุม
                     7 ประเด็นหลัก
                   </p>
@@ -241,13 +240,13 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-          <section className="relative h-full py-24 bg-white" ref={ref}>
-            <div className="grid grid-cols-1 gap-6 px-6 sm:px-24 sm:max-w-3/4 md:grid-cols-2">
+          <section className="relative h-full py-12 lg:py-24 bg-white" ref={ref}>
+            <div className="grid grid-cols-1 gap-6 px-6 sm:px-12 lg:px-24 sm:max-w-3/4 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-8 text-body">
-                <div className="space-y-4">
-                  <h2 className="text-4xl font-semibold sm:text-5xl">สร้างการมีส่วนร่วม</h2>
-                  <h2 className="text-4xl font-semibold sm:text-5xl">เพื่อออกแบบนโยบาย</h2>
-                  <h2 className="text-4xl font-semibold sm:text-5xl">ในระยะเวลา 1 ปี</h2>
+                <div className="lg:space-y-4">
+                  <h2 className="text-3xl font-semibold lg:text-5xl">สร้างการมีส่วนร่วม</h2>
+                  <h2 className="text-3xl font-semibold lg:text-5xl">เพื่อออกแบบนโยบาย</h2>
+                  <h2 className="text-3xl font-semibold lg:text-5xl">ในระยะเวลา 1 ปี</h2>
                 </div>
                 <div className="hidden sm:block">
                   <Link href="/value">
@@ -255,46 +254,38 @@ const Home: NextPage = () => {
                   </Link>
                 </div>
               </div>
-              <div className="grid grid-cols-1 col-span-1 gap-8 md:grid-cols-2">
+              <div className="grid grid-cols-1 col-span-1 gap-4   lg:gap-8 md:grid-cols-2">
                 <div className="flex flex-col col-span-1 space-y-4 text-body">
-                  <p className="font-body md:text-lg">
-                    จัดวงหารือแบบออฟไลน์
-                    <br />
-                    และออนไลน์
-                  </p>
-                  <p className="text-6xl">
+                  <p className="font-body lg:text-lg">จัดวงหารือแบบออฟไลน์ และออนไลน์</p>
+                  <p className="text-4xl lg:text-6xl">
                     {inView ? <CountUp end={30} duration={2} /> : '0'}
                     <span className="text-base font-bold font-body"> ครั้ง</span>
                   </p>
                 </div>
                 <div className="flex flex-col col-span-1 space-y-4 text-body">
-                  <p className="font-body md:text-lg">
+                  <p className="font-body lg:text-lg">
                     มีผู้เข้าร่วมที่
                     <br />
                     หลากหลายมากกว่า
                   </p>
-                  <p className="text-6xl">
+                  <p className="text-4xl lg:text-6xl">
                     {inView ? <CountUp end={400} duration={2.5} /> : '0'}
                     <span className="text-base font-bold font-body"> คน</span>
                   </p>
                 </div>
                 <div className="flex flex-col col-span-1 space-y-4 text-body">
-                  <p className="font-body md:text-lg">
+                  <p className="font-body lg:text-lg">
                     เกิด public engagement
                     <br /> ผ่านช่องทางออนไลน์
                   </p>
-                  <p className="text-6xl">
+                  <p className="text-4xl lg:text-6xl">
                     {inView ? <CountUp end={2} duration={2} /> : '0'}
                     <span className="text-base font-bold font-body"> เว็บไซต์</span>
                   </p>
                 </div>
                 <div className="flex flex-col col-span-1 space-y-4 text-body">
-                  <p className="font-body md:text-lg">
-                    มีผู้แสดงความคิดเห็น
-                    <br />
-                    มากกว่า
-                  </p>
-                  <p className="text-6xl">
+                  <p className="font-body lg:text-lg">มีผู้แสดงความคิดเห็นมากกว่า</p>
+                  <p className="text-4xl lg:text-6xl">
                     {inView ? <CountUp end={1000} duration={2.75} separator="," /> : '0'}
                     <span className="text-base font-bold font-body"> คน</span>
                   </p>
@@ -309,11 +300,11 @@ const Home: NextPage = () => {
           </section>
           <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
             <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
-              <div className="text-4xl font-bold leading-snug text-center text-white sm:text-5xl">
+              <div className="text-4xl font-bold leading-snug text-center text-white lg:text-5xl">
                 <h3>โพลิซี ไดอะล็อก</h3>
                 <h3>ทำงานอย่างไร ?</h3>
               </div>
-              <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
+              <p className="text-base text-center text-white font-body lg:text-lg max-w-prose">
                 เราได้จัดทำคู่มือการจัดกระบวนการจากประสบการณ์ของทีมงาน ผู้ที่สนใจสามารถนำไปปรับใช้สำหรับออกแบบและพัฒนานโยบาย ทุกระดับ ทุกประเด็นในสังคม
                 เพื่อร่วมกันสร้างการเปลี่ยนแปลงเชิงระบบ
               </p>

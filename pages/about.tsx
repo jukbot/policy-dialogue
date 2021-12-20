@@ -20,7 +20,7 @@ const AboutPage = () => {
 
   useEffect(() => {
     if (state.succeeded) {
-      toast.success('ขอบคุณสำหรับข้อมูลติดต่อเรา')
+      toast.success('ขอบคุณที่ติดต่อเรา')
     }
   }, [state.succeeded])
 
@@ -29,7 +29,7 @@ const AboutPage = () => {
       <Header title="เกี่ยวกับเรา" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
       <main className="relative">
         <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
-        <section className="relative h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat grid items-center bg-about-pattern-mobile sm:bg-about-pattern">
+        <section className="relative h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat grid items-center bg-about-pattern-mobile sm:bg-about-pattern">
           <div className="flex justify-center pt-24 text-white lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-6xl">เกี่ยวกับเรา</h1>
           </div>
@@ -141,7 +141,7 @@ const AboutPage = () => {
                         <option value="student">นักเรียน นักศึกษา</option>
                         <option value="international-org">องค์กรระหว่างประเทศ</option>
                         <option value="civil-society-org">องค์กรหรือเครือข่ายภาคประชาสังคม</option>
-                        <option value="other">อื่น ๆ (โปรดระบุ)</option>
+                        <option value="other">อื่นๆ (โปรดระบุ)</option>
                       </select>
                       {organizeType === 'other' && (
                         <input type="text" required name="organize-other" placeholder="ระบุประเภทองค์กร" className="mt-2 text-input" maxLength={60} />

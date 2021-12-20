@@ -38,13 +38,9 @@ const addToSendGridContact = (email: string, name: string) => {
     })
 
     res.on('end', function () {
-      const body = Buffer.concat(chunks)
-      console.log(body.toString())
+      Buffer.concat(chunks)
     })
   })
-
-  console.log(name?.split(' ')[0])
-  console.log(name?.split(' ')[1])
 
   req.write(
     JSON.stringify({

@@ -9,27 +9,22 @@ import PolicyWheelMobile from './PolicyWheelMobile'
 
 const PolicyContent = () => {
   const [selectedProject, setSelectedProject] = useAtom(selectedProjectAtom)
-  // const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   return (
     <div className="relative">
-      <PolicyWheel className="hidden w-full h-full fill-current text-primary lg:block" />
-      <PolicyWheelMobile className="block max-w-[512px] w-full h-full fill-current text-primary lg:hidden" />
+      <PolicyWheel className="hidden min-w-[1024px] w-full h-full fill-current text-primary lg:block" />
+      <PolicyWheelMobile className="flex justify-center max-w-[512px] w-full h-full fill-current text-primary lg:hidden" />
       <div className="flex justify-center mx-auto my-4 space-x-6 text-primary lg:hidden">
         <ArrowCircleLeftIcon
           className="w-8 h-8 cursor-pointer shrink-0"
           onClick={() => {
             setSelectedProject(projects[selectedProject.id === 0 ? projects.length - 1 : (selectedProject.id - 1) % projects.length])
-            console.log((selectedProject.id - 1) % projects.length)
-            console.log(projects[selectedProject.id === 0 ? projects.length - 1 : (selectedProject.id - 1) % projects.length])
           }}
         />
         <ArrowCircleRightIcon
           className="w-8 h-8 cursor-pointer shrink-0"
           onClick={() => {
             setSelectedProject(projects[(selectedProject.id + 1) % projects.length])
-            console.log((selectedProject.id + 1) % projects.length)
-            console.log(projects[(selectedProject.id + 1) % projects.length])
           }}
         />
       </div>
@@ -43,7 +38,7 @@ const PolicyContent = () => {
         </div>
         <Link href={selectedProject?.url} passHref>
           <button disabled={!selectedProject?.enabled} className={`${selectedProject?.enabled ? 'btn' : 'btn-disabled'} w-full`}>
-            {selectedProject?.enabled ? 'อ่านต่อ' : 'เร็ว ๆ นี้'}
+            {selectedProject?.enabled ? 'อ่านต่อ' : 'เร็วๆ นี้'}
           </button>
         </Link>
       </div>

@@ -98,7 +98,7 @@ const AipPage = () => {
                 ได้อย่างสะดวกปลอดภัย
               </h3>
               <p className="leading-relaxed font-body">
-                แม้ว่าจะมีสภาวะทางร่างกาย สังคมและจิตใจที่ค่อย ๆ
+                แม้ว่าจะมีสภาวะทางร่างกาย สังคมและจิตใจที่ค่อยๆ
                 <br /> เสื่อมถอยจากความชรา
               </p>
             </div>
@@ -149,17 +149,13 @@ const AipPage = () => {
                 </tspan>
               </text>
             </svg>
-            <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
-              การลงทุนสร้างบ้านพักคนชรา 1 แห่งในปัจจุบัน
-              <br /> ต้องใช้เงินลงทุนในการสร้างประมาณ 305 ล้านบาท สำหรับผู้สูงอายุ 150 คน
-              <br /> หรือคิดเป็นเงินลงทุนต่อหัวเท่ากับ 2 ล้านบาท*
-            </p>
-            <p className="mt-4 text-xs text-center font-body max-w-prose">
-              *อ้างอิงงบประมาณในการสร้างบ้านพักคนชราจากงบประมาณในการก่อสร้างบ้านพักคนชราบึงสะแกงาม จำนวน 305 ล้านบาท แหล่งที่มา
-              <a href="https://www.prachachat.net/property/news-596824" target="_blank" rel="noopener noreferrer">
-                https://www.prachachat.net/property/news-596824
-              </a>
-            </p>
+            <a href="https://www.prachachat.net/property/news-596824" className="hover:text-slate-900" target="_blank" rel="noopener noreferrer">
+              <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
+                การลงทุนสร้างบ้านพักคนชรา 1 แห่งในปัจจุบัน
+                <br /> ต้องใช้เงินลงทุนในการสร้างประมาณ 305 ล้านบาท สำหรับผู้สูงอายุ 150 คน
+                <br /> หรือคิดเป็นเงินลงทุนต่อหัวเท่ากับ 2 ล้านบาท*
+              </p>
+            </a>
           </div>
         </section>
 
@@ -179,7 +175,7 @@ const AipPage = () => {
             </div>
             <div className="flex flex-col items-center space-y-8">
               <p className="text-base text-center font-body">
-                ปัจจุบัน ไทยมีบ้านพักคนชราของรัฐเพียง 12 แห่ง
+                ปัจจุบัน ไทยมีศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุของรัฐเพียง 12 แห่ง
                 <br />
                 ขณะที่ประชากรผู้สูงอายุทั่วประเทศมีมากกว่า 11 ล้านคน**
               </p>
@@ -191,7 +187,7 @@ const AipPage = () => {
         <section className="relative h-full pt-6 bg-[#F9EFE9] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
-              แต่ยังมีความท้าทายที่ต้องฝ่าฝัน
+              แต่ยังมีความท้าทายที่ต้องฝ่าฟัน
               <br />
               เพื่อให้เกิดนโยบายที่ตอบโจทย์
             </h2>
@@ -208,7 +204,7 @@ const AipPage = () => {
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับ ผู้สูงอายุ</p>
+                <p className="text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับผู้สูงอายุ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
@@ -216,7 +212,7 @@ const AipPage = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto text-body">
+          <div className="max-w-6xl mx-auto px-6 text-body">
             <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
               <div className="flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
@@ -233,8 +229,8 @@ const AipPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#DDA27F]">
-          <div className="max-w-6xl mx-auto text-body">
-            <div className="w-full h-full max-w-4xl px-6 pb-6 mx-auto space-y-8 text-white md:pb-12 md:px-24 bg-secondary">
+          <div className="max-w-6xl mx-auto px-6 text-body">
+            <div className="w-full h-full max-w-4xl pb-6 mx-auto space-y-8 text-white md:pb-12 md:px-24 bg-secondary">
               <div className="w-full border-t-2 border-white md:px-24" />
               <p className="text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
               <div className="grid w-full grid-cols-1 gap-12 mt-6 md:grid-cols-2">
@@ -359,7 +355,7 @@ const AipPage = () => {
               <div className="h-full col-span-1 px-6">
                 <ul className="space-y-12">
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">ผู้เข้าร่วมแสดงความสนใจและอยาก ผลักดันต่อ</h3>
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมแสดงความสนใจและอยากผลักดันต่อ</h3>
                     <p className="font-body">
                       ตัวแทนหน่วยงานภาครัฐที่มาร่วม มีความเปิดกว้างต่อการรับแนวคิดใหม่ พยายามหาแนวทางในการพัฒนาบทบาทของหน่วยงานในการส่งเสริมงานด้านผู้สูงอายุ
                     </p>

@@ -16,34 +16,36 @@ const ValuePage = () => {
     <>
       <Header title="คุณค่าของกระบวนการ" description="สิ่งที่เราเชื่อและประโยชน์ของ Policy Dialogue" />
       <main className="relative">
-        <section className="relative grid h-[50vh] lg:h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
-          <div className="flex flex-col items-center justify-center py-12 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
+        <section className="relative grid h-[75vh] bg-cover bg-no-repeat items-center bg-process-hero-pattern-mobile sm:bg-process-hero-pattern">
+          <div className="flex flex-col items-center justify-center py-12 space-y-4 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-5xl">คุณค่าของกระบวนการ</h1>
             <div className="space-y-1">
-              <h2 className="text-xl lg:text-2xl font-body">สิ่งที่เราเชื่อและประโยชน์ของ</h2>
-              <h2 className="text-xl lg:text-2xl font-body">&lsquo;Policy Dialogue&rsquo;</h2>
+              <h2 className="text-base md:text-xl lg:text-2xl font-body">สิ่งที่เราเชื่อและประโยชน์ของ</h2>
+              <h2 className="text-base md:text-xl lg:text-2xl font-body">&lsquo;Policy Dialogue&rsquo;</h2>
             </div>
           </div>
         </section>
 
         <section className="relative grid h-full lg:grid-cols-2">
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
-            <div className="relative bg-[#242054] mx-auto max-w-6xl p-6 md:p-12 h-96 md:h-72 md:space-x-8">
-              <span className="absolute top-6 md:left-24 text-white text-[96px] md:text-[180px] font-bold white-stoke align-top">“</span>
-              <h2 className="relative mt-12 text-xl font-bold leading-relaxed tracking-wide text-center text-white">
-                หลังจากจัดกระบวนการกว่า 30 ครั้ง RISE Impact
+            <div className="relative bg-[#242054] mx-auto max-w-6xl px-6 py-16 md:p-12 md:h-72">
+              <span className="absolute top-6 left-12 lg:left-24 text-white text-[96px] lg:text-[180px] font-bold white-stoke align-top">“</span>
+              <h2 className="relative mt-8 lg:mt-12 text-lg lg:text-xl font-bold leading-relaxed tracking-wide text-center text-white">
+                หลังจากจัดกระบวนการกว่า 30 ครั้ง
                 <br />
-                ได้ทบทวนผลลัพธ์ที่เกิดขึ้น และพบว่า Policy Dialogue
+                RISE Impact ได้ทบทวนผลลัพธ์ที่เกิดขึ้น และพบว่า Policy Dialogue
                 <br />
                 มีคุณค่าใน 2 มิติสำคัญ คือ
               </h2>
-              <span className="absolute bottom-0 right-12 md:right-24 text-white text-[96px] md:text-[180px] font-bold white-stoke align-bottom rotate-180 transform">
+              <span className="absolute bottom-0 right-12 lg:right-24 text-white text-[96px] lg:text-[180px] font-bold white-stoke align-bottom rotate-180 transform">
                 “
               </span>
             </div>
           </section>
-          <section className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} hidden md:block cols-span-1 p-6 sm:p-12 sm:pt-64`}>
-            <div className="relative flex flex-col mx-24 space-y-12">
+          <section
+            className={`${selectedSection === 0 ? 'bg-[#FEEDEA]' : 'bg-white'} transition duration-300  hidden md:block cols-span-1 p-6 sm:p-12 sm:pt-64`}
+          >
+            <div className="relative flex flex-col mx-24 justify-between h-full space-y-12">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold">
                   คุณค่าต่อการสร้าง
@@ -54,14 +56,19 @@ const ValuePage = () => {
                 </h3>
               </div>
               {selectedSection === 0 ? (
-                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
+                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary" />
               ) : (
-                <PlusCircleIcon onClick={() => setSelectedSection(0)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
+                <PlusCircleIcon
+                  onClick={() => setSelectedSection(0)}
+                  className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent"
+                />
               )}
             </div>
           </section>
-          <section className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} hidden md:block cols-span-1 p-6 sm:p-12 sm:pt-64`}>
-            <div className="relative flex flex-col mx-24 space-y-12 ">
+          <section
+            className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} transition duration-300  hidden md:block cols-span-1 p-6 sm:p-12 lg:pt-64`}
+          >
+            <div className="relative flex flex-col mx-24 justify-between h-full space-y-12 ">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold">
                   คุณค่าต่อ
@@ -72,9 +79,12 @@ const ValuePage = () => {
                 </h3>
               </div>
               {selectedSection === 1 ? (
-                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
+                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary" />
               ) : (
-                <PlusCircleIcon onClick={() => setSelectedSection(1)} className="w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent" />
+                <PlusCircleIcon
+                  onClick={() => setSelectedSection(1)}
+                  className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent"
+                />
               )}
             </div>
           </section>
@@ -82,7 +92,7 @@ const ValuePage = () => {
             {selectedSection === 0 ? <SystemValue /> : <PolicyValue />}
           </section>
 
-          <section className="block py-12 space-y-6 bg-white md:hidden col-span-full pt-96">
+          <section className="block py-12 space-y-6 bg-white md:hidden col-span-full pt-56">
             <div className="relative px-6 space-y-2">
               <h3 className="text-3xl font-bold">
                 คุณค่าต่อการสร้าง
@@ -108,36 +118,33 @@ const ValuePage = () => {
           </section>
         </section>
 
-        <section className="relative h-full py-12 bg-white sm:py-24">
-          <div className="max-w-6xl mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
+        <section className="relative h-full py-12 bg-white lg:py-24">
+          <div className="max-w-6xl px-6 mx-auto space-y-12 text-body">
+            <h2 className="text-3xl font-bold leading-snug text-center lg:text-4xl">
               สรุปความคิดเห็น
               <br />
               จากผู้เข้าร่วมต่อกระบวนการ
             </h2>
-            <div className="grid gap-12 md:grid-cols-3">
-              <div className="flex flex-col col-span-1 space-y-2 text-center">
-                <h3 className="pb-6 text-lg font-bold">
+            <div className="flex items-end flex-col md:grid md:gap-12 md:grid-cols-3">
+              <div className="flex flex-col col-span-1 justify-end space-y-2 text-center h-full">
+                <h3 className="pb-6 lg:text-lg font-bold">
                   คิดว่ากิจกรรมและหัวข้อที่แลกเปลี่ยน <br />
                   เป็นประโยชน์ ต่อการขับเคลื่อนเชิงนโยบาย
                 </h3>
-                <Image src={PinkChart} className="w-full h-full" width="480" height="480" alt="pink-chart" />
+                <Image src={PinkChart} width="420" height="420" alt="pink-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 213 คน</p>
               </div>
-              <div className="flex flex-col col-span-1 space-y-2 text-center">
-                <h3 className="pb-6 text-lg font-bold">
+              <div className="flex flex-col col-span-1 justify-end  space-y-2 text-center h-full">
+                <h3 className="pb-6 lg:text-lg font-bold">
                   คิดว่าตัวเองและหน่วยงาน
                   <br /> ได้รับประโยชน์จากการเข้าร่วม
                 </h3>
-                <Image src={YellowChart} className="w-full h-full" width="480" height="480" alt="pink-chart" />
+                <Image src={YellowChart} width="420" height="420" alt="yellow-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 151 คน</p>
               </div>
-              <div className="flex flex-col col-span-1 space-y-2 text-center">
-                <h3 className="pb-6 text-lg font-bold">
-                  สามารถนำประเด็นจากการ แลกเปลี่ยนไป
-                  <br /> ต่อยอดในการทำงานหรือในหน่วยงานได้
-                </h3>
-                <Image src={BlueChart} className="w-full h-full" width="480" height="480" alt="pink-chart" />
+              <div className="flex flex-col col-span-1 justify-end space-y-2 text-center h-full">
+                <h3 className="pb-6 lg:text-lg font-bold">สามารถนำประเด็นจากการแลกเปลี่ยนไปต่อยอดในการทำงานหรือในหน่วยงานได้</h3>
+                <Image src={BlueChart} width="420" height="420" alt="blue-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 54 คน</p>
               </div>
             </div>
@@ -149,12 +156,12 @@ const ValuePage = () => {
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
-          <div className="flex flex-col items-center justify-center sm:space-y-8">
-            <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
+          <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
+            <div className="leading-snug text-4xl font-bold text-center text-white lg:text-5xl">
               <h3>โพลิซี ไดอะล็อก</h3>
               <h3>ทำงานอย่างไร ?</h3>
             </div>
-            <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
+            <p className="text-base text-center text-white font-body lg:text-lg max-w-prose">
               เราได้จัดทำคู่มือการจัดกระบวนการจากประสบการณ์ของทีมงาน ผู้ที่สนใจสามารถนำไปปรับใช้สำหรับออกแบบและพัฒนานโยบาย ทุกระดับ ทุกประเด็นในสังคม
               เพื่อร่วมกันสร้างการเปลี่ยนแปลงเชิงระบบ
             </p>

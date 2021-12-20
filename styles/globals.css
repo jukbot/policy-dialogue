@@ -131,10 +131,10 @@
     @apply flex items-center space-x-1 text-sm text-white transition hover:text-black font-body;
   }
   .speech-dialog {
-    @apply relative p-6 w-full h-32 max-w-[250px] md:h-64 flex items-center justify-center;
+    @apply relative p-6 w-full md:h-48 lg:h-64 max-w-[250px] flex items-center justify-center;
   }
   .project-icon {
-    @apply w-8 h-8 transition-all transition ease-in transform transform-box group-hover:scale-110 group-hover:rotate-180;
+    @apply w-8 h-8 transition-all transition ease-in transform-gpu transform-box duration-300 group-hover:scale-110 group-hover:rotate-180;
   }
   .role-icon {
     @apply cursor-pointer transform-box;

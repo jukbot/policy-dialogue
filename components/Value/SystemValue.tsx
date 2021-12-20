@@ -5,14 +5,14 @@ import ShortTerm from '/public/image/value/short-term.svg'
 
 const SystemValue = () => {
   return (
-    <div className="relative grid max-w-6xl grid-cols-1 gap-8 px-6 mx-auto md:px-12 md:gap-16 md:grid-cols-3">
+    <div className="relative grid max-w-6xl grid-cols-1 gap-8 px-6 mx-auto md:px-12 md:gap-16 md:grid-cols-3 transition duration-300 ">
       <div className="flow-root">
-        <div className="space-y-3">
+        <div className="space-y-4">
           <Image className="shrink-0" height="48" width="64" aria-hidden="true" src={Participant} alt="participant" />
           <h3 className="text-xl font-bold">ผู้มีส่วนร่วมได้แลกเปลี่ยนโลกทัศน์</h3>
           <p className="text-sm leading-relaxed sm:text-base font-body">
-            เกิดการแลกเปลี่ยนกัน ทำให้เห็นโอกาสและความเป็นไปได้ใหม่ ๆ ที่จะแก้ปัญหา หรือลงมือทำในทางที่ต่างออกไป
-            รวมถึงเห็นศักยภาพของตนเองในฐานะผู้ขับเคลื่อนในเรื่องนั้น ๆ มากขึ้น
+            เกิดการแลกเปลี่ยนกัน ทำให้เห็นโอกาสและความเป็นไปได้ใหม่ๆ ที่จะแก้ปัญหา หรือลงมือทำในทางที่ต่างออกไป
+            รวมถึงเห็นศักยภาพของตนเองในฐานะผู้ขับเคลื่อนในเรื่องนั้นๆ มากขึ้น
           </p>
         </div>
       </div>

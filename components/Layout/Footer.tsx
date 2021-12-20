@@ -1,9 +1,7 @@
-import { isModalOpenAtom } from '@/stores/global'
 import { classNames } from '@/utils/formatClass'
 import { projectList } from '@/utils/projectIcon'
 import { Disclosure } from '@headlessui/react'
 import { ArrowSmRightIcon, ChevronDownIcon } from '@heroicons/react/outline'
-import { useAtom } from 'jotai'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FormEvent, useCallback, useState } from 'react'
@@ -14,7 +12,6 @@ import RiseImpactLogo from '/public/image/logo/rise-impact-white.svg'
 
 const Footer = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
-  const [, setModalState] = useAtom(isModalOpenAtom)
 
   const handleFormSubmit = useCallback(
     async (e: FormEvent<HTMLFormElement>) => {
@@ -24,29 +21,25 @@ const Footer = (): JSX.Element => {
         return toast.error('โปรดระบุอีเมล')
       }
 
-      if (!localStorage.getItem('policy-dialogue:has-submit-contact')) {
-        setModalState({ open: true, type: 'newsletter', link: null })
-      } else {
-        setModalState({ open: false, type: 'newsletter', link: null })
-        await fetch('/api/subscribe', {
-          method: 'POST',
-          body: JSON.stringify({
-            email,
-            name: null,
-          }),
-        })
-        toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
-      }
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        body: JSON.stringify({
+          email,
+          name: null,
+        }),
+      })
+      toast.success('สมัครรับข่าวสารและกิจกรรม จาก Policy Dialogue เรียบร้อย')
+
       setEmail('')
       e.currentTarget?.reset()
     },
-    [email, setModalState]
+    [email]
   )
 
   return (
     <footer className="relative flex flex-col w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
       <ul className="grid w-full h-full text-white gap-y-8 md:grid-cols-2 gap-4 lg:grid-cols-4 font-body">
-        <li className="col-span-1 lg:text-center">
+        <li className="col-span-full lg:col-span-1 lg:text-center">
           <Link href="/">
             <a>
               <Image src={Logo} alt="logo" className="w-full h-full" objectFit="contain" width="200" height="80" />
@@ -117,7 +110,7 @@ const Footer = (): JSX.Element => {
             </li>
           </ul>
         </li>
-        <li className="flex flex-col col-span-1 space-y-8">
+        <li className="flex flex-col col-span-full lg:col-span-1 space-y-8">
           <div className="flex flex-col space-y-4">
             <h4 className="font-bold">ต้องการรับข่าวสารเกี่ยวกับ Policy Dialogue</h4>
             <div className="relative mt-1 sm:max-w-[270px]">
@@ -158,7 +151,7 @@ const Footer = (): JSX.Element => {
           </p>
         </li>
       </ul>
-      <div className="py-4 text-white border-t md:pt-6 border-slate-200/75 font-body">
+      <div className="py-4 text-white border-t md:pt-6 border-slate-200/50 font-body">
         <p className="text-sm">Copyright &copy; {new Date().getFullYear()} RISE Impact. All rights reserved.</p>
       </div>
     </footer>

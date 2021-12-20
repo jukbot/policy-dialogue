@@ -7,9 +7,9 @@ import Seminar from '/public/image/process/seminar.svg'
 
 const PreProcess = () => {
   return (
-    <div className="relative grid max-w-6xl grid-cols-1 gap-8 px-6 mx-auto md:px-12 md:gap-16 md:grid-cols-3">
+    <div className="relative grid max-w-6xl grid-cols-1 gap-8 px-6 mx-auto md:px-12 md:gap-12 md:grid-cols-3 transition duration-300">
       <div className="flow-root">
-        <div className="space-y-3">
+        <div className="space-y-4">
           <Image className="w-12 h-12 shrink-0" width="48" height="48" aria-hidden="true" src={Interview} alt="intervew" />
           <h3 className="text-xl font-bold">Interview</h3>
           <p className="text-sm leading-relaxed sm:text-base font-body">สัมภาษณ์เจาะลึกผู้ที่เกี่ยวข้อง</p>
@@ -27,7 +27,7 @@ const PreProcess = () => {
           <Image className="w-12 h-12 shrink-0" width="48" height="48" aria-hidden="true" src={Fieldwork} alt="fieldwork" />
           <h3 className="text-xl font-bold">Fieldwork</h3>
           <p className="text-sm leading-relaxed sm:text-base font-body">
-            ลงพื้นที่ดูงานในสถานที่ต่าง ๆ ที่เกี่ยวข้อง เช่น ชมรมผู้สูงอายุ โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) สำนักงานเทศบาลตำบล เป็นต้น
+            ลงพื้นที่ดูงานในสถานที่ต่างๆ ที่เกี่ยวข้อง เช่น ชมรมผู้สูงอายุ โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) สำนักงานเทศบาลตำบล เป็นต้น
           </p>
         </div>
       </div>

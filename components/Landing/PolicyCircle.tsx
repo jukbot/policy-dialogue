@@ -11,12 +11,12 @@ const PolicyCircle = ({ className, position = '', bgColor = '', bgHover = '', bo
   return (
     <div className={`relative group ${className}`}>
       <div
-        className={`h-48 w-48 absolute border-2 ${borderColor} rounded-full transition transform ${position} group-hover:translate-x-0 group-hover:translate-y-0`}
+        className={`w-32 h-32 lg:h-48 lg:w-48 absolute border-2 ${borderColor} rounded-full transition transform ${position} group-hover:translate-x-0 group-hover:translate-y-0`}
       />
       <div
-        className={`relative w-48 h-48 flex justify-center items-center rounded-full group cursor-pointer bg-center bg-blend-multiply bg-no-repeat bg-cover transition ${bgHover} ${bgColor}`}
+        className={`relative w-32 h-32 lg:w-48 lg:h-48 flex justify-center items-center rounded-full group cursor-pointer bg-center bg-blend-multiply bg-no-repeat bg-cover transition ${bgHover} ${bgColor}`}
       >
-        <h3 className="relative w-3/4 text-lg text-center text-white sm:text-2xl font-body">{text}</h3>
+        <h3 className="relative w-3/4 text-base text-center text-white lg:text-xl font-body">{text}</h3>
       </div>
     </div>
   )

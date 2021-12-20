@@ -200,7 +200,7 @@ export const projectList: Project[] = [
   {
     id: 4,
     title: 'Dementia',
-    description: 'ระบบบริการแลการดูแลผู้มีภาวะสมองเสื่อม',
+    description: 'ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม',
     url: '/project/dt',
     icon: 'dt',
     color: 'bg-[#a8a8a8]',
@@ -278,7 +278,7 @@ export const projectDropdown = [
   {
     id: 6,
     title: 'Dementia',
-    description: 'ระบบบริการแลการดูแลผู้มีภาวะสมองเสื่อม',
+    description: 'ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม',
     url: '/project/dt',
     icon: 'dt',
     enabled: false,

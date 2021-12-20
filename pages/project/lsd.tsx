@@ -152,7 +152,7 @@ const LsdPage = () => {
               </text>
             </svg>
             <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
-              จำเป็นต้องมีระบบที่รองรับสัดส่วนผู้สูงอายุที่เพิ่มสูงขึ้นเรื่อย ๆ
+              จำเป็นต้องมีระบบที่รองรับสัดส่วนผู้สูงอายุที่เพิ่มสูงขึ้นเรื่อยๆ
               <br />
               เพื่ออำนวยความสะดวก และลดอัตราที่ผู้สูงอายุจะเข้าสู่ภาวะพึ่งพิงโดยไม่จำเป็น
             </p>
@@ -183,7 +183,7 @@ const LsdPage = () => {
         <section className="relative h-full pt-6 bg-[#FBF5EB] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
-              แต่ยังมีความท้าทายที่ต้องฝ่าฝัน
+              แต่ยังมีความท้าทายที่ต้องฝ่าฟัน
               <br />
               เพื่อให้เกิดนโยบายที่ตอบโจทย์
             </h2>
@@ -241,7 +241,7 @@ const LsdPage = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto text-body md:pt-[15rem]">
+          <div className="max-w-6xl mx-auto px-6 text-body md:pt-[15rem]">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>
@@ -346,7 +346,7 @@ const LsdPage = () => {
                       ผู้เข้าร่วมวงหารือทุกคนสนใจและรู้สึกว่าข้อเสนอเรื่องการจัดกลุ่มหนุนใจ (support group) สร้างแรงบันดาลใจ
                     </h3>
                     <p className="font-body">
-                      ผู้เข้าร่วมจากหน่วยงานต่าง ๆ ทั้งกระทรวงสาธารณสุข กรมกิจการผู้สูงอายุ และองค์การปกครองส่วนท้องถิ่น มองว่าเรื่องนี้มีความสำคัญ
+                      ผู้เข้าร่วมจากหน่วยงานต่างๆ ทั้งกระทรวงสาธารณสุข กรมกิจการผู้สูงอายุ และองค์การปกครองส่วนท้องถิ่น มองว่าเรื่องนี้มีความสำคัญ
                       ทุกหน่วยงานกำลังพยายามทำอยู่และจะทำต่อไป หลังจากได้หารือในวงพูดคุย
                     </p>
                   </li>

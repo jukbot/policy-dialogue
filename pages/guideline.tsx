@@ -3,9 +3,13 @@ import TeamRoleChart from '@/components/Guideline/TeamRoleChart'
 import TeamRoleContent from '@/components/Guideline/TeamRoleContent'
 import Header from '@/components/Layout/Header'
 import Meta from '@/data/meta.json'
+import { isModalOpenAtom } from '@/stores/global'
+import { downloadContent } from '@/utils/userAnalytics'
 import { DownloadIcon } from '@heroicons/react/solid'
+import { useAtom } from 'jotai'
 import Image from 'next/image'
 import Link from 'next/link'
+import { MouseEvent, useCallback } from 'react'
 import Content from '/public/image/guideline/content.svg'
 import DialogueLoopMobile from '/public/image/guideline/dialogue-loop-mobile.svg'
 import DialogueLoop from '/public/image/guideline/dialogue-loop.svg'
@@ -19,6 +23,21 @@ import Resources from '/public/image/guideline/resources.svg'
 import Teamwork from '/public/image/guideline/teamwork.svg'
 
 const GuidelinePage = () => {
+  const [, setModalState] = useAtom(isModalOpenAtom)
+
+  const checkDownload = useCallback(
+    (e: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>, fileName: string) => {
+      e.preventDefault()
+      const hasSendContact = localStorage.getItem('policy-dialogue:has-submit-contact')
+      if (!hasSendContact) {
+        setModalState({ type: 'download', open: true, link: fileName })
+      } else {
+        downloadContent(fileName)
+      }
+    },
+    [setModalState]
+  )
+
   return (
     <>
       <Header
@@ -29,12 +48,12 @@ const GuidelinePage = () => {
         height={Result2.height}
       />
       <main className="relative">
-        <section className="relative grid h-[50vh] lg:h-[75vh] bg-left-bottom bg-cover bg-no-repeat mix-blend-screen filter saturate-150 items-center bg-guideline-hero-pattern-mobile sm:bg-guideline-hero-pattern">
-          <div className="flex flex-col items-center justify-center pt-24 space-y-3 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
-            <h1 className="text-4xl font-semibold lg:text-5xl">คู่มือการจัดกระบวนการ</h1>
+        <section className="relative grid h-[75vh] bg-left-bottom bg-cover bg-no-repeat mix-blend-screen filter saturate-150 items-center bg-guideline-hero-pattern-mobile lg:bg-guideline-hero-pattern">
+          <div className="flex flex-col items-center justify-center pt-24 space-y-4 text-center text-white lg:text-left lg:items-start lg:justify-start lg:ml-48">
+            <h1 className="text-4xl font-bold lg:text-5xl">คู่มือการจัดกระบวนการ</h1>
             <div className="space-y-1">
-              <h2 className="text-xl lg:text-2xl font-body">ทีมงานต้องเตรียมงานและจัดการอย่างไร</h2>
-              <h2 className="text-xl lg:text-2xl font-body">ตั้งแต่ต้นจนจบ เราได้รวบรวมไว้แล้ว</h2>
+              <h2 className="text-base md:text-base md:text-xl lg:text-2xl font-body">ทีมงานต้องเตรียมงานและจัดการอย่างไร</h2>
+              <h2 className="text-base md:text-base md:text-xl lg:text-2xl font-body">ตั้งแต่ต้นจนจบ เราได้รวบรวมไว้แล้ว</h2>
             </div>
           </div>
         </section>
@@ -52,7 +71,7 @@ const GuidelinePage = () => {
             <div className="space-y-12 sm:space-y-16">
               <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-3">
                 <div className="flow-root">
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     <Image className="w-12 h-12 shrink-0" width="48" height="48" aria-hidden="true" src={Participants} alt="participants" />
                     <h3 className="text-xl font-bold">Participants</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
@@ -75,7 +94,7 @@ const GuidelinePage = () => {
                     <Image className="w-12 h-12 shrink-0" width="48" height="48" aria-hidden="true" src={Resources} alt="resources" />
                     <h3 className="text-xl font-bold">Resources</h3>
                     <p className="text-sm leading-relaxed sm:text-base font-body">
-                      มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่าง ๆ
+                      มีแหล่งทรัพยากรที่พร้อม ตั้งแต่แหล่งข้อมูลเนื้อหา ข้อมูลบุคคลที่เกี่ยวข้อง ไปจนถึงมีอุปกรณ์ เครื่องมือสื่อสารต่างๆ
                       เพื่อหาคำตอบและจัดกระบวนการ
                     </p>
                   </div>
@@ -127,7 +146,7 @@ const GuidelinePage = () => {
                         <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Communication skills</p>
-                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่าง ๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
+                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่างๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
@@ -175,10 +194,10 @@ const GuidelinePage = () => {
           </div>
         </section>
 
-        <section className="relative h-full py-12 sm:py-24 bg-secondary">
-          <div className="max-w-6xl px-6 mx-auto space-y-12 text-white">
-            <div className="relative flex flex-col-reverse grid-cols-1 gap-12 md:grid md:grid-cols-2">
-              <article className="col-span-1 space-y-12">
+        <section className="relative h-full py-12 md:py-24 bg-secondary">
+          <div className="max-w-6xl px-6 md:px-12 mx-auto space-y-12 text-white">
+            <div className="relative flex flex-col-reverse grid-cols-1 gap-12 lg:grid lg:grid-cols-2">
+              <article className="col-span-1 space-y-6 md:space-y-12">
                 <TeamRoleContent />
               </article>
               <article className="col-span-1 py-6 space-y-12 md:space-y-0">
@@ -193,7 +212,7 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full py-12 bg-white sm:py-24">
-          <div className="grid max-w-6xl grid-cols-1 gap-6 px-6 mx-auto text-body md:grid-cols-2">
+          <div className="grid max-w-6xl grid-cols-1 gap-6 px-6 md:px-12 mx-auto text-body md:grid-cols-2">
             <div className="flex flex-col col-span-1 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl font-semibold sm:text-5xl">จัดการอย่างไร</h2>
@@ -249,7 +268,7 @@ const GuidelinePage = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                     <circle cx="25" cy="25" r="25" fill="#daa13d" />
                   </svg>
-                  <p className="text-sm font-body">ผลลัพธ์ (Outcomes) ของกระบวนการหารือเชิงนโยบายแต่ละครั้ง</p>
+                  <p className="text-sm font-body">ผลลัพธ์ที่คาดหวัง (Expected outcomes) ของกระบวนการหารือเชิงนโยบายแต่ละครั้ง</p>
                 </div>
                 <div className="flex items-start space-x-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
@@ -260,12 +279,17 @@ const GuidelinePage = () => {
               </div>
             </div>
             <div className="flex items-end justify-center">
-              <Link href="/archive#practical-guidelines">
-                <a className="inline-flex btn" target="_self" rel="noopener noreferrer">
-                  <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
-                  <span>ดาวน์โหลดคู่มือฉบับเต็ม</span>
-                </a>
-              </Link>
+              <a
+                className="inline-flex btn"
+                href="javascript:void(0)"
+                target="_self"
+                rel="noopener noreferrer"
+                type="application/pdf"
+                onClick={(e) => checkDownload(e, '/archive/practical-guidelines/01_Policy_Dialogue_Guideline.pdf')}
+              >
+                <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
+                <span>ดาวน์โหลดคู่มือฉบับเต็ม</span>
+              </a>
             </div>
           </div>
         </section>
@@ -286,7 +310,7 @@ const GuidelinePage = () => {
                   <span className="text-2xl font-bold leading-none align-top">•</span>
                   <div className="space-y-1">
                     <p className="font-bold">ข้อมูลเชิงลึก</p>
-                    <p className="font-body">จากผู้เข้าร่วม จุดร่วมของปัญหา อุปสรรคและช่องโหว่ของประเด็นนั้น ๆ</p>
+                    <p className="font-body">จากผู้เข้าร่วม จุดร่วมของปัญหา อุปสรรคและช่องโหว่ของประเด็นนั้นๆ</p>
                   </div>
                 </li>
                 <li className="inline-flex space-x-2">
@@ -309,7 +333,7 @@ const GuidelinePage = () => {
                   <div className="space-y-1">
                     <p className="font-bold">สร้างการมีส่วนร่วมกับผู้คน</p>
                     <p className="font-body">
-                      ภาคส่วนต่าง ๆ เข้าใจกันมากขึ้น ซึ่งอาจมีส่วนช่วยในการขับเคลื่อนนโยบาย หรือออกแบบการแก้ไขปัญหาในอนาคต สร้างความเข้าใจ หาจุดร่วม
+                      ภาคส่วนต่างๆ เข้าใจกันมากขึ้น ซึ่งอาจมีส่วนช่วยในการขับเคลื่อนนโยบาย หรือออกแบบการแก้ไขปัญหาในอนาคต สร้างความเข้าใจ หาจุดร่วม
                       และแลกเปลี่ยนความต่าง อาจทำให้เกิดทางเลือกใหม่จากภาพที่ชัดขึ้น
                     </p>
                   </div>
@@ -369,12 +393,12 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
-          <div className="flex flex-col items-center justify-center sm:space-y-8">
-            <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
+          <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
+            <div className="leading-snug text-3xl font-bold text-center text-white lg:text-5xl">
               <h3>เข้าถึงคลังข้อมูลของ</h3>
               <h3>Policy Dialogue</h3>
             </div>
-            <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
+            <p className="text-base text-center text-white font-body lg:text-lg max-w-prose">
               เราได้เปิดข้อมูลโครงการเป็นแบบสาธารณะ เพื่อให้ทุกคนสามารถนำวิธีการและเนื้อหาไปพัฒนา และปรับใช้ในโครงการใหม่ๆ
             </p>
             <div className="flex justify-center pt-8 pb-12">

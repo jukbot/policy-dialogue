@@ -28,10 +28,10 @@ const ArchivePage = () => {
       <Header title="คลังข้อมูล" description="คลังข้อมูลและเอกสารดาวน์โหลด" />
       <main className="relative">
         <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain mix-blend-screen bg-archive-hero-shape" />
-        <section className="relative grid h-[50vh] lg:h-[75vh] ≈ bg-cover bg-no-repeat items-center bg-archive-pattern-mobile sm:bg-archive-pattern">
+        <section className="relative grid h-[75vh] ≈ bg-cover bg-no-repeat items-center bg-archive-pattern-mobile sm:bg-archive-pattern">
           <div className="flex flex-col items-center justify-center pt-24 space-y-1 text-white lg:items-start lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-6xl">Archive</h1>
-            <h2 className="text-xl lg:text-2xl font-body">คลังข้อมูลและเอกสารดาวน์โหลด</h2>
+            <h2 className="text-base md:text-xl lg:text-2xl font-body">คลังข้อมูลและเอกสารดาวน์โหลด</h2>
           </div>
         </section>
 
@@ -67,7 +67,7 @@ const ArchivePage = () => {
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/AIP1.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ชุดบริการ</span>
+                    <span>ข้อสรุป 1</span>
                   </a>
                   <a
                     className="btn-white"
@@ -78,7 +78,7 @@ const ArchivePage = () => {
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/AIP2.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>บทบาท อปท.</span>
+                    <span>ข้อสรุป 2</span>
                   </a>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็ว ๆ นี้</p>
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -120,7 +120,7 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็ว ๆ นี้</p>
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
@@ -138,7 +138,7 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็ว ๆ นี้</p>
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#3f36b7] h-48 text-white">
@@ -165,7 +165,7 @@ const ArchivePage = () => {
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/PC.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ชุดบริการ</span>
+                    <span>ข้อสรุป</span>
                   </a>
                 </div>
               </div>
@@ -193,7 +193,7 @@ const ArchivePage = () => {
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LSD.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ชุดบริการ</span>
+                    <span>ข้อสรุป</span>
                   </a>
                 </div>
               </div>
@@ -212,7 +212,7 @@ const ArchivePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็ว ๆ นี้</p>
+                  <p>เร็วๆ นี้</p>
                 </div>
               </div>
             </div>
@@ -243,13 +243,13 @@ const ArchivePage = () => {
               </div>
               <div className="col-span-1 space-y-6">
                 <p className="text-sm leading-relaxed font-body">
-                  จากสถานการณ์ปัจจุบัน แม้ว่าระบบบริการสุขภาพ ของไทยจะมีหลายระดับและครอบคลุม แต่ยังคงมีช่องว่างสำหรับการดูแลผู้สูงอายุ หน่วยงานต่าง ๆ
+                  จากสถานการณ์ปัจจุบัน แม้ว่าระบบบริการสุขภาพ ของไทยจะมีหลายระดับและครอบคลุม แต่ยังคงมีช่องว่างสำหรับการดูแลผู้สูงอายุ หน่วยงานต่างๆ
                   ไม่ได้ประสานงานอย่างไร้รอยต่ออย่างแท้จริง และอาจให้บริการแก่ประชาชนได้ไม่เต็มศักยภาพ ส่งผลให้ผู้ปฏิบัติงานมีภาระอันหนักอึ้ง
                   ทั้งการบริการสุขภาพและการบริการทางสังคม รวมทั้งประชาชนเอง ไม่ทราบถึงสิทธิของตนที่จะได้รับการบริการ
                   หรือหากทราบก็ไม่มีผู้ที่คอยประสานงานเพื่อให้มั่นใจว่าประชาชนจะได้รับสิทธิประโยชน์ดังกล่าว
                 </p>
                 <p className="text-sm leading-relaxed font-body">
-                  ผู้จัดทำโครงการจึงเห็นว่าควรมี “หน่วยประสานการดูแล” (Care Coordination Unit - CCU) อยู่ประจำโรงพยาบาลระดับต่าง ๆ
+                  ผู้จัดทำโครงการจึงเห็นว่าควรมี “หน่วยประสานการดูแล” (Care Coordination Unit - CCU) อยู่ประจำโรงพยาบาลระดับต่างๆ
                   ตั้งแต่โรงพยาบาลชุมชนขึ้นไปถึงโรงพยาลทั่วไป และโรงพยาบาลศูนย์ เพื่อเป็นกลไกสำคัญสำหรับการดูแลอย่างรอบด้านแก่ผู้สูงอายุ ผู้ป่วย ญาติ และ อปท.
                   ที่เกี่ยวข้อง โดยคาดหวังว่าจะทำให้ประชาชนเข้าถึงบริการทางสุขภาพ และสังคมมากขึ้น
                 </p>
@@ -279,13 +279,13 @@ const ArchivePage = () => {
               </div>
               <div className="col-span-1 space-y-6">
                 <p className="text-sm leading-relaxed font-body">
-                  ปัจจุบัน องค์กรปกครองส่วนท้องถิ่น (อปท.) มีบทบาทสำคัญอย่างยิ่งในการให้บริการประชาชนในชุมชนของตัวเองในด้านต่าง ๆ
+                  ปัจจุบัน องค์กรปกครองส่วนท้องถิ่น (อปท.) มีบทบาทสำคัญอย่างยิ่งในการให้บริการประชาชนในชุมชนของตัวเองในด้านต่างๆ
                   ซึ่งรวมถึงการให้บริการและสร้างสภาพแวดล้อมที่เป็นมิตรกับการใช้ชีวิตของผู้สูงอายุที่จะเพิ่มจำนวนขึ้นอย่างรวดเร็ว แต่อปท.
                   ยังไม่สามารถให้บริการแก่ผู้สูงอายุได้อย่างเต็มที่จากหลายสาเหตุ ได้แก่
                   <br />
                   <br />- การมีโครงการและกองทุนจากหลายหน่วยงานหลายกระทรวง โดย อปท. เป็นผู้ดำเนินการแต่ไม่มีอำนาจบริหารจัดการงบประมาณในตัวเอง
                   <br />- อปท. ประสบความยากลำบากในการเข้าถึงฐานข้อมูลจากราชการส่วนภูมิภาค
-                  <br />- อปท. หลายแห่งยังไม่ได้จัดกระบวนการที่ให้ประชาชนมีส่วนร่วมในการเล่าถึงปัญหาและข้อเสนอแนะต่าง ๆ แก่ อปท. มากพอ
+                  <br />- อปท. หลายแห่งยังไม่ได้จัดกระบวนการที่ให้ประชาชนมีส่วนร่วมในการเล่าถึงปัญหาและข้อเสนอแนะต่างๆ แก่ อปท. มากพอ
                   <br />- ยังมีผู้สูงอายุและผู้ดูแลหลักที่เป็นญาติจำนวนมากที่ต้องการบริการเสริมเพิ่มเติม เช่น รถสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง
                 </p>
                 <p className="text-sm leading-relaxed font-body">
@@ -362,7 +362,7 @@ const ArchivePage = () => {
               <div className="col-span-1 space-y-6">
                 <p className="text-sm leading-relaxed font-body">
                   รัฐบาลไทยหลายยุคหลายสมัยได้ให้ความสำคัญกับนโยบายที่เกี่ยวข้องกับผู้สูงอายุ รวมถึงการพิทักษ์สิทธิของผู้สูงอายุมาโดยตลอด แต่กระบวนการทำงานของ
-                  กผส. และคณะอนุกรรมการต่าง ๆ ยังขาดการมีส่วนร่วมของภาคประชาชน
+                  กผส. และคณะอนุกรรมการต่างๆ ยังขาดการมีส่วนร่วมของภาคประชาชน
                 </p>
                 <p className="text-sm leading-relaxed font-body">
                   ผู้จัดทำโครงการจึงได้เสนอแนวทางการยกระดับการทำงานของ กผส. และคณะอนุกรรมการที่เกี่ยวข้องให้เกิดการออกแบบติดตามนโยบายที่ประชาชนเป็นศูนย์กลาง
@@ -390,7 +390,7 @@ const ArchivePage = () => {
               <h3 className="text-xl font-body">practical guidelines</h3>
             </div>
 
-            <ul className="flex w-full space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
+            <ul className="flex w-full snap-x space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
               <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#6badcb] shrink-0">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">
@@ -482,12 +482,12 @@ const ArchivePage = () => {
         </section>
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
-          <div className="flex flex-col items-center justify-center sm:space-y-8">
-            <div className="space-y-3 text-4xl font-bold text-center text-white sm:text-5xl">
+          <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
+            <div className="leading-snug text-4xl font-bold text-center text-white lg:text-5xl">
               <h3>โพลิซี ไดอะล็อก</h3>
               <h3>ทำงานอย่างไร ?</h3>
             </div>
-            <p className="text-base text-center text-white font-body sm:text-lg max-w-prose">
+            <p className="text-base text-center text-white font-body lg:text-lg max-w-prose">
               เราได้จัดทำคู่มือการจัดกระบวนการจากประสบการณ์ของทีมงาน ผู้ที่สนใจสามารถนำไปปรับใช้สำหรับออกแบบและพัฒนานโยบาย ทุกระดับ ทุกประเด็นในสังคม
               เพื่อร่วมกันสร้างการเปลี่ยนแปลงเชิงระบบ
             </p>
