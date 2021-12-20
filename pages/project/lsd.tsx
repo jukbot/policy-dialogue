@@ -231,8 +231,8 @@ const LsdPage = () => {
               <div className="flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="leading-relaxed text-center md:max-w-sm md:text-left font-body">
-                  จึงจะมีรูปแบบการดูแลผู้ป่วยแบบประคับประคอง ที่บูรณาการการทำงานเชิงระบบ ทั้งฝ่ายสาธารณสุขและชุมชนอย่างมีประสิทธิภาพ สามารถปรับใช้ในแต่ละพื้นที่
-                  เพื่อส่งเสริมคุณภาพชีวิตของผู้คนได้
+                  จึงสามารถพัฒนาการจัดการเครือข่ายบริการสุขภาพสำหรับผู้สูงอายุในระดับจังหวัด เพื่อให้ผู้สูงอายุได้รับบริการสุขภาพที่ดีขึ้น อย่างน้อย 4
+                  บริการสุขภาพ* ที่มีความจำเป็นต่อการรองรับสังคมสูงวัย
                 </p>
               </div>
               <p className="text-sm text-center font-body">
