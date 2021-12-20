@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [modal] = useAtom(isModalOpenAtom)
 
   useEffect(() => {
+    // Make hover support on touchscreen display
     document.addEventListener('touchstart', () => null, {
       passive: true,
     })
