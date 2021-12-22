@@ -332,7 +332,7 @@ const ArchivePage = () => {
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1">
-                <p className="max-w-sm text-lg font-bold">
+                <p className="max-w-sm text-lg font-bold" id="gm">
                   การปรับกลไกการทำงานของคณะกรรมการผู้สูงอายุแห่งชาติ และองค์กรที่เกี่ยวข้อง เพื่อส่งเสริมการผลักดันนโยบายรองรับสังคมสูงวัย (Governing mechanism)
                 </p>
               </div>

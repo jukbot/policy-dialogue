@@ -6,6 +6,7 @@ import TimelineMobile from '@/components/Project/LSD/TimelineMobile'
 import TimelineSummary from '@/components/Project/LSD/TimelineSummary'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Meta from '@/data/meta.json'
+import policies from '@/data/policies.json'
 import projects from '@/data/projects.json'
 import { ArrowRightIcon } from '@heroicons/react/outline'
 import { DownloadIcon } from '@heroicons/react/solid'
@@ -26,26 +27,7 @@ import Result1 from '/public/image/lsd/testimonial-1.webp'
 import Result2 from '/public/image/lsd/testimonial-2.webp'
 import Result3 from '/public/image/lsd/testimonial-3.webp'
 
-const relatedPolicy: Policy[] = [
-  {
-    id: 0,
-    text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพ ระดับจังหวัด',
-    url: '/archive#ccu',
-    color: 'bg-[#36723b]',
-  },
-  {
-    id: 1,
-    text: 'การเสริมพลังองค์กรปกครองส่วนท้องถิ่นเพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน และส่งเสริมการมีส่วนร่วมของประชาชน',
-    url: '/archive#aip-1',
-    color: 'bg-[#daa13d]',
-  },
-  {
-    id: 2,
-    text: 'การปรับกลไกการทำงานของ คณะกรรมการผู้สูงอายแห่งชาติและองค์กรที่เกี่ยวข้อง เพื่อส่งเสริมการผลักดันนโยบายรองรับสังคมสูงวัย',
-    url: '/archive#pc-3',
-    color: 'bg-[#6badcb]',
-  },
-]
+const relatedPolicy: Policy[] = [policies[0], policies[1], policies[2]]
 
 const interestProjects: Project[] = [projects[5], projects[4], projects[0], projects[3]]
 
@@ -59,48 +41,47 @@ const LsdPage = () => {
         width={HeroImage.width}
         height={HeroImage.height}
       />
-      <main className="relative bg-[#FBF5EB]">
-        <section className="relative h-full h-[90vh] transition grid items-center bg-[#daa13d]">
+      <main className="relative pt-[3.75rem] bg-[#FBF5EB]">
+        <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] transition grid items-center bg-[#daa13d]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
-            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
-              <h1 className="text-2xl font-semibold leading-relaxed lg:text-4xl lg:text-5xl">
+            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
+              <h1 className="text-3xl font-bold lg:text-4xl lg:text-5xl 2xl:text-6xl max-w-xl">
                 ระบบการดูแลผู้สูงอายุ
-                <br />
-                แบบใดที่คนไทยต้องการ?
+                <br /> แบบใดที่คนไทยต้องการ?
               </h1>
-              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body">
-                การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด
-                <br /> (Local Service Delivery Network)
-                <br /> นโยบายเพื่อผู้สูงอายุที่ต้องจับเข่าคุย
+              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body max-w-sm mx-auto lg:m-0">
+                การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด (Local Service Delivery Network) นโยบายเพื่อผู้สูงอายุที่ต้องจับเข่าคุย
               </h2>
             </div>
-            <Image src={HeroImage} width={800} height={480} priority className="w-full" alt="cover image" />
+            <div className="mt-auto bottom-0 h-full">
+              <Image src={HeroImage} width={800} height={480} priority alt="cover image" />
+            </div>
           </div>
         </section>
 
         <section className="relative h-full bg-[#FCF5EB] pb-6 md:pb-0">
-          <section className="absolute left-0 w-full h-full space-y-12 -top-24">
+          <section className="xl:absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
-              <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
+              <h2 className="relative text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบัน ยังมีผู้สูงอายุ
                 <br />
                 ที่เข้าไม่ถึงการรักษาหรือตกหล่น
                 <br />
                 จากบริการสุขภาพที่ควรได้รับ
               </h2>
-              <p className="relative flex max-w-2xl leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
+              <p className="relative flex max-w-prose leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
                 ส่งผลต่อสุขภาพกายใจของผู้สูงอายุและคนในครอบครัว ทั้งยังเสียโอกาสทางเศรษฐกิจเมื่อผู้สูงอายุไม่สามารถดูแลตนเองได้
               </p>
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-48 md:gap-6 md:pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
+              <Image src={Result1} height="640" width="1024" layout="responsive" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">จะดีกว่าไหม?</h3>
-              <p className="leading-relaxed font-body">
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-2xl font-bold leading-snug max-w-xl">จะดีกว่าไหม?</h3>
+              <p className="leading-snug text-base font-body max-w-xl">
                 หากประเทศไทยมีระบบดูแลผู้สูงอายุแบบองค์รวม และไร้รอยต่อ สามารถยกระดับเครือข่ายการบริการ ในท้องถิ่นให้เป็นมาตรฐานและครอบคลุม
                 <br />
                 <br />- มีหน่วยประสานงานเรื่องสิทธิในโรงพยาบาล
@@ -112,31 +93,25 @@ const LsdPage = () => {
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-8 md:order-first md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
-                เพิ่มการเข้าถึงระบบบริการที่จำเป็น
-                <br />
-                มีชีวิตยามชราที่แข็งแรง
-                <br />
-                ให้มากที่สุดเท่าที่จะเป็นไปได้
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-2xl font-bold leading-snug max-w-xl">
+                เพิ่มการเข้าถึงระบบบริการที่จำเป็น มีชีวิตยามชราที่แข็งแรง ให้มากที่สุดเท่าที่จะเป็นไปได้
               </h3>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
+              <Image src={Result2} height="640" width="1024" layout="responsive" alt="expect-ressult-2" />
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
+              <Image src={Result3} height="640" width="1024" layout="responsive" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">เพื่อพัฒนาคุณภาพชีวิตของผู้สูงอายุ</h3>
-              <p className="leading-relaxed font-body">
-                ได้รับบริการสุขภาพครบถ้วน ต่อเนื่อง และทันเวลา
-                <br />
-                ทั้งด้านการรักษาและการป้องกันโรค รวมถึงการทำกายภาพฟื้นฟู
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-2xl font-bold leading-snug max-w-xl">เพื่อพัฒนาคุณภาพชีวิตของผู้สูงอายุ</h3>
+              <p className="leading-relaxed font-body max-w-xl">
+                ได้รับบริการสุขภาพครบถ้วน ต่อเนื่อง และทันเวลา ทั้งด้านการรักษาและการป้องกันโรค รวมถึงการทำกายภาพฟื้นฟู
               </p>
             </div>
           </div>
@@ -182,43 +157,47 @@ const LsdPage = () => {
 
         <section className="relative h-full pt-6 bg-[#FBF5EB] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
+            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายที่ต้องฝ่าฟัน
               <br />
               เพื่อให้เกิดนโยบายที่ตอบโจทย์
             </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 lg:gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
-                <p className="text-base font-body">การนำรูปแบบการจัดการที่มีอยู่ไปทำซ้ำหรือขยายผลในแต่ละพื้นที่ยังมีข้อจำกัด เนื่องจากบริบทที่แตกต่าง</p>
+                <p className="text-base font-body sm:max-w-sm mx-auto">
+                  การนำรูปแบบการจัดการที่มีอยู่ไปทำซ้ำหรือขยายผลในแต่ละพื้นที่ยังมีข้อจำกัด เนื่องจากบริบทที่แตกต่าง
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} />
-                <p className="text-base font-body">ในปัจจุบัน พยาบาลและนักกายภาพบำบัดมักต้องทำหน้าที่ประสานการดูแลไปด้วย ทำให้มีภาระงานหนักเกินควร</p>
+                <p className="text-base font-body sm:max-w-sm mx-auto">
+                  ในปัจจุบัน พยาบาลและนักกายภาพบำบัดมักต้องทำหน้าที่ประสานการดูแลไปด้วย ทำให้มีภาระงานหนักเกินควร
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-base font-body">
+                <p className="text-base font-body sm:max-w-sm mx-auto">
                   ขาดการบูรณาการการทำงานระดับหน่วยงานในพื้นที่ ทั้งโรงพยาบาลชุมชน โรงพยาบาลส่งเสริมสุขภาพตำบล องค์กรปกครองส่วนท้องถิ่น
                   และสำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัด
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
-                <p className="text-base font-body">
+                <p className="text-base font-body sm:max-w-sm mx-auto">
                   ขาดระบบขนส่งสาธารณะและโครงสร้างพื้นฐานที่เป็นมิตรกับผู้สูงอายุ หรือผู้ที่ต้องใช้กายอุปกรณ์
                   ทำให้เข้ารับบริการสุขภาพและเข้าร่วมกิจกรรมทางสังคมได้ยากลำบาก
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon5} width={120} height={120} />
-                <p className="text-base font-body">
+                <p className="text-base font-body sm:max-w-sm mx-auto">
                   ระบบการส่งต่อคนไข้ยังเน้นเป็นรายครั้งและดูแลเฉพาะโรค ทำให้หน่วยงานในพื้นที่ที่นอกเหนือจากโรงพยาบาลชุมชนไม่ได้รับข้อมูลคนไข้อย่างทั่วถึง
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon6} width={120} height={120} />
-                <p className="text-base font-body">
+                <p className="text-base font-body sm:max-w-sm mx-auto">
                   ภาครัฐขาดระบบการช่วยเหลือดูแลผู้สูงอายุชั่วคราว (respite care) รวมถึงระบบที่สามารถให้ความช่วยเหลือและคำปรึกษาแก่ญาติที่เป็นผู้ดูแลได้
                 </p>
               </div>
@@ -235,9 +214,10 @@ const LsdPage = () => {
                   บริการสุขภาพ* ที่มีความจำเป็นต่อการรองรับสังคมสูงวัย
                 </p>
               </div>
-              <p className="text-sm text-center font-body">
+              <p className="text-sm text-center font-body mx-auto max-w-xl">
                 การดูแลผู้ป่วยระยะกลาง (Intermediate Care) การดูแลผู้สูงอายุระยะยาว (Long-Term Care)
-                <br /> ผู้สูงอายุที่มีภาวะสมองเสื่อม และ การดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)
+                <br />
+                ผู้สูงอายุที่มีภาวะสมองเสื่อม และ การดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)
               </p>
             </div>
           </div>
@@ -282,11 +262,7 @@ const LsdPage = () => {
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a
-                      className="inline-flex items-center bg-white rounded-full text-neutral-900 btn hover:text-white"
-                      target="_self"
-                      rel="noopener noreferrer"
-                    >
+                    <a className="inline-flex items-center bg-white rounded-full text-primary btn hover:text-white" target="_self" rel="noopener noreferrer">
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -302,9 +278,13 @@ const LsdPage = () => {
                     </li>
                   </ul>
                   <Link href="/archive#ccu">
-                    <a className="inline-flex items-center text-white hover:text-primary" target="_self" rel="noopener noreferrer">
-                      <ArrowRightIcon className="w-5 h-5 mr-2 fill-current text-primary" />
-                      <span>Policy Recomendation หัวข้อ CCU</span>
+                    <a
+                      className="flex items-center bg-white px-6 rounded-full text-primary btn hover:bg-primary hover:text-white"
+                      target="_self"
+                      rel="noopener noreferrer"
+                    >
+                      <ArrowRightIcon className="w-5 h-5 mr-2 fill-current" />
+                      <span>ดาวน์โหลดข้อเสนอเชิงนโยบาย</span>
                     </a>
                   </Link>
                 </div>
@@ -313,22 +293,22 @@ const LsdPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#FBF5EB]">
-          <div className="max-w-4xl py-12 mx-auto">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-              <div className="flex flex-col col-span-1 space-y-6 text-body">
-                <div className="px-6 space-y-6">
-                  <h3 className="text-3xl font-bold leading-snug">
+          <div className="max-w-7xl py-12 lg:py-24 lg:mb-24 mx-auto">
+            <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
+              <div className="relative flex flex-col col-span-1 space-y-6 text-body">
+                <div className="lg:px-12 px-6 space-y-6">
+                  <h3 className="text-4xl font-bold leading-snug">
                     สิ่งที่เกิดขึ้นจาก
                     <br />
                     กระบวนการ
                   </h3>
                   <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
                 </div>
-                <div className="left-0 px-6 md:absolute md:px-0 md:pt-48">
-                  <Image width={640} height={380} src={ProcessResult} />
+                <div className="px-6 right-0 overflow-hidden w-full md:absolute md:px-0 md:pt-48">
+                  <Image width={640} height={380} layout="responsive" src={ProcessResult} />
                 </div>
               </div>
-              <div className="h-full col-span-1 px-6">
+              <div className="h-full col-span-1 px-6 lg:px-12 lg:px-12">
                 <ul className="space-y-12">
                   <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมหลากหลายระดับได้หารือและแลกเปลี่ยนความคิดเห็น</h3>

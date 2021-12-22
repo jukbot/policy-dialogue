@@ -6,6 +6,7 @@ import TimelineMobile from '@/components/Project/PC/TimelineMobile'
 import TimelineSummary from '@/components/Project/PC/TimelineSummary'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Meta from '@/data/meta.json'
+import policies from '@/data/policies.json'
 import projects from '@/data/projects.json'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
@@ -23,26 +24,7 @@ import Result1 from '/public/image/pc/testimonial-1.webp'
 import Result2 from '/public/image/pc/testimonial-2.webp'
 import Result3 from '/public/image/pc/testimonial-3.webp'
 
-const relatedPolicy: Policy[] = [
-  {
-    id: 0,
-    text: 'การจัดการโครงสร้างเครือข่ายบริการสุขภาพ ระดับจังหวัด',
-    url: '/archive#ccu',
-    color: 'bg-[#36723b]',
-  },
-  {
-    id: 1,
-    text: 'การเสริมพลังองค์กรปกครองส่วนท้องถิ่นเพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน และส่งเสริมการมีส่วนร่วมของประชาชน',
-    url: '/archive#aip-1',
-    color: 'bg-[#daa13d]',
-  },
-  {
-    id: 2,
-    text: 'การปรับกลไกการทำงานของ คณะกรรมการผู้สูงอายแห่งชาติและองค์กรที่เกี่ยวข้อง เพื่อส่งเสริมการผลักดันนโยบายรองรับสังคมสูงวัย',
-    url: '/archive#pc-3',
-    color: 'bg-[#6badcb]',
-  },
-]
+const relatedPolicy: Policy[] = [policies[0], policies[1], policies[3]]
 
 const interestProjects: Project[] = [projects[5], projects[4], projects[0], projects[6]]
 
@@ -56,31 +38,28 @@ const PcPage = () => {
         width={HeroImage.width}
         height={HeroImage.height}
       />
-      <main className="relative bg-[#EBEAF8]">
-        <section className="relative h-full h-[90vh] transition grid items-center bg-[#3f36b7]">
-          <div className="items-center justify-between lg:mb-6 lg:flex">
-            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
-              <h1 className="text-2xl font-semibold leading-snug lg:text-4xl lg:text-5xl">
+      <main className="relative pt-[3.75rem] bg-[#EBEAF8]">
+        <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] transition grid items-center bg-[#3f36b7]">
+          <div className="items-center justify-between lg:mb-6 flex flex-col lg:flex-row">
+            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
+              <h1 className="text-3xl font-bold lg:text-4xl lg:text-5xl 2xl:text-6xl max-w-xl">
                 บั้นปลายชีวิตคนไทย
-                <br />
-                อยู่อย่างไรจึงเป็นสุข ?
+                <br /> อยู่อย่างไรจึงเป็นสุข ?
               </h1>
-              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body">
-                นโยบายระบบการดูแลผู้ป่วยแบบ
-                <br />
-                ประคับประคอง (Palliative Care)
-                <br />
-                ที่ต้องชวนคุย
+              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body max-w-sm mx-auto lg:m-0">
+                นโยบายระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care) ที่ต้องชวนคุย
               </h2>
             </div>
-            <Image src={HeroImage} width={800} height={480} priority className="w-full" alt="cover image" />
+            <div className="mt-auto bottom-0 h-full">
+              <Image src={HeroImage} width={800} height={480} priority alt="cover image" />
+            </div>
           </div>
         </section>
 
         <section className="relative h-full bg-[#EBEAF8] pb-6 md:pb-0">
-          <section className="absolute left-0 w-full h-full space-y-12 -top-24">
+          <section className="xl:absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
-              <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
+              <h2 className="relative text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบัน การดูแลผู้ป่วยแบบประคับประคอง
                 <br />
                 ในประเทศไทย วางอยู่บนฐานของการ
@@ -94,49 +73,42 @@ const PcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-48 md:gap-6 md:pt-72 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
+              <Image src={Result1} height="640" width="1024" layout="responsive" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-xl lg:text-xl lg:text-2xl font-bold leading-snug max-w-xl max-w-xl max-w-xl">
                 จะเป็นอย่างไร
                 <br />
                 หากเรายึดแนวคิดการ &lsquo;ตายดี&rsquo;
                 <br />
                 และ &lsquo;ไม่ยื้อชีวิต&rsquo;
               </h3>
-              <p className="leading-relaxed font-body">
-                ผู้ป่วยไม่ทรมานกับการรักษาที่ไม่มีที่สิ้นสุด
-                <br />
-                ได้อยู่กับครอบครัว และมีภาครัฐช่วยดูแลในชุมชน
-              </p>
+              <p className="leading-relaxed font-body max-xl">ผู้ป่วยไม่ทรมานกับการรักษาที่ไม่มีที่สิ้นสุด ได้อยู่กับครอบครัว และมีภาครัฐช่วยดูแลในชุมชน</p>
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-8 md:order-first md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว</h3>
-              <p className="leading-relaxed font-body">
-                ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย
-                <br />
-                ไม่ต้องบาดเจ็บทางกายและมีช่วงเวลาสงบสุข
-              </p>
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-xl lg:text-xl lg:text-2xl font-bold leading-snug max-w-xl max-w-xl max-w-xl">
+                เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว
+              </h3>
+              <p className="leading-relaxed font-body max-w-xl">ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย ไม่ต้องบาดเจ็บทางกายและมีช่วงเวลาสงบสุข</p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
+              <Image src={Result2} height="640" width="1024" layout="responsive" alt="expect-ressult-2" />
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
+              <Image src={Result3} height="640" width="1024" layout="responsive" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
-              <p className="leading-relaxed font-body">
-                การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของ
-                <br /> ตัวผู้ป่วย ครอบครัว และภาครัฐ เมื่อเทียบกับการรักษาแบบยื้อความตาย
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-xl lg:text-xl lg:text-2xl font-bold leading-snug max-w-xl max-w-xl max-w-xl">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
+              <p className="leading-relaxed font-body max-w-xl">
+                การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของตัวผู้ป่วย ครอบครัว และภาครัฐ เมื่อเทียบกับการรักษาแบบยื้อความตาย
               </p>
             </div>
           </div>
@@ -152,10 +124,7 @@ const PcPage = () => {
               </text>
             </svg>
             <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
-              มีครัวเรือนที่อาจจัดได้ว่าอยู่ใน &lsquo;สภาวะล้มละลาย&rsquo; โดยที่มีค่าใช้จ่าย
-              <br />
-              ภายใน 1 ปี ก่อนเสียชีวิตมากกว่าร้อยละ 10 ของรายได้ตลอดทั้งปี
-              <br />
+              มีครัวเรือนที่อาจจัดได้ว่าอยู่ใน &lsquo;สภาวะล้มละลาย&rsquo; โดยที่มีค่าใช้จ่ายภายใน 1 ปี ก่อนเสียชีวิตมากกว่าร้อยละ 10 ของรายได้ตลอดทั้งปี
               ซึ่งส่วนใหญ่เป็นครัวเรือนที่มีฐานะยากจน*
             </p>
             <p className="mt-4 text-xs text-center font-body max-w-prose">
@@ -184,7 +153,7 @@ const PcPage = () => {
 
         <section className="relative h-full pt-6 bg-[#EBEAF8] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
+            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายที่ต้องฝ่าฟัน
               <br />
               เพื่อให้เกิดนโยบายที่ตอบโจทย์
@@ -271,23 +240,23 @@ const PcPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#EAEBF8]">
-          <div className="max-w-4xl py-12 mx-auto">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-              <div className="flex flex-col col-span-1 space-y-6 text-body">
-                <div className="px-6 space-y-6">
-                  <h3 className="text-3xl font-bold leading-snug">
+          <div className="max-w-7xl py-12 lg:py-24 lg:mb-24 mx-auto">
+            <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
+              <div className="relative flex flex-col col-span-1 space-y-6 text-body">
+                <div className="lg:px-12 lg:px-12 px-6 space-y-6">
+                  <h3 className="text-4xl font-bold leading-snug">
                     สิ่งที่เกิดขึ้นจาก
                     <br />
                     กระบวนการ
                   </h3>
                   <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
                 </div>
-                <div className="left-0 px-6 md:absolute md:px-0 md:pt-48">
-                  <Image width={640} height={380} src={ProcessResult} />
+                <div className="px-6 right-0 overflow-hidden w-full md:absolute md:px-0 md:pt-48">
+                  <Image width={640} height={380} layout="responsive" src={ProcessResult} />
                 </div>
               </div>
-              <div className="h-full col-span-1 px-6">
-                <ul className="space-y-12">
+              <div className="h-full col-span-1 px-6 lg:px-12 lg:px-12 lg:px-12 lg:px-12">
+                <ul className="space-y-12 flex flex-col h-full items-center">
                   <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมเห็นภาพปัญหาที่สำคัญ และเร่งด่วนที่สุดร่วมกัน</h3>
                     <p className="font-body">โดยเฉพาะการทำงานระหว่างผู้มีส่วนได้ส่วนเสียยังไม่เชื่อมประสานและบูรณาการอย่างแท้จริง</p>

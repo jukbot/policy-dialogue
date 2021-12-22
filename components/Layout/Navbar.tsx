@@ -37,9 +37,9 @@ const Navbar = (): JSX.Element => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className={`fixed z-10 w-full px-6 sm:py-2 mx-auto lg:px-24 bg-black transition ${y < 30 ? 'sm:bg-opacity-100' : 'sm:bg-opacity-100'}`}>
+          <div className={`fixed z-10 w-full px-6 sm:py-2 mx-auto xl:px-24 bg-black transition ${y < 30 ? 'sm:bg-opacity-100' : 'sm:bg-opacity-100'}`}>
             <div className="relative flex items-center justify-between">
-              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center xl:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-4 text-white hover:text-white hover:bg-primary">
                   <span className="sr-only">Open main menu</span>
@@ -54,11 +54,11 @@ const Navbar = (): JSX.Element => {
                 <div className="flex items-center justify-center shrink-0">
                   <Link href="/">
                     <a className="flex">
-                      <Image className="hidden lg:block" width="120" height="60" src={Logo} priority decoding="async" alt="logo" />
+                      <Image className="hidden xl:block" width="120" height="60" src={Logo} priority decoding="async" alt="logo" />
                     </a>
                   </Link>
                 </div>
-                <div className="hidden w-full lg:block">
+                <div className="hidden w-full xl:block">
                   <div className="flex justify-center space-x-4 whitespace-nowrap">
                     <ProjectDropDown />
                     {desktopNav.map((item) => (
@@ -80,7 +80,7 @@ const Navbar = (): JSX.Element => {
             </div>
           </div>
 
-          <Disclosure.Panel className="lg:hidden">
+          <Disclosure.Panel className="xl:hidden">
             <div className="fixed z-20 w-full h-screen px-6 pt-12 pb-3 space-y-6 overflow-y-auto bg-secondary">
               <Disclosure>
                 {({ open }) => (

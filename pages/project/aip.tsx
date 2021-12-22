@@ -6,6 +6,7 @@ import TimelineSummary from '@/components/Project/AIP/TimelineSummary'
 import InterestProjects from '@/components/Project/InterestProjects'
 import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Meta from '@/data/meta.json'
+import policies from '@/data/policies.json'
 import projects from '@/data/projects.json'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
@@ -24,20 +25,7 @@ import Result1 from '/public/image/aip/testimonial-1.webp'
 import Result2 from '/public/image/aip/testimonial-2.webp'
 import Result3 from '/public/image/aip/testimonial-3.webp'
 
-const relatedPolicy: Policy[] = [
-  {
-    id: 0,
-    text: 'การเสริมพลังองค์กรปกครองส่วนท้องถิ่นเพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน และส่งเสริมการมีส่วนร่วมของประชาชน',
-    url: '/archive#aip-1',
-    color: 'bg-[#36723b]',
-  },
-  {
-    id: 1,
-    text: 'การพัฒนาหน่วยประสานการดูแล เพื่อยกระดับการให้บริการแก่ผู้สูงอายุ และผู้ป่วยในระดับจังหวัด (Care Coordination Unit - CCU)',
-    url: '/archive#ccu',
-    color: 'bg-[#daa13d]',
-  },
-]
+const relatedPolicy: Policy[] = [policies[1], policies[0]]
 
 const interestProjects: Project[] = [projects[5], projects[4], projects[3], projects[6]]
 
@@ -51,91 +39,70 @@ const AipPage = () => {
         width={HeroImage.width}
         height={HeroImage.height}
       />
-      <main className="relative bg-[#F9EEE9]">
-        <section className="relative h-full h-[90vh] transition grid items-center bg-[#c7642a]">
+      <main className="relative pt-[3.75rem] bg-[#F9EEE9]">
+        <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] transition grid items-center bg-[#c7642a]">
           <div className="items-center justify-between lg:mb-6 lg:flex">
-            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:ml-12 lg:mt-12 item-center lg:item-start lg:text-left">
-              <h1 className="text-2xl font-semibold leading-snug lg:text-4xl lg:text-5xl">
+            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
+              <h1 className="text-3xl font-bold lg:text-4xl lg:text-5xl 2xl:text-6xl">
                 เตรียมพร้อมอย่างไร ?<br />
                 หากอยากอยู่บ้านในยามชรา
               </h1>
-              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body">
-                แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place)
-                <br /> นโยบายเพื่อการเตรียมพร้อมด้านที่อยู่อาศัยและ
-                <br /> บริการทางสังคมสำหรับผู้สูงอายุ
+              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body max-w-sm mx-auto lg:m-0">
+                แนวคิดการชราในถิ่นที่อยู่เดิม (Aging in Place) นโยบายเพื่อการเตรียมพร้อมด้านที่อยู่อาศัยและ บริการทางสังคมสำหรับผู้สูงอายุ
               </h2>
             </div>
-            <Image src={HeroImage} width={800} height={480} priority className="w-full" alt="cover image" />
+            <div className="mt-auto bottom-0 h-full">
+              <Image src={HeroImage} width={800} height={480} priority alt="cover image" />
+            </div>
           </div>
         </section>
 
         <section className="relative h-full bg-[#FCF5EB] pb-6 md:pb-0">
-          <section className="absolute left-0 w-full h-full space-y-12 -top-24">
+          <section className="xl:absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
-              <h2 className="relative text-lg font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
-                ปัจจุบันประเทศไทยมีนโยบายที่รองรับ
-                <br />
-                สังคมผู้สูงวัยที่โดดเด่นด้านสุขภาพ แต่ยังขาด
-                <br />
-                การพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
+              <h2 className="relative text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl max-w-2xl">
+                ปัจจุบันประเทศไทยมีนโยบายที่รองรับ สังคมผู้สูงวัยที่โดดเด่นด้านสุขภาพ แต่ยังขาดการพัฒนามิติด้านที่อยู่อาศัยและสังคม ซึ่งสำคัญไม่แพ้กัน
               </h2>
-              <p className="relative flex max-w-2xl leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
+              <p className="relative flex max-w-prose leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
                 ส่งผลให้ผู้สูงอายุส่วนหนึ่ง ประสบปัญหาด้านที่อยู่อาศัย ขาดการซ่อมแซมและไม่มีรูปแบบที่เหมาะสม ใช้ชีวิตได้ยากลำบากหากต้องอยู่ลำพัง
               </p>
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-48 md:gap-6 md:pt-72 md:grid-cols-2">
-            <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
+          <div className="grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+            <div className="relative col-span-1 px-6 md:px-0 ">
+              <Image src={Result1} layout="responsive" height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
-                คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน
-                <br />
-                หรือที่อยู่อาศัยเดิมได้นานที่สุดเท่าที่ต้องการ
-                <br />
-                ได้อย่างสะดวกปลอดภัย
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-2xl font-bold leading-snug max-w-xl">
+                คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน หรือที่อยู่อาศัยเดิมได้นานที่สุดเท่าที่ต้องการ ได้อย่างสะดวกปลอดภัย
               </h3>
-              <p className="leading-relaxed font-body">
-                แม้ว่าจะมีสภาวะทางร่างกาย สังคมและจิตใจที่ค่อยๆ
-                <br /> เสื่อมถอยจากความชรา
-              </p>
+              <p className="leading-relaxed font-body max-w-sm">แม้ว่าจะมีสภาวะทางร่างกาย สังคมและจิตใจที่ค่อยๆ เสื่อมถอยจากความชรา</p>
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-8 md:order-first md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
-                ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต
-                <br />
-                หากสามารถอาศัยอยู่ที่บ้านของตนเองได้ต่อเนื่อง
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-2xl font-bold leading-snug max-w-xl">
+                ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต หากสามารถอาศัยอยู่ที่บ้านของตนเองได้ต่อเนื่อง
               </h3>
-              <p className="leading-relaxed font-body">
-                เพราะ ‘บ้าน’ คือพื้นที่ที่ให้ความรู้สึกปลอดภัย
-                <br /> มีสังคมและสิ่งแวดล้อมที่ผู้สูงอายุคุ้นเคย ลดความกังวลด้านจิตใจ
-                <br /> ส่งผลดีต่อการดูแลรักษาสุขภาพ ควบคุมโรค และคุณภาพชีวิต
+              <p className="leading-relaxed font-body max-w-xl">
+                เพราะ ‘บ้าน’ คือพื้นที่ที่ให้ความรู้สึกปลอดภัย มีสังคมและสิ่งแวดล้อมที่ผู้สูงอายุคุ้นเคย ลดความกังวลด้านจิตใจ ส่งผลดีต่อการดูแลรักษาสุขภาพ
+                ควบคุมโรค และคุณภาพชีวิต
               </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
+              <Image src={Result2} layout="responsive" height="640" width="1024" alt="expect-ressult-2" />
             </div>
           </div>
 
-          <div className="relative grid grid-cols-1 md:gap-6 md:grid-cols-2">
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" className="w-full h-full" alt="expect-ressult-3" />
+              <Image src={Result3} layout="responsive" height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 px-6 py-6 space-y-2 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
-              <h3 className="text-2xl font-bold leading-snug">
-                ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
-                <br />
-                ที่มีแนวโน้มสูงขึ้นในทุกปี
-              </h3>
-              <p className="leading-relaxed font-body">
-                สามารถลดการพึ่งพิงสถานบริบาลที่มีค่าใช้จ่ายมาก
-                <br /> ทั้งงบประมาณภาครัฐและของผู้สูงอายุเอง
-              </p>
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="text-xl lg:text-2xl font-bold leading-snug max-w-xl">ตอบสนองการดูแลผู้สูงอายุในประเทศไทย ที่มีแนวโน้มสูงขึ้นในทุกปี</h3>
+              <p className="leading-relaxed font-body max-w-xl">สามารถลดการพึ่งพิงสถานบริบาลที่มีค่าใช้จ่ายมาก ทั้งงบประมาณภาครัฐและของผู้สูงอายุเอง</p>
             </div>
           </div>
         </section>
@@ -149,7 +116,7 @@ const AipPage = () => {
                 </tspan>
               </text>
             </svg>
-            <a href="https://www.prachachat.net/property/news-596824" className="hover:text-gray-900" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.prachachat.net/property/news-596824" className="hover:text-neutral-900" target="_blank" rel="noopener noreferrer">
               <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
                 การลงทุนสร้างบ้านพักคนชรา 1 แห่งในปัจจุบัน
                 <br /> ต้องใช้เงินลงทุนในการสร้างประมาณ 305 ล้านบาท สำหรับผู้สูงอายุ 150 คน
@@ -186,29 +153,33 @@ const AipPage = () => {
 
         <section className="relative h-full pt-6 bg-[#F9EFE9] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-snug text-center md:text-4xl">
+            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายที่ต้องฝ่าฟัน
               <br />
               เพื่อให้เกิดนโยบายที่ตอบโจทย์
             </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} />
-                <p className="text-base font-body">
+                <p className="text-base font-body sm:max-w-sm mx-auto">
                   ขาดการบูรณาการ ระหว่างบริการทางสุขภาพและสังคม ทั้งในด้านการวางแผน การส่งต่อทรัพยากรและข้อมูล การกำหนดมาตรฐาน และตรวจสอบคุณภาพ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} />
-                <p className="text-base font-body">อุปสรรคด้านข้อกฎหมายที่เกี่ยวข้องกับองค์การปกครองส่วนท้องถิ่น ทั้งอำนาจหน้าที่ และ งบประมาณ</p>
+                <p className="text-base font-body sm:max-w-sm mx-auto">
+                  อุปสรรคด้านข้อกฎหมายที่เกี่ยวข้องกับองค์การปกครองส่วนท้องถิ่น ทั้งอำนาจหน้าที่ และ งบประมาณ
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} />
-                <p className="text-base font-body">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับผู้สูงอายุ</p>
+                <p className="text-base font-body sm:max-w-sm mx-auto">ขาดการลงทุนโครงสร้างพื้นฐาน/กลไกที่ช่วยกระตุ้นให้เกิดบริการสำหรับผู้สูงอายุ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} />
-                <p className="text-base font-body">ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย</p>
+                <p className="text-base font-body sm:max-w-sm mx-auto">
+                  ขาดบริการทางสังคมอย่างเป็นระบบ ภาคส่วนความร่วมมือ รูปแบบ และประเภทของการบริการไม่หลากหลาย
+                </p>
               </div>
             </div>
           </div>
@@ -301,7 +272,11 @@ const AipPage = () => {
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a className="text-[#c7642a]  inline-flex items-center btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
+                    <a
+                      className="text-[#c7642a] inline-flex items-center btn bg-white hover:text-white hover:bg-primary rounded-full"
+                      target="_self"
+                      rel="noopener noreferrer"
+                    >
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -326,7 +301,11 @@ const AipPage = () => {
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a className="text-[#36723b] inline-flex btn bg-white hover:text-white rounded-full" target="_self" rel="noopener noreferrer">
+                    <a
+                      className="text-[#36723b] inline-flex bg-white hover:text-white hover:bg-[#36723b] btn rounded-full"
+                      target="_self"
+                      rel="noopener noreferrer"
+                    >
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
@@ -337,22 +316,22 @@ const AipPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#F9EFE9]">
-          <div className="max-w-4xl py-12 mx-auto">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-              <div className="flex flex-col col-span-1 space-y-6 text-body">
-                <div className="px-6 space-y-6">
-                  <h3 className="text-3xl font-bold leading-snug">
+          <div className="max-w-7xl py-12 lg:py-24 lg:mb-24 mx-auto">
+            <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
+              <div className="relative flex flex-col col-span-1 space-y-6 text-body">
+                <div className="lg:px-12 px-6 space-y-6">
+                  <h3 className="text-4xl font-bold leading-snug">
                     สิ่งที่เกิดขึ้นจาก
                     <br />
                     กระบวนการ
                   </h3>
                   <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
                 </div>
-                <div className="left-0 px-6 md:absolute md:px-0 md:pt-48">
-                  <Image width={640} height={380} src={ProcessResult} />
+                <div className="px-6 right-0 overflow-hidden w-full md:absolute md:px-0 md:pt-48">
+                  <Image width={640} height={380} layout="responsive" src={ProcessResult} />
                 </div>
               </div>
-              <div className="h-full col-span-1 px-6">
+              <div className="h-full col-span-1 px-6 lg:px-12">
                 <ul className="space-y-12">
                   <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมแสดงความสนใจและอยากผลักดันต่อ</h3>
