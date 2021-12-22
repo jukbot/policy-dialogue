@@ -262,7 +262,11 @@ const LsdPage = () => {
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
-                    <a className="inline-flex items-center bg-white rounded-full text-primary btn hover:text-white" target="_self" rel="noopener noreferrer">
+                    <a
+                      className="inline-flex items-center bg-white rounded-full text-[#daa13d] btn hover:bg-[#daa13d] hover:text-white"
+                      target="_self"
+                      rel="noopener noreferrer"
+                    >
                       <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                       <span>ดาวน์โหลดข้อสรุป</span>
                     </a>
