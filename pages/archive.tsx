@@ -221,24 +221,16 @@ const ArchivePage = () => {
               <h2 className="text-3xl font-bold">ข้อเสนอแนะ</h2>
               <h2 className="text-3xl font-bold">เชิงนโยบาย</h2>
               <h3 className="text-xl font-body">policy recommendations</h3>
-              <p className="w-1/2 text-sm leading-relaxed font-body">
-                จากผลลัพธ์การจัดกระบวนการ 7 ประเด็นหลัก
-                <br /> ตลอดระยะเวลา 1 ปีที่ผ่านมา ทีมได้วิเคราะห์
-                <br /> และสังเคราะห์ผลสรุปในทุกประเด็น ออกเป็นข้อเสนอ
-                <br /> เชิงนโยบาย 4 เรื่อง เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ
-                <br /> รองรับสังคมสูงวัย
+              <p className="max-w-sm text-sm leading-relaxed font-body">
+                จากผลลัพธ์การจัดกระบวนการ 7 ประเด็นหลัก ตลอดระยะเวลา 1 ปีที่ผ่านมา ทีมได้วิเคราะห์ และสังเคราะห์ผลสรุปในทุกประเด็น ออกเป็นข้อเสนอเชิงนโยบาย 4
+                เรื่อง เพื่อสร้างการเปลี่ยนแปลงเชิงระบบรองรับสังคมสูงวัย
               </p>
             </div>
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500/75 md:grid-cols-2">
               <div className="col-span-1" id="ccu">
-                <p className="text-lg font-bold">
-                  การพัฒนาหน่วยประสานการดูแล
-                  <br />
-                  เพื่อยกระดับการให้บริการแก่ผู้สูงอายุ
-                  <br />
-                  และผู้ป่วยในระดับจังหวัด
-                  <br /> (Care Coordination Unit - CCU)
+                <p className="max-w-sm text-lg font-bold">
+                  การพัฒนาหน่วยประสานการดูแล เพื่อยกระดับการให้บริการแก่ผู้สูงอายุ และผู้ป่วยในระดับจังหวัด (Care Coordination Unit - CCU)
                 </p>
               </div>
               <div className="col-span-1 space-y-6">
@@ -269,12 +261,8 @@ const ArchivePage = () => {
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1" id="aip-1">
-                <p className="text-lg font-bold">
-                  การเสริมพลังองค์กรปกครองส่วนท้องถิ่น
-                  <br />
-                  เพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน
-                  <br />
-                  และส่งเสริมการมีส่วนร่วมของประชาชน
+                <p className="max-w-sm text-lg font-bold">
+                  การเสริมพลังองค์กรปกครองส่วนท้องถิ่น เพื่อยกระดับคุณภาพชีวิตผู้สูงอายุในชุมชน และส่งเสริมการมีส่วนร่วมของประชาชน
                 </p>
               </div>
               <div className="col-span-1 space-y-6">
@@ -308,13 +296,8 @@ const ArchivePage = () => {
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1">
-                <p className="text-lg font-bold" id="pc-3">
-                  การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุข
-                  <br />
-                  ของสำนักงานหลักประกันสุขภาพแห่งชาติ
-                  <br />
-                  เพื่อส่งเสริมการดูแลระยะกลาง (Intermediate care)
-                  <br />
+                <p className="max-w-sm text-lg font-bold" id="pc-3">
+                  การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุข ของสำนักงานหลักประกันสุขภาพแห่งชาติ เพื่อส่งเสริมการดูแลระยะกลาง (Intermediate care)
                   อย่างเข้มข้นในระดับโรงพยาบาลชุมชน
                 </p>
               </div>
@@ -349,14 +332,8 @@ const ArchivePage = () => {
 
             <div className="grid grid-cols-1 gap-8 pb-6 border-b border-gray-500 md:grid-cols-2">
               <div className="col-span-1">
-                <p className="text-lg font-bold">
-                  การปรับกลไกการทำงานของคณะกรรมการ
-                  <br />
-                  ผู้สูงอายุแห่งชาติ และองค์กรที่เกี่ยวข้อง
-                  <br />
-                  เพื่อส่งเสริมการผลักดันนโยบายรองรับสังคมสูงวัย
-                  <br />
-                  (Governing mechanism)
+                <p className="max-w-sm text-lg font-bold">
+                  การปรับกลไกการทำงานของคณะกรรมการผู้สูงอายุแห่งชาติ และองค์กรที่เกี่ยวข้อง เพื่อส่งเสริมการผลักดันนโยบายรองรับสังคมสูงวัย (Governing mechanism)
                 </p>
               </div>
               <div className="col-span-1 space-y-6">
@@ -390,7 +367,7 @@ const ArchivePage = () => {
               <h3 className="text-xl font-body">practical guidelines</h3>
             </div>
 
-            <ul className="flex w-full snap-x space-x-6 overflow-x-auto flex-nowrap whitespace-nowrap">
+            <ul className="flex w-full space-x-6 overflow-x-auto lg:overflow-x-visible">
               <li className="flex flex-col justify-between p-6 h-72 w-64 text-white bg-[#6badcb] shrink-0">
                 <div className="space-y-1">
                   <p className="text-lg font-bold">

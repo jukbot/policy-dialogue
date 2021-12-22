@@ -38,7 +38,7 @@ const Footer = (): JSX.Element => {
   )
 
   return (
-    <footer className="relative flex flex-col h-full w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
+    <footer className="relative flex flex-col bottom-0 w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
       <ul className="grid w-full h-full text-white gap-y-8 md:grid-cols-2 gap-4 lg:grid-cols-4 font-body">
         <li className="col-span-full lg:col-span-1 lg:text-center">
           <Link href="/">

@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', '${process.env['NEXT_PUBLIC_GTAG_ID']}');
         `}
       </Script>
-      <main className={`relative w-full h-full bg-secondary ${process.env.NODE_ENV === 'development' ? 'debug-screens' : ''}`}>
+      <main className={`relative w-full min-h-full bg-secondary ${process.env.NODE_ENV === 'development' ? 'debug-screens' : ''}`}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />

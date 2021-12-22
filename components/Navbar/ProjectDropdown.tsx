@@ -16,7 +16,7 @@ const ProjectDropDown = () => {
             <Popover.Button
               className={`
               ${open ? 'text-primary' : 'text-link'}
-              group inline-flex items-center text-sm font-body`}
+               inline-flex items-center text-sm font-body`}
             >
               <span>นโยบายเพื่อสังคมสูงวัย</span>
               <ChevronDownIcon

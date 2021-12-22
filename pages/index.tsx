@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                     เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
                   </p>
                 </div>
-                <div className="bottom-0 hidden grid-cols-2 mx-auto gap-y-12 gap-x-6 lg:gap-x-16 col-span-full md:grid">
+                <div className="bottom-0 hidden md:flex w-full col-span-full lg:px-12 gap-8 lg:gap-y-12 lg:gap-x-16">
                   <PolicyCircle
                     text="ขนส่งมวลชนเชื่อมต่อ"
                     position="-translate-x-4 translate-y-4"
@@ -189,7 +189,7 @@ const Home: NextPage = () => {
           <section className="relative h-full bg-[#242054]">
             <div className="flex flex-col items-center justify-center px-6 py-12 text-white">
               <QuestionMark className="w-48 h-48" />
-              <p className="text-base leading-relaxed text-center lg:text-lg font-body max-w-prose break-words">
+              <p className="text-base leading-relaxed text-center lg:text-lg font-body max-w-prose">
                 คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย
                 <br /> เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ
                 ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม

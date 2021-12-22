@@ -36,9 +36,9 @@ const AboutPage = () => {
           <div className="w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-50 from-[#191919] to-[#242054] bg-gradient-to-b" />
         </section>
 
-        <section className="relative h-full space-y-12 bg-white">
-          <div className="grid max-w-6xl grid-cols-1 gap-16 py-16 mx-auto lg:py-32 md:grid-cols-2">
-            <div className="flex flex-col col-span-1 px-6 sm:px-12 text-body">
+        <section className="relative h-full space-y-6 lg:space-y-12 bg-white">
+          <div className="grid max-w-6xl grid-cols-1 gap-12 lg:gap-16 py-12 lg:py-16 mx-auto lg:py-32 md:grid-cols-2">
+            <div className="flex flex-col col-span-1 px-6 lg:px-12 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">HELLO!</h2>
                 <h2 className="text-4xl font-semibold sm:text-5xl">WE ARE RISE IMPACT</h2>
@@ -46,10 +46,8 @@ const AboutPage = () => {
             </div>
             <div className="relative col-span-1 px-6 sm:px-12">
               <p className="leading-relaxed lg:text-lg max-w-prose font-body">
-                พวกเราเป็นองค์กรเล็กที่ไม่ขึ้นกับใคร และมองว่าองค์กร
-                <br /> ของเราจะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ
-                <br /> โดยมุ่งใช้ความเป็นองค์กรที่ยืดหยุ่นนี้ เชื่อมช่องว่างทั้งหลาย ในระบบนิเวศของนวัตกรรมทางสังคม
-                <br /> เพื่อสร้างผลกระทบเชิงบวกให้มากขึ้นกว่าเดิม
+                พวกเราเป็นองค์กรเล็กที่ไม่ขึ้นกับใคร และมองว่าองค์กร ของเราจะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ โดยมุ่งใช้ความเป็นองค์กรที่ยืดหยุ่นนี้
+                เชื่อมช่องว่างทั้งหลาย ในระบบนิเวศของนวัตกรรมทางสังคม เพื่อสร้างผลกระทบเชิงบวกให้มากขึ้นกว่าเดิม
               </p>
             </div>
           </div>
@@ -75,7 +73,7 @@ const AboutPage = () => {
               </ul>
             </div>
           </div>
-          <div className="max-w-6xl px-6 pt-12 mx-auto text-center pb-36 lg:px-12">
+          <div className="max-w-6xl px-6 py-12 mx-auto text-center lg:py-24 lg:px-12">
             <div className="space-y-12 lg:space-y-24">
               <div className="mx-auto sm:max-w-xl lg:max-w-5xl">
                 <h2 className="text-4xl font-bold lg:text-6xl">Contributors</h2>
@@ -93,7 +91,7 @@ const AboutPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-secondary">
-          <div className="max-w-6xl px-6 py-24 mx-auto space-y-6 md:space-y-12 lg:px-12">
+          <div className="max-w-6xl px-6 py-12 lg:py-24 mx-auto space-y-6 md:space-y-12 lg:px-12">
             <div className="space-y-2 text-white">
               <h2 className="text-4xl font-bold lg:text-6xl">ติดต่อเรา</h2>
               <p className="text-4xl font-body">Get in touch!</p>
