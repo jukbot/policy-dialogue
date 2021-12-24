@@ -36,8 +36,8 @@ const AboutPage = () => {
           <div className="w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-50 from-[#191919] to-[#242054] bg-gradient-to-b" />
         </section>
 
-        <section className="relative h-full space-y-6 lg:space-y-12 bg-white">
-          <div className="grid max-w-6xl grid-cols-1 gap-12 lg:gap-16 py-12 lg:py-16 mx-auto lg:py-32 md:grid-cols-2">
+        <section className="relative h-full space-y-6 bg-white lg:space-y-12">
+          <div className="grid max-w-6xl grid-cols-1 gap-12 py-12 mx-auto lg:gap-16 lg:py-16 lg:py-32 md:grid-cols-2">
             <div className="flex flex-col col-span-1 px-6 lg:px-12 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">HELLO!</h2>
@@ -91,7 +91,7 @@ const AboutPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-secondary">
-          <div className="max-w-6xl px-6 py-12 lg:py-24 mx-auto space-y-6 md:space-y-12 lg:px-12">
+          <div className="max-w-6xl px-6 py-12 mx-auto space-y-6 lg:py-24 md:space-y-12 lg:px-12">
             <div className="space-y-2 text-white">
               <h2 className="text-4xl font-bold lg:text-6xl">ติดต่อเรา</h2>
               <p className="text-4xl font-body">Get in touch!</p>
@@ -117,7 +117,10 @@ const AboutPage = () => {
                   </div>
                   <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="organizetype" className="label-input">
-                      ประเภทองค์กร *
+                      ประเภทองค์กร{' '}
+                      <span aria-hidden="true" className="required">
+                        *
+                      </span>
                     </label>
                     <div className="col-span-2">
                       <select
@@ -148,7 +151,10 @@ const AboutPage = () => {
                   </div>
                   <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="email" className="label-input">
-                      อีเมล *
+                      อีเมล{' '}
+                      <span aria-hidden="true" className="required">
+                        *
+                      </span>
                     </label>
                     <div className="col-span-2">
                       <input type="email" name="email" id="email" required placeholder="youremail@mail.com" className="text-input" maxLength={60} />
@@ -159,10 +165,22 @@ const AboutPage = () => {
                 <div className="col-span-1">
                   <div className="items-start grid-cols-3 gap-4 md:grid">
                     <label htmlFor="message" className="items-start label-input lg:justify-end lg:mr-6">
-                      ข้อความ
+                      ข้อความ{' '}
+                      <span aria-hidden="true" className="required">
+                        *
+                      </span>
                     </label>
                     <div className="col-span-2 space-y-6">
-                      <textarea name="message" id="message" maxLength={1000} rows={11} placeholder="ข้อความของคุณ" className="text-input" defaultValue={''} />
+                      <textarea
+                        name="message"
+                        id="message"
+                        required
+                        maxLength={1000}
+                        rows={11}
+                        placeholder="ข้อความของคุณ"
+                        className="text-input"
+                        defaultValue={''}
+                      />
                       <button
                         type="submit"
                         disabled={state.submitting}
