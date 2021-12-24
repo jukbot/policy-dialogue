@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           <section className="relative h-full bg-white">
             <ScrollToContent />
             <div ref={learnmoreRef} className="grid grid-cols-1 gap-6 pt-32 md:grid-cols-2" id="learnmore">
-              <div className="flex flex-col col-span-1 px-6 pt-4 lg:pt-16 space-y-4 lg:px-24 text-body">
+              <div className="flex flex-col col-span-1 px-6 pt-4 space-y-4 lg:pt-16 lg:px-24 text-body">
                 <div className="space-y-2 whitespace-nowrap">
                   <h2 className="text-3xl font-semibold lg:text-5xl">นโยบายที่ดี สังคมต้อง</h2>
                   <h2 className="text-3xl font-semibold lg:text-5xl">ร่วมกันออกแบบ</h2>
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-12 pt-12 md:grid-cols-2">
-              <div className="grid grid-cols-1 col-span-1 px-6 mx-auto md:grid-cols-2 lg:px-12 gap-8 lg:gap-y-12 lg:gap-x-16 ">
+              <div className="grid grid-cols-1 col-span-1 gap-8 px-6 mx-auto md:grid-cols-2 lg:px-12 lg:gap-y-12 lg:gap-x-16 ">
                 <PolicyCircle
                   text="น้ำประปาดื่มได้"
                   position="-translate-x-4 -translate-y-4"
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
                   className="absolute hidden -bottom-8 md:block"
                 />
               </div>
-              <div className="flex flex-col justify-between col-span-1 p-6 lg:py-16 space-y-4 lg:px-12 text-body">
+              <div className="flex flex-col justify-between col-span-1 p-6 space-y-4 lg:py-16 lg:px-12 text-body">
                 <div className="space-y-2">
                   <h2 className="text-3xl font-semibold lg:text-5xl">เพราะนโยบาย</h2>
                   <h2 className="text-3xl font-semibold lg:text-5xl">เกี่ยวข้องกับทุกมิติใน</h2>
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                     เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
                   </p>
                 </div>
-                <div className="bottom-0 hidden md:flex w-full col-span-full lg:px-12 gap-8 lg:gap-y-12 lg:gap-x-16">
+                <div className="bottom-0 hidden w-full gap-8 md:flex col-span-full lg:px-12 lg:gap-y-12 lg:gap-x-16">
                   <PolicyCircle
                     text="ขนส่งมวลชนเชื่อมต่อ"
                     position="-translate-x-4 translate-y-4"
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
           <section className="relative h-full overflow-hidden bg-secondary">
             <div className="absolute top-0 right-0 w-full h-full bg-fixed bg-center bg-no-repeat filter blur-md bg-width-90 bg-step-blur-pattern-mobile lg:bg-step-blur-pattern"></div>
             <div className="absolute top-0 w-full h-full bg-fixed bg-top bg-no-repeat opacity-70 bg-step-pattern-mobile lg:bg-step-pattern bg-width-90"></div>
-            <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-4 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 bg-contain md:bg-75% bg-process-step-mobile lg:bg-process-step">
+            <div className="absolute w-full bg-no-repeat h-full lg:h-[40rem] -left-4 lg:left-auto bg-top-left-2 lg:-top-16 lg:-bg-top-6 sm:bg-75 md:bg-70 lg:bg-contain bg-process-step-mobile lg:bg-process-step">
               <div className="justify-start hidden lg:justify-center lg:flex">
                 <div className="flex flex-col items-start justify-center pl-20 mt-48 space-y-6 font-bold bg-white rounded-full lg:mt-0 lg:text-center lg:pt-10 w-60 h-60 lg:pl-0 lg:items-center lg:w-80 lg:h-80 text-body">
                   <h3 className="hidden text-2xl lg:block">
@@ -238,7 +238,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-          <section className="relative h-full py-12 lg:py-24 bg-white" ref={ref}>
+          <section className="relative h-full py-12 bg-white lg:py-24" ref={ref}>
             <div className="grid grid-cols-1 gap-6 px-6 sm:px-12 lg:px-24 sm:max-w-3/4 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-8 text-body">
                 <div className="lg:space-y-4">
@@ -252,7 +252,7 @@ const Home: NextPage = () => {
                   </Link>
                 </div>
               </div>
-              <div className="grid grid-cols-1 col-span-1 gap-4   lg:gap-8 md:grid-cols-2">
+              <div className="grid grid-cols-1 col-span-1 gap-4 lg:gap-8 md:grid-cols-2">
                 <div className="flex flex-col col-span-1 space-y-4 text-body">
                   <p className="font-body lg:text-lg">จัดวงหารือแบบออฟไลน์ และออนไลน์</p>
                   <p className="text-4xl lg:text-6xl">
