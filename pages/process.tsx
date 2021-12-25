@@ -27,10 +27,10 @@ const ProcessPage = () => {
           <section className="absolute left-0 w-full h-full space-y-12 -top-24">
             <div className="relative bg-[#242054] mx-auto max-w-6xl py-20 px-6 md:p-12 md:h-72">
               <span className="absolute top-6 left-12 lg:left-24 text-white text-[96px] lg:text-[180px] font-bold white-stoke align-top">“</span>
-              <p className="flex justify-center mt-6 lg:mt-8 text-sm lg:text-base text-center text-white font-body">
+              <p className="flex justify-center mt-6 text-sm text-center text-white lg:mt-8 lg:text-base font-body">
                 กรุงโรมไม่ได้สร้างเสร็จในหนึ่งวัน — Rome wasn&apos;t built in a day
               </p>
-              <h2 className="relative mt-6 text-lg lg:text-xl font-bold leading-relaxed tracking-wide text-center text-white">
+              <h2 className="relative mt-6 text-lg font-bold leading-relaxed tracking-wide text-center text-white lg:text-xl">
                 กว่าจะเป็นรูปเป็นร่าง Policy Dialogue ผ่านการกลั่นกรองมากมาย
                 <br />
                 ตั้งแต่การรวบรวมข้อมูลจากหลากหลายแหล่ง ไปจนถึงการออกแบบและดำเนิน
@@ -54,11 +54,11 @@ const ProcessPage = () => {
                 </p>
               </div>
               {selectedSection === 0 ? (
-                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary" />
+                <MinusCircleIcon onClick={() => setSelectedSection(0)} className="hidden w-12 h-12 cursor-pointer lg:block shrink-0 text-primary" />
               ) : (
                 <PlusCircleIcon
                   onClick={() => setSelectedSection(0)}
-                  className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent"
+                  className="hidden w-12 h-12 cursor-pointer lg:block shrink-0 text-primary hover:text-accent"
                 />
               )}
             </div>
@@ -66,7 +66,7 @@ const ProcessPage = () => {
           <section
             className={`${selectedSection === 1 ? 'bg-[#FEEDEA]' : 'bg-white'} transition duration-300 hidden md:block cols-span-1 p-6 sm:p-12 lg:pt-64`}
           >
-            <div className="relative flex flex-col justify-between h-full mx-24 space-y-12 ">
+            <div className="relative flex flex-col justify-between h-full mx-24 space-y-12">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold">ระหว่างกระบวนการ</h3>
                 <p className="font-body max-w-prose">
@@ -75,11 +75,11 @@ const ProcessPage = () => {
                 </p>
               </div>
               {selectedSection === 1 ? (
-                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary" />
+                <MinusCircleIcon onClick={() => setSelectedSection(1)} className="hidden w-12 h-12 cursor-pointer lg:block shrink-0 text-primary" />
               ) : (
                 <PlusCircleIcon
                   onClick={() => setSelectedSection(1)}
-                  className="hidden lg:block w-12 h-12 cursor-pointer shrink-0 text-primary hover:text-accent"
+                  className="hidden w-12 h-12 cursor-pointer lg:block shrink-0 text-primary hover:text-accent"
                 />
               )}
             </div>
@@ -104,7 +104,7 @@ const ProcessPage = () => {
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
-            <div className="leading-snug text-3xl font-bold text-center text-white lg:text-5xl">
+            <div className="text-3xl font-bold leading-snug text-center text-white lg:text-5xl">
               <h3>คุณค่าของกระบวนการ</h3>
               <h3>โพลิซี ไดอะล็อก</h3>
             </div>

@@ -1,15 +1,14 @@
 import Header from '@/components/Layout/Header'
-import InterestProjects from '@/components/Project/InterestProjects'
 import Timeline from '@/components/Project/PC/Timeline'
 import TimelineHeader from '@/components/Project/PC/TimelineHeader'
 import TimelineMobile from '@/components/Project/PC/TimelineMobile'
 import TimelineSummary from '@/components/Project/PC/TimelineSummary'
-import RelatedPolicy from '@/components/Project/RelatedPolicy'
 import Meta from '@/data/meta.json'
 import policies from '@/data/policies.json'
 import projects from '@/data/projects.json'
 import { DownloadIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import Chart from '/public/image/pc/chart.svg'
@@ -24,8 +23,10 @@ import Result1 from '/public/image/pc/testimonial-1.webp'
 import Result2 from '/public/image/pc/testimonial-2.webp'
 import Result3 from '/public/image/pc/testimonial-3.webp'
 
-const relatedPolicy: Policy[] = [policies[0], policies[1], policies[3]]
+const InterestProjects = dynamic(() => import('@/components/Project/InterestProjects'))
+const RelatedPolicy = dynamic(() => import('@/components/Project/RelatedPolicy'))
 
+const relatedPolicy: Policy[] = [policies[0], policies[1], policies[3]]
 const interestProjects: Project[] = [projects[5], projects[4], projects[0], projects[6]]
 
 const PcPage = () => {
@@ -40,24 +41,22 @@ const PcPage = () => {
       />
       <main className="relative pt-[3.75rem] bg-[#EBEAF8]">
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] transition grid items-center bg-[#3f36b7]">
-          <div className="items-center justify-between lg:mb-6 flex flex-col lg:flex-row">
-            <div className="flex flex-col justify-start px-6 py-12 mt-0 space-y-4 text-center text-white lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
-              <h1 className="text-3xl font-bold lg:text-4xl lg:text-5xl 2xl:text-6xl max-w-xl">
+          <div className="flex flex-col items-center justify-between w-full h-full lg:mb-6 lg:flex-row">
+            <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-white lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
+              <h1 className="max-w-xl text-3xl font-bold lg:text-4xl lg:text-5xl 2xl:text-6xl">
                 บั้นปลายชีวิตคนไทย
                 <br /> อยู่อย่างไรจึงเป็นสุข ?
               </h1>
-              <h2 className="text-base leading-snug lg:text-lg sm:text-xl font-body max-w-sm mx-auto lg:m-0">
+              <h2 className="max-w-sm mx-auto text-base leading-snug lg:text-lg sm:text-xl font-body lg:m-0">
                 นโยบายระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care) ที่ต้องชวนคุย
               </h2>
             </div>
-            <div className="mt-auto bottom-0 h-full">
-              <Image src={HeroImage} width={800} height={480} priority alt="cover image" />
-            </div>
+            <Image src={HeroImage} className="h-full shrink-0" width={800} height={480} priority alt="cover image" />
           </div>
         </section>
 
         <section className="relative h-full bg-[#EBEAF8] pb-6 md:pb-0">
-          <section className="xl:absolute left-0 w-full h-full space-y-12 -top-24">
+          <section className="left-0 w-full h-full space-y-12 xl:absolute -top-24">
             <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
               <h2 className="relative text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบัน การดูแลผู้ป่วยแบบประคับประคอง
@@ -73,12 +72,12 @@ const PcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result1} height="640" width="1024" layout="responsive" alt="expect-ressult-1" />
+              <Image src={Result1} height="640" width="1024" layout="responsive" priority alt="expect-ressult-1" />
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="text-xl lg:text-xl lg:text-xl lg:text-2xl font-bold leading-snug max-w-xl max-w-xl max-w-xl">
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-xl lg:text-2xl">
                 จะเป็นอย่างไร
                 <br />
                 หากเรายึดแนวคิดการ &lsquo;ตายดี&rsquo;
@@ -91,23 +90,21 @@ const PcPage = () => {
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
-              <h3 className="text-xl lg:text-xl lg:text-xl lg:text-2xl font-bold leading-snug max-w-xl max-w-xl max-w-xl">
-                เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว
-              </h3>
-              <p className="leading-relaxed font-body max-w-xl">ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย ไม่ต้องบาดเจ็บทางกายและมีช่วงเวลาสงบสุข</p>
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-xl lg:text-2xl">เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว</h3>
+              <p className="max-w-xl leading-relaxed font-body">ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย ไม่ต้องบาดเจ็บทางกายและมีช่วงเวลาสงบสุข</p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result2} height="640" width="1024" layout="responsive" alt="expect-ressult-2" />
+              <Image src={Result2} height="640" width="1024" layout="responsive" priority alt="expect-ressult-2" />
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" layout="responsive" alt="expect-ressult-3" />
+              <Image src={Result3} height="640" width="1024" layout="responsive" priority alt="expect-ressult-3" />
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="text-xl lg:text-xl lg:text-xl lg:text-2xl font-bold leading-snug max-w-xl max-w-xl max-w-xl">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
-              <p className="leading-relaxed font-body max-w-xl">
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-xl lg:text-2xl">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
+              <p className="max-w-xl leading-relaxed font-body">
                 การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของตัวผู้ป่วย ครอบครัว และภาครัฐ เมื่อเทียบกับการรักษาแบบยื้อความตาย
               </p>
             </div>
@@ -160,19 +157,19 @@ const PcPage = () => {
             </h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
-                <Image src={Icon1} width={120} height={120} />
+                <Image src={Icon1} width={120} height={120} priority />
                 <p className="text-base font-body">การถ่ายทอดความรู้ความเข้าใจยังมีจำกัด ทั้งต่อตัวผู้ป่วย ครอบครัว และบุคลากรในระบบ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
-                <Image src={Icon2} width={120} height={120} />
+                <Image src={Icon2} width={120} height={120} priority />
                 <p className="text-base font-body">กฎหมายไม่เอื้อต่อระบบบริหารจัดการการใช้ยาระงับปวดที่บ้าน เพื่อลดความเจ็บไข้ให้ผู้ป่วย</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
-                <Image src={Icon3} width={120} height={120} />
+                <Image src={Icon3} width={120} height={120} priority />
                 <p className="text-base font-body">ขาดแคลนบุคลากรเฉพาะทาง</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
-                <Image src={Icon4} width={120} height={120} />
+                <Image src={Icon4} width={120} height={120} priority />
                 <p className="text-base font-body">การเชื่อมประสานระหว่างผู้มีส่วนได้ส่วนเสียในบางพื้นที่ยังไม่ ‘ไร้รอยต่อ’ อย่างแท้จริง</p>
               </div>
             </div>
@@ -227,7 +224,12 @@ const PcPage = () => {
             </div>
             <div className="flex justify-center mt-12">
               <Link href="/archive#thematic-briefs">
-                <a className="text-[#3f36b7] inline-flex btn bg-white hover:text-white hover:bg-primary rounded-full" target="_self" rel="noopener noreferrer">
+                <a
+                  className="text-[#3f36b7] inline-flex btn bg-white hover:text-white hover:bg-primary rounded-full"
+                  target="_self"
+                  title="ดาวน์โหลดข้อสรุป"
+                  rel="noopener noreferrer"
+                >
                   <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
                   <span>ดาวน์โหลดข้อสรุป</span>
                 </a>
@@ -236,10 +238,10 @@ const PcPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#EAEBF8]">
-          <div className="max-w-7xl py-12 lg:py-24 lg:mb-24 mx-auto">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="relative flex flex-col col-span-1 space-y-6 text-body">
-                <div className="lg:px-12 lg:px-12 px-6 space-y-6">
+                <div className="px-6 space-y-6 lg:px-12">
                   <h3 className="text-4xl font-bold leading-snug">
                     สิ่งที่เกิดขึ้นจาก
                     <br />
@@ -247,12 +249,12 @@ const PcPage = () => {
                   </h3>
                   <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
                 </div>
-                <div className="px-6 right-0 overflow-hidden w-full md:absolute md:px-0 md:pt-48">
-                  <Image width={640} height={380} layout="responsive" src={ProcessResult} />
+                <div className="right-0 w-full px-6 overflow-hidden md:absolute md:px-0 md:pt-48">
+                  <Image width={640} height={380} layout="responsive" priority src={ProcessResult} />
                 </div>
               </div>
-              <div className="h-full col-span-1 px-6 lg:px-12 lg:px-12 lg:px-12 lg:px-12">
-                <ul className="space-y-12 flex flex-col h-full items-center">
+              <div className="h-full col-span-1 px-6 lg:px-12">
+                <ul className="flex flex-col items-center h-full space-y-12">
                   <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">ผู้เข้าร่วมเห็นภาพปัญหาที่สำคัญ และเร่งด่วนที่สุดร่วมกัน</h3>
                     <p className="font-body">โดยเฉพาะการทำงานระหว่างผู้มีส่วนได้ส่วนเสียยังไม่เชื่อมประสานและบูรณาการอย่างแท้จริง</p>

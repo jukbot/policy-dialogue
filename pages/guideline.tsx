@@ -195,7 +195,7 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full py-12 md:py-24 bg-secondary">
-          <div className="max-w-6xl px-6 md:px-12 mx-auto space-y-12 text-white">
+          <div className="max-w-6xl px-6 mx-auto space-y-12 text-white md:px-12">
             <div className="relative flex flex-col-reverse grid-cols-1 gap-12 lg:grid lg:grid-cols-2">
               <article className="col-span-1 space-y-6 md:space-y-12">
                 <TeamRoleContent />
@@ -212,7 +212,7 @@ const GuidelinePage = () => {
         </section>
 
         <section className="relative h-full py-12 bg-white sm:py-24">
-          <div className="grid max-w-6xl grid-cols-1 gap-6 px-6 md:px-12 mx-auto text-body md:grid-cols-2">
+          <div className="grid max-w-6xl grid-cols-1 gap-6 px-6 mx-auto md:px-12 text-body md:grid-cols-2">
             <div className="flex flex-col col-span-1 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl font-semibold sm:text-5xl">จัดการอย่างไร</h2>
@@ -301,7 +301,7 @@ const GuidelinePage = () => {
 
           <div className="grid grid-cols-1 gap-6 pt-8 md:pt-16 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result1} height="640" width="1024" className="w-full" alt="expect-ressult-1" />
+              <Image src={Result1} height="640" width="1024" priority className="w-full" alt="expect-ressult-1" />
             </div>
             <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold">เนื้อหาที่ได้</h3>
@@ -355,13 +355,13 @@ const GuidelinePage = () => {
               </ul>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result2} height="640" width="1024" className="w-full" alt="expect-ressult-2" />
+              <Image src={Result2} height="640" width="1024" priority className="w-full" alt="expect-ressult-2" />
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6 pt-8 md:pt-24 md:grid-cols-2">
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" className="w-full" alt="expect-ressult-3" />
+              <Image src={Result3} height="640" width="1024" priority className="w-full" alt="expect-ressult-3" />
             </div>
             <div className="flex flex-col col-span-1 px-6 space-y-4 md:space-y-8 md:pt-8 xl:pt-16 sm:px-16 text-body">
               <h3 className="text-2xl font-bold">ตอบสนองการพัฒนา</h3>
@@ -394,7 +394,7 @@ const GuidelinePage = () => {
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
-            <div className="leading-snug text-3xl font-bold text-center text-white lg:text-5xl">
+            <div className="text-3xl font-bold leading-snug text-center text-white lg:text-5xl">
               <h3>เข้าถึงคลังข้อมูลของ</h3>
               <h3>Policy Dialogue</h3>
             </div>

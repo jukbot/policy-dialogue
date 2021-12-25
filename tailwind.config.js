@@ -17,7 +17,6 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
-      100: '100%',
       70: '70%',
       75: '75%',
       'width-90': '90% 100%',
@@ -79,7 +78,6 @@ module.exports = {
       },
       borderRadius: {
         xl: '1rem',
-        50: '50%',
       },
     },
   },

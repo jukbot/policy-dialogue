@@ -64,6 +64,7 @@ const ArchivePage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/AIP1.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -75,6 +76,7 @@ const ArchivePage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/AIP2.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -162,6 +164,7 @@ const ArchivePage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/PC.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -190,6 +193,7 @@ const ArchivePage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
                     onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LSD.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -251,6 +255,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_CCU.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -286,6 +291,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_อปท.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -322,6 +328,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_IMC.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -352,6 +359,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/policy-recommendations/Policy_Recommendation_GM.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -385,6 +393,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Guideline.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -406,6 +415,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Methods.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -426,6 +436,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Value.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -448,6 +459,7 @@ const ArchivePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
+                  title="ดาวน์โหลดเอกสาร"
                   onClick={(e) => checkDownload(e, '/archive/practical-guidelines/Policy_Dialogue_Tips.pdf')}
                 >
                   <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
@@ -460,7 +472,7 @@ const ArchivePage = () => {
 
         <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
           <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
-            <div className="leading-snug text-4xl font-bold text-center text-white lg:text-5xl">
+            <div className="text-4xl font-bold leading-snug text-center text-white lg:text-5xl">
               <h3>โพลิซี ไดอะล็อก</h3>
               <h3>ทำงานอย่างไร ?</h3>
             </div>

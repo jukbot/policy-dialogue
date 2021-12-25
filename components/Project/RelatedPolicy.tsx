@@ -19,7 +19,7 @@ const RelatedPolicy = ({ policies = [] }: Props) => {
             <li key={policy.id} className={`shrink-0 flex flex-col items-center justify-between w-64 p-6 ${policy.color} text-white h-72 text-center`}>
               <p className="mt-12 font-bold whitespace-normal">{policy.text}</p>
               <Link href={policy.url}>
-                <a target="_self">
+                <a target="_self" title="ไปหน้าคลังข้อมูล">
                   <ArrowRightIcon className="w-8 h-8 fill-current shrink-0 hover:text-neutral-900" />
                 </a>
               </Link>
