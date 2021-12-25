@@ -57,7 +57,7 @@ const PcPage = () => {
 
         <section className="relative h-full bg-[#EBEAF8] pb-6 md:pb-0">
           <section className="left-0 w-full h-full space-y-12 xl:absolute -top-24">
-            <div className="relative flex flex-col max-w-6xl p-6 mx-auto space-y-6 md:items-center md: md:px-12 md:py-16 md:space-x-8 bg-secondary">
+            <div className="relative flex flex-col max-w-6xl px-6 py-12 mx-auto space-y-6 md:items-center md:px-12 md:py-16 md:space-x-8 bg-secondary">
               <h2 className="relative text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ปัจจุบัน การดูแลผู้ป่วยแบบประคับประคอง
                 <br />
