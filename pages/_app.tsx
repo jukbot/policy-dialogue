@@ -12,7 +12,7 @@ import { Toaster } from 'react-hot-toast'
 
 const Navbar = dynamic(() => import('@/components/Layout/Navbar'))
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   const [modal] = useAtom(isModalOpenAtom)
 
   useEffect(() => {
@@ -47,5 +47,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
-
-export default MyApp

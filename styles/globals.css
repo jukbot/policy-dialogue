@@ -134,7 +134,7 @@
     @apply relative p-6 w-full md:h-48 lg:h-64 max-w-[250px] flex items-center justify-center;
   }
   .project-icon {
-    @apply w-8 h-8 transition-all transition ease-in transform-gpu transform-box duration-300 group-hover:scale-110 group-hover:rotate-180;
+    @apply w-8 h-8 transition-all transition duration-300 ease-in transform-gpu transform-box group-hover:scale-110 group-hover:rotate-180;
   }
   .role-icon {
     @apply cursor-pointer transform-box;
@@ -143,7 +143,7 @@
     @apply p-4 block w-full max-w-lg font-body placeholder-[#707070] bg-[#a8a8a8] focus:outline-none focus:ring-primary focus:border-primary;
   }
   .label-input {
-    @apply inline-flex items-center block h-full text-base sm:text-lg lg:text-xl text-white;
+    @apply inline-flex items-center block h-full text-base text-white sm:text-lg lg:text-xl;
   }
   .required {
     @apply inline-block text-sm align-top text-primary;
