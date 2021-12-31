@@ -41,6 +41,7 @@ const ProjectDropDown = () => {
                       <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
                         <a
                           onClick={() => close()}
+                          aria-current={pathname === item.url ? 'page' : undefined}
                           className={`${
                             item.enabled ? (pathname === item.url ? 'text-primary' : 'text-link') : 'text-white opacity-50'
                           } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 shrink-0 space-y-2 transition`}
