@@ -12,7 +12,7 @@ const PolicyContent = () => {
 
   return (
     <div className="relative">
-      <PolicyWheel className="hidden min-w-[1024px] w-full h-full fill-current text-primary lg:block" />
+      <PolicyWheel className="hidden min-w-[1024px] w-full h-full fill-current text-primary lg:block px-8" />
       <PolicyWheelMobile className="flex justify-center max-w-[512px] w-full h-full fill-current text-primary lg:hidden" />
       <div className="flex justify-center mx-auto my-4 space-x-6 text-primary lg:hidden">
         <ArrowCircleLeftIcon

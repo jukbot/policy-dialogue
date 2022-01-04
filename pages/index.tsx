@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           <section
             className={`${
               intersection && intersection.intersectionRatio < 1 ? '' : ''
-            } relative grid h-[75vh] lg:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile lg:bg-hero-pattern`}
+            } relative grid h-[65vh] xl:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile lg:bg-hero-pattern`}
           >
             <div className="pt-24 space-y-8 text-center text-white">
               <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                     เราจะมีชีวิตที่ดีขึ้นได้ ก็ต้องอาศัยนโยบายสาธารณะ ที่ตอบโจทย์ สอดคล้องกับบริบท พร้อมรองรับ ความเปลี่ยนแปลงและความต้องการของสังคม
                   </p>
                 </div>
-                <div className="bottom-0 hidden w-full gap-8 md:flex col-span-full lg:px-12 lg:gap-y-12 lg:gap-x-16">
+                <div className="bottom-0 hidden w-full gap-8 md:flex col-span-full lg:gap-y-12 lg:gap-x-16">
                   <PolicyCircle
                     text="ขนส่งมวลชนเชื่อมต่อ"
                     position="-translate-x-4 translate-y-4"
