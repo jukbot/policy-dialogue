@@ -16,7 +16,7 @@ const Header = (props: Props): JSX.Element => {
   const title: string = useMemo(() => (props?.title ? `${props?.title}` : Meta.shortName), [props?.title])
   const description: string = useMemo(() => props.description ?? Meta.description, [props?.description])
   const baseUrl = process.env['NEXT_PUBLIC_BASE_URL'] ?? 'https://policy-dialogue.riseimpact.co/'
-  const image = props?.image ?? `${process.env['NEXT_PUBLIC_BASE_URL']}/images/logo/policy-dialogue.png`
+  const image = props?.image ?? `${process.env['NEXT_PUBLIC_BASE_URL']}/images/opengraph/facebook.jpg`
   const themeColor = '#2b2b2b'
 
   return (
