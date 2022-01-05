@@ -14,7 +14,8 @@ import Link from 'next/link'
 import Circle from '/public/image/aip/circle.webp'
 import ElderlyHome from '/public/image/aip/elderly-home.svg'
 import ElderlyLogo from '/public/image/aip/elderly-logo.svg'
-import HeroImage from '/public/image/aip/facebook.jpg'
+import FacebookBanner from '/public/image/aip/faceook.jpg'
+import HeroImage from '/public/image/aip/hero-image.webp'
 import Icon1 from '/public/image/aip/icon-1.svg'
 import Icon2 from '/public/image/aip/icon-2.svg'
 import Icon3 from '/public/image/aip/icon-3.svg'
@@ -36,9 +37,9 @@ const AipPage = () => {
       <Header
         title="การสูงวัยในถิ่นที่อยู่อาศัยเดิม อย่างมีสุขภาวะ (Aging in Place)"
         description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
-        image={`${Meta.baseUrl}${HeroImage.src}`}
-        width={HeroImage.width}
-        height={HeroImage.height}
+        image={`${Meta.baseUrl}${FacebookBanner.src}`}
+        width={FacebookBanner.width}
+        height={FacebookBanner.height}
       />
       <main className="relative pt-[3.75rem] bg-[#F9EEE9]">
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] grid items-center bg-[#c7642a]">

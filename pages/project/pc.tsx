@@ -11,9 +11,10 @@ import { Policy, Project } from '@types'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
+import FacebookBanner from '/public/image/aip/faceook.jpg'
 import Chart from '/public/image/pc/chart.svg'
 import Circle from '/public/image/pc/circle.webp'
-import HeroImage from '/public/image/pc/facebook.jpg'
+import HeroImage from '/public/image/pc/hero-image.webp'
 import Icon1 from '/public/image/pc/icon-1.svg'
 import Icon2 from '/public/image/pc/icon-2.svg'
 import Icon3 from '/public/image/pc/icon-3.svg'
@@ -35,9 +36,9 @@ const PcPage = () => {
       <Header
         title="ระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)"
         description="บั้นปลายชีวิตคนไทย อยู่อย่างไรจึงเป็นสุข ?"
-        image={`${Meta.baseUrl}${HeroImage.src}`}
-        width={HeroImage.width}
-        height={HeroImage.height}
+        image={`${Meta.baseUrl}${FacebookBanner.src}`}
+        width={FacebookBanner.width}
+        height={FacebookBanner.height}
       />
       <main className="relative pt-[3.75rem] bg-[#EBEAF8]">
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] transition grid items-center bg-[#3f36b7]">

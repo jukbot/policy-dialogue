@@ -12,9 +12,10 @@ import { Policy, Project } from '@types'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
+import FacebookBanner from '/public/image/aip/faceook.jpg'
 import Chart from '/public/image/lsd/chart.svg'
 import Circle from '/public/image/lsd/circle.webp'
-import HeroImage from '/public/image/lsd/facebook.jpg'
+import HeroImage from '/public/image/lsd/hero-image.webp'
 import Icon1 from '/public/image/lsd/icon-1.svg'
 import Icon2 from '/public/image/lsd/icon-2.svg'
 import Icon3 from '/public/image/lsd/icon-3.svg'
@@ -38,9 +39,9 @@ const LsdPage = () => {
       <Header
         title="การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด (Local Service Delivery Network)"
         description="เตรียมพร้อมอย่างไร ? หากอยากอยู่บ้านในยามชรา"
-        image={`${Meta.baseUrl}${HeroImage.src}`}
-        width={HeroImage.width}
-        height={HeroImage.height}
+        image={`${Meta.baseUrl}${FacebookBanner.src}`}
+        width={FacebookBanner.width}
+        height={FacebookBanner.height}
       />
       <main className="relative pt-[3.75rem] bg-[#FBF5EB]">
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] grid items-center bg-[#daa13d]">

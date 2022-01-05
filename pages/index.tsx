@@ -13,6 +13,7 @@ import QuestionMark from '../components/Icon/QuestionMark'
 import PolicyCircle from '../components/Landing/PolicyCircle'
 import ScrollToContent from '../components/Landing/ScrollToContent'
 import DesignPolicy from '/public/image/landing/designPolicy.webp'
+import FacebookBanner from '/public/image/opengraph/facebook.jpg'
 
 const intersectopnOptions = {
   root: null,
@@ -34,9 +35,9 @@ const Home: NextPage = () => {
       <Header
         title="Policy Dialogue | กระบวนการหารือเชิงนโยบาย"
         description="นโยบายที่ดี สังคมต้องร่วมกันออกแบบ"
-        image={`${Meta.baseUrl}${DesignPolicy.src}`}
-        width={DesignPolicy.width}
-        height={DesignPolicy.height}
+        image={`${Meta.baseUrl}${FacebookBanner.src}`}
+        width={FacebookBanner.width}
+        height={FacebookBanner.height}
       />
       <div className="relative">
         <main className="relative overflow-hidden">
