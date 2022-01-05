@@ -23,15 +23,7 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000,
-    domains: [
-      'via.placeholder.com',
-      'lh3.googleusercontent.com',
-      'lh4.googleusercontent.com',
-      'platform-lookaside.fbsbx.com',
-      'graph.facebook.com',
-      'tailwindui.com',
-      '',
-    ],
+    domains: ['lh3.googleusercontent.com', 'lh4.googleusercontent.com', 'platform-lookaside.fbsbx.com', 'graph.facebook.com', ''],
   },
   async headers() {
     return [
