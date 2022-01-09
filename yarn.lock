@@ -3625,6 +3625,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hoist-non-react-statics@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2"
+  dependencies:
+    react-is: ^16.7.0
+  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.0":
   version: 4.1.0
   resolution: "http-cache-semantics@npm:4.1.0"
@@ -5353,6 +5362,7 @@ __metadata:
     react: 17.0.2
     react-countup: ^6.1.0
     react-dom: 17.0.2
+    react-google-recaptcha-v3: ^1.9.7
     react-hot-toast: ^2.2.0
     react-intersection-observer: ^8.33.1
     react-use: ^17.3.2
@@ -5705,6 +5715,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-google-recaptcha-v3@npm:^1.9.7":
+  version: 1.9.7
+  resolution: "react-google-recaptcha-v3@npm:1.9.7"
+  dependencies:
+    hoist-non-react-statics: ^3.3.2
+  peerDependencies:
+    react: ^17.0
+    react-dom: ^17.0
+  checksum: 2bc98d0ddd91f95e0e6d9ac32ba24560690f7288209f216b616bb73ccde9f2e2432310b6b2294183f3ce01e6590c742cfb2c2f29e4112be4705b7eb8be4bab44
+  languageName: node
+  linkType: hard
+
 "react-hot-toast@npm:^2.2.0":
   version: 2.2.0
   resolution: "react-hot-toast@npm:2.2.0"
@@ -5733,7 +5755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.8.1":
+"react-is@npm:^16.7.0, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
