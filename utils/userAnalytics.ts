@@ -19,14 +19,13 @@ export const logUserEvent = async (eventName: string, data?: any) => {
   }
 }
 
-export const downloadContent = async (fileName: string) => {
-  const fileUrl = await getDownloadFileUrl(fileName)
+export const downloadContent = async (fileRefName: string) => {
+  const fileUrl = await getDownloadFileUrl(fileRefName)
   const newWindow = window.open(fileUrl, '_blank', 'noopener,noreferrer')
   if (newWindow) newWindow.opener = null
-  trackUserDownload(fileName)
 
   const email = localStorage.getItem('policy-dialogue:email') || null
-  logUserEvent('download', { fileName, page: fileName.split('/')[0], email })
+  logUserEvent('download', { fileName: fileRefName.split('/')[1], page: window.location.pathname, email })
 }
 
 export const setUserEmail = (email: string) => {
