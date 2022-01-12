@@ -25,7 +25,7 @@ export const downloadContent = async (fileRefName: string) => {
   if (newWindow) newWindow.opener = null
 
   const email = localStorage.getItem('policy-dialogue:email') || null
-  logUserEvent('download', { fileName: fileRefName.split('/')[1], page: window.location.pathname, email })
+  logUserEvent('download', { fileName: fileRefName.split('/')[3], page: window.location.pathname, email })
 }
 
 export const setUserEmail = (email: string) => {
