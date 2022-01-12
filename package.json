@@ -8,9 +8,9 @@
     "export": "next export",
     "build-analyze": "next build --profile",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && eslint --cache --fix --max-warnings=0",
     "format": "prettier --write ./**/*.{ts,tsx}",
-    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
+    "type-check": "tsc --pretty --noEmit"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
