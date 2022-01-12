@@ -2,14 +2,11 @@ import { classNames } from '@/utils/formatClass'
 import { projectList } from '@/utils/projectIcon'
 import { Disclosure } from '@headlessui/react'
 import { ArrowSmRightIcon, ChevronDownIcon } from '@heroicons/react/outline'
-import Image from 'next/image'
 import Link from 'next/link'
 import { FormEvent, useCallback, useState } from 'react'
 import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
 import ProjectDropDown from '../Navbar/ProjectDropdown'
-import Logo from '/public/image/logo/logo.svg'
-import RiseImpactLogo from '/public/image/logo/rise-impact-white.svg'
 
 const Footer = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
@@ -43,7 +40,9 @@ const Footer = (): JSX.Element => {
         <li className="col-span-full lg:col-span-1 lg:text-center">
           <Link href="/">
             <a>
-              <Image src={Logo} alt="logo" className="w-full h-full" objectFit="contain" width="200" height="80" />
+              <div>
+                <img src={'/image/logo/logo.svg'} alt="logo" className="lg:mx-auto object-contain" width="200" height="80" />
+              </div>
             </a>
           </Link>
         </li>
@@ -80,9 +79,6 @@ const Footer = (): JSX.Element => {
               </Disclosure>
             </li>
             <li className="hidden md:block">
-              {/* <Link href="/project">
-                <a className="text-link">นโยบายเพื่อสังคมสูงวัย</a>
-              </Link> */}
               <ProjectDropDown />
             </li>
             <li>
@@ -141,7 +137,9 @@ const Footer = (): JSX.Element => {
         <li className="flex flex-col items-start col-span-1 space-y-4">
           <div>
             <a href="https://www.riseimpact.co/" target="_blank" rel="noreferrer noopenner">
-              <Image src={RiseImpactLogo} alt="logo" className="w-full h-full" objectFit="contain" />
+              <div>
+                <img src={'/image/logo/rise-impact-white.svg'} alt="logo" className="object-contain" width="150" height="60" />
+              </div>
             </a>
           </div>
           <p className="font-bold">สำนักงานใหญ่</p>

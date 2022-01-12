@@ -20,12 +20,10 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   swcMinify: true,
-  images: {
-    loader: 'default',
-    formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 31536000,
-    domains: ['lh3.googleusercontent.com', 'lh4.googleusercontent.com', 'platform-lookaside.fbsbx.com', 'graph.facebook.com', ''],
-  },
+  // images: {
+  //   formats: ['image/avif', 'image/webp'],
+  //   minimumCacheTTL: 31536000,
+  // },
   async headers() {
     return [
       {

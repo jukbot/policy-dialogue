@@ -3,13 +3,11 @@ import { projectList } from '@/utils/projectIcon'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon, XIcon } from '@heroicons/react/outline'
 import { MenuIcon } from '@heroicons/react/solid'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 // import { useWindowScroll } from 'react-use'
 import { Close } from '../Icon'
 import ProjectDropDown from '../Navbar/ProjectDropdown'
-import Logo from '/public/image/logo/logo.svg'
 
 const mobileNav = [
   { name: 'หน้าแรก', href: '/' },
@@ -54,7 +52,16 @@ const Navbar = (): JSX.Element => {
                 <div className="flex items-center justify-center shrink-0">
                   <Link href="/">
                     <a className="flex">
-                      <Image className="hidden xl:block" width="120" height="60" src={Logo} priority decoding="async" alt="logo" />
+                      <div>
+                        <img
+                          className="hidden xl:block object-contain h-[60px]"
+                          width="120"
+                          height="60"
+                          src={'/image/logo/logo.svg'}
+                          loading="eager"
+                          alt="logo"
+                        />
+                      </div>
                     </a>
                   </Link>
                 </div>

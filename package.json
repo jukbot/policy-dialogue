@@ -34,7 +34,8 @@
     "react-google-recaptcha-v3": "^1.9.7",
     "react-hot-toast": "^2.2.0",
     "react-intersection-observer": "^8.33.1",
-    "react-use": "^17.3.2"
+    "react-use": "^17.3.2",
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "0.4.0",
@@ -44,6 +45,7 @@
     "@types/gtag.js": "^0.0.8",
     "@types/prettier": "^2",
     "@types/react": "17.0.38",
+    "@types/sharp": "^0",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "autoprefixer": "10.4.1",
