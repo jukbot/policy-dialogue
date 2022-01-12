@@ -2,6 +2,7 @@ import Footer from '@/components/Layout/Footer'
 import DownloadModal from '@/components/Modal/DownloadModal'
 import { isModalOpenAtom } from '@/stores/global'
 import '@/styles/globals.css'
+import { setUserEmail } from '@/utils/userAnalytics'
 import { useAtom } from 'jotai'
 import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
@@ -20,6 +21,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     document.addEventListener('touchstart', () => null, {
       passive: true,
     })
+
+    const email = localStorage.getItem('policy-dialogue:email') || null
+    if (email) {
+      setUserEmail(email)
+    }
   }, [])
 
   return (

@@ -1,5 +1,5 @@
 import { analytics } from '@/libs/firebase/firebaseClient'
-import { logEvent, isSupported } from '@firebase/analytics'
+import { isSupported, logEvent, setUserId } from '@firebase/analytics'
 import { getDownloadFileUrl } from './downloadUrl'
 
 export const trackUserDownload = (path: string) => {
@@ -24,6 +24,11 @@ export const downloadContent = async (fileName: string) => {
   const newWindow = window.open(fileUrl, '_blank', 'noopener,noreferrer')
   if (newWindow) newWindow.opener = null
   trackUserDownload(fileName)
+
   const email = localStorage.getItem('policy-dialogue:email') || null
   logUserEvent('download', { fileName, page: fileName.split('/')[0], email })
+}
+
+export const setUserEmail = (email: string) => {
+  setUserId(analytics, email)
 }
