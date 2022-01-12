@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development next dev -p 8082",
-    "build": "next build && next export",
+    "build": "next build",
     "export": "next export",
     "build-analyze": "next build --profile",
     "start": "next start",
