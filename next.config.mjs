@@ -20,10 +20,13 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   swcMinify: true,
-  // images: {
-  //   formats: ['image/avif', 'image/webp'],
-  //   minimumCacheTTL: 31536000,
-  // },
+  experimental: {
+    outputStandalone: true,
+  },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 31536000,
+  },
   async headers() {
     return [
       {
