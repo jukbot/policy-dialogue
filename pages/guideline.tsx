@@ -146,7 +146,7 @@ const GuidelinePage = () => {
                         <span className="text-2xl font-bold leading-none align-top">•</span>
                         <div className="space-y-1">
                           <p className="font-bold">Communication skills</p>
-                          <p className="font-body">สื่อสาร อัปเดทเนื้อหาและกระบวนการต่างๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
+                          <p className="font-body">สื่อสาร อัปเดตเนื้อหาและกระบวนการต่างๆ ภายในทีม เพื่อการทำงานที่ราบรื่น</p>
                         </div>
                       </li>
                       <li className="inline-flex space-x-2">
