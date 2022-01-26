@@ -46,8 +46,8 @@ export const projectIcon = new Map([
     </svg>,
   ],
   [
-    'dt',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'dt'} className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
+    'dmt',
+    <svg xmlns="http://www.w3.org/2000/svg" key={'dmt'} className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
       <path
         fill="#CECECE"
         data-name="dt"
@@ -126,11 +126,11 @@ export const projectLargeIcon = new Map([
     </svg>,
   ],
   [
-    'dt',
-    <svg xmlns="http://www.w3.org/2000/svg" key={'dt'} width="64" height="64" className="shrink-0" viewBox="0 0 50 50">
+    'dmt',
+    <svg xmlns="http://www.w3.org/2000/svg" key={'dmt'} width="64" height="64" className="shrink-0" viewBox="0 0 50 50">
       <path
         fill="#fff"
-        data-name="dt"
+        data-name="dmt"
         d="M754.415,1113.507a7.919,7.919,0,0,0-6.045-14.594,7.919,7.919,0,0,0-14.593-6.045,7.919,7.919,0,0,0-14.593,6.045,7.919,7.919,0,0,0-6.045,14.594,7.919,7.919,0,0,0,6.045,14.593,7.919,7.919,0,0,0,14.593,6.045,7.919,7.919,0,0,0,14.593-6.045,7.919,7.919,0,0,0,6.045-14.593Z"
         transform="translate(-708.777 -1088.507)"
       />
@@ -177,7 +177,7 @@ export const projectList: Project[] = [
     url: '/project/imc',
     icon: 'imc',
     color: 'bg-[#a8a8a8]',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 2,
@@ -186,7 +186,7 @@ export const projectList: Project[] = [
     url: '/project/ltc',
     icon: 'ltc',
     color: 'bg-[#a8a8a8]',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 3,
@@ -201,10 +201,10 @@ export const projectList: Project[] = [
     id: 4,
     title: 'Dementia',
     description: 'ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม',
-    url: '/project/dt',
-    icon: 'dt',
+    url: '/project/dmt',
+    icon: 'dmt',
     color: 'bg-[#a8a8a8]',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 5,
@@ -213,7 +213,7 @@ export const projectList: Project[] = [
     url: '/project/gm',
     icon: 'gm',
     color: 'bg-[#a8a8a8]',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 6,
@@ -257,7 +257,7 @@ export const projectDropdown = [
     description: 'ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทอง หลังพ้นภาวะวิกฤต',
     url: '/project/imc',
     icon: 'imc',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 4,
@@ -265,7 +265,7 @@ export const projectDropdown = [
     description: 'ระบบการดูแลระยะยาว สำหรับผู้สูงอายุที่มีภาวะพึ่งพิง',
     url: '/project/ltc',
     icon: 'ltc',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 5,
@@ -273,14 +273,14 @@ export const projectDropdown = [
     description: 'กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ',
     url: '/project/gm',
     icon: 'gm',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 6,
     title: 'Dementia',
     description: 'ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม',
-    url: '/project/dt',
-    icon: 'dt',
-    enabled: false,
+    url: '/project/dmt',
+    icon: 'dmt',
+    enabled: true,
   },
 ]

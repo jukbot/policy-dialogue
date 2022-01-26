@@ -103,14 +103,14 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
           />
         </g>
         <g id="Group_694" data-name="dt" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[4])}>
-          <g id="Ellipse_217" data-name="dt-circle" transform="translate(116 6801)" className={`${selectedProject.icon === 'dt' ? 'cls-5' : 'cls-3'}`}>
+          <g id="Ellipse_217" data-name="dt-circle" transform="translate(116 6801)" className={`${selectedProject.icon === 'dmt' ? 'cls-5' : 'cls-3'}`}>
             <circle className="cls-11" cx={20} cy={20} r={20} />
             <circle className="cls-12" cx={20} cy={20} r={19.5} />
           </g>
           <path
             id="Path_175"
-            data-name="dt-icon"
-            className={`${selectedProject.icon === 'dt' ? 'fill-[#CECECE]' : 'cls-4'}`}
+            data-name="dmt-icon"
+            className={`${selectedProject.icon === 'dmt' ? 'fill-[#CECECE]' : 'cls-4'}`}
             d="M26.38 17.35A3.47 3.47 0 0 0 23.73 11a3.46 3.46 0 0 0-6.38-2.65A3.47 3.47 0 0 0 11 11a3.47 3.47 0 0 0-2.65 6.39A3.46 3.46 0 0 0 11 23.73a3.47 3.47 0 0 0 6.39 2.65 3.46 3.46 0 0 0 6.38-2.65 3.46 3.46 0 0 0 2.65-6.38z"
             transform="translate(119 6804)"
           />
@@ -155,7 +155,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
           <path
             id="Line_34"
             data-name="dt"
-            className={selectedProject.icon === 'dt' ? 'cls-5' : 'cls-6'}
+            className={selectedProject.icon === 'dmt' ? 'cls-5' : 'cls-6'}
             transform="translate(123.24 635.114)"
             d="M16.183 0L0 32.791"
           />
@@ -239,7 +239,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             <circle
               id="Ellipse_215"
               data-name="dt"
-              className={selectedProject.icon !== 'dt' ? 'cls-10' : ''}
+              className={selectedProject.icon !== 'dmt' ? 'cls-10' : ''}
               cx={5}
               cy={5}
               r={5}
