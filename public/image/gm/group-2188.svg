@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224.031" height="165.125" viewBox="0 0 224.031 165.125">
+    <g data-name="Group 2188">
+        <path data-name="Path 809" d="M1042.017 178.751h-176.7a23.662 23.662 0 0 1-7.483-46.11l38.366-12.79h-30.884a23.662 23.662 0 0 1-7.483-46.11L896.2 60.95h-30.884a23.662 23.662 0 1 1 0-47.324h176.7a23.662 23.662 0 0 1 7.483 46.11l-38.371 12.791h30.888a23.662 23.662 0 0 1 7.483 46.11l-38.371 12.791h30.888a23.662 23.662 0 1 1 0 47.324z" transform="translate(-841.651 -13.626)" style="fill:#36723b"/>
+        <g data-name="Group 1788">
+            <g data-name="Group 1787">
+                <g data-name="Group 1785">
+                    <path data-name="Path 884" d="m381.084 538.775-24.993-8.589V501.5l15.681 3.742z" transform="translate(-244.076 -400.958)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#fff;stroke-width:2px"/>
+                    <path data-name="Path 885" d="m374 504.538 9.312 33.535 18.133-9.841-14.466-32.386z" transform="translate(-246.303 -400.256)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#fff;stroke-width:2px"/>
+                </g>
+                <g data-name="Group 1786">
+                    <path data-name="Path 886" d="m327.551 538.775 24.993-8.589V501.5l-15.681 3.742z" transform="translate(-240.529 -400.958)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#fff;stroke-width:2px"/>
+                    <path data-name="Path 887" d="m334.289 504.538-9.312 33.535-18.133-9.841 14.466-32.386z" transform="translate(-237.954 -400.256)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#fff;stroke-width:2px"/>
+                </g>
+            </g>
+            <g data-name="Group 1757" transform="translate(93.466 26.305)">
+                <circle data-name="Ellipse 1417" cx="7.164" cy="7.164" r="7.164" transform="translate(11.388 11.388)" style="stroke-miterlimit:10;fill:none;stroke:#fff;stroke-width:2px"/>
+                <path data-name="Path 866" d="M370.724 441.061a18.547 18.547 0 0 0-24.04-10.488 18.545 18.545 0 0 0-10.484 24.039c.337.86 17.264 30.526 17.264 30.526l16.08-28.079a18.5 18.5 0 0 0 1.18-15.998z" transform="translate(-334.909 -429.286)" style="stroke-miterlimit:10;fill:none;stroke:#fff;stroke-width:2px"/>
+            </g>
+        </g>
+    </g>
+</svg>

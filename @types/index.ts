@@ -14,3 +14,20 @@ export interface Policy {
   url: string
   color: string
 }
+
+export interface CoverImage {
+  url: string
+}
+
+export interface Color {
+  hex: string
+}
+
+export interface Article {
+  id: string
+  title: string
+  url: string
+  coverImage: CoverImage
+  createdAt: Date
+  color: Color
+}

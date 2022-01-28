@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224.031" height="165.125" viewBox="0 0 224.031 165.125">
+    <g data-name="Group 2194">
+        <path data-name="Path 812" d="M1042.017 178.751h-176.7a23.662 23.662 0 0 1-7.483-46.11l38.366-12.79h-30.884a23.662 23.662 0 0 1-7.483-46.11L896.2 60.95h-30.884a23.662 23.662 0 1 1 0-47.324h176.7a23.662 23.662 0 0 1 7.483 46.11l-38.371 12.791h30.888a23.662 23.662 0 0 1 7.483 46.11l-38.371 12.791h30.888a23.662 23.662 0 1 1 0 47.324z" transform="translate(-841.651 -13.626)" style="fill:#36723b"/>
+        <g data-name="Group 1782">
+            <g data-name="Group 1667" transform="translate(-763.463 -208.662)">
+                <rect data-name="Rectangle 1042" width="30.56" height="53.506" rx="15" transform="translate(859.283 276.897)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+                <path data-name="Path 832" d="M896.257 303.248v11.279a21.693 21.693 0 0 1-21.693 21.693h0a21.693 21.693 0 0 1-21.693-21.693v-11.279" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+                <path data-name="Line 208" transform="translate(859.283 303.65)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="M0 0h30.56"/>
+                <path data-name="Line 209" transform="translate(874.564 336.219)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="M0 0v20.51"/>
+                <path data-name="Line 210" transform="translate(859.283 356.729)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="M0 0h30.56"/>
+            </g>
+            <g data-name="Group 1668" transform="translate(-763.463 -208.662)">
+                <circle data-name="Ellipse 1160" cx="13.913" cy="13.913" r="13.913" transform="translate(861.404 233.193)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+            </g>
+            <g data-name="Group 1668" transform="translate(-763.463 -208.662)">
+                <circle data-name="Ellipse 1160" cx="6.514" cy="6.514" r="6.514" transform="translate(868.802 240.592)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+            </g>
+            <path data-name="Path 881" d="M27.223 0c15.034 0 26.954 14.007 27.223 13.988S42.257 27.977 27.223 27.977.214 14.293 0 13.988 12.188 0 27.223 0z" transform="translate(84.631 24.565)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+        </g>
+    </g>
+</svg>

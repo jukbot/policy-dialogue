@@ -3,7 +3,7 @@ import DownloadModal from '@/components/Modal/DownloadModal'
 import { isModalOpenAtom } from '@/stores/global'
 import '@/styles/globals.css'
 import { setUserEmail } from '@/utils/userAnalytics'
-import { useAtom } from 'jotai'
+import { useAtom, Provider as JotaiProvider } from 'jotai'
 import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
@@ -43,13 +43,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', '${process.env['NEXT_PUBLIC_GTAG_ID']}');
         `}
       </Script>
-      <main className={`relative w-full min-h-full bg-secondary ${process.env.NODE_ENV === 'development' ? 'debug-screens' : ''}`}>
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
-      </main>
-      <Toaster position="bottom-center" reverseOrder={false} />
-      {modal.open ? <DownloadModal isOpen={modal.open} type={modal.type} fileName={modal.link} /> : null}
+      <JotaiProvider>
+        <main className={`relative w-full min-h-full bg-secondary ${process.env.NODE_ENV === 'development' ? 'debug-screens' : ''}`}>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </main>
+        <Toaster position="bottom-center" reverseOrder={false} />
+        {modal.open ? <DownloadModal isOpen={modal.open} type={modal.type} fileName={modal.link} /> : null}
+      </JotaiProvider>
     </>
   )
 }

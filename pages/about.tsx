@@ -37,7 +37,7 @@ const AboutPage = () => {
         </section>
 
         <section className="relative h-full space-y-6 bg-white lg:space-y-12">
-          <div className="grid max-w-6xl grid-cols-1 gap-12 py-12 mx-auto lg:gap-16 lg:py-16 lg:py-32 md:grid-cols-2">
+          <div className="grid max-w-6xl grid-cols-1 gap-12 py-12 mx-auto lg:gap-16 lg:py-32 md:grid-cols-2">
             <div className="flex flex-col col-span-1 px-6 lg:px-12 text-body">
               <div className="space-y-2">
                 <h2 className="text-4xl font-semibold sm:text-5xl">HELLO!</h2>
