@@ -14,7 +14,7 @@
     "description": "ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุที่อยู่ในช่วง 6 เดือนทอง หลังพ้นภาวะวิกฤต",
     "url": "/project/imc",
     "icon": "imc",
-    "color": "bg-[#a8a8a8]",
+    "color": "bg-[#6badcb]",
     "enabled": true
   },
   {
@@ -23,7 +23,7 @@
     "description": "ระบบการดูแลระยะยาว สำหรับกลุ่มผู้สูงอายุที่มีภาวะพึ่งพิง",
     "url": "/project/ltc",
     "icon": "ltc",
-    "color": "bg-[#a8a8a8]",
+    "color": "bg-[#cc79a7]",
     "enabled": true
   },
   {
@@ -41,7 +41,7 @@
     "description": "ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม",
     "url": "/project/dmt",
     "icon": "dmt",
-    "color": "bg-[#a8a8a8]",
+    "color": "bg-[#707070]",
     "enabled": true
   },
   {
@@ -50,7 +50,7 @@
     "description": "กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ",
     "url": "/project/gm",
     "icon": "gm",
-    "color": "bg-[#a8a8a8]",
+    "color": "bg-[#36723b]",
     "enabled": true
   },
   {

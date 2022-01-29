@@ -1,5 +1,5 @@
 import { classNames } from '@/utils/formatClass'
-import { projectList } from '@/utils/projectIcon'
+import projectList from '@/data/projects.json'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon, XIcon } from '@heroicons/react/outline'
 import { MenuIcon } from '@heroicons/react/solid'

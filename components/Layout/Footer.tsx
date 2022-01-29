@@ -1,5 +1,5 @@
 import { classNames } from '@/utils/formatClass'
-import { projectList } from '@/utils/projectIcon'
+import projectList from '@/data/projects.json'
 import { Disclosure } from '@headlessui/react'
 import { ArrowSmRightIcon, ChevronDownIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
@@ -35,13 +35,13 @@ const Footer = (): JSX.Element => {
   )
 
   return (
-    <footer className="relative flex flex-col bottom-0 h-full overflow-hidden w-full p-6 mx-auto space-y-6 lg:p-12 bg-secondary">
-      <ul className="grid w-full h-full text-white gap-y-8 md:grid-cols-2 gap-4 lg:grid-cols-4 font-body">
+    <footer className="relative bottom-0 flex flex-col w-full h-full p-6 mx-auto space-y-6 overflow-hidden lg:p-12 bg-secondary">
+      <ul className="grid w-full h-full gap-4 text-white gap-y-8 md:grid-cols-2 lg:grid-cols-4 font-body">
         <li className="col-span-full lg:col-span-1 lg:text-center">
           <Link href="/">
             <a>
               <div>
-                <img src={'/image/logo/logo.svg'} alt="logo" className="lg:mx-auto object-contain" width="200" height="80" />
+                <img src={'/image/logo/logo.svg'} alt="logo" className="object-contain lg:mx-auto" width="200" height="80" />
               </div>
             </a>
           </Link>
@@ -108,7 +108,7 @@ const Footer = (): JSX.Element => {
             </li>
           </ul>
         </li>
-        <li className="flex flex-col col-span-full lg:col-span-1 space-y-8">
+        <li className="flex flex-col space-y-8 col-span-full lg:col-span-1">
           <div className="flex flex-col space-y-4">
             <h4 className="font-bold">ต้องการรับข่าวสารเกี่ยวกับ Policy Dialogue</h4>
             <div className="relative mt-1 sm:max-w-[270px]">
