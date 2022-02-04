@@ -46,7 +46,7 @@ const ArticlesPage = ({ articles }: { articles: Article[] }) => {
                 {articles.map(({ id, title, url, coverImage, description }) => (
                   <li key={id} className="flex flex-col w-full overflow-hidden bg-white">
                     <img className="object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" src={coverImage.url} alt={title} />
-                    <div className="flex flex-col space-y-6 py-8 px-12">
+                    <div className="flex flex-col py-8 px-12 h-full">
                       <div className="space-y-6 font-body mb-12">
                         <h3 className="text-lg font-bold leading-6">{title}</h3>
                         <p className="text-sm">{description}</p>
