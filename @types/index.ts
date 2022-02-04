@@ -26,6 +26,7 @@ export interface Color {
 export interface Article {
   id: string
   title: string
+  description: string
   url: string
   coverImage: CoverImage
   createdAt: Date
