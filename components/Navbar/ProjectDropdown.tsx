@@ -34,9 +34,9 @@ const ProjectDropdown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-32 shadow-xl">
+              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-40 shadow-xl">
                 <div className="bg-[#474747]">
-                  <div className="grid p-6 mx-auto mt-6 overflow-hidden gap-y-2 lg:grid-cols-7 max-w-7xl">
+                  <div className="grid p-6 mx-auto mt-4 overflow-hidden gap-y-2 lg:grid-cols-7 max-w-7xl">
                     {projectDropdown.map((item) => (
                       <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
                         <a

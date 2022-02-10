@@ -7,6 +7,25 @@ import { FormEvent, useCallback, useState } from 'react'
 import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
 import ProjectDropdown from '../Navbar/ProjectDropdown'
+import ProcessDropdown from '../Navbar/ProcessDropdown'
+
+const processMenu = [
+  {
+    id: 1,
+    title: 'กระบวนการ',
+    url: '/process',
+  },
+  {
+    id: 2,
+    title: 'คู่มือการจัดกระบวนการ',
+    url: '/guideline',
+  },
+  {
+    id: 3,
+    title: 'คุณค่าของกระบวนการ',
+    url: '/value',
+  },
+]
 
 const Footer = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
@@ -52,8 +71,8 @@ const Footer = (): JSX.Element => {
               <Disclosure>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex items-center w-full text-white">
-                      <span>นโยบายเพื่อสังคมสูงวัย</span>
+                    <Disclosure.Button className="flex items-center w-full text-white pb-1">
+                      <span className="text-sm">นโยบายเพื่อสังคมสูงวัย</span>
                       <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-4 h-4 text-primary ml-2`} />
                     </Disclosure.Button>
                     <Disclosure.Panel className="py-2">
@@ -78,22 +97,38 @@ const Footer = (): JSX.Element => {
                 )}
               </Disclosure>
             </li>
+            <li className="block md:hidden">
+              <Disclosure>
+                {({ open }) => (
+                  <>
+                    <Disclosure.Button className="flex items-center w-full text-white pb-1">
+                      <span className="text-sm">กระบวนการ</span>
+                      <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-4 h-4 text-primary ml-2`} />
+                    </Disclosure.Button>
+                    <Disclosure.Panel className="py-2">
+                      <ul className="space-y-4">
+                        {processMenu.map((process) => (
+                          <li key={process.id}>
+                            <Disclosure.Button key={process.id} as="a" href={process.url} className={classNames('text-link', 'text-sm font-body flex')}>
+                              {process.title}
+                            </Disclosure.Button>
+                          </li>
+                        ))}
+                      </ul>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            </li>
             <li className="hidden md:block">
               <ProjectDropdown />
             </li>
-            <li>
-              <Link href="/process">
-                <a className="text-sm text-link">การออกแบบนโยบายอย่างมีส่วนร่วม</a>
-              </Link>
+            <li className="hidden md:block">
+              <ProcessDropdown />
             </li>
             <li>
-              <Link href="/value">
-                <a className="text-sm text-link">คุณค่าของกระบวนการ</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/guideline">
-                <a className="text-sm text-link">คู่มือการจัดกระบวนการ</a>
+              <Link href="/article">
+                <a className="text-sm text-link">ข่าวสารและบทความ</a>
               </Link>
             </li>
             <li>

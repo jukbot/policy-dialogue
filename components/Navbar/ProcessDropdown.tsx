@@ -27,7 +27,7 @@ const ProcessDropdown = () => {
 
   return (
     <>
-      <Popover className="relative z-10">
+      <Popover className="relative">
         {({ open, close }) => (
           <>
             <Popover.Button
@@ -53,7 +53,7 @@ const ProcessDropdown = () => {
             >
               <Popover.Panel className="absolute inset-x-0 z-10 w-60 transform -translate-x-10 shadow-xl">
                 <div className="bg-[#474747]">
-                  <div className="flex flex-col space-y-6 p-6 mx-auto mt-6 overflow-hidden">
+                  <div className="flex flex-col space-y-6 p-6 mx-auto mt-4 overflow-hidden">
                     {processMenu.map((item) => (
                       <Popover.Button as={Link} key={item.id} href={item.url}>
                         <a

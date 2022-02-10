@@ -47,7 +47,7 @@ const LsdPage = () => {
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] grid items-center bg-[#daa13d]">
           <div className="flex flex-col items-center justify-between w-full h-full lg:mb-6 lg:flex-row">
             <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-white lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
-              <h1 className="max-w-xl text-3xl font-bold lg:text-4xl lg:text-5xl 2xl:text-6xl">
+              <h1 className="max-w-xl text-3xl font-bold lg:text-5xl 2xl:text-6xl">
                 ระบบการดูแลผู้สูงอายุ
                 <br /> แบบใดที่คนไทยต้องการ?
               </h1>
