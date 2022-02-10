@@ -38,7 +38,7 @@
     "react-hot-toast": "^2.2.0",
     "react-intersection-observer": "^8.33.1",
     "react-use": "^17.3.2",
-    "sharp": "^0.30.0",
+    "sharp": "^0.30.1",
     "urql": "^2.1.3"
   },
   "devDependencies": {
@@ -50,8 +50,8 @@
     "@types/prettier": "^2",
     "@types/react": "17.0.39",
     "@types/sharp": "^0",
-    "@typescript-eslint/eslint-plugin": "^5.10.2",
-    "@typescript-eslint/parser": "^5.10.2",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
     "autoprefixer": "10.4.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
@@ -62,7 +62,7 @@
     "postcss": "8.4.6",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
-    "tailwindcss": "~3.0.18",
+    "tailwindcss": "~3.0.19",
     "tailwindcss-debug-screens": "^2.2.1",
     "typescript": "^4.5.5"
   },
