@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { FormEvent, useCallback, useState } from 'react'
 import toast from 'react-hot-toast'
 import SocialMedia from '../Footer/SocialMedia'
-import ProjectDropDown from '../Navbar/ProjectDropdown'
+import ProjectDropdown from '../Navbar/ProjectDropdown'
 
 const Footer = (): JSX.Element => {
   const [email, setEmail] = useState<string>('')
@@ -79,7 +79,7 @@ const Footer = (): JSX.Element => {
               </Disclosure>
             </li>
             <li className="hidden md:block">
-              <ProjectDropDown />
+              <ProjectDropdown />
             </li>
             <li>
               <Link href="/process">

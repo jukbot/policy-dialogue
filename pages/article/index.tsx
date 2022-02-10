@@ -23,12 +23,10 @@ const ArticlesPage = ({ articles }: { articles: Article[] }) => {
     <>
       <Header title="บทความของเรา" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
       <main className="relative">
-        <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-contain opacity-75 bg-about-hero-shape" />
-        <section className="relative h-[75vh] bg-left-bottom bg-cover sm:bg-contain bg-no-repeat grid items-center bg-about-pattern-mobile sm:bg-about-pattern">
+        <section className="relative h-[75vh] bg-center mix-blend-screen bg-cover bg-no-repeat grid items-center bg-about-pattern-mobile sm:bg-article-hero-pattern">
           <div className="flex justify-center pt-24 text-white lg:justify-start lg:ml-48">
             <h1 className="text-4xl font-semibold lg:text-5xl">ข่าวสารและบทความ</h1>
           </div>
-          <div className="w-full h-full absolute bottom-0 right-0 triangle-bottom-right mix-blend-screen opacity-50 from-[#191919] to-[#242054] bg-gradient-to-b" />
         </section>
         <section className="relative h-full space-y-6 bg-[#ede8db] lg:space-y-12">
           <div className="max-w-6xl px-6 py-12 mx-auto lg:px-12">
@@ -37,7 +35,9 @@ const ArticlesPage = ({ articles }: { articles: Article[] }) => {
                 <h2 className="text-4xl font-bold">ข่าวสาร</h2>
                 <p className="text-xl">News</p>
               </div>
-              <div className="bg-white h-[400px] w-full">Carousell here</div>
+              <div className="bg-white h-[400px] w-full overflow-hidden">
+                <img src="https://media.graphcms.com/ncAYdZvTdS9R7p7utvbY" className="w-full h-full object-top object-cover" />
+              </div>
               <div className="space-y-4">
                 <h2 className="text-4xl font-bold">บทความ</h2>
                 <p className="text-xl">Articles</p>
@@ -48,8 +48,8 @@ const ArticlesPage = ({ articles }: { articles: Article[] }) => {
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" src={coverImage.url} alt={title} />
                     <div className="flex flex-col py-8 px-12 h-full">
                       <div className="space-y-6 font-body mb-12">
-                        <h3 className="text-lg font-bold leading-6">{title}</h3>
-                        <p className="text-sm">{description}</p>
+                        <h3 className="text-lg font-bold leading-6 line-clamp-2">{title}</h3>
+                        <p className="text-sm line-clamp-4">{description}</p>
                       </div>
                       <a href={url} className="w-20 text-center p-1 mt-auto text-sm justify-center bg-[#a8a8a8] hover:bg-primary text-white hover:text-black">
                         อ่านต่อ &gt;

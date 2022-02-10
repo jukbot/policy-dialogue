@@ -8,22 +8,22 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 // import { useWindowScroll } from 'react-use'
 import { Close } from '../Icon'
-import ProjectDropDown from '../Navbar/ProjectDropdown'
+import ProjectDropdown from '../Navbar/ProjectDropdown'
 import Logo from '/public/image/logo/logo.svg'
+import ProcessDropdown from '../Navbar/ProcessDropdown'
 
 const mobileNav = [
   { name: 'หน้าแรก', href: '/' },
   { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
   { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
   { name: 'คุณค่ากระบวนการ', href: '/value' },
+  { name: 'ข่าวสารและบทความ', href: '/article' },
   { name: 'คลังข้อมูล', href: '/archive' },
   { name: 'เกี่ยวกับเรา', href: '/about' },
 ]
 
 const desktopNav = [
-  { name: 'การออกแบบนโยบายอย่างมีส่วนร่วม', href: '/process' },
-  { name: 'คู่มือการจัดกระบวนการ', href: '/guideline' },
-  { name: 'คุณค่ากระบวนการ', href: '/value' },
+  { name: 'ข่าวสารและบทความ', href: '/article' },
   { name: 'คลังข้อมูล', href: '/archive' },
   { name: 'เกี่ยวกับเรา', href: '/about' },
 ]
@@ -60,13 +60,14 @@ const Navbar = (): JSX.Element => {
                 </div>
                 <div className="hidden w-full xl:block">
                   <div className="flex justify-center space-x-4 whitespace-nowrap">
-                    <ProjectDropDown />
+                    <ProjectDropdown />
+                    <ProcessDropdown />
                     {desktopNav.map((item) => (
                       <Link href={item.href} key={item.name}>
                         <a
                           className={classNames(
                             pathname === item.href ? ' text-primary' : 'text-link',
-                            'px-2 text-sm font-body transition ease-in-out duration-150'
+                            'px-2 text-sm font-body transition ease-in-out duration-150 self-center'
                           )}
                           aria-current={pathname === item.href ? 'page' : undefined}
                         >

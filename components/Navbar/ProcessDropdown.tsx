@@ -1,11 +1,28 @@
-import { projectDropdown, projectIcon } from '@/utils/projectIcon'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Fragment } from 'react'
 
-const ProjectDropdown = () => {
+const processMenu = [
+  {
+    id: 1,
+    title: 'กระบวนการ',
+    url: '/process',
+  },
+  {
+    id: 2,
+    title: 'คู่มือการจัดกระบวนการ',
+    url: '/guideline',
+  },
+  {
+    id: 3,
+    title: 'คุณค่าของกระบวนการ',
+    url: '/value',
+  },
+]
+
+const ProcessDropdown = () => {
   const { pathname } = useRouter()
 
   return (
@@ -18,7 +35,7 @@ const ProjectDropdown = () => {
               ${open ? 'text-primary' : 'text-link'}
                inline-flex items-center text-sm font-body`}
             >
-              <span>นโยบายเพื่อสังคมสูงวัย</span>
+              <span>กระบวนการของเรา</span>
               <ChevronDownIcon
                 className={`${open ? '' : 'text-opacity-75'}
                 ml-2 h-4 w-4 text-primary transition ease-in-out duration-150`}
@@ -34,23 +51,17 @@ const ProjectDropdown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-32 shadow-xl">
+              <Popover.Panel className="absolute inset-x-0 z-10 w-60 transform -translate-x-10 shadow-xl">
                 <div className="bg-[#474747]">
-                  <div className="grid p-6 mx-auto mt-6 overflow-hidden gap-y-2 lg:grid-cols-7 max-w-7xl">
-                    {projectDropdown.map((item) => (
-                      <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
+                  <div className="flex flex-col space-y-6 p-6 mx-auto mt-6 overflow-hidden">
+                    {processMenu.map((item) => (
+                      <Popover.Button as={Link} key={item.id} href={item.url}>
                         <a
                           onClick={() => close()}
                           aria-current={pathname === item.url ? 'page' : undefined}
-                          className={`${
-                            item.enabled ? (pathname === item.url ? 'text-primary' : 'text-link') : 'text-white opacity-50'
-                          } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 shrink-0 space-y-2 transition`}
+                          className={`${pathname === item.url ? 'text-primary' : 'text-link'} relative text-center transition`}
                         >
-                          <div>{projectIcon.get(item.icon)}</div>
-                          <div className="flex flex-col flex-1 text-sm whitespace-normal font-body">
-                            <p>{item.description}</p>
-                            <p className="font-bold">({item.title})</p>
-                          </div>
+                          <p className="text-sm">{item.title}</p>
                         </a>
                       </Popover.Button>
                     ))}
@@ -65,4 +76,4 @@ const ProjectDropdown = () => {
   )
 }
 
-export default ProjectDropdown
+export default ProcessDropdown
