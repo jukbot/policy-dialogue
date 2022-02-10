@@ -7,7 +7,7 @@ import { Fragment } from 'react'
 const processMenu = [
   {
     id: 1,
-    title: 'กระบวนการ',
+    title: 'กระบวนการออกแบบอย่างมีส่วนร่วม',
     url: '/process',
   },
   {

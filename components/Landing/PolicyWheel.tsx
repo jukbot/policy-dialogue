@@ -25,7 +25,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
         <text
           id="prefix__\u0E23\u0E30\u0E1A\u0E1A\u0E01\u0E32\u0E23\u0E14\u0E39\u0E41\u0E25\u0E1C\u0E39\u0E49\u0E1B\u0E48\u0E27\u0E22\u0E23\u0E30\u0E22\u0E30\u0E01\u0E25\u0E32\u0E07_\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07_6_\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E17\u0E2D\u0E07\u0E2B\u0E25\u0E31\u0E07\u0E1E\u0E49\u0E19\u0E20\u0E32\u0E27\u0E30\u0E27\u0E34\u0E01\u0E24\u0E15_Intermediate_Care_"
           data-name="\u0E23\u0E30\u0E1A\u0E1A\u0E01\u0E32\u0E23\u0E14\u0E39\u0E41\u0E25\u0E1C\u0E39\u0E49\u0E1B\u0E48\u0E27\u0E22\u0E23\u0E30\u0E22\u0E30\u0E01\u0E25\u0E32\u0E07 \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07 6 \u0E40\u0E14\u0E37\u0E2D\u0E19\u0E17\u0E2D\u0E07\u0E2B\u0E25\u0E31\u0E07\u0E1E\u0E49\u0E19\u0E20\u0E32\u0E27\u0E30\u0E27\u0E34\u0E01\u0E24\u0E15 (Intermediate Care)"
-          className="prefix__cls-1"
+          className="prefix__cls-2"
           transform="translate(1040 269)"
         >
           <tspan x={0} y={0}>
@@ -51,7 +51,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
         <text
           id="prefix__\u0E23\u0E30\u0E1A\u0E1A\u0E01\u0E32\u0E23\u0E14\u0E39\u0E41\u0E25\u0E23\u0E30\u0E22\u0E30\u0E22\u0E32\u0E27_\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38\u0E17\u0E35\u0E48\u0E21\u0E35\u0E20\u0E32\u0E27\u0E30\u0E1E\u0E36\u0E48\u0E07\u0E1E\u0E34\u0E07_Long-Term_Care_"
           data-name="\u0E23\u0E30\u0E1A\u0E1A\u0E01\u0E32\u0E23\u0E14\u0E39\u0E41\u0E25\u0E23\u0E30\u0E22\u0E30\u0E22\u0E32\u0E27 \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38\u0E17\u0E35\u0E48\u0E21\u0E35\u0E20\u0E32\u0E27\u0E30\u0E1E\u0E36\u0E48\u0E07\u0E1E\u0E34\u0E07 (Long-Term Care)"
-          className="prefix__cls-1"
+          className="prefix__cls-2"
           transform="translate(1088 567)"
         >
           <tspan x={0} y={0}>
@@ -70,7 +70,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
         <text
           id="prefix__\u0E01\u0E25\u0E44\u0E01\u0E01\u0E32\u0E23\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E02\u0E31\u0E1A\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19_\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38_Governing_Mechanism_"
           data-name="\u0E01\u0E25\u0E44\u0E01\u0E01\u0E32\u0E23\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E02\u0E31\u0E1A\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38 (Governing Mechanism)"
-          className="prefix__cls-1"
+          className="prefix__cls-2"
           transform="translate(315 567)"
         >
           <tspan x={-291.05} y={0}>
@@ -87,7 +87,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
         <text
           id="prefix__\u0E23\u0E30\u0E1A\u0E1A\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E14\u0E39\u0E41\u0E25_\u0E1C\u0E39\u0E49\u0E21\u0E35\u0E20\u0E32\u0E27\u0E30\u0E2A\u0E21\u0E2D\u0E07\u0E40\u0E2A\u0E37\u0E48\u0E2D\u0E21_Dementia_"
           data-name="\u0E23\u0E30\u0E1A\u0E1A\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E14\u0E39\u0E41\u0E25 \u0E1C\u0E39\u0E49\u0E21\u0E35\u0E20\u0E32\u0E27\u0E30\u0E2A\u0E21\u0E2D\u0E07\u0E40\u0E2A\u0E37\u0E48\u0E2D\u0E21 (Dementia)"
-          className="prefix__cls-1"
+          className="prefix__cls-2"
           transform="translate(489 772)"
         >
           <tspan x={-271.225} y={0}>
@@ -165,7 +165,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
             <path
               id="prefix__Ellipse_142"
               data-name="Ellipse 142"
-              className="prefix__cls-3"
+              className="prefix__cls-5"
               d="M50 3a47.013 47.013 0 00-18.294 90.308A47.013 47.013 0 0068.294 6.692 46.7 46.7 0 0050 3m0-3A50 50 0 110 50 50 50 0 0150 0z"
               transform="translate(173 514.5)"
             />
@@ -173,7 +173,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
             <path
               id="prefix__Ellipse_138_-_Outline"
               data-name="Ellipse 138 - Outline"
-              className="prefix__cls-3"
+              className="prefix__cls-5"
               d="M50 3a47.013 47.013 0 00-18.294 90.308A47.013 47.013 0 0068.294 6.692 46.7 46.7 0 0050 3m0-3A50 50 0 110 50 50 50 0 0150 0z"
               transform="translate(0 309.5)"
             />
@@ -181,7 +181,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
             <path
               id="prefix__Ellipse_147_-_Outline"
               data-name="Ellipse 147 - Outline"
-              className="prefix__cls-3"
+              className="prefix__cls-5"
               d="M50 3a47.013 47.013 0 00-18.294 90.308A47.013 47.013 0 0068.294 6.692 46.7 46.7 0 0050 3m0-3A50 50 0 110 50 50 50 0 0150 0z"
               transform="translate(624 309.5)"
             />
@@ -189,7 +189,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
             <path
               id="prefix__Ellipse_148_-_Outline"
               data-name="Ellipse 148 - Outline"
-              className="prefix__cls-3"
+              className="prefix__cls-5"
               d="M50 3a47.013 47.013 0 00-18.294 90.308A47.013 47.013 0 0068.294 6.692 46.7 46.7 0 0050 3m0-3A50 50 0 110 50 50 50 0 0150 0z"
               transform="translate(575 31.5)"
             />
@@ -238,7 +238,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
               <path
                 id="prefix__Line_19"
                 data-name="Line 19"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 d="M.583 51.812l-1.166-1.624 4.061-2.917L4.644 48.9zm8.122-5.834l-1.167-1.624 4.062-2.917 1.167 1.624zm8.122-5.834L15.66 38.52l4.061-2.92 1.167 1.624zm8.122-5.834l-1.167-1.624 4.061-2.917 1.167 1.624zm8.122-5.834L31.9 26.852l4.061-2.917 1.167 1.624zm8.122-5.834l-1.167-1.624 4.061-2.918 1.167 1.624zm8.122-5.834l-1.167-1.624 4.061-2.917 1.167 1.624zm8.122-5.834L56.27 9.35l4.06-2.917 1.17 1.624zm8.121-5.834l-1.167-1.624L68.452.6l1.167 1.624z"
                 transform="translate(411.666 111)"
               />
@@ -252,14 +252,14 @@ const PolicyWheel = (props: Props): JSX.Element => {
               <path
                 id="prefix__Line_20"
                 data-name="Line 20"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 d="M81.385 24.545l-4.8-1.387.555-1.921 4.8 1.387zm-9.607-2.775l-4.8-1.387.555-1.921 4.8 1.387zM62.17 19l-4.8-1.387.555-1.921 4.8 1.387zm-9.607-2.775l-4.8-1.387.555-1.921 4.8 1.387zm-9.607-2.775l-4.8-1.387.555-1.921 4.8 1.387zm-9.607-2.775l-4.8-1.387.551-1.925 4.8 1.387zM23.741 7.9l-4.8-1.387.555-1.921 4.8 1.387zm-9.607-2.777L9.33 3.735l.555-1.921 4.8 1.387zM4.526 2.348L-.277.961.277-.961 5.081.427z"
                 transform="translate(440.517 322.987)"
               />
               <path
                 id="prefix__Line_23"
                 data-name="Line 23"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 d="M1.762 24.545l-.555-1.921 4.8-1.387.555 1.921zm9.608-2.775l-.555-1.921 4.8-1.387.555 1.921zM20.977 19l-.555-1.921 4.8-1.387.555 1.921zm9.607-2.775l-.555-1.925 4.8-1.387.555 1.921zm9.607-2.775l-.555-1.921 4.8-1.387.564 1.917zm9.609-2.778l-.556-1.922 4.8-1.387.556 1.921zM59.406 7.9l-.555-1.921 4.8-1.387.559 1.918zm9.607-2.775L68.459 3.2l4.8-1.387.555 1.921zM78.62 2.35L78.066.427l4.8-1.387.559 1.921z"
                 transform="translate(-1.207 322.987)"
               />
@@ -273,14 +273,14 @@ const PolicyWheel = (props: Props): JSX.Element => {
               <path
                 id="prefix__Line_24"
                 data-name="Line 24"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 d="M1.28 76.666l-1.793-.885L1.7 71.3l1.793.885zM5.706 67.7l-1.793-.885 2.212-4.485 1.793.885zm4.426-8.967l-1.793-.885 2.213-4.484 1.793.885zm4.425-8.967l-1.793-.885 2.213-4.484 1.793.885zm4.425-8.966l-1.793-.885 2.211-4.488 1.793.885zm4.425-8.967l-1.793-.885 2.213-4.484 1.793.885zm4.425-8.967l-1.793-.885 2.213-4.484 1.793.885zm4.425-8.967l-1.793-.885 2.213-4.484 1.793.885zm4.425-8.967l-1.793-.885L37.1-.443l1.8.886z"
                 transform="translate(143.793 441)"
               />
               <circle
                 id="prefix__Ellipse_144"
                 data-name="Ellipse 144"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 cx={7.213}
                 cy={7.213}
                 r={7.213}
@@ -289,7 +289,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
               <circle
                 id="prefix__Ellipse_55"
                 data-name="Ellipse 55"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 cx={7.213}
                 cy={7.213}
                 r={7.213}
@@ -298,7 +298,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
               <circle
                 id="prefix__Ellipse_60"
                 data-name="Ellipse 60"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 cx={7.213}
                 cy={7.213}
                 r={7.213}
@@ -307,7 +307,7 @@ const PolicyWheel = (props: Props): JSX.Element => {
               <circle
                 id="prefix__Ellipse_57"
                 data-name="Ellipse 57"
-                className="prefix__cls-3"
+                className="prefix__cls-5"
                 cx={7.213}
                 cy={7.213}
                 r={7.213}
@@ -334,20 +334,34 @@ const PolicyWheel = (props: Props): JSX.Element => {
               </g>
             </a>
           </Link>
-          <path
-            id="prefix__Path_130"
-            data-name="Path 130"
-            className="prefix__cls-3"
-            d="M545.354 25.807c0-2.974-3.219-5.645-8.333-7.483 3.624-1.059 5.833-2.466 5.833-4.009 0-2.269-4.773-4.241-11.8-5.251 1.183-.572 1.867-1.245 1.867-1.967 0-2.071-5.627-3.75-12.568-3.75S507.786 5.026 507.786 7.1c0 .722.684 1.4 1.867 1.967-7.027 1.01-11.8 2.982-11.8 5.251 0 1.543 2.209 2.95 5.833 4.009-5.114 1.839-8.333 4.509-8.333 7.483 0 3 3.272 5.688 8.459 7.528-3.7 1.063-5.959 2.484-5.959 4.045 0 2.269 4.773 4.241 11.8 5.251-1.183.572-1.867 1.245-1.867 1.967 0 2.071 5.627 3.75 12.568 3.75s12.568-1.679 12.568-3.75c0-.722-.684-1.4-1.867-1.967 7.027-1.01 11.8-2.982 11.8-5.251 0-1.561-2.26-2.982-5.959-4.045 5.186-1.843 8.458-4.538 8.458-7.531z"
-            transform="translate(444.645 296.653)"
-          />
-          <path
-            id="prefix__Path_59"
-            data-name="Path 59"
-            className="prefix__cls-3"
-            d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z"
-            transform="translate(-351.303 536.367)"
-          />
+          <Link href="/project/imc">
+            <a>
+              <g id="prefix__Component_24_1" data-name="Component 24 \u2013 1" transform="translate(444.645 296.653)" className="group">
+                <g id="prefix__Group_130" data-name="Group 130" className="project-icon">
+                  <path
+                    id="prefix__Path_130"
+                    data-name="Path 130"
+                    d="M545.354 25.807c0-2.974-3.219-5.645-8.333-7.483 3.624-1.059 5.833-2.466 5.833-4.009 0-2.269-4.773-4.241-11.8-5.251 1.183-.572 1.867-1.245 1.867-1.967 0-2.071-5.627-3.75-12.568-3.75S507.786 5.026 507.786 7.1c0 .722.684 1.4 1.867 1.967-7.027 1.01-11.8 2.982-11.8 5.251 0 1.543 2.209 2.95 5.833 4.009-5.114 1.839-8.333 4.509-8.333 7.483 0 3 3.272 5.688 8.459 7.528-3.7 1.063-5.959 2.484-5.959 4.045 0 2.269 4.773 4.241 11.8 5.251-1.183.572-1.867 1.245-1.867 1.967 0 2.071 5.627 3.75 12.568 3.75s12.568-1.679 12.568-3.75c0-.722-.684-1.4-1.867-1.967 7.027-1.01 11.8-2.982 11.8-5.251 0-1.561-2.26-2.982-5.959-4.045 5.186-1.843 8.458-4.538 8.458-7.531z"
+                    fill="#6BACCB"
+                  />
+                </g>
+              </g>
+            </a>
+          </Link>
+          <Link href="/project/ltc">
+            <a>
+              <g id="prefix__Component_24_1" data-name="Component 24 \u2013 1" transform="translate(-351.303 536.367)" className="group">
+                <g id="prefix__Group_59" data-name="Group 59" className="project-icon">
+                  <path
+                    id="prefix__Path_59"
+                    data-name="Path 59"
+                    d="M1374.506 41.633c-3.532 0-6.771 1.93-9.3 5.143-2.526-3.213-5.765-5.143-9.3-5.143-8.069 0-14.609 10.074-14.609 22.5s6.541 22.5 14.609 22.5c3.532 0 6.771-1.93 9.3-5.143 2.526 3.213 5.765 5.143 9.3 5.143 8.069 0 14.609-10.074 14.609-22.5s-6.54-22.5-14.609-22.5z"
+                    fill="#CC7AA7"
+                  />
+                </g>
+              </g>
+            </a>
+          </Link>
           <Link href="/project/pc">
             <a>
               <g id="prefix__Component_25_1" data-name="Component 25 \u2013 1" transform="translate(791 755)" className="group">
@@ -367,20 +381,34 @@ const PolicyWheel = (props: Props): JSX.Element => {
               </g>
             </a>
           </Link>
-          <path
-            id="prefix__Path_56"
-            data-name="Path 56"
-            className="prefix__cls-3"
-            d="M754.415 1113.507a7.919 7.919 0 00-6.045-14.594 7.919 7.919 0 00-14.593-6.045 7.919 7.919 0 00-14.593 6.045 7.919 7.919 0 00-6.045 14.594 7.919 7.919 0 006.045 14.593 7.919 7.919 0 0014.593 6.045 7.919 7.919 0 0014.593-6.045 7.919 7.919 0 006.045-14.593z"
-            transform="translate(-170.777 -308.507)"
-          />
-          <path
-            id="prefix__Path_54"
-            data-name="Path 54"
-            className="prefix__cls-3"
-            d="M896.255 58.626H848.1a6.448 6.448 0 01-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 01-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 110-12.9h48.155a6.448 6.448 0 012.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 012.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 110 12.9z"
-            transform="translate(-482.65 564.374)"
-          />
+          <Link href="/project/dmt">
+            <a>
+              <g id="prefix__Component_56" data-name="Component 56" transform="translate(-170.777 -308.507)" className="group">
+                <g id="prefix__Group_56" data-name="Group 56" className="project-icon">
+                  <path
+                    id="prefix__Path_56"
+                    data-name="Path 56"
+                    d="M754.415 1113.507a7.919 7.919 0 00-6.045-14.594 7.919 7.919 0 00-14.593-6.045 7.919 7.919 0 00-14.593 6.045 7.919 7.919 0 00-6.045 14.594 7.919 7.919 0 006.045 14.593 7.919 7.919 0 0014.593 6.045 7.919 7.919 0 0014.593-6.045 7.919 7.919 0 006.045-14.593z"
+                    fill="#8F8AC8"
+                  />
+                </g>
+              </g>
+            </a>
+          </Link>
+          <Link href="/project/gm">
+            <a>
+              <g id="prefix__Component_54" data-name="Component 54" transform="translate(-482.65 564.374)" className="group">
+                <g id="prefix__Group_54" data-name="Group 54" className="project-icon">
+                  <path
+                    id="prefix__Path_54"
+                    data-name="Path 54"
+                    d="M896.255 58.626H848.1a6.448 6.448 0 01-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 01-2.039-12.566l10.457-3.486H848.1a6.448 6.448 0 110-12.9h48.155a6.448 6.448 0 012.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 012.039 12.566l-10.457 3.486h8.418a6.448 6.448 0 110 12.9z"
+                    fill="#35723B"
+                  />
+                </g>
+              </g>
+            </a>
+          </Link>
           <Link href="/project/lsd">
             <a>
               <g id="prefix__Component_24_1" data-name="Component 24 \u2013 1" transform="translate(389 272)" className="group">
