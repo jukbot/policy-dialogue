@@ -190,7 +190,7 @@ const LtcPage = () => {
           </div>
           <div className="max-w-6xl mx-auto text-body">
             <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
-              <div className="flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
+              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="font-bold text-center md:max-w-sm md:text-left font-body">
                   เพื่อให้มีข้อเสนอระบบหลักประกันการดูแลระยะยาวที่มีรายละเอียดชัดเจน เป็นที่ยอมรับและสามารถจะนำไปปฏิบัติจริงได้
