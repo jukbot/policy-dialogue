@@ -179,7 +179,7 @@ const GmPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#36723b] md:mt-16">
+        <section className="relative h-full bg-[#9AB89C] md:mt-16">
           <div className="w-full mx-auto md:absolute md:h-56 md:-mt-12 text-body md:-transform-x-1/2">
             <div className="w-full h-full max-w-4xl px-6 py-12 mx-auto space-y-8 text-white md:px-24 bg-secondary">
               <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
