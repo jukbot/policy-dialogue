@@ -325,7 +325,7 @@ const LtcPage = () => {
         <section className="relative h-full bg-[#FAF1F6]">
           <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
-              <div className="sticky top-0 flex flex-col col-span-1 space-y-6 text-body">
+              <div className="relative flex flex-col col-span-1 space-y-6 text-body">
                 <div className="px-6 space-y-6 lg:px-12">
                   <h3 className="text-4xl font-bold leading-snug">
                     สิ่งที่เกิดขึ้นจาก

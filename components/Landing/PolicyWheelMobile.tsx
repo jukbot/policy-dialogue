@@ -110,7 +110,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
           <path
             id="Path_175"
             data-name="dmt-icon"
-            className={`${selectedProject.icon === 'dmt' ? 'fill-[#707070]' : 'cls-4'}`}
+            className={`${selectedProject.icon === 'dmt' ? 'fill-[#8F8AC8]' : 'cls-4'}`}
             d="M26.38 17.35A3.47 3.47 0 0 0 23.73 11a3.46 3.46 0 0 0-6.38-2.65A3.47 3.47 0 0 0 11 11a3.47 3.47 0 0 0-2.65 6.39A3.46 3.46 0 0 0 11 23.73a3.47 3.47 0 0 0 6.39 2.65 3.46 3.46 0 0 0 6.38-2.65 3.46 3.46 0 0 0 2.65-6.38z"
             transform="translate(119 6804)"
           />

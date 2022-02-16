@@ -42,11 +42,10 @@ const ArticlesPage = ({ articles }: { articles: Article[] }) => {
                 <h2 className="text-4xl font-bold">บทความ</h2>
                 <p className="text-xl">Articles</p>
               </div>
-              <ul role="list" className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
+              <ul role="list" className="mx-auto space-y-8 lg:space-y-16 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
                 {articles.map(({ id, title, url, coverImage, description }) => (
                   <li key={id} className="flex flex-col w-full overflow-hidden bg-white">
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" src={coverImage.url} alt={title} />
-
                     <div className="flex flex-col py-8 px-12 h-full">
                       <div className="space-y-6 font-body mb-12">
                         <h3 className="text-lg font-bold leading-6 line-clamp-2">{title}</h3>
