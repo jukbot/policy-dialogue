@@ -140,10 +140,22 @@ const ArchivePage = () => {
                     rel="noopener noreferrer"
                     type="application/pdf"
                     title="ดาวน์โหลดเอกสาร"
-                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/DMT.pdf')}
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/DMT1.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ข้อสรุป</span>
+                    <span>ข้อสรุป 1</span>
+                  </a>
+                  <a
+                    className="btn-white"
+                    href="javascript:void(0)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/DMT2.pdf')}
+                  >
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ข้อสรุป 2</span>
                   </a>
                 </div>
               </div>
@@ -169,10 +181,22 @@ const ArchivePage = () => {
                     rel="noopener noreferrer"
                     type="application/pdf"
                     title="ดาวน์โหลดเอกสาร"
-                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LTC.pdf')}
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LTC1.pdf')}
                   >
                     <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ข้อสรุป</span>
+                    <span>ข้อสรุป 1</span>
+                  </a>
+                  <a
+                    className="btn-white"
+                    href="javascript:void(0)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LTC2.pdf')}
+                  >
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ข้อสรุป 2</span>
                   </a>
                 </div>
               </div>

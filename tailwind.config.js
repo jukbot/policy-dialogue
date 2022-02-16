@@ -31,6 +31,7 @@ module.exports = {
       contain: 'contain',
       70: '70%',
       75: '75%',
+      'height-100': '120% 115%',
       'width-90': '90% 100%',
       'footer-size': '80% 180%',
     },

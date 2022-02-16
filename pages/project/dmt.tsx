@@ -12,7 +12,9 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import FacebookBanner from '/public/image/aip/facebook.jpg'
-import Chart from '/public/image/dmt/chart.svg'
+import Emotion from '/public/image/dmt/emotion.svg'
+import Chart1 from '/public/image/dmt/chart-1.svg'
+import Chart2 from '/public/image/dmt/chart-2.svg'
 import Circle from '/public/image/dmt/circle.webp'
 import HeroImage from '/public/image/dmt/hero-image.webp'
 import Icon1 from '/public/image/dmt/icon-1.svg'
@@ -23,6 +25,7 @@ import ProcessResult from '/public/image/dmt/process-result.webp'
 import Result1 from '/public/image/dmt/testimonial-1.webp'
 import Result2 from '/public/image/dmt/testimonial-2.webp'
 import Result3 from '/public/image/dmt/testimonial-3.webp'
+import Result4 from '/public/image/dmt/testimonial-4.webp'
 
 const InterestProjects = dynamic(() => import('@/components/Project/InterestProjects'))
 const RelatedPolicy = dynamic(() => import('@/components/Project/RelatedPolicy'))
@@ -74,23 +77,22 @@ const DmtPage = () => {
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                คงจะดี.. หากประเทศไทย มีระบบบริการ การดูแลระยะยาวที่ครอบคลุมประชากรสูงวัย ได้ถ้วนหน้า และจัดสรรบริการพื้นฐาน ที่ตอบสนองความต้องการได้
+              <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
+                จะดีกว่าไหม หากประเทศไทยมีระบบคัดกรอง และดูแลผู้มีภาวะสมองเสื่อมอย่างมีประสิทธิภาพ
               </h3>
               <p className="max-w-sm leading-relaxed font-body">
-                มีหลักประกันให้มั่นใจว่าจะไม่ถูกทอดทิ้งและได้รับ การดูแลเมื่อเข้าวัยชราและเมื่อมีภาวะพึ่งพิง
-                ได้รับบริการทางสุขภาพและสังคมที่จำเป็นอย่างต่อเนื่อง เป็นระบบ
+                มีคุณภาพชีวิตและความเป็นอยู่ที่ดีทั้งผู้ป่วย และครอบครัว ลดการพึ่งพาเจ้าหน้าที่ในระบบสาธารณสุขในการดูแล
               </p>
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                เพื่อให้ผู้ที่อยู่ในภาวะพึ่งพิง สามารถดำรงชีวิตได้อย่างมีศักดิ์ศรี ของความเป็นมนุษย์
+              <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
+                เร่งคัดแยกผู้สูงอายุที่มีภาวะการรู้คิดบกพร่องเล็กน้อย (MCI) ซึ่งเป็นกลุ่มเสี่ยงสำคัญของภาวะสมองเสื่อมตั้งแต่เนิ่นๆ
               </h3>
               <p className="max-w-xl leading-relaxed font-body">
-                ได้รับการดูแลที่บ้าน เพื่อให้สามารถใช้ชีวิตประจำวันได้ ไม่บกพร่องในปัจจัย 4 ทั้งอาหาร เครื่องนุ่งห่ม ที่อยู่อาศัย และยารักษาโรค รวมถึงจิตใจ
+                เพื่อให้กลุ่มเสี่ยงได้ตระหนักถึงภาวะทางสมอง ของตนเอง เพิ่มโอกาสในการปรับพฤติกรรมเพื่อกระตุ้นและชะลอความเสื่อมของสมอง
               </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
@@ -103,10 +105,26 @@ const DmtPage = () => {
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">ได้รับการดูแลที่ครอบคลุมทั้งมิติสุขภาพ สังคม เศรษฐกิจ และสิ่งแวดล้อม</h3>
+              <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
+                มีบริการดูแลผู้ป่วยชั่วคราว (Respite Service) ทั้งแบบศูนย์บริการ หรืออยู่ในชุมชน
+              </h3>
               <p className="max-w-xl leading-relaxed font-body">
-                มีสุขอนามัยที่ดี ได้รับวัสดุอุปกรณ์ที่จำเป็น มีผู้ดูแล ใกล้ชิด ไม่ต้องแบกรับค่าใช้จ่ายมากเกินไป และไม่เป็นภาระของครอบครัว เป็นต้น{' '}
+                ผู้ป่วยไม่ถูกทอดทิ้งให้อยู่ตามลำพังยามที่ผู้ดูแลมีกิจธุระ อีกทั้งยังเพื่ื่อลดความเหนื่อย ท้อ เครียดสะสม ของผู้ดูแล จากการดูแลที่ต่อเนื่องยาวนาน
+                ซึ่งอาจส่งผลต่อสภาพจิตใจ
               </p>
+            </div>
+          </div>
+
+          <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
+            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+              <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">เกิดเครือข่ายเกื้อกูลผู้ดูแลผู้ป่วยสมองเสื่อม (Support Group)</h3>
+              <p className="max-w-xl leading-relaxed font-body">
+                เพื่อสอดส่องดูแลสุขภาพใจ ทั้งความเครียดและภาวะ ซึมเศร้าในญาติที่เป็นผู้ดูแล จัดกิจกรรมเสริมแรงใจ
+                รวมถึงช่วยให้เกิดการแลกเปลี่ยนองค์ความรู้และประสบการณ์
+              </p>
+            </div>
+            <div className="relative col-span-1 px-6 md:px-0">
+              <Image src={Result4} layout="responsive" priority height="640" width="1024" alt="expect-ressult-2" />
             </div>
           </div>
         </section>
@@ -119,13 +137,15 @@ const DmtPage = () => {
                   !
                 </tspan>
               </text>
-            </svg>{' '}
-            <p className="text-base font-bold text-center sm:text-lg lg:text-xl max-w-3xl leading-relaxed">
-              เพื่อให้ได้รับบริการและการสนับสนุนดังกล่าว ต้องมีทรัพยากรสำคัญ คือ
+            </svg>
+            <p className="text-base font-bold text-center sm:text-lg lg:text-xl max-w-lg leading-relaxed">
+              ภาวะสมองเสื่อมเป็นอาการที่พบมากในผู้สูงอายุ อาจพบได้ถึง 0.2-1 ล้านคน* จากประชากรผู้สูงอายุในปี 2563
+              ซึ่งเป็นความท้าทายสำคัญของประเทศไทยต่อการเตรียมรับมือ จำนวนผู้มีภาวะพึ่งพิงที่อาจเพิ่มขึ้นเรื่อยๆ จากภาวะทางสมอง
+            </p>
+            <p className="text-xs text-center max-w-xl mt-6">
+              คำนวณจากความชุกผู้ป่วยสมองเสื่อมในไทย 2-10%
               <br />
-              1&#41; กำลังคน ได้แก่ ผู้ดูแล ซึ่งต้องมีความรู้ ประสบการณ์ และเวลา
-              <br />
-              2&#41; งบประมาณ เพื่อเป็นค่าใช้จ่ายสำหรับการจัดหาอุปกรณ์และวัสดุสิ้นเปลือง
+              ข้อมูลจาก มส.ผส., “ภาวะสมองเสื่อม” ป่วยเพิ่มปีละ 1 แสนราย สถิติชี้ ร้อยละ 50 ของผู้สูงวัย80ขึ้นไปมีอาการ (2020)
             </p>
           </div>
         </section>
@@ -135,19 +155,30 @@ const DmtPage = () => {
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
           <div className="flex flex-col items-center justify-center pt-20 space-y-2 text-white">
-            <div className="flex flex-col items-center space-y-2">
-              <p className="text-xl font-bold">ค่าใช้จ่ายในการดูแลระยะยาวของผู้สูงอายุแต่ละกลุ่ม (บาท/คน/เดือน)</p>
-              <Image src={Chart} width={350} alt="elderly home" />
+            <div className="flex flex-col items-center space-y-6">
+              <p className="text-xl text-center font-bold max-w-xl leading-relaxed">
+                ความรุนแรงของภาวะสมองเสื่อมในระยะต่างๆ ยังส่งผลต่อความสามารถ ในการใช้ชีวิตประจำวันด้วยตนเอง ยิ่งอยู่ในระยะรุนแรงมากขึ้น
+                ก็จะยิ่งสูญเสียความสามารถในการใช้ชีวิต และมีโอกาสมีอาการทางประสาทจิตเวชร่วมด้วย เช่น อาการหลงผิด ประสาทหลอน มีปัญหาการนอนหลับ เป็นต้น
+              </p>
+              <Image src={Emotion} width={350} alt="emotion" />
             </div>
             <div className="flex flex-col items-center space-y-6">
-              <p className="max-w-2xl text-base text-center font-body">
-                ในการดูแลระยะยาว กลุ่มผู้สูงอายุติดเตียงมีค่าใช้จ่าย 19,129 บาท/คน/เดือน และผู้สูงอายุติดบ้านมีค่าใช้จ่าย 9,667 บาท/คน/เดือน
-                รวมค่าใช้จ่ายด้านอุปกรณ์และวัสดุสิ้นเปลือง ค่าใช้จ่ายด้านบุคลากร และค่าเดินทาง*
+              <p className="text-xl text-center font-bold max-w-xl leading-relaxed">การพึ่งพาผู้ดูแลจึงเป็นสิ่งที่จำเป็นอย่างมาก </p>
+              <p className="max-w-xl text-base text-center font-body ">
+                แต่การดูแลผู้ป่วยสมองเสื่อม 1 คนอย่างครอบคลุมและมีคุณภาพ อาจมีค่าใช้จ่ายสูงถึง 50,000 บาทต่อเดือน ซึ่งเป็นค่าใช้จ่ายด้านการจ้างผู้ดูแล ค่ายา
+                ค่าปรับปรุง สภาพบ้าน หรือซ่อมแซมข้าวของเสียหาย
               </p>
-              <p className="max-w-2xl text-base text-center font-body font-semibold">
-                ในขณะที่ผู้สูงอายุในบ้านเรา ได้รับเบี้ยยังชีพเริ่มต้นเพียงคนละ 600 บาทถ้วน
+              <Image src={Chart1} width={350} alt="chart-1" />
+              <p className="max-w-xl text-base text-center font-body">
+                หรือหากไม่จ้าง สมาชิกครอบครัวก็ต้องสูญเสียรายได้จากงานประจำ 9,000-15,000 บาทต่อเดือน เป็นอย่างน้อย
               </p>
-              <p className="text-xs font-body">*ข้อมูลจาก รายงานทีดีอาร์ไอ ฉบับที่ 138 มีนาคม 2561 “ระบบประกันการดูแลระยะยาว : ระบบที่เหมาะสมกับประเทศไทย”</p>
+              <p className="text-xl text-center font-bold max-w-lg leading-relaxed">
+                และยังพบว่า ผู้ดูแลผู้ป่วยสมองเสื่อม 9 ใน 10 ราย มีอาการเครียดและวิตกกังวลหลายครั้งต่อสัปดาห์*
+              </p>
+              <Image src={Chart2} width={400} alt="chart-2" />
+              <p className="text-xs text-center text-white font-body">
+                *ข้อมูลจาก Alzheimer&apos;s Society survey, Carers for people with dementia struggling in silence (2018)
+              </p>
             </div>
           </div>
         </section>
@@ -157,29 +188,34 @@ const DmtPage = () => {
             <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายหลายประการ
               <br />
-              ที่จะเอื้อให้เกิดภาพสำเร็จดังกล่าว
+              ที่จะเอื้อให้เกิดระบบที่เหมาะสม
             </h2>
             <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบการเงินการคลังเพื่อจัดบริการการดูแลระยะยาวของประเทศไทยในปัจจุบันยังไม่ตอบโจทย์สถานการณ์ปัจจุบันและอนาคต
+                  ระบบการคัดกรองผู้มี ภาวะสมองเสื่อมเป็นคอขวด เนื่องจากบุคลากร ทางการแพทย์ที่สามารถ คัดกรองและดูแลผู้มีภาวะ สมองเสื่อมได้
+                  มีจำนวนจำกัดและมักมีภาระงานหนัก
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ยังไม่ได้ข้อสรุปเรื่องขอบเขตการบริการและชุดบริการสำหรับผู้สูงอายุ ติดบ้านติดเตียงที่ชัดเจน
+                  บุคลากรในพื้นที่ไม่มีความรู้และกำลังในการจัดการดูแลผู้ป่วยสมองเสื่อม รวมถึง การจัด intervention เพื่อกระตุ้นสมอง ชะลอความเสื่อม
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} priority />
-                <p className="mx-auto text-base font-body sm:max-w-sm">การขาดปัจจัยที่สนับสนุนให้ องค์กรปกครองส่วนท้องถิ่นสามารถทำหน้าที่ได้อย่าง มีคุณภาพ</p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">
+                  บุคลากรในพื้นที่ ขาดความตระหนักเรื่องภาวะ สมองเสื่อม ไม่เห็นความ เร่งด่วน และผู้สูงอายุ ส่วนใหญ่ไม่ต้องการ คัดกรองภาวะทางสมอง
+                  รวมถึงทัศนคติแง่ลบ ต่อภาวะสมองเสื่อมในสังคมไทย เช่น รู้สึกอับอาย กลัวไม่ได้รับการยอมรับ
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ขาดการบูรณาการการจัดบริการทางสังคมกับบริการสาธารณสุข โดยที่การพัฒนากำลังคน (care manager และ caregiver) ยังไม่ทันสถานการณ์
+                  ระบบการจัดบริการดูแลระยะยาวไม่ได้ตอบสนองต่อการดูแลผู้สูงอายุที่มีภาวะสมองเสื่อมเนื่องจาก ต้องการการดูแลอย่าง ต่อเนื่องวันละ 24 ชั่วโมง
+                  และยังเป็นการดูแลที่ ต่อเนื่องยาวนานนับสิบปี ซึ่งมีค่าใช้จ่ายค่อนข้างสูง
                 </p>
               </div>
             </div>
@@ -189,13 +225,13 @@ const DmtPage = () => {
               <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="font-bold text-center md:max-w-sm md:text-left font-body">
-                  เพื่อให้มีข้อเสนอระบบหลักประกันการดูแลระยะยาวที่มีรายละเอียดชัดเจน เป็นที่ยอมรับและสามารถจะนำไปปฏิบัติจริงได้
+                  จึงเกิดระบบที่คัดกรองได้ตั้งแต่เนิ่นๆ สามารถ หาทางกระตุ้นสมอง ชะลอไม่ให้เข้าสู่ภาวะ สมองเสื่อมในอนาคตได้
+                  และสร้างความตระหนักรู้ต่อภาวะสมองเสื่อม
                 </p>
               </div>
               <p className="flex flex-col flex-wrap text-base text-center font-body md:block">
-                และเพื่อพัฒนาข้อเสนอรูปแบบและแนวทางการทำงานของท้องถิ่น ที่จะสามารถทำให้เกิดแผนการดูแล ผู้สูงอายุติดบ้าน ติดเตียง
-                โดยใช้การสนับสนุนทางการเงินจากแหล่งต่างๆ ร่วมกับการระดมทรัพยากร ในท้องถิ่น ซึ่งจะทำให้ผู้สูงอายุที่มีภาวะติดบ้าน
-                ติดเตียงได้รับการดูแลอย่างมีคุณภาพ{' '}
+                และทำอย่างไร ให้ผู้สูงอายุที่มีภาวะสมองเสื่อมได้รับการดูแลที่เหมาะสม เกิดกลไกสนับสนุนญาติ ที่เป็นผู้ดูแล
+                เพื่อช่วยลดภาระสำหรับครอบครัวให้ได้มากที่สุด
               </p>
             </div>
           </div>
@@ -208,22 +244,22 @@ const DmtPage = () => {
               <div className="flex flex-col col-span-1 space-y-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
-                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
-                    transform="translate(-1341.303 -41.633)"
-                    fill="#717171"
+                    d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.593 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.593 7.919 7.919 0 0 0 6.045 14.594 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.594z"
+                    transform="translate(-708.777 -1088.507)"
+                    fill="#8f8ac7"
                   />
                 </svg>
-                <p className="font-body">ระบบหลักประกันการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง </p>
+                <p className="font-body">ระบบคัดกรองภาวะสมองเสื่อม</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
-                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
-                    transform="translate(-1341.303 -41.633)"
-                    fill="#8f8ac7"
+                    d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.593 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.593 7.919 7.919 0 0 0 6.045 14.594 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.594z"
+                    transform="translate(-708.777 -1088.507)"
+                    fill="#daa13d"
                   />
                 </svg>
-                <p className="font-body">บทบาทของท้องถิ่นในการจัดระบบบริการการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
+                <p className="font-body">กลไกเจ้าภาพบริหารจัดการระหว่าง หน่วยงานที่เกี่ยวข้องกับการดูแลระยะยาวและการดูแลผู้ที่มีภาวะสมองเสื่อม</p>
               </div>
             </div>
           </div>
@@ -248,23 +284,33 @@ const DmtPage = () => {
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
-                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
-                    transform="translate(-1341.303 -41.633)"
-                    fill="#717171"
+                    d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.593 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.593 7.919 7.919 0 0 0 6.045 14.594 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.594z"
+                    transform="translate(-708.777 -1088.507)"
+                    fill="#8f8ac7"
                   />
                 </svg>
-                <p>ระบบหลักประกันการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
+                <p>ระบบคัดกรองภาวะสมองเสื่อม</p>
                 <div className="w-full border-t-2 border-white md:px-24" />
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ข้อสรุป</h3>
-                      <p className="font-body">ข้อสรุปเกี่ยวกับชุดบริการที่สำคัญและจำเป็นในการจัดบริการการดูแลระยะยาว</p>
+                      <h3 className="text-xl font-bold">ยุทธศาสตรย่อยที่ 1</h3>
+                      <p className="font-body">ผู้สูงอายุทุกคนเข้าถึงการคัดแยกภาวะ การรู้คิดบกพร่องเล็กน้อย (MCI)</p>
+                    </li>
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ยุทธศาสตรย่อยที่ 2</h3>
+                      <p className="font-body">ประชาชนมีความรู้ความเข้าใจต่อภาวะ การรู้คิดบกพร่องเล็กน้อย (MCI) และ ภาวะสมองเสื่อมที่ถูกต้อง</p>
+                    </li>
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ยุทธศาสตรย่อยที่ 3</h3>
+                      <p className="font-body">
+                        จัดให้มี intervention กระตุ้นสมองและชะลอความเสื่อมสำหรับผู้สูงอายุที่มีภาวะการรู้คิดบกพร่องเล็กน้อย (MCI) ในระดับครอบครัวจนถึงชุมชน
+                      </p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
                     <a
-                      className="text-[#717171] inline-flex items-center btn bg-white hover:text-white hover:bg-[#717171] rounded-full"
+                      className="text-[#8f8ac7] inline-flex items-center btn bg-white hover:text-white hover:bg-[#8f8ac7] rounded-full"
                       target="_self"
                       title="ดาวน์โหลดข้อสรุป"
                       rel="noopener noreferrer"
@@ -278,27 +324,26 @@ const DmtPage = () => {
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
-                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
-                    transform="translate(-1341.303 -41.633)"
-                    fill="#8f8ac7"
+                    d="M754.415 1113.507a7.919 7.919 0 0 0-6.045-14.593 7.919 7.919 0 0 0-14.593-6.045 7.919 7.919 0 0 0-14.593 6.045 7.919 7.919 0 0 0-6.045 14.593 7.919 7.919 0 0 0 6.045 14.594 7.919 7.919 0 0 0 14.593 6.045 7.919 7.919 0 0 0 14.593-6.045 7.919 7.919 0 0 0 6.045-14.594z"
+                    transform="translate(-708.777 -1088.507)"
+                    fill="#daa13d"
                   />
                 </svg>
-
-                <p>บทบาทของท้องถิ่นในการจัดระบบบริการการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
+                <p>กลไกเจ้าภาพบริหารจัดการระหว่างหน่วยงานที่เกี่ยวข้องกับการดูแลระยะยาวและการดูแลผู้ที่มีภาวะสมองเสื่อม</p>
                 <div className="w-full border-t-2 border-white md:px-24" />
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
-                      <p className="font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                      <h3 className="text-xl font-bold">แนวทางที่ 1</h3>
+                      <p className="font-body">ลดผลกระทบต่อผู้ดูแลจากการดูแลผู้ป่วย </p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ข้อเสนอ 2</h3>
-                      <p className="font-body">การพัฒนาบุคลากรและแนวทางการทำงานร่วมกันระหว่างบุคลากรของ องค์กรปกครองส่วนท้องถิ่น และ สาธารณสุข ในท้องถิ่น</p>
+                      <h3 className="text-xl font-bold">แนวทางที่ 2</h3>
+                      <p className="font-body">เสริมแรงใจ เพื่อให้ผู้ดูแลมีกำลังใจพอที่จะสู้กับความเหนื่อย ความท้อจากการดูแลอย่างต่อเนื่อง</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ข้อเสนอ 3</h3>
-                      <p className="font-body">การเพิ่มบทบาทและอำนาจในการบริหารจัดการให้ท้องถิ่น สามารถจัดการทาง การเงินและจัดสรรบุคลากรเองได้</p>
+                      <h3 className="text-xl font-bold">แนวทางที่ 3</h3>
+                      <p className="font-body">ส่งต่อองค์ความรู้ เพื่อให้ผู้ดูแลมีองค์ ความรู้ที่เพียงพอต่อการดูแล</p>
                     </li>
                   </ul>
                   <Link href="/archive#thematic-briefs">
@@ -337,48 +382,43 @@ const DmtPage = () => {
               <div className="h-full col-span-1 px-6 lg:px-12">
                 <ul className="space-y-12">
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">เข้าใจความต่างและเห็นจุดร่วมชัดขึ้น</h3>
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมสะท้อนว่าเป็นประโยชน์กับตนเองและงานที่ทำ จากการแลกเปลี่ยนมุมมองที่หลากหลาย</h3>
                     <p className="font-body">
-                      เห็นจุดร่วมเรื่องการจัดตั้งกองทุนหลักประกัน เป็นทางเลือกที่เป็นไปได้และเหมาะสมกับอนาคต ในระยะยาว ในขณะเดียวกัน ยังเกิดโอกาสให้ได้
-                      ทำความเข้าใจฐานคิดของการออกแบบรายละเอียด ข้อเสนอที่ต่างกัน แต่การหารือช่วยให้เห็นแนวทางในการขับเคลื่อนร่วมกันต่อ
+                      เห็นแนวทางที่น่าสนใจสามารถพัฒนาต่อยอดงาน ของตนเอง ได้คุยกับผู้มีส่วนเกี่ยวข้องซึ่งน่าจะผลักดันร่วมกันต่อได้
+                      <br />
+                      <br />
+                      ได้เห็นการแสดงความคิดเห็นจากหน่วยงานของรัฐ และประชาชน สามารถสะท้อนให้เห็นว่าเรื่องดังกล่าวมีความจำเป็นและสำคัญ
+                      <br />
+                      <br />
+                      แพทย์ประสาทวิทยาได้รับฟังความคิดเห็นจากตัวแทนประชาชน ทำให้เห็นว่าควรคิดโจทย์เพื่อตอบ ความต้องการประชาชนจริงๆ
+                      จากเดิมที่ไม่ได้รับฟังขนาดนี้มาก่อน
                     </p>
                   </li>
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">ช่วยเปิดมุมมองของผู้ที่เกี่ยวข้อง และสร้างการรับรู้</h3>
+                    <h3 className="text-xl font-bold">เป็นพื้นที่ที่เชื่อมต่อผู้ที่เกี่ยวข้อง ที่สามารถร่วมมือกันได้หลังจากกิจกรรม</h3>
                     <p className="font-body">
-                      ผู้ดูแลที่เป็นญาติ ได้รับข้อมูลที่เป็นประโยชน์ต่อการ นำไปใช้ในชีวิต จากที่ไม่เคยทราบข้อมูลเกี่ยวกับ บริการหรือสวัสดิการของภาครัฐมาก่อน{' '}
+                      ผู้พัฒนาบอร์ดเกมได้ติดต่อกับตัวแทนจากคลินิก ผู้สูงอายุ เพื่อพัฒนาสื่อสร้างสรรค์สำหรับโจทย์นี้
                       <br />
                       <br />
-                      ตัวแทนบุคลากรสาธารณสุข ตระหนักถึงความทุกข์ ของญาติในการดูแลผู้ป่วย ทำให้อยากพัฒนางานต่อ และเห็นโอกาสในการจัดการอบรมให้ญาติหรือ
-                      เสริมสร้างชุมชนให้ดูแลผู้ป่วยได้
+                      แพทย์ประสาทวิทยาได้แลกเปลี่ยนกับพื้นที่ที่มีโอกาสนำร่อง และเห็นโอกาสทดลอง intervention หรือ เครื่องมือที่เกี่ยวข้องหลังจากนี้
+                      <br />
+                      <br />
+                      ตัวแทนกรมอนามัยได้ประโยชน์จากที่ได้เห็นแนวทางพัฒนา intervention สำหรับผู้ดูแลผู้ป่วยสมองเสื่อม และสนใจอยากเข้าร่วมกิจกรรมในครั้งถัดไป
                     </p>
                   </li>
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">
-                      ผู้เข้าร่วมจากต่างพื้นที่ได้เห็นรูปแบบการจัดระบบบริการที่แตกต่างกัน เห็นแนวทางทำให้ดีขึ้น และเกิดโอกาสการวางแผนทำงานร่วมกันในอนาคต
-                    </h3>
+                    <h3 className="text-xl font-bold">ได้เผยแพร่ข้อมูลในวงกว้างผ่านช่องทางออนไลน์ </h3>
                     <p className="font-body">
-                      ตัวแทนจากท้องถิ่นได้ค้นพบว่า มีแนวทางปฏิบัติ ที่สามารถทำให้งานดีขึ้นได้ เป็นโอกาสที่จะนำกลับไปสื่อสารกับทีมปฏิบัติงานและพัฒนางานที่ทำอยู่
+                      ตัวแทนสื่อสะท้อนว่าสามารถนำเอาสิ่งที่ได้จากวันนี้ ไปต่อยอดเพื่อให้สังคมรู้เรื่องนี้มากขึ้น
                       <br />
                       <br />
-                      หลายท่านแสดงความสนใจต่อแนวคิดการสร้างเครือข่ายแลกเปลี่ยนระหว่างผู้ปฏิบัติงาน หรือแนวทางการทำงานร่วมกันระหว่างพื้นที่ที่เป็นมากกว่าการดูงาน
-                      แต่อาจให้ผลดีกว่า เช่นระบบพี่เลี้ยง ทั้งยังเห็นความสำคัญของการมีวงหารือแลกเปลี่ยนกัน โดยมีหน่วยงานส่วนกลาง เป็นเจ้าภาพหลัก
-                      แต่ยังไม่ได้มีข้อสรุปที่ชัดเจน
-                    </p>
-                  </li>
-                  <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">เกิดโอกาสในการวางแผนการทำงานร่วมกันระหว่างหน่วยงานในอนาคต</h3>
-                    <p className="font-body">
-                      ผู้เข้าร่วมเห็นประโยชน์ในการร่วมแลกเปลี่ยนจากมุม การทำงานของตัวเอง เห็นความเชื่อมโยงแม้มีบทบาทต่างกัน
-                      จึงทำให้การแลกเปลี่ยนขยายประเด็นเป็นภาพบทบาทของท้องถิ่นที่ควรทำและเกี่ยวข้องกับ หน่วยงานอื่น โดยเห็นพ้องกันว่า
-                      ท้องถิ่นต้องมีบทบาทเป็นหลักในการดำเนินการ
-                    </p>
-                  </li>
-                  <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">หน่วยงานของภาครัฐได้ปรับความเข้าใจร่วมกัน </h3>
-                    <p className="font-body">
-                      ทั้งต่อหน่วยงานที่เกี่ยวข้องกับการกำหนดนโยบาย ด้วยกันเอง และกับหน่วยงานในพื้นที่ และเป็นโอกาสให้
-                      ผู้กำหนดนโยบายได้ทำความเข้าใจความท้าทายของ การทำงานของผู้ปฏิบัติงาน ได้รับฟังปัญหา และชี้แจงส่วนที่เป็นข้อกังวลของผู้ปฏิบัติงาน
+                      ทีมจัดทำโครงการไปเล่าเรื่อง policy dialogue ในครั้งนี้ผ่าน{' '}
+                      <a target="_blank" href="https://www.youtube.com/watch?v=WFAEnHgwpUw" className="text-primary underline" rel="noreferrer">
+                        podcast
+                      </a>
+                      <br />
+                      <br />
+                      สื่อได้นัดหมายผู้เชี่ยวชาญด้านสมอง ที่พบกันในวงหารือไปเป็นแขกรับเชิญใน podcast ด้วยเช่นกัน
                     </p>
                   </li>
                 </ul>
