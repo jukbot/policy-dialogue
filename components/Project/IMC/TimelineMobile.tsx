@@ -51,7 +51,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="การดูแลผู้ป่วยระยะกลาง ในชุมชน"
               fontFamily="IBMPlexSansThai,sans-serif"
-              fontSize="25"
+              fontSize="24"
               fontWeight="600"
               transform="translate(20 791.5)"
             >
@@ -66,7 +66,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="- ร่วมกันทำความเข้าใจภาพการดูแล ผู้ป่วยระยะกลางในชุมชนและปัญหา ที่เกิดขึ้น ภาพสำเร็จของระบบดูแล ผู้ป่วยระยะกลางในชุมชนที่ดีเป็นอย่างไร - กรณีตัวอย่างในการดูแลผู้ป่วยระยะกลางในชุมชน นำเสนอ model ที่มี ในปัจจุบัน - ร่วมกันระบุช่องว่าง แลกเปลี่ยน ข้อเสนอและค"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
-              fontSize="18"
+              fontSize="16"
               transform="translate(20 956)"
             >
               <tspan x="0" y="20">
@@ -113,7 +113,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="ผู้มีประสบการณ์ดูแลผู้ป่วยระยะกลางในชุมชน ประกอบด้วย - พยาบาล - นักกายภาพบำบัด - อสม. ผู้ดูแล - ญาติผู้ป่วย - องค์กรปกครองส่วนท้องถิ่น"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
-              fontSize="18"
+              fontSize="16"
               transform="translate(20 1437)"
             >
               <tspan x="0" y="20">
@@ -231,7 +231,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="การดูแลผู้ป่วยระยะกลาง ในชุมชน : ความท้าทาย และภาพสำเร็จในอนาคต"
               fontFamily="IBMPlexSansThai,sans-serif"
-              fontSize="25"
+              fontSize="24"
               fontWeight="600"
               transform="translate(20.35 2466.5)"
             >
@@ -249,7 +249,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="- นำเสนอรูปแบบการดูแลผู้ป่วย ระยะกลาง ความท้าทายและภาพสำเร็จในอนาคต พร้อมทั้งทำความเข้าใจปัญหา อุปสรรคของรูปแบบจากพื้นที่ต่างๆ เพื่อให้เห็นข้อดี ข้อเสีย และแนวทางการปฏิบัติงานซึ่งอาจสามารถทำให้ผู้เข้าร่วมนำไปปรับใช้ได้ - ระดมความคิดเห็นในหัวข้อ “IMC และ L"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
-              fontSize="18"
+              fontSize="16"
               transform="translate(20 2672)"
             >
               <tspan x="0" y="20">
@@ -296,7 +296,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="ผู้มีประสบการณ์ดูแลผู้ป่วยระยะกลางในชุมชน คละเขตพื้นที่สุขภาพ และมีรูปแบบการดูแลผู้ป่วยระยะกลางต่างกัน"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
-              fontSize="18"
+              fontSize="16"
               transform="translate(20 3151)"
             >
               <tspan x="0" y="20">
@@ -386,7 +386,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="การดูแลผู้สูงอายุที่เป็น ผู้ป่วยระยะกลางในชุมชน : ระบบเบิกจ่ายและกำลังคน เพื่อส่งเสริมการดูแลผู้ป่วยระยะกลาง"
               fontFamily="IBMPlexSansThai,sans-serif"
-              fontSize="25"
+              fontSize="24"
               fontWeight="600"
               transform="translate(20 3886.5)"
             >
@@ -410,7 +410,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="- นำเสนอแผนภาพเพื่อแสดงโครงสร้างการดูแลผู้ป่วยระยะกลางจาก โรงพยาบาลศูนย์จนถึงบ้าน เพื่อทำความเข้าใจตรงกัน และแลกเปลี่ยนความ คิดเห็นต่อผู้เข้าร่วมกิจกรรม - แลกเปลี่ยนความคิดเห็นเรื่องระบบเบิกจ่าย และกำลังคน เพื่อส่งเสริมการฟื้นฟูผู้ป่วยระยะกลางในโรงพยาบาลชุ"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
-              fontSize="18"
+              fontSize="16"
               transform="translate(20 4183)"
             >
               <tspan x="0" y="20">
@@ -451,7 +451,7 @@ const TimelineMobile = () => {
               fill="#191919"
               data-name="หน่วยงานที่มีส่วนเกี่ยวข้องกับการกำหนดนโยบายทางการเงินและ กำลังคนของระบบสาธารณสุข แพทย์ผู้เชี่ยวชาญด้านการดูแลผู้ป่วยระยะกลาง และนักกายภาพจากโรงพยาบาลชุมชน"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
-              fontSize="18"
+              fontSize="16"
               transform="translate(20 4634)"
             >
               <tspan x="0" y="20">

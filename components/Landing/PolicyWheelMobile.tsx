@@ -46,7 +46,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
               data-name="imc-icon"
               d="M516.647 12.912c0-1.266-1.371-2.4-3.549-3.187 1.544-.451 2.484-1.05 2.484-1.707 0-.966-2.032-1.806-5.025-2.236.5-.244.8-.53.8-.838 0-.882-2.4-1.6-5.352-1.6s-5.352.715-5.352 1.6c0 .307.291.594.8.838-2.993.43-5.025 1.27-5.025 2.236 0 .657.941 1.256 2.484 1.707-2.178.783-3.549 1.92-3.549 3.187s1.393 2.422 3.6 3.206c-1.575.453-2.538 1.058-2.538 1.723 0 .966 2.032 1.806 5.025 2.236-.5.244-.8.53-.8.838 0 .882 2.4 1.6 5.352 1.6s5.352-.715 5.352-1.6c0-.307-.291-.594-.8-.838 2.993-.43 5.025-1.27 5.025-2.236 0-.665-.962-1.27-2.538-1.723 2.213-.784 3.606-1.93 3.606-3.206z"
               transform="translate(-200.001 6605.071)"
-              className={`${selectedProject.icon === 'imc' ? 'fill-[#CECECE]' : 'cls-4'}`}
+              className={`${selectedProject.icon === 'imc' ? 'fill-[#6badcb]' : 'cls-4'}`}
             />
           </g>
         </g>
@@ -86,7 +86,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             data-name="ltc-icon"
             d="M21.26 7.26a5 5 0 0 0-3.91 2.3 5 5 0 0 0-3.92-2.3c-3.41 0-6.16 4.51-6.16 10.09S10 27.43 13.43 27.43a5 5 0 0 0 3.92-2.3 5 5 0 0 0 3.91 2.3c3.41 0 6.16-4.51 6.16-10.08S24.67 7.26 21.26 7.26z"
             transform="translate(309 6718)"
-            className={`${selectedProject.icon === 'ltc' ? 'fill-[#CECECE]' : 'cls-4'}`}
+            className={`${selectedProject.icon === 'ltc' ? 'fill-[#cc79a7]' : 'cls-4'}`}
           />
         </g>
         <g id="Group_695" data-name="gm" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[5])}>
@@ -99,7 +99,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
             data-name="gm-icon"
             d="M861.915 30.326h-17.871a2.393 2.393 0 01-.757-4.663l3.881-1.294h-3.124a2.393 2.393 0 01-.757-4.663l3.881-1.294h-3.124a2.393 2.393 0 010-4.786h17.871a2.393 2.393 0 01.757 4.663l-3.881 1.294h3.124a2.393 2.393 0 01.757 4.663l-3.881 1.294h3.124a2.393 2.393 0 010 4.786z"
             transform="translate(-788.981 6713.606)"
-            className={`${selectedProject.icon === 'gm' ? 'fill-[#CECECE]' : 'cls-4'}`}
+            className={`${selectedProject.icon === 'gm' ? 'fill-[#36723b]' : 'cls-4'}`}
           />
         </g>
         <g id="Group_694" data-name="dt" transform="translate(-21 -6135)" onClick={() => setSelectedProject(projects[4])}>
@@ -110,7 +110,7 @@ const PolicyWheelMobile = (props: Props): JSX.Element => {
           <path
             id="Path_175"
             data-name="dmt-icon"
-            className={`${selectedProject.icon === 'dmt' ? 'fill-[#CECECE]' : 'cls-4'}`}
+            className={`${selectedProject.icon === 'dmt' ? 'fill-[#707070]' : 'cls-4'}`}
             d="M26.38 17.35A3.47 3.47 0 0 0 23.73 11a3.46 3.46 0 0 0-6.38-2.65A3.47 3.47 0 0 0 11 11a3.47 3.47 0 0 0-2.65 6.39A3.46 3.46 0 0 0 11 23.73a3.47 3.47 0 0 0 6.39 2.65 3.46 3.46 0 0 0 6.38-2.65 3.46 3.46 0 0 0 2.65-6.38z"
             transform="translate(119 6804)"
           />

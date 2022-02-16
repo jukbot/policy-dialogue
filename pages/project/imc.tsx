@@ -122,14 +122,12 @@ const ImcPage = () => {
                   !
                 </tspan>
               </text>
-            </svg>
-            <a href="https://www.prachachat.net/property/news-596824" className="hover:text-neutral-900" target="_blank" rel="noopener noreferrer">
-              <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-3xl">
-                การฟื้นฟูสมรรภภาพร่างกายผู้ป่วยภายใน 6 เดือนทองหลังพ้นระยะวิกฤต นับเป็นความสำคัญอย่างยิ่ง
-                เนื่องจากเป็นช่วงเวลาที่ร่างกายของของผู้ป่วยยังสามารถฟื้นตัวกลับมาเป็นปกติได้ โดยเฉพาะใน 3 โรคสำคัญ ได้แก่ โรคหลอดเลือดสมอง สมองบาดเจ็บ
-                และกระดูกสันหลังบาดเจ็บ
-              </p>
-            </a>
+            </svg>{' '}
+            <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-3xl">
+              การฟื้นฟูสมรรภภาพร่างกายผู้ป่วยภายใน 6 เดือนทองหลังพ้นระยะวิกฤต นับเป็นความสำคัญอย่างยิ่ง
+              เนื่องจากเป็นช่วงเวลาที่ร่างกายของของผู้ป่วยยังสามารถฟื้นตัวกลับมาเป็นปกติได้ โดยเฉพาะใน 3 โรคสำคัญ ได้แก่ โรคหลอดเลือดสมอง สมองบาดเจ็บ
+              และกระดูกสันหลังบาดเจ็บ
+            </p>
           </div>
         </section>
 
@@ -137,7 +135,7 @@ const ImcPage = () => {
           <div className="absolute left-0 flex justify-center w-full -top-40">
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
-          <div className="flex flex-col items-center justify-center pt-40 space-y-6 text-white">
+          <div className="flex flex-col items-center justify-center pt-28 space-y-6 text-white">
             <div className="flex flex-col items-center space-y-2">
               <p className="text-xl font-bold">จำนวนผู้ป่วยใน ที่ป่วยด้วยโรคหลอดเลือดสมองในประเทศไทย (คน)*</p>
               <Image src={Chart} width={350} alt="elderly home" />
@@ -231,7 +229,7 @@ const ImcPage = () => {
             </div>
             <div className="grid w-full grid-cols-1 gap-12 px-6 mt-12 text-white md:grid-cols-4 md:px-24">
               <div className="flex flex-col col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
+                <h3 className="text-xl font-bold h-full">ข้อเสนอ 1</h3>
                 <p className="font-body">
                   การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุขของสำนักงานหลักประกันสุขภาพแห่งชาติ เพื่อส่งเสริมการดูแลระยะกลางอย่างเข้มข้น ในระดับโรงพยาบาลชุมชน
                   <br />
@@ -240,12 +238,12 @@ const ImcPage = () => {
                 </p>
                 <Link href="/archive#policy-recommendations">
                   <a
-                    className="text-[#6badcb] text-sm inline-flex btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
+                    className="text-[#6badcb] text-sm mt-auto inline-flex px-4 btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
                     target="_self"
                     title="ข้อเสนอแนะเชิงนโยบาย"
                     rel="noopener noreferrer"
                   >
-                    <ArrowRightIcon className="w-5 h-5 mr-1 fill-current" />
+                    <ArrowRightIcon className="w-4 h-4 mr-1 fill-current" />
                     <span>ข้อเสนอแนะเชิงนโยบาย</span>
                   </a>
                 </Link>
@@ -262,10 +260,10 @@ const ImcPage = () => {
               </div>
               <div className="flex flex-col col-span-1 space-y-4">
                 <h3 className="text-xl font-bold">ข้อเสนอ 4</h3>
-                <p className="font-body">เพิ่มความรู้ความเข้าใจ ต่อเรื่องการดูแลผู้ป่วย ระยะกลางแก่ทั้งประชาชนและหน่วยงานที่เกี่ยวข้อง</p>
+                <p className="font-body h-full">เพิ่มความรู้ความเข้าใจ ต่อเรื่องการดูแลผู้ป่วย ระยะกลางแก่ทั้งประชาชนและหน่วยงานที่เกี่ยวข้อง</p>
                 <Link href="/archive#thematic-briefs">
                   <a
-                    className="text-[#6badcb] text-sm inline-flex btn mx-auto bg-white hover:text-white hover:bg-[#191919] rounded-full"
+                    className="text-[#6badcb] text-sm inline-flex btn mt-auto mx-auto bg-white hover:text-white hover:bg-[#191919] rounded-full"
                     target="_self"
                     title="ดาวน์โหลดข้อสรุป"
                     rel="noopener noreferrer"

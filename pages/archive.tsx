@@ -84,7 +84,7 @@ const ArchivePage = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
+              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#6badcb] h-48 text-white">
                 <div className="flex space-x-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 45">
                     <path
@@ -102,11 +102,22 @@ const ArchivePage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็วๆ นี้</p>
+                <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
+                  <a
+                    className="btn-white"
+                    href="javascript:void(0)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/IMC.pdf')}
+                  >
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ข้อสรุป</span>
+                  </a>
                 </div>
               </div>
-              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
+              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#707070] h-48 text-white">
                 <div className="flex space-x-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 50">
                     <path
@@ -121,11 +132,22 @@ const ArchivePage = () => {
                     <p className="font-body">ระบบบริการสำหรับผู้ป่วยโรคสมองเสื่อม</p>
                   </div>
                 </div>
-                <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็วๆ นี้</p>
+                <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
+                  <a
+                    className="btn-white"
+                    href="javascript:void(0)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/DMT.pdf')}
+                  >
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ข้อสรุป</span>
+                  </a>
                 </div>
               </div>
-              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
+              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#cc79a7] h-48 text-white">
                 <div className="flex space-x-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 47.812 45">
                     <path
@@ -139,8 +161,19 @@ const ArchivePage = () => {
                     <p className="font-body">ระบบการดูแลระยะยาวสำหรับผู้สูงอายุ ที่มีภาวะพึ่งพิง</p>
                   </div>
                 </div>
-                <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็วๆ นี้</p>
+                <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
+                  <a
+                    className="btn-white"
+                    href="javascript:void(0)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/LTC.pdf')}
+                  >
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ข้อสรุป</span>
+                  </a>
                 </div>
               </div>
               <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#3f36b7] h-48 text-white">
@@ -201,7 +234,7 @@ const ArchivePage = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#a8a8a8] h-48 text-white">
+              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#36723b] h-48 text-white">
                 <div className="flex space-x-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 36.853">
                     <path
@@ -215,8 +248,19 @@ const ArchivePage = () => {
                     <p className="font-body">กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ</p>
                   </div>
                 </div>
-                <div className="flex items-center justify-center mt-auto text-sm font-body">
-                  <p>เร็วๆ นี้</p>
+                <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
+                  <a
+                    className="btn-white"
+                    href="javascript:void(0)"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    title="ดาวน์โหลดเอกสาร"
+                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/GM.pdf')}
+                  >
+                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
+                    <span>ข้อสรุป</span>
+                  </a>
                 </div>
               </div>
             </div>
