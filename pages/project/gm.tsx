@@ -6,7 +6,6 @@ import TimelineSummary from '@/components/Project/GM/TimelineSummary'
 import Meta from '@/data/meta.json'
 import policies from '@/data/policies.json'
 import projects from '@/data/projects.json'
-import { DownloadIcon, ArrowRightIcon } from '@heroicons/react/solid'
 import { Policy, Project } from '@types'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -60,13 +59,9 @@ const GmPage = () => {
         <section className="relative h-full bg-[#EAF1EB] pb-6 md:pb-0">
           <section className="left-0 w-full h-full space-y-12 xl:absolute -top-24">
             <div className="relative flex flex-col max-w-6xl px-6 py-12 mx-auto space-y-6 md:items-center md:px-12 md:py-16 md:space-x-8 bg-secondary">
-              <h2 className="relative max-w-2xl text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
-                ปัจจุบัน ประเทศไทยยังไม่ได้มุ่งเน้น
-                <br /> พัฒนาระบบการดูแลผู้ป่วยระยะกลาง
-                <br /> ที่มีประสิทธิภาพและเข้าถึงได้
-              </h2>
-              <p className="relative flex leading-relaxed text-white opacity-75 max-w-prose md:justify-center md:text-center font-body">
-                ส่งผลให้ผู้ป่วยบางส่วนไม่ได้รับการฟื้นฟู หากได้รับก็ไม่เข้มข้นเพียงพอ หลุดหายออกไปจากระบบบริการสุขภาพก่อนหายดี ทำให้มีโอกาสเป็นผู้มีภาวะพึ่งพิง
+              <p className="relative max-w-2xl text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
+                ภายใต้การเปลี่ยนแปลงโครงสร้างประชากร เข้าสู่สังคมสูงวัย นโยบายสาธารณะเป็นเครื่องมือสำคัญ ในการวางแผนและกำหนดทิศทางของภาคส่วนต่างๆ
+                เพื่อตอบสนองกับความต้องการที่เปลี่ยนแปลง
               </p>
             </div>
           </section>
@@ -76,25 +71,23 @@ const GmPage = () => {
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                จะดีแค่ไหน หากประเทศไทยมีระบบ การดูแลผู้ป่วยระยะกลาง ที่มุ่งเน้นไปที่ การฟื้นฟูสมรรถภาพผู้ป่วยได้เพียงพอ และต่อเนื่อง
-              </h3>
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">จะดีกว่าไหม</h3>
               <p className="max-w-sm leading-relaxed font-body">
-                ผู้ป่วยได้รับการกายภาพบำบัดครบชั่วโมงอย่างเข้มข้น (Intensive rehabilitation) และใกล้ชิดทีมสหวิชาชีพ โดยไม่ต้องยากลำบากกับการเดินทาง
-                โดยเฉพาะในเขตพื้นที่ ชนบทห่างไกล
+                หากประเทศไทยมีกลไกการติดตาม ทบทวน และพัฒนานโยบาย เพื่อรองรับสังคมสูงวัยให้ดีขึ้นอย่างต่อเนื่อง
               </p>
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                หากฟื้นฟูได้ทันท่วงที ผู้ป่วยมีโอกาส หายดี
-                <br /> และใช้ชีวิตได้อย่างอิสระ
-              </h3>
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">มองปัญหาในเชิงระบบ ร่วมมือกัน จากหลายภาคส่วน</h3>
               <p className="max-w-xl leading-relaxed font-body">
-                สามารถกลับมาประกอบอาชีพ เป็นกำลังสำคัญในการพัฒนาเศรษฐกิจ ผู้ป่วยและครอบครัวเองไม่เสียโอกาสในชีวิตนานเกินไป
+                ไม่ได้มุ่งขับเคลื่อนผ่านกระทรวงใดกระทรวงหนึ่ง แต่ยังร่วมหารือกับภาคการเมือง ซึ่งมีบทบาทในการกำหนดนโยบายและทำหน้าที่ในสภาผู้แทนราษฎร
               </p>
+
+              <span className="max-w-xl text-xs font-body">
+                ภาพการประชุมสภาผู้แทนราษฎร ณ อาคารรัฐสภา ถนนอู่ทองใน 20 สิงหาคม 2552 โดย พีรพัฒน์ วิมลรังครัตน์
+              </span>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result2} layout="responsive" priority height="640" width="1024" alt="expect-ressult-2" />
@@ -107,8 +100,15 @@ const GmPage = () => {
             </div>
             <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                ช่วยลดอัตราผู้มีภาวะพึ่งพิง ซึ่งอาจลดค่าใช้จ่ายด้านการบริการดูแลระยะยาวในอนาคต ของประเทศและตัวผู้ป่วยเองได้อย่างมหาศาล
+                เกิดการออกแบบติดตามนโยบาย
+                <br /> ที่ประชาชนเป็นศูนย์กลาง
               </h3>
+              <p className="max-w-xl leading-relaxed font-body">
+                เพื่อให้มีนโยบายที่สนับสนุนให้เกิดบริการ และสภาพแวดล้อมที่ดีสำหรับผู้สูงอายุ
+                <br />
+                <br />
+                ช่วยเอื้อให้ผู้สูงอายุพึ่งพาตัวเองได้มากที่สุด ลดภาวะพึ่งพิงโดยไม่จำเป็น{' '}
+              </p>
             </div>
           </div>
         </section>
@@ -123,9 +123,7 @@ const GmPage = () => {
               </text>
             </svg>{' '}
             <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-3xl">
-              การฟื้นฟูสมรรภภาพร่างกายผู้ป่วยภายใน 6 เดือนทองหลังพ้นระยะวิกฤต นับเป็นความสำคัญอย่างยิ่ง
-              เนื่องจากเป็นช่วงเวลาที่ร่างกายของของผู้ป่วยยังสามารถฟื้นตัวกลับมาเป็นปกติได้ โดยเฉพาะใน 3 โรคสำคัญ ได้แก่ โรคหลอดเลือดสมอง สมองบาดเจ็บ
-              และกระดูกสันหลังบาดเจ็บ
+              แต่ปัจจุบัน การขับเคลื่อนนโยบายเพื่อรองรับสังคมสูงวัยของไทยยังไม่ชัดเจน และขาดการมีส่วนร่วมของภาคประชาชน
             </p>
           </div>
         </section>
@@ -146,35 +144,26 @@ const GmPage = () => {
             <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายหลายประการ
               <br />
-              เพื่อให้เกิดระบบการบริการที่ตอบโจทย์
+              ที่จะเอื้อให้เกิดภาพสำเร็จดังกล่าว
             </h2>
             <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  โรงพยาบาลศูนย์แออัดเกินไป ส่วนโรงพยาบาลชุมชนยังไม่สามารถ ให้บริการฟื้นฟูอย่างเข้มข้นได้ อย่างเต็มที่ ยังเน้นไปที่การรักษา แบบผู้ป่วยนอก (OPD)
-                  ซึ่งเป็นรูปแบบบริการที่ผู้ป่วยเสี่ยงจะหลุดออก จากระบบ จากการแบกรับค่าใช้จ่ายและการเดินทางที่ยากลำบาก
+                  ขาดทิศทางของนโยบาย ที่ชัดเจนเพื่อการบูรณาการและทำงานร่วมกัน ภายใต้กระทรวงเดียวกัน หรือต่างกระทรวงอย่างมีประสิทธิภาพ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} priority />
-                <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบการเบิกจ่ายสำหรับโรงพยาบาลชุมชน ที่ไม่เหมาะกับรูปแบบการบริการในการดูแลผู้ป่วยระยะกลาง
-                  ส่งผลต่อจำนวนวันนอนและการรักษาที่ไม่เข้มข้นและต่อเนื่องพอ
-                </p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">ความซ้ำซ้อนในการกำหนดและนำนโยบายไปปฏิบัติใช้</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} priority />
-                <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ขาดแคลนบุคลากรสหวิชาชีพในระบบ เช่น นักกายภาพบำบัด นักกิจกรรมบำบัด เป็นต้น ซึ่งส่วนใหญ่อยู่ใน ภาคเอกชน ทำให้ผู้ป่วยบางกลุ่ม เข้าถึงบริการได้ยาก
-                  เนื่องจากไม่มี กำลังทรัพย์มากพอ
-                </p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">งบประมาณจำกัด และขาดการสนับสนุน การพัฒนาทักษะ และประเมินคุณภาพ ของบริการอย่างเป็นระบบ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} priority />
-                <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบการส่งต่อข้อมูลและส่งต่อผู้ป่วย ที่ยังไม่ไร้รอยต่อ (seamless) อย่างแท้จริง ส่งผลให้ข้อมูลและ ตัวผู้ป่วยตกหล่นจากระบบ
-                </p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">ขาดองค์ประกอบและ มุมมองจากสื่อรวมถึง ภาคประชาสังคม</p>
               </div>
             </div>
           </div>
@@ -186,7 +175,7 @@ const GmPage = () => {
                 <h3 className="text-3xl font-bold">โจทย์สำคัญ</h3>
                 <p className="leading-relaxed text-center md:max-w-sm md:text-left font-body">
                   คือการหาคำตอบว่า กลไกดังกล่าวควรมีหน้าตาอย่างไร จะเกิดขึ้นได้อย่างไร
-                  และเป็นไปได้หรือไม่ที่จะสร้างเจตจำนงทางการเมืองในเรื่องการรองรับสังคมสูงวัย{' '}
+                  และเป็นไปได้หรือไม่ที่จะสร้างเจตจำนงทางการเมืองในเรื่องการรองรับสังคมสูงวัย
                 </p>
               </div>
             </div>
@@ -209,52 +198,20 @@ const GmPage = () => {
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-12 text-white md:grid-cols-4 md:px-24">
-              <div className="flex flex-col col-span-1 space-y-4">
-                <h3 className="text-xl font-bold h-full">ข้อเสนอ 1</h3>
-                <p className="font-body">
-                  การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุขของสำนักงานหลักประกันสุขภาพแห่งชาติ เพื่อส่งเสริมการดูแลระยะกลางอย่างเข้มข้น ในระดับโรงพยาบาลชุมชน
-                  <br />
-                  <br />
-                  ดูข้อเสนอฉบับเต็ม
-                </p>
-                <Link href="/archive#policy-recommendations">
-                  <a
-                    className="text-[#36723b] text-sm mt-auto inline-flex px-4 btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
-                    target="_self"
-                    title="ข้อเสนอแนะเชิงนโยบาย"
-                    rel="noopener noreferrer"
-                  >
-                    <ArrowRightIcon className="w-4 h-4 mr-1 fill-current" />
-                    <span>ข้อเสนอแนะเชิงนโยบาย</span>
-                  </a>
-                </Link>
-              </div>
-              <div className="flex flex-col col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 2</h3>
-                <p className="font-body">
-                  ควรเน้นการให้บริการฟื้นฟูแบบผู้ป่วยใน (IMC ward) และการให้บริการฟื้นฟูที่บ้าน เพื่อการดูแลที่มีประสิทธิภาพ ส่งผลดีต่อคนไข้ที่สุด
-                </p>
-              </div>
-              <div className="flex flex-col col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 3</h3>
-                <p className="font-body">สมควรมีการปรับระบบส่งต่อผู้ป่วย ข้อมูล และกำลังคน ควบคู่ไปกับการปรับด้าน งบประมาณ</p>
-              </div>
-              <div className="flex flex-col col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 4</h3>
-                <p className="font-body h-full">เพิ่มความรู้ความเข้าใจ ต่อเรื่องการดูแลผู้ป่วย ระยะกลางแก่ทั้งประชาชนและหน่วยงานที่เกี่ยวข้อง</p>
-                <Link href="/archive#thematic-briefs">
-                  <a
-                    className="text-[#36723b] text-sm inline-flex btn mt-auto mx-auto bg-white hover:text-white hover:bg-[#191919] rounded-full"
-                    target="_self"
-                    title="ดาวน์โหลดข้อสรุป"
-                    rel="noopener noreferrer"
-                  >
-                    <DownloadIcon className="w-5 h-5 mr-1 fill-current" />
-                    <span>ดาวน์โหลดข้อสรุป</span>
-                  </a>
-                </Link>
-              </div>
+            <div className="flex items-center flex-col px-6 mt-12 text-white space-y-12">
+              <p className="max-w-xl text-center">
+                การออกแบบโครงสร้างบุคลากรและการทำงานของ คณะกรรมการผู้สูงอายุแห่งชาติ โดยยึดหลักประชาชนเป็นศูนย์กลาง ผ่านการมีส่วนร่วมของภาคประชาสังคม
+              </p>
+              <Link href="/archive#policy-recommendations">
+                <a
+                  className="text-[#36723b] text-sm inline-flex btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
+                  target="_self"
+                  title="ข้อเสนอแนะเชิงนโยบาย"
+                  rel="noopener noreferrer"
+                >
+                  <span>ข้อเสนอแนะเชิงนโยบาย</span>
+                </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -277,35 +234,33 @@ const GmPage = () => {
               <div className="h-full col-span-1 px-6 lg:px-12">
                 <ul className="space-y-12">
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">ผู้เข้าร่วมมีความเห็นร่วมค่อนข้างตรงกันในประเด็นช่องว่างของระบบ </h3>
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมสะท้อนว่าวงหารือมีความ เป็นกันเอง ช่วยเปิดมุมมองที่แตกต่าง และสร้างการมีส่วนร่วม</h3>
                     <p className="font-body">
-                      ในเรื่องข้อจำกัดและอุปสรรคการทำงาน โดยเฉพาะประเด็นการบูรณาการข้อมูล การขาดแคลน นักกายภาพบำบัด
-                      และความต้องการในการปรับระบบการเบิกจ่ายในโรงพยาบาล แม้ว่าจะมีรูปแบบการดูแล ผู้ป่วยที่ต่างกัน นั่นก็เพราะต้องปรับให้เหมาะสมกับ
-                      สภาพแวดล้อมและทรัพยากรที่เอื้อในพื้นที่
+                      พูดคุยกันง่ายขึ้น กว้างขึ้น แม้ว่าจะเคยร่วมงานกันมาก่อน เห็นความสำคัญในหัวข้อนี้และอยากมีส่วนร่วมต่อ
+                      อยากแลกเปลี่ยนประสบการณ์ให้ผู้ที่เกี่ยวข้องท่านอื่นๆ ได้รับรู้เช่นกัน
                     </p>
                   </li>
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
+                    <h3 className="text-xl font-bold">ผู้เข้าร่วมเห็นจุดร่วมและข้อสรุปที่ตรงกัน เห็นว่าควรมีกลไกติดตามเชิงนโยบาย</h3>
                     <p className="font-body">
-                      ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
-                      ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
+                      และไม่เห็นด้วยกับแนวทางการจัดตั้งองค์กร หรือกลไกใหม่ เนื่องจากจะยิ่งทำให้ซับซ้อนยิ่งขึ้น แต่ควรใช้ประโยชน์จากกลไกที่มีอยู่เดิม เช่น
+                      “คณะอนุกรรมการขับเคลื่อนนโยบายเตรียมความพร้อมรองรับสังคมสูงวัย” ภายใต้คณะกรรมการผู้สูงอายุ แห่งชาติ (กผส.)
+                      และพิจารณาปรับการทำงานภายใต้กลไกเดิมแทน
+                      <br />
+                      <br />
+                      มีความเห็นร่วมกันในหลายประเด็น อาทิ การทำให้บทบาทและผลงานของ กผส. เป็นที่รับรู้มากขึ้น ให้สังคมช่วยกันติดตามผลจากนโยบาย เป็นต้น
                     </p>
                   </li>
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">
-                      ผู้เข้าร่วมระดับปฏิบัติงานได้รับประโยชน์ ได้เห็นความพยายาม และความตั้งใจของหน่วยงานต่างๆ ทำให้มีความหวังต่อการพัฒนาระบบ
-                    </h3>
+                    <h3 className="text-xl font-bold">เกิดการปฏิบัติจริงทันที</h3>
                     <p className="font-body">
-                      ได้นำข้อเสนอแนะต่างๆ มาเติมเต็มในพื้นที่ของตนเอง เห็นความสำคัญของผู้ป่วย และบุคคลที่เกี่ยวข้อง
-                      ทราบความต้องการของผู้ป่วยจากญาติผู้ดูแลผู้ป่วยจริง สามารถนำไปต่อยอดให้ตอบสนองได้จริง เห็นคุณค่า ในวิชาชีพของตนเอง และเติมพลังใจ รวมไปถึง
-                      ได้แลกเปลี่ยนประสบการณ์กับพื้นที่อื่นๆ อีกด้วย
-                    </p>
-                  </li>
-                  <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">หน่วยงานของภาครัฐและบุคคลที่เกี่ยวข้องรวมทั้งญาติผู้ดูแล ได้รับฟังกันและกันโดยตรง </h3>
-                    <p className="font-body">
-                      ได้ร่วมกันหารือจากหลายฝ่าย ทั้งแพทย์ นักวิชาการ นักกายภาพบำบัด และหน่วยงานที่เกี่ยวข้อง เป็นต้น
-                      ทำให้เห็นหนทางการผลักดันประเด็นเหล่านี้ต่อไป
+                      ส.ส. ที่มาร่วมในวงหารือนโยบายฯ ได้แจ้งในวงหารือว่า จะเสนอต่อสภาผู้แทนราษฎรให้มีการพิจารณาตั้ง
+                      คณะกรรมาธิการวิสามัญเพื่อพิจารณาศึกษาและติดตามการขับเคลื่อนนโยบายเพื่อรองรับสังคมสูงวัย
+                      และได้ยื่นญัตติเพื่อเสนอตั้งคณะกรรมาธิการวิสามัญดังกล่าวแล้ว
+                      <br />
+                      <br />
+                      กรมกิจการผู้สูงอายุ พม. ได้เพิ่มรายชื่อคณะ อนุกรรมการฯ ในเว็บไซต์เพื่อให้เข้าถึงข้อมูลได้อย่าง เปิดเผยขึ้น
+                      โดยที่ก่อนหน้านี้ไม่มีข้อมูลอยู่และเป็นประเด็นหารือว่าควรมีการเปิดเผยกับสาธารณะ
                     </p>
                   </li>
                 </ul>

@@ -12,7 +12,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="บทบาทของท้องถิ่นในการพัฒนาระบบการดูแลระยะยาว"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(1029.001 1485.999)"
           >
@@ -137,7 +137,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="ระบบหลักประกันการดูแลระยะยาว"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(35.001 550.5)"
           >
@@ -260,7 +260,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="บทบาทของท้องถิ่นในการพัฒนาระบบการดูแลผู้สูงอายุระยะยาว"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(1029.001 600.5)"
           >
@@ -366,7 +366,7 @@ const Timeline = () => {
             <path d="M869.934 9923.074a4 4 0 010 7.851l-139.166 27.225a4 4 0 01-4.768-3.925v-54.451a4 4 0 014.768-3.926z" data-name="Polygon 59"></path>
           </g>
           <path fill="#707070" d="M509 1786H35v-1h474z" data-name="Rectangle 1017"></path>
-          <text fill="#191919" fontFamily="IBMPlexSansThai,sans-serif" fontSize="25" fontWeight="600" transform="translate(35.001 1478.5)">
+          <text fill="#191919" fontFamily="IBMPlexSansThai,sans-serif" fontSize="24" fontWeight="600" transform="translate(35.001 1478.5)">
             <tspan x="0" y="28">
               ระบบหลักประกันการดูแลระยะยาว
             </tspan>
@@ -487,7 +487,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="ระบบหลักประกันการดูแลระยะยาว"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(35.001 2382.5)"
           >
@@ -600,7 +600,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="บทบาทของท้องถิ่นในการพัฒนาระบบการดูแลระยะยาว"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(1029.001 2449.39)"
           >

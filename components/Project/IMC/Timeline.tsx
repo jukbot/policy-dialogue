@@ -34,7 +34,7 @@ const Timeline = () => {
                   Feb
                 </tspan>
               </text>
-              <text data-name="11" fontSize="25" transform="translate(960 8861)">
+              <text data-name="11" fontSize="24" transform="translate(960 8861)">
                 <tspan x="-15.625" y="0">
                   11
                 </tspan>
@@ -127,7 +127,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="การดูแลผู้ป่วยระยะกลางในชุมชน : ความท้าทายและภาพสำเร็จในอนาคต"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(1029.001 705.5)"
           >
@@ -237,7 +237,7 @@ const Timeline = () => {
             <path d="M529 896H15a15 15 0 01-15-15V68a15 15 0 0115-15h514a15 15 0 0115 15v813a15 15 0 01-15 15z" data-name="Path 1043"></path>
             <path d="M678.934 583.158a4 4 0 010 7.851l-139.166 27.225a4 4 0 01-4.768-3.925v-54.451a4 4 0 014.768-3.926z" data-name="Polygon 47"></path>
           </g>
-          <text fill="#191919" fontFamily="IBMPlexSansThai,sans-serif" fontSize="25" fontWeight="600" transform="translate(35.001 174.5)">
+          <text fill="#191919" fontFamily="IBMPlexSansThai,sans-serif" fontSize="24" fontWeight="600" transform="translate(35.001 174.5)">
             <tspan x="0" y="28">
               การดูแลผู้ป่วยระยะกลางในชุมชน
             </tspan>
@@ -353,7 +353,7 @@ const Timeline = () => {
             fill="#191919"
             data-name="การดูแลผู้สูงอายุที่เป็นผู้ป่วยระยะกลาง ในชุมชน : ระบบเบิกจ่ายและกำลังคน เพื่อส่งเสริมการดูแลผู้ป่วยระยะกลาง"
             fontFamily="IBMPlexSansThai,sans-serif"
-            fontSize="25"
+            fontSize="24"
             fontWeight="600"
             transform="translate(35.001 1068.5)"
           >
