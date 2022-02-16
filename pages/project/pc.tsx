@@ -64,7 +64,7 @@ const PcPage = () => {
                 <br />
                 ในประเทศไทย วางอยู่บนฐานของการ
                 <br />
-                ‘ยื้อความตาย’ เป็นหลัก
+                &lquote;ยื้อความตาย&rquote; เป็นหลัก
               </h2>
               <p className="relative flex max-w-2xl leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
                 ส่งผลให้ผู้ป่วยต้องรับการรักษาในโรงพยาบาลที่แออัด ประกอบกับ &apos;อัตราการครองเตียง&apos; ในโรงพยาบาลที่สูงขึ้นจาก &apos;อัตราการเจ็บป่วย&apos;

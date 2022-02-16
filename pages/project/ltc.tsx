@@ -307,7 +307,7 @@ const LtcPage = () => {
                   </ul>
                   <Link href="/archive#thematic-briefs">
                     <a
-                      className="text-[#8f8ac7] inline-flex bg-white hover:text-white hover:bg-[##8f8ac7] btn rounded-full"
+                      className="text-[#8f8ac7] inline-flex bg-white hover:text-white hover:bg-[#8f8ac7] btn rounded-full"
                       target="_self"
                       title="ดาวน์โหลดข้อสรุป"
                       rel="noopener noreferrer"

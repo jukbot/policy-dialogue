@@ -1,8 +1,8 @@
 import Header from '@/components/Layout/Header'
-import Timeline from '@/components/Project/PC/Timeline'
-import TimelineHeader from '@/components/Project/PC/TimelineHeader'
-import TimelineMobile from '@/components/Project/PC/TimelineMobile'
-import TimelineSummary from '@/components/Project/PC/TimelineSummary'
+import Timeline from '@/components/Project/DMT/Timeline'
+import TimelineHeader from '@/components/Project/DMT/TimelineHeader'
+import TimelineMobile from '@/components/Project/DMT/TimelineMobile'
+import TimelineSummary from '@/components/Project/DMT/TimelineSummary'
 import Meta from '@/data/meta.json'
 import policies from '@/data/policies.json'
 import projects from '@/data/projects.json'
@@ -12,107 +12,106 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import FacebookBanner from '/public/image/aip/facebook.jpg'
-import Chart from '/public/image/pc/chart.svg'
-import Circle from '/public/image/pc/circle.webp'
-import HeroImage from '/public/image/pc/hero-image.webp'
-import Icon1 from '/public/image/pc/icon-1.svg'
-import Icon2 from '/public/image/pc/icon-2.svg'
-import Icon3 from '/public/image/pc/icon-3.svg'
-import Icon4 from '/public/image/pc/icon-4.svg'
-import ProcessResult from '/public/image/pc/process-result.webp'
-import Result1 from '/public/image/pc/testimonial-1.webp'
-import Result2 from '/public/image/pc/testimonial-2.webp'
-import Result3 from '/public/image/pc/testimonial-3.webp'
+import Chart from '/public/image/dmt/chart.svg'
+import Circle from '/public/image/dmt/circle.webp'
+import HeroImage from '/public/image/dmt/hero-image.webp'
+import Icon1 from '/public/image/dmt/icon-1.svg'
+import Icon2 from '/public/image/dmt/icon-2.svg'
+import Icon3 from '/public/image/dmt/icon-3.svg'
+import Icon4 from '/public/image/dmt/icon-4.svg'
+import ProcessResult from '/public/image/dmt/process-result.webp'
+import Result1 from '/public/image/dmt/testimonial-1.webp'
+import Result2 from '/public/image/dmt/testimonial-2.webp'
+import Result3 from '/public/image/dmt/testimonial-3.webp'
 
 const InterestProjects = dynamic(() => import('@/components/Project/InterestProjects'))
 const RelatedPolicy = dynamic(() => import('@/components/Project/RelatedPolicy'))
 
-const relatedPolicy: Policy[] = [policies[0], policies[1], policies[3]]
-const interestProjects: Project[] = [projects[5], projects[4], projects[0], projects[6]]
+const relatedPolicy: Policy[] = [policies[0], policies[1]]
+const interestProjects: Project[] = [projects[5], projects[2], projects[3], projects[6]]
 
-const PcPage = () => {
+const DmtPage = () => {
   return (
     <>
       <Header
-        title="ระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care)"
-        description="บั้นปลายชีวิตคนไทย อยู่อย่างไรจึงเป็นสุข ?"
+        title="ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม (Dementia)"
+        description="เป็นอยู่อย่างไร ในช่วงวัยที่เราอาจเลอะเลือน"
         image={`${Meta.baseUrl}${FacebookBanner.src}`}
         width={FacebookBanner.width}
         height={FacebookBanner.height}
       />
-      <main className="relative pt-[3.75rem] bg-[#EBEAF8]">
-        <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] transition grid items-center bg-[#3f36b7]">
+      <main className="relative pt-[3.75rem] bg-[#EFEFEF]">
+        <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] grid items-center bg-[#717171]">
           <div className="flex flex-col items-center justify-between w-full h-full lg:mb-6 lg:flex-row">
             <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-white lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
-              <h1 className="max-w-xl text-3xl font-bold lg:text-5xl 2xl:text-6xl">
-                บั้นปลายชีวิตคนไทย
-                <br /> อยู่อย่างไรจึงเป็นสุข ?
-              </h1>
+              <div className="space-y-2 text-3xl font-bold lg:text-4xl 2xl:text-6xl">
+                <h1>เป็นอยู่อย่างไร</h1>
+                <h1>ในช่วงวัยที่เราอาจเลอะเลือน</h1>
+              </div>
               <h2 className="max-w-sm mx-auto text-base leading-snug lg:text-lg sm:text-xl font-body lg:m-0">
-                นโยบายระบบการดูแลผู้ป่วยแบบประคับประคอง (Palliative Care) ที่ต้องชวนคุย
+                ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม (Dementia) นโยบายที่ต้องผลักดัน
               </h2>
             </div>
             <Image src={HeroImage} className="h-full shrink-0" width={800} height={480} priority alt="cover image" />
           </div>
         </section>
 
-        <section className="relative h-full bg-[#EBEAF8] pb-6 md:pb-0">
+        <section className="relative h-full bg-[#EFEFEF] pb-6 md:pb-0">
           <section className="left-0 w-full h-full space-y-12 xl:absolute -top-24">
             <div className="relative flex flex-col max-w-6xl px-6 py-12 mx-auto space-y-6 md:items-center md:px-12 md:py-16 md:space-x-8 bg-secondary">
-              <h2 className="relative text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
-                ปัจจุบัน การดูแลผู้ป่วยแบบประคับประคอง
-                <br />
-                ในประเทศไทย วางอยู่บนฐานของการ
-                <br />
-                ‘ยื้อความตาย’ เป็นหลัก
+              <h2 className="relative max-w-3xl text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
+                สมองเสื่อมเป็นภาวะที่ส่วนใหญ่ ไม่สามารถรักษาให้หายขาด ผู้ป่วยอาจอยู่ในภาวะทุพพลภาพยาวนาน 10-20 ปี
               </h2>
-              <p className="relative flex max-w-2xl leading-relaxed text-white opacity-75 md:justify-center md:text-center font-body">
-                ส่งผลให้ผู้ป่วยต้องรับการรักษาในโรงพยาบาลที่แออัด ประกอบกับ &apos;อัตราการครองเตียง&apos; ในโรงพยาบาลที่สูงขึ้นจาก &apos;อัตราการเจ็บป่วย&apos;
-                ด้วยโรคไม่ติดต่อเรื้อรังที่เพิ่มขึ้นอย่างต่อเนื่อง
+              <p className="relative flex leading-relaxed text-white opacity-75 max-w-prose md:justify-center md:text-center font-body">
+                ภาวะสมองเสื่อมจึงไม่ได้มีผลกระทบต่อผู้ป่วยเท่านั้น แต่ยังส่งผลต่อผู้ดูแลและคนรอบข้างซึ่งมีจำนวนใกล้เคียงกับผู้ป่วย ทั้งด้านร่างกาย จิตใจ
+                เศรษฐกิจ และสังคม
               </p>
             </div>
           </section>
 
           <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
-            <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result1} height="640" width="1024" layout="responsive" priority alt="expect-ressult-1" />
+            <div className="relative col-span-1 px-6 md:px-0 ">
+              <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                จะเป็นอย่างไร
-                <br />
-                หากเรายึดแนวคิดการ &lsquo;ตายดี&rsquo;
-                <br />
-                และ &lsquo;ไม่ยื้อชีวิต&rsquo;
+                คงจะดี.. หากประเทศไทย มีระบบบริการ การดูแลระยะยาวที่ครอบคลุมประชากรสูงวัย ได้ถ้วนหน้า และจัดสรรบริการพื้นฐาน ที่ตอบสนองความต้องการได้
               </h3>
-              <p className="leading-relaxed font-body max-xl">ผู้ป่วยไม่ทรมานกับการรักษาที่ไม่มีที่สิ้นสุด ได้อยู่กับครอบครัว และมีภาครัฐช่วยดูแลในชุมชน</p>
+              <p className="max-w-sm leading-relaxed font-body">
+                มีหลักประกันให้มั่นใจว่าจะไม่ถูกทอดทิ้งและได้รับ การดูแลเมื่อเข้าวัยชราและเมื่อมีภาวะพึ่งพิง
+                ได้รับบริการทางสุขภาพและสังคมที่จำเป็นอย่างต่อเนื่อง เป็นระบบ
+              </p>
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว</h3>
-              <p className="max-w-xl leading-relaxed font-body">ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย ไม่ต้องบาดเจ็บทางกายและมีช่วงเวลาสงบสุข</p>
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
+                เพื่อให้ผู้ที่อยู่ในภาวะพึ่งพิง สามารถดำรงชีวิตได้อย่างมีศักดิ์ศรี ของความเป็นมนุษย์
+              </h3>
+              <p className="max-w-xl leading-relaxed font-body">
+                ได้รับการดูแลที่บ้าน เพื่อให้สามารถใช้ชีวิตประจำวันได้ ไม่บกพร่องในปัจจัย 4 ทั้งอาหาร เครื่องนุ่งห่ม ที่อยู่อาศัย และยารักษาโรค รวมถึงจิตใจ
+              </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
-              <Image src={Result2} height="640" width="1024" layout="responsive" priority alt="expect-ressult-2" />
+              <Image src={Result2} layout="responsive" priority height="640" width="1024" alt="expect-ressult-2" />
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
-              <Image src={Result3} height="640" width="1024" layout="responsive" priority alt="expect-ressult-3" />
+              <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
+            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">ได้รับการดูแลที่ครอบคลุมทั้งมิติสุขภาพ สังคม เศรษฐกิจ และสิ่งแวดล้อม</h3>
               <p className="max-w-xl leading-relaxed font-body">
-                การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของตัวผู้ป่วย ครอบครัว และภาครัฐ เมื่อเทียบกับการรักษาแบบยื้อความตาย
+                มีสุขอนามัยที่ดี ได้รับวัสดุอุปกรณ์ที่จำเป็น มีผู้ดูแล ใกล้ชิด ไม่ต้องแบกรับค่าใช้จ่ายมากเกินไป และไม่เป็นภาระของครอบครัว เป็นต้น{' '}
               </p>
             </div>
           </div>
         </section>
 
-        <section className="relative h-full bg-[#655DC5]">
+        <section className="relative h-full bg-[#8C8C8C]">
           <div className="flex flex-col items-center justify-center px-6 pb-52 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
               <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
@@ -120,75 +119,115 @@ const PcPage = () => {
                   !
                 </tspan>
               </text>
-            </svg>
-            <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-prose">
-              มีครัวเรือนที่อาจจัดได้ว่าอยู่ใน &lsquo;สภาวะล้มละลาย&rsquo; โดยที่มีค่าใช้จ่ายภายใน 1 ปี ก่อนเสียชีวิตมากกว่าร้อยละ 10 ของรายได้ตลอดทั้งปี
-              ซึ่งส่วนใหญ่เป็นครัวเรือนที่มีฐานะยากจน*
-            </p>
-            <p className="mt-4 text-xs text-center font-body max-w-prose">
-              *ข้อมูลจากการสำรวจการเข้าถึงสถานพยาบาลและรายจ่ายด้านสุขภาพของผู้ป่วยที่เสียชีวิต พ.ศ. 2548-2549
+            </svg>{' '}
+            <p className="text-base font-bold text-center sm:text-lg lg:text-xl max-w-3xl leading-relaxed">
+              เพื่อให้ได้รับบริการและการสนับสนุนดังกล่าว ต้องมีทรัพยากรสำคัญ คือ
+              <br />
+              1&#41; กำลังคน ได้แก่ ผู้ดูแล ซึ่งต้องมีความรู้ ประสบการณ์ และเวลา
+              <br />
+              2&#41; งบประมาณ เพื่อเป็นค่าใช้จ่ายสำหรับการจัดหาอุปกรณ์และวัสดุสิ้นเปลือง
             </p>
           </div>
         </section>
 
-        <section className="relative h-full px-6 py-20 bg-secondary">
+        <section className="relative h-full px-6 py-24 bg-secondary">
           <div className="absolute left-0 flex justify-center w-full -top-40">
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
-          <div className="flex flex-col items-center justify-center pt-28 space-y-6 text-white">
-            <div className="flex flex-col items-center">
-              <Image src={Chart} width={450} height={450} alt="chart" />
+          <div className="flex flex-col items-center justify-center pt-20 space-y-2 text-white">
+            <div className="flex flex-col items-center space-y-2">
+              <p className="text-xl font-bold">ค่าใช้จ่ายในการดูแลระยะยาวของผู้สูงอายุแต่ละกลุ่ม (บาท/คน/เดือน)</p>
+              <Image src={Chart} width={350} alt="elderly home" />
             </div>
-            <div className="flex flex-col items-center space-y-8">
-              <p className="max-w-xl text-base text-center font-body">
-                ค่ารักษาพยาบาลเดือนสุดท้ายในโรงพยาบาลก่อนเสียชีวิตมีค่าเฉลี่ยที่ ประมาณ 45,000 บาท และมีค่าสูงสุดที่กว่า 340,000 บาท
-                แต่หากเป็นการดูแลที่บ้านอย่างได้มาตรฐาน จะมีค่าใช้จ่ายในเดือนสุดท้ายราว 27,000 บาท**
+            <div className="flex flex-col items-center space-y-6">
+              <p className="max-w-2xl text-base text-center font-body">
+                ในการดูแลระยะยาว กลุ่มผู้สูงอายุติดเตียงมีค่าใช้จ่าย 19,129 บาท/คน/เดือน และผู้สูงอายุติดบ้านมีค่าใช้จ่าย 9,667 บาท/คน/เดือน
+                รวมค่าใช้จ่ายด้านอุปกรณ์และวัสดุสิ้นเปลือง ค่าใช้จ่ายด้านบุคลากร และค่าเดินทาง*
               </p>
-              <p className="text-xs font-body">** ข้อมูลจากการสำรวจค่าใช้จ่ายกรณีผู้ป่วยมะเร็งภายใต้โครงการหลักประกันสุขภาพถ้วนหน้า</p>
+              <p className="max-w-2xl text-base text-center font-body font-semibold">
+                ในขณะที่ผู้สูงอายุในบ้านเรา ได้รับเบี้ยยังชีพเริ่มต้นเพียงคนละ 600 บาทถ้วน
+              </p>
+              <p className="text-xs font-body">*ข้อมูลจาก รายงานทีดีอาร์ไอ ฉบับที่ 138 มีนาคม 2561 “ระบบประกันการดูแลระยะยาว : ระบบที่เหมาะสมกับประเทศไทย”</p>
             </div>
           </div>
         </section>
 
-        <section className="relative h-full pt-6 bg-[#EBEAF8] md:pt-12">
-          <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
+        <section className="relative h-full pt-6 bg-[#EFEFEF] md:pt-12">
+          <div className="max-w-5xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
-              แต่ยังมีความท้าทายที่ต้องฝ่าฟัน
+              แต่ยังมีความท้าทายหลายประการ
               <br />
-              เพื่อให้เกิดนโยบายที่ตอบโจทย์
+              ที่จะเอื้อให้เกิดภาพสำเร็จดังกล่าว
             </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />
-                <p className="text-base font-body">การถ่ายทอดความรู้ความเข้าใจยังมีจำกัด ทั้งต่อตัวผู้ป่วย ครอบครัว และบุคลากรในระบบ</p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">
+                  ระบบการเงินการคลังเพื่อจัดบริการการดูแลระยะยาวของประเทศไทยในปัจจุบันยังไม่ตอบโจทย์สถานการณ์ปัจจุบันและอนาคต
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} priority />
-                <p className="text-base font-body">กฎหมายไม่เอื้อต่อระบบบริหารจัดการการใช้ยาระงับปวดที่บ้าน เพื่อลดความเจ็บไข้ให้ผู้ป่วย</p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">
+                  ยังไม่ได้ข้อสรุปเรื่องขอบเขตการบริการและชุดบริการสำหรับผู้สูงอายุ ติดบ้านติดเตียงที่ชัดเจน
+                </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} priority />
-                <p className="text-base font-body">ขาดแคลนบุคลากรเฉพาะทาง</p>
+                <p className="mx-auto text-base font-body sm:max-w-sm">การขาดปัจจัยที่สนับสนุนให้ องค์กรปกครองส่วนท้องถิ่นสามารถทำหน้าที่ได้อย่าง มีคุณภาพ</p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} priority />
-                <p className="text-base font-body">การเชื่อมประสานระหว่างผู้มีส่วนได้ส่วนเสียในบางพื้นที่ยังไม่ ‘ไร้รอยต่อ’ อย่างแท้จริง</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="relative h-full bg-[#B2AEE2] md:mt-16">
-          <div className="w-full mx-auto md:absolute md:h-56 md:-mt-12 text-body md:-transform-x-1/2">
-            <div className="w-full h-full max-w-4xl px-6 py-16 mx-auto space-y-8 text-white md:px-24 bg-secondary">
-              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
-                <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
-                <p className="leading-relaxed text-center md:max-w-sm md:text-left font-body">
-                  จึงจะมีรูปแบบการดูแลผู้ป่วยแบบประคับประคอง ที่บูรณาการการทำงานเชิงระบบ ทั้งฝ่ายสาธารณสุขและชุมชนอย่างมีประสิทธิภาพ สามารถปรับใช้ในแต่ละพื้นที่
-                  เพื่อส่งเสริมคุณภาพชีวิตของผู้คนได้
+                <p className="mx-auto text-base font-body sm:max-w-sm">
+                  ขาดการบูรณาการการจัดบริการทางสังคมกับบริการสาธารณสุข โดยที่การพัฒนากำลังคน (care manager และ caregiver) ยังไม่ทันสถานการณ์
                 </p>
               </div>
             </div>
           </div>
-          <div className="max-w-6xl mx-auto px-0 md:px-6 md:pt-[11rem]">
+          <div className="max-w-6xl mx-auto text-body">
+            <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
+              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
+                <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
+                <p className="font-bold text-center md:max-w-sm md:text-left font-body">
+                  เพื่อให้มีข้อเสนอระบบหลักประกันการดูแลระยะยาวที่มีรายละเอียดชัดเจน เป็นที่ยอมรับและสามารถจะนำไปปฏิบัติจริงได้
+                </p>
+              </div>
+              <p className="flex flex-col flex-wrap text-base text-center font-body md:block">
+                และเพื่อพัฒนาข้อเสนอรูปแบบและแนวทางการทำงานของท้องถิ่น ที่จะสามารถทำให้เกิดแผนการดูแล ผู้สูงอายุติดบ้าน ติดเตียง
+                โดยใช้การสนับสนุนทางการเงินจากแหล่งต่างๆ ร่วมกับการระดมทรัพยากร ในท้องถิ่น ซึ่งจะทำให้ผู้สูงอายุที่มีภาวะติดบ้าน
+                ติดเตียงได้รับการดูแลอย่างมีคุณภาพ{' '}
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="relative h-full bg-[#A9A9A9]">
+          <div className="w-full h-full max-w-4xl px-6 pb-6 mx-auto space-y-8 text-white md:pb-12 md:px-24 bg-secondary">
+            <div className="w-full border-t-2 border-white md:px-24" />
+            <p className="text-center font-body">โดยแบ่งออกเป็น 2 หัวข้อย่อย</p>
+            <div className="grid w-full grid-cols-1 gap-12 mt-6 md:grid-cols-2">
+              <div className="flex flex-col col-span-1 space-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
+                  <path
+                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
+                    transform="translate(-1341.303 -41.633)"
+                    fill="#717171"
+                  />
+                </svg>
+                <p className="font-body">ระบบหลักประกันการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง </p>
+              </div>
+              <div className="flex flex-col col-span-1 space-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
+                  <path
+                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
+                    transform="translate(-1341.303 -41.633)"
+                    fill="#8f8ac7"
+                  />
+                </svg>
+                <p className="font-body">บทบาทของท้องถิ่นในการจัดระบบบริการการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-6xl px-0 mx-auto md:px-6 text-body">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineHeader />
             </div>
@@ -200,45 +239,86 @@ const PcPage = () => {
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#3f36b7]">
-          <div className="max-w-5xl pb-12 mx-auto">
+        <section className="relative h-full bg-[#717171]">
+          <div className="max-w-4xl mx-auto bg-[#2b2b2b] pb-12">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-12 text-white md:grid-cols-4 md:px-24">
+            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-6 text-white md:gap-24 md:grid-cols-2 md:px-24">
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
-                <p className="font-body">เกิดรูปแบบเครือข่ายที่เชื่อมประสานกับชุมชน ตั้งแต่ระดับโรงพยาบาลศูนย์ลงมา</p>
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
+                  <path
+                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
+                    transform="translate(-1341.303 -41.633)"
+                    fill="#717171"
+                  />
+                </svg>
+                <p>ระบบหลักประกันการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
+                <div className="w-full border-t-2 border-white md:px-24" />
+                <div className="pt-6 space-y-6">
+                  <ul className="flex flex-col space-y-6">
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ข้อสรุป</h3>
+                      <p className="font-body">ข้อสรุปเกี่ยวกับชุดบริการที่สำคัญและจำเป็นในการจัดบริการการดูแลระยะยาว</p>
+                    </li>
+                  </ul>
+                  <Link href="/archive#thematic-briefs">
+                    <a
+                      className="text-[#717171] inline-flex items-center btn bg-white hover:text-white hover:bg-[#717171] rounded-full"
+                      target="_self"
+                      title="ดาวน์โหลดข้อสรุป"
+                      rel="noopener noreferrer"
+                    >
+                      <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
+                      <span>ดาวน์โหลดข้อสรุป</span>
+                    </a>
+                  </Link>
+                </div>
               </div>
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 2</h3>
-                <p className="font-body">เกิดการบริหารจัดการยาระงับปวดในระดับชุมชนที่รวดเร็วและเอื้อต่อการบริหารจัดการ</p>
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
+                  <path
+                    d="M1376.025 41.633c-3.693 0-7.081 2.019-9.722 5.378-2.641-3.36-6.029-5.378-9.722-5.378-8.438 0-15.278 10.535-15.278 23.53s6.84 23.529 15.278 23.529c3.693 0 7.081-2.019 9.722-5.378 2.642 3.36 6.029 5.378 9.722 5.378 8.438 0 15.278-10.535 15.278-23.529s-6.84-23.53-15.278-23.53z"
+                    transform="translate(-1341.303 -41.633)"
+                    fill="#8f8ac7"
+                  />
+                </svg>
+
+                <p>บทบาทของท้องถิ่นในการจัดระบบบริการการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
+                <div className="w-full border-t-2 border-white md:px-24" />
+                <div className="pt-6 space-y-6">
+                  <ul className="flex flex-col space-y-6">
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
+                      <p className="font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
+                    </li>
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ข้อเสนอ 2</h3>
+                      <p className="font-body">การพัฒนาบุคลากรและแนวทางการทำงานร่วมกันระหว่างบุคลากรของ องค์กรปกครองส่วนท้องถิ่น และ สาธารณสุข ในท้องถิ่น</p>
+                    </li>
+                    <li className="space-y-2">
+                      <h3 className="text-xl font-bold">ข้อเสนอ 3</h3>
+                      <p className="font-body">การเพิ่มบทบาทและอำนาจในการบริหารจัดการให้ท้องถิ่น สามารถจัดการทาง การเงินและจัดสรรบุคลากรเองได้</p>
+                    </li>
+                  </ul>
+                  <Link href="/archive#thematic-briefs">
+                    <a
+                      className="text-[#daa13d] inline-flex bg-white hover:text-white hover:bg-[#daa13d] btn rounded-full"
+                      target="_self"
+                      title="ดาวน์โหลดข้อสรุป"
+                      rel="noopener noreferrer"
+                    >
+                      <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
+                      <span>ดาวน์โหลดข้อสรุป</span>
+                    </a>
+                  </Link>
+                </div>
               </div>
-              <div className="flex flex-col max-w-sm col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 3</h3>
-                <p className="font-body">เครือข่ายความรู้และความเข้าใจในการดูแลแบบประคับประคองที่ยั่งยืน</p>
-              </div>
-              <div className="flex flex-col max-w-sm col-span-1 space-y-4">
-                <h3 className="text-xl font-bold">ข้อเสนอ 4</h3>
-                <p className="font-body">รูปแบบ (model) การดูแลแบบประคับประคองโดยการมีส่วนร่วมของชุมชน</p>
-              </div>
-            </div>
-            <div className="flex justify-center mt-12">
-              <Link href="/archive#thematic-briefs">
-                <a
-                  className="text-[#3f36b7] inline-flex btn bg-white hover:text-white hover:bg-primary rounded-full"
-                  target="_self"
-                  title="ดาวน์โหลดข้อสรุป"
-                  rel="noopener noreferrer"
-                >
-                  <DownloadIcon className="w-5 h-5 mr-2 fill-current" />
-                  <span>ดาวน์โหลดข้อสรุป</span>
-                </a>
-              </Link>
             </div>
           </div>
         </section>
-        <section className="relative h-full bg-[#EAEBF8]">
+
+        <section className="relative h-full bg-[#EFEFEF]">
           <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="relative flex flex-col col-span-1 space-y-6 text-body">
@@ -255,23 +335,50 @@ const PcPage = () => {
                 </div>
               </div>
               <div className="h-full col-span-1 px-6 lg:px-12">
-                <ul className="flex flex-col items-center h-full space-y-12">
+                <ul className="space-y-12">
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">ผู้เข้าร่วมเห็นภาพปัญหาที่สำคัญ และเร่งด่วนที่สุดร่วมกัน</h3>
-                    <p className="font-body">โดยเฉพาะการทำงานระหว่างผู้มีส่วนได้ส่วนเสียยังไม่เชื่อมประสานและบูรณาการอย่างแท้จริง</p>
-                  </li>
-                  <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">ผู้เข้าร่วมจากแต่ละวงหารือ ฟังสถานการณ์ รวมถึงได้รับฟังแนวทางการรับมือกับปัญหาและข้อจำกัด</h3>
+                    <h3 className="text-xl font-bold">เข้าใจความต่างและเห็นจุดร่วมชัดขึ้น</h3>
                     <p className="font-body">
-                      ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
-                      ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
+                      เห็นจุดร่วมเรื่องการจัดตั้งกองทุนหลักประกัน เป็นทางเลือกที่เป็นไปได้และเหมาะสมกับอนาคต ในระยะยาว ในขณะเดียวกัน ยังเกิดโอกาสให้ได้
+                      ทำความเข้าใจฐานคิดของการออกแบบรายละเอียด ข้อเสนอที่ต่างกัน แต่การหารือช่วยให้เห็นแนวทางในการขับเคลื่อนร่วมกันต่อ
                     </p>
                   </li>
                   <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">ผู้เข้าร่วมมีความสนใจต่อการขับเคลื่อน</h3>
+                    <h3 className="text-xl font-bold">ช่วยเปิดมุมมองของผู้ที่เกี่ยวข้อง และสร้างการรับรู้</h3>
                     <p className="font-body">
-                      อยากให้การดูแลแบบประคับประคองโดยการมีส่วนร่วมในชุมชนเกิดขึ้นได้จริง และแพร่หลายในระดับประเทศ
-                      ทั้งยังได้รับรู้การขับเคลื่อนของผู้มีส่วนได้ส่วนเสียต่างๆ ในปัจจุบัน และเห็นโอกาสที่ทุกภาคส่วนจะได้ทำงานร่วมกันต่อไปในอนาคต
+                      ผู้ดูแลที่เป็นญาติ ได้รับข้อมูลที่เป็นประโยชน์ต่อการ นำไปใช้ในชีวิต จากที่ไม่เคยทราบข้อมูลเกี่ยวกับ บริการหรือสวัสดิการของภาครัฐมาก่อน{' '}
+                      <br />
+                      <br />
+                      ตัวแทนบุคลากรสาธารณสุข ตระหนักถึงความทุกข์ ของญาติในการดูแลผู้ป่วย ทำให้อยากพัฒนางานต่อ และเห็นโอกาสในการจัดการอบรมให้ญาติหรือ
+                      เสริมสร้างชุมชนให้ดูแลผู้ป่วยได้
+                    </p>
+                  </li>
+                  <li className="space-y-2 md:space-y-4">
+                    <h3 className="text-xl font-bold">
+                      ผู้เข้าร่วมจากต่างพื้นที่ได้เห็นรูปแบบการจัดระบบบริการที่แตกต่างกัน เห็นแนวทางทำให้ดีขึ้น และเกิดโอกาสการวางแผนทำงานร่วมกันในอนาคต
+                    </h3>
+                    <p className="font-body">
+                      ตัวแทนจากท้องถิ่นได้ค้นพบว่า มีแนวทางปฏิบัติ ที่สามารถทำให้งานดีขึ้นได้ เป็นโอกาสที่จะนำกลับไปสื่อสารกับทีมปฏิบัติงานและพัฒนางานที่ทำอยู่
+                      <br />
+                      <br />
+                      หลายท่านแสดงความสนใจต่อแนวคิดการสร้างเครือข่ายแลกเปลี่ยนระหว่างผู้ปฏิบัติงาน หรือแนวทางการทำงานร่วมกันระหว่างพื้นที่ที่เป็นมากกว่าการดูงาน
+                      แต่อาจให้ผลดีกว่า เช่นระบบพี่เลี้ยง ทั้งยังเห็นความสำคัญของการมีวงหารือแลกเปลี่ยนกัน โดยมีหน่วยงานส่วนกลาง เป็นเจ้าภาพหลัก
+                      แต่ยังไม่ได้มีข้อสรุปที่ชัดเจน
+                    </p>
+                  </li>
+                  <li className="space-y-2 md:space-y-4">
+                    <h3 className="text-xl font-bold">เกิดโอกาสในการวางแผนการทำงานร่วมกันระหว่างหน่วยงานในอนาคต</h3>
+                    <p className="font-body">
+                      ผู้เข้าร่วมเห็นประโยชน์ในการร่วมแลกเปลี่ยนจากมุม การทำงานของตัวเอง เห็นความเชื่อมโยงแม้มีบทบาทต่างกัน
+                      จึงทำให้การแลกเปลี่ยนขยายประเด็นเป็นภาพบทบาทของท้องถิ่นที่ควรทำและเกี่ยวข้องกับ หน่วยงานอื่น โดยเห็นพ้องกันว่า
+                      ท้องถิ่นต้องมีบทบาทเป็นหลักในการดำเนินการ
+                    </p>
+                  </li>
+                  <li className="space-y-2 md:space-y-4">
+                    <h3 className="text-xl font-bold">หน่วยงานของภาครัฐได้ปรับความเข้าใจร่วมกัน </h3>
+                    <p className="font-body">
+                      ทั้งต่อหน่วยงานที่เกี่ยวข้องกับการกำหนดนโยบาย ด้วยกันเอง และกับหน่วยงานในพื้นที่ และเป็นโอกาสให้
+                      ผู้กำหนดนโยบายได้ทำความเข้าใจความท้าทายของ การทำงานของผู้ปฏิบัติงาน ได้รับฟังปัญหา และชี้แจงส่วนที่เป็นข้อกังวลของผู้ปฏิบัติงาน
                     </p>
                   </li>
                 </ul>
@@ -286,4 +393,4 @@ const PcPage = () => {
   )
 }
 
-export default PcPage
+export default DmtPage

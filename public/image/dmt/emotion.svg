@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="544" height="142" viewBox="0 0 544 142">
+    <g data-name="Group 2241">
+        <g data-name="Group 2047" transform="translate(-40.814 -1381.169)">
+            <path data-name="Path 981" d="M71 0A71 71 0 1 1 0 71 71 71 0 0 1 71 0z" transform="translate(40.814 1381.169)" style="fill:#36723b"/>
+            <path data-name="Path 980" d="M118.343 1452.169a25.786 25.786 0 1 1-51.572 0" transform="translate(19.257 9.629)" style="fill:none;stroke:#2b2b2b;stroke-miterlimit:10;stroke-width:2px"/>
+            <ellipse data-name="Ellipse 1448" cx="5.903" cy="11.806" rx="5.903" ry="11.806" transform="translate(86.028 1428.558)" style="fill:#2b2b2b"/>
+            <ellipse data-name="Ellipse 1449" cx="5.903" cy="11.806" rx="5.903" ry="11.806" transform="translate(125.794 1428.558)" style="fill:#2b2b2b"/>
+        </g>
+        <g data-name="Group 2048" transform="translate(-10.717 -1381.169)">
+            <path data-name="Path 982" d="M71 0A71 71 0 1 1 0 71 71 71 0 0 1 71 0z" transform="translate(217.717 1381.169)" style="fill:#daa13d"/>
+            <ellipse data-name="Ellipse 1451" cx="5.903" cy="11.806" rx="5.903" ry="11.806" transform="translate(262.931 1428.558)" style="fill:#2b2b2b"/>
+            <ellipse data-name="Ellipse 1452" cx="5.903" cy="11.806" rx="5.903" ry="11.806" transform="translate(302.697 1428.558)" style="fill:#2b2b2b"/>
+            <path data-name="Line 259" transform="translate(272.098 1474.691)" style="fill:none;stroke:#2b2b2b;stroke-miterlimit:10;stroke-width:2px" d="M0 0h33.237"/>
+        </g>
+        <g data-name="Group 2049" transform="translate(7.38 -1381.169)">
+            <circle data-name="Ellipse 1453" cx="71" cy="71" r="71" transform="translate(394.62 1381.169)" style="fill:#f04e30"/>
+            <path data-name="Path 983" d="M435.47 1489.766a30.15 30.15 0 1 1 60.3 0" style="fill:none;stroke:#2b2b2b;stroke-miterlimit:10;stroke-width:2px"/>
+            <ellipse data-name="Ellipse 1454" cx="5.903" cy="11.806" rx="5.903" ry="11.806" transform="translate(439.834 1428.558)" style="fill:#2b2b2b"/>
+            <ellipse data-name="Ellipse 1455" cx="5.903" cy="11.806" rx="5.903" ry="11.806" transform="translate(479.6 1428.558)" style="fill:#2b2b2b"/>
+        </g>
+    </g>
+</svg>
