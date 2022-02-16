@@ -130,7 +130,7 @@ const DmtPage = () => {
         </section>
 
         <section className="relative h-full bg-[#8C8C8C]">
-          <div className="flex flex-col items-center justify-center px-6 pb-52 text-white">
+          <div className="flex flex-col items-center justify-center px-6 text-white pb-52">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
               <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
                 <tspan x="0" y="0">
@@ -138,11 +138,11 @@ const DmtPage = () => {
                 </tspan>
               </text>
             </svg>
-            <p className="text-base font-bold text-center sm:text-lg lg:text-xl max-w-lg leading-relaxed">
+            <p className="max-w-lg text-base font-bold leading-relaxed text-center sm:text-lg lg:text-xl">
               ภาวะสมองเสื่อมเป็นอาการที่พบมากในผู้สูงอายุ อาจพบได้ถึง 0.2-1 ล้านคน* จากประชากรผู้สูงอายุในปี 2563
               ซึ่งเป็นความท้าทายสำคัญของประเทศไทยต่อการเตรียมรับมือ จำนวนผู้มีภาวะพึ่งพิงที่อาจเพิ่มขึ้นเรื่อยๆ จากภาวะทางสมอง
             </p>
-            <p className="text-xs text-center max-w-xl mt-6">
+            <p className="max-w-xl mt-6 text-xs text-center">
               คำนวณจากความชุกผู้ป่วยสมองเสื่อมในไทย 2-10%
               <br />
               ข้อมูลจาก มส.ผส., “ภาวะสมองเสื่อม” ป่วยเพิ่มปีละ 1 แสนราย สถิติชี้ ร้อยละ 50 ของผู้สูงวัย80ขึ้นไปมีอาการ (2020)
@@ -156,14 +156,14 @@ const DmtPage = () => {
           </div>
           <div className="flex flex-col items-center justify-center pt-20 space-y-2 text-white">
             <div className="flex flex-col items-center space-y-6">
-              <p className="text-xl text-center font-bold max-w-xl leading-relaxed">
+              <p className="max-w-xl text-xl font-bold leading-relaxed text-center">
                 ความรุนแรงของภาวะสมองเสื่อมในระยะต่างๆ ยังส่งผลต่อความสามารถ ในการใช้ชีวิตประจำวันด้วยตนเอง ยิ่งอยู่ในระยะรุนแรงมากขึ้น
                 ก็จะยิ่งสูญเสียความสามารถในการใช้ชีวิต และมีโอกาสมีอาการทางประสาทจิตเวชร่วมด้วย เช่น อาการหลงผิด ประสาทหลอน มีปัญหาการนอนหลับ เป็นต้น
               </p>
               <Image src={Emotion} width={350} alt="emotion" />
             </div>
             <div className="flex flex-col items-center space-y-6">
-              <p className="text-xl text-center font-bold max-w-xl leading-relaxed">การพึ่งพาผู้ดูแลจึงเป็นสิ่งที่จำเป็นอย่างมาก </p>
+              <p className="max-w-xl text-xl font-bold leading-relaxed text-center">การพึ่งพาผู้ดูแลจึงเป็นสิ่งที่จำเป็นอย่างมาก </p>
               <p className="max-w-xl text-base text-center font-body ">
                 แต่การดูแลผู้ป่วยสมองเสื่อม 1 คนอย่างครอบคลุมและมีคุณภาพ อาจมีค่าใช้จ่ายสูงถึง 50,000 บาทต่อเดือน ซึ่งเป็นค่าใช้จ่ายด้านการจ้างผู้ดูแล ค่ายา
                 ค่าปรับปรุง สภาพบ้าน หรือซ่อมแซมข้าวของเสียหาย
@@ -172,7 +172,7 @@ const DmtPage = () => {
               <p className="max-w-xl text-base text-center font-body">
                 หรือหากไม่จ้าง สมาชิกครอบครัวก็ต้องสูญเสียรายได้จากงานประจำ 9,000-15,000 บาทต่อเดือน เป็นอย่างน้อย
               </p>
-              <p className="text-xl text-center font-bold max-w-lg leading-relaxed">
+              <p className="max-w-lg text-xl font-bold leading-relaxed text-center">
                 และยังพบว่า ผู้ดูแลผู้ป่วยสมองเสื่อม 9 ใน 10 ราย มีอาการเครียดและวิตกกังวลหลายครั้งต่อสัปดาห์*
               </p>
               <Image src={Chart2} width={400} alt="chart-2" />
@@ -184,7 +184,7 @@ const DmtPage = () => {
         </section>
 
         <section className="relative h-full pt-6 bg-[#EFEFEF] md:pt-12">
-          <div className="max-w-5xl px-6 py-8 mx-auto space-y-12 text-body">
+          <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายหลายประการ
               <br />
@@ -222,7 +222,7 @@ const DmtPage = () => {
           </div>
           <div className="max-w-6xl mx-auto text-body">
             <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
-              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
+              <div className="flex flex-col items-center h-full space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="font-bold text-center md:max-w-sm md:text-left font-body">
                   จึงเกิดระบบที่คัดกรองได้ตั้งแต่เนิ่นๆ สามารถ หาทางกระตุ้นสมอง ชะลอไม่ให้เข้าสู่ภาวะ สมองเสื่อมในอนาคตได้
@@ -413,7 +413,7 @@ const DmtPage = () => {
                       <br />
                       <br />
                       ทีมจัดทำโครงการไปเล่าเรื่อง policy dialogue ในครั้งนี้ผ่าน{' '}
-                      <a target="_blank" href="https://www.youtube.com/watch?v=WFAEnHgwpUw" className="text-primary underline" rel="noreferrer">
+                      <a target="_blank" href="https://www.youtube.com/watch?v=WFAEnHgwpUw" className="underline text-primary" rel="noreferrer">
                         podcast
                       </a>
                       <br />
