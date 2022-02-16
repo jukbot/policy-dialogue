@@ -15,6 +15,7 @@ module.exports = {
     'bg-[#CC7AA7]',
     'bg-[#35723B]',
     'bg-[#8F8AC8]',
+    'bg-[#707070]',
   ],
   theme: {
     debugScreens: {

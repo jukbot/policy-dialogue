@@ -41,7 +41,7 @@
     "description": "ระบบบริการและการดูแลผู้มีภาวะสมองเสื่อม",
     "url": "/project/dmt",
     "icon": "dmt",
-    "color": "bg-[#8F8AC8]",
+    "color": "bg-[#707070]",
     "enabled": true
   },
   {
