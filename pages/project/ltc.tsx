@@ -69,7 +69,7 @@ const LtcPage = () => {
                 ถือเป็นสัดส่วนที่ไม่น้อย แต่ประเทศไทยยังขาดระบบบริการการดูแลระยะยาวที่เหมาะสม ซึ่งอาจส่งผลต่อคุณภาพชีวิตและเศรษฐกิจของผู้ป่วย ครอบครัว ผู้ดูแล
                 และระบบสาธารณสุขในภาพรวม
               </p>
-              <p className="relative flex text-white opacity-75 text-xs font-body ">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย พ.ศ. 2563 (มส.ผส.)</p>
+              <p className="relative flex text-xs text-white opacity-75 font-body ">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย พ.ศ. 2563 (มส.ผส.)</p>
             </div>
           </section>
 
@@ -116,7 +116,7 @@ const LtcPage = () => {
         </section>
 
         <section className="relative h-full bg-[#D693B8]">
-          <div className="flex flex-col items-center justify-center px-6 pb-52 text-white">
+          <div className="flex flex-col items-center justify-center px-6 text-white pb-52">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
               <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
                 <tspan x="0" y="0">
@@ -124,7 +124,7 @@ const LtcPage = () => {
                 </tspan>
               </text>
             </svg>{' '}
-            <p className="text-base font-bold text-center sm:text-lg lg:text-xl max-w-3xl leading-relaxed">
+            <p className="max-w-3xl text-base font-bold leading-relaxed text-center sm:text-lg lg:text-xl">
               เพื่อให้ได้รับบริการและการสนับสนุนดังกล่าว ต้องมีทรัพยากรสำคัญ คือ
               <br />
               1&#41; กำลังคน ได้แก่ ผู้ดูแล ซึ่งต้องมีความรู้ ประสบการณ์ และเวลา
@@ -148,7 +148,7 @@ const LtcPage = () => {
                 ในการดูแลระยะยาว กลุ่มผู้สูงอายุติดเตียงมีค่าใช้จ่าย 19,129 บาท/คน/เดือน และผู้สูงอายุติดบ้านมีค่าใช้จ่าย 9,667 บาท/คน/เดือน
                 รวมค่าใช้จ่ายด้านอุปกรณ์และวัสดุสิ้นเปลือง ค่าใช้จ่ายด้านบุคลากร และค่าเดินทาง*
               </p>
-              <p className="max-w-2xl text-base text-center font-body font-semibold">
+              <p className="max-w-2xl text-base font-semibold text-center font-body">
                 ในขณะที่ผู้สูงอายุในบ้านเรา ได้รับเบี้ยยังชีพเริ่มต้นเพียงคนละ 600 บาทถ้วน
               </p>
               <p className="text-xs font-body">*ข้อมูลจาก รายงานทีดีอาร์ไอ ฉบับที่ 138 มีนาคม 2561 “ระบบประกันการดูแลระยะยาว : ระบบที่เหมาะสมกับประเทศไทย”</p>
@@ -157,7 +157,7 @@ const LtcPage = () => {
         </section>
 
         <section className="relative h-full pt-6 bg-[#FAF1F6] md:pt-12">
-          <div className="max-w-5xl px-6 py-8 mx-auto space-y-12 text-body">
+          <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
             <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
               แต่ยังมีความท้าทายหลายประการ
               <br />
@@ -190,7 +190,7 @@ const LtcPage = () => {
           </div>
           <div className="max-w-6xl mx-auto text-body">
             <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
-              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
+              <div className="flex flex-col items-center h-full space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="font-bold text-center md:max-w-sm md:text-left font-body">
                   เพื่อให้มีข้อเสนอระบบหลักประกันการดูแลระยะยาวที่มีรายละเอียดชัดเจน เป็นที่ยอมรับและสามารถจะนำไปปฏิบัติจริงได้
