@@ -2,8 +2,8 @@ import graphcms from '@/libs/graphcms'
 import { Article, ArticlesConnection, Banner } from '@types'
 import { gql } from 'graphql-request'
 import Header from '@/components/Layout/Header'
-import Carousel from '@/components/Archive/Carousel'
-import Pagination from '@/components/Archive/Pagination'
+import Carousel from '@/components/Article/Carousel'
+import Pagination from '@/components/Article/Pagination'
 
 const ARTICLES_QUERY = gql`
   query ArticlesQuery {
