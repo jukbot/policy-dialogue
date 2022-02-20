@@ -36,7 +36,7 @@ const ARTICLES_QUERY = gql`
 const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConnection: ArticlesConnection; articles: Article[]; banners: Banner[] }) => {
   return (
     <>
-      <Header title="บทความของเรา" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
+      <Header title="ข่าวสารและบทความ" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
       <main className="relative">
         <section className="relative h-[75vh] bg-top mix-blend-screen bg-cover 2xl:bg-height-100 bg-no-repeat grid items-center bg-about-pattern-mobile md:bg-article-hero-pattern">
           <div className="flex justify-center pt-24 text-white lg:justify-start lg:ml-56">
