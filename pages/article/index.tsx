@@ -1,5 +1,5 @@
 import graphcms from '@/libs/graphcms'
-import { Article, Banner } from '@types'
+import { Article, ArticlesConnection, Banner } from '@types'
 import { gql } from 'graphql-request'
 import Header from '@/components/Layout/Header'
 import Carousel from '@/components/Archive/Carousel'
@@ -7,6 +7,11 @@ import Pagination from '@/components/Archive/Pagination'
 
 const ARTICLES_QUERY = gql`
   query ArticlesQuery {
+    articlesConnection {
+      pageInfo {
+        pageSize
+      }
+    }
     articles(orderBy: publishedAt_DESC) {
       id
       title
@@ -28,7 +33,7 @@ const ARTICLES_QUERY = gql`
   }
 `
 
-const ArticlesPage = ({ articles, banners }: { articles: Article[]; banners: Banner[] }) => {
+const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConnection: ArticlesConnection; articles: Article[]; banners: Banner[] }) => {
   return (
     <>
       <Header title="บทความของเรา" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
@@ -66,7 +71,7 @@ const ArticlesPage = ({ articles, banners }: { articles: Article[]; banners: Ban
                 ))}
               </ul>
               <div className="py-12">
-                <Pagination />
+                <Pagination total={articlesConnection.pageInfo.pageSize} />
               </div>
             </div>
           </div>
@@ -77,10 +82,13 @@ const ArticlesPage = ({ articles, banners }: { articles: Article[]; banners: Ban
 }
 
 export async function getStaticProps() {
-  const { articles, banners }: { articles: Article[]; banners: Banner[] } = await graphcms.request(ARTICLES_QUERY)
+  const { articles, banners, articlesConnection }: { articles: Article[]; banners: Banner[]; articlesConnection: ArticlesConnection } = await graphcms.request(
+    ARTICLES_QUERY
+  )
 
   return {
     props: {
+      articlesConnection,
       articles,
       banners,
     },

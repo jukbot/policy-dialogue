@@ -23,6 +23,11 @@ export interface Color {
   hex: string
 }
 
+export interface ArticlesConnection {
+  pageInfo: {
+    pageSize: number
+  }
+}
 export interface Article {
   id: string
   title: string
