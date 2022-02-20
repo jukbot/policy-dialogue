@@ -54,9 +54,9 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
                   <li key={id} className="flex flex-col w-full overflow-hidden bg-white">
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" src={coverImage.url} alt={title} />
                     <div className="flex flex-col py-8 px-12 h-full">
-                      <div className="space-y-6 mb-12">
+                      <div className="space-y-4 mb-12">
                         <h3 className="text-lg lg:text-xl font-bold line-clamp-2">{title}</h3>
-                        <p className="text-sm font-body line-clamp-4 text-[#707070]">{description}</p>
+                        <p className="text-sm font-body leading-relaxed line-clamp-4 text-[#707070]">{description}</p>
                       </div>
                       <a
                         href={url}
