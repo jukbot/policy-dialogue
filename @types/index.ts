@@ -32,3 +32,10 @@ export interface Article {
   createdAt: Date
   color: Color
 }
+
+export interface Banner {
+  id: string
+  title: string
+  url: string
+  image: CoverImage
+}

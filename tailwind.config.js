@@ -44,6 +44,7 @@ module.exports = {
         accent: 'var(--color-accent)',
         danger: 'var(--color-danger)',
         disabled: 'var(--color-disabled)',
+        copper: 'var(--color-copper)',
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
