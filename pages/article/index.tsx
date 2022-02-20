@@ -4,6 +4,8 @@ import { gql } from 'graphql-request'
 import Header from '@/components/Layout/Header'
 import Carousel from '@/components/Article/Carousel'
 import Pagination from '@/components/Article/Pagination'
+import { useRouter } from 'next/router'
+import { useMemo } from 'react'
 
 const ARTICLES_QUERY = gql`
   query ArticlesQuery {
@@ -34,6 +36,10 @@ const ARTICLES_QUERY = gql`
 `
 
 const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConnection: ArticlesConnection; articles: Article[]; banners: Banner[] }) => {
+  const { query } = useRouter()
+  const currentPage = Number(query.page) || 1
+  const itemPerPage = 8
+  const articlesData = useMemo(() => articles.slice((currentPage - 1) * itemPerPage, currentPage * itemPerPage), [articles, currentPage])
   return (
     <>
       <Header title="ข่าวสารและบทความ" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
@@ -45,12 +51,12 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
         </section>
         <section className="relative h-full space-y-6 bg-[#ede8db] lg:space-y-12">
           <div className="max-w-6xl py-12 mx-auto">
-            <div className="space-y-8 sm:px-6 lg:px-12">
+            <div id="article" className="space-y-8 sm:px-6 lg:px-12">
               <div className="py-12">
                 <Carousel data={banners} />
               </div>
               <ul role="list" className="mx-auto px-6 space-y-8 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
-                {articles.map(({ id, title, url, coverImage, description }) => (
+                {articlesData.map(({ id, title, url, coverImage, description }) => (
                   <li key={id} className="flex flex-col w-full overflow-hidden bg-white">
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" src={coverImage.url} alt={title} />
                     <div className="flex flex-col py-8 px-12 h-full">
@@ -71,7 +77,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
                 ))}
               </ul>
               <div className="py-12">
-                <Pagination total={articlesConnection.pageInfo.pageSize} />
+                <Pagination total={articlesConnection.pageInfo.pageSize} currentPage={currentPage} />
               </div>
             </div>
           </div>
