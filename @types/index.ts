@@ -28,13 +28,17 @@ export interface ArticlesConnection {
     pageSize: number
   }
 }
+
+export interface Tag {
+  title: string
+}
 export interface Article {
   id: string
   title: string
   description: string
   url: string
   coverImage: CoverImage
-  tag: string[]
+  tags: Tag[]
   createdAt: Date
   color: Color
 }

@@ -21,7 +21,9 @@ const ARTICLES_QUERY = gql`
       description
       url
       createdAt
-      tag
+      tags {
+        title
+      }
       coverImage {
         url
       }
