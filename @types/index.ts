@@ -34,6 +34,7 @@ export interface Article {
   description: string
   url: string
   coverImage: CoverImage
+  tag: string[]
   createdAt: Date
   color: Color
 }
