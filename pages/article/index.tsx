@@ -1,12 +1,19 @@
 import graphcms from '@/libs/graphcms'
-import { Article, ArticlesConnection, Banner } from '@types'
+import { Article, ArticlesConnection, Banner, Tag } from '@types'
 import { gql } from 'graphql-request'
 import Header from '@/components/Layout/Header'
 import Carousel from '@/components/Article/Carousel'
 import Pagination from '@/components/Article/Pagination'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
-import Tag from '@/components/Article/Tag'
+import TagList from '@/components/Article/Tag'
+
+interface Props {
+  articlesConnection: ArticlesConnection
+  articles: Article[]
+  banners: Banner[]
+  tags: Tag[]
+}
 
 const ARTICLES_QUERY = gql`
   query ArticlesQuery {
@@ -36,10 +43,13 @@ const ARTICLES_QUERY = gql`
         url
       }
     }
+    tags {
+      title
+    }
   }
 `
 
-const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConnection: ArticlesConnection; articles: Article[]; banners: Banner[] }) => {
+const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) => {
   const { query } = useRouter()
   const currentPage = Number(query.page) || 1
   const itemPerPage = 8
@@ -59,7 +69,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
               <div className="lg:py-12">
                 <Carousel data={banners} />
               </div>
-              <Tag />
+              <TagList tags={tags} />
               <ul role="list" className="mx-auto px-6 space-y-8 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
                 {articlesData.map(({ id, title, url, coverImage, description }) => (
                   <li key={id} className="flex flex-col w-full overflow-hidden bg-white">
@@ -93,15 +103,14 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
 }
 
 export async function getStaticProps() {
-  const { articles, banners, articlesConnection }: { articles: Article[]; banners: Banner[]; articlesConnection: ArticlesConnection } = await graphcms.request(
-    ARTICLES_QUERY
-  )
+  const { articles, banners, articlesConnection, tags }: Props = await graphcms.request(ARTICLES_QUERY)
 
   return {
     props: {
       articlesConnection,
       articles,
       banners,
+      tags,
     },
     revalidate: 60,
   }
