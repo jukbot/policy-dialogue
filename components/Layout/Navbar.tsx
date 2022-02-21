@@ -87,7 +87,7 @@ const Navbar = (): JSX.Element => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex items-center justify-center w-full text-white">
-                      <span>นโยบายเพื่อสังคมสูงวัย</span>
+                      <span className="font-body">นโยบายเพื่อสังคมสูงวัย</span>
                       <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-4 h-4 text-primary ml-2`} />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-2 py-2">
