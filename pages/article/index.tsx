@@ -6,6 +6,7 @@ import Carousel from '@/components/Article/Carousel'
 import Pagination from '@/components/Article/Pagination'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
+import Tag from '@/components/Article/Tag'
 
 const ARTICLES_QUERY = gql`
   query ArticlesQuery {
@@ -52,13 +53,14 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
         <section className="relative h-full space-y-6 bg-[#ede8db] lg:space-y-12">
           <div className="max-w-6xl py-12 mx-auto">
             <div id="article" className="space-y-8 sm:px-6 lg:px-12">
-              <div className="py-12">
+              <div className="lg:py-12">
                 <Carousel data={banners} />
               </div>
+              <Tag />
               <ul role="list" className="mx-auto px-6 space-y-8 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
                 {articlesData.map(({ id, title, url, coverImage, description }) => (
                   <li key={id} className="flex flex-col w-full overflow-hidden bg-white">
-                    <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" src={coverImage.url} alt={title} />
+                    <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" loading="eager" src={coverImage.url} alt={title} />
                     <div className="flex flex-col py-8 px-12 h-full">
                       <div className="space-y-4 mb-12">
                         <h3 className="text-lg lg:text-xl font-bold line-clamp-2">{title}</h3>
@@ -76,7 +78,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners }: { articlesConne
                   </li>
                 ))}
               </ul>
-              <div className="py-12">
+              <div className="lg:py-12">
                 <Pagination total={articlesConnection.pageInfo.pageSize} currentPage={currentPage} />
               </div>
             </div>

@@ -51,7 +51,7 @@ const ProcessDropdown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute inset-x-0 z-10 w-64 transform -translate-x-10 shadow-xl">
+              <Popover.Panel className="absolute inset-x-0 z-10 w-72 transform -translate-x-10 shadow-xl">
                 <div className="bg-[#474747]">
                   <div className="flex flex-col space-y-6 p-6 mx-auto mt-4 overflow-hidden">
                     {processMenu.map((item) => (

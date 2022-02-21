@@ -31,7 +31,7 @@ const Carousel = ({ data }: { data: Banner[] }) => {
       <Slider ref={sliderRef} {...settings} afterChange={(index) => setIndex(index)}>
         {data.map((banner) => (
           <div key={banner.id} className="bg-white h-[400px] w-full overflow-hidden relative">
-            <img src={banner.image.url} alt={banner.title} className="w-full h-full object-top object-cover brightness-90" />
+            <img src={banner.image.url} loading="eager" alt={banner.title} className="w-full h-full object-top object-cover brightness-90" />
             <div className="absolute -translate-y-1/2 -translate-x-1/3 top-1/2 left-2/3 space-y-4 hidden md:block">
               <h2 className="relative leading-normal font-bold text-2xl text-white line-clamp-3">{banner.title}</h2>
               <a href={banner.url} target="_blank" className="inline-block py-2 px-4 bg-copper hover:bg-[#707070] text-white font-bold" rel="noreferrer">

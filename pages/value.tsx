@@ -131,7 +131,7 @@ const ValuePage = () => {
                   คิดว่ากิจกรรมและหัวข้อที่แลกเปลี่ยน <br />
                   เป็นประโยชน์ ต่อการขับเคลื่อนเชิงนโยบาย
                 </h3>
-                <Image src={PinkChart} width="420" height="420" alt="pink-chart" />
+                <Image src={PinkChart} width="420" height="420" priority alt="pink-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 213 คน</p>
               </div>
               <div className="flex flex-col justify-end h-full col-span-1 space-y-2 text-center">
@@ -139,12 +139,12 @@ const ValuePage = () => {
                   คิดว่าตัวเองและหน่วยงาน
                   <br /> ได้รับประโยชน์จากการเข้าร่วม
                 </h3>
-                <Image src={YellowChart} width="420" height="420" alt="yellow-chart" />
+                <Image src={YellowChart} width="420" height="420" priority alt="yellow-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 151 คน</p>
               </div>
               <div className="flex flex-col justify-end h-full col-span-1 space-y-2 text-center">
                 <h3 className="pb-6 font-bold lg:text-lg">สามารถนำประเด็นจากการแลกเปลี่ยนไปต่อยอดในการทำงานหรือในหน่วยงานได้</h3>
-                <Image src={BlueChart} width="420" height="420" alt="blue-chart" />
+                <Image src={BlueChart} width="420" height="420" priority alt="blue-chart" />
                 <p className="text-sm font-body">ผู้ตอบแบบสอบถาม : 54 คน</p>
               </div>
             </div>
