@@ -23,7 +23,7 @@ const Carousel = ({ data }: { data: Banner[] }) => {
         <ul className="m-0">{dots}</ul>
       </div>
     ),
-    customPaging: (i: number) => <div className={`w-4 h-4 rounded-full ${i === index ? 'bg-copper' : 'bg-white shadow-inner hover:bg-opacity-75'}`} />,
+    customPaging: (i: number) => <div className={`w-4 h-4 rounded-full ${i === index ? 'bg-primary' : 'bg-white shadow-inner hover:bg-opacity-75'}`} />,
   }
 
   return (
@@ -34,7 +34,7 @@ const Carousel = ({ data }: { data: Banner[] }) => {
             <img src={banner.image.url} loading="eager" alt={banner.title} className="w-full h-full object-top object-cover brightness-90" />
             <div className="absolute -translate-y-1/2 -translate-x-1/3 top-1/2 left-2/3 space-y-4 hidden md:block">
               <h2 className="relative leading-normal font-bold text-2xl text-white line-clamp-3">{banner.title}</h2>
-              <a href={banner.url} target="_blank" className="inline-block py-2 px-4 bg-copper hover:bg-[#707070] text-white font-bold" rel="noreferrer">
+              <a href={banner.url} target="_blank" className="inline-block py-2 px-4 bg-primary hover:bg-[#707070] text-white font-bold" rel="noreferrer">
                 อ่านต่อ &gt;
               </a>
             </div>
