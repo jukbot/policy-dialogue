@@ -74,14 +74,23 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
   const [currentArticles, setCurrentArticles] = useState<Article[]>(articlesData)
   const [currentTag, setCurrentTag] = useState<string>('')
 
-  const queryArticles = useCallback(async (currentTag: string) => {
-    const res = await graphcms.request(ARTICLES_QUERY_BY_TAG, { tag: [currentTag] })
-    setCurrentArticles(res.articles)
-  }, [])
+  const queryArticles = useCallback(
+    async (currentTag: string) => {
+      if (currentTag === 'all') {
+        setCurrentTag('')
+        setCurrentArticles(articlesData)
+        return
+      }
+      setCurrentTag(currentTag)
+      const res = await graphcms.request(ARTICLES_QUERY_BY_TAG, { tag: [currentTag] })
+      setCurrentArticles(res.articles)
+    },
+    [articlesData]
+  )
 
   useEffect(() => {
-    if (asPath?.match(/#([a-z0-9%]+)/gi) && asPath !== '/article#all') {
-      setCurrentTag(decodeURI(asPath.split('#')[1]))
+    console.log(setCurrentTag(''))
+    if (asPath?.match(/#([a-z0-9%]+)/gi)) {
       queryArticles(decodeURI(asPath.split('#')[1]))
     } else {
       setCurrentTag('')
@@ -125,12 +134,12 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
                     </div>
                   </li>
                 ))}
-                {currentArticles.length === 0 && (
-                  <div className="py-16">
-                    <h3 className="text-2xl text-center font-bold">ไม่มีบทความ</h3>
-                  </div>
-                )}
               </ul>
+              {currentArticles.length === 0 && (
+                <div className="py-24">
+                  <h3 className="text-2xl text-center font-bold">ไม่มีบทความ</h3>
+                </div>
+              )}
               <div className="lg:py-12">
                 <Pagination total={articlesConnection.pageInfo.pageSize} currentPage={currentPage} />
               </div>

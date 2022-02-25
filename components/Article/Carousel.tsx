@@ -16,11 +16,10 @@ const Carousel = ({ data }: { data: Banner[] }) => {
     appendDots: (dots: any) => (
       <div
         style={{
-          bottom: 1,
           padding: '10px',
         }}
       >
-        <ul className="m-0">{dots}</ul>
+        <ul className="m-0 bottom-6 absolute left-1/2 -translate-x-1/2">{dots}</ul>
       </div>
     ),
     customPaging: (i: number) => (
@@ -32,27 +31,48 @@ const Carousel = ({ data }: { data: Banner[] }) => {
     <section className="relative w-full">
       <Slider ref={sliderRef} {...settings} afterChange={(index) => setIndex(index)}>
         {data.map((banner) => (
-          <div key={banner.id} className="bg-white h-[400px] w-full overflow-hidden relative">
-            <img src={banner.image.url} loading="eager" alt={banner.title} className="w-full h-full object-top object-cover brightness-90 bg-[#707070]" />
-            <div className="absolute -translate-y-1/2 -translate-x-1/3 top-1/2 left-2/3 space-y-4 hidden md:block">
-              <h2 className="relative leading-normal font-bold text-2xl text-white line-clamp-3">{banner.title}</h2>
-              <a
-                href={banner.url}
-                target="_blank"
-                className="inline-block py-2 px-4 bg-primary transition hover:bg-[#707070] text-white font-bold"
-                rel="noreferrer"
-              >
-                อ่านต่อ &gt;
-              </a>
+          <>
+            <div key={banner.id} className="bg-white h-[280px] sm:h-[400px] w-full overflow-hidden relative">
+              <img src={banner.image.url} loading="eager" alt={banner.title} className="w-full h-full object-top object-cover brightness-90 bg-[#707070]" />
+              <div className="absolute -translate-y-1/2 -translate-x-1/3 top-1/2 left-2/3 space-y-4 hidden md:block">
+                <h2 className="relative leading-normal font-bold text-2xl text-white line-clamp-3">{banner.title}</h2>
+                <a
+                  href={banner.url}
+                  target="_blank"
+                  className="inline-block py-2 px-4 bg-primary transition hover:bg-[#707070] text-white font-bold"
+                  rel="noreferrer"
+                >
+                  อ่านต่อ &gt;
+                </a>
+              </div>
             </div>
-          </div>
+            <div className="block md:hidden px-6 py-12 bg-[#2b2b2b]">
+              <div className="space-y-6 mx-auto max-w-sm">
+                <h2 className="relative leading-normal font-bold text-2xl text-white line-clamp-3">{banner.title}</h2>
+                <a
+                  href={banner.url}
+                  target="_blank"
+                  className="inline-block py-2 px-4 bg-primary transition hover:bg-[#707070] text-white font-bold"
+                  rel="noreferrer"
+                >
+                  อ่านต่อ &gt;
+                </a>
+              </div>
+            </div>
+          </>
         ))}
       </Slider>
 
-      <button onClick={() => sliderRef?.current?.slickPrev()} className="absolute top-1/2 left-0 sm:left-6 lg:left-8 transform -translate-y-1/2">
+      <button
+        onClick={() => sliderRef?.current?.slickPrev()}
+        className="absolute top-1/4 -translate-y-1/3 sm:top-1/2 left-0 sm:left-6 transform sm:-translate-y-1/2"
+      >
         <ChevronLeftIcon role="button" className="h-12 w-12 text-white hover:opacity-75 transition" />
       </button>
-      <button onClick={() => sliderRef?.current?.slickNext()} className="absolute top-1/2 right-0 sm:right-6 lg:right-8 transform -translate-y-1/2">
+      <button
+        onClick={() => sliderRef?.current?.slickNext()}
+        className="absolute top-1/4 -translate-y-1/3 sm:top-1/2 right-0 sm:right-6 transform sm:-translate-y-1/2"
+      >
         <ChevronRightIcon role="button" className="h-12 w-12 text-white hover:opacity-75 transition" />
       </button>
     </section>

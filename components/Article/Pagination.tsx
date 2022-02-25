@@ -19,19 +19,19 @@ const Pagination = ({ total, currentPage }: Props) => {
   return (
     <nav className="flex items-center justify-center">
       <div className="items-center inline-flex text-[#707070] space-x-4">
-        <Link href={`/article?page=1#article`}>
+        <Link href={`/article?page=1`} scroll={false}>
           <a>
             <ChevronDoubleLeftIcon className="w-6 h-6 cursor-pointer hover:text-primary" />
           </a>
         </Link>
-        <Link href={`?page=${currentPage >= 1 ? 1 : currentPage - 1}#article`}>
+        <Link href={`?page=${currentPage >= 1 ? 1 : currentPage - 1}`} scroll={false}>
           <a>
             <ChevronLeftIcon className="w-6 h-6 cursor-pointer hover:text-primary" />{' '}
           </a>
         </Link>
         <div className="pt-1 space-x-4 font-medium">
           {pages.map((page) => (
-            <Link key={page} href={`?page=${page}#article`} aria-current={page === currentPage ? 'page' : undefined}>
+            <Link key={page} href={`?page=${page}`} aria-current={page === currentPage ? 'page' : undefined} scroll={false}>
               <a
                 className={`w-8 h-8 font-body ${
                   page === currentPage ? 'rounded-full bg-[#707070] text-white' : 'hover:text-primary'
@@ -42,12 +42,12 @@ const Pagination = ({ total, currentPage }: Props) => {
             </Link>
           ))}
         </div>
-        <Link href={`?page=${currentPage >= pages[pages.length - 1] ? pages[pages.length - 1] : currentPage + 1}#article`}>
+        <Link href={`?page=${currentPage >= pages[pages.length - 1] ? pages[pages.length - 1] : currentPage + 1}`} scroll={false}>
           <a>
             <ChevronRightIcon className="w-6 h-6 cursor-pointer hover:text-primary" />
           </a>
         </Link>
-        <Link href={`?page=${pages[pages.length - 1]}#article`}>
+        <Link href={`?page=${pages[pages.length - 1]}`} scroll={false}>
           <a>
             <ChevronDoubleRightIcon className="w-6 h-6 cursor-pointer hover:text-primary" />
           </a>
