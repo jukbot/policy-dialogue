@@ -29,11 +29,11 @@ const Pagination = ({ total, currentPage }: Props) => {
             <ChevronLeftIcon className="w-6 h-6 cursor-pointer hover:text-primary" />{' '}
           </a>
         </Link>
-        <div className="space-x-4 pt-1 font-medium">
+        <div className="pt-1 space-x-4 font-medium">
           {pages.map((page) => (
             <Link key={page} href={`?page=${page}#article`} aria-current={page === currentPage ? 'page' : undefined}>
               <a
-                className={`w-8 h-8 ${
+                className={`w-8 h-8 font-body ${
                   page === currentPage ? 'rounded-full bg-[#707070] text-white' : 'hover:text-primary'
                 } inline-flex justify-center items-center`}
               >

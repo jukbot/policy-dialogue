@@ -77,6 +77,7 @@ module.exports = {
         'value-hero-pattern-mobile': "url('/image/background/value-hero-pattern-mobile.svg')",
         'rise-impact-footer': "url('/image/background/rise-impact-footer.svg')",
         'article-hero-pattern': "url('/image/background/article-hero-pattern.svg')",
+        'article-hero-pattern-mobile': "url('/image/background/article-hero-pattern-mobile.svg')",
         'clean-water': "url('/image/policy/clean-water.jpg')",
         education: "url('/image/policy/education.jpg')",
         environment: "url('/image/policy/environment.jpg')",

@@ -28,15 +28,15 @@ const ProjectDropdown = () => {
             <Transition
               as={Fragment}
               enter="transition ease-out duration-150"
-              enterFrom="opacity-0 translate-y-1"
+              enterFrom="opacity-0 translate-y-0"
               enterTo="opacity-100 translate-y-0"
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
+              leaveTo="opacity-0 translate-y-0"
             >
               <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-40 shadow-xl">
                 <div className="bg-[#474747]">
-                  <div className="grid p-6 mx-auto mt-4 overflow-hidden gap-y-2 lg:grid-cols-7 max-w-7xl">
+                  <div className="grid p-6 mx-auto mt-4 overflow-hidden gap-y-2 lg:grid-cols-7">
                     {projectDropdown.map((item) => (
                       <Popover.Button as={Link} key={item.id} href={item.enabled ? item.url : '#'}>
                         <a
@@ -44,7 +44,7 @@ const ProjectDropdown = () => {
                           aria-current={pathname === item.url ? 'page' : undefined}
                           className={`${
                             item.enabled ? (pathname === item.url ? 'text-primary' : 'text-link') : 'text-white opacity-50'
-                          } relative flex flex-col w-full h-full col-span-1 p-2 -m-3 shrink-0 space-y-2 transition`}
+                          } relative flex flex-col w-full h-full col-span-1 p-2 shrink-0 space-y-2 transition`}
                         >
                           <div>{projectIcon.get(item.icon)}</div>
                           <div className="flex flex-col flex-1 text-sm whitespace-normal font-body">

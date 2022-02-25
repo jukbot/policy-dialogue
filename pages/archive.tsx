@@ -258,35 +258,6 @@ const ArchivePage = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col place-content-between space-y-6 p-6 bg-[#36723b] h-48 text-white">
-                <div className="flex space-x-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-current shrink-0 current-color" viewBox="0 0 50 36.853">
-                    <path
-                      data-name="Path 237"
-                      d="M886.369 50.479h-39.436a5.281 5.281 0 0 1-1.67-10.291l8.564-2.855h-6.894a5.281 5.281 0 0 1-1.67-10.291l8.564-2.855h-6.894a5.281 5.281 0 1 1 0-10.562h39.437a5.281 5.281 0 0 1 1.67 10.291l-8.564 2.855h6.894a5.281 5.281 0 0 1 1.67 10.291l-8.564 2.855h6.894a5.281 5.281 0 1 1 0 10.562z"
-                      transform="translate(-841.651 -13.626)"
-                    />
-                  </svg>
-                  <div className="space-y-1">
-                    <p className="text-lg font-bold">Governing mechanism</p>
-                    <p className="font-body">กลไกการติดตามขับเคลื่อนนโยบายเรื่องผู้สูงอายุ</p>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
-                  <a
-                    className="btn-white"
-                    href="javascript:void(0)"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    type="application/pdf"
-                    title="ดาวน์โหลดเอกสาร"
-                    onClick={(e) => checkDownload(e, '/archive/thematic-briefs/GM.pdf')}
-                  >
-                    <ArrowCircleDownIcon className="w-8 h-8 fill-current" />
-                    <span>ข้อสรุป</span>
-                  </a>
-                </div>
-              </div>
             </div>
 
             <div className="flex flex-col space-y-2" id="policy-recommendations">

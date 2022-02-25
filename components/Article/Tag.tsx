@@ -1,13 +1,28 @@
 import { Tag } from '@types'
+import Link from 'next/link'
 
-const TagList = ({ tags }: { tags: Tag[] }) => {
+const TagList = ({ tags, currentTag }: { tags: Tag[]; currentTag: string }) => {
   return (
-    <section className="relative w-full flex space-x-2 px-6 sm:px-0">
-      <button className="inline-flex items-center px-2.5 py-1 text-sm bg-primary text-white">แสดงทั้งหมด</button>
+    <section id="all" className="relative flex flex-wrap items-start justify-start w-full px-6 sm:px-0">
+      <Link href="#all">
+        <a
+          className={`${
+            currentTag === 'all' || currentTag === '' ? 'bg-primary' : 'bg-[#707070] hover:bg-primary'
+          } inline-flex items-center px-2.5 py-1 mr-2 text-sm text-white transition`}
+        >
+          แสดงทั้งหมด
+        </a>
+      </Link>
       {tags.map((tag, index) => (
-        <button key={index} className="inline-flex items-center px-2.5 py-1 text-sm bg-[#707070] hover:bg-primary text-white">
-          #{tag.title}
-        </button>
+        <Link href={`#${tag.title}`} key={index}>
+          <a
+            className={`${
+              currentTag === tag.title ? 'bg-primary' : 'bg-[#707070] hover:bg-primary'
+            } transition inline-flex items-center px-2.5 py-1 text-sm mb-2 mr-2 text-white`}
+          >
+            {tag.title}
+          </a>
+        </Link>
       ))}
     </section>
   )

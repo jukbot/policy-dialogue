@@ -1,0 +1,15 @@
+query ArticlesQuery($tag: String) {
+  articles(orderBy: publishedAt_DESC, where: { tags_every: { title_in: $tag } }) {
+    id
+    title
+    description
+    url
+    createdAt
+    tags {
+      title
+    }
+    coverImage {
+      url
+    }
+  }
+}
