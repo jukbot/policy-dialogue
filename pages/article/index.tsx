@@ -116,7 +116,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
               <TagList tags={tags} currentTag={currentTag} />
               <ul role="list" className="px-6 mx-auto space-y-8 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
                 {currentArticles.map(({ id, title, url, coverImage, description }) => (
-                  <li key={id} className="transition ease-in flex flex-col w-full overflow-hidden bg-white">
+                  <li key={id} className="flex flex-col w-full overflow-hidden transition ease-in bg-white">
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" loading="eager" src={coverImage.url} alt={title} />
                     <div className="flex flex-col h-full px-12 py-8">
                       <div className="mb-12 space-y-4">
@@ -137,10 +137,10 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
               </ul>
               {currentArticles.length === 0 && (
                 <div className="py-24">
-                  <h3 className="text-2xl text-center font-bold">ไม่มีบทความ</h3>
+                  <h3 className="text-2xl font-bold text-center">ไม่มีบทความ</h3>
                 </div>
               )}
-              <div className="lg:py-12">
+              <div className={`${currentArticles.length <= 8 && 'hidden'} lg:py-12`}>
                 <Pagination total={articlesConnection.pageInfo.pageSize} currentPage={currentPage} />
               </div>
             </div>
