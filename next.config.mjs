@@ -71,15 +71,6 @@ const nextConfig = {
         ],
       },
       {
-        source: '/_next/data/:path*(json)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=86_400, stale-while-revalidate=59',
-          },
-        ],
-      },
-      {
         source: '/:all*(svg|jpg|png|webp|ttf|woff2)',
         headers: [
           {
