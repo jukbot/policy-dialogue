@@ -64,10 +64,6 @@ const nextConfig = {
             key: 'Permissions-Policy',
             value: 'geolocation=(), fullscreen=*',
           },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, stale-while-revalidate=59',
-          },
         ],
       },
       {

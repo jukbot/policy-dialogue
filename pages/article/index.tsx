@@ -161,7 +161,7 @@ export async function getStaticProps() {
       banners,
       tags,
     },
-    revalidate: 60,
+    revalidate: 10,
   }
 }
 
