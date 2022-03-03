@@ -140,7 +140,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
                   <h3 className="text-2xl font-bold text-center">ไม่มีบทความ</h3>
                 </div>
               )}
-              <div className={`${currentArticles.length <= 8 && 'hidden'} lg:py-12`}>
+              <div className={`${articles.length <= 8 && 'hidden'} lg:py-12`}>
                 <Pagination total={articlesConnection.pageInfo.pageSize} currentPage={currentPage} />
               </div>
             </div>
