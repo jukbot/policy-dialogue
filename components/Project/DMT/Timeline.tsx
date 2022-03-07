@@ -798,10 +798,12 @@ const Timeline = () => {
             <tspan x="0" y="80">
               ระบบคัดกรองคัดแยกภาวะสมองเสื่อม ผ่านเว็บไซต์{' '}
             </tspan>
-            <tspan y="80">https://</tspan>
-            <tspan x="0" y="110">
-              dementia.riseimpact.co/{' '}
-            </tspan>
+            <a color="#fff" href="https://dementia.riseimpact.co" rel="noreferrer" target="_blank">
+              <tspan y="80">https://</tspan>
+              <tspan x="0" y="110">
+                dementia.riseimpact.co/{' '}
+              </tspan>
+            </a>
             <tspan y="110">โดยมีเป้าหมายเพื่อให้ได้ข้อค้นพบ</tspan>
             <tspan x="0" y="140">
               เบื้องต้น{' '}

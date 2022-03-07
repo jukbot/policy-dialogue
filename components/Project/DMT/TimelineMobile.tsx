@@ -576,9 +576,11 @@ const TimelineMobile = () => {
                 <tspan x="0" y="140">
                   สมองเสื่อม ผ่านเว็บไซต์{' '}
                 </tspan>
-                <tspan x="0" y="170">
-                  https://dementia.riseimpact.co/{' '}
-                </tspan>
+                <a color="#fff" href="https://dementia.riseimpact.co" rel="noreferrer" target="_blank">
+                  <tspan x="0" y="170">
+                    https://dementia.riseimpact.co/{' '}
+                  </tspan>
+                </a>
                 <tspan x="0" y="200">
                   โดยมีเป้าหมายเพื่อให้ได้ข้อค้นพบ
                 </tspan>
