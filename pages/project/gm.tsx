@@ -199,17 +199,17 @@ const GmPage = () => {
               <TimelineSummary />
             </div>
             <div className="flex flex-col items-center px-6 mt-12 space-y-12 text-white">
-              <p className="max-w-xl text-center">
+              <p className="max-w-xl text-lg text-center font-body">
                 การออกแบบโครงสร้างบุคลากรและการทำงานของ คณะกรรมการผู้สูงอายุแห่งชาติ โดยยึดหลักประชาชนเป็นศูนย์กลาง ผ่านการมีส่วนร่วมของภาคประชาสังคม
               </p>
               <Link href="/archive#policy-recommendations">
                 <a
                   className="text-[#36723b] text-sm inline-flex btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
                   target="_self"
-                  title="ข้อเสนอแนะเชิงนโยบาย"
+                  title="ข้อเสนอเชิงนโยบาย"
                   rel="noopener noreferrer"
                 >
-                  <span>ข้อเสนอแนะเชิงนโยบาย</span>
+                  <span>ข้อเสนอเชิงนโยบาย</span>
                 </a>
               </Link>
             </div>

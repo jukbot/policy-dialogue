@@ -10,9 +10,13 @@ const Carousel = ({ data }: { data: Banner[] }) => {
     dots: true,
     infinite: true,
     speed: 500,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    cssEase: 'linear',
+    pauseOnDotsHover: true,
+    pauseOnHover: true,
     appendDots: (dots: any) => (
       <div
         style={{
@@ -29,7 +33,7 @@ const Carousel = ({ data }: { data: Banner[] }) => {
 
   return (
     <section className="relative w-full">
-      <Slider ref={sliderRef} {...settings} afterChange={(index) => setIndex(index)}>
+      <Slider ref={sliderRef} {...settings} beforeChange={(_, index) => setIndex(index)}>
         {data.map((banner) => (
           <>
             <div key={banner.id} className="bg-[#313131] h-[280px] sm:h-[400px] w-full overflow-hidden relative">

@@ -69,7 +69,9 @@ const LtcPage = () => {
                 ถือเป็นสัดส่วนที่ไม่น้อย แต่ประเทศไทยยังขาดระบบบริการการดูแลระยะยาวที่เหมาะสม ซึ่งอาจส่งผลต่อคุณภาพชีวิตและเศรษฐกิจของผู้ป่วย ครอบครัว ผู้ดูแล
                 และระบบสาธารณสุขในภาพรวม
               </p>
-              <p className="relative flex text-xs text-white opacity-75 font-body ">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย พ.ศ. 2563 (มส.ผส.)</p>
+              <a href="https://www.dop.go.th/download/knowledge/th1635826373-975_0.pdf" target="_blank" rel="noreferrer">
+                <p className="relative flex text-xs text-white opacity-75 font-body">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย พ.ศ. 2563 (มส.ผส.)</p>
+              </a>
             </div>
           </section>
 
@@ -151,7 +153,9 @@ const LtcPage = () => {
               <p className="max-w-2xl text-base font-semibold text-center font-body">
                 ในขณะที่ผู้สูงอายุในบ้านเรา ได้รับเบี้ยยังชีพเริ่มต้นเพียงคนละ 600 บาทถ้วน
               </p>
-              <p className="text-xs font-body">*ข้อมูลจาก รายงานทีดีอาร์ไอ ฉบับที่ 138 มีนาคม 2561 “ระบบประกันการดูแลระยะยาว : ระบบที่เหมาะสมกับประเทศไทย”</p>
+              <a href="https://tdri.or.th/wp-content/uploads/2018/07/wb138.pdf" target="_blank" rel="noreferrer">
+                <p className="text-xs font-body">*ข้อมูลจาก รายงานทีดีอาร์ไอ ฉบับที่ 138 มีนาคม 2561 “ระบบประกันการดูแลระยะยาว : ระบบที่เหมาะสมกับประเทศไทย”</p>
+              </a>
             </div>
           </div>
         </section>

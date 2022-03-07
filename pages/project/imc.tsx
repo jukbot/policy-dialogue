@@ -147,7 +147,9 @@ const ImcPage = () => {
                 <br />
                 แปรผันตรงกับจำนวนประชากรผู้สูงอายุที่เพิ่มขึ้นอย่างต่อเนื่อง เป็นหนึ่งในตัวบ่งชี้ถึงความสำคัญของการดูแลระยะกลางได้อย่างดี
               </p>
-              <p className="text-xs font-body">*ข้อมูลจากกองโรคไม่ติดต่อ กรมควบคุมโรค กระทรวงสาธารณสุข</p>
+              <a href="http://www.thaincd.com/2016/mission/documents-detail.php?id=13684&tid=32&gid=1-020" target="_blank" rel="noreferrer">
+                <p className="text-xs font-body">*ข้อมูลจากกองโรคไม่ติดต่อ กรมควบคุมโรค กระทรวงสาธารณสุข</p>
+              </a>
             </div>
           </div>
         </section>
@@ -227,24 +229,25 @@ const ImcPage = () => {
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-12 text-white md:grid-cols-4 md:px-24">
+            <div className="grid w-full grid-cols-1 gap-8 px-6 mt-12 text-white md:grid-cols-2 lg:grid-cols-4 md:px-24">
               <div className="flex flex-col col-span-1 space-y-4">
                 <h3 className="h-full text-xl font-bold">ข้อเสนอ 1</h3>
                 <p className="font-body">
                   การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุขของสำนักงานหลักประกันสุขภาพแห่งชาติ เพื่อส่งเสริมการดูแลระยะกลางอย่างเข้มข้น ในระดับโรงพยาบาลชุมชน
                   <br />
                   <br />
-                  ดูข้อเสนอฉบับเต็ม
                 </p>
+
+                <p className="font-body">ดูข้อเสนอฉบับเต็ม</p>
                 <Link href="/archive#policy-recommendations">
                   <a
-                    className="text-[#6badcb] text-sm mt-auto inline-flex px-4 btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
+                    className="text-[#6badcb] lg:w-full max-w-sm text-sm mt-auto justify-center items-center inline-flex px-4 btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
                     target="_self"
-                    title="ข้อเสนอแนะเชิงนโยบาย"
+                    title="ข้อเสนอเชิงนโยบาย"
                     rel="noopener noreferrer"
                   >
                     <ArrowRightIcon className="w-4 h-4 mr-1 fill-current" />
-                    <span>ข้อเสนอแนะเชิงนโยบาย</span>
+                    <span>ข้อเสนอเชิงนโยบาย</span>
                   </a>
                 </Link>
               </div>
@@ -263,7 +266,7 @@ const ImcPage = () => {
                 <p className="h-full font-body">เพิ่มความรู้ความเข้าใจ ต่อเรื่องการดูแลผู้ป่วย ระยะกลางแก่ทั้งประชาชนและหน่วยงานที่เกี่ยวข้อง</p>
                 <Link href="/archive#thematic-briefs">
                   <a
-                    className="text-[#6badcb] text-sm inline-flex btn mt-auto mx-auto bg-white hover:text-white hover:bg-[#191919] rounded-full"
+                    className="text-[#6badcb] lg:w-full justify-center items-center text-sm inline-flex btn mt-auto mx-auto bg-white hover:text-white hover:bg-[#191919] rounded-full"
                     target="_self"
                     title="ดาวน์โหลดข้อสรุป"
                     rel="noopener noreferrer"
@@ -300,13 +303,6 @@ const ImcPage = () => {
                       ในเรื่องข้อจำกัดและอุปสรรคการทำงาน โดยเฉพาะประเด็นการบูรณาการข้อมูล การขาดแคลน นักกายภาพบำบัด
                       และความต้องการในการปรับระบบการเบิกจ่ายในโรงพยาบาล แม้ว่าจะมีรูปแบบการดูแล ผู้ป่วยที่ต่างกัน นั่นก็เพราะต้องปรับให้เหมาะสมกับ
                       สภาพแวดล้อมและทรัพยากรที่เอื้อในพื้นที่
-                    </p>
-                  </li>
-                  <li className="space-y-2 md:space-y-4">
-                    <h3 className="text-xl font-bold">เปิดโอกาสการเรียนรู้ระหว่างพื้นที่</h3>
-                    <p className="font-body">
-                      ทั้งจากผู้ปฏิบัติงาน ผู้เชี่ยวชาญ นักวิชาการ รวมไปถึงญาติผู้ป่วยระยะประคับประคอง และตัวแทนระดับเขตสุขภาพ เพื่อนำไปปรับปรุง
-                      ปรับใช้กับหน่วยงาน ชุมชน หรือส่วนของตนเอง
                     </p>
                   </li>
                   <li className="space-y-2 md:space-y-4">

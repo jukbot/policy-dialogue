@@ -142,7 +142,7 @@ const DmtPage = () => {
               ภาวะสมองเสื่อมเป็นอาการที่พบมากในผู้สูงอายุ อาจพบได้ถึง 0.2-1 ล้านคน* จากประชากรผู้สูงอายุในปี 2563
               ซึ่งเป็นความท้าทายสำคัญของประเทศไทยต่อการเตรียมรับมือ จำนวนผู้มีภาวะพึ่งพิงที่อาจเพิ่มขึ้นเรื่อยๆ จากภาวะทางสมอง
             </p>
-            <p className="max-w-xl mt-6 text-xs text-center">
+            <p className="max-w-xl mt-6 text-sm text-center font-body">
               คำนวณจากความชุกผู้ป่วยสมองเสื่อมในไทย 2-10%
               <br />
               ข้อมูลจาก มส.ผส., “ภาวะสมองเสื่อม” ป่วยเพิ่มปีละ 1 แสนราย สถิติชี้ ร้อยละ 50 ของผู้สูงวัย80ขึ้นไปมีอาการ (2020)
@@ -294,15 +294,15 @@ const DmtPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ยุทธศาสตรย่อยที่ 1</h3>
+                      <h3 className="text-xl font-bold">ยุทธศาสตร์ย่อยที่ 1</h3>
                       <p className="font-body">ผู้สูงอายุทุกคนเข้าถึงการคัดแยกภาวะ การรู้คิดบกพร่องเล็กน้อย (MCI)</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ยุทธศาสตรย่อยที่ 2</h3>
+                      <h3 className="text-xl font-bold">ยุทธศาสตร์ย่อยที่ 2</h3>
                       <p className="font-body">ประชาชนมีความรู้ความเข้าใจต่อภาวะ การรู้คิดบกพร่องเล็กน้อย (MCI) และ ภาวะสมองเสื่อมที่ถูกต้อง</p>
                     </li>
                     <li className="space-y-2">
-                      <h3 className="text-xl font-bold">ยุทธศาสตรย่อยที่ 3</h3>
+                      <h3 className="text-xl font-bold">ยุทธศาสตร์ย่อยที่ 3</h3>
                       <p className="font-body">
                         จัดให้มี intervention กระตุ้นสมองและชะลอความเสื่อมสำหรับผู้สูงอายุที่มีภาวะการรู้คิดบกพร่องเล็กน้อย (MCI) ในระดับครอบครัวจนถึงชุมชน
                       </p>

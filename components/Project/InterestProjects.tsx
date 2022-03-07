@@ -19,36 +19,27 @@ const InterestProjects = ({ projects = [] }: Props) => {
 
         <ul className="flex w-full space-x-6 overflow-x-auto xl:justify-center flex-nowrap">
           {projects.map((project) => (
-            <li key={project.icon} className="relative w-64 overflow-visible shrink-0">
-              {project.enabled ? (
-                <Link href={project.url}>
-                  <a>
-                    <div
-                      title={project.description}
-                      className={`shrink-0 ${project.color} ${
-                        project.enabled ? 'hover:brightness-90' : ''
-                      } flex p-6 items-center justify-center w-52 h-36 left-1/2 -translate-x-1/2 top-0 transition absolute`}
-                    >
-                      {projectLargeIcon.get(project.icon)}
+            <Link href={project.url} key={project.icon}>
+              <a className="relative w-64 overflow-visible shrink-0 group">
+                <li>
+                  <div
+                    title={project.description}
+                    className={`shrink-0 ${project.color} ${
+                      project.enabled ? 'group-hover:brightness-75' : ''
+                    } flex p-6 items-center justify-center w-52 h-36 left-1/2 -translate-x-1/2 top-0 transition absolute`}
+                  >
+                    {projectLargeIcon.get(project.icon)}
+                  </div>
+
+                  <div className="flex flex-col justify-start h-64 p-6 mt-16 space-y-6 bg-white text-secondary">
+                    <div className="mt-20 space-y-1">
+                      <p className="text-lg font-bold">{project.description}</p>
+                      <p className="text-sm font-body">({project.title})</p>
                     </div>
-                  </a>
-                </Link>
-              ) : (
-                <div
-                  placeholder="เร็วๆ นี้"
-                  title="เร็วๆ นี้"
-                  className={`shrink-0 ${project.color} flex p-6 items-center justify-center w-52 h-36 left-1/2 -translate-x-1/2 top-0 transition absolute`}
-                >
-                  {projectLargeIcon.get(project.icon)}
-                </div>
-              )}
-              <div className="flex flex-col justify-start h-64 p-6 mt-16 space-y-6 bg-white text-secondary">
-                <div className="mt-20 space-y-1">
-                  <p className="text-lg font-bold">{project.description}</p>
-                  <p className="text-sm font-body">({project.title})</p>
-                </div>
-              </div>
-            </li>
+                  </div>
+                </li>
+              </a>
+            </Link>
           ))}
         </ul>
       </div>
