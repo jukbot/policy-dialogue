@@ -10,7 +10,7 @@ import TagList from '@/components/Article/Tag'
 
 const ARTICLES_QUERY_BY_TAG = gql`
   query ArticlesQuery($tag: [String!]) {
-    articles(orderBy: publishedAt_DESC, where: { tags_every: { title_in: $tag } }) {
+    articles(orderBy: createdAt_DESC, where: { tags_every: { title_in: $tag } }) {
       id
       title
       description
@@ -121,7 +121,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
                     <div className="flex flex-col h-full p-6 sm:px-12 sm:py-8">
                       <div className="mb-12 space-y-4">
                         <h3 className="text-lg font-bold lg:text-xl line-clamp-2">{title}</h3>
-                        <p className="text-sm font-body leading-relaxed line-clamp-4 text-[#707070]">{description}</p>
+                        <p className="text-sm font-body leading-relaxed line-clamp-4 overflow-hidden text-[#707070]">{description}</p>
                       </div>
                       <a
                         href={url}
