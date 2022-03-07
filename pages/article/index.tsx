@@ -10,7 +10,7 @@ import TagList from '@/components/Article/Tag'
 
 const ARTICLES_QUERY_BY_TAG = gql`
   query ArticlesQuery($tag: [String!]) {
-    articles(orderBy: createdAt_DESC, where: { tags_every: { title_in: $tag } }) {
+    articles(orderBy: createdAt_DESC, where: { tags_some: { title_in: $tag } }) {
       id
       title
       description
@@ -39,7 +39,7 @@ const ARTICLES_QUERY = gql`
         pageSize
       }
     }
-    articles(orderBy: publishedAt_DESC) {
+    articles(orderBy: createdAt_DESC) {
       id
       title
       description
@@ -52,7 +52,7 @@ const ARTICLES_QUERY = gql`
         url
       }
     }
-    banners(orderBy: publishedAt_DESC) {
+    banners(orderBy: createdAt_DESC) {
       id
       title
       url
@@ -119,9 +119,9 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
                   <li key={id} className="flex flex-col w-full overflow-hidden transition ease-in bg-white">
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" loading="eager" src={coverImage.url} alt={title} />
                     <div className="flex flex-col h-full p-6 sm:px-12 sm:py-8">
-                      <div className="mb-12 space-y-4">
+                      <div className="mb-12 space-y-4 overflow-hidden">
                         <h3 className="text-lg font-bold lg:text-xl line-clamp-2">{title}</h3>
-                        <p className="text-sm font-body leading-relaxed line-clamp-4 overflow-hidden text-[#707070]">{description}</p>
+                        <p className="text-sm font-body leading-relaxed line-clamp-4 text-ellipsis overflow-hidden text-[#707070]">{description}</p>
                       </div>
                       <a
                         href={url}

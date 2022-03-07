@@ -17,7 +17,7 @@ const TagList = ({ tags, currentTag }: { tags: Tag[]; currentTag: string }) => {
         <Link href={`#${tag.title}`} key={index}>
           <a
             className={`${
-              currentTag === tag.title ? 'bg-primary' : 'bg-[#707070] hover:bg-primary'
+              currentTag.trim() === tag.title.trim() ? 'bg-primary' : 'bg-[#707070] hover:bg-primary'
             } transition inline-flex items-center px-2.5 py-1 text-sm mb-2 mr-2 text-white`}
           >
             {tag.title}
