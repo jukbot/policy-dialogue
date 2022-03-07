@@ -44,7 +44,7 @@ const ImcPage = () => {
       <main className="relative pt-[3.75rem] bg-[#F0F7FA]">
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] grid items-center bg-[#6badcb]">
           <div className="flex flex-col items-center justify-between w-full h-full lg:mb-6 lg:flex-row">
-            <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-white lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
+            <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-body lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
               <div className="space-y-2 text-3xl font-bold lg:text-4xl 2xl:text-6xl">
                 <h1>ฟื้นฟูผู้สูงวัย</h1>
                 <h1>ในห้วง 6 เดือนทอง</h1>
@@ -123,7 +123,7 @@ const ImcPage = () => {
                 </tspan>
               </text>
             </svg>{' '}
-            <p className="text-base font-bold text-center sm:text-lg lg:text-2xl max-w-3xl">
+            <p className="max-w-3xl text-base font-bold text-center sm:text-lg lg:text-2xl">
               การฟื้นฟูสมรรภภาพร่างกายผู้ป่วยภายใน 6 เดือนทองหลังพ้นระยะวิกฤต นับเป็นความสำคัญอย่างยิ่ง
               เนื่องจากเป็นช่วงเวลาที่ร่างกายของของผู้ป่วยยังสามารถฟื้นตัวกลับมาเป็นปกติได้ โดยเฉพาะใน 3 โรคสำคัญ ได้แก่ โรคหลอดเลือดสมอง สมองบาดเจ็บ
               และกระดูกสันหลังบาดเจ็บ
@@ -135,13 +135,13 @@ const ImcPage = () => {
           <div className="absolute left-0 flex justify-center w-full -top-40">
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
-          <div className="flex flex-col items-center justify-center pt-28 space-y-6 text-white">
+          <div className="flex flex-col items-center justify-center space-y-6 text-white pt-28">
             <div className="flex flex-col items-center space-y-2">
               <p className="text-xl font-bold">จำนวนผู้ป่วยใน ที่ป่วยด้วยโรคหลอดเลือดสมองในประเทศไทย (คน)*</p>
               <Image src={Chart} width={350} alt="elderly home" />
             </div>
             <div className="flex flex-col items-center space-y-8">
-              <p className="max-w-lg text-base text-center font-body font-semibold">
+              <p className="max-w-lg text-base font-semibold text-center font-body">
                 การเพิ่มขึ้นของจำนวนผู้ป่วยโรคหลอดเลือดสมอง มีอัตราเพิ่มสูงขึ้นเรื่อยๆ ในแต่ละปี
                 <br />
                 <br />
@@ -200,7 +200,7 @@ const ImcPage = () => {
         <section className="relative h-full bg-[#A5CEE0] md:mt-16">
           <div className="w-full mx-auto md:absolute md:h-56 md:-mt-12 text-body md:-transform-x-1/2">
             <div className="w-full h-full max-w-4xl px-6 py-12 mx-auto space-y-8 text-white md:px-24 bg-secondary">
-              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
+              <div className="flex flex-col items-center h-full space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="leading-relaxed text-center md:max-w-sm md:text-left font-body">
                   จึงจะเกิดระบบการดูแลผู้ป่วยระยะกลางที่มีประสิทธิภาพ ส่งผลดีต่อผู้ป่วยและครอบครัวที่สุด และเกิดข้อเสนอเชิงนโยบาย เพื่ออุดหนุน
@@ -223,13 +223,13 @@ const ImcPage = () => {
         </section>
 
         <section className="relative h-full bg-[#6badcb]">
-          <div className="max-w-6xl mx-auto pb-12">
+          <div className="max-w-6xl pb-12 mx-auto">
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
             <div className="grid w-full grid-cols-1 gap-12 px-6 mt-12 text-white md:grid-cols-4 md:px-24">
               <div className="flex flex-col col-span-1 space-y-4">
-                <h3 className="text-xl font-bold h-full">ข้อเสนอ 1</h3>
+                <h3 className="h-full text-xl font-bold">ข้อเสนอ 1</h3>
                 <p className="font-body">
                   การปรับเกณฑ์การจ่ายชดเชยค่าบริการสาธารณสุขของสำนักงานหลักประกันสุขภาพแห่งชาติ เพื่อส่งเสริมการดูแลระยะกลางอย่างเข้มข้น ในระดับโรงพยาบาลชุมชน
                   <br />
@@ -260,7 +260,7 @@ const ImcPage = () => {
               </div>
               <div className="flex flex-col col-span-1 space-y-4">
                 <h3 className="text-xl font-bold">ข้อเสนอ 4</h3>
-                <p className="font-body h-full">เพิ่มความรู้ความเข้าใจ ต่อเรื่องการดูแลผู้ป่วย ระยะกลางแก่ทั้งประชาชนและหน่วยงานที่เกี่ยวข้อง</p>
+                <p className="h-full font-body">เพิ่มความรู้ความเข้าใจ ต่อเรื่องการดูแลผู้ป่วย ระยะกลางแก่ทั้งประชาชนและหน่วยงานที่เกี่ยวข้อง</p>
                 <Link href="/archive#thematic-briefs">
                   <a
                     className="text-[#6badcb] text-sm inline-flex btn mt-auto mx-auto bg-white hover:text-white hover:bg-[#191919] rounded-full"
