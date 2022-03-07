@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           <section
             className={`${
               intersection && intersection.intersectionRatio < 1 ? '' : ''
-            } relative grid h-[65vh] xl:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile lg:bg-hero-pattern`}
+            } relative grid h-[75vh] xl:h-[90vh] bg-top bg-fixed sm:bg-cover filter bg-no-repeat transition backdrop-filter place-content-center bg-hero-pattern-mobile lg:bg-hero-pattern`}
           >
             <div className="pt-24 space-y-8 text-center text-white">
               <h1 className="text-5xl font-semibold sm:text-7xl">Policy Dialogue</h1>
