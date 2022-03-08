@@ -87,8 +87,8 @@ const AipPage = () => {
                 ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต หากสามารถอาศัยอยู่ที่บ้านของตนเองได้ต่อเนื่อง
               </h3>
               <p className="max-w-xl leading-relaxed font-body">
-                เพราะ &lquote;บ้าน&rquote; คือพื้นที่ที่ให้ความรู้สึกปลอดภัย มีสังคมและสิ่งแวดล้อมที่ผู้สูงอายุคุ้นเคย ลดความกังวลด้านจิตใจ
-                ส่งผลดีต่อการดูแลรักษาสุขภาพ ควบคุมโรค และคุณภาพชีวิต
+                เพราะ ”บ้าน” คือพื้นที่ที่ให้ความรู้สึกปลอดภัย มีสังคมและสิ่งแวดล้อมที่ผู้สูงอายุคุ้นเคย ลดความกังวลด้านจิตใจ ส่งผลดีต่อการดูแลรักษาสุขภาพ
+                ควบคุมโรค และคุณภาพชีวิต
               </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
@@ -108,7 +108,7 @@ const AipPage = () => {
         </section>
 
         <section className="relative h-full bg-[#D28354]">
-          <div className="flex flex-col items-center justify-center px-6 pb-52 text-white">
+          <div className="flex flex-col items-center justify-center px-6 text-white pb-52">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
               <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
                 <tspan x="0" y="0">
@@ -130,7 +130,7 @@ const AipPage = () => {
           <div className="absolute left-0 flex justify-center w-full -top-40">
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
-          <div className="flex flex-col items-center justify-center pt-28 space-y-6 text-white">
+          <div className="flex flex-col items-center justify-center space-y-6 text-white pt-28">
             <div className="flex flex-col items-center space-y-2">
               <h3 className="text-4xl font-bold">ผู้สูงอายุ 11 ล้านคน</h3>
               <Image src={ElderlyLogo} width={350} height={180} alt="elderly logo" />
@@ -185,10 +185,10 @@ const AipPage = () => {
           </div>
           <div className="max-w-6xl mx-auto text-body">
             <div className="w-full h-full max-w-4xl px-6 pt-16 pb-6 mx-auto space-y-8 text-white md:px-24 bg-secondary">
-              <div className="h-full flex flex-col items-center space-y-6 md:justify-between md:flex-row md:space-y-0">
+              <div className="flex flex-col items-center h-full space-y-6 md:justify-between md:flex-row md:space-y-0">
                 <h3 className="text-3xl font-bold">ทำอย่างไร?</h3>
                 <p className="font-bold text-center md:max-w-sm md:text-left font-body">
-                  เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
+                  เพื่อให้เกิดนโยบายที่ตอบสนองแนวคิด <br /> Aging in Place อย่างมีคุณภาพ หลากหลาย และทั่วถึง
                 </p>
               </div>
               <p className="flex flex-col flex-wrap text-base text-center font-body md:block">

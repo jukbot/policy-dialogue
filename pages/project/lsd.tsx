@@ -118,7 +118,7 @@ const LsdPage = () => {
         </section>
 
         <section className="relative h-full bg-[#E1B363]">
-          <div className="flex flex-col items-center justify-center px-6 pb-52 text-white">
+          <div className="flex flex-col items-center justify-center px-6 text-white pb-52">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="180" viewBox="0 0 62 330">
               <text data-name="!" transform="translate(0 223)" fill="#fff" fontFamily="IBMPlexSansThai, sans-serif" fontWeight="600" fontSize="200">
                 <tspan x="0" y="0">
@@ -138,7 +138,7 @@ const LsdPage = () => {
           <div className="absolute left-0 flex justify-center w-full -top-40">
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
-          <div className="flex flex-col items-center justify-center pt-28 space-y-6 text-white">
+          <div className="flex flex-col items-center justify-center space-y-6 text-white pt-28">
             <div className="flex flex-col items-center space-y-4">
               <h3 className="text-3xl font-bold">สัดส่วนผู้สูงอายุ ต่อประชากรทั้งหมด (%)</h3>
               <div>
@@ -150,7 +150,9 @@ const LsdPage = () => {
                 จากข้อมูลปี พ.ศ. 2563 ประเทศไทยมีประชากรผู้สูงอายุกว่า 12 ล้านคน ซึ่งคิดเป็น 18% จากประชากรทั้งหมด 66.5 ล้านคน และคาดการณ์ว่าภายใน ปี พ.ศ. 2565
                 สัดส่วนผู้สูงอายุจะเพิ่มขึ้นเป็น 20% ของประชากรทั้งหมด* ซึ่งหมายถึงการเข้าสู่ “สังคมสูงวัยอย่างสมบูรณ์ (Aged Society)”
               </p>
-              <p className="text-xs font-body">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย ปี 2563 โดย มส.ผส.</p>
+              <a href="https://www.dop.go.th/download/knowledge/th1635826373-975_0.pdf" target="_blank" rel="noreferrer">
+                <p className="text-xs font-body">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย ปี 2563 โดย มส.ผส.</p>
+              </a>
             </div>
           </div>
         </section>
@@ -329,7 +331,7 @@ const LsdPage = () => {
                   </li>
                   <li className="space-y-2 md:space-y-4">
                     <h3 className="text-xl font-bold">
-                      ผู้เข้าร่วมวงหารือทุกคนสนใจและรู้สึกว่าข้อเสนอเรื่องการจัดกลุ่มหนุนใจ (support group) สร้างแรงบันดาลใจ
+                      ผู้เข้าร่วมวงหารือทุกคนสนใจและรู้สึกว่าข้อเสนอเรื่องการจัดกลุ่มหนุนใจ (Support Group) สร้างแรงบันดาลใจ
                     </h3>
                     <p className="font-body">
                       ผู้เข้าร่วมจากหน่วยงานต่างๆ ทั้งกระทรวงสาธารณสุข กรมกิจการผู้สูงอายุ และองค์การปกครองส่วนท้องถิ่น มองว่าเรื่องนี้มีความสำคัญ

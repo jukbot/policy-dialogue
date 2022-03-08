@@ -53,7 +53,7 @@ const ArchivePage = () => {
                     />
                   </svg>
                   <div className="space-y-1">
-                    <p className="text-lg font-bold">Aging in place</p>
+                    <p className="text-lg font-bold">Aging in Place</p>
                     <p className="font-body">การสูงวัยในถิ่นที่อยู่อาศัยเดิมอย่างมีสุขภาวะ</p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const ArchivePage = () => {
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Intermediate Care</p>
                     <p className="font-body">
-                      ระบบการดูแลผู้ป่วยระยะกลาง สำหรับผู้สูงอายุ ที่อยู่ในช่วง
+                      ระบบการดูแลผู้ป่วยระยะกลางสำหรับผู้สูงอายุที่อยู่ในช่วง
                       <br /> 6 เดือนทองหลังพ้นภาวะวิกฤต
                     </p>
                   </div>
@@ -170,7 +170,7 @@ const ArchivePage = () => {
                   </svg>
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Long-Term Care</p>
-                    <p className="font-body">ระบบการดูแลระยะยาวสำหรับผู้สูงอายุ ที่มีภาวะพึ่งพิง</p>
+                    <p className="font-body">ระบบการดูแลระยะยาวสำหรับผู้สูงอายุที่มีภาวะพึ่งพิง</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
@@ -211,7 +211,7 @@ const ArchivePage = () => {
                   </svg>
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Palliative Care</p>
-                    <p className="font-body">ระบบการดูแลแบบประคับประคอง ในช่วงท้ายของชีวิต</p>
+                    <p className="font-body">ระบบการดูแลแบบประคับประคองในช่วงท้ายของชีวิต</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">
@@ -240,7 +240,7 @@ const ArchivePage = () => {
                   </svg>
                   <div className="space-y-1">
                     <p className="text-lg font-bold">Local Service Delivery</p>
-                    <p className="font-body"> การจัดการโครงสร้างเครือข่าย ระบบบริการสุขภาพระดับจังหวัด</p>
+                    <p className="font-body">การจัดการโครงสร้างเครือข่ายระบบบริการสุขภาพระดับจังหวัด</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-auto space-x-6 text-sm font-body">

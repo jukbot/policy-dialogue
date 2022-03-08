@@ -224,10 +224,15 @@ const Home: NextPage = () => {
               <Link href="/process">
                 <a className="w-3/4 sm:w-max btn">กระบวนการของเรา</a>
               </Link>
-              <p className="text-sm text-white font-body">*Adapted from Systemicdesigntoolkit.org</p>
+              <p className="text-sm text-white font-body">
+                *Adapted from{' '}
+                <a href="https://systemicdesigntoolkit.org/" target="_blank" rel="noreferrer">
+                  systemicdesigntoolkit.org
+                </a>
+              </p>
             </div>
             <div className="mx-auto max-w-7xl">
-              <div className="relative flex flex-col items-center justify-center h-full p-6 mx-6 mx-auto my-8 bg-white sm:p-12 rounded-xl">
+              <div className="relative flex flex-col items-center justify-center h-full p-6 mx-auto my-8 bg-white sm:p-12 rounded-xl">
                 <div className="flex flex-col py-8 space-y-4 jutify-center">
                   <h2 className="text-4xl font-bold text-center uppercase text-body">TGRI X RISE IMPACT</h2>
                   <p className="text-center lg:text-lg text-body font-body max-w-prose">
