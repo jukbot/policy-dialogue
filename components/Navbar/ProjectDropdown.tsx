@@ -34,7 +34,7 @@ const ProjectDropdown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-0"
             >
-              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform -translate-x-40 shadow-xl">
+              <Popover.Panel className="absolute inset-x-0 z-10 w-screen max-w-6xl transform shadow-xl -translate-x-60">
                 <div className="bg-[#474747]">
                   <div className="grid p-6 mx-auto mt-4 overflow-hidden gap-y-2 lg:grid-cols-7">
                     {projectDropdown.map((item) => (

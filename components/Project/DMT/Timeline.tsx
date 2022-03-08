@@ -137,7 +137,7 @@ const Timeline = () => {
             <rect width="543.999" height="108.5" fill="#fff" data-name="Rectangle 1054" rx="15" transform="rotate(180 367.5 5345)"></rect>
             <text
               fill="#191919"
-              data-name="กลุ่มพื้นที่ต้นแบบและขยาย : บ้านฝาง คีรีรัฐนิคม อุทัยธานี"
+              data-name="กลุ่มพื้นที่ต้นแบบและขยาย : ขอนแก่น สุราษฎร์ธานี อุทัยธานี"
               fontFamily="IBMPlexSansThaiLooped,sans-serif"
               fontSize="18"
               transform="translate(226 10605.781)"
@@ -146,7 +146,7 @@ const Timeline = () => {
                 กลุ่มพื้นที่ต้นแบบและขยาย :{' '}
               </tspan>
               <tspan x="0" y="50">
-                บ้านฝาง คีรีรัฐนิคม อุทัยธานี
+                ขอนแก่น สุราษฎร์ธานี อุทัยธานี
               </tspan>
             </text>
           </g>
