@@ -366,19 +366,21 @@ const DmtPage = () => {
         </section>
 
         <section className="relative h-full bg-[#EFEFEF]">
-          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
+          <div className="py-12 max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
-              <div className="relative flex flex-col col-span-1 space-y-6 text-body">
-                <div className="px-6 space-y-6 lg:px-12">
-                  <h3 className="text-4xl font-bold leading-snug">
-                    สิ่งที่เกิดขึ้นจาก
-                    <br />
-                    กระบวนการ
-                  </h3>
-                  <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
-                </div>
-                <div className="right-0 w-full px-6 overflow-hidden md:absolute md:px-0 md:pt-48">
-                  <Image width={640} height={380} layout="responsive" priority src={ProcessResult} />
+              <div className="flex flex-col col-span-1 space-y-6 text-body">
+                <div className="space-y-6 lg:space-y-12 top-32 md:sticky">
+                  <div className="px-6 space-y-6 md:px-12 lg:px-24">
+                    <h3 className="text-4xl font-bold leading-snug">
+                      สิ่งที่เกิดขึ้นจาก
+                      <br />
+                      กระบวนการ
+                    </h3>
+                    <p className="font-body">Policy dialogue ไม่ได้มีแต่ผลลัพธ์เชิงเนื้อหา แต่ยังสามารถสร้างคุณค่าในการผลักดันเชิงนโยบาย</p>
+                  </div>
+                  <div className="left-0 w-full px-6 overflow-hidden md:px-0">
+                    <Image width={640} height={380} layout="responsive" priority src={ProcessResult} />
+                  </div>
                 </div>
               </div>
               <div className="h-full col-span-1 px-6 lg:px-12">
