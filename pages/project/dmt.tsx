@@ -157,14 +157,14 @@ const DmtPage = () => {
             <Image src={Circle} width={300} height={300} alt="circle image" />
           </div>
           <div className="flex flex-col items-center justify-center pt-20 space-y-2 text-white">
-            <div className="flex flex-col items-center space-y-6">
+            <div className="flex flex-col items-center space-y-8">
               <p className="max-w-xl text-xl font-bold leading-relaxed text-center">
                 ความรุนแรงของภาวะสมองเสื่อมในระยะต่างๆ ยังส่งผลต่อความสามารถ ในการใช้ชีวิตประจำวันด้วยตนเอง ยิ่งอยู่ในระยะรุนแรงมากขึ้น
                 ก็จะยิ่งสูญเสียความสามารถในการใช้ชีวิต และมีโอกาสมีอาการทางประสาทจิตเวชร่วมด้วย เช่น อาการหลงผิด ประสาทหลอน มีปัญหาการนอนหลับ เป็นต้น
               </p>
               <Image src={Emotion} width={350} alt="emotion" />
             </div>
-            <div className="flex flex-col items-center space-y-6">
+            <div className="flex flex-col items-center space-y-8">
               <p className="max-w-xl text-xl font-bold leading-relaxed text-center">การพึ่งพาผู้ดูแลจึงเป็นสิ่งที่จำเป็นอย่างมาก </p>
               <p className="max-w-xl text-base text-center font-body ">
                 แต่การดูแลผู้ป่วยสมองเสื่อม 1 คนอย่างครอบคลุมและมีคุณภาพ อาจมีค่าใช้จ่ายสูงถึง 50,000 บาทต่อเดือน ซึ่งเป็นค่าใช้จ่ายด้านการจ้างผู้ดูแล ค่ายา
@@ -312,7 +312,7 @@ const DmtPage = () => {
                   </ul>
                   <Link href="/archive#thematic-briefs">
                     <a
-                      className="text-[#8f8ac7] inline-flex items-center btn bg-white hover:text-white hover:bg-[#8f8ac7] rounded-full"
+                      className="text-[#8f8ac7] inline-flex mt-auto items-center btn bg-white hover:text-white hover:bg-[#8f8ac7] rounded-full"
                       target="_self"
                       title="ดาวน์โหลดข้อสรุป"
                       rel="noopener noreferrer"
@@ -350,7 +350,7 @@ const DmtPage = () => {
                   </ul>
                   <Link href="/archive#thematic-briefs">
                     <a
-                      className="text-[#daa13d] inline-flex bg-white hover:text-white hover:bg-[#daa13d] btn rounded-full"
+                      className="text-[#daa13d] mt-auto inline-flex bg-white hover:text-white hover:bg-[#daa13d] btn rounded-full"
                       target="_self"
                       title="ดาวน์โหลดข้อสรุป"
                       rel="noopener noreferrer"
