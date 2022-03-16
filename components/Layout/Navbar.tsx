@@ -59,7 +59,7 @@ const Navbar = (): JSX.Element => {
                   </Link>
                 </div>
                 <div className="hidden w-full xl:block">
-                  <div className="flex justify-center space-x-4 whitespace-nowrap">
+                  <div className="flex justify-center space-x-6 whitespace-nowrap">
                     <ProjectDropdown />
                     <ProcessDropdown />
                     {desktopNav.map((item) => (

@@ -66,11 +66,11 @@ const GmPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-80">
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">จะดีกว่าไหม</h3>
               <p className="max-w-sm leading-relaxed font-body">
                 หากประเทศไทยมีกลไกการติดตาม ทบทวน และพัฒนานโยบาย เพื่อรองรับสังคมสูงวัยให้ดีขึ้นอย่างต่อเนื่อง
@@ -79,35 +79,46 @@ const GmPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">มองปัญหาในเชิงระบบ ร่วมมือกัน จากหลายภาคส่วน</h3>
-              <p className="max-w-xl leading-relaxed font-body">
-                ไม่ได้มุ่งขับเคลื่อนผ่านกระทรวงใดกระทรวงหนึ่ง แต่ยังร่วมหารือกับภาคการเมือง ซึ่งมีบทบาทในการกำหนดนโยบายและทำหน้าที่ในสภาผู้แทนราษฎร
+            <div className="flex xl:ml-16 justify-center  flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
+                มองปัญหาในเชิงระบบ ร่วมมือกัน
+                <br /> จากหลายภาคส่วน
+              </h3>
+              <p className="max-w-lg leading-relaxed font-body">
+                ไม่ได้มุ่งขับเคลื่อนผ่านกระทรวงใดกระทรวงหนึ่ง
+                <br /> แต่ยังร่วมหารือกับภาคการเมือง ซึ่งมีบทบาทในการกำหนดนโยบาย และทำหน้าที่ในสภาผู้แทนราษฎร
               </p>
 
-              <span className="max-w-xl text-xs font-body">
+              <span className="hidden md:block max-w-xl text-xs font-body">
                 ภาพการประชุมสภาผู้แทนราษฎร ณ อาคารรัฐสภา ถนนอู่ทองใน 20 สิงหาคม 2552 โดย พีรพัฒน์ วิมลรังครัตน์
               </span>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result2} layout="responsive" priority height="640" width="1024" alt="expect-ressult-2" />
             </div>
+            <span className="block md:hidden max-w-xl px-6 text-[#707070] text-xs font-body space-y-1">
+              <p>ภาพการประชุมสภาผู้แทนราษฎร ณ อาคารรัฐสภา</p>
+              <p> ถนนอู่ทองใน 20 สิงหาคม 2552</p>
+              <p>โดย พีรพัฒน์ วิมลรังครัตน์</p>
+            </span>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 เกิดการออกแบบติดตามนโยบาย
                 <br /> ที่ประชาชนเป็นศูนย์กลาง
               </h3>
               <p className="max-w-xl leading-relaxed font-body">
-                เพื่อให้มีนโยบายที่สนับสนุนให้เกิดบริการ และสภาพแวดล้อมที่ดีสำหรับผู้สูงอายุ
+                เพื่อให้มีนโยบายที่สนับสนุนให้เกิดบริการ
+                <br /> และสภาพแวดล้อมที่ดีสำหรับผู้สูงอายุ
                 <br />
                 <br />
-                ช่วยเอื้อให้ผู้สูงอายุพึ่งพาตัวเองได้มากที่สุด ลดภาวะพึ่งพิงโดยไม่จำเป็น{' '}
+                ช่วยเอื้อให้ผู้สูงอายุพึ่งพาตัวเองได้มากที่สุด
+                <br /> ลดภาวะพึ่งพิงโดยไม่จำเป็น{' '}
               </p>
             </div>
           </div>
@@ -141,11 +152,10 @@ const GmPage = () => {
 
         <section className="relative h-full pt-6 bg-[#EAF1EB] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
-              แต่ยังมีความท้าทายหลายประการ
-              <br />
-              ที่จะเอื้อให้เกิดภาพสำเร็จดังกล่าว
-            </h2>
+            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+              <p>แต่ยังมีความท้าทายหลายประการ</p>
+              <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
+            </div>
             <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />

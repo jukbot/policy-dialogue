@@ -51,7 +51,7 @@ const LtcPage = () => {
               <h2 className="max-w-sm mx-auto text-base leading-snug lg:text-lg sm:text-xl font-body lg:m-0">
                 ระบบบริการดูแลระยะยาว (Long-Term Care) นโยบายสำคัญที่ต้องผลักดันต่อ
               </h2>
-              <p className="text-xs">*หรือผู้สูงอายุกลุ่มติดบ้าน-ติดเตียง</p>
+              <p className="text-xs font-body">*หรือผู้สูงอายุกลุ่มติดบ้าน-ติดเตียง</p>
             </div>
             <Image src={HeroImage} className="h-full shrink-0" width={800} height={480} priority alt="cover image" />
           </div>
@@ -63,11 +63,13 @@ const LtcPage = () => {
               <h2 className="relative max-w-3xl text-xl font-bold leading-relaxed tracking-wide text-white md:text-center md:text-3xl">
                 ประเทศไทยมีผู้สูงอายุที่มีภาวะพึ่งพิงกว่า
                 <br />
-                245,907 คน* จากประชากรผู้สูงอายุทั้งหมด 11 ล้านคน
+                245,907 คน<span className="text-lg align-top">*</span> จากประชากรผู้สูงอายุทั้งหมด 11 ล้านคน
               </h2>
               <p className="relative flex leading-relaxed text-white opacity-75 max-w-prose md:justify-center md:text-center font-body">
-                ถือเป็นสัดส่วนที่ไม่น้อย แต่ประเทศไทยยังขาดระบบบริการการดูแลระยะยาวที่เหมาะสม ซึ่งอาจส่งผลต่อคุณภาพชีวิตและเศรษฐกิจของผู้ป่วย ครอบครัว ผู้ดูแล
-                และระบบสาธารณสุขในภาพรวม
+                ถือเป็นสัดส่วนที่ไม่น้อย
+                <br /> แต่ประเทศไทยยังขาดระบบบริการการดูแลระยะยาวที่เหมาะสม
+                <br /> ซึ่งอาจส่งผลต่อคุณภาพชีวิตและเศรษฐกิจของผู้ป่วย ครอบครัว ผู้ดูแล
+                <br /> และระบบสาธารณสุขในภาพรวม
               </p>
               <a href="https://www.dop.go.th/download/knowledge/th1635826373-975_0.pdf" target="_blank" rel="noreferrer">
                 <p className="relative flex text-xs text-white opacity-75 font-body">*ข้อมูลจาก รายงานสถานการณ์ผู้สูงอายุไทย พ.ศ. 2563 (มส.ผส.)</p>
@@ -75,28 +77,37 @@ const LtcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-80">
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="justify-center relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                คงจะดี.. หากประเทศไทย มีระบบบริการ การดูแลระยะยาวที่ครอบคลุมประชากรสูงวัย ได้ถ้วนหน้า และจัดสรรบริการพื้นฐาน ที่ตอบสนองความต้องการได้
+                คงจะดี.. หากประเทศไทย มีระบบบริการ
+                <br /> การดูแลระยะยาวที่ครอบคลุมประชากรสูงวัย
+                <br /> ได้ถ้วนหน้า และจัดสรรบริการพื้นฐาน
+                <br /> ที่ตอบสนองความต้องการได้
               </h3>
               <p className="max-w-sm leading-relaxed font-body">
-                มีหลักประกันให้มั่นใจว่าจะไม่ถูกทอดทิ้งและได้รับ การดูแลเมื่อเข้าวัยชราและเมื่อมีภาวะพึ่งพิง
-                ได้รับบริการทางสุขภาพและสังคมที่จำเป็นอย่างต่อเนื่อง เป็นระบบ
+                มีหลักประกันให้มั่นใจว่าจะไม่ถูกทอดทิ้งและได้รับ <br />
+                การดูแลเมื่อเข้าวัยชราและเมื่อมีภาวะพึ่งพิง ได้รับบริการ
+                <br />
+                ทางสุขภาพและสังคมที่จำเป็นอย่างต่อเนื่อง เป็นระบบ
               </p>
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="xl:ml-16 justify-center flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                เพื่อให้ผู้ที่อยู่ในภาวะพึ่งพิง สามารถดำรงชีวิตได้อย่างมีศักดิ์ศรี ของความเป็นมนุษย์
+                เพื่อให้ผู้ที่อยู่ในภาวะพึ่งพิง
+                <br /> สามารถดำรงชีวิตได้อย่างมีศักดิ์ศรี
+                <br /> ของความเป็นมนุษย์
               </h3>
               <p className="max-w-xl leading-relaxed font-body">
-                ได้รับการดูแลที่บ้าน เพื่อให้สามารถใช้ชีวิตประจำวันได้ ไม่บกพร่องในปัจจัย 4 ทั้งอาหาร เครื่องนุ่งห่ม ที่อยู่อาศัย และยารักษาโรค รวมถึงจิตใจ
+                ได้รับการดูแลที่บ้าน เพื่อให้สามารถใช้ชีวิตประจำวันได้
+                <br /> ไม่บกพร่องในปัจจัย 4 ทั้งอาหาร เครื่องนุ่งห่ม
+                <br /> ที่อยู่อาศัย และยารักษาโรค รวมถึงจิตใจ
               </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
@@ -108,10 +119,16 @@ const LtcPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">ได้รับการดูแลที่ครอบคลุมทั้งมิติสุขภาพ สังคม เศรษฐกิจ และสิ่งแวดล้อม</h3>
+            <div className="justify-center relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
+                ได้รับการดูแลที่ครอบคลุมทั้งมิติสุขภาพ
+                <br /> สังคม เศรษฐกิจ และสิ่งแวดล้อม
+              </h3>
               <p className="max-w-xl leading-relaxed font-body">
-                มีสุขอนามัยที่ดี ได้รับวัสดุอุปกรณ์ที่จำเป็น มีผู้ดูแล ใกล้ชิด ไม่ต้องแบกรับค่าใช้จ่ายมากเกินไป และไม่เป็นภาระของครอบครัว เป็นต้น{' '}
+                มีสุขอนามัยที่ดี ได้รับวัสดุอุปกรณ์ที่จำเป็น มีผู้ดูแล
+                <br /> ใกล้ชิด ไม่ต้องแบกรับค่าใช้จ่ายมากเกินไป และไม่เป็น
+                <br />
+                ภาระของครอบครัว เป็นต้น{' '}
               </p>
             </div>
           </div>
@@ -126,13 +143,11 @@ const LtcPage = () => {
                 </tspan>
               </text>
             </svg>{' '}
-            <p className="max-w-3xl text-base font-bold leading-relaxed text-center sm:text-lg lg:text-xl">
-              เพื่อให้ได้รับบริการและการสนับสนุนดังกล่าว ต้องมีทรัพยากรสำคัญ คือ
-              <br />
-              1&#41; กำลังคน ได้แก่ ผู้ดูแล ซึ่งต้องมีความรู้ ประสบการณ์ และเวลา
-              <br />
-              2&#41; งบประมาณ เพื่อเป็นค่าใช้จ่ายสำหรับการจัดหาอุปกรณ์และวัสดุสิ้นเปลือง
-            </p>
+            <div className="max-w-3xl text-base font-bold leading-relaxed text-center sm:text-lg lg:text-xl space-y-1">
+              <p>เพื่อให้ได้รับบริการและการสนับสนุนดังกล่าว ต้องมีทรัพยากรสำคัญ คือ</p>
+              <p>1&#41; กำลังคน ได้แก่ ผู้ดูแล ซึ่งต้องมีความรู้ ประสบการณ์ และเวลา</p>
+              <p>2&#41; งบประมาณ เพื่อเป็นค่าใช้จ่ายสำหรับการจัดหาอุปกรณ์และวัสดุสิ้นเปลือง</p>
+            </div>
           </div>
         </section>
 
@@ -142,7 +157,7 @@ const LtcPage = () => {
           </div>
           <div className="flex flex-col items-center justify-center pt-20 space-y-2 text-white">
             <div className="flex flex-col items-center space-y-2">
-              <p className="text-xl font-bold">ค่าใช้จ่ายในการดูแลระยะยาวของผู้สูงอายุแต่ละกลุ่ม (บาท/คน/เดือน)</p>
+              <p className="text-xl font-bold text-center">ค่าใช้จ่ายในการดูแลระยะยาวของผู้สูงอายุแต่ละกลุ่ม (บาท/คน/เดือน)</p>
               <Image src={Chart} width={350} alt="elderly home" />
             </div>
             <div className="flex flex-col items-center space-y-6">
@@ -162,11 +177,10 @@ const LtcPage = () => {
 
         <section className="relative h-full pt-6 bg-[#FAF1F6] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
-              แต่ยังมีความท้าทายหลายประการ
-              <br />
-              ที่จะเอื้อให้เกิดภาพสำเร็จดังกล่าว
-            </h2>
+            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+              <p>แต่ยังมีความท้าทายหลายประการ</p>
+              <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
+            </div>
             <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />
@@ -297,6 +311,9 @@ const LtcPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
+                      <div className="inline-flex font-body my-2 text-sm align-bottom px-4 py-3 rounded-full border border-white">
+                        <span>ระยะสั้น</span>
+                      </div>
                       <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
                       <p className="font-body">ข้อเสนอแนะเพื่อส่งเสริมบทบาทการทำงานด้านผู้สูงอายุขององค์กรปกครอง ส่วนท้องถิ่น</p>
                     </li>
@@ -305,6 +322,9 @@ const LtcPage = () => {
                       <p className="font-body">การพัฒนาบุคลากรและแนวทางการทำงานร่วมกันระหว่างบุคลากรของ องค์กรปกครองส่วนท้องถิ่น และ สาธารณสุข ในท้องถิ่น</p>
                     </li>
                     <li className="space-y-2">
+                      <div className="inline-flex font-body my-2 text-sm align-bottom px-4 py-3 rounded-full border border-white">
+                        <span>ระยะยาว</span>
+                      </div>
                       <h3 className="text-xl font-bold">ข้อเสนอ 3</h3>
                       <p className="font-body">การเพิ่มบทบาทและอำนาจในการบริหารจัดการให้ท้องถิ่น สามารถจัดการทาง การเงินและจัดสรรบุคลากรเองได้</p>
                     </li>

@@ -72,11 +72,11 @@ const DmtPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-80">
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative justify-center  flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
                 จะดีกว่าไหม หากประเทศไทยมีระบบคัดกรอง และดูแลผู้มีภาวะสมองเสื่อมอย่างมีประสิทธิภาพ
               </h3>
@@ -87,7 +87,7 @@ const DmtPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="xl:ml-16 justify-center flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
                 เร่งคัดแยกผู้สูงอายุที่มีภาวะการรู้คิดบกพร่องเล็กน้อย (MCI) ซึ่งเป็นกลุ่มเสี่ยงสำคัญของภาวะสมองเสื่อมตั้งแต่เนิ่นๆ
               </h3>
@@ -104,7 +104,7 @@ const DmtPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative justify-center  flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
                 มีบริการดูแลผู้ป่วยชั่วคราว (Respite Service) ทั้งแบบศูนย์บริการ หรืออยู่ในชุมชน
               </h3>
@@ -116,7 +116,7 @@ const DmtPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex justify-center xl:ml-16 flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">เกิดเครือข่ายเกื้อกูลผู้ดูแลผู้ป่วยสมองเสื่อม (Support Group)</h3>
               <p className="max-w-xl leading-relaxed font-body">
                 เพื่อสอดส่องดูแลสุขภาพใจ ทั้งความเครียดและภาวะ ซึมเศร้าในญาติที่เป็นผู้ดูแล จัดกิจกรรมเสริมแรงใจ
@@ -142,7 +142,7 @@ const DmtPage = () => {
               ภาวะสมองเสื่อมเป็นอาการที่พบมากในผู้สูงอายุ อาจพบได้ถึง 0.2-1 ล้านคน<span className="text-base">*</span> จากประชากรผู้สูงอายุในปี 2563
               ซึ่งเป็นความท้าทายสำคัญของประเทศไทยต่อการเตรียมรับมือ จำนวนผู้มีภาวะพึ่งพิงที่อาจเพิ่มขึ้นเรื่อยๆ จากภาวะทางสมอง
             </p>
-            <p className="max-w-xl mt-6 text-sm text-center font-body">
+            <p className="max-w-xl mt-6 sm:text-sm text-center font-body">
               *คำนวณจากความชุกผู้ป่วยสมองเสื่อมในไทย 2-10% :
               <br />
               <a href="https://thaitgri.org/?p=38965" target="_blank" rel="noreferrer">
@@ -187,37 +187,36 @@ const DmtPage = () => {
 
         <section className="relative h-full pt-6 bg-[#EFEFEF] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
-              แต่ยังมีความท้าทายหลายประการ
-              <br />
-              ที่จะเอื้อให้เกิดระบบที่เหมาะสม
-            </h2>
-            <div className="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-4">
+            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+              <p>แต่ยังมีความท้าทายหลายประการ</p>
+              <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบการคัดกรองผู้มี ภาวะสมองเสื่อมเป็นคอขวด เนื่องจากบุคลากร ทางการแพทย์ที่สามารถ คัดกรองและดูแลผู้มีภาวะ สมองเสื่อมได้
-                  มีจำนวนจำกัดและมักมีภาระงานหนัก
+                  ระบบการคัดกรองผู้มีภาวะสมองเสื่อมเป็นคอขวด เนื่องจากบุคลากรทางการแพทย์ที่สามารถคัดกรองและดูแลผู้มีภาวะสมองเสื่อมได้ มีจำนวนจำกัด
+                  และมักมีภาระงานหนัก
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  บุคลากรในพื้นที่ไม่มีความรู้และกำลังในการจัดการดูแลผู้ป่วยสมองเสื่อม รวมถึง การจัด intervention เพื่อกระตุ้นสมอง ชะลอความเสื่อม
+                  บุคลากรในพื้นที่ไม่มีความรู้และกำลังในการจัดการดูแลผู้ป่วยสมองเสื่อม รวมถึงการจัด intervention เพื่อกระตุ้นสมอง ชะลอความเสื่อม
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  บุคลากรในพื้นที่ ขาดความตระหนักเรื่องภาวะ สมองเสื่อม ไม่เห็นความ เร่งด่วน และผู้สูงอายุ ส่วนใหญ่ไม่ต้องการ คัดกรองภาวะทางสมอง
-                  รวมถึงทัศนคติแง่ลบ ต่อภาวะสมองเสื่อมในสังคมไทย เช่น รู้สึกอับอาย กลัวไม่ได้รับการยอมรับ
+                  บุคลากรในพื้นที่ ขาดความตระหนักเรื่องภาวะสมองเสื่อม ไม่เห็นความเร่งด่วน และผู้สูงอายุ ส่วนใหญ่ไม่ต้องการคัดกรองภาวะทางสมอง รวมถึงทัศนคติแง่ลบ
+                  ต่อภาวะสมองเสื่อมในสังคมไทย เช่น รู้สึกอับอาย กลัวไม่ได้รับการยอมรับ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon4} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบการจัดบริการดูแลระยะยาวไม่ได้ตอบสนองต่อการดูแลผู้สูงอายุที่มีภาวะสมองเสื่อมเนื่องจาก ต้องการการดูแลอย่าง ต่อเนื่องวันละ 24 ชั่วโมง
-                  และยังเป็นการดูแลที่ ต่อเนื่องยาวนานนับสิบปี ซึ่งมีค่าใช้จ่ายค่อนข้างสูง
+                  ระบบการจัดบริการดูแลระยะยาวไม่ได้ตอบสนองต่อการดูแลผู้สูงอายุที่มีภาวะสมองเสื่อมเนื่องจากต้องการการดูแลอย่างต่อเนื่องวันละ 24 ชั่วโมง
+                  และยังเป็นการดูแลที่ต่อเนื่องยาวนานนับสิบปี ซึ่งมีค่าใช้จ่ายค่อนข้างสูง
                 </p>
               </div>
             </div>
@@ -282,7 +281,7 @@ const DmtPage = () => {
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-6 text-white md:gap-24 md:grid-cols-2 md:px-24">
+            <div className="grid w-full grid-cols-1 gap-12 px-6 mt-8 text-white md:gap-24 md:grid-cols-2 md:px-24">
               <div className="flex flex-col max-w-sm col-span-1 space-y-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 shrink-0" viewBox="0 0 50 50">
                   <path
@@ -293,8 +292,8 @@ const DmtPage = () => {
                 </svg>
                 <p>ระบบคัดกรองภาวะสมองเสื่อม</p>
                 <div className="w-full border-t-2 border-white md:px-24" />
-                <div className="pt-6 space-y-6">
-                  <ul className="flex flex-col space-y-6">
+                <div className="h-full py-12">
+                  <ul className="flex flex-col space-y-6 h-full">
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">ยุทธศาสตร์ย่อยที่ 1</h3>
                       <p className="font-body">ผู้สูงอายุทุกคนเข้าถึงการคัดแยกภาวะ การรู้คิดบกพร่องเล็กน้อย (MCI)</p>
@@ -333,8 +332,8 @@ const DmtPage = () => {
                 </svg>
                 <p>กลไกเจ้าภาพบริหารจัดการระหว่างหน่วยงานที่เกี่ยวข้องกับการดูแลระยะยาวและการดูแลผู้ที่มีภาวะสมองเสื่อม</p>
                 <div className="w-full border-t-2 border-white md:px-24" />
-                <div className="pt-6 space-y-6">
-                  <ul className="flex flex-col space-y-6">
+                <div className="h-full py-12">
+                  <ul className="flex flex-col space-y-6 h-full">
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">แนวทางที่ 1</h3>
                       <p className="font-body">ลดผลกระทบต่อผู้ดูแลจากการดูแลผู้ป่วย </p>

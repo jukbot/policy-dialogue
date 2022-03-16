@@ -73,7 +73,7 @@ const PcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-80">
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" layout="responsive" priority alt="expect-ressult-1" />
             </div>

@@ -45,7 +45,7 @@ const ImcPage = () => {
         <section className="relative h-[70vh] lg:h-[50vh] xl:h-[90vh] grid items-center bg-[#6badcb]">
           <div className="flex flex-col items-center justify-between w-full h-full lg:mb-6 lg:flex-row">
             <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-body lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
-              <div className="space-y-2 text-3xl font-bold lg:text-4xl 2xl:text-6xl">
+              <div className="space-y-4 text-3xl font-bold lg:text-4xl 2xl:text-6xl">
                 <h1>ฟื้นฟูผู้สูงวัย</h1>
                 <h1>ในห้วง 6 เดือนทอง</h1>
                 <h1>หลังพ้นระยะวิกฤต</h1>
@@ -72,23 +72,29 @@ const ImcPage = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-72">
+          <div className="grid grid-cols-1 pt-6 gap-y-6 md:gap-0 md:grid-cols-2 xl:pt-80">
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                จะดีแค่ไหน หากประเทศไทยมีระบบ การดูแลผู้ป่วยระยะกลาง ที่มุ่งเน้นไปที่การฟื้นฟูสมรรถภาพผู้ป่วยได้เพียงพอ และต่อเนื่อง
+                จะดีแค่ไหน หากประเทศไทยมีระบบ
+                <br /> การดูแลผู้ป่วยระยะกลาง ที่มุ่งเน้นไปที่
+                <br />
+                การฟื้นฟูสมรรถภาพผู้ป่วยได้เพียงพอ
+                <br /> และต่อเนื่อง
               </h3>
               <p className="max-w-sm leading-relaxed font-body">
-                ผู้ป่วยได้รับการกายภาพบำบัดครบชั่วโมงอย่างเข้มข้น (Intensive rehabilitation) และใกล้ชิดทีมสหวิชาชีพ โดยไม่ต้องยากลำบากกับการเดินทาง
-                โดยเฉพาะในเขตพื้นที่ ชนบทห่างไกล
+                ผู้ป่วยได้รับการกายภาพบำบัดครบชั่วโมงอย่างเข้มข้น
+                <br /> (Intensive rehabilitation) และใกล้ชิดทีมสหวิชาชีพ โดย
+                <br />
+                ไม่ต้องยากลำบากกับการเดินทาง โดยเฉพาะในเขตพื้นที่ชนบทห่างไกล
               </p>
             </div>
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="xl:ml-16 justify-center flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 หากฟื้นฟูได้ทันท่วงที ผู้ป่วยมีโอกาสหายดี
                 <br /> และใช้ชีวิตได้อย่างอิสระ
@@ -107,9 +113,13 @@ const ImcPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                ช่วยลดอัตราผู้มีภาวะพึ่งพิง ซึ่งอาจลดค่าใช้จ่ายด้านการบริการดูแลระยะยาวในอนาคตของประเทศและตัวผู้ป่วยเองได้อย่างมหาศาล
+                ช่วยลดอัตราผู้มีภาวะพึ่งพิง ซึ่งอาจลดค่าใช้จ่าย
+                <br />
+                ด้านการบริการดูแลระยะยาวในอนาคต
+                <br />
+                ของประเทศและตัวผู้ป่วยเองได้อย่างมหาศาล
               </h3>
             </div>
           </div>
@@ -161,31 +171,43 @@ const ImcPage = () => {
 
         <section className="relative h-full pt-6 bg-[#F0F7FA] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <h2 className="text-2xl font-bold leading-relaxed text-center md:text-4xl">
-              แต่ยังมีความท้าทายหลายประการ
-              <br />
-              เพื่อให้เกิดระบบการบริการที่ตอบโจทย์
-            </h2>
-            <div className="grid grid-cols-1 gap-8 lg:gap-14 md:grid-cols-2 lg:grid-cols-3">
+            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+              <p>แต่ยังมีความท้าทายหลายประการ</p>
+              <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon1} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  โรงพยาบาลศูนย์แออัดเกินไป ส่วนโรงพยาบาลชุมชนยังไม่สามารถให้บริการฟื้นฟูอย่างเข้มข้นได้อย่างเต็มที่ยังเน้นไปที่การรักษาแบบผู้ป่วยนอก (OPD)
-                  ซึ่งเป็นรูปแบบบริการที่ผู้ป่วยเสี่ยงจะหลุดออกจากระบบ จากการแบกรับค่าใช้จ่ายและการเดินทางที่ยากลำบาก
+                  โรงพยาบาลศูนย์แออัดเกินไป
+                  <br /> ส่วนโรงพยาบาลชุมชนยังไม่สามารถ
+                  <br /> ให้บริการฟื้นฟูอย่างเข้มข้นได้
+                  <br /> อย่างเต็มที่ยังเน้นไปที่การรักษา
+                  <br /> แบบผู้ป่วยนอก (OPD) ซึ่งเป็นรูปแบบ
+                  <br /> บริการที่ผู้ป่วยเสี่ยงจะหลุดออก
+                  <br /> จากระบบ จากการแบกรับค่าใช้จ่าย
+                  <br /> และการเดินทางที่ยากลำบาก
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon2} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบการเบิกจ่ายสำหรับโรงพยาบาลชุมชนที่ไม่เหมาะกับรูปแบบการบริการในการดูแลผู้ป่วยระยะกลาง
-                  ส่งผลต่อจำนวนวันนอนและการรักษาที่ไม่เข้มข้นและต่อเนื่องพอ
+                  ระบบการเบิกจ่ายสำหรับโรงพยาบาล
+                  <br /> ชุมชนที่ไม่เหมาะกับรูปแบบการ
+                  <br /> บริการในการดูแลผู้ป่วยระยะกลาง
+                  <br /> ส่งผลต่อจำนวนวันนอนและการรักษา
+                  <br /> ที่ไม่เข้มข้นและต่อเนื่องพอ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon3} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ขาดแคลนบุคลากรสหวิชาชีพในระบบ เช่น นักกายภาพบำบัด นักกิจกรรมบำบัด เป็นต้น ซึ่งส่วนใหญ่อยู่ในภาคเอกชน ทำให้ผู้ป่วยบางกลุ่มเข้าถึงบริการได้ยาก
-                  เนื่องจากไม่มีกำลังทรัพย์มากพอ
+                  ขาดแคลนบุคลากรสหวิชาชีพในระบบ
+                  <br /> เช่น นักกายภาพบำบัด นักกิจกรรม
+                  <br /> บำบัด เป็นต้น ซึ่งส่วนใหญ่อยู่ใน
+                  <br /> ภาคเอกชน ทำให้ผู้ป่วยบางกลุ่ม
+                  <br /> เข้าถึงบริการได้ยาก เนื่องจากไม่มี
+                  <br /> กำลังทรัพย์มากพอ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
@@ -193,14 +215,21 @@ const ImcPage = () => {
                 <p className="mx-auto text-base font-body sm:max-w-sm">
                   ระบบการส่งต่อข้อมูลและส่งต่อผู้ป่วย
                   <br />
-                  ที่ยังไม่ไร้รอยต่อ (seamless) อย่างแท้จริง ส่งผลให้ข้อมูลและตัวผู้ป่วยตกหล่นจากระบบ
+                  ที่ยังไม่ไร้รอยต่อ (seamless)
+                  <br /> อย่างแท้จริง ส่งผลให้ข้อมูลและ
+                  <br /> ตัวผู้ป่วยตกหล่นจากระบบ
                 </p>
               </div>
               <div className="flex flex-col col-span-1 space-y-4 text-center">
                 <Image src={Icon5} width={120} height={120} priority />
                 <p className="mx-auto text-base font-body sm:max-w-sm">
-                  ระบบสุขภาพของไทยยังไม่ได้เน้นพัฒนาระบบการดูแลผู้ป่วยระยะกลางอย่างจริงจัง และไม่เป็นบริการภาคบังคับของระบบสาธารณสุข แม้รวมเข้าไว้ใน Service
-                  Plan แล้ว เน้นเพียงระบบการดูแลระยะยาว ทำให้ปัญหายังไม่ถูกแก้ตั้งแต่ต้นเหตุ
+                  ระบบสุขภาพของไทยยังไม่ได้เน้นพัฒนา <br />
+                  ระบบการดูแลผู้ป่วยระยะกลาง
+                  <br /> อย่างจริงจัง และไม่เป็นบริการ <br />
+                  ภาคบังคับของระบบสาธารณสุข แม้รวม
+                  <br /> เข้าไว้ใน Service Plan แล้ว <br />
+                  เน้นเพียงระบบการดูแลระยะยาว
+                  <br /> ทำให้ปัญหายังไม่ถูกแก้ตั้งแต่ต้นเหตุ
                 </p>
               </div>
             </div>
@@ -236,7 +265,7 @@ const ImcPage = () => {
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-8 px-6 mt-12 text-white md:grid-cols-2 lg:grid-cols-4 md:px-24">
+            <div className="grid w-full grid-cols-1 gap-8 lg:gap-12 px-6 mt-12 text-white md:grid-cols-2 lg:grid-cols-4 md:px-24">
               <div className="flex flex-col col-span-1 space-y-4">
                 <h3 className="h-full text-xl font-bold">ข้อเสนอ 1</h3>
                 <p className="font-body">
