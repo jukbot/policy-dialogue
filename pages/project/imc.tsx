@@ -76,7 +76,7 @@ const ImcPage = () => {
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 จะดีแค่ไหน หากประเทศไทยมีระบบ
                 <br /> การดูแลผู้ป่วยระยะกลาง ที่มุ่งเน้นไปที่
@@ -94,7 +94,7 @@ const ImcPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="xl:ml-16 justify-center flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 หากฟื้นฟูได้ทันท่วงที ผู้ป่วยมีโอกาสหายดี
                 <br /> และใช้ชีวิตได้อย่างอิสระ
@@ -113,7 +113,7 @@ const ImcPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 ช่วยลดอัตราผู้มีภาวะพึ่งพิง ซึ่งอาจลดค่าใช้จ่าย
                 <br />
@@ -171,7 +171,7 @@ const ImcPage = () => {
 
         <section className="relative h-full pt-6 bg-[#F0F7FA] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+            <div className="space-y-1 text-2xl font-bold text-center md:text-4xl">
               <p>แต่ยังมีความท้าทายหลายประการ</p>
               <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
             </div>
@@ -265,7 +265,7 @@ const ImcPage = () => {
             <div className="relative overflow-hidden w-full h-[300px] flex justify-center">
               <TimelineSummary />
             </div>
-            <div className="grid w-full grid-cols-1 gap-8 lg:gap-12 px-6 mt-12 text-white md:grid-cols-2 lg:grid-cols-4 md:px-24">
+            <div className="grid w-full grid-cols-1 gap-8 px-6 mt-12 text-white lg:gap-12 md:grid-cols-2 lg:grid-cols-4 md:px-24">
               <div className="flex flex-col col-span-1 space-y-4">
                 <h3 className="h-full text-xl font-bold">ข้อเสนอ 1</h3>
                 <p className="font-body">
@@ -316,7 +316,7 @@ const ImcPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#F0F7FA]">
-          <div className="py-12 max-w-7xl mx-auto lg:py-24 lg:mb-24">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12">

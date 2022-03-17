@@ -77,7 +77,7 @@ const PcPage = () => {
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" layout="responsive" priority alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 จะเป็นอย่างไร
                 <br />
@@ -90,7 +90,7 @@ const PcPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:ml-8 2xl:ml-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">เพิ่มคุณภาพชีวิตของผู้ป่วยและครอบครัว</h3>
               <p className="max-w-xl leading-relaxed font-body">ไม่แออัดที่โรงพยาบาล ได้กลับมาอยู่ในที่ที่คุ้นเคย ไม่ต้องบาดเจ็บทางกายและมีช่วงเวลาสงบสุข</p>
             </div>
@@ -103,7 +103,7 @@ const PcPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" layout="responsive" priority alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">ลดภาระค่าใช้จ่ายทางสุขภาพ</h3>
               <p className="max-w-xl leading-relaxed font-body">
                 การดูแลแบบประคับประคองจะช่วยลดค่าใช้จ่ายของตัวผู้ป่วย ครอบครัว และภาครัฐ เมื่อเทียบกับการรักษาแบบยื้อความตาย
@@ -241,7 +241,7 @@ const PcPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#EAEBF8]">
-          <div className="py-12 max-w-7xl lg:py-24 mx-auto lg:mb-24">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12">

@@ -81,7 +81,7 @@ const LtcPage = () => {
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="justify-center relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 คงจะดี.. หากประเทศไทย มีระบบบริการ
                 <br /> การดูแลระยะยาวที่ครอบคลุมประชากรสูงวัย
@@ -98,7 +98,7 @@ const LtcPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="xl:ml-16 justify-center flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 เพื่อให้ผู้ที่อยู่ในภาวะพึ่งพิง
                 <br /> สามารถดำรงชีวิตได้อย่างมีศักดิ์ศรี
@@ -119,7 +119,7 @@ const LtcPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="justify-center relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 ได้รับการดูแลที่ครอบคลุมทั้งมิติสุขภาพ
                 <br /> สังคม เศรษฐกิจ และสิ่งแวดล้อม
@@ -143,7 +143,7 @@ const LtcPage = () => {
                 </tspan>
               </text>
             </svg>{' '}
-            <div className="max-w-3xl text-base font-bold leading-relaxed text-center sm:text-lg lg:text-xl space-y-1">
+            <div className="max-w-3xl space-y-1 text-base font-bold leading-relaxed text-center sm:text-lg lg:text-xl">
               <p>เพื่อให้ได้รับบริการและการสนับสนุนดังกล่าว ต้องมีทรัพยากรสำคัญ คือ</p>
               <p>1&#41; กำลังคน ได้แก่ ผู้ดูแล ซึ่งต้องมีความรู้ ประสบการณ์ และเวลา</p>
               <p>2&#41; งบประมาณ เพื่อเป็นค่าใช้จ่ายสำหรับการจัดหาอุปกรณ์และวัสดุสิ้นเปลือง</p>
@@ -177,7 +177,7 @@ const LtcPage = () => {
 
         <section className="relative h-full pt-6 bg-[#FAF1F6] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+            <div className="space-y-1 text-2xl font-bold text-center md:text-4xl">
               <p>แต่ยังมีความท้าทายหลายประการ</p>
               <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
             </div>
@@ -311,7 +311,7 @@ const LtcPage = () => {
                 <div className="pt-6 space-y-6">
                   <ul className="flex flex-col space-y-6">
                     <li className="space-y-2">
-                      <div className="inline-flex font-body my-2 text-sm align-bottom px-4 py-3 rounded-full border border-white">
+                      <div className="inline-flex px-4 py-3 my-2 text-sm align-bottom border border-white rounded-full font-body">
                         <span>ระยะสั้น</span>
                       </div>
                       <h3 className="text-xl font-bold">ข้อเสนอ 1</h3>
@@ -322,7 +322,7 @@ const LtcPage = () => {
                       <p className="font-body">การพัฒนาบุคลากรและแนวทางการทำงานร่วมกันระหว่างบุคลากรของ องค์กรปกครองส่วนท้องถิ่น และ สาธารณสุข ในท้องถิ่น</p>
                     </li>
                     <li className="space-y-2">
-                      <div className="inline-flex font-body my-2 text-sm align-bottom px-4 py-3 rounded-full border border-white">
+                      <div className="inline-flex px-4 py-3 my-2 text-sm align-bottom border border-white rounded-full font-body">
                         <span>ระยะยาว</span>
                       </div>
                       <h3 className="text-xl font-bold">ข้อเสนอ 3</h3>
@@ -347,7 +347,7 @@ const LtcPage = () => {
         </section>
 
         <section className="relative h-full bg-[#FAF1F6]">
-          <div className="relative py-12 max-w-7xl mx-auto lg:py-24 lg:mb-24">
+          <div className="relative py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="relative grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12 top-32 md:sticky">

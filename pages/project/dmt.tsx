@@ -76,7 +76,7 @@ const DmtPage = () => {
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative justify-center  flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
                 จะดีกว่าไหม หากประเทศไทยมีระบบคัดกรอง และดูแลผู้มีภาวะสมองเสื่อมอย่างมีประสิทธิภาพ
               </h3>
@@ -87,7 +87,7 @@ const DmtPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="xl:ml-16 justify-center flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
                 เร่งคัดแยกผู้สูงอายุที่มีภาวะการรู้คิดบกพร่องเล็กน้อย (MCI) ซึ่งเป็นกลุ่มเสี่ยงสำคัญของภาวะสมองเสื่อมตั้งแต่เนิ่นๆ
               </h3>
@@ -104,7 +104,7 @@ const DmtPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative justify-center  flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">
                 มีบริการดูแลผู้ป่วยชั่วคราว (Respite Service) ทั้งแบบศูนย์บริการ หรืออยู่ในชุมชน
               </h3>
@@ -116,7 +116,7 @@ const DmtPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex justify-center xl:ml-16 flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-lg text-xl font-bold leading-snug lg:text-2xl">เกิดเครือข่ายเกื้อกูลผู้ดูแลผู้ป่วยสมองเสื่อม (Support Group)</h3>
               <p className="max-w-xl leading-relaxed font-body">
                 เพื่อสอดส่องดูแลสุขภาพใจ ทั้งความเครียดและภาวะ ซึมเศร้าในญาติที่เป็นผู้ดูแล จัดกิจกรรมเสริมแรงใจ
@@ -142,7 +142,7 @@ const DmtPage = () => {
               ภาวะสมองเสื่อมเป็นอาการที่พบมากในผู้สูงอายุ อาจพบได้ถึง 0.2-1 ล้านคน<span className="text-base">*</span> จากประชากรผู้สูงอายุในปี 2563
               ซึ่งเป็นความท้าทายสำคัญของประเทศไทยต่อการเตรียมรับมือ จำนวนผู้มีภาวะพึ่งพิงที่อาจเพิ่มขึ้นเรื่อยๆ จากภาวะทางสมอง
             </p>
-            <p className="max-w-xl mt-6 sm:text-sm text-center font-body">
+            <p className="max-w-xl mt-6 text-center sm:text-sm font-body">
               *คำนวณจากความชุกผู้ป่วยสมองเสื่อมในไทย 2-10% :
               <br />
               <a href="https://thaitgri.org/?p=38965" target="_blank" rel="noreferrer">
@@ -178,7 +178,7 @@ const DmtPage = () => {
                 และยังพบว่า ผู้ดูแลผู้ป่วยสมองเสื่อม 9 ใน 10 ราย มีอาการเครียดและวิตกกังวลหลายครั้งต่อสัปดาห์*
               </p>
               <Image src={Chart2} width={400} alt="chart-2" />
-              <p className="text-xs text-center text-white font-body">
+              <p className="text-sm text-center text-white font-body">
                 *ข้อมูลจาก Alzheimer&apos;s Society survey, Carers for people with dementia struggling in silence (2018)
               </p>
             </div>
@@ -187,7 +187,7 @@ const DmtPage = () => {
 
         <section className="relative h-full pt-6 bg-[#EFEFEF] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+            <div className="space-y-1 text-2xl font-bold text-center md:text-4xl">
               <p>แต่ยังมีความท้าทายหลายประการ</p>
               <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
             </div>
@@ -293,7 +293,7 @@ const DmtPage = () => {
                 <p>ระบบคัดกรองภาวะสมองเสื่อม</p>
                 <div className="w-full border-t-2 border-white md:px-24" />
                 <div className="h-full py-12">
-                  <ul className="flex flex-col space-y-6 h-full">
+                  <ul className="flex flex-col h-full space-y-6">
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">ยุทธศาสตร์ย่อยที่ 1</h3>
                       <p className="font-body">ผู้สูงอายุทุกคนเข้าถึงการคัดแยกภาวะ การรู้คิดบกพร่องเล็กน้อย (MCI)</p>
@@ -333,7 +333,7 @@ const DmtPage = () => {
                 <p>กลไกเจ้าภาพบริหารจัดการระหว่างหน่วยงานที่เกี่ยวข้องกับการดูแลระยะยาวและการดูแลผู้ที่มีภาวะสมองเสื่อม</p>
                 <div className="w-full border-t-2 border-white md:px-24" />
                 <div className="h-full py-12">
-                  <ul className="flex flex-col space-y-6 h-full">
+                  <ul className="flex flex-col h-full space-y-6">
                     <li className="space-y-2">
                       <h3 className="text-xl font-bold">แนวทางที่ 1</h3>
                       <p className="font-body">ลดผลกระทบต่อผู้ดูแลจากการดูแลผู้ป่วย </p>
@@ -365,7 +365,7 @@ const DmtPage = () => {
         </section>
 
         <section className="relative h-full bg-[#EFEFEF]">
-          <div className="py-12 max-w-7xl mx-auto lg:py-24 lg:mb-24">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12 top-32 md:sticky">

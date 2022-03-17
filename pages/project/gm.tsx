@@ -70,7 +70,7 @@ const GmPage = () => {
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">จะดีกว่าไหม</h3>
               <p className="max-w-sm leading-relaxed font-body">
                 หากประเทศไทยมีกลไกการติดตาม ทบทวน และพัฒนานโยบาย เพื่อรองรับสังคมสูงวัยให้ดีขึ้นอย่างต่อเนื่อง
@@ -79,7 +79,7 @@ const GmPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex xl:ml-16 justify-center  flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 มองปัญหาในเชิงระบบ ร่วมมือกัน
                 <br /> จากหลายภาคส่วน
@@ -89,7 +89,7 @@ const GmPage = () => {
                 <br /> แต่ยังร่วมหารือกับภาคการเมือง ซึ่งมีบทบาทในการกำหนดนโยบาย และทำหน้าที่ในสภาผู้แทนราษฎร
               </p>
 
-              <span className="hidden md:block max-w-xl text-xs font-body">
+              <span className="hidden max-w-xl text-xs md:block font-body">
                 ภาพการประชุมสภาผู้แทนราษฎร ณ อาคารรัฐสภา ถนนอู่ทองใน 20 สิงหาคม 2552 โดย พีรพัฒน์ วิมลรังครัตน์
               </span>
             </div>
@@ -107,7 +107,7 @@ const GmPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative justify-center flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 เกิดการออกแบบติดตามนโยบาย
                 <br /> ที่ประชาชนเป็นศูนย์กลาง
@@ -152,7 +152,7 @@ const GmPage = () => {
 
         <section className="relative h-full pt-6 bg-[#EAF1EB] md:pt-12">
           <div className="max-w-6xl px-6 py-8 mx-auto space-y-12 text-body">
-            <div className="text-2xl font-bold text-center md:text-4xl space-y-1">
+            <div className="space-y-1 text-2xl font-bold text-center md:text-4xl">
               <p>แต่ยังมีความท้าทายหลายประการ</p>
               <p>เพื่อให้เกิดระบบการบริการที่ตอบโจทย์</p>
             </div>
@@ -226,7 +226,7 @@ const GmPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#ECF1EB]">
-          <div className="py-12 max-w-7xl mx-auto lg:py-24 lg:mb-24">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12">

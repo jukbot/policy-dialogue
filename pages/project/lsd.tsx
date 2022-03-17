@@ -48,8 +48,9 @@ const LsdPage = () => {
           <div className="flex flex-col items-center justify-between w-full h-full lg:mb-6 lg:flex-row">
             <div className="flex flex-col justify-center px-6 py-12 mt-6 space-y-4 text-center text-white lg:mt-0 lg:justify-start lg:px-12 lg:ml-12 xl:ml-24 item-center lg:item-start lg:text-left">
               <h1 className="max-w-xl text-3xl font-bold lg:text-5xl 2xl:text-6xl">
-                ระบบการดูแลผู้สูงอายุ
-                <br /> แบบใดที่คนไทยต้องการ?
+                ระบบการดูแลผู้สูงอายุแบบใด
+                <br />
+                ที่คนไทยต้องการ?
               </h1>
               <h2 className="max-w-sm mx-auto text-base leading-snug lg:text-lg sm:text-xl font-body lg:m-0">
                 การจัดการโครงสร้างเครือข่ายบริการสุขภาพระดับจังหวัด (Local Service Delivery Network) นโยบายเพื่อผู้สูงอายุที่ต้องจับเข่าคุย
@@ -79,7 +80,7 @@ const LsdPage = () => {
             <div className="relative col-span-1 px-6 md:px-0">
               <Image src={Result1} height="640" width="1024" layout="responsive" priority alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-8 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">จะดีกว่าไหม?</h3>
               <p className="max-w-xl text-base leading-snug font-body">
                 หากประเทศไทยมีระบบดูแลผู้สูงอายุแบบองค์รวม และไร้รอยต่อ สามารถยกระดับเครือข่ายการบริการ ในท้องถิ่นให้เป็นมาตรฐานและครอบคลุม
@@ -94,9 +95,10 @@ const LsdPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:ml-8 2xl:ml-16 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
-                เพิ่มการเข้าถึงระบบบริการที่จำเป็น มีชีวิตยามชราที่แข็งแรง ให้มากที่สุดเท่าที่จะเป็นไปได้
+                เพิ่มการเข้าถึงระบบบริการที่จำเป็น
+                <br /> มีชีวิตยามชราที่แข็งแรง ให้มากที่สุดเท่าที่จะเป็นไปได้
               </h3>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
@@ -108,7 +110,7 @@ const LsdPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} height="640" width="1024" layout="responsive" priority alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">เพื่อพัฒนาคุณภาพชีวิตของผู้สูงอายุ</h3>
               <p className="max-w-xl leading-relaxed font-body">
                 ได้รับบริการสุขภาพครบถ้วน ต่อเนื่อง และทันเวลา ทั้งด้านการรักษาและการป้องกันโรค รวมถึงการทำกายภาพฟื้นฟู
@@ -301,7 +303,7 @@ const LsdPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#FBF5EB]">
-          <div className="py-12 max-w-7xl mx-auto lg:py-24 lg:mb-24">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12">

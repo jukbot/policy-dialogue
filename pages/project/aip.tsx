@@ -73,7 +73,7 @@ const AipPage = () => {
             <div className="relative col-span-1 px-6 md:px-0 ">
               <Image src={Result1} layout="responsive" priority height="640" width="1024" alt="expect-ressult-1" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 คงจะดี หากผู้สูงอายุสามารถเลือกอยู่ที่บ้าน หรือที่อยู่อาศัยเดิมได้นานที่สุดเท่าที่ต้องการ ได้อย่างสะดวกปลอดภัย
               </h3>
@@ -82,7 +82,7 @@ const AipPage = () => {
           </div>
 
           <div className="relative grid grid-cols-1 gap-y-6 md:gap-0 md:grid-cols-2">
-            <div className="flex flex-col order-last col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
+            <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 ผู้สูงอายุมีแนวโน้มที่จะมีความรู้สึกเชิงบวกต่อการดำรงชีวิต หากสามารถอาศัยอยู่ที่บ้านของตนเองได้ต่อเนื่อง
               </h3>
@@ -100,8 +100,11 @@ const AipPage = () => {
             <div className="col-span-1 px-6 md:px-0">
               <Image src={Result3} layout="responsive" priority height="640" width="1024" alt="expect-ressult-3" />
             </div>
-            <div className="relative flex flex-col col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
-              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">ตอบสนองการดูแลผู้สูงอายุในประเทศไทย ที่มีแนวโน้มสูงขึ้นในทุกปี</h3>
+            <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
+              <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
+                ตอบสนองการดูแลผู้สูงอายุในประเทศไทย
+                <br /> ที่มีแนวโน้มสูงขึ้นในทุกปี
+              </h3>
               <p className="max-w-xl leading-relaxed font-body">สามารถลดการพึ่งพิงสถานบริบาลที่มีค่าใช้จ่ายมาก ทั้งงบประมาณภาครัฐและของผู้สูงอายุเอง</p>
             </div>
           </div>
@@ -318,7 +321,7 @@ const AipPage = () => {
           </div>
         </section>
         <section className="relative h-full bg-[#F9EFE9]">
-          <div className="py-12 max-w-7xl mx-auto lg:py-24 lg:mb-24">
+          <div className="py-12 mx-auto max-w-7xl lg:py-24 lg:mb-24">
             <div className="grid grid-cols-1 gap-6 md:gap-0 xl:gap-6 md:grid-cols-2">
               <div className="flex flex-col col-span-1 space-y-6 text-body">
                 <div className="space-y-6 lg:space-y-12">
