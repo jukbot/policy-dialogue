@@ -166,8 +166,8 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className="relative h-full bg-secondary">
-            <div className="px-12 py-12 space-y-12 text-white sm:py-24">
-              <h2 className="text-4xl font-bold text-center break-words lg:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
+            <div className="p-12 space-y-12 text-white sm:py-24">
+              <h2 className="text-3xl font-bold text-center break-words sm:text-4xl lg:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
               <div className="flex flex-col justify-center space-y-8 text-center md:space-x-4 lg:space-x-8 md:flex-row font-body">
                 <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
                   <p className="lg:text-xl">แก่ตัวไปจะมีใครดูแลไหม?</p>

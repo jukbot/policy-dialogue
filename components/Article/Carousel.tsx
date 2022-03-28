@@ -32,11 +32,11 @@ const Carousel = ({ data }: { data: Banner[] }) => {
   }
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full h-full bg-[#313131] ">
       <Slider ref={sliderRef} {...settings} beforeChange={(_, index) => setIndex(index)}>
         {data.map((banner) => (
           <>
-            <div key={banner.id} className="bg-[#313131] h-[280px] sm:h-[400px] w-full overflow-hidden relative">
+            <div key={banner.id} className="h-[280px] sm:h-[400px] w-full overflow-hidden relative">
               {banner.image?.url && (
                 <img src={banner.image?.url} loading="eager" alt={banner.title} className="w-full h-full object-top object-cover brightness-90 bg-[#707070]" />
               )}

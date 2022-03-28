@@ -275,7 +275,7 @@ const ImcPage = () => {
                 </p>
 
                 <p className="font-body">ดูข้อเสนอฉบับเต็ม</p>
-                <Link href="/archive#policy-recommendations">
+                <Link href="/archive#ccu">
                   <a
                     className="text-[#6badcb] lg:w-full max-w-sm text-sm mt-auto justify-center items-center inline-flex px-4 btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
                     target="_self"

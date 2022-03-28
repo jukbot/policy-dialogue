@@ -48,7 +48,7 @@ const GmPage = () => {
                 <h1>นโยบายเพื่อสังคมสูงวัย</h1>
                 <h1>(Governing Mechanism)</h1>
               </div>
-              <h2 className="max-w-sm mx-auto text-base leading-snug lg:text-lg sm:text-xl font-body lg:m-0">
+              <h2 className="max-w-lg mx-auto text-base leading-snug lg:text-lg sm:text-xl font-body lg:m-0">
                 ทำอย่างไรให้ประชาชนเป็นศูนย์กลาง ของการออกแบบนโยบาย
               </h2>
             </div>
@@ -212,7 +212,7 @@ const GmPage = () => {
               <p className="max-w-xl text-lg text-center font-body">
                 การออกแบบโครงสร้างบุคลากรและการทำงานของ คณะกรรมการผู้สูงอายุแห่งชาติ โดยยึดหลักประชาชนเป็นศูนย์กลาง ผ่านการมีส่วนร่วมของภาคประชาสังคม
               </p>
-              <Link href="/archive#policy-recommendations">
+              <Link href="/archive#ccu">
                 <a
                   className="text-[#36723b] text-sm inline-flex btn bg-white mx-auto hover:text-white hover:bg-[#191919] rounded-full"
                   target="_self"

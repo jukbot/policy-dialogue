@@ -142,7 +142,7 @@ const DmtPage = () => {
               ภาวะสมองเสื่อมเป็นอาการที่พบมากในผู้สูงอายุ อาจพบได้ถึง 0.2-1 ล้านคน<span className="text-base">*</span> จากประชากรผู้สูงอายุในปี 2563
               ซึ่งเป็นความท้าทายสำคัญของประเทศไทยต่อการเตรียมรับมือ จำนวนผู้มีภาวะพึ่งพิงที่อาจเพิ่มขึ้นเรื่อยๆ จากภาวะทางสมอง
             </p>
-            <p className="max-w-xl mt-6 text-center sm:text-sm font-body">
+            <p className="max-w-xl mt-6 text-xs text-center sm:text-sm font-body">
               *คำนวณจากความชุกผู้ป่วยสมองเสื่อมในไทย 2-10% :
               <br />
               <a href="https://thaitgri.org/?p=38965" target="_blank" rel="noreferrer">
@@ -179,7 +179,9 @@ const DmtPage = () => {
               </p>
               <Image src={Chart2} width={400} alt="chart-2" />
               <p className="text-sm text-center text-white font-body">
-                *ข้อมูลจาก Alzheimer&apos;s Society survey, Carers for people with dementia struggling in silence (2018)
+                <a href="https://www.alzheimers.org.uk/news/2018-06-22/carers-people-dementia-struggling-silence" target="_blank" rel="noreferrer">
+                  *ข้อมูลจาก Alzheimer&apos;s Society survey, Carers for people with dementia struggling in silence (2018)
+                </a>
               </p>
             </div>
           </div>
