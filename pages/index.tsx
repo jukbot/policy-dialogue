@@ -166,7 +166,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className="relative h-full bg-secondary">
-            <div className="p-12 space-y-12 text-white sm:py-24">
+            <div className="p-8 space-y-12 text-white sm:px-12 sm:py-24">
               <h2 className="text-3xl font-bold text-center break-words sm:text-4xl lg:text-5xl">นโยบายเพื่อสังคมสูงวัย</h2>
               <div className="flex flex-col justify-center space-y-8 text-center md:space-x-4 lg:space-x-8 md:flex-row font-body">
                 <blockquote className="bg-[#36723b] speech-dialog bubble-lt border-t-green">
@@ -190,10 +190,9 @@ const Home: NextPage = () => {
           <section className="relative h-full bg-[#242054]">
             <div className="flex flex-col items-center justify-center px-6 py-12 text-white">
               <QuestionMark className="w-48 h-48" />
-              <p className="text-base leading-relaxed text-center lg:text-lg font-body max-w-prose">
-                คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย
-                <br /> เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ
-                ภาคประชาสังคม ภาคเอกชน และประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
+              <p className="text-base leading-relaxed text-center lg:text-lg font-body sm:max-w-prose">
+                คำถามเหล่านี้ เป็นหนึ่งในโจทย์สำคัญของการพัฒนานโยบาย เพื่อสร้างการเปลี่ยนแปลงเชิงระบบ กระบวนการหาคำตอบ จึงไม่ได้มีเพียงฝั่งผู้กำหนดนโยบาย
+                แต่ยังมีเสียงจากผู้ปฏิบัติงานที่เกี่ยวข้อง ภาครัฐ ภาคประชาสังคม ภาคเอกชน และ ประชาชน ที่ล้วนเป็นผู้รับผลกระทบไม่ทางตรงก็ทางอ้อม
               </p>
             </div>
             <div className="absolute bottom-0 hidden -ml-4 lg:block triangle-up left-1/2"></div>
@@ -302,7 +301,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-          <section className="relative h-full px-6 pt-24 bg-center bg-no-repeat bg-cover bg-secondary bg-landing-footer">
+          <section className="relative h-full px-6 pt-12 bg-center bg-no-repeat bg-cover sm:pt-24 bg-secondary bg-landing-footer">
             <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-8">
               <div className="text-4xl font-bold leading-snug text-center text-white lg:text-5xl">
                 <h3>โพลิซี ไดอะล็อก</h3>
