@@ -102,7 +102,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
     <>
       <Header title="ข่าวสารและบทความ" description="พวกเราเป็นองค์กรที่จะช่วยกระตุ้นให้เกิดการเปลี่ยนแปลงเชิงระบบ เพื่อสร้างผลกระทบเชิงบวก" />
       <main className="relative">
-        <section className="relative h-[75vh] bg-top mix-blend-screen bg-cover 2xl:bg-height-100 bg-no-repeat grid items-center bg-article-hero-pattern-mobile md:bg-article-hero-pattern">
+        <section className="relative h-[75vh] 2xl:h-[60vh] bg-center mix-blend-screen bg-cover 2xl:bg-height-100 bg-no-repeat grid items-center bg-article-hero-pattern-mobile md:bg-article-hero-pattern">
           <div className="flex justify-center pt-24 text-white lg:justify-start lg:ml-56">
             <h1 className="text-4xl font-semibold lg:text-5xl">ข่าวสารและบทความ</h1>
           </div>
