@@ -79,15 +79,15 @@ const ImcPage = () => {
             <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:p-12 xl:space-y-8 xl:pt-12 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 จะดีแค่ไหน หากประเทศไทยมีระบบ
-                <br /> การดูแลผู้ป่วยระยะกลาง ที่มุ่งเน้นไปที่
-                <br />
+                <br className="hidden lg:block" /> การดูแลผู้ป่วยระยะกลาง ที่มุ่งเน้นไปที่
+                <br className="hidden lg:block" />
                 การฟื้นฟูสมรรถภาพผู้ป่วยได้เพียงพอ
-                <br /> และต่อเนื่อง
+                <br className="hidden lg:block" /> และต่อเนื่อง
               </h3>
               <p className="max-w-sm leading-relaxed font-body">
                 ผู้ป่วยได้รับการกายภาพบำบัดครบชั่วโมงอย่างเข้มข้น
-                <br /> (Intensive rehabilitation) และใกล้ชิดทีมสหวิชาชีพ โดย
-                <br />
+                <br className="hidden lg:block" /> (Intensive rehabilitation) และใกล้ชิดทีมสหวิชาชีพ โดย
+                <br className="hidden lg:block" />
                 ไม่ต้องยากลำบากกับการเดินทาง โดยเฉพาะในเขตพื้นที่ชนบทห่างไกล
               </p>
             </div>
@@ -97,11 +97,11 @@ const ImcPage = () => {
             <div className="flex flex-col justify-center order-last col-span-1 p-6 space-y-2 xl:ml-8 2xl:ml-16 md:space-y-4 lg:p-12 xl:space-y-8 md:order-first xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 หากฟื้นฟูได้ทันท่วงที ผู้ป่วยมีโอกาสหายดี
-                <br /> และใช้ชีวิตได้อย่างอิสระ
+                <br className="hidden lg:block" /> และใช้ชีวิตได้อย่างอิสระ
               </h3>
               <p className="max-w-xl leading-relaxed font-body">
                 สามารถกลับมาประกอบอาชีพ เป็นกำลังสำคัญในการพัฒนาเศรษฐกิจ
-                <br /> ผู้ป่วยและครอบครัวเองไม่เสียโอกาสในชีวิตนานเกินไป
+                <br className="hidden lg:block" /> ผู้ป่วยและครอบครัวเองไม่เสียโอกาสในชีวิตนานเกินไป
               </p>
             </div>
             <div className="relative col-span-1 px-6 md:px-0">
@@ -116,9 +116,9 @@ const ImcPage = () => {
             <div className="relative flex flex-col justify-center col-span-1 p-6 space-y-2 md:space-y-4 lg:px-12 xl:space-y-8 xl:pt-16 xl:px-16 text-body">
               <h3 className="max-w-xl text-xl font-bold leading-snug lg:text-2xl">
                 ช่วยลดอัตราผู้มีภาวะพึ่งพิง ซึ่งอาจลดค่าใช้จ่าย
-                <br />
+                <br className="hidden lg:block" />
                 ด้านการบริการดูแลระยะยาวในอนาคต
-                <br />
+                <br className="hidden lg:block" />
                 ของประเทศและตัวผู้ป่วยเองได้อย่างมหาศาล
               </h3>
             </div>
