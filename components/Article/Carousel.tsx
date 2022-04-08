@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import Slider from 'react-slick'
 
 const Carousel = ({ data }: { data: Banner[] }) => {
-  const sliderRef = useRef<Slider>(null)
+  const sliderRef = useRef<any>(null)
   const [index, setIndex] = useState<number>(0)
   const settings = {
     dots: true,
@@ -33,7 +33,7 @@ const Carousel = ({ data }: { data: Banner[] }) => {
 
   return (
     <section className="relative w-full h-full bg-[#313131] ">
-      <Slider ref={sliderRef} {...settings} beforeChange={(_, index) => setIndex(index)}>
+      <Slider ref={sliderRef} {...settings} beforeChange={(_: any, index: number) => setIndex(index)}>
         {data.map((banner) => (
           <>
             <div key={banner.id} className="h-[280px] sm:h-[400px] w-full overflow-hidden relative">

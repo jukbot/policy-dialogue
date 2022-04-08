@@ -1019,7 +1019,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.0":
+"@types/react-slick@npm:^0.23.8":
+  version: 0.23.8
+  resolution: "@types/react-slick@npm:0.23.8"
+  dependencies:
+    "@types/react": "*"
+  checksum: df71ab6b0f4d573add5c1e24b00885b94e1a3f1d78757cafa0f73a38c1c17e4ad46a75e450267e9f371a9d221e52ddaae5b59b4fd8ad9516676e8bca77c15709
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*, @types/react@npm:18.0.0":
   version: 18.0.0
   resolution: "@types/react@npm:18.0.0"
   dependencies:
@@ -4709,6 +4718,7 @@ __metadata:
     "@types/gtag.js": ^0.0.10
     "@types/prettier": ^2
     "@types/react": 18.0.0
+    "@types/react-slick": ^0.23.8
     "@types/slick-carousel": ^1
     "@typescript-eslint/eslint-plugin": ^5.18.0
     "@typescript-eslint/parser": ^5.18.0
