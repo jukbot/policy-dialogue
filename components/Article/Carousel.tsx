@@ -32,7 +32,7 @@ const Carousel = ({ data }: { data: Banner[] }) => {
   }
 
   return (
-    <section className="relative w-full h-full bg-[#313131] ">
+    <section className="relative w-full h-full bg-[#2B2B2B] ">
       <Slider ref={sliderRef} {...settings} beforeChange={(_: any, index: number) => setIndex(index)}>
         {data.map((banner) => (
           <>

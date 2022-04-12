@@ -117,7 +117,7 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
               <ul role="list" className="px-6 mx-auto space-y-8 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
                 {currentArticles.map(({ id, title, url, coverImage, description }) => (
                   <li key={id} className="flex flex-col w-full overflow-hidden transition ease-in bg-white">
-                    <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" loading="eager" src={coverImage.url} alt={title} />
+                    <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" loading="eager" src={coverImage?.url} alt={title} />
                     <div className="flex flex-col h-full p-6 sm:px-12 sm:py-8">
                       <div className="mb-12 space-y-4 overflow-hidden">
                         <h3 className="text-lg font-bold lg:text-xl line-clamp-2">{title}</h3>
