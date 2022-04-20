@@ -119,9 +119,9 @@ const ArticlesPage = ({ articlesConnection, articles, banners, tags }: Props) =>
                   <li key={id} className="flex flex-col w-full overflow-hidden transition ease-in bg-white">
                     <img className="object-top object-cover w-full h-[240px] flex-shrink-0 bg-[#2b2b2b]" loading="eager" src={coverImage?.url} alt={title} />
                     <div className="flex flex-col h-full p-6 sm:px-12 sm:py-8">
-                      <div className="mb-12 space-y-4 overflow-hidden">
+                      <div className="mb-12 space-y-4">
                         <h3 className="text-lg font-bold lg:text-xl line-clamp-2">{title}</h3>
-                        <p className="text-sm font-body leading-relaxed line-clamp-5 text-ellipsis overflow-hidden text-[#707070]">{description}</p>
+                        <p className="text-sm font-body leading-relaxed line-clamp-5 text-[#707070]">{description.substring(0, 320)}</p>
                       </div>
                       <a
                         href={url}
